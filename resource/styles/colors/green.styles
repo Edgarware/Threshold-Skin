@@ -1,0 +1,20 @@
+"green.styles"
+{
+	colors
+	{
+		//WE DONT USE COMPLIMENTARY COLORS IN THIS ONE BECAUSE RED TEXT IS A BAD IDEA
+		Accent="16 137 62 255"
+		Accent2="11 92 42 255" //Some button hover states
+		
+		AccentInv="232 46 213 255" //Complimentary color for disk usage
+		AccentText="232 43 228 255" //Updating game text, usually a permutation of AccentInv
+		AccentTextHover="255 73 255 255" //Updating game hover text, traditionally AccentText+30RGB
+		
+		TitleBar=Accent //TitleBar background
+		TitleBar.Focus="8 8 8 255" //For loss of focus
+		TitleBar.Accent=Accent2 //Accent colored button backgrounds (Back, MenuButton)
+		TitleBar.Accent.Hover="34 107 62 255" //Hover state for Back
+		
+		Notification.Back="31 31 31 255"
+	}
+}

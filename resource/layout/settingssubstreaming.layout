@@ -1,0 +1,105 @@
+"resource/layout/settingssubstreaming.layout"
+{
+	controls
+	{
+		"DescriptionLabel"
+		{
+			ControlName="Label"
+			fieldName="DescriptionLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_Description"
+		}
+		"RemoteClientList"
+		{
+			ControlName="ListPanel"
+			style="RemoteClientList"
+			tall=140
+		}
+		"EnableStreaming" { ControlName="CheckButton" fieldName="EnableStreaming" labelText="#Steam_Settings_Streaming_EnableStreaming" }
+
+		"HostDivider" { ControlName="divider" }
+		"HostLabel"
+		{
+			ControlName="Label"
+			fieldName="HostLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_HostLabel"
+		}
+		
+		"UnsupportedPlatform"
+		{
+			ControlName="Label"
+			fieldName="UnsupportedPlatform"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_UnsupportedPlatform"
+		}
+		
+		"AdvancedHostOptions" { ControlName="Button" fieldName="AdvancedHostOptions" command="AdvancedHostOptions" labelText="#Steam_Settings_Streaming_AdvancedHostOptions" }
+
+		"ClientDivider" { ControlName="divider" }
+		"ClientLabel"
+		{
+			ControlName="Label"
+			fieldName="ClientLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_ClientLabel"
+		}
+		
+		"QualityFast" { ControlName="RadioButton" fieldName="QualityFast" labelText="#Steam_Settings_Streaming_QualityFast" }
+		"QualityBalanced" { ControlName="RadioButton" fieldName="QualityBalanced" labelText="#Steam_Settings_Streaming_QualityBalanced" }
+		"QualityBeautiful" { ControlName="RadioButton" fieldName="QualityBeautiful" labelText="#Steam_Settings_Streaming_QualityBeautiful" }
+		
+		"AdvancedClientOptions" { ControlName="Button" fieldName="AdvancedClientOptions" command="AdvancedClientOptions" labelText="#Steam_Settings_Streaming_AdvancedClientOptions" }
+		
+		"SupportInformationLabel"
+		{
+			ControlName="URLLabel"
+			fieldName="SupportInformationLabel"
+			labelText="#Steam_Settings_Streaming_StreamingSupport"
+			URLText="https://support.steampowered.com/kb_article.php?ref=3629-RIAV-1617"
+		}
+	}
+	
+	style
+	{
+	}
+	
+	layout
+	{
+		region { name=bottom margin-top=240  width=275 height=max }
+
+		place
+		{
+			control="DescriptionLabel,RemoteClientList,EnableStreaming"
+			dir=down
+			align=top
+			width=max
+			margin-left=20
+			margin-right=20
+			margin-top=20
+			spacing=10
+		}
+		
+		place { region=bottom control=HostDivider width=max x=20 y=0 }
+		place { region=bottom control=HostLabel width=max x=20 y=10 }
+		place { region=bottom control=UnsupportedPlatform width=max x=20 y=35 }
+		place { region=bottom control=AdvancedHostOptions x=20 y=35 }
+		
+		place { region=bottom control=ClientDivider width=max x=20 y=70 }
+		place { region=bottom control=ClientLabel width=max x=20 y=80 }
+		place
+		{
+			control="QualityFast,QualityBalanced,QualityBeautiful"
+			region=bottom
+			dir=right
+			align=top
+			width=max
+			spacing=10
+			x=20
+			y=100
+		}
+		place { region=bottom control=AdvancedClientOptions x=20 y=140 }
+		
+		place { region=bottom control=SupportInformationLabel x=20 y=230 }
+	}
+}

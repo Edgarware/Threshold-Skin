@@ -1,0 +1,39 @@
+"resource/layout/gamespage_details_news.layout"
+{
+	controls
+	{
+		newsdetails { controlname="CGamesPage_Details_News" style="newsdetails" }
+		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_RecentNews" }
+		viewall { controlname="Button" labeltext="#Steam_ViewAllNews" command="ViewAllNews" }
+	}
+
+	colors
+	{
+
+
+		// This is needed to determine how much space is needed veritically for the header and button
+		// in addition to the autocomputed height for the *newsitem panels, adjust it if you change vertical
+		// spacing of this controls layout.
+		GameDetailsNewsContainer.ExtraVerticalSpacing "64"
+	}
+
+	styles
+	{
+		newsdetails 
+		{ 
+			bgcolor=Root.Back
+			render_bg
+			{
+				0="fill(x0+20,y1-1,x1-15,y1,Root.Div)"
+			}
+		}
+	}
+
+	layout
+	{
+		region { name=body margin=10 margin-left=20 width=max height=max }
+		place { region=body control=headerlabel width=max }
+		place { region=body y=22 y=0 control=*newsitem dir=down width=max }
+		place { region=body align=bottom control=viewall margin-bottom=5 }
+	}
+}

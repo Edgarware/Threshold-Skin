@@ -1,0 +1,19 @@
+"orange.styles"
+{
+	colors
+	{
+		Accent="255 185 0 255"
+		Accent2="186 137 0 255" //Some button hover states
+		
+		AccentInv="0 43 178 255" //Complimentary color for disk usage
+		AccentText="0 62 255 255" //Updating game text, usually a permutation of AccentInv
+		AccentTextHover="30 92 255 255" //Updating game hover text, traditionally AccentText+30RGB
+		
+		TitleBar=Accent //TitleBar background
+		TitleBar.Focus="8 8 8 255" //For loss of focus
+		TitleBar.Accent=Accent2 //Accent colored button backgrounds (Back, MenuButton)
+		TitleBar.Accent.Hover="192 148 25 255" //Hover state for Back
+		
+		Notification.Back="31 31 31 255"
+	}
+}

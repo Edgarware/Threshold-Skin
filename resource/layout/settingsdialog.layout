@@ -1,0 +1,100 @@
+"resource/layout/settingsdialog.layout"
+{
+	controls
+	{
+		SettingsDialog { controlname="CDialogSettings" }
+		okbutton { controlname="OKButton" }	 
+		cancelbutton { controlname="CancelButton" }	 
+		settingslist { controlname="SettingsList" style="SettingsList" wide=180 }
+		sheet { controlname="Sheet" style="PropertySheet" }
+
+	}
+	
+	styles
+	{
+		CDialogSettings
+		{
+			minimum-width="740"
+			minimum-height="585"
+			bgcolor=none
+			render_bg
+			{     
+				0="fill( x0, y0, x0+194, y1, DefaultBackground )"  
+				1="fill( x0+194, y0, x1, y1, Page.Back )" 				
+			}
+
+		}
+		
+		PropertySheet //This is a thing but doesnt really matter
+		{
+			//minimum-width="535"
+			//minimum-height="505"
+			//inset="0 0 0 0"
+			//bgcolor=none
+			render_bg
+			{
+			}
+
+		}
+		
+		"SettingsList"
+		{
+			//inset="6 -14 4 0"
+			minimum-width="200" //min width is 200, but REAL width is 194. THANKS STEAM
+			minimum-height="525"
+			font-size=18
+			padding-left=15
+		}
+		
+		ListPanelSectionHeader //clear the header
+		{
+			render_bg{
+				
+			}
+		}
+		
+		ListPanelInterior
+		{     
+			inset="0 -1 1 1"
+			font-size=15
+			bgcolor=DefaultBackground
+			render
+			{				
+				//Apparently this is a bug fix line? DOESNT LOOK LIKE IT TO ME
+				//1="fill(x0, y0-1, x1, y0, almostblack )"
+			}
+			render_bg 
+			{				
+				
+			}
+		} 
+		Button
+		{     
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, Button.Page.Back )"
+			}
+		}
+		
+		Button:hover
+		{     
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, Button.Page.Hover )"
+			}
+		}		
+		
+	}
+	layout
+	{
+		region { name="buttons" width=max height=36 align="bottom" }
+		region { name="body" margin-bottom=46 }		
+		
+		place { control="settingslist,sheet" region=body width=max height=max spacing=-4  }
+		place { control="settingslist" margin-top=32  }
+		place { control="sheet" margin-left=194 margin-top=32 }
+		place { control="okbutton,cancelbutton" region="buttons" width=92 height=25 align=right margin-right=10 margin-top=0 margin-bottom=2 spacing=10 }
+	}
+}

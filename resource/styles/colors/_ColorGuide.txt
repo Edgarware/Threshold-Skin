@@ -1,0 +1,13 @@
+Windows 10 accent themes generally have two colors; one for the base accent and one that is darker (back button).
+The regular Accent is generally "Accent" and the darker Accent is generally "Accent2".
+There are also additional colors from the back button's hover and selected states, which may or may not be used depending on user preference.
+
+Because text may need to be colored on top of the accent (updating game list text, disk usage graph, etc) we need a color that doesn't look terrible.
+"AccentInv", "AccentText", and "AccentTextHover" are permutations of this (for disk usage, update text, and hover update text respectively).
+The default themes utilize complimentary colors for this purpose (EX: blue and orange) but this is not a requirement, only that they are not shades of gray.
+
+"TitleBar", "TitleBar.Focus", "TitleBar.Accent", and "TitleBar.Accent.Hover" are all specific colors for the Accented Title Bar option. 
+All are likely just previous colors, but these are seperate entities in case you want to specify a different color.
+These options (with the exception of "TitleBar.Accent" and "TitleBar.Accent.Hover") are overwritten if the Accented Title Bar option is disabled.
+
+"Notification.Back" is the background color of notifications. Be cautious changing this, as it could make icons/text difficult to read.

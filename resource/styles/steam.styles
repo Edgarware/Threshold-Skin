@@ -1,0 +1,3499 @@
+steam.styles
+{
+  include "Resource/styles/legacycolors.styles"
+  include "Resource/styles/settings.styles"
+  include "config.ini"
+  colors
+  {
+	// cool we can define font-families here as well
+    basefont="Segoe UI"
+	semibold="Segoe UI Semibold"
+    basefont="Helvetica" [$OSX]
+	
+	//Standard Element/Text colors ********
+	//TODO: Some of these colors arent actually used, fix or remove
+	DefaultBackground="31 31 31 255"
+	
+	DefaultText=white
+	DefaultText.Hover="210 210 210 255"
+	DefaultText.Disabled="74 74 74 255"
+	DefaultText.Back=Accent //For highlighted text
+	DefaultCursor=white
+		
+	Label.Text=DefaultText
+	SubLabel.Text="180 180 180 255" //Any label we want to have visual distinction, usually subheaders
+	
+	URL.Text=DefaultText.Hover
+	URL.Hover.Text=DefaultText
+		
+	Page.Back="43 43 43 255"
+	Page.Tab="14 14 14 255" 
+	Page.Tab.Active=Page.Back
+	Page.Tab.Hover=Accent
+	Page.Tab.Active.Hover=Page.Tab.Active
+	Page.Tab.Text=DefaultText
+	Page.Tab.Active.Text=DefaultText
+	
+	List.Back=Page.Back
+	List.Header=Page.Back
+	List.Header.Div=DefaultBackground
+	List.Page=DefaultBackground
+	List.Page.Header=DefaultBackground
+	List.Page.Header.Div=Page.Back
+	List.Text=DefaultText
+	List.Header.Text=DefaultText
+	List.Header.Text.Hover=DefaultText.Hover
+	List.Text.Disabled=DefaultText.Disabled
+	
+	Button.Back="51 51 51 255"
+	Button.Page.Back="74 74 74 255"
+	Button.Hover="74 74 74 255"
+	Button.Page.Hover="96 96 96 255"
+	Button.Active=Accent
+	Button.Disabled=Button.Back
+	Button.Text=DefaultText
+	Button.Hover.Text=DefaultText
+	Button.Active.Text=DefaultText
+	Button.Disabled.Text="109 109 109 255"
+	
+	Check.Outline="204 204 204 255"
+	Check.Hover.Outline=white
+	Check.Active=Accent
+	Check.Text=DefaultText
+	Check.Text.Hover=DefaultText.Hover
+	Check.Disabled.Text=DefaultText.Disabled
+	
+	Radio.Outline="204 204 204 255"
+	Radio.Hover.Outline=white
+	Radio.Active=Accent
+	Radio.Text=DefaultText
+	Radio.Text.Hover=DefaultText.Hover
+	Radio.Disabled.Text=DefaultText.Disabled
+	
+	ComboBox.Back="17 17 17 255"
+	ComboBox.Outline="119 119 119 255"
+	ComboBox.Hover="43 43 43 255"
+	ComboBox.Active=ComboBox.Hover
+	ComboBox.Disabled=Button.Back
+	ComboBox.Text=DefaultText
+	ComboBox.Disabled.Text="110 110 110 255"
+	
+	Scroll.Back="23 23 23 255"
+	Scroll.Bar.Back="69 69 69 255"
+	Scroll.Bar.Hover="116 116 116 255"
+	Scroll.Bar.Active="162 162 162 255"
+	Scroll.Button.Back=Scroll.Back
+	Scroll.Button.Hover=Scroll.Bar.Hover
+	Scroll.Button.Active=Scroll.Bar.Active
+	
+	Menu.Back=ComboBox.Hover
+	Menu.Button.Hover="96 96 96 170"
+	Menu.Button.Active=Accent2
+	Menu.Hover="64 64 64 255"
+	Menu.Active=Accent
+	Menu.Outline="118 118 118 255"
+	Menu.Div="128 128 128 255"
+	Menu.Text=DefaultText
+	Menu.Disabled.Text=DefaultText.Disabled
+	
+	Progress.Back=Button.Hover
+	
+	TextBox.Back=ComboBox.Back
+	TextBox.Outline=ComboBox.Outline
+	TextBox.Outline.Hover=white
+	TextBox.Active=white
+	TextBox.Outline.Active=Accent
+	TextBox.Text=TextBox.Outline
+	TextBox.Hover.Text=DefaultText
+	TextBox.Active.Text=black
+	TextBox.Disabled.Text=DefaultText.Disabled
+	TextBox.Active.Cursor=black
+	
+	//Specific Element colors *********
+	
+	//These are all in accent specific ini now
+	//TitleBar="8 8 8 255"
+	//TitleBar.Focus="8 8 8 255" //For loss of focus
+	//Notification.Back="31 31 31 255"
+	
+	TitleBar.Hover="70 70 70 100" //for buttons on titlebar
+	TitleBar.CloseButton="232 17 35 255"
+	Frame.Text="96 96 96 255"
+	Frame.Focus.Text=DefaultText
+		
+	Root.LeftCol = "43 43 43 255" //Left Column
+	Root.LeftCol.Bottom="48 48 48 255"
+	Root.Back = DefaultBackground //Right Column
+	Root.Back2 = "35 35 35 255" //Middle column (When needed)
+	Root.Header = "61 61 61 255"
+	Root.Div = Root.Header
+	Root.BackTransparent="28 28 28 170" //For details header/grid chrome
+	
+	Root.LeftCol.Text=DefaultText
+	Root.Label.Text=DefaultText
+	Root.Label.Hover.Text="180 180 180 255"
+	Root.SubLabel.Text="180 180 180 255"
+	Root.LeftCol.Disabled=DefaultText.Disabled
+	
+	Search.Back=Root.Back2
+	Search.Text="130 130 130 255"
+	Search.Hover.Text="180 180 180 255"
+	Search.Active.Text=DefaultText
+	
+	Uninstalled.Text=DefaultText.Disabled
+	Uninstalled.Hover.Text="94 94 94 255"
+	Installed.Text="200 200 200 255"
+	Installed.Hover.Text=DefaultText
+	Shortcut.Text=Installed.Text
+	Shortcut.Hover.Text=DefaultText
+	Mod.Text=Installed.Text
+	Mod.Hover.Text=DefaultText
+	Updating.Text=AccentText //active game text needs to be accent specific to prevent conflicts
+	Updating.Hover.Text=AccentTextHover
+	Decrypting.Text=AccentText
+	Decrypting.Hover.Text=AccentTextHover
+	Syncing.Text=AccentText
+	Syncing.Hover.Text=AccentTextHover
+	
+		
+ }
+  
+	styles
+	{
+	downarrow
+	{
+		image="graphics/custom/icons/down"    
+	}
+
+	downarrow:hover
+	{
+		image="graphics/custom/icons/down"
+	}
+
+	uparrow
+	{
+		image="graphics/custom/icons/up"    
+	}
+	
+	rightarrow
+	{
+		image="graphics/custom/scroll/right" 
+	}
+	
+	rightarrow:hover
+	{
+		image="graphics/custom/scroll/right"    
+	}
+		
+	Button
+	{     
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		textcolor=Button.Text
+		bgcolor=none
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Back )"
+		}
+	}
+	 
+    "Page Button"
+    {     
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Page.Back)"	
+		}
+    }
+    
+	Button:hover
+    {   
+  		textcolor=Button.Hover.Text
+  		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Hover)"             
+		}
+    }
+
+    "Page Button:hover"
+    {   
+		textcolor=Button.Hover.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Page.Hover)"
+		}
+    }
+    
+    Button:focus
+    {
+		textcolor=Button.Active.Text
+		render_bg
+	    {
+			0="fill( x0, y0, x1, y1, Button.Active)"			    
+	    }
+    }
+    
+    "Page Button:focus"
+    {
+		textcolor=Button.Active.Text
+		render_bg
+		{     
+			0="fill( x0, y0, x1, y1,  Button.Active)"
+		}
+    }
+    
+    Button:active // this is the left-mouse-currently-pressed state
+	{
+		textcolor=Button.Active.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Active)"
+		}
+    }
+    
+    "Page Button:active"
+    {
+		textcolor=Button.Active.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Active)"
+		}
+    }
+    
+    Button:selected
+    {
+		textcolor=Button.Active.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Active)"
+		}
+    }
+
+    "Page Button:selected"
+    {
+		textcolor=Button.Active.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Active)"
+		}
+    }
+    
+    Button:disabled
+    {
+		textcolor=Button.Disabled.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Disabled)"             
+		}
+    }   
+    
+    "Page Button:disabled"
+    {     
+		textcolor=Button.Disabled.Text
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Disabled )"             
+		}   
+    }
+       
+    CFriendsListSectionAffordance //TODO: ??
+    {     
+		inset="0 0 0 0"
+		font-size=14
+		font-weight=400
+		textcolor="Label"
+    }
+    
+    CFriendsListSectionHeader
+    {
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-size=13 [$OSX]
+		font-weight=400
+		textcolor=List.Header.Text
+		inset="0 0 0 0"
+		render_bg
+		{
+			0="fill( x0-2, y0, x1, y1, Root.Header )"
+		}
+    }
+            
+    CFriendPanel
+    {
+		inset="0 2 0 0"
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-size=13 [$OSX]
+		font-weight=400
+		textcolor=DefaultText
+    }
+
+    CheckButton
+    {
+		font-family=basefont
+		inset="0 0 0 0"
+		font-size=14
+		font-weight=400
+		textcolor=Check.Text
+		image="graphics/custom/icons/check"
+    }
+  
+    CheckButton:selected
+    {
+		image="graphics/custom/icons/check_sel" 		
+    }
+
+    CheckButton:focus
+    {
+		textcolor=Check.Text
+		image="graphics/custom/icons/check" 
+	
+    }
+	
+	CheckButton:hover
+    {
+		textcolor=Check.Text.Hover
+		image="graphics/custom/icons/check_hover" 
+
+    }
+
+    CheckButton:selected:focus
+    {
+		textcolor=Check.Text
+		image="graphics/custom/icons/check_sel"
+    }
+	
+	CheckButton:selected:hover
+    {
+		textcolor=Check.Text.Hover
+		render_bg {}
+		image="graphics/custom/icons/check_sel_hover"	
+    }
+    
+    CheckButton:disabled
+    {
+		textcolor=Check.Disabled.Text
+		bgcolor=none
+		image="graphics/custom/icons/check_dis"
+    }
+    
+    CheckButton:selected:disabled
+    {
+		textcolor=Check.Disabled.Text
+		bgcolor=none
+		image="graphics/custom/icons/check_sel_dis"
+    }
+
+	IndeterminateCheckButton
+	{
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=Check.Text
+		bgcolor=none
+		image="graphics/custom/icons/check_ind"
+	}
+	
+	IndeterminateCheckButton:hover
+	{
+		textcolor=Check.Text.Hover
+		image="graphics/custom/icons/check_ind_hover"
+	}
+
+    CheckButtonList
+    {
+        inset="1 1 1 1"
+        textcolor=List.Text
+        bgcolor=none
+        render	{      	}  
+		render_bg {				
+			// background gradient        
+			1="fill( x0, y0, x1, y1, List.Back )"
+		}
+    } 
+    
+    CheckButtonList:scrollbar
+    {
+        inset="1 1 1 1"
+        textcolor=List.Text
+        bgcolor=none
+		render	{     		}
+    	render_bg {				
+			// background gradient        
+			1="fill( x0, y0, x1, y1, List.Back )"
+		}
+    } 
+    
+    "Page CheckButtonList"
+    {
+        inset="1 1 1 1"
+        textcolor=List.Text
+        bgcolor=none
+        render	{      	}  
+		render_bg
+        {     
+			// background fill
+			1="fill( x0, y0, x1, y1, List.Page )"
+      	}
+    }
+    
+    "Page CheckButtonList:scrollbar"
+    {
+        inset="1 1 1 1"
+        textcolor=List.Text
+        bgcolor=none
+        render { }   
+        render_bg
+        {     
+			// background fill
+			1="fill( x0+1, y0, x1-1, y1-2, List.Page )"
+    	}
+   	 }
+    
+    "CheckbuttonList Checkbutton"
+    {
+		textcolor=Check.Text
+	} 
+    
+    "CheckbuttonList Checkbutton:focus"
+    {
+		textcolor=Check.Text
+	} 
+	
+	"CheckbuttonList Checkbutton:selected"
+    {
+		render_bg
+		{
+			//0="fill(x0+3,y0+4,x0+18,y0+18,Check.Active)"
+		}	
+	} 
+    
+    ComboBox
+    {
+		inset="3 0 0 0"
+		textcolor=ComboBox.Text
+		font-family=basefont
+		font-size="14"
+		selectedtextcolor=ComboBox.Text
+		selectedbgcolor=none
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, ComboBox.Back )"
+			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
+			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
+			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
+			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
+		}
+    }
+    
+    ComboBox:hover
+    {
+		selectedbgcolor="none"
+		selectedtextcolor=ComboBox.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, ComboBox.Hover )"
+			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
+			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
+			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
+			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
+		}
+    }
+    
+    ComboBox:focus:hover
+    {
+		selectedbgcolor="none"
+		selectedtextcolor=ComboBox.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, ComboBox.Hover )"
+			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
+			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
+			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
+			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
+		}
+    }
+	
+    
+    "Page ComboBox"
+    {
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, ComboBox.Back )"
+			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
+			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
+			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
+			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
+		}
+    }
+    
+    "Page ComboBox:focus"
+    {
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, ComboBox.Back )"
+			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
+			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
+			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
+			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
+		}
+    }
+    
+    "Page ComboBox:hover"
+    {
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, ComboBox.Hover )"
+			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
+			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
+			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
+			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
+		}
+    }
+    
+    "Page ComboBox:focus:hover"
+    {
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, ComboBox.Hover )"
+			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
+			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
+			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
+			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
+		}
+    }
+    
+    
+    ComboBoxButton
+    {      
+
+		bgcolor=none
+		padding-left=2
+		image="graphics/custom/icons/down"
+		render_bg 
+		{
+		}
+    }
+    
+    ComboBoxButton:hover
+    {
+		image="graphics/custom/icons/down"
+		// just draw a single line to divide it from the text
+		render_bg 
+		{
+		}
+    }
+    
+    ComboBoxButton:focus
+    {
+
+		bgcolor=none
+		image="graphics/custom/icons/down"
+		// just draw a single line to divide it from the text
+		render_bg 
+		{
+		}
+    }
+    
+    ComboBoxButton:focus:hover
+    {
+
+		bgcolor=none
+		image="graphics/custom/icons/down"
+		// just draw a single line to divide it from the text
+		render_bg 
+		{
+		}
+    }
+    
+    
+    "Page ComboBoxButton"
+    {
+		bgcolor=none
+		image="graphics/custom/icons/down"
+		// just draw a single line to divide it from the text
+		render_bg 
+		{
+		}
+    }
+    
+    "Page ComboBoxButton:hover"
+    {
+		image="graphics/custom/icons/down"
+		// just draw a single line to divide it from the text
+		render_bg 
+		{
+		}
+    }
+    
+    "Page ComboBoxButton:focus"
+    {
+
+		bgcolor=none
+		image="graphics/custom/icons/down"
+		// just draw a single line to divide it from the text
+		render_bg 
+		{
+		}
+   	}
+    
+    "Page ComboBoxButton:focus:hover"
+    {
+		bgcolor=none
+		image="graphics/custom/icons/down"
+		// just draw a single line to divide it from the text
+		render_bg 
+		{
+		}
+    }
+    
+    Divider
+    {
+		bgcolor="none"
+		render
+		{
+			0="fill( x0, y1 - 1, x1, y1, Menu.Div )"     
+		}
+    }
+    
+    Frame
+    {
+		bgcolor="DefaultBackground"
+		render
+		{
+		}
+    } 
+    
+    Frame:FrameFocus
+    {
+		bgcolor="DefaultBackground"
+		render
+		{
+
+		}
+    } 
+    
+    FrameBRGripPanel
+    {
+		//image=graphics/resizer
+    }
+    
+    FrameBRGripPanel:hover
+    {
+		//image=graphics/resizer_over
+    }
+    
+    FrameMinimizeButton
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		image="graphics/custom/window_controls/min"
+	}
+	
+	FrameMinimizeButton:hover
+	{  
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="TitleBar.Hover"
+		image="graphics/custom/window_controls/min"
+	}
+	
+	FrameMinimizeButton:active
+	{  
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="TitleBar.Hover"
+		image="graphics/custom/window_controls/min"
+	}
+
+	FrameMaximizeButton
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="none"
+		image="graphics/custom/window_controls/max"
+		image="graphics/osx_max_down" [$OSX]
+	}
+	
+	FrameMaximizeButton:hover
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="TitleBar.Hover"
+		image="graphics/custom/window_controls/max"
+		image="graphics/osx_max_down" [$OSX]
+	}
+	
+	FrameMaximizeButton:active
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="TitleBar.Hover"
+		image="graphics/custom/window_controls/max"
+		image="graphics/osx_max_down" [$OSX]
+	}
+
+	// these are for when the maximize button becomes the restore button
+	FrameRestoreButton
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		image="graphics/custom/window_controls/restore"
+		image="graphics/osx_win_dis" [$OSX]
+	}
+
+	FrameRestoreButton:hover
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="TitleBar.Hover"
+		image="graphics/custom/window_controls/restore"
+		image="graphics/osx_max_hov" [$OSX]
+	}
+
+	FrameRestoreButton:active
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="TitleBar.Hover"
+		image="graphics/custom/window_controls/restore"
+		image="graphics/osx_max_down" [$OSX]
+	}
+
+	FrameCloseButton
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		image="graphics/custom/window_controls/close"
+		image="graphics/osx_win_dis" [$OSX]
+	}
+
+	FrameCloseButton:hover
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="TitleBar.CloseButton"
+		image="graphics/custom/window_controls/close"
+		image="graphics/osx_close_hov" [$OSX]
+	}
+
+	FrameCloseButton:active [$OSX]
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="TitleBar.CloseButton"
+		image="graphics/custom/window_controls/close"
+	}
+
+	FrameCloseButton:disabled
+	{
+		render_bg {}
+		inset="12 11 0 0"
+		bgcolor="none"
+		image="graphics/custom/window_controls/close" 
+		image="graphics/osx_win_dis" [$OSX]
+	}
+
+    FrameTitle
+    {
+		font-family=basefont
+		inset="5 1 0 0"
+		inset="0 4 0 0" [$OSX]
+		padding-left="0"
+		padding-right="64"
+		padding-right="0" [$OSX]
+		font-size=14
+		font-weight=400
+		textcolor=Frame.Text
+		bgcolor="none"
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, TitleBar.Focus)"
+		}
+    }
+
+    
+    FrameTitle:framefocus
+    {
+		font-family=basefont
+		inset="0 4 0 0" [$OSX]
+		font-size=14
+		font-weight=400
+		bgcolor="none"
+		textcolor=Frame.Focus.Text
+		textcolor="texthover" [$OSX]
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, TitleBar)"
+		}
+    }
+    
+   
+	"CFriendsDialog SectionedListPanelInterior"
+	{
+		bgcolor=none
+		inset="-6 -1 -1 -1"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=List.Text
+		selectedtextcolor=List.Text
+		selectedbgcolor=Accent
+		shadowtextcolor=List.Text.Disabled	// the color of disabled line items		
+		render{	}
+		render_bg { }
+	}	
+
+    GraphPanel //XXX:Pretty sure this isnt even used anymore
+    {
+		textcolor=Accent
+		bgcolor=none
+		inset="0 -3 0 0"
+		render_bg { }
+    }
+    
+    HTML
+    {
+		bgcolor="none"
+		//inset="2 2 2 2"
+		render_bg 
+		{
+			0="fill( x0, y0, x1, y1, almostblack )" // bg
+	    }
+     
+    }
+    
+    Label
+	{
+		textcolor=Label.Text
+		selectedtextcolor=Label.Text
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+ 	}
+   
+    ListPanel
+    {
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=List.Text
+		selectedtextcolor=List.Text
+		selectedbgcolor=Accent
+		shadowtextcolor=List.Text.Disabled	// the color of disabled line items
+		inset="0 -1 1 1"
+		render{}       
+		render_bg 
+		{
+			// background gradient        
+			0="fill( x0, y0, x1, y1, List.Back)"
+		}
+	}
+      
+    "Page ListPanel"
+	{
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=List.Text
+		selectedtextcolor=List.Text
+		selectedbgcolor=Accent
+		inset="0 -1 1 1"
+		bgcolor=none
+		render_bg
+		{     
+			// background fill
+			1="fill( x0, y1, x1, y1, List.Page )"
+		}
+	}
+    
+    "CGamesListPanel"
+	{
+		font-family=basefont
+		bgcolor="none"
+		font-size=15
+		font-weight=400
+		textcolor=List.Text
+		selectedtextcolor=List.Text
+		selectedbgcolor=Accent
+		shadowtextcolor=List.Text.Disabled
+		inset="0 -1 1 1"
+		render_bg {
+			// background gradient        
+			1="fill( x0, y0, x1, y1, Root.Back2 )"
+        }
+    }
+  
+    "GameItem_Uninstalled"
+    {
+		textcolor=Uninstalled.Text
+		selectedtextcolor=Uninstalled.Hover.Text
+    }
+    "GameItem_Uninstalled:hover"
+    {
+		textcolor=Uninstalled.Hover.Text
+		selectedtextcolor=Uninstalled.Hover.Text
+	}
+ 
+    "GameItem_Installed"
+    {
+		textcolor=Installed.Text
+		selectedtextcolor=Installed.Hover.Text
+    }
+      
+    "GameItem_Installed:hover"
+    {
+		textcolor=Installed.Hover.Text
+		selectedtextcolor=Installed.Hover.Text
+    }
+    
+    "GameItem_Shortcut"
+    {
+		textcolor=Shortcut.Text
+		selectedtextcolor=Shortcut.Hover.Text
+    }
+      
+    "GameItem_Shortcut:hover"
+    {
+        textcolor=Shortcut.Hover.Text
+        selectedtextcolor=Shortcut.Hover.Text
+    }
+    
+    "GameItem_Mod"
+    {
+		textcolor=Mod.Text
+		selectedtextcolor=Mod.Hover.Text
+    }
+      
+    "GameItem_Mod:hover"
+    {
+        textcolor=Mod.Hover.Text
+        selectedtextcolor=Mod.Hover.Text
+    }
+
+    "GameItem_Updating"
+    {
+    	textcolor=Updating.Text
+    	selectedtextcolor=Updating.Hover.Text
+    }
+    
+    "GameItem_Updating:hover"
+    {
+    	textcolor=Updating.Hover.Text
+    	selectedtextcolor=Updating.Hover.Text
+    }
+    
+    "GameItem_Updating:selected"
+    {
+    	textcolor=Updating.Hover.Text
+    	selectedtextcolor=Updating.Hover.Text
+    }
+    
+    "GameItem_Decrypting"
+    {
+    	textcolor=Decrypting.Text
+    	selectedtextcolor=Decrypting.Hover.Text
+    }
+    
+    "GameItem_Decrypting:hover"
+    {
+    	textcolor=Decrypting.Hover.Text
+    	selectedtextcolor=Decrypting.Hover.Text
+    }
+    
+    "GameItem_Decrypting:selected"
+    {
+    	textcolor=Decrypting.Hover.Text
+    	selectedtextcolor=Decrypting.Hover.Text
+    }
+    
+    "GameItem_Syncing"
+    {
+    	textcolor=Syncing.Text
+    	selectedtextcolor=Syncing.Hover.Text
+    }
+    
+    "GameItem_Syncing:hover"
+    {
+    	textcolor=Syncing.Hover.Text
+    	selectedtextcolor=Syncing.Hover.Text
+    }
+    
+    "GameItem_Syncing:selected"
+    {
+    	textcolor=Syncing.Hover.Text
+    	selectedtextcolor=Syncing.Hover.Text
+    }
+    
+    "GameColumn_BigText"
+	{
+		font-family=basefont
+		font-size=17
+		font-weight=700
+		textcolor=DefaultText
+    }
+    
+    ListPanelCheckBox
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=Check.Text
+		image="graphics/custom/icons/check_sm"
+		inset="0 5 0 0"
+    }   
+
+    ListPanelCheckBox:selected
+    {
+		image="graphics/custom/icons/check_sm_sel"   
+    }
+
+	ListPanelCheckBox:focus
+    {
+		textcolor=Check.Text
+		bgcolor=none
+		image="graphics/custom/icons/check_sm" 
+    }
+
+    ListPanelCheckBox:selected:focus
+    {
+		textcolor=Check.Text
+		render_bg {}
+		bgcolor=none
+		image="graphics/custom/icons/check_sm_sel"
+    }
+    
+    ListPanelCheckBox:disabled
+    {
+		textcolor=Check.Disabled.Text
+		bgcolor=none
+		image="graphics/custom/icons/check_dis"
+    }
+    
+    ListPanelCheckBox:disabled:select
+    {
+		textcolor=Check.Disabled.Text
+		bgcolor=none
+		image="graphics/custom/icons/check_sel_dis"
+    }
+    
+    "ListPanelColumnheader ListPanelCheckBox"
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=Check.Text
+		image="graphics/custom/icons/check_sm"
+		inset="4 0 0 0"  
+		}
+     
+	"ListPanelColumnHeader ListPanelCheckBox:selected"
+    {
+		inset="4 0 0 0"
+		image="graphics/custom/icons/check_sm_sel"  
+    }
+	
+	"ListPanelColumnheader ListPanelCheckBox:focus"
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=Check.Text
+		image="graphics/custom/icons/check_sm"
+		inset="4 0 0 0"  
+	}
+
+	"ListPanelColumnheader ListPanelCheckBox:selected:focus"
+    {
+		textcolor=Check.Text
+		render_bg {}
+		bgcolor=none
+		image="graphics/custom/icons/check_sm_sel"
+		inset="4 0 0 0"  
+    }
+    
+    ListPanelColumnheader
+    {
+		font-family=basefont
+		font-size=14
+		font-size=13 [$OSX]
+		font-weight=400
+		textcolor=List.Header.Text
+		//font-style="uppercase"
+		bgcolor="none"
+		inset="1 3 0 0"
+		render_bg    
+		{
+			// fill
+			0="fill (x0, y0, x1, y1, List.Header)" // bg
+		}   
+	}
+    
+    ListPanelColumnHeader:hover
+    {
+		textcolor=List.Header.Text.Hover
+    }
+	
+	"Page ListPanelColumnHeader"
+	{
+		render_bg    
+		{
+			// fill
+			0="fill (x0, y0, x1, y1, List.Page.Header)" // bg
+		} 
+	}
+      
+	"Csteamrootdialog ListPanelColumnheader"
+    {
+		font-family=basefont
+		font-size=14
+		font-size=13 [$OSX]
+		font-weight=400
+		textcolor=List.Header.Text
+		//font-style="uppercase"
+		bgcolor="none"
+		inset="0 0 0 0"
+		inset="0 1 0 0" [$OSX]
+		
+		render_bg    
+		{
+			// fill
+			0="fill (x0, y0, x1, y1, Root.Header )" // bg fill
+		}   
+	}
+
+   
+    "Csteamrootdialog ListPanelColumnHeader:hover"
+    {
+		textcolor=List.Header.Text.Hover
+    }
+    
+   	"Csteamrootdialog ListPanelSectionCollapser"
+	{
+		inset = "0 1 0 1"
+		bgcolor=none
+		render_bg
+		{
+			1="fill( x0 , y0, x1, y1, Root.Header )"
+		}    
+	}
+	
+	"CGamesPage_Mini ListPanelSectionCollapser"
+	{
+		inset = "0 1 0 1"
+		bgcolor=none
+		render_bg
+		{
+			1="fill( x0 , y0, x1, y1, Root.Header  )"
+		}    
+	}
+    
+
+ 
+	ListPanelColumnSelectButton // the games list column chooser  
+	{
+        inset="-3 3 0 0"
+		bgcolor=none
+        render
+        {
+			0="image( x0 + 5, y0 + 4, x1, y1, graphics/custom/icons/plus )"
+        }   
+        render_bg {
+			
+        }
+	}
+    
+	ListPanelColumnSelectButton:hover
+	{
+        inset="-3 3 0 0"
+        render
+        {
+			0="image( x0 + 5, y0 + 4, x1, y1, graphics/custom/icons/plus_hover )"
+        }   
+        render_bg {
+		}
+	}
+	ListPanelColumnSelectButton:selected
+	{
+        inset="-3 3 0 0"
+        render
+        {
+			0="image( x0 + 5, y0 + 4, x1, y1, graphics/custom/icons/plus )"
+        }   
+        render_bg {
+		}
+	}
+
+	"CGamesListPanel ListPanelColumnSelectButton"   
+	{
+        inset="0 0 0 0"
+        render
+        {
+			0="image( x0+2, y0+2, x1, y1, graphics/custom/icons/plus )"
+        }   
+        render_bg {
+			1="fill( x0, y0, x1, y1, Root.Header )"
+        }
+	}
+	"CGamesListPanel ListPanelColumnSelectButton:hover"   
+	{
+        inset="0 0 0 0"
+        render
+        {
+			0="image( x0+2, y0+2, x1, y1, graphics/custom/icons/plus_hover )"
+        }   
+        render_bg {
+			1="fill( x0, y0, x1, y1, Root.Header )"
+        }
+	}
+	"CGamesListPanel ListPanelColumnSelectButton:selected"   
+	{
+        inset="0 0 0 0"
+        render
+        {
+			0="image( x0+2, y0+2, x1, y1, graphics/custom/icons/plus )"
+        }  
+        render_bg {
+			1="fill( x0, y0, x1, y1, Root.Header )"
+        } 
+	}
+   
+    ListPanelDragger
+	{
+		bgcolor="none"
+		render 
+		{
+			//fill makes dragger visible
+			0="fill( x0, y0, x0 + 1, y1 - 1, List.Header.Div )"
+		}
+    }
+	
+	"Page ListPanelDragger"
+	{
+		bgcolor="none"
+		render 
+		{
+			//fill makes dragger visible
+			0="fill( x0, y0, x0 + 1, y1 - 1, List.Page.Header.Div )"
+		}
+    }
+    
+    ListPanelInterior
+    {     
+		inset="3 1 0 0"
+		font-size=15
+		textcolor=List.Text
+		bgcolor="none" 
+		render
+		{				
+
+		}
+		render_bg 
+		{				
+
+		}
+    } 
+    
+    ListPanelInterior:scrollbar
+    {     
+		bgcolor=none
+		inset="3 1 -1 0"
+		textcolor=List.Text
+		render
+		{				
+
+		}
+		render_bg 
+		{				
+
+		}
+    } 
+
+	"CSteamRootDialog ListPanel"
+	{
+		//padding-left=2
+		//padding-right=2
+	}
+    
+     "Csteamrootdialog ListPanelInterior"
+    {     
+		inset="3 0 3 0"
+		bgcolor=none
+
+		render_bg 
+		{
+			0="fill(x0, y0, x1, y1, Root.Back)"
+		}
+	}
+	
+	"Csteamrootdialog ListPanelInterior:scrollbar"
+    {     
+		inset="3 0 -1 0"
+		bgcolor=none
+		render
+		{
+		}
+
+	}
+	
+	"Page ListPanelInterior"
+	{
+		inset="3 1 -1 0"
+		font-size=15
+		bgcolor=none
+		render
+		{		
+
+		}
+		render_bg 
+		{				
+			// background gradient        
+			0="fill( x0, y0, x1, y1, List.Page )"
+		}
+	}
+	
+	"Page ListPanelInterior:scrollbar"
+	{
+		inset="3 1 -1 0"
+		bgcolor=none
+		render_bg 
+		{				
+			// background gradient        
+			0="fill( x0, y0, x1, y1, List.Page )"
+		}
+	}
+      
+    ListPanelSectionHeader
+    {     
+		inset="0 0 0 0"
+		textcolor=List.Header.Text
+		//font-style="uppercase"
+		render_bg
+		{
+			0="fill( x0 - 1, y0, x1, y1, List.Header)"
+		}    
+    } 
+	
+	"Csteamrootdialog ListPanelSectionHeader"
+    {     
+		inset="0 0 0 0"
+		textcolor=List.Header.Text
+		//font-style="uppercase"
+		render_bg
+		{
+			0="fill( x0 - 1, y0, x1, y1, Root.Header)"
+		}    
+    } 
+    
+    ListPanelSectionHeader:hover
+    {     
+        textcolor=List.Header.Text
+    } 
+    
+	"ListPanel RichText"
+	{
+		textcolor=TextBox.Text
+		font-family=basefont
+		font-size=15
+		bgcolor=none
+		render_bg {} 
+	}
+
+	"ListPanel RichText url" 
+	{
+		font-size=15
+		textcolor=TextBox.Text
+		font-style=underline
+	}
+
+    "ListPanel RichTextInterior"
+    {
+		render_bg {} 
+		bgcolor=none
+    }
+    
+    ListPanelSectionCollapser [!$OSX]
+    {
+      
+		bgcolor=none
+		render_bg {}
+		image="graphics/custom/icons/plus" 
+		inset="-4 0 0 0"
+		padding-top=-2
+		padding-bottom=-2
+    }
+    
+    ListPanelSectionCollapser [$OSX]
+    {
+		bgcolor=none
+		render_bg {}   
+		image="graphics/icon_collapse_osx" 
+		inset="-4 0 0 0"
+		padding-top=-2
+		padding-bottom=-2
+    }
+    
+    ListPanelSectionCollapser:hover [!$OSX]
+    {
+		image="graphics/graphics/custom/icons/plus_hover" 
+    }
+    
+    ListPanelSectionCollapser:hover [$OSX]
+    {
+		image="graphics/icon_collapse_over_osx" 
+    }
+    
+    ListPanelSectionCollapser:selected [!$OSX]
+    {
+		image="graphics/custom/icons/minus" 
+    }
+    
+    ListPanelSectionCollapser:selected [$OSX]
+    {
+		image="graphics/icon_expand_osx" 
+    }
+    
+    ListPanelSectionCollapser:selected:hover [!$OSX]
+    {
+		image="graphics/custom/icons/minus_hover" 
+    }
+    
+     ListPanelSectionCollapser:selected:hover [$OSX]
+    {
+		image="graphics/icon_expand_over_osx" 
+    }
+    
+	MainNav
+    {
+		textcolor=DefaultText
+		selectedtextcolor=DefaultText
+		bgcolor="none"
+		font-family=basefont
+		font-size=21
+		font-weight=700
+		//font-style="uppercase"
+    }
+
+	Menu
+    {
+		bgcolor=none
+		padding-right=4
+		inset="2 2 2 2"
+      
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, Menu.Back )"
+			1="fill(x0, y0, x0+1, y1, Menu.Outline)" //left
+			2="fill(x1-1, y0, x1, y1, Menu.Outline)" //right
+			3="fill(x0, y0, x1, y0+1, Menu.Outline)" //top
+			4="fill(x0, y1-1, x1, y1, Menu.Outline)" //bottom
+		}
+      
+		render {}
+    }
+      
+    MenuBar
+    {
+		bgcolor=none
+    }
+    
+    "Page MenuBar"
+    {
+		bgcolor=none
+    }
+    
+	"MenuBar MenuButton" 
+	{
+		textcolor="none"
+		inset="0 0 0 0"
+		render{
+			0="image(x0+17,y0+10,x1,y1,graphics/custom/menu)"
+		}
+	}
+	
+	"MenuBar MenuButton:hover" 
+	{
+		textcolor="none"
+		//bgcolor=Menu.Hover
+		render_bg {
+			0="fill(x0,y0,x1,y1,TitleBar.Hover)" //Most Menubars are in the titlebar, so style as such
+		}
+	}
+	
+ 	"MenuBar MenuButton:frameFocus" 
+	{
+		textcolor="none"
+	}
+	
+	"MenuBar MenuButton:frameFocus:hover" 
+	{
+		textcolor="none"
+		//bgcolor=Menu.Hover
+		render_bg {
+			0="fill(x0,y0,x1,y1,TitleBar.Hover)"
+		}
+	}
+	
+	"MenuBar MenuButton:frameFocus:selected" 
+	{
+		textcolor="none"
+		//bgcolor=Menu.Hover
+		render_bg {
+			0="fill(x0,y0,x1,y1,TitleBar.Accent)"
+		}
+
+	}
+	
+	MenuButton //XXX: where is this used?
+    {
+		font-family=basefont
+		font-size=26 //SIGH...
+		font-weight=400
+		textcolor=DefaultText
+		bgcolor="none"
+		render_bg {}
+    }  
+   
+	MenuButton:hover
+    {
+		//textcolor="white"
+    }
+    
+	MenuButton:selected
+    {
+		//textcolor="white"
+    }
+        
+	MenuItem
+    {
+		font-family=basefont
+		textcolor=Menu.Text
+		font-size=14
+		font-weight=400
+		inset="0 0 0 0"
+		padding-right=6
+		bgcolor="none"
+		render_bg {}
+    }
+   
+	MenuItem:selected
+    {
+		textcolor=Menu.Text
+		bgcolor=Menu.Hover
+    }
+	
+	MenuItem:hover
+    {
+		textcolor=Menu.Text
+		bgcolor="Menu.Hover"
+    }
+    
+    MenuItem:disabled
+    {
+		textcolor=Menu.Disabled.Text
+		shadowtextcolor=none
+    }
+    
+    MenuItem:disabled:hover
+    {
+		textcolor=Menu.Disabled.Text
+		shadowtextcolor=none
+    }
+   
+    MenuSeparator
+    {
+		inset="-4 0 0 0"	
+		textcolor="none"
+		bgcolor=none
+		render_bg{
+			0="fill(x0+15,y1-1,x1-20,y1,Menu.Div)"
+		}
+    }
+
+    Notification
+    {
+		font-family=basefont
+		font-size=15
+		font-weight=400
+		bgcolor=none
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, Notification.Back )"  // top
+		}
+		render {}
+    }
+
+    
+    Page
+    {
+		bgcolor="none"
+		render_bg
+		{
+			// background gradient
+			0="fill( x0, y0, x1, y1, Page.Back )"
+		}
+    }
+
+    "CSteamRootDialog Page"
+    {
+		bgcolor="none"
+		render_bg {}
+    }
+    
+    "Page RadioButtonList"
+    {
+		bgcolor="List.Page"
+    }
+      
+	PageTab
+    {
+		textcolor=Page.Tab.Text
+		font-family=basefont
+		font-size=13
+		//font-style=Uppercase
+		font-weight=400
+		inset="0 0 0 0"
+		render_bg
+		{
+			// background gradient
+			0="fill( x0, y0 , x1, y1, Page.Tab )"	
+		}
+    }
+
+    
+    PageTab:selected
+    {
+		textcolor=Page.Tab.Active.Text
+		font-family=basefont
+		font-size=13
+		//font-style=Uppercase
+		font-weight=400
+		bgcolor="none"
+		render_bg
+		{
+			// background gradient
+			0="fill( x0, y0, x1, y1, Page.Tab.Active )"
+		}
+    }
+
+    
+ 	PageTab:hover
+    {
+		textcolor=Page.Tab.Text
+		font-family=basefont
+		font-size=13
+		//font-style=Uppercase
+		font-weight=400
+		render_bg
+		{
+			// background gradient
+			0="fill( x0, y0, x1, y1, Page.Tab.Hover )"
+		}
+    }
+  
+    PageTab:selected:hover
+    {
+		textcolor=Page.Tab.Active.Text
+		font-family=basefont
+		font-size=13
+		//font-style=Uppercase
+		font-weight=400
+		bgcolor="none"
+		render_bg
+		{
+			// background gradient
+			0="fill( x0, y0, x1, y1, Page.Tab.Active.Hover )"
+		}
+    }
+      
+	PageTab:Focus
+	{
+		textcolor=Page.Tab.Text
+    }
+
+	"PageDragFrame PageTab"
+	{
+		font-size=14
+		font-style=""
+	}
+
+	TabCloseButton
+    {
+		render_bg {}
+		image="graphics/custom/icons/tiny_x"
+    }
+
+	TabCloseButton:hover
+    {
+		image="graphics/custom/icons/tiny_x_hover"
+    }
+    
+    Panel
+	{ 
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=DefaultText
+		bgcolor="none"
+	}
+    
+	ProgressBox //Legend has fortold that this is the loading frame
+	{
+	
+	}
+	
+	"ProgressBox ProgressBar"
+	{
+		textcolor=none
+		bgcolor=none
+	}
+	
+    ProgressBar
+    {
+		textcolor="Accent"
+		bgcolor="Progress.Back"
+		render
+		{
+			// lines around
+			//1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
+			//2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
+			//3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
+			//4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
+		}   
+	}
+    
+	"Page ProgressBar"
+    {
+		textcolor="Accent"
+		bgcolor="Progress.Back"
+		render
+		{
+			// lines around
+			//1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
+			//2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
+			//3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
+			//4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right  
+		}   
+    }
+	
+    PropertyPage
+    {
+		bgcolor="none"
+    }
+    
+    "CFriendsDialog PropertySheet"
+    {
+		bgcolor="none"
+    }
+    
+    RadioButton
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=Radio.Text
+		render_bg {}
+		image="graphics/custom/icons/rad"
+		bgcolor=none
+    } 
+	
+	RadioButton:hover
+    {
+		textcolor=Radio.Text.Hover
+		image="graphics/custom/icons/rad_hover"
+    }     
+  
+    RadioButton:selected
+    {
+		render_bg {}
+		image="graphics/custom/icons/rad_sel"  
+    }
+	
+	RadioButton:selected:hover //Since selected radio buttons cant be toggled, only change the text color
+    {
+		textcolor=Radio.Text.Hover
+		image="graphics/custom/icons/rad_sel"  
+    }
+    
+    RadioButton:focus
+    {
+		textcolor=Radio.Text
+		bgcolor=none
+		image="graphics/custom/icons/rad"
+    }
+	
+	RadioButton:focus:hover
+    {
+		textcolor=Radio.Text.Hover
+		bgcolor=none
+		image="graphics/custom/icons/rad_hover"
+    }
+
+    RadioButton:selected:focus
+    {
+		textcolor=Radio.Text  
+		bgcolor=none
+		image="graphics/custom/icons/rad_sel"
+    }
+	
+	RadioButton:selected:focus:hover
+    {
+		textcolor=Radio.Text.Hover  
+		bgcolor=none
+		image="graphics/custom/icons/rad_sel"
+    }
+    
+    RadioButtonList
+    {
+		bgcolor="none"
+		inset="-2 0 0 0"
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, List.Back  )"
+		}     
+    }
+        
+    RichText
+    {
+		textcolor=TextBox.Text
+		selectedtextcolor=TextBox.Active.Text		
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		inset="0 0 0 0"
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, TextBox.Back )"
+        
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+		}     
+    }
+         
+    RichTextInterior 
+	{
+		bgcolor=none
+    }
+    
+	// style of links in a rich text control
+	
+	"RichText url"
+	{
+		font-size=14
+		textcolor=URL.Text
+		selectedtextcolor=TextBox.Active.Text
+		font-style=underline
+	}
+	
+	"RichText url:hover"
+	{
+		textcolor=URL.Hover.Text
+	}
+	
+	"CFriendPanel RichText URL" 
+	{
+		textcolor=TextBox.Text
+		font-style=underline
+		font-size=14
+	}
+	
+	// style of bold text in a rich text control
+	"RichText bold"
+	{
+		font-size=15
+		font-weight=1000
+	}
+	
+	"RichText emphasis"
+	{
+		font-size=15
+		font-style=italic
+	}
+
+	ScrollBar
+	{
+		inset="0 0 0 0"
+	}
+    
+    ScrollBarButton.up
+    {
+		bgcolor=none
+		inset="-1 2 0 0"
+		image="graphics/custom/scroll/up"
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
+		}
+		
+    }
+    
+    ScrollBarButton.up:hover
+    {
+		bgcolor=none
+		inset="-1 2 0 0"
+		image="graphics/custom/scroll/up"
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Hover )"
+		}
+    }
+    
+    ScrollBarButton.up:active
+    {
+		inset="-1 2 0 0"
+		image="graphics/custom/scroll/up"
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Active )"
+		}
+    }
+
+    ScrollBarButton.up:disabled
+    {
+		inset="-1 2 0 0"
+		image="graphics/custom/scroll/up"
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, buttonfaceDisabled )"
+		}
+    }
+	
+    ScrollBarButton.down
+	{
+		bgcolor=none
+		inset="-2 0 0 0"
+		image="graphics/custom/scroll/down"
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
+		}
+    }
+    
+    ScrollBarButton.down:hover
+	{
+		inset="-2 0 0 0"
+		image="graphics/custom/scroll/down"
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Hover )"
+		}
+    }
+    
+    ScrollBarButton.down:active
+	{
+		inset="-2 0 0 0"
+		image="graphics/custom/scroll/down"
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Active )"
+		}
+    }
+    
+    
+    ScrollBarButton.down:disabled
+	{
+		inset="-2 0 0 0"
+		image="graphics/custom/scroll/down"
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, buttonfaceDisabled )"
+		}
+    }
+    
+    ScrollBarButton.left
+    {
+		bgcolor=none
+		inset="1 3 0 0"
+		image="graphics/custom/scroll/left"
+		render_bg 
+		{
+			// center fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
+		}
+    }
+    
+    ScrollBarButton.left:hover
+    {
+
+		image="graphics/custom/scroll/left"
+		inset="1 3 0 0"
+		render_bg 
+		{
+			// center fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Hover )"
+	    }
+    }
+        
+    ScrollBarButton.right
+    {
+		bgcolor=none
+		image="graphics/custom/scroll/right"
+		inset="0 2 0 0"
+		render_bg 
+		{
+			// center fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
+	    }
+    }
+        
+    ScrollBarButton.right:hover
+    {
+		image="graphics/custom/scroll/right"
+		inset="0 2 0 0"
+		render_bg 
+		{
+			// center fill
+			0="fill( x0, y0, x1, y1, Scroll.Button.Hover )"
+		}
+    }
+    
+    ScrollBarHandle  //vertical scrollbar thumb
+    {
+		bgcolor=none
+		//image="graphics/icon_scroll_handle"
+		render_bg 
+		{
+			// center fill
+			0="fill( x0, y0, x1, y1, Scroll.Bar.Back )"
+		}
+    }
+       
+    "ScrollBarHandle:hover"
+    {
+		//image="graphics/icon_scroll_handle_over"
+		render_bg 
+		{
+			// center fill
+			0="fill( x0, y0, x1, y1, Scroll.Bar.Hover )"
+		}
+    }
+    
+    "ScrollBarHandle:active"
+    {
+		//image="graphics/icon_scroll_handle_over"
+		render_bg 
+		{
+			// center fill
+			0="fill( x0, y0, x1, y1, Scroll.Bar.Active )"
+		}
+    }
+    
+
+ 
+    "SliderHoriz"  //horizontal scrollbar thumb
+    {
+		//image="graphics/icon_scroll_handle_horiz"
+		render 
+		{
+			// center fill
+			1="fill( x0, y0, x1, y1, Scroll.Bar.Back )"		
+		}
+    }
+    
+    "SliderHoriz:hover"
+    {
+	
+		//image="graphics/icon_scroll_handle_over_horiz"
+		render 
+      	{
+			// center fill
+			0="fill( x0, y0, x1, y1, Scroll.Bar.Hover )"	
+		}
+    }
+    
+    "SliderHoriz:active"
+    {
+	 
+    	//image="graphics/icon_scroll_handle_over_horiz"
+      	render {
+			// center fill
+        	0="fill( x0, y0, x1, y1, Scroll.Bar.Active )"	
+		}
+    }
+    
+    ScrollBarSlider // gutter
+    {
+		bgcolor="none"
+		render{ }
+		render_bg
+		{
+
+			//background fill
+			2="fill(x0, y0, x1, y1, Scroll.Back)"
+		}
+    }
+    
+    ScrollBarSliderHoriz // gutter
+    {
+		bgcolor="none"
+		render{ }
+		render_bg { }
+    }
+    
+   
+    "GamesPage_Details ListPanel ScrollBarSlider" // gutter in games list detail view 
+    {
+		bgcolor="none"
+		render{ }
+		render_bg
+		{
+			//background fill
+			0="fill( x0, y0, x1, y1, Scroll.Back)"
+		}
+    }
+    
+    ScrollBarSlider:disabled 
+    {
+		bgcolor="none"
+		render_bg {}
+    }
+    
+    "ScrollBar SliderHoriz" // gutter
+    {
+		bgcolor="none"
+    }
+
+	"HTML ScrollBar"
+	{
+		bgcolor="none"
+		render_bg { 
+			0="fill(x0,y0,x1, y1, Scroll.Back)"
+		}
+	}
+	"HTML ScrollBar.Horizontal"
+	{
+		bgcolor="none"
+		render_bg { 
+			0="fill(x0,y0,x1,y1, Scroll.Back)"
+		}
+	}
+	
+	"HTML ScrollBarSlider.Horizontal" 
+	{
+		bgcolor=none
+		render_bg {
+			//background fill
+			0="fill( x0, y0, x1, y1, Scroll.Back)"
+		}
+
+	}
+
+	"HTML SliderHoriz"
+	{
+		bgcolor=none
+		render_bg
+		{
+		}
+	}
+ 
+    SectionedListPanel
+    {
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=List.Text
+		selectedtextcolor=List.Text
+		selectedbgcolor=Accent
+		bgcolor="none"
+		inset="1 -1 1 1"  
+		render
+		{				
+
+		}
+		render_bg 
+		{
+			// background fill
+	   		1="fill( x0, y0, x1, y1, List.Back )"   		
+		}    
+    }  
+    
+    "CFriendsDialog SectionedListPanel"
+    {
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=List.Text
+		selectedtextcolor=List.Text
+		selectedbgcolor=Accent
+		render { }
+		render_bg 
+		{
+			// background fill
+	   		//0="gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )"
+	   		1="fill( x0, y0, x1, y1, Root.Back )"   		
+		}    
+    }
+    
+    SectionedlistpanelCollapser
+    {
+		render_bg 
+		{
+			1="fill( x0, y0, x1, y1 -2, List.Header )" 
+		}
+		bgcolor=none
+		image="graphics/custom/icons/plus"
+		inset="2 0 0 0"
+    } 
+	
+	"CFriendsDialog SectionedlistpanelCollapser"
+    {
+		render_bg 
+		{
+			1="fill( x0, y0, x1, y1 -2, Root.Header )" 
+		}
+		bgcolor=none
+		image="graphics/custom/icons/plus"
+		inset="2 0 0 0"
+    } 
+    
+    SectionedListPanelCollapser:hover
+    {
+		image="graphics/custom/icons/plus_hover"
+    }
+    
+    SectionedListPanelCollapser:selected
+    {
+		image="graphics/custom/icons/minus"
+    }
+	
+	"CFriendsDialog SectionedlistpanelCollapser:selected"
+    {
+		image="graphics/custom/icons/minus"
+    } 
+    
+    SectionedListPanelCollapser:selected:hover
+    {
+		image="graphics/custom/icons/minus_hover"
+    }
+  
+    Slider //XXX: ??? I guess these are in settings?
+    {
+		font-family=basefont
+		font-size=10
+		font-weight=400
+		textcolor=SubLabel.Text
+		//font-style=uppercase
+    }
+      
+    Slider:focus
+    {
+		textcolor=Label.Text 
+    }
+    
+    StatusLabel
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=Label.Text
+		font-style=normal   
+    }
+    
+    StatusLabelDim
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=SubLabel.Text
+		font-style=normal   
+    }
+
+    StatusLabel:hover
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor=Label.Text
+		//font-style=uppercase
+    }    
+
+    TextEntry
+    {
+		font-family=basefont
+		font-size=14
+		textcolor=TextBox.Text
+		font-weight=400
+		bgcolor="none"
+		selectedtextcolor=TextBox.Active.Text
+		selectedbgcolor=DefaultText.Back
+		shadowtextcolor=DefaultCursor  // this is the cursor color
+
+		inset-left=4
+		inset-top=0
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Back)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+		}     
+    }
+    
+	"Page TextEntry"
+    {
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Back)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+		}      
+    }
+	
+	TextEntry:hover
+	{
+		textcolor=TextBox.Hover.Text
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Back)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Hover )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Hover )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Hover )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Hover )"  // right
+		}
+	}
+	
+	"Page TextEntry:hover"
+	{
+		textcolor=TextBox.Hover.Text
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Back)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Hover )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Hover )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Hover )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Hover )"  // right
+		}
+	}
+    
+    TextEntry:focus //Active
+    {     
+		textcolor=TextBox.Active.Text
+		shadowtextcolor=TextBox.Active.Cursor
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Active)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Active )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Active )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Active )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Active )"  // right
+		}     
+    }
+       
+    "Page TextEntry:focus"
+    {     
+		textcolor=TextBox.Active.Text
+		shadowtextcolor=TextBox.Active.Cursor
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Active)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Active )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Active )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Active )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Active )"  // right
+		}      
+    }
+    
+    
+    TextEntry:disabled
+    {     
+		textcolor=TextBox.Disabled.Text
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Back)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+		}     
+    }
+    
+	// The 'empty' style is used for 'hint text' in text entry fields.
+	// If the text box does not have focus and does not have content, a
+	// hint text property will be shown with this style. This is comment
+	// to pre-fill to box with something like 'Search' that goes away when active
+	TextEntry:empty
+	{
+		font-style=italic
+		textcolor=TextBox.Disabled.Text
+	}
+	
+    TextEntryLarge //Used for password on login screen
+    {
+		font-family=basefont
+		font-size=18
+		textcolor=TextBox.Text
+		font-weight=400
+		bgcolor="none"
+		selectedtextcolor=TextBox.Active.Text
+		selectedbgcolor=DefaultText.Back
+		shadowtextcolor=DefaultCursor  // this is the cursor color
+
+		inset-left=4
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Back)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+		}   
+    }
+
+    TextEntryLarge:hover
+    {     
+		textcolor=TextBox.Hover.Text
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Back)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Hover )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Hover )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Hover )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Hover )"  // right
+		} 
+    }
+	
+	TextEntryLarge:focus
+    {     
+		textcolor=TextBox.Active.Text
+		shadowtextcolor=TextBox.Active.Cursor
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Active)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Active )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Active )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Active )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Active )"  // right
+		}  
+    }
+    
+    TextEntryLarge:disabled
+    {     
+		textcolor=TextBox.Disabled.Text
+		render_bg
+		{
+			0="fill(x0, y0, x1, y1, TextBox.Back)"
+			// lines around
+			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+		}  
+    }
+    
+    TextEntryURL
+	{
+		font-family=basefont
+		font-size=14
+		textcolor=URL.Text
+		font-weight=400
+		bgcolor="none"
+		selectedtextcolor=URL.Text
+		selectedbgcolor=DefaultText.Back
+		shadowtextcolor=DefaultCursor	// this is the cursor color
+		inset-left=0
+		inset-top=-1
+		render { }			
+	}
+
+	TextEntryURL:Hover
+	{
+		textcolor=URL.Hover.Text
+		render
+		{
+			// lines around
+			1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonFaceDisabled )"  // top
+			2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonFaceDisabled )"  // bottom
+			3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonFaceDisabled )"  // left
+			4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonFaceDisabled )"  // right
+		}			
+	}
+	
+	ToggleButton
+    {
+		inset="1 0 0 0"
+		inset="1 3 0 0" [$OSX]
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		textcolor=Button.Text
+		bgcolor=none
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Back )"
+		}
+    }
+  
+    ToggleButton:focus
+    {     
+        textcolor=Button.Text
+        bgcolor="none"
+	 	render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Back )"
+		}
+    }
+    
+    ToggleButton:hover
+    {
+		textcolor=Button.Hover.Text
+		bgcolor="none"
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Hover)"
+		}
+    }
+    
+    ToggleButton:selected
+    {
+		textcolor=Button.Active.Text
+		bgcolor="none"
+		render_bg
+		{
+        	// background fill
+			0="fill( x0, y0, x1, y1, Button.Active)"
+		}
+    }
+  
+    
+    "Page ToggleButton"
+    {
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		textcolor=Button.Text
+		bgcolor=none
+		render_bg
+		{
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Page.Back)"
+		}
+    }
+    
+    "Page ToggleButton:hover"
+    {
+		textcolor=Button.Hover.Text
+		bgcolor="none"
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, Button.Page.Hover)"
+		}
+    }
+  
+    "Page ToggleButton:focus"
+    {
+		textcolor=Button.Hover.Text
+		bgcolor="none"
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, Button.Page.Back )"
+		}
+    }
+   
+    "Page ToggleButton:selected"
+    {
+		textcolor=Button.Hover.Text
+		bgcolor="none"
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, Button.Active)"
+		}
+    }
+    
+    // the background and frame of a tooltip
+    TooltipWindow
+    {
+        bgcolor="Menu.Back"
+		render_bg{
+			1="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
+			2="fill( x0, y1 - 1, x1, y1, Menu.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, Menu.Outline )"  // left
+			4="fill( x1 - 1, y0, x1, y1, Menu.Outline )"  // right
+		}
+    }
+
+	// body text inside a tooltip
+    "TooltipWindow Label"
+    {
+		padding-left=4
+        textcolor=Label.Text
+    }
+    
+    // headline text inside a tooltip
+   	tooltip_headline
+   	{
+   		textcolor=SubLabel.Text
+   		padding-left=4
+   		padding-top=1
+   		padding-bottom=0
+   		font-weight=1000   		
+   	}
+   	
+    TreeNode
+    {
+		bgcolor=none
+		render_bg {}
+    }
+    
+    TreeNodeImage
+    {
+		bgcolor=none
+    }
+    
+    TreeViewSubPanel
+    {
+		bgcolor=none
+    }
+  
+    TreeNodeText
+    {
+		font-family=basefont
+		font-size=13
+		textcolor=DefaultText
+		selectedtextcolor=DefaultText
+		selectedbgcolor="TextSelectedBG"
+		bgcolor=none
+		render {}
+		render_bg {}
+    }
+  
+    TreeView //File list
+    {
+		render_bg
+		{
+			//-1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
+
+			// lines around
+			//1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
+			//2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
+			//3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
+			//4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
+        
+			// single pixel fills in the corners
+			//5="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+			//6="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+			//7="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+			//8="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+			//11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+			//12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+			//13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+			//14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+			//15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+			//16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+			//17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+			//18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+		}     
+    }
+    
+    URLLabel
+    {
+		textcolor=URL.Text
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		font-style=underline
+    }
+    
+   	URLLabel:Hover
+	{
+		textcolor=URL.Hover.Text
+		font-size=14
+	}
+		
+	URLLabelSimple
+    {
+		textcolor=URL.Text
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		font-style=regular
+    }
+
+	URLLabelSimple [$OSX]
+    {
+		textcolor="labelfocus"
+		bgcolor="none"
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		font-style=regular
+    }
+    
+	URLLabelSimple:Hover
+    {
+		font-style=underline
+		textcolor=URL.Hover.Text
+    }  
+    
+	URLLabelSimple2
+    {
+		textcolor=URL.Text
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		font-style=regular
+    }
+
+	URLLabelSimple2 [$OSX]
+    {
+		textcolor="labelfocus"
+		bgcolor="none"
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		font-style=regular
+    }
+    
+	URLLabelSimple2:Hover
+    {
+		textcolor=URL.Hover.Text
+    }  
+
+    
+    // Steam-specific styles
+    CConsoleHistory //TODO: Maybe i'll theme this. Maybe.
+    {
+		font-family="Lucida Console"
+		font-size=9
+		font-family="Menlo" [$OSX]
+		font-size=14 [$OSX]
+		textcolor=DefaultText
+		selectedtextcolor=DefaultText
+      
+		render
+		{				
+
+		}
+		render_bg 
+		{				
+			// background gradient        
+			1="fill( x0, y0, x1, y1, DefaultBackground )"
+		}
+    }
+    
+    GameColumnHeaderFavorites
+    {
+		image="steam/cached/fav_remove"
+    }
+    
+    CGamesListFavoritesToggle
+    {
+		image="graphics/custom/icons/fav_addTo"
+    }
+    
+    CGamesListFavoritesToggle:hover
+    {
+		image="graphics/custom/icons/fav_addTo_ovr"
+    }
+    
+    CGamesListFavoritesToggle:selected
+    {
+		image="graphics/custom/icons/fav_remove"
+    }
+
+    CGamesListFavoritesToggle:selected:hover
+    {
+		image="graphics/custom/icons/fav_remove_ovr"
+    }
+
+    WrapPanel //XXX: ?? I think this is used for screenshot library but HMM
+    {
+		inset="0 0 0 0"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Text"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor=Accent
+		bgcolor=none
+		inset="1 -1 1 1"
+		render_bg {
+			// background gradient
+			2="fill( x0, y0, x1, y1, white)"
+        }  
+    }
+	
+    FullscreenButton
+    {
+      bgcolor=none
+	  inset="12 0 0 0"
+      render_bg={}
+      image="graphics/custom/window_controls/fullscreen"
+    }
+    
+
+    FullscreenButton:hover
+    {
+      bgcolor="TitleBar.Hover"
+	  inset="12 0 0 0"
+      render_bg={}
+      image="graphics/custom/window_controls/fullscreen"
+    }
+	
+    FullscreenButton:active
+    {
+      bgcolor="TitleBar.Hover"
+	  inset="12 0 0 0"
+      render_bg={}
+      image="graphics/custom/window_controls/fullscreen"
+    }
+	
+    FullscreenButton:disabled
+    {
+      bgcolor=none
+	  inset="0 0 0 0"
+      render_bg={}
+      image=none
+    }
+    
+    VRButton
+    {
+	  inset="3 0 0 0"
+      bgcolor=none
+      render_bg={}
+      image="graphics/custom/vr"
+    }  
+
+    VRButton:hover
+    {
+      bgcolor=Menu.Hover
+      render_bg={}
+      image="graphics/custom/vr"
+    }
+	
+    VRButton:active
+    {
+      bgcolor=Menu.Hover
+      render_bg={}
+      image="graphics/custom/vr"
+    }
+	
+    VRButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="none"
+    }
+    
+    VRButtonExit
+    {
+      bgcolor=none
+	  textcolor=none
+      render_bg={}
+      image="graphics/custom/vr"
+    }  
+
+    VRButtonExit:hover
+    {
+      bgcolor=Menu.Hover
+      render_bg={}
+      image="graphics/custom/vr"
+    }
+	
+    VRButtonExit:active
+    {
+      bgcolor=Menu.Hover
+      render_bg={}
+      image="graphics/custom/vr"
+    }
+	
+    VRButtonExit:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/custom/vr"
+    }
+	
+	BackButton
+    {
+		bgcolor=none
+		inset="0 0 0 0"
+		render_bg={}
+		image="graphics/custom/back"
+    }
+	
+    BackButton:hover
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/back"
+    }
+	
+    BackButton:active
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/back"
+
+    }
+	
+    BackButton:disabled
+    {
+		bgcolor=none
+		image="graphics/custom/back_dis"
+		render_bg{}
+    }
+    
+    ForwardButton
+    {
+		bgcolor=none
+		inset="0 0 0 0"
+		render_bg={}
+		image="graphics/custom/forward"
+    }
+    
+    ForwardButton:hover
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/forward"
+    }
+	
+    ForwardButton:active
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/forward"
+    }
+	
+    ForwardButton:disabled
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/forward_dis"
+    }
+    
+    HomeButton
+    {
+		bgcolor=none
+		inset="5 0 0 0"
+		render_bg={}
+		image="graphics/custom/home"
+    }
+    
+    HomeButton:hover
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/home"
+		render_bg={
+			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+		}
+    }
+	
+    HomeButton:active
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/home"
+		render_bg={
+			0="fill(x0,y0,x1,y1,Accent)"
+		}
+    }
+	
+    HomeButton:disabled
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/home"
+    }
+	
+    ReloadButton
+    {
+		bgcolor=none
+		inset="5 0 0 0"
+		render_bg={}
+		image="graphics/custom/reload"
+    }
+    
+    ReloadButton:hover
+    {
+		bgcolor=none
+		image="graphics/custom/reload"
+		render_bg={
+			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+		}
+    }
+
+    ReloadButton:active
+    {
+		bgcolor=none
+		image="graphics/custom/reload"
+		render_bg={
+			0="fill(x0,y0,x1,y1,Accent)"
+		}
+    }
+
+    ReloadButton:disabled
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/reload"
+    }
+    
+    StopButton
+    {
+		bgcolor=none
+		inset="5 0 0 0"
+		render_bg={}
+		image="graphics/custom/stop"
+    }
+    
+    StopButton:hover
+    {
+		bgcolor=none
+		image="graphics/custom/stop"
+		render_bg={
+			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+		}
+    }
+
+    StopButton:active
+    {
+		bgcolor=none
+		image="graphics/custom/stop"
+		render_bg={
+			0="fill(x0,y0,x1,y1,Accent)"
+		}
+    }
+
+    StopButton:disabled
+    {
+		bgcolor=none
+		render_bg={}
+		image="graphics/custom/stop"
+    }
+	
+	"html-findbar"
+ 	{
+		font-family=basefont
+		font-size=14
+		textcolor=DefaultText
+		font-weight=400
+		bgcolor="DefaultBackground"
+		selectedtextcolor=DefaultText
+		selectedbgcolor=DefaultText.Back
+		shadowtextcolor=DefaultCursor	// this is the cursor color
+		inset-left=0
+		inset-top=0
+		
+		render
+		{
+			// lines around
+		    1="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
+			2="fill( x0, y1 - 1, x1, y1, Menu.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, Menu.Outline )"  // left
+			4="fill( x1 - 1, y0, x1, y1, Menu.Outline )"  // right
+		}     	
+	}
+		
+ 	"html-imebar" 
+ 	{
+		font-family=basefont
+		font-size=14
+		textcolor=DefaultText
+		font-weight=400
+		bgcolor="DefaultBackground"
+		selectedtextcolor=DefaultText
+		selectedbgcolor=DefaultText.Back
+		shadowtextcolor=DefaultCursor	// this is the cursor color
+		inset-left=0
+		inset-top=0
+		
+		render
+		{
+		    // lines around
+		    1="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
+			2="fill( x0, y1 - 1, x1, y1, Menu.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, Menu.Outline )"  // left
+			4="fill( x1 - 1, y0, x1, y1, Menu.Outline )"  // right
+		}     	
+	}
+      
+	gamedetails-headerlabel
+	{
+		font-size="20"
+		font-style="normal"
+		font-family=basefont
+		font-weight=700
+		textcolor=DefaultText
+		//font-style="uppercase;"
+	}
+
+	gamedetails-headerlabel-red
+	{
+		font-size="20"
+		font-style="normal"
+		font-family=basefont
+		font-weight=700
+		textcolor="Accent"
+		//font-style="uppercase;"
+	}
+ 	
+	gamedetails-headerlabel-green
+	{
+		font-size="20"
+		font-style="normal"
+		textcolor="Accent"
+		font-family=basefont
+		font-weight=700
+		//font-style="uppercase;"
+	}
+
+	gamedetails-headerlabel-blue
+	{
+		font-size="20"
+		font-style="normal"
+		textcolor="Accent"
+		font-family=basefont
+		font-weight=700
+		//font-style="uppercase;"
+	}
+	
+	// styles for text used in RichText controls in various places
+	
+	console_text_error
+	{
+		textcolor="Accent"
+		font-size=14
+		font-family="Menlo" [$OSX]
+      	font-size=16 [$OSX]
+		selectedtextcolor=DefaultText
+		selectedbgcolor=DefaultText.Back
+	}
+	
+	console_text
+	{
+ 		font-family="Lucida Console"
+		font-size=9
+		font-family="Menlo" [$OSX]
+      	font-size=14 [$OSX]
+	    textcolor=DefaultText
+		selectedtextcolor=DefaultText	
+		selectedbgcolor=DefaultText.Back
+	}
+	
+	friends_chat_text //TODO: Chat text colors
+	{
+		textcolor="text"
+		selectedtextcolor="TextentrySelected"	
+		SelectedBgColor=DefaultText.Back
+		font-size=16
+	}
+	
+	friends_chat_text_self
+	{
+		textcolor="ChatOwnTextColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor=DefaultText.Back
+		font-size=16
+	}
+
+	friends_chat_history
+	{
+		textcolor="ChatDialog.HistoryColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor=DefaultText.Back
+		font-size=16
+	}
+	
+	friends_chat_event
+	{
+		textcolor="Text"
+		font-size=16
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor=DefaultText.Back
+	}
+
+	friends_chat_bright_event
+	{
+		textcolor="text"
+		selectedtextcolor="TextentrySelected"
+		font-size=16
+		font-weight=1000
+	}
+
+	friends_chat_url
+	{
+		textcolor=URL.Text
+		font-style=underline
+		font-size=16
+		selectedtextcolor=URL.Hover.Text
+		selectedbgcolor=DefaultText.Back
+	}
+	
+	friends_chat_name_ingame
+	{
+		textcolor="Friends.InGameColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+	}
+
+	friends_chat_name_golden
+	{
+		textcolor="Friends.GoldenColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+	}
+
+	
+	friends_chat_self
+	{
+		textcolor="Friends.OnlineColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+	}
+	
+	friends_chat_name
+	{
+		textcolor="Friends.OnlineColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+	}
+	
+	friends_chat_accountid
+	{
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		textcolor="text"
+		font-size=16
+	}
+	
+	friends_chat_securitylink
+	{
+		textcolor="text"
+		bgcolor="none"
+		font-family=basefont
+		font-size=16
+		font-weight=400
+		font-style=underline
+		selectedtextcolor="TextSelected"	
+		selectedbgcolor="Focus"
+	}
+	
+	CChatRoomDlg //TODO: Here lies (some) chat window things. May god have mercy on your soul
+	{			
+		bgcolor="none"
+
+		render
+		{
+		}
+		render_bg
+		{	
+			0="fill(x0,y0,x1,y1,DefaultBackground)"
+		}
+
+	}
+		
+	ChatListPanel
+	{	
+		render {}
+
+		render_bg
+		{
+			0="fill( x0, y0, x1, y1, black )"
+		}
+	}
+		
+	Chat_MenuButton_withChrome
+	{
+		font-family=basefont
+		//font-style="uppercase"
+		font-size="13"
+		font-weight=400
+		textcolor=DefaultText
+		bgcolor="none"
+		minimum-width=120
+		render_bg 
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Back )"             
+		}
+	}
+	
+	Chat_MenuButton_withChrome:disabled
+	{
+		textcolor=DefaultText.Disabled
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, none )"   
+		}
+    }    
+    
+   	// used in friends tooltip and friends list for overriding regular styles with custom colors
+   	friends_offline
+   	{
+   		textcolor="Friends.OfflineColor"
+   	}
+   	
+    friends_offline:hover
+   	{
+   		textcolor="Friends.OfflineHoverColor"
+   	}
+   	
+   	friends_online
+   	{
+   		textcolor="Friends.OnlineColor"
+   	}
+   	
+   	friends_online:hover
+   	{
+   		textcolor="Friends.OnlineHoverColor"
+   	}
+   	
+   	friends_ingame
+   	{
+   		textcolor="Friends.InGameColor"
+   	}
+   	   	
+   	friends_ingame:hover
+   	{
+   		textcolor="Friends.InGameHoverColor"
+   	}
+
+   	friends_golden
+   	{
+   		textcolor="Friends.GoldenColor"
+   	}
+   	   	
+   	friends_golden:hover
+   	{
+   		textcolor="Friends.GoldenHoverColor"
+   	}
+   	
+   	friends_ignored
+   	{
+   		textcolor="Friends.IgnoredColor"
+   	}
+
+   	
+   	TabPageCloseButton
+   	{
+   		padding-right=16
+   	}
+
+	SuperNavMenu
+	{
+		padding-left=8
+		padding-right=8
+
+		render {}
+
+		render_bg
+		{
+			// top area and graphic
+			0="fill( x0, y0, x1, y1, Menu.Back )"
+			1="fill(x0, y0, x0+1, y1, Menu.Outline)" //left
+			2="fill(x1-1, y0, x1, y1, Menu.Outline)" //right
+			3="fill(x0, y0, x1, y0+1, Menu.Outline)" //top
+			4="fill(x0, y1-1, x1, y1, Menu.Outline)" //bottom
+		}
+	}
+
+	SuperNavMenuItem
+	{
+		//padding-top=1
+		font-size=14
+		font-weight=regular
+		textcolor=Menu.Text
+		bgcolor=none
+		//font-style="uppercase"
+	}
+
+	SuperNavMenuItem:selected
+	{
+		textcolor=Menu.Text
+		render_bg
+		{
+			// top area and graphic
+			0="fill( x0+1, y0+1, x1-1, y1-1, Menu.Hover )"
+		}
+	}
+
+	SuperNavMenuItem:hover
+	{
+		textcolor=Menu.Text
+		render_bg
+		{
+			// top area and graphic
+			0="fill( x0+1, y0+1, x1-1, y1-1, Menu.Hover )"
+		}
+	}
+
+	"SuperNavMenuDivider" //Pretty sure this uses MenuDivider anyway, why bother having two
+	{
+		textcolor="none"
+		render {
+			//1="fill( x0+6, y0+1, x1-6, y0+2, Menu.Div )"
+		}
+	}
+	
+	"NotifyRemoteClientTitle" //XXX:??
+	{
+		textcolor="DefaultText"
+	}
+	
+	"NotifyRemoteClientInfo"
+	{
+		textcolor="176 172 165 255"
+	}
+	
+  }
+}

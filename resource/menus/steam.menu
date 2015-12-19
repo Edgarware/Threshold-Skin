@@ -1,0 +1,49 @@
+"menubar"
+{
+	Steam
+	{
+		text = [!$OSX]	"#steam_menu_file"	
+		text = [$OSX]	"#SteamRootAccount"	
+		
+		MyAccount						{	text="My Account"						shellcmd="steam://url/StoreAccount/" }
+		GoOnline						{	text="Go Online"						command="goonline" }
+		GoOffline						{	text="Go Offline"						command="gooffline" }
+		ChangeUser						{	text="Change User"						command="ChangeUser" }
+
+		Divider							{}
+
+		Friends							{	text="#steam_menu_friends"				shellcmd="steam://open/friends" }
+		ViewPlayerList					{	text="#steam_menu_view_players"			shellcmd="steam://friends/players" }
+		Servers							{	text="#steam_menu_servers"				shellcmd="steam://open/servers" }
+		Screenshots						{	text="#steam_screenshots"				command="screenshots" }
+		Downloads						{	text="#steam_menu_downloads"			shellcmd="steam://nav/downloads" }
+
+		Divider							{}
+		
+		MiniMode						{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
+		LargeMode						{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
+		StartVR							{	text="#steam_menu_startvr"				shellcmd="steam://run/250820" }
+		ExitVR							{	text="#steam_menu_exitvr"				command="exitvr" }
+		BigPictureMode					{	text="#steam_menu_bigpicturemode" 		shellcmd="steam://open/bigpicture" } 
+		MusicDetails					{	text="#steam_menu_view_music_details"			shellcmd="steam://nav/music/details" }
+		MusicPlayer						{	text="#steam_menu_view_musicplayer"		shellcmd="steam://open/musicplayer" }
+		
+		Divider							{}
+
+		AddShortcut						{ 	text="Add Non-Steam Games"				shellcmd="steam://AddNonSteamGame" }
+		ActivateRetail					{ 	text="Activate Products"				command="ActivateRetail" }
+		BackupGames						{	text="Backup and Restore"				command="backupgames" }
+		RedeemWalletVoucher				{	text="Redeem Steam Wallet Codes"		shellcmd="steam://url/RedeemWalletVoucher" }
+		CheckForUpdates					{	text="Check for Updates"				command="CheckForUpdates" }
+		UpdateVideoDrivers	[$WINDOWS||$LINUX]	{	text="#steam_menu_updatevendorgraphicscard"		command="UpdateVideoDrivers" }
+		CheckForVideoDriverUpdates	[$WINDOWS||$LINUX]	{	text="#steam_menu_checkforvideodriverupdates"	command="CheckForVideoDriverUpdates" }
+		Support							{	text="#steam_menu_support"				command="Support" }
+
+		Divider							{}
+		
+		Settings						{	text="#steam_menu_settings"				command="Settings" }
+		Restart 						{	text="Restart"							command="RestartSteam" }
+		Exit							{	text="#Steam_ExitSteam"					command="Exit" }
+		About							{	text="#steam_about"						command="About" }
+	}
+}

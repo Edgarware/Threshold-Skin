@@ -1,0 +1,1 @@
+To change sidebar width, copy the contents of the appropriate folder to the root of the skin (where config.ini is). Confirm you want to replace files, then restart steam.

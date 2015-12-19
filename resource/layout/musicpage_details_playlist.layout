@@ -1,0 +1,146 @@
+"resource/layout/musicpage_details_playlist.layout"
+{
+	controls
+	{
+		PlaylistTitleLabel { controlname="Label" style="PlaylistTitleStyle" }
+		TracksInfoLabel { controlname="Label" style="TracksInfoLabelStyle" }
+		CoverImage { controlname="ImagePanel" style="CoverStyle" scaling=fit}
+		
+		PlayPlaylistButton { 
+			controlname="Button" 
+			labeltext="#Music_Playlist_Details_Play" 
+			style="ActionButtonStyle"
+			command="PlaylistPlayAction"
+		}
+		
+		AddPlaylistToQueueButton
+		{
+			controlname="Button" 
+			labelText="#Music_Playlist_Details_AddToQueue" 
+			style="AdditionalActionButtonStyle"
+			command="PlaylistAddToQueueAction"
+		}	
+
+		AddRandomTracksToPlaylistButton
+		{
+			controlname="Button" 
+			labelText="#Music_Playlist_Details_AddRandomTrack" 
+			style="AdditionalActionButtonStyle"
+			command="PlaylistAddRandomTracksAction"
+		}	
+		
+	}
+
+	styles
+	{
+		CMusicPage_Details_Playlist
+		{
+			bgcolor=none
+			render_bg 
+			{				
+				0="fill( x0, y0, x1, y1, Root.Back )"
+			}
+
+		}
+		
+		PlaylistTitleStyle
+		{
+			font-size=42
+			textcolor=DefaultText
+			font-family=basefont
+			font-weight=400 
+		}
+		
+		TracksInfoLabelStyle
+		{
+			font-size=15
+			textcolor=DefaultText.Hover
+			font-family=basefont
+			font-weight=400 
+			bgcolor=none
+		}
+		
+		TrackStyle
+		{
+			padding-bottom=10
+			padding-top=0
+			font-size=15
+			textcolor=DefaultText
+			font-family=basefont
+			font-weight=400 
+			bgcolor=none
+			render_bg{
+				//0="fill(x0,y1-1,x1,y1, Menu.Div)"
+			}
+		}
+		
+		TrackStyle:hover
+		{
+			textcolor=DefaultText.Hover
+		}
+		
+		CoverStyle
+		{
+
+		}
+		
+		AdditionalActionButtonStyle
+		{
+			font-size=14
+			font-size=13 [$OSX]
+			font-family=basefont
+			textcolor=DefaultText
+			render_bg	{}
+		}
+		
+		AdditionalActionButtonStyle:hover
+		{
+			textcolor=DefaultText.Hover
+		}
+		
+		
+		ActionButtonStyle
+		{   
+			inset="15 0 0 0"
+			font-size=14
+			font-size=13 [$OSX]
+			font-family=basefont
+			textcolor=DefaultText
+			render_bg	{}
+
+			render
+			{
+				1="image( x0, y0 + 5, x1, y1, graphics/custom/music/play )"
+			}
+		}
+		ActionButtonStyle:hover
+		{
+			textcolor=DefaultText.Hover
+			render
+			{
+				1="image( x0, y0 + 5, x1, y1, graphics/custom/music/play_hover )"
+			}
+		}
+		
+		ActionButtonStyle:active
+		{
+			textcolor=DefaultText.Hover
+			render
+			{
+				1="image( x0, y0 + 5, x1, y1, graphics/custom/music/play )"
+			}
+		}
+}
+	layout
+	{
+		region { name=bodyregion x=10 y=10 width=max height=max overflow=scroll-vertical }		
+		
+		place { control="CoverImage" align=top width=200 height=200 region=bodyregion x=0 y=0} //Dont think this is used
+		
+		place { control="PlaylistTitleLabel" region=bodyregion start=CoverImage dir=right x=20 y=0 }
+		place { control="TracksInfoLabel" region=bodyregion start=PlaylistTitleLabel y=5 dir=down}
+		place { control="PlayPlaylistButton" region=bodyregion y=5 start=TracksInfoLabel dir=down}
+		place { control="AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton" region=bodyregion dir=right spacing=5 start=PlayPlaylistButton}
+		place { control=*MusicPageDetailsPlaylistTrack dir=down y=120 x=0 width=max region=bodyregion}
+	}
+}
