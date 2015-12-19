@@ -748,6 +748,7 @@
 	layout
 	{
 		region {name=hidden width=0 height=0}
+		region {name=sidebarbottom width=200 height=50 align=bottom}
 		
 		place [!$OSX] { control="New" width=72 height=32 y=0 width=max align=right margin-right=180}
 		place [$OSX]  { control="New" width=145 height=32 y=0 width=max align=right margin-right=-20}
@@ -760,8 +761,7 @@
 
 		//place [$OSX]  { control="account_balance, account_balance_seperator, account_URL, universe_label, fullscreen" align=right margin-top=12 margin-right=15 spacing=7 }
 		
-		place { control="InboxButton" height=50 width=50 x=0 align=bottom}
-		place { control="startVR, exitVR, ParentalLockButton, SupportAlert" start=InboxButton height=50 width=50 spacing=0 dir=right}
+		place { control="SupportAlert, ParentalLockButton, exitVR, startVR, InboxButton" region=sidebarbottom align=right height=50 width=50 spacing=0 dir=right}
 
 		place [!$OSX]  { control="fullscreen,frame_minimize,frame_maximize,frame_close" align=right margin-top=0 margin-right=0 width=46 height=32 spacing=0 }
 		place [$OSX] { control="frame_close,frame_minimize,frame_maximize" align=left margin-top=10 margin-left=4 spacing=-7 }
