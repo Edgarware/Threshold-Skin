@@ -220,7 +220,7 @@
 		region { name=chat width=max height=max margin-bottom=42}
 		place { control="TitlePanel" region=chat margin-left=6 y=2 height=50 width=max margin-right=6}
 		place { control="VoiceBar" region=chat y=34 height=24 width=max margin-left=8 margin-right=52 }
-		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory" region=chat width=max height=max margin-bottom=42 margin-top=55}
+		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory" dir=down region=chat width=max height=max margin-bottom=42 margin-top=55}
 		place { control="EmoticonButton" region=chat height=42 align=bottom-right }
 		place { control="TextEntry" align=bottom region=chat end-right="EmoticonButton" height=42 width=max }
 		

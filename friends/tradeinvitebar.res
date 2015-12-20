@@ -24,13 +24,13 @@
 		CTradeInviteBar
 		{
 			render_bg {
-				0="fill( x0, y0 + 2, x1, y1 - 2, invitebg )"		// fill the center
-				1="fill( x0 + 2, y0, x1 - 2, y0 + 2, invitebg )"	// top
-				2="fill( x0 + 2, y1 - 2, x1 - 2, y1, invitebg )"	// bottom
+				0="fill( x0, y0, x1, y1, DefaultBackground )"		// fill the center
+				//1="fill( x0 + 2, y0, x1 - 2, y0 + 2, invitebg )"	// top
+				//2="fill( x0 + 2, y1 - 2, x1 - 2, y1, invitebg )"	// bottom
 
-				3="fill4( x0 + 1, y0 + 1, x0 + 2, y0 + 2, invitebg )"	// top-left
-				4="fill4( x0 + 1, y0, x0 + 2, y0 + 1, invitebg, 127 )"	// 
-				5="fill4( x0, y0 + 1, x0 + 1, y0 + 2, invitebg, 127 )"	// 
+				//3="fill4( x0 + 1, y0 + 1, x0 + 2, y0 + 2, invitebg )"	// top-left
+				//4="fill4( x0 + 1, y0, x0 + 2, y0 + 1, invitebg, 127 )"	// 
+				//5="fill4( x0, y0 + 1, x0 + 1, y0 + 2, invitebg, 127 )"	// 
 			}
 		}
 		
@@ -40,21 +40,20 @@
 			render_bg { }
 			bgcolor=none
 			font-style=none
+			textcolor=DefaultText
 		}
 		
-		Label
-		{
-			textcolor="41 41 40 255"
-		}
-		
-		Button
-		{
-			textcolor="41 41 40 255"
-		}
 		Button:hover
 		{
-			textcolor=white
+			textcolor=DefaultText.Hover
 		}
+		
+		//Label
+		//{
+		//	textcolor="41 41 40 255"
+		//}
+		
+		
 	}
 	
 	layout
