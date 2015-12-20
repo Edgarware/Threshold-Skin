@@ -117,7 +117,7 @@
 		URLStatusImage
 		{
 		bgcolor=none
-			inset="12 10 0 0"		
+			inset="0 0 0 0"		
 			render{
 			}
  		}
