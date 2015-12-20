@@ -313,8 +313,11 @@
 			font-family=basefont
 			font-size=24
 			font-weight=400
-			inset="-2 0 0 0"
 			textcolor=Root.Label.Text
+			inset="12 0 0 0"
+			render{
+				0="image(x0+7,y0+18,x1,y1,graphics/custom/icons/down)"
+			}
 		}
 
 		NavLabel2 [$OSX]
@@ -329,11 +332,19 @@
 		NavLabel2:hover
 		{
 			textcolor=Root.Label.Hover.Text
+			inset="12 0 0 0"
+			render{
+				0="image(x0+7,y0+18,x1,y1,graphics/custom/icons/down_hover)"
+			}
 		}	
 		
 		NavLabel2:selected
 		{
 			textcolor=Root.Label.Text
+			inset="12 0 0 0"
+			render{
+				0="image(x0+7,y0+18,x1,y1,graphics/custom/icons/down)"
+			}
 		}
 		
 		Panel_transparent

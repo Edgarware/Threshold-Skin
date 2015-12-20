@@ -1,0 +1,779 @@
+"resource/layout/steamrootdialog.layout"
+{
+	controls
+	{
+
+			
+		"fullscreen"
+		{
+			"ControlName"		"Button"
+			style="FullscreenButton"
+			command="fullscreen"
+			tooltiptext="#tooltip_view_fullscreen" 
+		}
+		
+		"startvr"
+		{
+			"ControlName"		"Button"
+			style="VRButton"
+      			command="url steam://run/250820"
+     			tooltiptext="#tooltip_view_vr_start" 
+		}
+    
+		"exitvr"
+		{
+			"ControlName"		"Button"
+			style="VRButtonExit"
+			command="exitvr"
+			tooltiptext="#tooltip_view_vr_exit" 
+		}
+		
+		"New"
+		{
+		"ControlName" 	"URLLabel"
+		style="new_label"
+		"URLText"		"http://store.steampowered.com/uiupdate"
+		zpos=-2
+		}
+		
+		"UINavigatorPanel"
+		{
+			"ControlName"		"CUINavigatorPanel"
+			zpos=-2
+		}	
+		
+		"UIStatusPanel"
+		{
+			"ControlName"		"CUIStatusPanel"
+			zpos=-2
+		}	
+		
+		"MenuBar"
+		{
+			"ControlName"		"MenuBar"
+			style=RootMenu
+		}
+		
+		SupportAlert
+		{
+			ControlName=Button
+			labelText="#Steam_SupportAlert"
+			style="support_alert"
+			textAlignment=center
+			command="OpenSupportAlertWindow"
+		}	
+
+		ParentalLockButton
+		{
+			ControlName=ToggleButton
+			style="parental_lock_button"
+			labelText=""
+			text=""
+			command="ParentalLock"
+		}
+		
+		InboxButton
+		{
+			ControlName=MenuButton
+			style="inbox_button"
+			textAlignment=west
+		}	
+		
+		add_game
+		{
+			"ControlName"		"MenuButton"
+			labelText="#steam_client_add_game"
+			style="AddGameButton"
+		}
+		
+		frame_title
+		{
+			ControlName=Label
+	
+			style="ClientTitle"
+			"textAlignment"   "west"
+			"textAlignment"   "center" [$OSX]
+		}
+		
+		account_url
+		{
+			"ControlName"		"MenuButton"
+			"fieldName"		"account_url"
+			"labelText"		"#Steam_Account_Name"
+			style="AccountURLStyle"
+		}
+		
+		
+		account_balance
+		{
+			"ControlName"	"URLLabel"
+			"fieldName"		"account_balance"
+			"labelText"		""
+			"URLText"		"steam://url/StoreWallet/"
+			style="AccountBalanceStyle"
+		}
+		
+		account_balance_seperator
+		{
+			"ControlName"	"Label"
+			"fieldName"		"account_balance_seperator"
+			"labelText"		"|"
+			style="AccountBalanceSeparatorStyle"
+		}
+		
+		universe_label
+		{
+			ControlName=Label
+			labelText=#Steam_Universe_Internal
+		}
+
+		view_friends
+		{
+			ControlName=URLLabel
+			labelText="#Steam_ViewFriends"
+			"URLText"	"steam://open/friends"
+			style="view_friends"
+			textAlignment=east
+		}
+		online_friends
+		{
+			ControlName=Label
+			labelText="#Steam_OnlineFriends"
+			style="online_friends"
+			textAlignment=east
+			zpos=-1
+		}
+	}
+	
+	styles
+	{    		
+				
+		AccountBalanceStyle
+		{
+		    textcolor=Root.SubLabel.Text
+		    bgcolor="none"
+		    font-family=basefont
+		    font-size=13
+		    font-style=regular
+			inset="0 1 0 0"
+		}
+
+		AccountBalanceStyle [$OSX]
+		{
+		    textcolor=Root.SubLabel.Text
+		    bgcolor="none"
+		    font-family=basefont
+		    font-size=13
+		    font-weight=400
+		    font-style=regular
+		    inset="0 1 0 0"
+		}
+    
+		AccountBalanceStyle:Hover
+		{
+		    textcolor=Root.SubLabel.Text
+		}  
+		
+		AccountBalanceSeparatorStyle
+		{
+			textcolor=Root.SubLabel.Text
+			font-family=basefont
+			font-size=13
+			font-weight=400
+		    font-style=regular
+			inset="0 0 0 0"
+		}
+		
+		new_label	
+		{			
+			bgcolor=none
+			render{
+				0="image(x0,y0,x1,y1,graphics/custom/tmp/beta)"
+			}
+			inset="0 0 0 0"
+		}
+		
+		new_label:hover
+		{
+			bgcolor=none
+			render{
+				0="image(x0,y0,x1,y1,graphics/custom/tmp/beta)"
+			}
+			inset="0 0 0 0"
+		}
+
+		new_label_german
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_german"
+			inset="0 0 0 0"
+		}
+
+		new_label_german:hover
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_hover_german"
+			inset="0 0 0 0"
+		}
+
+		new_label_french
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_french"
+			inset="0 0 0 0"
+		}
+
+		new_label_french:hover
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_hover_french"
+			inset="0 0 0 0"
+		}
+		
+		new_label_italian
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_italian"
+			inset="0 0 0 0"
+		}
+
+		new_label_italian:hover
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_hover_italian"
+			inset="0 0 0 0"
+		}
+		
+		new_label_spanish
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_spanish"
+			inset="0 0 0 0"
+		}
+
+		new_label_spanish:hover
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_hover_spanish"
+			inset="0 0 0 0"
+		}
+		
+		new_label_danish
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_danish"
+			inset="0 0 0 0"
+		}
+
+		new_label_danish:hover
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_hover_danish"
+			inset="0 0 0 0"
+		}
+		
+		new_label_norwegian
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_norwegian"
+			inset="0 0 0 0"
+		}
+
+		new_label_norwegian:hover
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_hover_norwegian"
+			inset="0 0 0 0"
+		}
+		
+		new_label_swedish
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_swedish"
+			inset="0 0 0 0"
+		}
+
+		new_label_swedish:hover
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/new_button_hover_swedish"
+			inset="0 0 0 0"
+		}
+		
+		RootMenu
+		{
+			bgcolor="none"
+		}
+
+		AddGameButton
+		{
+			font-size=14
+			font-size=13 [$OSX]
+			font-family=basefont
+			textcolor="labelfocus"
+			padding-right=30
+			padding-left=17
+			font-style=uppercase
+			render_bg
+			{
+				//0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse )"
+			}
+		}
+		
+		AddGameButton:hover
+		{
+			textcolor="white"
+			render_bg
+			{
+				//0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse_over )"
+			}
+		}	
+		
+
+
+		CSteamRootDialog
+		{
+			bgcolor=none
+
+
+			render_bg
+			{
+				// top area and graphics
+				1="fill( x0, y0, x0+200, y1, Root.LeftCol)"
+				2="fill( x0, y0, x1, y0+72, Root.Header)"
+				//3="fill( x0+200, y0, x0+475, y0+72, Search.Back)"
+				4="fill( x0, y1-50, x0+200, y1, Root.LeftCol.Bottom )"
+			}
+			render{
+				0="image (x0+15, y0+154, x1, y1, graphics/custom/store)"
+				1="image (x0+15, y0+199, x1, y1, graphics/custom/library)"
+				2="image (x0+15, y0+244, x1, y1, graphics/custom/community)"
+				3="image (x0+15, y0+289, x1, y1, graphics/custom/me)"
+			}
+		}		
+		
+		"MenuBar MenuButton" 
+		{
+			textcolor="none"
+			inset="0 0 0 0"
+			render{
+				0="image(x0+17,y0+14,x1,y1,graphics/custom/menu)"
+			}
+		}
+		
+		"MenuBar MenuButton:hover" 
+		{
+			render_bg {
+				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+			}
+		}
+		
+		"MenuBar MenuButton:frameFocus:hover" 
+		{
+			render_bg {
+				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+			}
+		}
+		
+		"MenuBar MenuButton:frameFocus:selected" 
+		{
+			render_bg {
+				0="fill(x0,y0,x1,y1,Accent)"
+			}
+
+		}
+		
+		ClientTitle [!$OSX]
+		{
+			textcolor=none
+		}
+
+		ClientTitle [$OSX]
+		{
+			font-family=basefont
+			font-size=15
+      		font-weight=400
+      		textcolor="textdisabled"
+      		bgcolor="none"
+      		inset="0 12 0 0"
+		}
+
+		ClientTitle:FrameFocus [$OSX]
+		{
+			font-family=basefont
+   			font-size=15
+   			font-weight=400
+   			textcolor="texthover"
+   			bgcolor="none"
+   			inset="0 12 0 0"
+		}
+
+		view_friends [!$OSX]
+		{
+			textcolor=none
+			bgcolor="none"
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			font-style=regular,uppercase
+		}
+
+		view_friends [$OSX]
+		{
+			textcolor=none
+			bgcolor="none"
+			font-family=basefont
+			font-size=13
+			font-weight=400
+			font-style=regular,uppercase
+			padding-top=6
+			padding-left=24
+			padding-bottom=30
+
+		}
+
+		online_friends [!$OSX]
+		{
+			textcolor=Root.SubLabel.Text
+			bgcolor="none"
+			font-family=basefont
+			font-size=13
+			font-weight=400
+			font-style=regular
+		}
+
+		online_friends [$OSX]
+		{
+			textcolor="label2"
+			bgcolor="none"
+			font-family=basefont
+			font-size=13
+			font-style=regular
+		}
+
+		online_friends:disabled
+		{
+			textcolor=Root.LeftCol.Disabled
+		}
+		
+		online_friends:hover
+		{
+			textcolor=Root.SubLabel.Text
+		}
+
+		support_alert
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=DefaultText
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				0="fill( x0, y0 + 3, x1-1, y1, parental_lock_inactive1 )"
+			}
+		}
+		
+		support_alert:hover
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=DefaultText
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				0="fill( x0, y0 + 3, x1-1, y1, parental_lock_inactive3 )"
+			}
+		}
+
+
+
+		inbox_button [!$OSX]
+		{
+			font-family=basefont
+			font-size=14 
+			font-weight=800
+			font-style=none
+			textcolor=Root.LeftCol.Text
+
+			render 
+			{
+				0="fill(x0+15,y0+17,x0+35,y0+32,Root.Label.Text)"
+				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+			}
+			render_bg
+			{
+				
+			}	
+		}
+		
+		inbox_button [$OSX]
+		{
+			font-family=basefont
+			font-size=13 
+			font-weight=800
+			font-style=none
+			textcolor=DefaultText
+
+			render 
+			{
+			}
+			render_bg
+			{
+			}	
+		}
+
+		inbox_button:hover
+		{
+
+			render 
+			{
+				0="fill(x0+15,y0+17,x0+35,y0+32,Root.Label.Text)"
+				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, Menu.Hover)"
+			}	
+		}
+
+		inbox_button:selected
+		{
+
+			render 
+			{
+				0="fill(x0+15,y0+17,x0+35,y0+32,Root.Label.Text)"
+				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+			}
+			render_bg
+			{
+				// background fill
+				
+				0="fill(x0,y0,x1,y1,Menu.Hover)"
+			}	
+		}
+
+		inbox_button:disabled
+		{
+			textcolor=Root.LeftCol.Disabled
+			render 
+			{
+				0="fill(x0+15,y0+17,x0+35,y0+32,Root.LeftCol.Disabled)"
+				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+			}
+			render_bg
+			{
+				// background fill
+			}	
+		}	
+
+		inbox_button_active
+		{
+			font-family=basefont
+			font-size=18 
+			font-weight=800
+			font-style=none
+			textcolor=none
+
+			render 
+			{
+				0="fill(x0+15,y0+17,x0+35,y0+32,Accent)"
+				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+			}
+			render_bg
+			{
+			}	
+		}
+		
+		inbox_button_active:hover
+		{
+			render 
+			{
+				0="fill(x0+15,y0+17,x0+35,y0+32,Accent)"
+				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+			}
+			render_bg
+			{
+				// background fill
+				0="fill(x0,y0,x1,y1,Menu.Hover)"
+			}	
+		}
+		inbox_button_active:selected
+		{
+			render 
+			{
+				0="fill(x0+15,y0+17,x0+35,y0+32,Accent)"
+				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+			}
+			render_bg
+			{
+				// background fill
+				0="fill(x0,y0,x1,y1,Menu.Hover)"
+			}	
+		}
+
+		inbox_button_active:disabled
+		{
+			render 
+			{
+				0="fill(x0+15,y0+17,x0+35,y0+32,Root.LeftCol.Disabled)"
+				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+			}
+			render_bg
+			{
+			}	
+		}	
+		
+		
+		
+		parental_lock_button
+		{
+			bgcolor=none
+			render {}
+			render_bg
+			{
+				1="image( x0+13, y0+11, x1, y1, resource/notfamilyview )"
+				
+			}	
+		}
+
+		parental_lock_button:hover
+		{
+			render {}
+			render_bg
+			{
+				0="fill(x0,y0,x1,y1,Menu.Hover)"
+				1="image( x0+13, y0+11, x1, y1, resource/notfamilyview )"
+				
+			}	
+			
+		}
+
+		parental_lock_button:selected
+		{
+			render {}
+			render_bg
+			{
+				1="image( x0+13, y0+11, x1, y1, resource/familyview )"
+			}	
+			
+		}
+
+
+		parental_lock_button:selected:hover
+		{
+			render {}
+			render_bg
+			{
+				0="fill(x0,y0,x1,y1,Menu.Hover)"
+				1="image( x0+13, y0+11, x1, y1, resource/familyview )"
+				
+			}	
+			
+		}
+    
+		inboxmenuitem
+		{
+			textcolor=Menu.Disabled.Text
+		}
+		
+		inboxmenuitem_active
+		{
+			textcolor=Menu.Text
+		}
+	
+		inboxmenuitem_active:hover
+		{
+			textcolor=Menu.Text
+		}
+		
+		AccountURLStyle
+		{
+			font-size = 16
+			textcolor=Root.Label.Text
+			padding-top=-4
+			padding-right=-14
+		}
+		
+		AccountURLStyle:hover
+		{
+			textcolor=Root.Label.Hover.Text
+		}
+
+		AccountURLStyle:disabled
+		{
+			textcolor=Root.LeftCol.Disabled
+		}
+	
+	}
+	
+	colors
+	{
+		support_flag_red "169 72 71 255"
+		
+		support_hover_red1 "193 94 93 255"
+		support_hover_red2 "156 64 63 255"
+		
+		inbox_active_text "text"
+		inbox_inactive_text "labeldisabled"
+
+		backdrop "20 20 20 255"
+		
+		disabledborder "63 63 63 255"
+	}
+	
+	layout
+	{
+		region {name=hidden width=0 height=0}
+		region {name=sidebarbottom width=200 height=50 align=bottom}
+		
+		place [!$OSX] { control="New" width=72 height=32 y=0 width=max align=right margin-right=180}
+		place [$OSX]  { control="New" width=145 height=32 y=0 width=max align=right margin-right=-20}
+		
+		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=0 margin-top=0 }
+		
+		place { control="UIStatusPanel" x=0 width=200 height=40 align=bottom margin-bottom=60 }
+		
+		place [!$OSX] { control="MenuBar" height=40 width=50 y=32 x=0 }
+
+		//place [$OSX]  { control="account_balance, account_balance_seperator, account_URL, universe_label, fullscreen" align=right margin-top=12 margin-right=15 spacing=7 }
+		
+		place { control="SupportAlert, ParentalLockButton, exitVR, startVR, InboxButton" region=sidebarbottom align=right height=50 width=50 spacing=0 dir=right}
+
+		place [!$OSX]  { control="fullscreen,frame_minimize,frame_maximize,frame_close" align=right margin-top=0 margin-right=0 width=46 height=32 spacing=0 }
+		place [$OSX] { control="frame_close,frame_minimize,frame_maximize" align=left margin-top=10 margin-left=4 spacing=-7 }
+		
+		place { control="add_game" x=14 y=16 region=hidden height=0 width=0}
+		
+		region { name=account align=left y=80 margin-left=5 width=200 height=50 }
+		place { control="FriendPanel" height=48 y=0 width=48 margin-left=0 region=account}
+
+		place { control="account_URL, universe_label" margin-left=52 y=13 spacing=5 region=account}
+		place { control="account_balance_seperator, account_balance" start=account_URL x=3 y=1 spacing=3 region=account}
+		place { control="online_friends" height=12 y=30 margin-left=52 region=account}
+		place { control="view_friends" height=12 y=30 margin-left=52 region=account}
+	}
+}
