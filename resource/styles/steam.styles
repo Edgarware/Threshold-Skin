@@ -140,6 +140,8 @@ steam.styles
 	Search.Hover.Text="180 180 180 255"
 	Search.Active.Text=DefaultText
 	
+	Chat.Back = Scroll.Back
+	
 	Uninstalled.Text=DefaultText.Disabled
 	Uninstalled.Hover.Text="94 94 94 255"
 	Installed.Text="200 200 200 255"
@@ -3347,7 +3349,7 @@ steam.styles
 
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, black )"
+			0="fill( x0, y0, x1, y1, Chat.Back)"
 		}
 	}
 		

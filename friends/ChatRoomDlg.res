@@ -107,7 +107,7 @@
 			image="graphics/icon_emoticon_hover"
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, black)"
+				0="fill(x0, y0, x1, y1, Chat.Back)"
 				// lines around
 				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
 			}
@@ -184,7 +184,7 @@
 			shadowtextcolor=DefaultCursor  // this is the cursor color
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, black)"
+				0="fill(x0, y0, x1, y1, Chat.Back)"
 				// lines around
 				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
 			} 
@@ -198,7 +198,7 @@
 			shadowtextcolor=DefaultCursor  
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, black)"
+				0="fill(x0, y0, x1, y1, Chat.Back)"
 				// lines around
 				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
 			} 
@@ -212,7 +212,7 @@
 			shadowtextcolor=DefaultCursor  
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, black)"
+				0="fill(x0, y0, x1, y1, Chat.Back)"
 				// lines around
 				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
 			}
