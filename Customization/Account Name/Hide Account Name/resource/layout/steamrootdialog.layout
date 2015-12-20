@@ -773,7 +773,7 @@
 
 		place { control="account_balance" margin-left=52 y=13 spacing=5 region=account}
 		place { control="account_URL, universe_label,account_balance_seperator" start=account_URL x=3 y=1 spacing=3 region=hidden}
-		place { control="online_friends" height=12 y=30 margin-left=52 region=account}
-		place { control="view_friends" height=12 y=30 margin-left=52 region=account}
+		place { control="online_friends" height=12 y=30 margin-left=52 region=hidden}
+		place { control="view_friends" height=12 y=30 margin-left=52 region=hidden}
 	}
 }
