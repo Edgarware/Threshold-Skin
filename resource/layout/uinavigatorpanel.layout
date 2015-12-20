@@ -794,17 +794,8 @@
 		URLStatusImage
 		{
 			bgcolor=none
-			inset="0 0 0 0"
-			
-			//there once was a coder of steam
-			//who thought they would follow the theme
-			//of hardcoding the icon
-			//that https was based on
-			//and now skin makers are punching their screens
-			
+			inset="12 10 0 0"
 			render{
-				0="fill(x0, y0, x1, y1, Root.Header)"
-				1="image(x0+12, y0+10, x1, y1, graphics/custom/lock)"
 			}
 		}
 

@@ -20,6 +20,12 @@
 	
 	styles
 	{
+		COverlayWebBrowser{
+			render_bg{
+				0="fill(x0,y0,x1,y1,DefaultBackground)"
+			}
+		}
+		
 		BackButtonSm
 		{
 		bgcolor=none
@@ -111,10 +117,8 @@
 		URLStatusImage
 		{
 		bgcolor=none
-			inset="0 0 0 0"		
+			inset="12 10 0 0"		
 			render{
-				0="fill(x0, y0, x1, y1, DefaultBackground)"
-				1="image(x0+12, y0+10, x1, y1, graphics/custom/lock)"
 			}
  		}
 
