@@ -749,14 +749,14 @@
 	{
 		region {name=hidden width=0 height=0}
 		region {name=left width=225 y=32}
-		region {name=bottom width=225 height=50 align=bottom}
+		region {name=bottom region=left width=max height=50 align=bottom}
 		
 		place [!$OSX] { control="New" width=72 height=32 y=0 width=max align=right margin-right=180}
 		place [$OSX]  { control="New" width=145 height=32 y=0 width=max align=right margin-right=-20}
 		
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=0 margin-top=0 }
 		
-		place { control="UIStatusPanel" x=0 width=250 height=40 align=bottom margin-bottom=60 }
+		place { control="UIStatusPanel" x=0 region=left width=max height=40 align=bottom margin-bottom=60 }
 		
 		place [!$OSX] { control="MenuBar" height=40 width=50 y=32 x=0 }
 
