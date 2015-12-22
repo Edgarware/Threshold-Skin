@@ -1,7 +1,9 @@
-# Threshold Steam Skin
+# Threshold Skin for Steam
 A Windows 10 Style Steam Skin
 
 [Preview](http://imgur.com/a/AXvwF)
+[Steam Community Group](http://steamcommunity.com/groups/thresholdskin)
+[Wiki](http://github.com/Edgarware/Threshold-Skin/wiki)
 
 #Installation
 Copy the skin folder to C:\Program Files (x86)\Steam\skins
@@ -9,11 +11,6 @@ Copy the skin folder to C:\Program Files (x86)\Steam\skins
 In Steam go to Settings > Interface > and choose Threshold from the list of skins
 
 Restart Steam and enjoy!
-
-#Customization
-Use config.ini for the basic changes (colors, etc), the comments have instructions
-
-The "Customization" folder has the sidebar width, forward button, and account name settings. See the included README for more information
 
 #Known Issues
 * This skin has only been tested for Windows. Older versions of windows (XP, Vista) may have issues with fonts. It *should* work on Linux, but the fonts will likely be wrong. It will certainly not work on Mac OS X.
