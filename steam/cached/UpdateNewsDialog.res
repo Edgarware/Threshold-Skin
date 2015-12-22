@@ -1,5 +1,10 @@
 "steam/cached/UpdateNewsDialog.res"
 {
+	layout {
+		region {name=bottom width=max height=44 align=bottom }
+		place {control="HTMLSellPage" x=0 y=32 width=max height=max margin-bottom=44}
+		place {control="PrevButton, NextButton, CloseButton" region=bottom y=10 align=right spacing=10 width=84 height=24}
+	}
 	"ProductMarketingDialog"
 	{
 		"ControlName"		"CProductMarketingDialog"
