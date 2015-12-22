@@ -1,5 +1,13 @@
 "friends/AchievementNotification.res"
 {
+
+	layout{
+		place {control="AchievementIcon" x=14 y=15 width=64 height=64}
+		place {control="IconBorder" x=13 y=14 width=66 height=66}
+		place {control="LabelTitle" x=88 y=30 width=144 height=20}
+		place {control="LabelDescription" x=88 y=48 width=144 height=20}
+	}
+	
 	"AchievementNotification"
 	{
 		"ControlName"		"CAchievmentNotification"

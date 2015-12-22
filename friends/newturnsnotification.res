@@ -1,5 +1,12 @@
 "friends/NewTurnsNotification.res"
 {
+	layout{
+		place {control="ItemImage" x=16 y=16 width=42 height=42}
+		place {control="NotificationClickPanel" x=0 y=0 width=64 height=24}
+		place {control="LabelInfo" x=64 y=16 width=172 height=34}
+		place {control="LabelHotkey" x=0 y=74 width=240 height=24}
+	}
+	
 	"NewTurnsNotification"
 	{
 		"ControlName"		"NewTurnsNotification"

@@ -1,5 +1,15 @@
 "friends/ClanEventNotification.res"
 {
+
+	layout{
+		place {control="ImageAvatar" x=16 y=16 width=42 height=42}
+		place {control="NotificationClickPanel" x=0 y=0 width=64 height=24}
+		place {control="LabelGroup" x=64 y=16 width=172 height=16}
+		place {control="LabelInfo" x=64 y=30 width=172 height=16}
+		place {control="LabelEventTitle" x=64 y=44 width=172 height=30}
+		place {control="LabelHotkey" x=0 y=74 width=240 height=24}
+	}
+	
 	"ClanEventNotification"
 	{
 		"ControlName"		"CClanEventNotification"
