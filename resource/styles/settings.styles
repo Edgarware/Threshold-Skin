@@ -35,7 +35,7 @@
 	// Anchor=Cursor makes it stick to initial pop location like windows implementation.
 	// Anchor can also be 'Float' to move with the mouse, or 'Parent' to stick just outside the parent panel (useful for icon sized items)
 	Tooltip.Delay=75
-	Tooltip.Anchor=Cursor
+	Tooltip.Anchor=Float
 	
     Menu.TextInset          "10"
     
