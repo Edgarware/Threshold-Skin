@@ -826,12 +826,12 @@
 		place { control="label_community_new" start="label_community" y="-40" x="15" width=0 height=0 region=hidden}
 
 		place [!$OSX] { control="back" x=0 y=0 height=32 width=50}
-		place [!$OSX] { control="refresh,stop,forward" region=left x=50 height=40 width=40 dir=right spacing=0}
+		place [!$OSX] { control="forward" region=left x=50 height=40 width=40}
 		place [$OSX] { control="back,forward" x=3 y=17 height=30 width=30 spacing=2 margin-right=5 margin-top=0 }
 		
 		place {control="URLBar" region=hidden width=max height=50 align=bottom margin-bottom=80}
 		place { control="EVCert" region=hidden}
-		place { control="PageLoadThrobber,URLStatusImage" y=0 height=40 width=40 align=right region=left}
+		place { control="PageLoadThrobber,refresh,stop,URLStatusImage" y=0 height=40 width=40 align=right region=left}
  	
 		place { control="subnavgroup_library" y=0 height=40 width=max margin-right=0 region=hidden region=right}
 	
