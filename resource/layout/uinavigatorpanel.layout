@@ -314,9 +314,9 @@
 			font-size=24
 			font-weight=400
 			textcolor=Root.Label.Text
-			inset="12 0 0 0"
+			inset="0 0 6 0"
 			render{
-				0="image(x0+7,y0+18,x1,y1,graphics/custom/icons/down)"
+				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down)"
 			}
 		}
 
@@ -332,18 +332,18 @@
 		NavLabel2:hover
 		{
 			textcolor=Root.Label.Hover.Text
-			inset="12 0 0 0"
+			inset="0 0 6 0"
 			render{
-				0="image(x0+7,y0+18,x1,y1,graphics/custom/icons/down_hover)"
+				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down_hover)"
 			}
 		}	
 		
 		NavLabel2:selected
 		{
 			textcolor=Root.Label.Text
-			inset="12 0 0 0"
+			inset="0 0 6 0"
 			render{
-				0="image(x0+7,y0+18,x1,y1,graphics/custom/icons/down)"
+				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down)"
 			}
 		}
 		
