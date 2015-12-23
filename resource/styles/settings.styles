@@ -4,7 +4,7 @@
   {
 	
 	AchievementPopup.TitleColor   DefaultText
-    AchievementPopup.DescriptionColor "180 180 180 255"
+    AchievementPopup.DescriptionColor DefaultText.Hover
     
     GiftOnlyInfo.ImagePanelColor  DefaultBackground 
 	

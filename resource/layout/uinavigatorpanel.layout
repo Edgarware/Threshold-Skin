@@ -848,7 +848,7 @@
 		
 		place { control="library_music_add_button" region=hidden}
 		place { control="library_music_player_icon" width=40}
-		place { control="library_music_menu,library_music_player_icon" align=right y=0 height=40 region=right}
+		place { control="library_music_menu,library_music_player_icon" align=right y=0 height=40 spacing=10 region=right}
 		
 		place [$OSX] { control="library_music_menu,library_music_add_button" align=left x=90 y=55 height=20 spacing=3 margin-right=179 region=right}
 		
