@@ -125,7 +125,7 @@ steam.styles
 	Root.LeftCol.Bottom="48 48 48 255"
 	Root.Back = DefaultBackground //Right Column
 	Root.Back2 = "35 35 35 255" //Middle column (When needed)
-	Root.Header = "61 61 61 255"
+	Root.Header = "51 51 51 255"
 	Root.Div = Root.Header
 	Root.BackTransparent="28 28 28 170" //For details header/grid chrome
 	
