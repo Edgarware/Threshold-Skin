@@ -314,9 +314,9 @@
 			font-size=24
 			font-weight=400
 			textcolor=Root.Label.Text
-			inset="12 0 0 0"
+			inset="0 0 6 0"
 			render{
-				0="image(x0+7,y0+18,x1,y1,graphics/custom/icons/down)"
+				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down)"
 			}
 		}
 
@@ -332,18 +332,18 @@
 		NavLabel2:hover
 		{
 			textcolor=Root.Label.Hover.Text
-			inset="12 0 0 0"
+			inset="0 0 6 0"
 			render{
-				0="image(x0+7,y0+18,x1,y1,graphics/custom/icons/down_hover)"
+				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down_hover)"
 			}
 		}	
 		
 		NavLabel2:selected
 		{
 			textcolor=Root.Label.Text
-			inset="12 0 0 0"
+			inset="0 0 6 0"
 			render{
-				0="image(x0+7,y0+18,x1,y1,graphics/custom/icons/down)"
+				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down)"
 			}
 		}
 		
@@ -795,16 +795,7 @@
 		{
 			bgcolor=none
 			inset="0 0 0 0"
-			
-			//there once was a coder of steam
-			//who thought they would follow the theme
-			//of hardcoding the icon
-			//that https was based on
-			//and now skin makers are punching their screens
-			
 			render{
-				0="fill(x0, y0, x1, y1, Root.Header)"
-				1="image(x0+12, y0+10, x1, y1, graphics/custom/lock)"
 			}
 		}
 
@@ -827,19 +818,20 @@
 	layout
 	{
 		region {name=hidden width=0 height=0}
-		region {name=left width=200 y=32}
-		region {name=right x=200 y=32}
+		region {name=left width=225 y=32}
+		region {name=right x=225 y=32}
 		
-		place { control="label_store,label_library,label_community,label_me,label_news,label_console" dir=down x=0 y=110 spacing=0 width=200 height=45 region=left} 
+		place { control="label_store,label_library,label_community,label_me,label_news,label_console" dir=down x=0 y=110 spacing=0 width=max height=45 region=left} 
 		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" region=hidden}
 		place { control="label_community_new" start="label_community" y="-40" x="15" width=0 height=0 region=hidden}
 
 		place [!$OSX] { control="back" x=0 y=0 height=32 width=50}
-		place [!$OSX] { control="forward" region=hidden }
+		place [!$OSX] { control="forward" region=left x=50 height=40 width=40}
 		place [$OSX] { control="back,forward" x=3 y=17 height=30 width=30 spacing=2 margin-right=5 margin-top=0 }
-			
-		place { control="refresh,stop,URLBar,EVCert" region=hidden}
-		place { control="PageLoadThrobber,URLStatusImage" y=0 height=40 width=40 align=right region=left}
+		
+		place {control="URLBar" region=hidden width=max height=50 align=bottom margin-bottom=80}
+		place { control="EVCert" region=hidden}
+		place { control="PageLoadThrobber,refresh,stop,URLStatusImage" y=0 height=40 width=40 align=right region=left}
  	
 		place { control="subnavgroup_library" y=0 height=40 width=max margin-right=0 region=hidden region=right}
 	
