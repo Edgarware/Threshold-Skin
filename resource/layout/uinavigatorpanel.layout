@@ -125,7 +125,7 @@
 			font-family=basefont
 			font-size=16
 			font-weight=400
-			textcolor=LabelDisabled
+			textcolor=Root.SubLabel.Text
 			inset="0 -2 0 0"
 		}
 		   
