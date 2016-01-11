@@ -319,7 +319,68 @@
 			}
 		}
 		
-		
+		Button //Style button lighter
+		{     
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, Button.Page.Back)"	
+			}
+		}
+
+		Button:hover
+		{   
+			textcolor=Button.Hover.Text
+			render_bg
+			{     
+				// background fill
+				0="fill( x0, y0, x1, y1, Button.Page.Hover)"
+			}
+		}
+
+
+		Button:focus
+		{
+			textcolor=Button.Active.Text
+			render_bg
+			{     
+				0="fill( x0, y0, x1, y1,  Button.Active)"
+			}
+		}
+
+
+		Button:active
+		{
+			textcolor=Button.Active.Text
+			render_bg
+			{     
+				// background fill
+				0="fill( x0, y0, x1, y1, Button.Active)"
+			}
+		}
+
+
+		Button:selected
+		{
+			textcolor=Button.Active.Text
+			render_bg
+			{     
+				// background fill
+				0="fill( x0, y0, x1, y1, Button.Active)"
+			}
+		}
+ 
+
+		Button:disabled
+		{     
+			textcolor=Button.Disabled.Text
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, Button.Disabled )"             
+			}   
+		}
+			
 	}
  	
  	layout
@@ -342,9 +403,9 @@
 		
 		place { control="FriendsDialogSheet" y=68 dir=down width=max height=max spacing=3 }	
 		
-		place { control="DownLabel,NoFriendsAddFriendButton" dir=down spacing=10 x=0 y=40 width=max margin-left=10 margin-right=10}
+		place { control="DownLabel" x=0 y=40 width=max margin-left=15 margin-right=15}
+		place { control="NoFriendsAddFriendButton" width=70 height=25 align=right start="DownLabel" dir=down margin-top=10 margin-right=15}
 	
-		
 		place { control="addFriendsButton" align=bottom margin-left=16 margin-right=9 margin-bottom=7 height=24 region=hidden}
  	}
  	

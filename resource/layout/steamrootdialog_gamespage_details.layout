@@ -87,7 +87,7 @@
 				0="fill( x0, y0, x0+275, y0+40, Search.Back)"
 				1="fill( x0+275, y0, x1, y0+40, Root.Header)"
 				2="fill( x0, y0+40, x0+275, y1, Search.Back)"
-				3="fill( x0+275, y0+40, x1, y1, Root.Back)"
+				3="fill( x0+275, y0+40, x1, y1, Root.BackDetails)"
 			}
 		}
 
@@ -192,7 +192,7 @@
 			padding-left=0
 			render_bg
 			{
-				0="fill(x0,y0,x1,y1+5,Root.Back)"
+
 			}
 		}
 		
@@ -207,7 +207,7 @@
 			padding-left=0
 			render_bg
 			{
-				0="fill(x0,y0,x1,y1+5,Root.Back)"
+
 			}
 		}
 
@@ -223,7 +223,7 @@
 			padding-left=0
 			render_bg
 			{
-				0="fill(x0,y0,x1,y1+5,Root.Back)"
+
 			}
 		}
 
@@ -238,7 +238,7 @@
 			padding-left=0
 			render_bg
 			{
-				0="fill(x0,y0,x1,y1+5,Root.Back)"
+
 			}
 		}
 
@@ -254,7 +254,7 @@
 			padding-bottom=0
 			render_bg
 			{
-				0="fill(x0,y0,x1,y1+5,Root.Back)"
+
 				1="fill(x0,y0,x0+1,y1+5,Root.Div)"
 			}
 		}
@@ -281,7 +281,7 @@
 			padding-bottom=0
 			render_bg
 			{
-				0="fill(x0,y0,x1,y1+5,Root.Back)"
+
 				1="fill(x0,y0,x0+1,y1+5,Root.Div)"
 			}
 		}

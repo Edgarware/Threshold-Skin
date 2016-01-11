@@ -124,7 +124,7 @@
 		namestyle
 		{
 			font-family=basefont
-			font-size=14
+			font-size=15
 		}
 		
 		nameInstanceStyle
@@ -161,7 +161,7 @@
 		statusStyle
 		{
 			font-family=basefont
-			font-size=14
+			font-size=13
 		}
 		
 		statusStyle:hover
@@ -225,18 +225,17 @@
 		place {	control="AvatarImage"			x=6 y=9 width=32 height=32		}
 		
 		place {	control="Clanstatusimage"			x=20  width=15 }
-		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" x=50 y=4  }
-		place { control="StatusLabel,BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame" x=50 y=16 }
-		place { control="GameLabel" x=50 y=28 }
+		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,MenuButton" x=50 y=8  }
+		place { control="StatusLabel,GameLabel" x=50 y=23 spacing=10}
 
 		// this control is shown in the invite-to-game dialog in the overlay
 		place { control="InviteToGameButton" align=right y=4 padding-right=6 margin-right=20 }
 		
 		// these controls are shown for friendship requests
-		place { control="AcceptLink,IgnoreLink,BlockLink"	x=50 y=28 spacing=8 }
-		place { control="ControlPanelLink" x=50 y=28 }
-		place { control="SuggestedImage,SuggestedLabel" x=50 y=19 spacing=4 }
-		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=28 spacing=8 }
+		place { control="AcceptLink,IgnoreLink,BlockLink"	x=50 y=23 spacing=8 }
+		place { control="ControlPanelLink" x=50 y=23 }
+		place { control="SuggestedImage,SuggestedLabel" x=50 y=23 spacing=4 }
+		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=23 spacing=8 }
 	}
 
 }
