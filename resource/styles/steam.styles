@@ -143,6 +143,7 @@ steam.styles
 	
 	Chat.Back = Scroll.Back
 	Chat.Popup = DefaultBackground
+	Chat.Div = Root.Header
 	
 	Uninstalled.Text=DefaultText.Disabled
 	Uninstalled.Hover.Text="94 94 94 255"

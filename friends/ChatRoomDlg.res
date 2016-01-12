@@ -109,7 +109,7 @@
 			{
 				0="fill(x0, y0, x1, y1, Chat.Back)"
 				// lines around
-				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
+				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			}
 		}
 
@@ -119,7 +119,7 @@
 			{
 				0="fill(x0, y0, x1, y1, Menu.Hover)"
 				// lines around
-				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
+				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			}
 		}
 
@@ -129,7 +129,7 @@
 			{
 				0="fill(x0, y0, x1, y1, Accent)"
 				// lines around
-				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
+				1="fill( x0, y0, x1, y0 + 1, Chat.Div)"  // top
 			}
 		}
 
@@ -186,7 +186,7 @@
 			{
 				0="fill(x0, y0, x1, y1, Chat.Back)"
 				// lines around
-				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
+				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			} 
 		}
 		
@@ -200,7 +200,7 @@
 			{
 				0="fill(x0, y0, x1, y1, Chat.Back)"
 				// lines around
-				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
+				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			} 
 		}
 		
@@ -214,7 +214,7 @@
 			{
 				0="fill(x0, y0, x1, y1, Chat.Back)"
 				// lines around
-				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
+				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			}
 		}
 		
