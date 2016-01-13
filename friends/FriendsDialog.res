@@ -151,7 +151,12 @@
 	{
 		FriendsPanel
 		{			
-			bgcolor="Root.Header"
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1 - 51, Root.Header)"
+				1="fill(x0, y1 - 51, x1, y1 - 50, Root.Div)"
+				2="fill(x0, y1 - 50, x1, y1, DefaultBackground)"
+			}
 		}	
 		
 		AddFriendsButton 
@@ -288,99 +293,25 @@
 			font-style=normal
 			render_bg
 			{
-				// background gradient
+			
 			}
 		}
 		
 		PageTab:selected
 		{
-			render_bg
-			{
-				// background gradient	
-				0="fill( x0, y0 , x1, y1, Accent )"
-			}
+			bgcolor=Accent
 		}
 		
 		PageTab:hover
 		{
-			render_bg
-			{
-				// background gradient
-				0="fill( x0, y0 , x1, y1, Menu.Button.Hover )"
-			}
+			bgcolor=Menu.Button.Hover
 		}
 	  
 		PageTab:selected:hover
 		{
-			render_bg
-			{
-				// background gradient
-				0="fill( x0, y0 , x1, y1, Accent )"
-			}
+			bgcolor=Accent
 		}
 		
-		Button //Style button lighter
-		{     
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Page.Back)"	
-			}
-		}
-
-		Button:hover
-		{   
-			textcolor=Button.Hover.Text
-			render_bg
-			{     
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Page.Hover)"
-			}
-		}
-
-
-		Button:focus
-		{
-			textcolor=Button.Active.Text
-			render_bg
-			{     
-				0="fill( x0, y0, x1, y1,  Button.Active)"
-			}
-		}
-
-
-		Button:active
-		{
-			textcolor=Button.Active.Text
-			render_bg
-			{     
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Active)"
-			}
-		}
-
-
-		Button:selected
-		{
-			textcolor=Button.Active.Text
-			render_bg
-			{     
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Active)"
-			}
-		}
- 
-
-		Button:disabled
-		{     
-			textcolor=Button.Disabled.Text
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Disabled )"             
-			}   
-		}
-			
 	}
  	
  	layout
@@ -393,7 +324,7 @@
 		place { control="frame_captiongrip" margin=0 width=max height=32 }
 		place [!$OSX] { control="MenuBar" margin-left=0 height=32 width=50}
 
-		place { control="FriendPanelSelf" y=27 align=left margin-left=7 dir=right spacing=3  region=hidden}
+		place { control="FriendPanelSelf" align=bottom margin-left=15 margin-bottom=2 }
 		
 		place { control="friends_search"  width=max}
 		place [!$OSX] { control="friends_search_icon,friends_search" align=left y=32 height=40 spacing=0 x=0}
@@ -401,7 +332,7 @@
 		//place { control="friends_search_icon" align=right dir=right margin-right=145 height=31}
 		//place { control="friends_search" start=friends_search_icon dir=right y=-2 margin-right=45 width=100 height=31}
 		
-		place { control="FriendsDialogSheet" y=68 dir=down width=max height=max spacing=3 }	
+		place { control="FriendsDialogSheet" y=68 dir=down width=max height=max spacing=3 margin-bottom=51}	
 		
 		place { control="DownLabel" x=0 y=40 width=max margin-left=15 margin-right=15}
 		place { control="NoFriendsAddFriendButton" width=70 height=25 align=right start="DownLabel" dir=down margin-top=10 margin-right=15}
