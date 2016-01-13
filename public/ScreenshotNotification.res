@@ -1,5 +1,11 @@
 "public/ScreenshotNotification.res"
 {
+	layout{
+		place {control="ScreenshotImage" x=14 y=14 width=48 height=48}
+		place {control="LabelInfo" x=68 y=14 width=172 height=16}
+		place {control="LabelGame" x=68 y=32 width=172 height=16}
+	}
+	
 	"ScreenshotNotification"
 	{
 		"ControlName"		"CScreenshotNotification"

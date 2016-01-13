@@ -1,5 +1,14 @@
 "friends/AppDownloadNotification.res"
 {
+	
+	layout{
+		place {control="GameImage" x=16 y=16 width=0 height=0}
+		place {control="NotificationClickPanel" x=0 y=0 width=max height=max}
+		place {control="LabelSteam" x=64 y=16 width=172 height=16}
+		place {control="LabelInfo" x=64 y=30 width=172 height=16}
+		place {control="LabelGame" x=64 y=44 width=172 height=16}
+	}
+	
 	"AppDownloadNotification"
 	{
 		"ControlName"		"CAppDownloadedNotification"
