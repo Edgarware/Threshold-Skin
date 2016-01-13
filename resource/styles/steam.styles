@@ -316,7 +316,7 @@ steam.styles
 		inset="0 0 0 0"
 		font-size=14
 		font-weight=400
-		textcolor="Label"
+		textcolor=DefaultText
     }
     
     CFriendsListSectionHeader
@@ -866,7 +866,6 @@ steam.styles
 		shadowtextcolor=List.Text.Disabled	// the color of disabled line items		
 		render{	}
 		render_bg { 
-			0="fill(x0,y0,x1,y1,DefaultBackground)"
 		}
 	}	
 
@@ -1643,10 +1642,9 @@ steam.styles
 		font-family=basefont
 		font-size=15
 		font-weight=400
-		bgcolor=none
+		bgcolor=Notification.Back
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, Notification.Back )"  // top
 		}
 		render {}
     }
@@ -2249,7 +2247,7 @@ steam.styles
     
     "CFriendsDialog SectionedListPanel"
     {
-		bgcolor="none"
+		bgcolor=DefaultBackground
 		font-family=basefont
 		font-size=14
 		font-weight=400
@@ -2261,7 +2259,7 @@ steam.styles
 		{
 			// background fill
 	   		//0="gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )"
-	   		1="fill( x0, y0, x1, y1, Root.Back )"   		
+	   		//1="fill( x0, y0, x1, y1, Root.Back )"   		
 		}    
     }
     
