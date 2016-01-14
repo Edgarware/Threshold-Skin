@@ -225,7 +225,7 @@
 		ResumeButton
 		{	  
 
-			inset="23 -1 0 0"
+			inset="20 -1 0 0"
 			font-family=basefont
 			font-size=16
 			font-weight=400
@@ -241,7 +241,7 @@
 	   
 		ResumeButton:Hover
 		{	  
-			inset="23 -1 0 0"
+			inset="20 -1 0 0"
 			font-family=basefont
 			font-size=16
 			font-weight=400
