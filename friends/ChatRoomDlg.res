@@ -82,20 +82,21 @@
 			render
 			{
 		
-				//gradient to obscure content at bottom of scrolling region 
-				//2="gradient( x0+9, y1 -88, x1-230, y1-74, none, almostblack )"
+
 			}
 		}
-		
+		FriendsList
+		{
+			bgcolor=none
+			render_bg{
+				0="fill( x0, y0, x1, y1, DefaultBackground )"
+				1="fill( x0, y0, x0+1, y1, Root.Header )"
+			}
+		}
 		"Textentryfocus_chat"
 		{
 			render
 			{
-				// lines around
-				//0="fill( x0, y0, x0 + 1, y1, ButtonBorderDisabled )"
-				//1="fill(  x1 - 1, y0, x1, y1, ButtonBorderDisabled )"
-				//2="fill( x0 + 1, y0, x1 - 1, y0 + 1, ButtonBorderDisabled )"
-				//3="fill( x0 + 1, y1 - 1, x1 - 1, y1, ButtonBorderDisabled )"
 				
 			}
 			font-size=16
@@ -224,20 +225,16 @@
 	{
 		region { name="hidden" width=0 height=0}
 		place { control="SendButton" region=hidden height=30 width=40 align=right} //if only you could have individual styling
-		place { control="Splitter" width=6 region=hidden} //maybe bring him back if we figure it out
 		
-		region { name=list width=200 height=max }
-		place { control="UserList" region=list align=left height=max margin-right=0}
-		
-		region { name=chat width=max height=max margin-bottom=42 margin-left=200}
-		place { control="TitlePanel" region=chat margin-left=6 y=2 height=50 width=max margin-right=6}
-		place { control="VoiceBar" region=chat y=34 height=24 width=max margin-left=8 margin-right=52 }
-		place { control="ChatHistory" region=chat width=max height=max margin-bottom=42 margin-top=55}
-		place { control="EmoticonButton" region=chat height=42 align=bottom-right }
-		place { control="TextEntry" align=bottom region=chat end-right="EmoticonButton" height=42 width=max }
-		
-		region { name=bottomrow align=bottom height=42 margin-left=200}
-		place { control="StatusLabel" region=bottomrow width=max margin-left=10 height=40 end-right="VoiceChat"}
-		place { control="VoiceChat,ChatActionsButton" region=bottomrow width=42 height=42 margin-right=1 align=right spacing=0 dir=right }
+		place { control="Splitter" width=6 }
+		place { control="Splitter,UserList" align=right height=max }
+
+		place { control="TitlePanel" margin-left=6 y=2 height=50 width=max margin-right=6 end-right=UserList}
+		place { control="VoiceBar" y=34 height=24 width=max margin-left=8 margin-right=52 end-right=UserList}
+		place { control="ChatHistory" width=max height=max margin-bottom=84 margin-top=55 end-right=UserList}
+		place { control="EmoticonButton" height=42 align=bottom-right margin-bottom=42 end-right=UserList}
+		place { control="TextEntry" align=bottom end-right="EmoticonButton" margin-bottom=42 height=42 width=max }
+		place { control="StatusLabel" width=max margin-left=10 height=40 align=bottom end-right="VoiceChat"}
+		place { control="VoiceChat,ChatActionsButton" width=42 height=42 align=bottom-right spacing=0 dir=right end-right=UserList}
 	}
 }
