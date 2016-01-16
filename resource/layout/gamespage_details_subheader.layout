@@ -23,7 +23,7 @@
 		
 		ClientListButton
 		{
-			inset="20 0 0 0"
+			inset="-4 2 0 0"
 			// minimum-width=20
 			// minimum-height set by code to match actual height of Launch button
 			// Do not set either minimum-width or -height here or it will override the code and the layout will break
@@ -35,52 +35,34 @@
 			}
 			render
 			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/custom/icons/down )"
 			}
 		}
 		
 		ClientListButton:hover
 		{
-		  inset="20 0 0 0"
-			bgcolor=none
 			render_bg
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
-			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/custom/icons/down )"
 			}
 		}	
 		
 		ClientListButton:active
 		{
-			inset="20 0 0 0"
-			bgcolor=none
 			render_bg
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
-			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/custom/icon/down )"
 			}
 		}	
 				
 		ClientListButton:selected
 		{
-			inset="20 0 0 0"
 			bgcolor=none
 			render_bg
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
-			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/custom/icons/down )"
 			}
 		}	
 		
@@ -98,44 +80,25 @@
 			render_bg
 			{
 				// background fill
-				//0="gradient( x0, y0+1, x1, y1-1, parental_lock_active1, none )"
-
-
+				0="fill( x0, y0, x1, y1, Accent )"
 			}	
 		}
 		
 		DetailsButton:hover
 		{
-			inset="-3 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none
-			
 			render_bg
 			{
 				// background fill
-				//0="gradient( x0, y0+1, x1, y1-1, parental_lock_active1, almostblack )"
-
+				0="fill( x0, y0, x1, y1, Accent2 )"
 			}	
 		}
 		
 		DetailsButton:active
 		{
-			inset="-3 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none
-			
 			render_bg
 			{
 				// background fill
-				//0="gradient( x0, y0+1, x1, y1-1, DialogBG, propertysheetbg )"
+				0="fill( x0, y0, x1, y1, Accent2 )"
 			}	
 		}
 		
@@ -157,72 +120,31 @@
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Accent )"
-
-
 			}	
 		}
 	
 		DetailsLaunchButton:Hover
 		{   
-			inset="20 0 0 1"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none   
-
-			render
-			{
-				1="image( x0 + 6, y0 + 6, x1, y1, graphics/custom/icons/play )"
-			}
 			render_bg
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
-
-
 			}	
 		}
 		
 		DetailsLaunchButton:Selected
-		{
-			inset="20 0 0 1"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none  
-			render
-			{
-				1="image( x0 + 6, y0 + 6, x1, y1, graphics/custom/icons/play )"
-			}
+		{ 
 			render_bg
 			{
-        // background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
 			}
 		}
 		
 		
 		DetailsLaunchButton:Active
-		{
-			inset="20 0 0 1"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none  
-			render
-			{
-				1="image( x0 + 6, y0 + 6, x1, y1, graphics/custom/icons/play)"
-			}
-			
+		{ 
 			render_bg
 			{
-       				 // background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
 			}	
 		}
@@ -230,7 +152,7 @@
 		DetailsInstallButton
 		{  
 			
-			inset="23 0 0 1"
+			inset="20 0 0 1"
 			font-family=basefont
 			font-size=16
 			font-weight=400
@@ -245,25 +167,11 @@
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Accent )"
-
-
 			}	
 		}
 		
 		DetailsInstallButton:Hover
 		{  
-			inset="23 0 0 1"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none   
-
-			render
-			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/custom/icons/install )"
-			}
 			render_bg
 			{
 				// background fill
@@ -273,21 +181,10 @@
 		
 		DetailsInstallButton:Selected
 		{
-			inset="23 0 0 1"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none   
-			
-			render
-			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/custom/icons/install )"
-			}
+
 			render_bg
 			{
-       				// background fill
+       			// background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"          
 			}
 		}
@@ -295,18 +192,6 @@
 		
 		DetailsInstallButton:Active
 		{
-			inset="23 0 0 1"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none  
-			render
-			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/custom/icons/install )"
-			}
-			
 			render_bg
 			{
 				// background fill
@@ -333,50 +218,23 @@
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Accent )"
-
 			}	
 		}
 		
 		DetailsBuyButton:hover
 		{   
-			inset="23 0 0 1"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none   
-
-			render
-			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/custom/icons/buy )"
-			}
 			render_bg
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
-
-
 			}	
 		}
 		
 		DetailsBuyButton:active
 		{
-			inset="23 0 0 1"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none  
-			render
-			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/custom/icons/buy )"
-			}
-			
 			render_bg
 			{
-        			// background fill
+        		// background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
 			}	
 		}
@@ -384,20 +242,10 @@
 		
 		DetailsBuyButton:Selected
 		{
-			inset="23 0 0 1"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none  
-			render
-			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/custom/icons/buy)"
-			}
+
 			render_bg
 			{     
-        			// background fill
+        		// background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
 			}
 		}
@@ -406,39 +254,9 @@
 	layout
 	{
 		// Y offset here should match the vertical padding value above in the colors section
-		region { name="header" y=0 x=0 width=max height=max }
+		region { name="play" y=0 x=0 width=max height=max margin=10 margon-bottom=10}
 
-		place { 
-			control=launchbutton
-			region=header
-			dir=right
-			align=middle
-			margin-left=10
-			margin-right=0
-			margin-top=10
-			margin-bottom=10
-			spacing=0
-		}
-		place { 
-			start=launchbutton
-			control=clientlist
-			region=header
-			dir=right
-			align=middle
-			margin-left=0
-			margin-right=0
-			spacing=0
-		}
-		place { 
-			start=clientlist
-			control=subheaderlabels
-			region=header
-			dir=right
-			align=middle
-			margin-left=10
-			margin-right=0
-			margin-top=-3
-			spacing=10
-		}
+		place { control="launchbutton, clientlist" region=play dir=right align=middle spacing=0 }
+		place { control=subheaderlabels start=clientlist x=10 region=play dir=right align=middle margin-top=-3 }
 	}
 }

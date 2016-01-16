@@ -70,7 +70,7 @@
 
 		emptylisttext
 		{
-			textcolor="Text"
+			textcolor=DefaultText
 			font-size="15"
 			render_bg {}
 		}
@@ -111,7 +111,6 @@
 			render {}
 			render_bg 
 			{
-				0="fill( x0, y0, x1, y1, Search.Back)"
 			} 
 		}
 		
@@ -121,7 +120,6 @@
 			bgcolor=none
 			render_bg 
 			{
-				0="fill( x0, y0, x1, y1, Search.Back)"
 			} 
 		}
 
@@ -179,6 +177,7 @@
 		{ 
 			bgcolor=Root.Header 
 			inset="0 0 0 0"
+			
 		}
 
 		rightcolumnheadertext
@@ -187,7 +186,7 @@
 			font-family=basefont
 			font-weight=700
 			font-size=17
-			textcolor=label2
+			textcolor=Accent
 			padding-top=12
 			padding-left=0
 			render_bg
@@ -247,42 +246,42 @@
 			inset="0 0 0 0"
 			font-size=15
 			font-style=normal
-			textcolor=Text
+			textcolor=DefaultText
 			font-family=basefont
-			padding-left=10
-			padding-top=0
-			padding-bottom=0
+			padding=10
 			render_bg
 			{
-
-				1="fill(x0,y0,x0+1,y1+5,Root.Div)"
+				1="fill(x0,y0,x1,y1,Root.BackTransparent)"
 			}
+		}
+		
+		rightcolumnlink:scrollbar
+		{
+			padding-top=0
+			padding-bottom=0
 		}
 
 		rightcolumnlink:hover
 		{
-			textcolor=White
+			textcolor=Accent
 		}
 
 		rightcolumnlink:disabled
 		{
-			textcolor="TextDisabled"
+			textcolor=DefaultText.Disabled
 		}
 		
 		rightcolumntag
 		{
-			inset="0 0 0 0"
-			font-size=15
+			inset="0 -5 0 0"
+			font-size=32
 			font-style=normal
 			textcolor=Accent
-			padding-left=10
-			padding-top=0
+			padding=10
 			font-family=basefont
-			padding-bottom=0
 			render_bg
 			{
-
-				1="fill(x0,y0,x0+1,y1+5,Root.Div)"
+				1="fill(x0,y0,x1,y1,Root.BackTransparent)"
 			}
 		}
 		
@@ -301,16 +300,18 @@
 	{
 		region {name=hidden width=0 height=0}
 		region	{ name="list" y=0 x=0 width=275 height=max margin-top=40 margin-bottom=0 }
-		region	{ name="details" y=0 x=275 width=max height=max margin-top=40 overflow=scroll-vertical}
-		region	{ name="headertext" region=details y=10 x=10 width=max height=max margin-right=20 }
-		region  { name="rightcolumn" region=details y=250 height=max width=max margin-right=0 overflow=allow-vertical }
-		region  { name="detailsbody" region=details y=250 height=max width=max margin-right=150 overflow=allow-vertical }
+		region	{ name="details" y=0 x=275 width=max height=max margin-top=40 overflow=scroll-vertical} //overflow
+		region  { name="header" region=details y=0 x=0 width=max height=300}
+		region	{ name="headertext" region=header y=10 x=10 width=max height=max margin-right=20 }
+		region  { name="tags" region=header y=230 height=50 width=max}
+		region  { name="links" region=header align=bottom height=35 width=max overflow=scroll-horizontal }
+		region  { name="detailsbody" region=details y=300 height=max width=max overflow=allow-vertical}
 
 		// Empty list text, which goes across regions
-		place	{ control=emptylisttext x=0 y=40 width=255 height=max margin=10}
+		place	{ control=emptylisttext region=list width=max height=max margin=10}
 
 		// Games list on left
-		place 	{ control=GamesList region=list width=275 height=max margin=0 }
+		place 	{ control=GamesList region=list width=max height=max margin=0 }
 		
 		// Body contents
 		place 
@@ -319,10 +320,6 @@
 			region=detailsbody
 			dir=down
 			width=max
-			margin-right=0
-			margin-top=0
-			margin-left=0
-			spacing=0
 		}
 
 		
@@ -331,25 +328,22 @@
 
 		// Main header image is at the bottom, then one of three color overlays is visible, and finally the 
 		// horizontal fade out gradient on the top.  We have an a and a b image, which we crossfade between.
-		place { control=headerimagea region=details width=max height=350 align=top-center margin-top=-100 }
-		place { control=headerimageb region=details width=max height=350 align=top-center margin-top=-100 }
+		place { control=headerimagea region=header width=max height=max align=top-center margin-top=-50 }
+		place { control=headerimageb region=header width=max height=max align=top-center margin-top=-50 }
 
 		// Header text
-		place 	{ control=gametitleheader region=headertext dir=down height=46 }
-		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down height=46 margin-top=0 }
+		place 	{ control=gametitleheader region=headertext}
+		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down}
 		
 		// Buttons and links on the right
 		place	
 		{ 
-			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
-			region=rightcolumn
-			dir=down 
-			width=150 
-			margin=0
-			align=right
-			spacing=5 
-
+			control=*taglink,sendguestpasslink,storelink,gamehublink,forumlink,ogglink,achievementslink,newslink,dlclink,cdkeylink,manuallink,guidelink,guideslink,supportlink,recommendlink
+			region=links
+			dir=right 
 		}
+		
+		place{ control="linkslabel,tagslabel,edittagslink" region=hidden}
 
 		
 	}
