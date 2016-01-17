@@ -19,28 +19,26 @@
 			bgcolor=none
 			render_bg
 			{     
-				0="fill( x0, y0, x0+194, y1, DefaultBackground )"  
-				1="fill( x0+194, y0, x1, y1, Page.Back )" 				
+				0="fill( x0, y0, x0+194, y1, Page.Back )"  
+				1="fill( x0+194, y0, x1, y1, DefaultBackground)" 				
 			}
 
 		}
 		
-		PropertySheet //This is a thing but doesnt really matter
+		
+		PropertySheet //For some reason this does nothing?
 		{
 			//minimum-width="535"
 			//minimum-height="505"
 			//inset="0 0 0 0"
-			//bgcolor=none
-			render_bg
-			{
-			}
-
+			bgcolor=DefaultBackground
 		}
+		
 		
 		"SettingsList"
 		{
 			//inset="6 -14 4 0"
-			minimum-width="200" //min width is 200, but REAL width is 194. THANKS STEAM
+			minimum-width="200" //min width is 200, but REAL width is 194.
 			minimum-height="525"
 			font-size=18
 			padding-left=15
@@ -57,7 +55,7 @@
 		{     
 			inset="0 -1 1 1"
 			font-size=15
-			bgcolor=DefaultBackground
+			bgcolor=none
 			render
 			{				
 				//Apparently this is a bug fix line? DOESNT LOOK LIKE IT TO ME
@@ -68,23 +66,6 @@
 				
 			}
 		} 
-		Button
-		{     
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Page.Back )"
-			}
-		}
-		
-		Button:hover
-		{     
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Page.Hover )"
-			}
-		}		
 		
 	}
 	layout

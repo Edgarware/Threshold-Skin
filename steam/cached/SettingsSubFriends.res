@@ -1,5 +1,18 @@
 "steam/cached/SettingsSubFriends.res"
 {
+
+	styles{
+		Page
+		{
+			bgcolor="none"
+			render_bg
+			{
+				// background gradient
+				0="fill( x0, y0, x1, y1, DefaultBackground )"
+			}
+		}
+	}
+	
 	"ImageAvatar"
 	{
 		"ControlName"		"ImagePanel"
@@ -483,15 +496,5 @@
 		"wrap"		"0"
 		"Default"		"0"
 		"SubTabPosition"		"0"
-	}
-	
-	style
-	{
-
-	}
-	
-	layout
-	{
-		
 	}
 }

@@ -1,5 +1,17 @@
 "steam/cached/SettingsSubOverlay.res"
 {
+	styles{
+		Page
+		{
+			bgcolor="none"
+			render_bg
+			{
+				// background gradient
+				0="fill( x0, y0, x1, y1, DefaultBackground )"
+			}
+		}
+	}
+	
 	"EnableOverlayCheck"
 	{
 		"ControlName"		"CheckButton"

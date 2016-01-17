@@ -1,7 +1,7 @@
 steam.styles
 {
-  include "Resource/styles/legacycolors.styles"
-  include "Resource/styles/settings.styles"
+  include "resource/styles/legacycolors.styles"
+  include "resource/styles/settings.styles"
   include "config.ini"
   colors
   {

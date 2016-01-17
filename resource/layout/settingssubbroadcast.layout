@@ -39,6 +39,19 @@
 		"RequiresRestartLabel" { ControlName="Label" fieldName="RequiresRestartLabel" labelText="#Steam_Settings_Broadcast_RequiresRestart" visible="0" }
 	}
 	
+	styles
+	{
+		Page
+		{
+			bgcolor="none"
+			render_bg
+			{
+				// background gradient
+				0="fill( x0, y0, x1, y1, DefaultBackground )"
+			}
+		}
+	}
+	
 	layout
 	{
 		place { control="BroadcastDisabledLabel" margin-left=20 margin-right=20 margin-top=32 width=max }

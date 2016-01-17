@@ -1,5 +1,17 @@
 "steam/cached/SettingsSubInterface.res"
 {
+	styles{
+		Page
+		{
+			bgcolor="none"
+			render_bg
+			{
+				// background gradient
+				0="fill( x0, y0, x1, y1, DefaultBackground )"
+			}
+		}
+	}
+	
 	"LanguageCombo"
 	{
 		"ControlName"		"ComboBox"
