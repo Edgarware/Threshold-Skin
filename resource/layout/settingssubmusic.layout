@@ -72,6 +72,33 @@
 			}
 		}
 		
+		"Page ListPanelInterior"
+		{
+			inset="3 1 -1 0"
+			font-size=15
+			bgcolor=none
+			render
+			{		
+
+			}
+			render_bg 
+			{				
+				// background gradient        
+				0="fill( x0, y0, x1, y1, List.Back )"
+			}
+		}
+		
+		"Page ListPanelInterior:scrollbar"
+		{
+			inset="3 1 -1 0"
+			bgcolor=none
+			render_bg 
+			{				
+				// background gradient        
+				0="fill( x0, y0, x1, y1, List.Back )"
+			}
+		}
+		
 		LibraryListStyle
 		{
 			bgcolor=List.Back
