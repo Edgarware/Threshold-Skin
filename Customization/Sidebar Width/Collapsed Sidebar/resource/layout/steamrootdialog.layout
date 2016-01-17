@@ -747,8 +747,8 @@
 	layout
 	{
 		region {name=hidden width=0 height=0}
-		region {name=left width=50 y=32}
-		region {name=bottom region=left width=max height=max align=bottom}
+		region {name=left width=225 y=32}
+		region {name=bottom region=left width=max height=50 align=bottom}
 		
 		place [!$OSX] { control="New" width=72 height=32 y=0 width=max align=right margin-right=180}
 		place [$OSX]  { control="New" width=145 height=32 y=0 width=max align=right margin-right=-20}
@@ -766,7 +766,7 @@
 		
 		place { control="add_game" x=14 y=16 region=hidden height=0 width=0}
 		
-		region { name=account y=80 margin-left=5 width=250 height=50 }
+		region { name=account region=left y=48 margin-left=5 width=max height=50 }
 		place { control="FriendPanel" height=48 y=0 width=48 margin-left=0 region=account}
 
 		place { control="account_URL, universe_label" margin-left=52 y=13 spacing=5 region=hidden}
