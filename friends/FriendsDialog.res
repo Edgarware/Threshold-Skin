@@ -332,7 +332,7 @@
 		//place { control="friends_search_icon" align=right dir=right margin-right=145 height=31}
 		//place { control="friends_search" start=friends_search_icon dir=right y=-2 margin-right=45 width=100 height=31}
 		
-		place { control="FriendsDialogSheet" y=68 dir=down width=max height=max spacing=3}	
+		place { control="FriendsDialogSheet" y=68 dir=down width=max height=max spacing=3 margin-bottom=51}	
 		
 		place { control="DownLabel" x=0 y=40 width=max margin-left=15 margin-right=15}
 		place { control="NoFriendsAddFriendButton" width=70 height=25 align=right start="DownLabel" dir=down margin-top=10 margin-right=15}
