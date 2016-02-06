@@ -201,7 +201,7 @@
 	
 			render
 			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/custom/icons/pause )"
+				1="image( x0 + 6, y0 + 5, x1, y1, graphics/Threshold/icons/pause )"
 			}
 			
 		}
@@ -217,7 +217,7 @@
 		   
 			render
 			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/custom/icons/pause )"
+				1="image( x0 + 6, y0 + 5, x1, y1, graphics/Threshold/icons/pause )"
 			}
 			
 		}
@@ -234,7 +234,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/install )"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/install )"
 			}
 			
 		}
@@ -250,7 +250,7 @@
 		   
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/install	)"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/install	)"
 			}
 			   
 		}

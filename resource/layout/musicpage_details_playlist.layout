@@ -110,7 +110,7 @@
 
 			render
 			{
-				1="image( x0, y0 + 5, x1, y1, graphics/custom/music/play )"
+				1="image( x0, y0 + 5, x1, y1, graphics/Threshold/music/play )"
 			}
 		}
 		ActionButtonStyle:hover
@@ -118,7 +118,7 @@
 			textcolor=DefaultText.Hover
 			render
 			{
-				1="image( x0, y0 + 5, x1, y1, graphics/custom/music/play_hover )"
+				1="image( x0, y0 + 5, x1, y1, graphics/Threshold/music/play_hover )"
 			}
 		}
 		
@@ -127,7 +127,7 @@
 			textcolor=DefaultText.Hover
 			render
 			{
-				1="image( x0, y0 + 5, x1, y1, graphics/custom/music/play )"
+				1="image( x0, y0 + 5, x1, y1, graphics/Threshold/music/play )"
 			}
 		}
 }

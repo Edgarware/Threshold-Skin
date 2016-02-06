@@ -6,10 +6,10 @@
 		{
 			bgcolor=none
 			inset="13 0 0 0"
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/title)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
 			}
 		}
 		
@@ -17,50 +17,50 @@
 		{
 			bgcolor=none
 			inset="13 0 0 0"
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/titlefocus)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
 		BackButton:hover
 		{
 			bgcolor=none
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/title)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
 			}
 		}
 		
 		BackButton:hover:framefocus
 		{
 			bgcolor=none
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/titlefocus)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
 		BackButton:active
 		{
 			bgcolor=none
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/title)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
 			}
 		}
 		
 		BackButton:active:framefocus
 		{
 			bgcolor=none
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/titlefocus)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
@@ -69,7 +69,7 @@
 			bgcolor=none
 			image="none"
 			render_bg{
-				0="image(x0+13, y0+11, x1, y1, graphics/custom/titlefocus)"
+				0="image(x0+13, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
@@ -78,7 +78,7 @@
 			bgcolor=none
 			image="none"
 			render_bg{
-				0="image(x0+13, y0+11, x1, y1, graphics/custom/titlefocus)"
+				0="image(x0+13, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
@@ -173,7 +173,7 @@
 		{
 			bgcolor="none"
 			inset="15 2 0 0"
-			image="graphics/custom/icons/search"
+			image="graphics/Threshold/icons/search"
 			padding-left=0
 			padding-right=0
 			padding-top=0
@@ -196,7 +196,7 @@
 			font-family=basefont
 			textcolor="labelfocus"
 			font-style=uppercase
-			image="graphics/custom/icons/plus"
+			image="graphics/Threshold/icons/plus"
 			render_bg
 			{
 			}
@@ -205,7 +205,7 @@
 		MusicAddButton:hover
 		{
 			textcolor="white"
-			image="graphics/custom/icons/plus_hover"
+			image="graphics/Threshold/icons/plus_hover"
 			render_bg
 			{
 
@@ -217,7 +217,7 @@
 			bgcolor="none"
 			inset="0 0 0 0"
 			render_bg={}
-			image="graphics/custom/icons/music_player"
+			image="graphics/Threshold/icons/music_player"
 			padding-left=12
 			padding-right=12
 		}
@@ -226,14 +226,14 @@
 		{
 			bgcolor=Menu.Button.Hover
 			render_bg={}
-			image="graphics/custom/icons/music_player"
+			image="graphics/Threshold/icons/music_player"
 		}
 		
 		MusicPlayerIcon:selected
 		{
 			bgcolor=Menu.Button.Active
 			render_bg={}
-			image="graphics/custom/icons/music_player"
+			image="graphics/Threshold/icons/music_player"
 		}
 		
 		LibraryShow [!$OSX]
@@ -316,7 +316,7 @@
 			textcolor=Root.Label.Text
 			inset="0 0 6 0"
 			render{
-				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down)"
+				0="image(x1-7,y0+18,x1,y1,graphics/Threshold/icons/down)"
 			}
 		}
 
@@ -334,7 +334,7 @@
 			textcolor=Root.Label.Hover.Text
 			inset="0 0 6 0"
 			render{
-				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down_hover)"
+				0="image(x1-7,y0+18,x1,y1,graphics/Threshold/icons/down_hover)"
 			}
 		}	
 		
@@ -343,7 +343,7 @@
 			textcolor=Root.Label.Text
 			inset="0 0 6 0"
 			render{
-				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down)"
+				0="image(x1-7,y0+18,x1,y1,graphics/Threshold/icons/down)"
 			}
 		}
 		
@@ -767,21 +767,21 @@
 			bgcolor=none
 			inset="3 0 0 0"
 			render_bg={}
-			image="graphics/custom/forward"
+			image="graphics/Threshold/forward"
 		}
 		
 		ForwardButton:hover
 		{
 			bgcolor=Menu.Button.Hover
 			render_bg={}
-			image="graphics/custom/forward"
+			image="graphics/Threshold/forward"
 		}
 		
 		ForwardButton:active
 		{
 			bgcolor=Accent
 			render_bg={}
-			image="graphics/custom/forward"
+			image="graphics/Threshold/forward"
 		}
 		
 		ForwardButton:disabled

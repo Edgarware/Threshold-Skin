@@ -40,7 +40,7 @@
 			{
 				// background fill
 				0="fill( x0, y0, x1 - 1, y1 - 1, DefaultBackground )"
-				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/custom/icons/plus_sm)"	
+				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/Threshold/icons/plus_sm)"	
 			}
 		}
 		  
@@ -50,7 +50,7 @@
 			{
 				// background fill
 				0="fill( x0, y0, x1 - 1, y1 - 1, Menu.Button.Hover )"	
-				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/custom/icons/plus_sm)"				
+				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/Threshold/icons/plus_sm)"				
 			}
 		}
 

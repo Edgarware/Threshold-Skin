@@ -200,7 +200,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/play )"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/play )"
 			}
 			render_bg
 			{
@@ -221,7 +221,7 @@
 
 			render
 			{
-				0="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/play )"
+				0="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/play )"
 			}
 			render_bg
 			{
@@ -244,7 +244,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/custom/icons/play )"
+				1="image( x0 + 6, y0 + 5, x1, y1, graphics/Threshold/icons/play )"
 			}
 			render_bg
 			{
@@ -266,7 +266,7 @@
 			textcolor=DefaultText
 			//font-style=uppercase
 			bgcolor=none
-			image=graphics/custom/icons/queue
+			image=graphics/Threshold/icons/queue
 
 			render
 			{
@@ -283,7 +283,7 @@
 			textcolor=DefaultText
 			//font-style=uppercase
 			bgcolor=none
-			image=graphics/custom/icons/close
+			image=graphics/Threshold/icons/close
 
 			render
 			{
@@ -299,7 +299,7 @@
 			textcolor=DefaultText.Hover
 			//font-style=uppercase
 			bgcolor=none   
-			image=graphics/custom/icons/close
+			image=graphics/Threshold/icons/close
 			render
 			{
 			}

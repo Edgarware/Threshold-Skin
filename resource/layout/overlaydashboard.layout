@@ -75,10 +75,10 @@
 			}
 			render
 			{
-				0="image(x1-80,y0,x1,y1,graphics/custom/overlay/fullscreen)"
-				1="image(x1-80,y1-240,x1,y1,graphics/custom/overlay/web)"
-				2="image(x1-80,y1-160,x1,y1,graphics/custom/overlay/music)"
-				3="image(x1-80,y1-80,x1,y1,graphics/custom/overlay/settings)"
+				0="image(x1-80,y0,x1,y1,graphics/Threshold/overlay/fullscreen)"
+				1="image(x1-80,y1-240,x1,y1,graphics/Threshold/overlay/web)"
+				2="image(x1-80,y1-160,x1,y1,graphics/Threshold/overlay/music)"
+				3="image(x1-80,y1-80,x1,y1,graphics/Threshold/overlay/settings)"
 			}
 		}
 		bottomfade //Right column background element

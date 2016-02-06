@@ -188,7 +188,7 @@
 		{			
 			bgcolor=none
 			render{
-				0="image(x0,y0,x1,y1,graphics/custom/tmp/beta)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
 			}
 			inset="0 0 0 0"
 		}
@@ -197,7 +197,7 @@
 		{
 			bgcolor=none
 			render{
-				0="image(x0,y0,x1,y1,graphics/custom/tmp/beta)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
 			}
 			inset="0 0 0 0"
 		}
@@ -359,10 +359,10 @@
 				4="fill( x0, y1-50, x0+250, y1, Root.LeftCol.Bottom )"
 			}
 			render{
-				0="image (x0+15, y0+154, x1, y1, graphics/custom/store)"
-				1="image (x0+15, y0+199, x1, y1, graphics/custom/library)"
-				2="image (x0+15, y0+244, x1, y1, graphics/custom/community)"
-				3="image (x0+15, y0+289, x1, y1, graphics/custom/me)"
+				0="image (x0+15, y0+154, x1, y1, graphics/Threshold/store)"
+				1="image (x0+15, y0+199, x1, y1, graphics/Threshold/library)"
+				2="image (x0+15, y0+244, x1, y1, graphics/Threshold/community)"
+				3="image (x0+15, y0+289, x1, y1, graphics/Threshold/me)"
 			}
 		}		
 		
@@ -371,7 +371,7 @@
 			textcolor="none"
 			inset="0 0 0 0"
 			render{
-				0="image(x0+17,y0+14,x1,y1,graphics/custom/menu)"
+				0="image(x0+17,y0+14,x1,y1,graphics/Threshold/menu)"
 			}
 		}
 		
@@ -522,7 +522,7 @@
 			render 
 			{
 				0="fill(x0+15,y0+17,x0+35,y0+32,Root.Label.Text)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+15,y0+19,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -552,7 +552,7 @@
 			render 
 			{
 				0="fill(x0+15,y0+17,x0+35,y0+32,Root.Label.Text)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+15,y0+19,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -566,7 +566,7 @@
 			render 
 			{
 				0="fill(x0+15,y0+17,x0+35,y0+32,Root.Label.Text)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+15,y0+19,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -582,7 +582,7 @@
 			render 
 			{
 				0="fill(x0+15,y0+17,x0+35,y0+32,Root.LeftCol.Disabled)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+15,y0+19,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -601,7 +601,7 @@
 			render 
 			{
 				0="fill(x0+15,y0+17,x0+35,y0+32,Accent)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+15,y0+19,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -613,7 +613,7 @@
 			render 
 			{
 				0="fill(x0+15,y0+17,x0+35,y0+32,Accent)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+15,y0+19,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -626,7 +626,7 @@
 			render 
 			{
 				0="fill(x0+15,y0+17,x0+35,y0+32,Accent)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+15,y0+19,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -640,7 +640,7 @@
 			render 
 			{
 				0="fill(x0+15,y0+17,x0+35,y0+32,Root.LeftCol.Disabled)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+15,y0+19,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{

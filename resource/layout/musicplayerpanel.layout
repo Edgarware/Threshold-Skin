@@ -92,37 +92,37 @@
 		}
 
 		CurrentAlbumImageStyle	{	}
-		RepeatButtonStyle	{	bgcolor=none render_bg={} image=graphics/custom/music/rep	inset="7 0 0 0" padding="0" }
-		RepeatButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/custom/music/rep_hover	}
-		RepeatButtonStyle:selected	{	bgcolor=none render_bg={} image=graphics/custom/music/rep_sel inset="0 0 0 0" }
-		RepeatButtonStyle:selected:hover	{	bgcolor=none render_bg={} image=graphics/custom/music/rep_sel_hover inset="0 0 0 0"}
-		RepeatOnceButtonStyle	{	bgcolor=none render_bg={} image=graphics/custom/music/rep_once	inset="7 0 0 0" padding="0" }
-		RepeatOnceButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/custom/music/rep_once_hover	 }
-		RepeatOnceButtonStyle:selected	{	bgcolor=none render_bg={} image=graphics/custom/music/rep_once_sel inset="0 0 0 0"}
-		RepeatOnceButtonStyle:selected:hover	{	bgcolor=none render_bg={} image=graphics/custom/music/rep_once_sel_hover inset="0 0 0 0"}
-		ShuffleButtonStyle	{	bgcolor=none render_bg={} image=graphics/custom/music/shuf	inset="7 0 0 0"}
-		ShuffleButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/custom/music/shuf_hover	}
-		ShuffleButtonStyle:selected	{	bgcolor=none render_bg={} image=graphics/custom/music/shuf_sel inset="0 0 0 0"}
-		ShuffleButtonStyle:selected:hover	{	bgcolor=none render_bg={} image=graphics/custom/music/shuf_sel_hover inset="0 0 0 0"}
-		PreviousButtonStyle	{	bgcolor=none render_bg={} image=graphics/custom/music/prev	inset="7 0 0 0"}
-		PreviousButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/custom/music/prev_hover }
-		NextButtonStyle	{	bgcolor=none render_bg={} image=graphics/custom/music/next	inset="7 0 0 0"}
-		NextButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/custom/music/next_hover	}
-		PlayButtonStyle	{	bgcolor=none render_bg={} image=graphics/custom/music/play inset="7 0 0 0"}
-		PlayButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/custom/music/play_hover }
-		PauseButtonStyle {	bgcolor=none render_bg={} image=graphics/custom/music/pause inset="7 0 0 0"}
-		PauseButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/custom/music/pause_hover }
-		VolumeButtonStyle {	bgcolor=none render_bg={} image=graphics/custom/music/vol	inset="7 0 0 0"}
-		VolumeButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/custom/music/vol_hover }
-		VolumeButtonActiveStyle {	bgcolor=none render_bg={} image=graphics/custom/music/vol	inset="7 0 0 0"}
-		VolumeButtonActiveStyle:hover {	bgcolor=none render_bg={} image=graphics/custom/music/vol_hover }				
-		MuteVolumeButtonStyle {	bgcolor=none render_bg={} image=graphics/custom/music/mute	inset="7 0 0 0"}
-		MuteVolumeButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/custom/music/mute_hover }
-		MuteVolumeButtonActiveStyle {	bgcolor=none render_bg={} image=graphics/custom/music/mute	inset="7 0 0 0"}
-		MuteVolumeButtonActiveStyle:hover {	bgcolor=none render_bg={} image=graphics/custom/music/mute_hover}
+		RepeatButtonStyle	{	bgcolor=none render_bg={} image=graphics/Threshold/music/rep	inset="7 0 0 0" padding="0" }
+		RepeatButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/Threshold/music/rep_hover	}
+		RepeatButtonStyle:selected	{	bgcolor=none render_bg={} image=graphics/Threshold/music/rep_sel inset="0 0 0 0" }
+		RepeatButtonStyle:selected:hover	{	bgcolor=none render_bg={} image=graphics/Threshold/music/rep_sel_hover inset="0 0 0 0"}
+		RepeatOnceButtonStyle	{	bgcolor=none render_bg={} image=graphics/Threshold/music/rep_once	inset="7 0 0 0" padding="0" }
+		RepeatOnceButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/Threshold/music/rep_once_hover	 }
+		RepeatOnceButtonStyle:selected	{	bgcolor=none render_bg={} image=graphics/Threshold/music/rep_once_sel inset="0 0 0 0"}
+		RepeatOnceButtonStyle:selected:hover	{	bgcolor=none render_bg={} image=graphics/Threshold/music/rep_once_sel_hover inset="0 0 0 0"}
+		ShuffleButtonStyle	{	bgcolor=none render_bg={} image=graphics/Threshold/music/shuf	inset="7 0 0 0"}
+		ShuffleButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/Threshold/music/shuf_hover	}
+		ShuffleButtonStyle:selected	{	bgcolor=none render_bg={} image=graphics/Threshold/music/shuf_sel inset="0 0 0 0"}
+		ShuffleButtonStyle:selected:hover	{	bgcolor=none render_bg={} image=graphics/Threshold/music/shuf_sel_hover inset="0 0 0 0"}
+		PreviousButtonStyle	{	bgcolor=none render_bg={} image=graphics/Threshold/music/prev	inset="7 0 0 0"}
+		PreviousButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/Threshold/music/prev_hover }
+		NextButtonStyle	{	bgcolor=none render_bg={} image=graphics/Threshold/music/next	inset="7 0 0 0"}
+		NextButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/Threshold/music/next_hover	}
+		PlayButtonStyle	{	bgcolor=none render_bg={} image=graphics/Threshold/music/play inset="7 0 0 0"}
+		PlayButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/Threshold/music/play_hover }
+		PauseButtonStyle {	bgcolor=none render_bg={} image=graphics/Threshold/music/pause inset="7 0 0 0"}
+		PauseButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/Threshold/music/pause_hover }
+		VolumeButtonStyle {	bgcolor=none render_bg={} image=graphics/Threshold/music/vol	inset="7 0 0 0"}
+		VolumeButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/Threshold/music/vol_hover }
+		VolumeButtonActiveStyle {	bgcolor=none render_bg={} image=graphics/Threshold/music/vol	inset="7 0 0 0"}
+		VolumeButtonActiveStyle:hover {	bgcolor=none render_bg={} image=graphics/Threshold/music/vol_hover }				
+		MuteVolumeButtonStyle {	bgcolor=none render_bg={} image=graphics/Threshold/music/mute	inset="7 0 0 0"}
+		MuteVolumeButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/Threshold/music/mute_hover }
+		MuteVolumeButtonActiveStyle {	bgcolor=none render_bg={} image=graphics/Threshold/music/mute	inset="7 0 0 0"}
+		MuteVolumeButtonActiveStyle:hover {	bgcolor=none render_bg={} image=graphics/Threshold/music/mute_hover}
 		
-		BrowseButtonStyle {	bgcolor=none render_bg={} image=graphics/custom/music/browse inset="7 0 0 0"}
-		BrowseButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/custom/music/browse_hover	}
+		BrowseButtonStyle {	bgcolor=none render_bg={} image=graphics/Threshold/music/browse inset="7 0 0 0"}
+		BrowseButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/Threshold/music/browse_hover	}
 		
 		StatusStyle	{ render_bg={} font-family=basefont textcolor="DefaultText" font-size=14	}
 		StatusStyleDim	{ render_bg={} font-family=basefont textcolor="DefaultText.Hover" font-size=14	}

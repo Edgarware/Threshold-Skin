@@ -142,7 +142,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/pause )"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/pause )"
 			}
 		}
 
@@ -157,7 +157,7 @@
 			bgcolor=none
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/pause )"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/pause )"
 			}
 		}
 
@@ -173,7 +173,7 @@
 			bgcolor=none
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/install  )"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/install  )"
 			}
 		}
 
@@ -188,7 +188,7 @@
 			bgcolor=none
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/install)"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/install)"
 			}
 		}
 
@@ -203,7 +203,7 @@
 			bgcolor=none
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/close )"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/close )"
 			}
 		}
 
@@ -218,7 +218,7 @@
 			bgcolor=none
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/close )"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/close )"
 			}
 		}
 
@@ -247,7 +247,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/workshop )"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/workshop )"
 			}
 			render_bg
 			{
@@ -289,7 +289,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/custom/icons/workshop )"
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/workshop )"
 			}
 			render_bg
 			{

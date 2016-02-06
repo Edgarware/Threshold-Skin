@@ -157,18 +157,18 @@
 		CChatActionsButton
 		{
 			inset="2 0 0 0"
-			image="graphics/custom/dots"
+			image="graphics/Threshold/dots"
 		}
 		
 		CChatActionsButton:hover
 		{
-			image="graphics/custom/dots"
+			image="graphics/Threshold/dots"
 			bgcolor=Menu.Hover
 		}
 
 		CChatActionsButton:selected
 		{
-			image="graphics/custom/dots"
+			image="graphics/Threshold/dots"
 			bgcolor=Accent
 		}
 

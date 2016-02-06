@@ -267,7 +267,7 @@
 		{
 			bgcolor="none"
 			inset="4 2 0 0"
-			image="graphics/custom/icons/search"
+			image="graphics/Threshold/icons/search"
 			padding-left=10
 			padding-right=5
 			render_bg

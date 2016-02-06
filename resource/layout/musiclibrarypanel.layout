@@ -139,7 +139,7 @@
 			bgcolor="none"
 			inset="10 0 0 0"
 			render_bg={}
-			image="graphics/custom/icons/search"	
+			image="graphics/Threshold/icons/search"	
 		}
 		
 		LibrarySearchIcon:disabled

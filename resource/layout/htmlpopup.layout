@@ -23,12 +23,12 @@
 		bgcolor=none
 		inset="5 0 0 0"
 		render_bg={}
-		image="graphics/custom/back"
+		image="graphics/Threshold/back"
 		}
 		BackButtonSm:hover
 		{
 		bgcolor=Menu.Button.Hover
-		image="graphics/custom/back"
+		image="graphics/Threshold/back"
 		render_bg={
 			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
 		}
@@ -36,7 +36,7 @@
 		BackButtonSm:active
 		{
 		bgcolor=Accent
-		image="graphics/custom/back"
+		image="graphics/Threshold/back"
 		render_bg={
 			0="fill(x0,y0,x1,y1,Accent)"
 		}
@@ -45,20 +45,20 @@
 		{
 		bgcolor=none
 		render_bg={}
-		image="graphics/custom/back_dis"
+		image="graphics/Threshold/back_dis"
 		}
 		ForwardButtonSm
 		{
 		bgcolor=none
 		inset="5 0 0 0"
 		render_bg={}
-		image="graphics/custom/forward"
+		image="graphics/Threshold/forward"
 		}
 		
 		ForwardButtonSm:hover
 		{
 		bgcolor=Menu.Button.Hover
-		image="graphics/custom/forward"
+		image="graphics/Threshold/forward"
 		render_bg={
 			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
 		}
@@ -66,7 +66,7 @@
 		ForwardButtonSm:active
 		{
 		bgcolor=Accent
-		image="graphics/custom/forward"
+		image="graphics/Threshold/forward"
 		render_bg={
 			0="fill(x0,y0,x1,y1,Menu.Button.Accent)"
 		}
@@ -75,7 +75,7 @@
 		{
 		bgcolor=none
 		render_bg={}
-		image="graphics/custom/forward_dis"
+		image="graphics/Threshold/forward_dis"
 		}
 		
 			
@@ -97,7 +97,7 @@
 			inset="0 0 0 0"		
 			render{
 				0="fill(x0, y0, x1, y1, DefaultBackground)"
-				1="image(x0+12, y0+10, x1, y1, graphics/custom/lock)"
+				1="image(x0+12, y0+10, x1, y1, graphics/Threshold/lock)"
 			}
 		}
 

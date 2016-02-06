@@ -42,7 +42,7 @@
 		
 		downarrow:hover
 		{
-			image="graphics/custom/icons/down_hover"
+			image="graphics/Threshold/icons/down_hover"
 		}
 		
 		inviteLinkStyle

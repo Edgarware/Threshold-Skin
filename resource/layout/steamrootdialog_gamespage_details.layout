@@ -157,7 +157,7 @@
 		{
        		inset="0 0 0 0"
         	render {
-				5="image( x0 + 5, y0 + 3, x1, y1, graphics/custom/icons/plus_hover )"
+				5="image( x0 + 5, y0 + 3, x1, y1, graphics/Threshold/icons/plus_hover )"
         	}   
         	render_bg {
         	}
@@ -167,7 +167,7 @@
 		{
        		inset="0 0 0 0"
         	render {
-				5="image( x0 + 5, y0 + 3, x1, y1, graphics/custom/icons/plus )"
+				5="image( x0 + 5, y0 + 3, x1, y1, graphics/Threshold/icons/plus )"
         	}   
         	render_bg {
         	}

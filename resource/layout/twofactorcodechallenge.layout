@@ -29,6 +29,7 @@
 		Key
 		{
 			//image="graphics/icon_security_key"
+			textcolor=none
 		}
 		
 		AuthCode

@@ -29,31 +29,31 @@
 		{
 			padding-right=2
 			inset="-1 0 0 0"
-			image="graphics/custom/icons/close"
+			image="graphics/Threshold/icons/close"
 		}
 		CloseButtonSm:hover
 		{
-			image="graphics/custom/icons/close"
+			image="graphics/Threshold/icons/close"
 		}
 		NextButtonSm
 		{
 			padding-right=3
 			inset="-1 1 0 0"
-			image="graphics/custom/icons/down"
+			image="graphics/Threshold/icons/down"
 		}
 		NextButtonSm:hover
 		{
-			image="graphics/custom/icons/down"
+			image="graphics/Threshold/icons/down"
 		}
 		PrevButtonSm
 		{
 			padding-right=3
 			inset="-1 -1 0 0"
-			image="graphics/custom/icons/up"
+			image="graphics/Threshold/icons/up"
 		}
 		PrevButtonSm:hover
 		{
-			image="graphics/custom/icons/up"
+			image="graphics/Threshold/icons/up"
 		}
 	}
 		
