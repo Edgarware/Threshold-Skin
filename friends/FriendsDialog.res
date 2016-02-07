@@ -153,9 +153,9 @@
 		{			
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1 - 51, Root.Header)"
-				1="fill(x0, y1 - 51, x1, y1 - 50, Root.Div)"
-				2="fill(x0, y1 - 50, x1, y1, DefaultBackground)"
+				0="fill(x0, y0, x1, y0 + 82, DefaultBackground)"
+				0="fill(x0, y0 + 81, x1, y0 + 82, Root.Div)"
+				1="fill(x0, y0 + 82, x1, y1, Root.Header)"
 			}
 		}	
 		
@@ -324,17 +324,17 @@
 		place { control="frame_captiongrip" margin=0 width=max height=32 }
 		place [!$OSX] { control="MenuBar" margin-left=0 height=32 width=50}
 
-		place { control="FriendPanelSelf" align=bottom margin-left=15 margin-bottom=2 } //modifying the width & height of this element kills cpu usage. Just draw something over it
+		place { control="FriendPanelSelf" align=top margin-left=15 y=30 } //modifying the width & height of this element kills cpu usage
 		
 		place { control="friends_search"  width=max}
-		place [!$OSX] { control="friends_search_icon,friends_search" align=left y=32 height=40 spacing=0 x=0}
+		place [!$OSX] { control="friends_search_icon,friends_search" align=left y=82 height=40 spacing=0 x=0}
 		
 		//place { control="friends_search_icon" align=right dir=right margin-right=145 height=31}
 		//place { control="friends_search" start=friends_search_icon dir=right y=-2 margin-right=45 width=100 height=31}
 		
-		place { control="FriendsDialogSheet" y=68 dir=down width=max height=max spacing=3 margin-bottom=51}	
+		place { control="FriendsDialogSheet" y=118 dir=down width=max height=max spacing=3}	
 		
-		place { control="DownLabel" x=0 y=40 width=max margin-left=15 margin-right=15}
+		place { control="DownLabel" x=0 y=90 width=max margin-left=15 margin-right=15}
 		place { control="NoFriendsAddFriendButton" width=70 height=25 align=right start="DownLabel" dir=down margin-top=10 margin-right=15}
 	
 		place { control="addFriendsButton" align=bottom margin-left=16 margin-right=9 margin-bottom=7 height=24 region=hidden}
