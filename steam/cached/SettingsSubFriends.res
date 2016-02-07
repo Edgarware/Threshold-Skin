@@ -76,6 +76,39 @@
 		}   
 	}
 	
+	layout{
+		
+		region {name=hidden width=0 height=0}
+	
+		place { control="Label1" x=20 y=15 width=100 height=24 region=hidden} //avatar
+		place { control="Label2" x=70 y=15 width=304 height=24 region=hidden} //profile name
+		
+		place { control="ImageAvatar" margin-top=20 margin-left=20width=32 height=32 }
+		place { control="ImageAvatarOverlay" margin-top=16 margin-left=16 width=40 height=40 }
+		place { control="NameEntry" start=ImageAvatar dir=right y=4 x=15}
+		place { control="URLLabel2" start=ImageAvatar dir=down margin-top=4 } //change (avatar)
+		place { control="URLLabel1" start=URLLabel2 dir=right margin-left=8 } //view my steam community profile
+		
+		place { control="Divider1" start=URLLabel2 dir=down margin-top=15 width=max margin-right=20 }
+		
+		place { control=AutoSignIntoFriendsCheck,ShowTimeInChatLogCheck,AlwaysNewChatCheck start=Divider1 dir=down height=24 margin-top=15}
+		place { control="Divider2" start=AlwaysNewChatCheck dir=down margin-top=15 width=max margin-right=20 }
+		
+		place { control="Label3" start=Divider2 dir=down margin-top=15 } //notifications and sounds
+		
+		place { control="Label4" start=Label3 dir=down margin-top=15 } //when any friend joins a game
+		place { control="JoinGameNotifyCheck,JoinGamePlaySoundCheck" start=Label4 dir=down height=24 margin-top=4}
+		
+		place { control="Label5" start=JoinGamePlaySoundCheck dir=down margin-top=15 } //when any friend comes online
+		place { control="FriendOnlineNotifyCheck,FriendOnlinePlaySoundCheck" start=Label5 dir=down height=24 margin-top=4}
+		
+		place { control="Label6" start=Label4 dir=right margin-left=100 } //when I recieve a message
+		place { control="ReceiveMessageNotifyCheck,ReceiveMessagePlaySoundCheck" start=Label6 dir=down height=24 margin-top=4}
+		
+		place { control="Label7" start=ReceiveMessagePlaySoundCheck dir=down margin-top=15 } //flash window when i receive a message
+		place { control="FlashModeAlways,FlashModeMinimized,FlashModeNever" start=Label7 dir=down height=24 margin-top=4 }
+	}
+	
 	"ImageAvatar"
 	{
 		"ControlName"		"ImagePanel"

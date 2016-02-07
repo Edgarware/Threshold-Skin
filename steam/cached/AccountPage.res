@@ -74,6 +74,27 @@
 			}
 		}
 	}
+	
+	layout{
+		place { control=LogoutLabel,ContactEmailLabel,Label2,SecurityStatusLabel dir=down margin-top=20 margin-left=20 spacing=8 width=100}
+		place { control=AccountInfo, start=LogoutLabel dir=right margin-left=0}
+		place { control=EmailInfo,VACStatusLabel start=AccountInfo dir=down margin-top=8 spacing=8}
+		place { control=SecurityIcon,SecurityStatusState start=SecurityStatusLabel dir=right margin-left=0 spacing=4}
+		place { control=AccountLink start=LogoutLabel dir=right align=right margin-right=50}
+		
+		place { control=ManageSecurityButton,ChangePasswordButton,ChangeContactEmailButton start=SecurityStatusLabel dir=down margin-top=25 spacing=8 width=220}
+		
+		place { control=Divider1 start=ChangeContactEmailButton dir=down margin-top=15 width=max margin-right=20}
+		
+		place { control=BetaParticipationLabel,CurrentBetaLabel start=Divider1 dir=down margin-top=15 spacing=4 width=150}
+		place { control=ChangeBetaButton start=BetaParticipationLabel dir=right margin-left=0 width=200}
+		place { control=ReportBugLink start=BetaParticipationLabel dir=right align=right margin-right=50}
+		
+		place { control=Divider2 start=CurrentBetaLabel dir=down margin-top=15 width=max margin-right=20}
+		
+		place { control=NoPersonalInfoCheck start=Divider2 dir=down margin-top=15 height=24}
+		place { control=Label1 start=NoPersonalInfoCheck dir=down margin-top=10 x=28}
+	}
 
 	"AccountPage"
 	{

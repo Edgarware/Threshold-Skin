@@ -76,6 +76,28 @@
 		}
 	}
 	
+	layout{
+		place { control=Label1,DeviceName dir=down spacing=8 margin-top=20 margin-left=20}
+		place { control=ChangeDeviceButton start=DeviceName dir=right margin-left=15}
+		place { control=ReinitAudio start=DeviceName dir=down margin-top=15}
+		place { control=RepairAudio start=ReinitAudio dir=right margin-left=20}
+		
+		place { control=Divider1 start=ReinitAudio dir=down margin-top=30 width=max margin-right=20}
+		
+		place { control=MicrophoneLabel,MicrophoneVolume start=Divider1 dir=down margin-top=15 spacing=4}
+		place { control=SpeakerLabel,SpeakerVolume start=MicrophoneVolume dir=down margin-top=15 spacing=4}
+		
+		place { control=TestMicrophone start=Divider1 dir=down margin-top=25 width=160 align=right margin-right=50}
+		place { control=MicMeter,MicBoost start=TestMicrophone dir=down margin-top=15 spacing=0}
+		place { control=MicMeter2 start=TestMicrophone dir=down margin-top=15} //Actual volume meter
+		
+		place { control=Divider2 start=SpeakerVolume dir=down margin-top=15 width=max margin-right=20}
+		
+		place { control=WhenActiveLabel start=Divider2 dir=down margin-top=15}
+		place { control=TransmitMethodRadioButton1,TransmitMethodRadioButton2 start=WhenActiveLabel dir=down margin-top=4 spacing=0 height=24}
+		place { control=PushToTalkKeyEntry start=TransmitMethodRadioButton2 dir=down margin-top=4 x=28}
+	}
+	
 	"SettingsSubVoice"
 	{
 		"ControlName"		"CSettingsSubVoice"

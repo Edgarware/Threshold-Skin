@@ -75,6 +75,21 @@
 		}
 	}
 	
+	layout{
+		place { controls=Label4,LanguageCombo,TranslationLabel dir=down margin-top=20 margin-left=20 spacing=8}
+		place { controls=Divider1 start=TranslationLabel dir=down margin-top=15 width=max margin-right=20}
+		
+		place { controls=Label1 start=Divider1 dir=down margin-top=15 width=max margin-right=20}
+		place { controls=Label2,FavoriteWindowCombo start=Label1 dir=down margin-top=8 spacing=4}
+		place { controls=Label3,SkinCombo start=FavoriteWindowCombo dir=down margin-top=8 spacing=4}
+		
+		place { controls=AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck start=SkinCombo dir=down margin-top=8 spacing=0 height=24}
+		place { controls=Divider2 start=H264HWAccelCheck dir=down margin-top=15 width=max margin-right=20}
+		
+		place { controls=NotifyAvailableGamesCheck start=Divider2 dir=down width=max margin-right=20 margin-top=15}
+		place { controls=SetJumpListOptionsButton start=NotifyAvailableGamesCheck dir=down margin-top=8}
+	}
+	
 	"LanguageCombo"
 	{
 		"ControlName"		"ComboBox"
