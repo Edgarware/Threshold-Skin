@@ -756,7 +756,7 @@
 		
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=0 margin-top=0 }
 		
-		place { control="UIStatusPanel" x=0 region=left width=max height=40 align=bottom margin-bottom=60 }
+		place { control="UIStatusPanel" x=0 region=left width=max height=25 align=bottom margin-bottom=50 }
 		
 		place [!$OSX] { control="MenuBar" height=40 width=50 y=32 x=0 }
 

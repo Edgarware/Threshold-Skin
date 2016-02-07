@@ -30,14 +30,10 @@
 	
 	layout
 	{
-	  
-
-		region { name="TitleRegion" width=max height=28 align=top margin=5 } 
-		region { name="statusRegion" y=28 width=max height=28 align=bottom margin=6 } 
-		region { name="ProgressRegion" y=37 width=max height=10 align=top margin=0 margin-right=15 margin-left=15}
-	 	
-		place { control="StatusDownloading" region="TitleRegion" align="top-center" margin-top=2 }
-		place { control="StatusPaused, StatusComplete" region="StatusRegion"  align="top-center" margin-top=3 }
-	 	place { control="StatusProgressbar" region="ProgressRegion" width=300 height=3 margin-top=0 align="top-center" }
+		region {name=hidden width=0 height=0}
+		place { control="StatusDownloading" align="top-center"} //Also Offline mode status
+		place { control="StatusPaused" start=StatusDownloading dir=down align="top-center" region=hidden}
+		place { control="StatusComplete" start=StatusDownloading dir=down align="top-center" region=hidden}
+	 	place { control="StatusProgressbar" width=max height=5 align="bottom" }
 	}
 }
