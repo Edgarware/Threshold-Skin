@@ -1462,7 +1462,7 @@ steam.styles
     
     ListPanelSectionCollapser:hover [!$OSX]
     {
-		image="graphics/graphics/Threshold/icons/plus_hover" 
+		image="graphics/Threshold/icons/plus_hover" 
     }
     
     ListPanelSectionCollapser:hover [$OSX]
