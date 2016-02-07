@@ -576,7 +576,7 @@
 		WebPanelStyle
 		{
 			bgcolor="none"
-			textcolor="label"
+			textcolor=DefaultText
 			
 			render_bg 
 			{
