@@ -91,22 +91,22 @@
 		
 		place { control="Divider1" start=URLLabel2 dir=down margin-top=15 width=max margin-right=20 }
 		
-		place { control=AutoSignIntoFriendsCheck,ShowTimeInChatLogCheck,AlwaysNewChatCheck start=Divider1 dir=down height=24 margin-top=15}
+		place { control=AutoSignIntoFriendsCheck,ShowTimeInChatLogCheck,AlwaysNewChatCheck start=Divider1 dir=down margin-top=15}
 		place { control="Divider2" start=AlwaysNewChatCheck dir=down margin-top=15 width=max margin-right=20 }
 		
 		place { control="Label3" start=Divider2 dir=down margin-top=15 } //notifications and sounds
 		
 		place { control="Label4" start=Label3 dir=down margin-top=15 } //when any friend joins a game
-		place { control="JoinGameNotifyCheck,JoinGamePlaySoundCheck" start=Label4 dir=down height=24 margin-top=4}
+		place { control="JoinGameNotifyCheck,JoinGamePlaySoundCheck" start=Label4 dir=down margin-top=4}
 		
 		place { control="Label5" start=JoinGamePlaySoundCheck dir=down margin-top=15 } //when any friend comes online
-		place { control="FriendOnlineNotifyCheck,FriendOnlinePlaySoundCheck" start=Label5 dir=down height=24 margin-top=4}
+		place { control="FriendOnlineNotifyCheck,FriendOnlinePlaySoundCheck" start=Label5 dir=down margin-top=4}
 		
 		place { control="Label6" start=Label4 dir=right margin-left=100 } //when I recieve a message
-		place { control="ReceiveMessageNotifyCheck,ReceiveMessagePlaySoundCheck" start=Label6 dir=down height=24 margin-top=4}
+		place { control="ReceiveMessageNotifyCheck,ReceiveMessagePlaySoundCheck" start=Label6 dir=down margin-top=4}
 		
 		place { control="Label7" start=ReceiveMessagePlaySoundCheck dir=down margin-top=15 } //flash window when i receive a message
-		place { control="FlashModeAlways,FlashModeMinimized,FlashModeNever" start=Label7 dir=down height=24 margin-top=4 }
+		place { control="FlashModeAlways,FlashModeMinimized,FlashModeNever" start=Label7 dir=down margin-top=4 }
 	}
 	
 	"ImageAvatar"

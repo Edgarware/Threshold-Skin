@@ -92,8 +92,8 @@
 		
 		place { control=Divider2 start=CurrentBetaLabel dir=down margin-top=15 width=max margin-right=20}
 		
-		place { control=NoPersonalInfoCheck start=Divider2 dir=down margin-top=15 height=24}
-		place { control=Label1 start=NoPersonalInfoCheck dir=down margin-top=10 x=28}
+		place { control=NoPersonalInfoCheck start=Divider2 dir=down margin-top=15}
+		place { control=Label1 start=NoPersonalInfoCheck dir=down margin-top=8 x=28}
 	}
 
 	"AccountPage"
