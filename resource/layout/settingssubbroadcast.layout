@@ -32,7 +32,6 @@
 		"RecordSystemAudio" { ControlName="CheckButton" fieldName="RecordSystemAudio" group="HideWhenDisabled" }
 		"RecordMic" { ControlName="CheckButton" fieldName="RecordMic" group="HideWhenDisabled" }
 		"ConfigMic" { ControlName="URLLabel" fieldName="ConfigMic" labelText="#Steam_Settings_Broadcast_ConfigMic" URLText="steam://settings/voice" group="HideWhenDisabled" }
-		"EnableHardwareSupport" { ControlName="CheckButton" fieldName="EnableHardwareSupport" visible="0" }
 		"ShowDebugInfo" { ControlName="CheckButton" fieldName="ShowDebugInfo" group="HideWhenDisabled" }
 		"ShowReminder" { ControlName="CheckButton" fieldName="ShowReminder" group="HideWhenDisabled" }
 		
