@@ -188,7 +188,7 @@
 		{			
 			bgcolor=none
 			render{
-				0="image(x0,y0,x1,y1,graphics/custom/tmp/beta)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
 			}
 			inset="0 0 0 0"
 		}
@@ -197,7 +197,7 @@
 		{
 			bgcolor=none
 			render{
-				0="image(x0,y0,x1,y1,graphics/custom/tmp/beta)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
 			}
 			inset="0 0 0 0"
 		}
@@ -357,12 +357,13 @@
 				2="fill( x0, y0, x1, y0+72, Root.Header)"
 				//3="fill( x0+250, y0, x0+475, y0+72, Search.Back)"
 				4="fill( x0, y1-50, x0+250, y1, Root.LeftCol.Bottom )"
+				5="image( x0+1, y0+320, x1, y1, graphics/Threshold/tmp/beta )"
 			}
 			render{
-				0="image (x0+15, y0+154, x1, y1, graphics/custom/store)"
-				1="image (x0+15, y0+199, x1, y1, graphics/custom/library)"
-				2="image (x0+15, y0+244, x1, y1, graphics/custom/community)"
-				3="image (x0+15, y0+289, x1, y1, graphics/custom/me)"
+				0="image (x0+15, y0+154, x1, y1, graphics/Threshold/store)"
+				1="image (x0+15, y0+199, x1, y1, graphics/Threshold/library)"
+				2="image (x0+15, y0+244, x1, y1, graphics/Threshold/community)"
+				3="image (x0+15, y0+289, x1, y1, graphics/Threshold/me)"
 			}
 		}		
 		
@@ -371,7 +372,7 @@
 			textcolor="none"
 			inset="0 0 0 0"
 			render{
-				0="image(x0+17,y0+14,x1,y1,graphics/custom/menu)"
+				0="image(x0+17,y0+14,x1,y1,graphics/Threshold/menu)"
 			}
 		}
 		
@@ -521,8 +522,7 @@
 
 			render 
 			{
-				0="fill(x0+15,y0+17,x0+35,y0+32,Root.Label.Text)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -551,8 +551,7 @@
 
 			render 
 			{
-				0="fill(x0+15,y0+17,x0+35,y0+32,Root.Label.Text)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -565,8 +564,7 @@
 
 			render 
 			{
-				0="fill(x0+15,y0+17,x0+35,y0+32,Root.Label.Text)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -581,8 +579,7 @@
 			textcolor=Root.LeftCol.Disabled
 			render 
 			{
-				0="fill(x0+15,y0+17,x0+35,y0+32,Root.LeftCol.Disabled)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail_dis)"
 			}
 			render_bg
 			{
@@ -600,8 +597,8 @@
 
 			render 
 			{
-				0="fill(x0+15,y0+17,x0+35,y0+32,Accent)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				0="fill(x0+11,y0+15,x0+37,y0+33,Accent)"
+				1="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -612,8 +609,8 @@
 		{
 			render 
 			{
-				0="fill(x0+15,y0+17,x0+35,y0+32,Accent)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				0="fill(x0+11,y0+15,x0+37,y0+33,Accent)"
+				1="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -625,8 +622,8 @@
 		{
 			render 
 			{
-				0="fill(x0+15,y0+17,x0+35,y0+32,Accent)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				0="fill(x0+11,y0+15,x0+37,y0+33,Accent)"
+				1="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -639,8 +636,7 @@
 		{
 			render 
 			{
-				0="fill(x0+15,y0+17,x0+35,y0+32,Root.LeftCol.Disabled)"
-				1="image(x0+15,y0+19,x1,y1,graphics/custom/mail)"
+				1="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail_dis)"
 			}
 			render_bg
 			{
@@ -655,8 +651,7 @@
 			render {}
 			render_bg
 			{
-				1="image( x0+13, y0+11, x1, y1, resource/notfamilyview )"
-				
+				1="image( x0+11, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
 			}	
 		}
 
@@ -666,7 +661,7 @@
 			render_bg
 			{
 				0="fill(x0,y0,x1,y1,Menu.Hover)"
-				1="image( x0+13, y0+11, x1, y1, resource/notfamilyview )"
+				2="image( x0+11, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
 				
 			}	
 			
@@ -677,7 +672,7 @@
 			render {}
 			render_bg
 			{
-				1="image( x0+13, y0+11, x1, y1, resource/familyview )"
+				1="image( x0+11, y0+9, x1, y1, graphics/Threshold/familyview )"
 			}	
 			
 		}
@@ -689,7 +684,7 @@
 			render_bg
 			{
 				0="fill(x0,y0,x1,y1,Menu.Hover)"
-				1="image( x0+13, y0+11, x1, y1, resource/familyview )"
+				2="image( x0+11, y0+9, x1, y1, graphics/Threshold/familyview )"
 				
 			}	
 			
@@ -737,8 +732,8 @@
 		support_hover_red1 "193 94 93 255"
 		support_hover_red2 "156 64 63 255"
 		
-		inbox_active_text "text"
-		inbox_inactive_text "labeldisabled"
+		inbox_active_text DefaultText
+		inbox_inactive_text DefaultText.Disabled
 
 		backdrop "20 20 20 255"
 		
@@ -751,12 +746,12 @@
 		region {name=left width=225 y=32}
 		region {name=bottom region=left width=max height=50 align=bottom}
 		
-		place [!$OSX] { control="New" width=72 height=32 y=0 width=max align=right margin-right=180}
-		place [$OSX]  { control="New" width=145 height=32 y=0 width=max align=right margin-right=-20}
+		place [!$OSX] { control="New" width=72 height=32 y=0 width=max align=right margin-right=180 region=hidden}
+		place [$OSX]  { control="New" width=145 height=32 y=0 width=max align=right margin-right=-20 region=hidden}
 		
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=0 margin-top=0 }
 		
-		place { control="UIStatusPanel" x=0 region=left width=max height=40 align=bottom margin-bottom=60 }
+		place { control="UIStatusPanel" x=0 region=left width=max height=25 align=bottom margin-bottom=50 }
 		
 		place [!$OSX] { control="MenuBar" height=40 width=50 y=32 x=0 }
 

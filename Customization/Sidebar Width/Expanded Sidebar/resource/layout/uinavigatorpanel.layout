@@ -6,10 +6,10 @@
 		{
 			bgcolor=none
 			inset="13 0 0 0"
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/title)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
 			}
 		}
 		
@@ -17,50 +17,50 @@
 		{
 			bgcolor=none
 			inset="13 0 0 0"
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/titlefocus)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
 		BackButton:hover
 		{
 			bgcolor=none
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/title)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
 			}
 		}
 		
 		BackButton:hover:framefocus
 		{
 			bgcolor=none
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/titlefocus)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
 		BackButton:active
 		{
 			bgcolor=none
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/title)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
 			}
 		}
 		
 		BackButton:active:framefocus
 		{
 			bgcolor=none
-			image="graphics/custom/back_sm"
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/custom/titlefocus)"
+				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
@@ -69,7 +69,7 @@
 			bgcolor=none
 			image="none"
 			render_bg{
-				0="image(x0+13, y0+11, x1, y1, graphics/custom/titlefocus)"
+				0="image(x0+13, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
@@ -78,7 +78,7 @@
 			bgcolor=none
 			image="none"
 			render_bg{
-				0="image(x0+13, y0+11, x1, y1, graphics/custom/titlefocus)"
+				0="image(x0+13, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
@@ -173,7 +173,7 @@
 		{
 			bgcolor="none"
 			inset="15 2 0 0"
-			image="graphics/custom/icons/search"
+			image="graphics/Threshold/icons/search"
 			padding-left=0
 			padding-right=0
 			padding-top=0
@@ -196,7 +196,7 @@
 			font-family=basefont
 			textcolor="labelfocus"
 			font-style=uppercase
-			image="graphics/custom/icons/plus"
+			image="graphics/Threshold/icons/plus"
 			render_bg
 			{
 			}
@@ -205,7 +205,7 @@
 		MusicAddButton:hover
 		{
 			textcolor="white"
-			image="graphics/custom/icons/plus_hover"
+			image="graphics/Threshold/icons/plus_hover"
 			render_bg
 			{
 
@@ -217,7 +217,7 @@
 			bgcolor="none"
 			inset="0 0 0 0"
 			render_bg={}
-			image="graphics/custom/icons/music_player"
+			image="graphics/Threshold/icons/music_player"
 			padding-left=12
 			padding-right=12
 		}
@@ -226,14 +226,14 @@
 		{
 			bgcolor=Menu.Button.Hover
 			render_bg={}
-			image="graphics/custom/icons/music_player"
+			image="graphics/Threshold/icons/music_player"
 		}
 		
 		MusicPlayerIcon:selected
 		{
 			bgcolor=Menu.Button.Active
 			render_bg={}
-			image="graphics/custom/icons/music_player"
+			image="graphics/Threshold/icons/music_player"
 		}
 		
 		LibraryShow [!$OSX]
@@ -316,7 +316,7 @@
 			textcolor=Root.Label.Text
 			inset="0 0 6 0"
 			render{
-				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down)"
+				0="image(x1-7,y0+18,x1,y1,graphics/Threshold/icons/down)"
 			}
 		}
 
@@ -334,7 +334,7 @@
 			textcolor=Root.Label.Hover.Text
 			inset="0 0 6 0"
 			render{
-				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down_hover)"
+				0="image(x1-7,y0+18,x1,y1,graphics/Threshold/icons/down_hover)"
 			}
 		}	
 		
@@ -343,7 +343,7 @@
 			textcolor=Root.Label.Text
 			inset="0 0 6 0"
 			render{
-				0="image(x1-7,y0+18,x1,y1,graphics/custom/icons/down)"
+				0="image(x1-7,y0+18,x1,y1,graphics/Threshold/icons/down)"
 			}
 		}
 		
@@ -356,16 +356,31 @@
 		ViewDetailButton
 		{
 			bgcolor="none"
-			inset="1 0 0 0"
+			inset="0 0 0 0"
 			render_bg={}
 			//image="graphics/icon_button_detail"
 			padding-left=0
 			padding-right=0
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Root.Label.Hover.Text)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Root.Label.Hover.Text)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Root.Label.Hover.Text)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+25, Root.Label.Hover.Text)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Root.Label.Hover.Text)"
+				1="fill(x0+4, y0+14, x0+7, y0+15, Root.Label.Hover.Text)"
+				2="fill(x0+4, y0+16, x0+7, y0+17, Root.Label.Hover.Text)"
+				3="fill(x0+7, y0+14, x0+8, y0+17, Root.Label.Hover.Text)"
+				
+				4="fill(x0+3, y0+18, x0+4, y0+21, Root.Label.Hover.Text)"
+				5="fill(x0+4, y0+18, x0+7, y0+19, Root.Label.Hover.Text)"
+				6="fill(x0+4, y0+20, x0+7, y0+21, Root.Label.Hover.Text)"
+				7="fill(x0+7, y0+18, x0+8, y0+21, Root.Label.Hover.Text)"
+				
+				8="fill(x0+3, y0+22, x0+4, y0+25, Root.Label.Hover.Text)"
+				9="fill(x0+4, y0+22, x0+7, y0+23, Root.Label.Hover.Text)"
+				10="fill(x0+4, y0+24, x0+7, y0+25, Root.Label.Hover.Text)"
+				11="fill(x0+7, y0+22, x0+8, y0+25, Root.Label.Hover.Text)"
+				
+				12="fill(x0+10, y0+14, x0+11, y0+25, Root.Label.Hover.Text)"
+				13="fill(x0+11, y0+14, x0+16, y0+15, Root.Label.Hover.Text)"
+				14="fill(x0+11, y0+24, x0+16, y0+25, Root.Label.Hover.Text)"
+				15="fill(x0+16, y0+14, x0+17, y0+25, Root.Label.Hover.Text)"
 			}
 		}
 		
@@ -375,10 +390,25 @@
 			render_bg={}
 			//image="graphics/icon_button_detail_over"
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Root.Label.Text)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Root.Label.Text)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Root.Label.Text)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+25, Root.Label.Text)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Root.Label.Text)"
+				1="fill(x0+4, y0+14, x0+7, y0+15, Root.Label.Text)"
+				2="fill(x0+4, y0+16, x0+7, y0+17, Root.Label.Text)"
+				3="fill(x0+7, y0+14, x0+8, y0+17, Root.Label.Text)"
+				
+				4="fill(x0+3, y0+18, x0+4, y0+21, Root.Label.Text)"
+				5="fill(x0+4, y0+18, x0+7, y0+19, Root.Label.Text)"
+				6="fill(x0+4, y0+20, x0+7, y0+21, Root.Label.Text)"
+				7="fill(x0+7, y0+18, x0+8, y0+21, Root.Label.Text)"
+				
+				8="fill(x0+3, y0+22, x0+4, y0+25, Root.Label.Text)"
+				9="fill(x0+4, y0+22, x0+7, y0+23, Root.Label.Text)"
+				10="fill(x0+4, y0+24, x0+7, y0+25, Root.Label.Text)"
+				11="fill(x0+7, y0+22, x0+8, y0+25, Root.Label.Text)"
+				
+				12="fill(x0+10, y0+14, x0+11, y0+25, Root.Label.Text)"
+				13="fill(x0+11, y0+14, x0+16, y0+15, Root.Label.Text)"
+				14="fill(x0+11, y0+24, x0+16, y0+25, Root.Label.Text)"
+				15="fill(x0+16, y0+14, x0+17, y0+25, Root.Label.Text)"
 			}
 		}
 
@@ -388,12 +418,26 @@
 			render_bg={}
 			//image="graphics/icon_button_detail_down"
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Accent)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Accent)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Accent)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+25, Accent)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Accent)"
+				1="fill(x0+4, y0+14, x0+7, y0+15, Accent)"
+				2="fill(x0+4, y0+16, x0+7, y0+17, Accent)"
+				3="fill(x0+7, y0+14, x0+8, y0+17, Accent)"
+				
+				4="fill(x0+3, y0+18, x0+4, y0+21, Accent)"
+				5="fill(x0+4, y0+18, x0+7, y0+19, Accent)"
+				6="fill(x0+4, y0+20, x0+7, y0+21, Accent)"
+				7="fill(x0+7, y0+18, x0+8, y0+21, Accent)"
+				
+				8="fill(x0+3, y0+22, x0+4, y0+25, Accent)"
+				9="fill(x0+4, y0+22, x0+7, y0+23, Accent)"
+				10="fill(x0+4, y0+24, x0+7, y0+25, Accent)"
+				11="fill(x0+7, y0+22, x0+8, y0+25, Accent)"
+				
+				12="fill(x0+10, y0+14, x0+11, y0+25, Accent)"
+				13="fill(x0+11, y0+14, x0+16, y0+15, Accent)"
+				14="fill(x0+11, y0+24, x0+16, y0+25, Accent)"
+				15="fill(x0+16, y0+14, x0+17, y0+25, Accent)"
 			}
-			
 		}
 		
 		ViewDetailButton:selected
@@ -402,24 +446,53 @@
 			render_bg={}
 			//image="graphics/icon_button_detail_down"
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Accent)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Accent)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Accent)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+25, Accent)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Accent)"
+				1="fill(x0+4, y0+14, x0+7, y0+15, Accent)"
+				2="fill(x0+4, y0+16, x0+7, y0+17, Accent)"
+				3="fill(x0+7, y0+14, x0+8, y0+17, Accent)"
+				
+				4="fill(x0+3, y0+18, x0+4, y0+21, Accent)"
+				5="fill(x0+4, y0+18, x0+7, y0+19, Accent)"
+				6="fill(x0+4, y0+20, x0+7, y0+21, Accent)"
+				7="fill(x0+7, y0+18, x0+8, y0+21, Accent)"
+				
+				8="fill(x0+3, y0+22, x0+4, y0+25, Accent)"
+				9="fill(x0+4, y0+22, x0+7, y0+23, Accent)"
+				10="fill(x0+4, y0+24, x0+7, y0+25, Accent)"
+				11="fill(x0+7, y0+22, x0+8, y0+25, Accent)"
+				
+				12="fill(x0+10, y0+14, x0+11, y0+25, Accent)"
+				13="fill(x0+11, y0+14, x0+16, y0+15, Accent)"
+				14="fill(x0+11, y0+24, x0+16, y0+25, Accent)"
+				15="fill(x0+16, y0+14, x0+17, y0+25, Accent)"
 			}
-
 		}
 
 		ViewDetailButton:disabled
 		{
-			bgcolor="ButtonFace"
+			bgcolor="none"
 			render_bg={}
 			//image="graphics/icon_button_detail_disabled"
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Root.LeftCol.Disabled)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Root.LeftCol.Disabled)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Root.LeftCol.Disabled)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+25, Root.LeftCol.Disabled)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Root.LeftCol.Disabled)"
+				1="fill(x0+4, y0+14, x0+7, y0+15, Root.LeftCol.Disabled)"
+				2="fill(x0+4, y0+16, x0+7, y0+17, Root.LeftCol.Disabled)"
+				3="fill(x0+7, y0+14, x0+8, y0+17, Root.LeftCol.Disabled)"
+				
+				4="fill(x0+3, y0+18, x0+4, y0+21, Root.LeftCol.Disabled)"
+				5="fill(x0+4, y0+18, x0+7, y0+19, Root.LeftCol.Disabled)"
+				6="fill(x0+4, y0+20, x0+7, y0+21, Root.LeftCol.Disabled)"
+				7="fill(x0+7, y0+18, x0+8, y0+21, Root.LeftCol.Disabled)"
+				
+				8="fill(x0+3, y0+22, x0+4, y0+25, Root.LeftCol.Disabled)"
+				9="fill(x0+4, y0+22, x0+7, y0+23, Root.LeftCol.Disabled)"
+				10="fill(x0+4, y0+24, x0+7, y0+25, Root.LeftCol.Disabled)"
+				11="fill(x0+7, y0+22, x0+8, y0+25, Root.LeftCol.Disabled)"
+				
+				12="fill(x0+10, y0+14, x0+11, y0+25, Root.LeftCol.Disabled)"
+				13="fill(x0+11, y0+14, x0+16, y0+15, Root.LeftCol.Disabled)"
+				14="fill(x0+11, y0+24, x0+16, y0+25, Root.LeftCol.Disabled)"
+				15="fill(x0+16, y0+14, x0+17, y0+25, Root.LeftCol.Disabled)"
 			}
 		}
 		
@@ -432,10 +505,25 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="fill(x0 + 5, y0+15, x0+9, y0+19, Root.Label.Hover.Text)"
-				1="fill(x0 + 5, y0+21, x0+9, y0+25, Root.Label.Hover.Text)"
-				2="fill(x0 +11, y0+15, x0+15, y0+19, Root.Label.Hover.Text)"
-				3="fill(x0 +11, y0+21, x0+15, y0+25, Root.Label.Hover.Text)"
+				0="fill(x0+3, y0+14, x0+4, y0+19, Root.Label.Hover.Text)"
+				1="fill(x0+4, y0+14, x0+8, y0+15, Root.Label.Hover.Text)"
+				2="fill(x0+4, y0+18, x0+8, y0+19, Root.Label.Hover.Text)"
+				3="fill(x0+8, y0+14, x0+9, y0+19, Root.Label.Hover.Text)"
+				
+				4="fill(x0+10, y0+14, x0+11, y0+19, Root.Label.Hover.Text)"
+				5="fill(x0+11, y0+14, x0+15, y0+15, Root.Label.Hover.Text)"
+				6="fill(x0+11, y0+18, x0+15, y0+19, Root.Label.Hover.Text)"
+				7="fill(x0+15, y0+14, x0+16, y0+19, Root.Label.Hover.Text)"
+				
+				8="fill(x0+3, y0+20, x0+4, y0+25, Root.Label.Hover.Text)"
+				9="fill(x0+4, y0+20, x0+8, y0+21, Root.Label.Hover.Text)"
+				10="fill(x0+4, y0+24, x0+8, y0+25, Root.Label.Hover.Text)"
+				11="fill(x0+8, y0+20, x0+9, y0+25, Root.Label.Hover.Text)"
+				
+				12="fill(x0+10, y0+20, x0+11, y0+25, Root.Label.Hover.Text)"
+				13="fill(x0+11, y0+20, x0+15, y0+21, Root.Label.Hover.Text)"
+				14="fill(x0+11, y0+24, x0+15, y0+25, Root.Label.Hover.Text)"
+				15="fill(x0+15, y0+20, x0+16, y0+25, Root.Label.Hover.Text)"
 			}
 		}
 		
@@ -445,10 +533,25 @@
 			render_bg={}
 			//image="graphics/icon_button_grid_over"
 			render{
-				0="fill(x0 + 5, y0+15, x0+9, y0+19, Root.Label.Text)"
-				1="fill(x0 + 5, y0+21, x0+9, y0+25, Root.Label.Text)"
-				2="fill(x0 +11, y0+15, x0+15, y0+19, Root.Label.Text)"
-				3="fill(x0 +11, y0+21, x0+15, y0+25, Root.Label.Text)"
+				0="fill(x0+3, y0+14, x0+4, y0+19, Root.Label.Text)"
+				1="fill(x0+4, y0+14, x0+8, y0+15, Root.Label.Text)"
+				2="fill(x0+4, y0+18, x0+8, y0+19, Root.Label.Text)"
+				3="fill(x0+8, y0+14, x0+9, y0+19, Root.Label.Text)"
+				
+				4="fill(x0+10, y0+14, x0+11, y0+19, Root.Label.Text)"
+				5="fill(x0+11, y0+14, x0+15, y0+15, Root.Label.Text)"
+				6="fill(x0+11, y0+18, x0+15, y0+19, Root.Label.Text)"
+				7="fill(x0+15, y0+14, x0+16, y0+19, Root.Label.Text)"
+				
+				8="fill(x0+3, y0+20, x0+4, y0+25, Root.Label.Text)"
+				9="fill(x0+4, y0+20, x0+8, y0+21, Root.Label.Text)"
+				10="fill(x0+4, y0+24, x0+8, y0+25, Root.Label.Text)"
+				11="fill(x0+8, y0+20, x0+9, y0+25, Root.Label.Text)"
+				
+				12="fill(x0+10, y0+20, x0+11, y0+25, Root.Label.Text)"
+				13="fill(x0+11, y0+20, x0+15, y0+21, Root.Label.Text)"
+				14="fill(x0+11, y0+24, x0+15, y0+25, Root.Label.Text)"
+				15="fill(x0+15, y0+20, x0+16, y0+25, Root.Label.Text)"
 			}
 		}
 
@@ -458,10 +561,25 @@
 			render_bg={}
 			//image="graphics/icon_button_grid_down"
 			render{
-				0="fill(x0 + 5, y0+15, x0+9, y0+19, Accent)"
-				1="fill(x0 + 5, y0+21, x0+9, y0+25, Accent)"
-				2="fill(x0 +11, y0+15, x0+15, y0+19, Accent)"
-				3="fill(x0 +11, y0+21, x0+15, y0+25, Accent)"
+				0="fill(x0+3, y0+14, x0+4, y0+19, Accent)"
+				1="fill(x0+4, y0+14, x0+8, y0+15, Accent)"
+				2="fill(x0+4, y0+18, x0+8, y0+19, Accent)"
+				3="fill(x0+8, y0+14, x0+9, y0+19, Accent)"
+				
+				4="fill(x0+10, y0+14, x0+11, y0+19, Accent)"
+				5="fill(x0+11, y0+14, x0+15, y0+15, Accent)"
+				6="fill(x0+11, y0+18, x0+15, y0+19, Accent)"
+				7="fill(x0+15, y0+14, x0+16, y0+19, Accent)"
+				
+				8="fill(x0+3, y0+20, x0+4, y0+25, Accent)"
+				9="fill(x0+4, y0+20, x0+8, y0+21, Accent)"
+				10="fill(x0+4, y0+24, x0+8, y0+25, Accent)"
+				11="fill(x0+8, y0+20, x0+9, y0+25, Accent)"
+				
+				12="fill(x0+10, y0+20, x0+11, y0+25, Accent)"
+				13="fill(x0+11, y0+20, x0+15, y0+21, Accent)"
+				14="fill(x0+11, y0+24, x0+15, y0+25, Accent)"
+				15="fill(x0+15, y0+20, x0+16, y0+25, Accent)"
 			}
 		}
 		
@@ -471,12 +589,26 @@
 			render_bg={}
 			//image="graphics/icon_button_grid_down"
 			render{
-				0="fill(x0 + 5, y0+15, x0+9, y0+19, Accent)"
-				1="fill(x0 + 5, y0+21, x0+9, y0+25, Accent)"
-				2="fill(x0 +11, y0+15, x0+15, y0+19, Accent)"
-				3="fill(x0 +11, y0+21, x0+15, y0+25, Accent)"
+				0="fill(x0+3, y0+14, x0+4, y0+19, Accent)"
+				1="fill(x0+4, y0+14, x0+8, y0+15, Accent)"
+				2="fill(x0+4, y0+18, x0+8, y0+19, Accent)"
+				3="fill(x0+8, y0+14, x0+9, y0+19, Accent)"
+				
+				4="fill(x0+10, y0+14, x0+11, y0+19, Accent)"
+				5="fill(x0+11, y0+14, x0+15, y0+15, Accent)"
+				6="fill(x0+11, y0+18, x0+15, y0+19, Accent)"
+				7="fill(x0+15, y0+14, x0+16, y0+19, Accent)"
+				
+				8="fill(x0+3, y0+20, x0+4, y0+25, Accent)"
+				9="fill(x0+4, y0+20, x0+8, y0+21, Accent)"
+				10="fill(x0+4, y0+24, x0+8, y0+25, Accent)"
+				11="fill(x0+8, y0+20, x0+9, y0+25, Accent)"
+				
+				12="fill(x0+10, y0+20, x0+11, y0+25, Accent)"
+				13="fill(x0+11, y0+20, x0+15, y0+21, Accent)"
+				14="fill(x0+11, y0+24, x0+15, y0+25, Accent)"
+				15="fill(x0+15, y0+20, x0+16, y0+25, Accent)"
 			}
-
 		}
 		
 		ViewGridButton:disabled
@@ -485,10 +617,25 @@
 			render_bg={}
 			//image="graphics/icon_button_grid_disabled"
 			render{
-				0="fill(x0 + 5, y0+15, x0+9, y0+19, Root.LeftCol.Disabled)"
-				1="fill(x0 + 5, y0+21, x0+9, y0+25, Root.LeftCol.Disabled)"
-				2="fill(x0 +11, y0+15, x0+15, y0+19, Root.LeftCol.Disabled)"
-				3="fill(x0 +11, y0+21, x0+15, y0+25, Root.LeftCol.Disabled)"
+				0="fill(x0+3, y0+14, x0+4, y0+19, Root.LeftCol.Disabled)"
+				1="fill(x0+4, y0+14, x0+8, y0+15, Root.LeftCol.Disabled)"
+				2="fill(x0+4, y0+18, x0+8, y0+19, Root.LeftCol.Disabled)"
+				3="fill(x0+8, y0+14, x0+9, y0+19, Root.LeftCol.Disabled)"
+				
+				4="fill(x0+10, y0+14, x0+11, y0+19, Root.LeftCol.Disabled)"
+				5="fill(x0+11, y0+14, x0+15, y0+15, Root.LeftCol.Disabled)"
+				6="fill(x0+11, y0+18, x0+15, y0+19, Root.LeftCol.Disabled)"
+				7="fill(x0+15, y0+14, x0+16, y0+19, Root.LeftCol.Disabled)"
+				
+				8="fill(x0+3, y0+20, x0+4, y0+25, Root.LeftCol.Disabled)"
+				9="fill(x0+4, y0+20, x0+8, y0+21, Root.LeftCol.Disabled)"
+				10="fill(x0+4, y0+24, x0+8, y0+25, Root.LeftCol.Disabled)"
+				11="fill(x0+8, y0+20, x0+9, y0+25, Root.LeftCol.Disabled)"
+				
+				12="fill(x0+10, y0+20, x0+11, y0+25, Root.LeftCol.Disabled)"
+				13="fill(x0+11, y0+20, x0+15, y0+21, Root.LeftCol.Disabled)"
+				14="fill(x0+11, y0+24, x0+15, y0+25, Root.LeftCol.Disabled)"
+				15="fill(x0+15, y0+20, x0+16, y0+25, Root.LeftCol.Disabled)"
 			}
 		}
 		
@@ -501,12 +648,24 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Root.Label.Hover.Text)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Root.Label.Hover.Text)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Root.Label.Hover.Text)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+17, Root.Label.Hover.Text)"
-				4="fill(x0 + 10, y0+19, x0+17, y0+21, Root.Label.Hover.Text)"
-				5="fill(x0 + 10, y0+23, x0+17, y0+25, Root.Label.Hover.Text)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Root.Label.Hover.Text)"
+				1="fill(x0+4, y0+14, x0+5, y0+15, Root.Label.Hover.Text)"
+				2="fill(x0+4, y0+16, x0+5, y0+17, Root.Label.Hover.Text)"
+				3="fill(x0+5, y0+14, x0+6, y0+17, Root.Label.Hover.Text)"
+				4="fill(x0+8, y0+15, x0+17, y0+16, Root.Label.Hover.Text)"
+				
+				5="fill(x0+3, y0+18, x0+4, y0+21, Root.Label.Hover.Text)"
+				6="fill(x0+4, y0+18, x0+5, y0+19, Root.Label.Hover.Text)"
+				7="fill(x0+4, y0+20, x0+5, y0+21, Root.Label.Hover.Text)"
+				8="fill(x0+5, y0+18, x0+6, y0+21, Root.Label.Hover.Text)"
+				9="fill(x0+8, y0+19, x0+17, y0+20, Root.Label.Hover.Text)"
+				
+				10="fill(x0+3, y0+22, x0+4, y0+25, Root.Label.Hover.Text)"
+				11="fill(x0+4, y0+22, x0+5, y0+23, Root.Label.Hover.Text)"
+				12="fill(x0+4, y0+24, x0+5, y0+25, Root.Label.Hover.Text)"
+				13="fill(x0+5, y0+22, x0+6, y0+25, Root.Label.Hover.Text)"
+				14="fill(x0+8, y0+23, x0+17, y0+24, Root.Label.Hover.Text)"
+
 			}
 		}
 		
@@ -516,12 +675,23 @@
 			render_bg={}
 			//image="graphics/icon_button_list_over"
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Root.Label.Text)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Root.Label.Text)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Root.Label.Text)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+17, Root.Label.Text)"
-				4="fill(x0 + 10, y0+19, x0+17, y0+21, Root.Label.Text)"
-				5="fill(x0 + 10, y0+23, x0+17, y0+25, Root.Label.Text)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Root.Label.Text)"
+				1="fill(x0+4, y0+14, x0+5, y0+15, Root.Label.Text)"
+				2="fill(x0+4, y0+16, x0+5, y0+17, Root.Label.Text)"
+				3="fill(x0+5, y0+14, x0+6, y0+17, Root.Label.Text)"
+				4="fill(x0+8, y0+15, x0+17, y0+16, Root.Label.Text)"
+				
+				5="fill(x0+3, y0+18, x0+4, y0+21, Root.Label.Text)"
+				6="fill(x0+4, y0+18, x0+5, y0+19, Root.Label.Text)"
+				7="fill(x0+4, y0+20, x0+5, y0+21, Root.Label.Text)"
+				8="fill(x0+5, y0+18, x0+6, y0+21, Root.Label.Text)"
+				9="fill(x0+8, y0+19, x0+17, y0+20, Root.Label.Text)"
+				
+				10="fill(x0+3, y0+22, x0+4, y0+25, Root.Label.Text)"
+				11="fill(x0+4, y0+22, x0+5, y0+23, Root.Label.Text)"
+				12="fill(x0+4, y0+24, x0+5, y0+25, Root.Label.Text)"
+				13="fill(x0+5, y0+22, x0+6, y0+25, Root.Label.Text)"
+				14="fill(x0+8, y0+23, x0+17, y0+24, Root.Label.Text)"
 			}
 		}
 
@@ -531,12 +701,23 @@
 			render_bg={}
 			//image="graphics/icon_button_list_down"
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Accent)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Accent)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Accent)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+17, Accent)"
-				4="fill(x0 + 10, y0+19, x0+17, y0+21, Accent)"
-				5="fill(x0 + 10, y0+23, x0+17, y0+25, Accent)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Accent)"
+				1="fill(x0+4, y0+14, x0+5, y0+15, Accent)"
+				2="fill(x0+4, y0+16, x0+5, y0+17, Accent)"
+				3="fill(x0+5, y0+14, x0+6, y0+17, Accent)"
+				4="fill(x0+8, y0+15, x0+17, y0+16, Accent)"
+				
+				5="fill(x0+3, y0+18, x0+4, y0+21, Accent)"
+				6="fill(x0+4, y0+18, x0+5, y0+19, Accent)"
+				7="fill(x0+4, y0+20, x0+5, y0+21, Accent)"
+				8="fill(x0+5, y0+18, x0+6, y0+21, Accent)"
+				9="fill(x0+8, y0+19, x0+17, y0+20, Accent)"
+				
+				10="fill(x0+3, y0+22, x0+4, y0+25, Accent)"
+				11="fill(x0+4, y0+22, x0+5, y0+23, Accent)"
+				12="fill(x0+4, y0+24, x0+5, y0+25, Accent)"
+				13="fill(x0+5, y0+22, x0+6, y0+25, Accent)"
+				14="fill(x0+8, y0+23, x0+17, y0+24, Accent)"
 			}
 		}
 		
@@ -546,14 +727,24 @@
 			render_bg={}
 			//image="graphics/icon_button_list_down"
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Accent)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Accent)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Accent)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+17, Accent)"
-				4="fill(x0 + 10, y0+19, x0+17, y0+21, Accent)"
-				5="fill(x0 + 10, y0+23, x0+17, y0+25, Accent)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Accent)"
+				1="fill(x0+4, y0+14, x0+5, y0+15, Accent)"
+				2="fill(x0+4, y0+16, x0+5, y0+17, Accent)"
+				3="fill(x0+5, y0+14, x0+6, y0+17, Accent)"
+				4="fill(x0+8, y0+15, x0+17, y0+16, Accent)"
+				
+				5="fill(x0+3, y0+18, x0+4, y0+21, Accent)"
+				6="fill(x0+4, y0+18, x0+5, y0+19, Accent)"
+				7="fill(x0+4, y0+20, x0+5, y0+21, Accent)"
+				8="fill(x0+5, y0+18, x0+6, y0+21, Accent)"
+				9="fill(x0+8, y0+19, x0+17, y0+20, Accent)"
+				
+				10="fill(x0+3, y0+22, x0+4, y0+25, Accent)"
+				11="fill(x0+4, y0+22, x0+5, y0+23, Accent)"
+				12="fill(x0+4, y0+24, x0+5, y0+25, Accent)"
+				13="fill(x0+5, y0+22, x0+6, y0+25, Accent)"
+				14="fill(x0+8, y0+23, x0+17, y0+24, Accent)"
 			}
-
 		}
 		
 		ViewListButton:disabled
@@ -562,21 +753,30 @@
 			render_bg={}
 			//image="graphics/icon_button_list_disabled"
 			render{
-				0="fill(x0 + 3, y0+15, x0+8, y0+17, Root.LeftCol.Disabled)"
-				1="fill(x0 + 3, y0+19, x0+8, y0+21, Root.LeftCol.Disabled)"
-				2="fill(x0 + 3, y0+23, x0+8, y0+25, Root.LeftCol.Disabled)"
-				3="fill(x0 + 10, y0+15, x0+17, y0+17, Root.LeftCol.Disabled)"
-				4="fill(x0 + 10, y0+19, x0+17, y0+21, Root.LeftCol.Disabled)"
-				5="fill(x0 + 10, y0+23, x0+17, y0+25, Root.LeftCol.Disabled)"
+				0="fill(x0+3, y0+14, x0+4, y0+17, Root.LeftCol.Disabled)"
+				1="fill(x0+4, y0+14, x0+5, y0+15, Root.LeftCol.Disabled)"
+				2="fill(x0+4, y0+16, x0+5, y0+17, Root.LeftCol.Disabled)"
+				3="fill(x0+5, y0+14, x0+6, y0+17, Root.LeftCol.Disabled)"
+				4="fill(x0+8, y0+15, x0+17, y0+16, Root.LeftCol.Disabled)"
+				
+				5="fill(x0+3, y0+18, x0+4, y0+21, Root.LeftCol.Disabled)"
+				6="fill(x0+4, y0+18, x0+5, y0+19, Root.LeftCol.Disabled)"
+				7="fill(x0+4, y0+20, x0+5, y0+21, Root.LeftCol.Disabled)"
+				8="fill(x0+5, y0+18, x0+6, y0+21, Root.LeftCol.Disabled)"
+				9="fill(x0+8, y0+19, x0+17, y0+20, Root.LeftCol.Disabled)"
+				
+				10="fill(x0+3, y0+22, x0+4, y0+25, Root.LeftCol.Disabled)"
+				11="fill(x0+4, y0+22, x0+5, y0+23, Root.LeftCol.Disabled)"
+				12="fill(x0+4, y0+24, x0+5, y0+25, Root.LeftCol.Disabled)"
+				13="fill(x0+5, y0+22, x0+6, y0+25, Root.LeftCol.Disabled)"
+				14="fill(x0+8, y0+23, x0+17, y0+24, Root.LeftCol.Disabled)"
 			}
-			
-
 		}
 		
 		WebPanelStyle
 		{
 			bgcolor="none"
-			textcolor="label"
+			textcolor=DefaultText
 			
 			render_bg 
 			{
@@ -767,21 +967,21 @@
 			bgcolor=none
 			inset="3 0 0 0"
 			render_bg={}
-			image="graphics/custom/forward"
+			image="graphics/Threshold/forward"
 		}
 		
 		ForwardButton:hover
 		{
 			bgcolor=Menu.Button.Hover
 			render_bg={}
-			image="graphics/custom/forward"
+			image="graphics/Threshold/forward"
 		}
 		
 		ForwardButton:active
 		{
 			bgcolor=Accent
 			render_bg={}
-			image="graphics/custom/forward"
+			image="graphics/Threshold/forward"
 		}
 		
 		ForwardButton:disabled
@@ -841,8 +1041,8 @@
 		
 		place { control="library_filters" x=275 y=0 height=40 region=right}
 	     
-		place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator" align=right y=0 height=40 spacing=3 margin-right=85 region=right}
-		place [!$OSX]{ control="library_zoom" width=82 height=20 align=right y=11 margin-right=105 region=right}
+		place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator" align=right y=0 height=38 spacing=3 margin-right=85 region=right}
+		place [!$OSX]{ control="library_zoom" width=82 height=20 align=right y=10 margin-right=105 region=right}
 		place [!$OSX]{ control="label_library_view" region=hidden }
 		place [$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=55 height=20 spacing=3 margin-right=84 }
 		
@@ -852,7 +1052,7 @@
 		
 		place [$OSX] { control="library_music_menu,library_music_add_button" align=left x=90 y=55 height=20 spacing=3 margin-right=179 region=right}
 		
-		place { control="library_filters_details,library_filters_list,library_filters_grid" align=right y=0 height=40 spacing=4 margin-right=9 width=20 region=right}
+		place { control="library_filters_details,library_filters_list,library_filters_grid" align=right y=0 height=40 spacing=5 margin-right=9 width=20 region=right}
 
  	  	place { control=emailreminderbar margin-top=0 margin-right=0 width=max height=50 region=right}
 		place { control=phonereminderbar margin-top=0 margin-left=0  width=max height=80 region=right}
