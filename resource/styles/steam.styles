@@ -159,6 +159,8 @@ steam.styles
 	Decrypting.Hover.Text=AccentTextHover
 	Syncing.Text=AccentText
 	Syncing.Hover.Text=AccentTextHover
+	Running.Text=AccentText
+	Running.Hover.Text=AccentTextHover
 	
 		
  }
@@ -972,6 +974,18 @@ steam.styles
     {
 		textcolor=Installed.Hover.Text
 		selectedtextcolor=Installed.Hover.Text
+    }
+
+    "GameItem_Running"
+    {
+      textcolor=Running.Text
+      selectedtextcolor=Running.Text.Hover
+    }
+    
+    "GameItem_Running:hover"
+    {
+      textcolor=Running.Text.Hover
+      selectedtextcolor=Running.Text.Hover
     }
     
     "GameItem_Shortcut"
