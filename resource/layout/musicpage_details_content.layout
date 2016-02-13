@@ -105,7 +105,7 @@
 		{
        		inset="-3 3 0 0"
         	render {
-          		5="image( x0 + 3, y0 + 3, x1, y1, graphics/custom/icons/plus )"
+          		5="image( x0 + 3, y0 + 3, x1, y1, graphics/Threshold/icons/plus )"
         	}   
 		}
 		

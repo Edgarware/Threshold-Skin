@@ -74,22 +74,27 @@
 				0="fill( x0, y0, x1, y1, Button.Disabled)"             
 			}
 		}   
+		Label
+		{
+			textcolor=DefaultText
+			font-size=20
+		}
 	}
 	
 	layout{
 		
 		region {name=hidden width=0 height=0}
 	
-		place { control="Label1" x=20 y=15 width=100 height=24 region=hidden} //avatar
 		place { control="Label2" x=70 y=15 width=304 height=24 region=hidden} //profile name
+		place { control="URLLabel2" region=hidden } //change (avatar)
 		
-		place { control="ImageAvatar" margin-top=20 margin-left=20width=32 height=32 }
-		place { control="ImageAvatarOverlay" margin-top=16 margin-left=16 width=40 height=40 }
+		place { control="Label1" margin-top=20 margin-left=20} //avatar
+		place { control="ImageAvatar" start=Label1 x=4 margin-top=9 dir=down width=32 height=32 }
+		place { control="ImageAvatarOverlay" start=Label1 dir=down margin-top=5 width=40 height=40 }
 		place { control="NameEntry" start=ImageAvatar dir=right y=4 x=15}
-		place { control="URLLabel2" start=ImageAvatar dir=down margin-top=4 } //change (avatar)
-		place { control="URLLabel1" start=URLLabel2 dir=right margin-left=8 } //view my steam community profile
+		place { control="URLLabel1" start=NameEntry dir=right align=right margin-right=35 height=24 } //view my steam community profile
 		
-		place { control="Divider1" start=URLLabel2 dir=down margin-top=15 width=max margin-right=20 }
+		place { control="Divider1" start=ImageAvatarOverlay dir=down margin-top=15 width=max margin-right=20 }
 		
 		place { control=AutoSignIntoFriendsCheck,ShowTimeInChatLogCheck,AlwaysNewChatCheck start=Divider1 dir=down margin-top=15}
 		place { control="Divider2" start=AlwaysNewChatCheck dir=down margin-top=15 width=max margin-right=20 }
@@ -102,7 +107,7 @@
 		place { control="Label5" start=JoinGamePlaySoundCheck dir=down margin-top=15 } //when any friend comes online
 		place { control="FriendOnlineNotifyCheck,FriendOnlinePlaySoundCheck" start=Label5 dir=down margin-top=4}
 		
-		place { control="Label6" start=Label4 dir=right margin-left=100 } //when I recieve a message
+		place { control="Label6" start=Label4 dir=right margin-left=80 } //when I recieve a message
 		place { control="ReceiveMessageNotifyCheck,ReceiveMessagePlaySoundCheck" start=Label6 dir=down margin-top=4}
 		
 		place { control="Label7" start=ReceiveMessagePlaySoundCheck dir=down margin-top=15 } //flash window when i receive a message
