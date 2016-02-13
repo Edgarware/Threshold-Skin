@@ -138,6 +138,15 @@
 			textcolor=Root.SubLabel.Text
 
 		}
+		
+		label3
+		{
+			bgcolor			none
+			font-size		"14"
+			textcolor		DefaultText
+			padding-top		"0"
+			font-style="uppercase"
+		}
 
 		ModuleHeading
 		{
