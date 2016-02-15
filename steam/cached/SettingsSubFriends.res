@@ -74,23 +74,18 @@
 				0="fill( x0, y0, x1, y1, Button.Disabled)"             
 			}
 		}   
-		Label
-		{
-			textcolor=DefaultText
-			font-size=20
-		}
 	}
 	
 	layout{
 		
 		region {name=hidden width=0 height=0}
 	
+		place { control="Label1" margin-top=20 margin-left=20 region=hidden} //avatar
 		place { control="Label2" x=70 y=15 width=304 height=24 region=hidden} //profile name
 		place { control="URLLabel2" region=hidden } //change (avatar)
 		
-		place { control="Label1" margin-top=20 margin-left=20} //avatar
-		place { control="ImageAvatar" start=Label1 x=4 margin-top=9 dir=down width=32 height=32 }
-		place { control="ImageAvatarOverlay" start=Label1 dir=down margin-top=5 width=40 height=40 }
+		place { control="ImageAvatar" margin-top=20 margin-left=20 width=32 height=32 }
+		place { control="ImageAvatarOverlay" margin-top=16 margin-left=16 width=40 height=40 }
 		place { control="NameEntry" start=ImageAvatar dir=right y=4 x=15}
 		place { control="URLLabel1" start=NameEntry dir=right align=right margin-right=35 height=24 } //view my steam community profile
 		
