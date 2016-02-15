@@ -521,7 +521,7 @@
 
 			render 
 			{
-				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail)"
+				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_small)"
 			}
 			render_bg
 			{
@@ -550,7 +550,7 @@
 
 			render 
 			{
-				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail)"
+				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_small)"
 			}
 			render_bg
 			{
@@ -563,7 +563,7 @@
 
 			render 
 			{
-				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail)"
+				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_small)"
 			}
 			render_bg
 			{
@@ -578,7 +578,7 @@
 			textcolor=Root.LeftCol.Disabled
 			render 
 			{
-				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_dis)"
+				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_small_dis)"
 			}
 			render_bg
 			{
@@ -596,8 +596,8 @@
 
 			render 
 			{
-				0="fill(x0+9,y0+7,x0+35,y0+25,Accent)"
-				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail)"
+				0="fill(x0+15,y0+10,x0+31,y0+21,Accent)"
+				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_small)"
 			}
 			render_bg
 			{
@@ -608,8 +608,8 @@
 		{
 			render 
 			{
-				0="fill(x0+9,y0+7,x0+35,y0+25,Accent)"
-				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail)"
+				0="fill(x0+15,y0+10,x0+31,y0+21,Accent)"
+				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_small)"
 			}
 			render_bg
 			{
@@ -621,8 +621,8 @@
 		{
 			render 
 			{
-				0="fill(x0+9,y0+7,x0+35,y0+25,Accent)"
-				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail)"
+				0="fill(x0+15,y0+10,x0+31,y0+21,Accent)"
+				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_small)"
 			}
 			render_bg
 			{
@@ -635,7 +635,7 @@
 		{
 			render 
 			{
-				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_dis)"
+				1="image(x0+7,y0-1,x1,y1,graphics/Threshold/mail_small_dis)"
 			}
 			render_bg
 			{
