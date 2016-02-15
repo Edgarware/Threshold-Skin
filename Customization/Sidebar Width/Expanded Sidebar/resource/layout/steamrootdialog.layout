@@ -355,9 +355,8 @@
 				// top area and graphics
 				1="fill( x0, y0, x0+250, y1, Root.LeftCol)"
 				2="fill( x0, y0, x1, y0+72, Root.Header)"
-				//3="fill( x0+250, y0, x0+475, y0+72, Search.Back)"
-				4="fill( x0, y1-50, x0+250, y1, Root.LeftCol.Bottom )"
-				5="image( x0+1, y0+320, x1, y1, graphics/Threshold/tmp/beta )"
+				3="fill( x0, y1-50, x0+250, y1, Root.LeftCol.Bottom )"
+				4="image( x0+1, y0+320, x1, y1, graphics/Threshold/tmp/beta )"
 			}
 			render{
 				0="image (x0+15, y0+154, x1, y1, graphics/Threshold/store)"

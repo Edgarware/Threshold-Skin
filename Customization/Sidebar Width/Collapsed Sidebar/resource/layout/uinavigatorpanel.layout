@@ -787,28 +787,17 @@
 		TextEntryURL [!$OSX]
 		{
 			font-family=basefont
-			inset-left=2
+			inset-left=5
 			font-size=16
-			textcolor="label"
 			font-weight=400
-			bgcolor="none"
-			selectedtextcolor="TextEntrySelected"
-			selectedbgcolor="TextSelectedBG"
-			shadowtextcolor="Text"	// this is the cursor color	
+			bgcolor=TextBox.Back
+			render_bg{}
+			render{}
 		}
 
 		TextEntryURL [$OSX]
 		{
-			font-family=basefont
-			inset-top=1
-			inset-left=2
-			font-size=14
-			textcolor="label"
-			font-weight=400
-			bgcolor="none"
-			selectedtextcolor="TextEntrySelected"
-			selectedbgcolor="TextSelectedBG"
-			shadowtextcolor="Text"	// this is the cursor color	
+
 		}
 		
 		
@@ -1029,7 +1018,7 @@
 		place [!$OSX] { control="forward" region=hidden x=50 height=40 width=40}
 		place [$OSX] { control="back,forward" x=3 y=17 height=30 width=30 spacing=2 margin-right=5 margin-top=0 }
 		
-		place {control="URLBar" region=hidden width=max height=50 align=bottom margin-bottom=80}
+		place {control="URLBar" region=right width=max height=40 }
 		place { control="EVCert" region=hidden}
 		place { control="PageLoadThrobber,refresh,stop,URLStatusImage" y=0 height=40 width=40 align=right region=hidden}
  	
