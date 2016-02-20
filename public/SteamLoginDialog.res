@@ -1,5 +1,70 @@
 "Public/SteamLoginDialog.res"
 {
+	
+	styles{
+		CSteamLoginDialog
+		{
+			minimum-height=400
+		}
+		
+		"loginprocess_style_head"
+		{
+			"font-size"		"16"
+			"font-style"		"italic"
+		}
+
+		"loginprocess_style_body"
+		{
+			"font-size"		"18"
+			"font-weight"		"1000"
+			"font-style"		"regular"
+		}
+
+		"loginerror_style_body"
+		{
+			"font-size"		"14"
+			textcolor=DefaultText
+			bgcolor=none
+			padding=8
+
+			render_bg
+			{
+				0="fill( x0 - 4, y0 - 4, x1 + 2, y0 -2, redborder )"  // top
+				1="fill( x0 - 4, y1 + 2, x1 + 2, y1 + 4, redborder )"  // bottom
+				2="fill( x0 - 4, y0 - 4, x0 - 2, y1 + 4, redborder )"  // left
+				3="fill( x1 + 2, y0 - 4, x1 + 4, y1 + 4, redborder )"  // right
+			}
+		}
+	}
+	
+	color
+	{
+		redborder="169 72 71 255"
+	}
+
+	layout
+	{
+		region { name=hidden width=0 height=0 }
+		region { name=body width=max height=max margin-top=150 margin-right=71 margin-left=71}
+		
+		place{ control=ImagePanelLogo align=top-center y=50 width=max height=70}
+		place{ control=UserNameLabel,PasswordLabel dir=down spacing=10 region=body height=30}
+		place{ control=UserNameEdit start=UserNameLabel dir=right margin-left=20 region=body height=30}
+		place{ control=PasswordEdit start=UserNameEdit dir=down margin-top=10 region=body height=30}
+		place{ control=PasswordCapsLockImage start=PasswordEdit dir=right margin-left=5 margin-top=3 height=24 width=24}
+		place{ control=SavePasswordCheck start=PasswordEdit dir=down margin-top=10 width=max}	
+		place{ control=CancelButton start=PasswordLabel margin-top=50 dir=down region=body width=150}
+		place{ control=LoginButton start=CancelButton margin-left=28 dir=right region=body width=150}
+		
+		place{ control=LoginErrorText margin-top=10 start=CancelButton dir=down region=body}
+		place{ control=Divider1 start=LoginErrorText dir=down margin-top=10 region=body width=max}
+		place{ control=CreateNewAccountButton start=Divider1 dir=down margin-top=20 region=body width=150}
+		place{ control=LostPasswordButton start=CreateNewAccountButton dir=right margin-left=28 region=body width=150}
+		
+		place{ control=Label2,Label4,AlreadyLoggedIn,PasswordCapsLockLabel,LoginProcessText,LoginProcessLabel,LoginProcessThrobber,LoginProcessImage region=hidden}
+
+	}
+	
 	"SteamLoginDialog"
 	{
 		"ControlName"		"CSteamLoginDialog"
@@ -83,7 +148,6 @@
 		"scaleImage"		"1"
 		"zpos"		"-1"
 	}
-
 
 
 	"PasswordEdit"
@@ -436,68 +500,6 @@
 		"textAlignment"		"west"
 		"wrap"		"1"
 		"style"		"loginerror_style_body"
-	}
-
-	color
-	{
-		redborder="169 72 71 255"
-	}
-		
-	styles
-	{
-		"loginprocess_style_head"
-		{
-			"font-size"		"16"
-			"font-style"		"italic"
-		}
-
-		"loginprocess_style_body"
-		{
-			"font-size"		"18"
-			"font-weight"		"1000"
-			"font-style"		"regular"
-		}
-
-		"loginerror_style_body"
-		{
-			"font-size"		"14"
-			textcolor=white
-			bgcolor=none
-			padding=8
-
-			render_bg
-			{
-				0="fill( x0 - 4, y0 - 4, x1 + 2, y0 -2, redborder )"  // top
-				1="fill( x0 - 4, y1 + 2, x1 + 2, y1 + 4, redborder )"  // bottom
-				2="fill( x0 - 4, y0 - 4, x0 - 2, y1 + 4, redborder )"  // left
-				3="fill( x1 + 2, y0 - 4, x1 + 4, y1 + 4, redborder )"  // right
-			}
-		}
-		
-		TextEntry
-		{
-			textcolor=TextBox.Hover.Text
-		}
-		
-		TextEntry:focus
-		{
-			textcolor=TextBox.Active.Text
-		}
-		TextEntryLarge
-		{
-			textcolor=TextBox.Hover.Text
-		}
-		
-		TextEntryLarge:focus
-		{
-			textcolor=TextBox.Active.Text
-		}
-	}
-	
-	layout
-	{
-		//increase height due to larger font size
-		place{ control=LoginErrorText x=30 y=224 width=412 height=60}
 	}
 }
 
