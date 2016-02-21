@@ -92,7 +92,7 @@
 		CEmoticonButton
 		{
 			inset="5 0 0 0"
-			image="graphics/icon_emoticon_hover"
+			image="graphics/Threshold/friends/icon_emoticon"
 			render_bg
 			{
 				0="fill(x0, y0, x1, y1, Chat.Back)"
