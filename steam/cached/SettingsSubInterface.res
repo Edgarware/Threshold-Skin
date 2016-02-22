@@ -84,7 +84,8 @@
 		place { controls=Label3,SkinCombo start=FavoriteWindowCombo dir=down margin-top=8 spacing=4}
 		
 		place { controls=AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck start=SkinCombo dir=down margin-top=8 spacing=0}
-		place { controls=Divider2 start=H264HWAccelCheck dir=down margin-top=15 width=max margin-right=20}
+		place [$WINDOWS] { controls=Divider2 start=H264HWAccelCheck dir=down margin-top=15 width=max margin-right=20}
+		place [!$WINDOWS] { controls=Divider2 start=UrlBarCheck dir=down margin-top=15 width=max margin-right=20}
 		
 		place { controls=NotifyAvailableGamesCheck start=Divider2 dir=down width=max margin-right=20 margin-top=15}
 		place { controls=SetJumpListOptionsButton start=NotifyAvailableGamesCheck dir=down margin-top=0}

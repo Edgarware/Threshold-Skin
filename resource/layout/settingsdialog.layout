@@ -19,8 +19,8 @@
 			bgcolor=none
 			render_bg
 			{     
-				0="fill( x0, y0, x0+194, y1, Page.Back )"  
-				1="fill( x0+194, y0, x1, y1, DefaultBackground)" 				
+				0="fill( x0, y0, x0+200, y1, Page.Back )"  
+				1="fill( x0+200, y0, x1, y1, DefaultBackground)" 				
 			}
 
 		}
@@ -38,7 +38,7 @@
 		"SettingsList"
 		{
 			//inset="6 -14 4 0"
-			minimum-width="200" //min width is 200, but REAL width is 194.
+			minimum-width="200" //Jumps between 200 and 194. Dont believe it's lies
 			minimum-height="525"
 			font-size=18
 			padding-left=15
@@ -75,7 +75,7 @@
 		
 		place { control="settingslist,sheet" region=body width=max height=max spacing=-4  }
 		place { control="settingslist" margin-top=32  }
-		place { control="sheet" margin-left=194 margin-top=32 }
+		place { control="sheet" margin-left=200 margin-top=32 }
 		place { control="okbutton,cancelbutton" region="buttons" width=92 height=25 align=right margin-right=10 margin-top=0 margin-bottom=2 spacing=10 }
 	}
 }

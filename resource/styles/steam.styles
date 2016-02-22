@@ -979,13 +979,13 @@ steam.styles
     "GameItem_Running"
     {
       textcolor=Running.Text
-      selectedtextcolor=Running.Text.Hover
+      selectedtextcolor=Running.Hover.Text
     }
     
     "GameItem_Running:hover"
     {
-      textcolor=Running.Text.Hover
-      selectedtextcolor=Running.Text.Hover
+      textcolor=Running.Hover.Text
+      selectedtextcolor=Running.Hover.Text
     }
     
     "GameItem_Shortcut"
