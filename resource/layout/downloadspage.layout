@@ -65,14 +65,14 @@
 		ListPanelStyle
 		{
 			inset = "0 0 0 0"
-			bgcolor=Root.Back
+			bgcolor=Root.RightCol
 			font-family=basefont
 			font-size=14
 			font-weight=400
 			textcolor="Text"
-			selectedtextcolor="TextSelected"
-			selectedbgcolor="Focus"
-			shadowtextcolor="TextDisabled"	// the color of disabled line items		
+			selectedtextcolor=DefaultText
+			selectedbgcolor=DefaultText
+			shadowtextcolor=DefaultText	// the color of disabled line items		
 			render
 			{
 

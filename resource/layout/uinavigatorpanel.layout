@@ -775,7 +775,7 @@
 		
 		WebPanelStyle
 		{
-			bgcolor="none"
+			bgcolor="almostblack"
 			textcolor=DefaultText
 			
 			render_bg 

@@ -74,7 +74,9 @@
 			{     
 			inset="0 0 0 0"
 			bgcolor=none
-			render_bg {}
+			render_bg {
+			
+			}
 			}
 		
 		ListPanelSectionHeader
@@ -99,6 +101,7 @@
 			bgcolor="DefaultBackground"
 			render_bg{
 				0="fill( x0, y0, x1, y0+96, Root.Header)"
+				1="fill( x0, y0+96, x1, y1, Root.Back)"
 			}
 		}	
 

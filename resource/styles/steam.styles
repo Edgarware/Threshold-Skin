@@ -123,10 +123,10 @@ steam.styles
 	
 	Root.Header = "43 43 43 255"
 	Root.LeftCol = DefaultBackground //Left Column
-	Root.LeftCol.Bottom = Root.Header
-	Root.Back = Scroll.Back //Right Column
-	Root.Back2 = "28 28 28 255" //Middle column (When needed)
-	Root.BackDetails="DefaultBackground" //Details needs to be the same background as friends list due to circle avatars
+	Root.LeftCol.Header= Root.Header
+	Root.LeftCol.Bottom = Root.LeftCol.Header
+	Root.Back = "14 14 14 255" //Scroll.Back
+	Root.RightCol = DefaultBackground //Right column (When needed)
 	Root.Div = Menu.Div
 	Root.BackTransparent="28 28 28 170" //For details header/grid chrome
 	
@@ -136,12 +136,12 @@ steam.styles
 	Root.SubLabel.Text="180 180 180 255"
 	Root.LeftCol.Disabled=DefaultText.Disabled
 	
-	Search.Back=Root.Back2
+	Search.Back=Scroll.Back
 	Search.Text="130 130 130 255"
 	Search.Hover.Text="180 180 180 255"
 	Search.Active.Text=DefaultText
 	
-	Chat.Back = Scroll.Back
+	Chat.Back = Root.Back
 	Chat.Popup = DefaultBackground
 	Chat.Div = Root.Header
 	
@@ -881,7 +881,7 @@ steam.styles
     
     HTML
     {
-		bgcolor="none"
+		bgcolor="almostblack"
 		//inset="2 2 2 2"
 		render_bg 
 		{
@@ -949,7 +949,7 @@ steam.styles
 		inset="0 -1 1 1"
 		render_bg {
 			// background gradient        
-			1="fill( x0, y0, x1, y1, Root.Back2 )"
+			1="fill( x0, y0, x1, y1, Root.Back )"
         }
     }
   
@@ -2345,7 +2345,7 @@ steam.styles
     StatusLabelDim
     {
 		font-family=basefont
-		font-size=14
+		font-size=12
 		font-weight=400
 		textcolor=SubLabel.Text
 		font-style=normal   

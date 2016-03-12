@@ -118,20 +118,17 @@
 		"disk_legend_panel" { ControlName="Panel" style="diskLegendPanel" }
 		"net_legend_panel" { ControlName="Panel" style="netLegendPanel" }
 	}
-    
-    
-	colors
-	{
-		panelBackground = "12 27 38 255"
-		panelBackgroundTransparent = "12 27 38 0"
-	}
   
 	styles
 	{
 		CDownloadSummaryPanel
 		{
-			bgcolor=Search.Back
-			inset="0	0 0 0"
+			inset="0 0 0 0"
+			render_bg
+			{
+				0="fill(x0, y0, x1, y0+40, Search.Back)"
+				1="fill(x0, y0+40, x1, y1, Root.Back)"
+			}
 	  	}
 	   
 		throttleLabel
@@ -311,13 +308,13 @@
 		
 		//set aside some room for the	header section
 		region {name=hidden width=0 height=0}
-		region {name=head	dir=down x=15 y=10 height=124	width=max	margin-right=0	}
+		region {name=head	dir=down x=15 height=134 width=max	margin-right=0	}
 		region  {name=graph align=bottom width=1262 height=170 }	
 		
 		region { name=legend align=bottom margin-left=15 height=50 width=90}
 		
-		region { name=left_column x=0	y=40	 width=max  region=head }
-		region { name=middle_column x=0 y=150 width=max height=124}
+		region { name=left_column x=0	y=50	 width=max  region=head }
+		region { name=middle_column x=0 y=160 width=max height=124}
 
 		// graph
 		place { control="net_graphpanel" region=graph y=0 width="max" height="max" }				   
@@ -331,10 +328,10 @@
 		place { control="disk_legend_label" region=legend y=14 x=12 }
 		
 		// put NETWORK	USAGE in the top left
-		place { control="header"	region=head dir=down x=0	y=0	}
+		place { control="header"	region=head dir=down x=0	y=10	}
 		
 		// top right
-		place { control="pauseresumeallbutton" region=head align=right margin-right=10 margin-top=0 }
+		place { control="pauseresumeallbutton" region=head align=right margin-right=10 margin-top=8 }
 		
 		// three rows of network	usage underneath the header
 		place { region=left_column  control="download_rate_value,download_rate" spacing=4 }
