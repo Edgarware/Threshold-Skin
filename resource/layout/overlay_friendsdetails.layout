@@ -67,7 +67,7 @@
 	{
 		region { name=hidden width=0 height=0}
 		region { name=box margin-top=10 margin-bottom=10 margin-left=20 margin-right=20 width=max height=max }
-		region { name=friendspanels margin-top=50 margin-bottom=40 margin-right=10}
+		region { name=friendspanels margin-top=50 margin-bottom=40 margin-left=0 margin-right=50}
 		
 		place { control="TitleText,TextThisManyFriends" region=box dir=right spacing=20 height=28}
 	

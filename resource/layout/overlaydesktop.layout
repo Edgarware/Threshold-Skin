@@ -70,22 +70,21 @@
 	
 	layout
 	{
-		region { name=overlay width=max height=max}
 		region { name=hidden width=0 height=0}
 
-		region	 { name="main" region=overlay width=400 height=max align=left y=80 margin-bottom=80 overflow=scroll-vertical}
-		region	 { name="sidebar" region=overlay width=80 height=max align=left margin-left=400 margin-top=80}
-		region	 { name="footer" region=overlay width=400 height=80 align=bottom }
-		region	 { name="right" region=overlay width=400 height=max align=right }
+		region	 { name="main" width=450 height=max align=left y=80 margin-bottom=80 overflow=scroll-vertical}
+		region	 { name="sidebar" width=80 height=max align=left margin-left=500 margin-top=80}
+		region	 { name="footer" width=450 height=80 align=bottom }
+		region	 { name="right" width=450 height=max align=right }
 		
 		region	 { name="gameOps" region=footer width=200 height=max align=right overflow=scroll-vertical}
 		place { control="LegacyCDKeyButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,WebSiteButton,RecommendButton,WorkshopButton" align=right region=gameOps dir=down margin-right=20 margin-top=10}
 		
 		place { control="BroadcastDetailPanel" region=right width=330 height=240 align=bottom }
 		
-		place { control="FriendsDetailPanel" region=main dir=down width=400 height=200}
-		place { control="NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" start=FriendsDetailPanel region=main dir=down width=400 height=180 }
-		place { control="ScreenshotsDetailPanel,CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" region=main start=GuidesDetailPanel dir=down width=400 height=50 }
+		place { control="FriendsDetailPanel" region=main dir=down width=max height=200}
+		place { control="NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" start=FriendsDetailPanel region=main dir=down width=max height=180 }
+		place { control="ScreenshotsDetailPanel,CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" region=main start=GuidesDetailPanel dir=down width=max height=50 }
 		
 		place { control="Clock,ClockSuffix" region=right margin-right=20 margin-top=10 align=right}
 		place { control="SessionText,TwoWeeksText,ForeverText" region=footer align=left dir=down margin-left=20 margin-top=10}

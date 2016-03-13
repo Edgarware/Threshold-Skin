@@ -61,7 +61,7 @@
 		{
 			font-size=14
 			font-style=uppercase
-			textcolor=text2
+			textcolor=DefaultText
 		}
 		topfade //Main Background element
 		{
@@ -128,8 +128,8 @@
 	{
 		region { name=hidden width=0 height=0}
 	
-		region	 { name="main" width=480 height=max align=left}
-		region	 { name="sidebar" width=80 height=max align=left x=400}
+		region	 { name="main" width=530 height=max align=left}
+		region	 { name="sidebar" width=80 height=max align=left x=450}
 		region	 { name="right" width=125 height=40 align=right }
 		
 		place { control="TopFadePanel" region=main width=max height=max }

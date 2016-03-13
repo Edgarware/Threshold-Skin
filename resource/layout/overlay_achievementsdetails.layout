@@ -74,7 +74,7 @@
 		
 		place { control="TitleText,ProgressTextEarned" region=box dir=right spacing=20 height=28}
 		
-		place { control=*achievement region=box y=40 x=0 width=148 height=max margin-bottom=50 }
+		place { control=*achievement region=box y=40 x=0 width=200 height=max margin-bottom=50 }
 
 		
 		place { control=progressbackground region=box align=bottom width=max height=10 margin-bottom=35}
