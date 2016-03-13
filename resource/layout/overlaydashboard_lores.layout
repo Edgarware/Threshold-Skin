@@ -47,71 +47,58 @@
 		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 }	
 	}
 	
-	colors
-	{
-		backgroundOverlayTop="38 37 35 140"
-	}
-	
 	styles
 	{
 		hotkey
 		{
 			//font-size=18
-			font-style=uppercase
-			textcolor=Text
+			//font-style=uppercase
+			textcolor=DefaultText
 		}
 		topfade
 		{
-			render_bg
+			render
 			{
-				0="gradient( x0, y0, x1, y1, backgroundOverlayTop, none )"
+				1="image(x0,y1-240,x1,y1,graphics/Threshold/overlay/web)"
+				2="image(x0,y1-160,x1,y1,graphics/Threshold/overlay/music)"
+				3="image(x0,y1-80,x1,y1,graphics/Threshold/overlay/settings)"
 			}
 		}
 		bottomfade
 		{
 			render_bg
 			{
-				0="gradient( x0, y0, x1, y1, none, backgroundstartopaque )"
+				//0="gradient( x0, y0, x1, y1, none, backgroundstartopaque )"
 			}
 		}	
 		overlaymain
 		{
-			bgcolor = "43 43 43 96"
+			bgcolor = Overlay.Sidebar
 		}	
 				
 		topbar
 		{
-			font-size=36
-			textcolor=Label
+			font-size=48
+			textcolor=DefaultText
 		}
 	}
 	
 	layout
 	{
-		region { name=overlay width=1000 align=top-center margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 }
-	
-		region	 { name="left" region=overlay width=400 height=max margin-top=10 align=left }
-		region	 { name="mid" region=overlay width=400 height=max margin-top=10 align=top-center }
-		region	 { name="right" region=overlay width=400 height=max margin-top=10 align=right }
+		region { name=hidden width=0 height=0}
+		region { name=right width=80 height=max align=right} //Taskbar
 		
-		region	{ name="detailpanels" region=overlay align=bottom width=max height=400 margin-bottom=100 }
-		region { name="topbar" region=overlay width="max" height=50 }
-		region	 { name="taskbar" region=overlay width="max" height=75 align=bottom }
-		region	 { name="above_taskbar" region=overlay align=bottom width=max height=150 margin-bottom=75 }
-		region { name="powermeter" region=above_taskbar align=right width=200 }
+		place { control="BottomFadePanel" region=hidden width=max height=130 }
 		
-		place { control="TopFadePanel" align=top width=max height=150 }
-		place { control="BottomFadePanel" align=bottom width=max height=130 }
+		place { control="gamename" align=left margin-left=20 margin-right=100 height=80 }
+
+		place { control="PowerMeterDim" align=bottom margin-bottom=20 margin-right=20}
 		
-		place { control="CloseButton" region=mid align=top-center }
-		place { control="HotkeyLabel,HotkeyExplain" region=mid align=top-center y=14 spacing=5 }
-			
+		place { control="TopFadePanel" region=right width=max height=max }
+		place { control="TaskbarPanel" region=right height=max width=max }
 		
-		place { controls="gamename" region=topbar align=right width=440 }
-				
-		place { control="PowerMeterDim" region=powermeter align=right }
-		
-		place { control="TaskbarPanel" region=taskbar height=64 width=max }
+		place { control="CloseButton" region=hidden}
+		place { control="HotkeyLabel,HotkeyExplain" region=hidden}
 	}
 	
 }
