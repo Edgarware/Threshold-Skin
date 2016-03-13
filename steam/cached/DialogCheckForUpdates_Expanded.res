@@ -1,16 +1,5 @@
 "steam/cached/DialogCheckForUpdates_Expanded.res"
 {
-	layout
-	{
-		place { control="ProgressBar" x=24 y=115 width=408 height=24}
-		place { control="HTML" x=24 y=184 width=408 height=320}
-		place { control="InfoLabel" x=24 y=60 width=408 height=30 margin-top=60}
-		place { control="InfoLabel2" x=32 y=69 width=400 height=30 }
-		place { control="RestartNowButton" x=250 y=146 width=110 height=24 }
-		place { control="Button1" x=368 y=146 width=64 height=24 }
-		place { control="BytesDownloaded" x=30 y=90 width=400 height=24 }
-	}
-	
 	"DialogCheckForUpdates"
 	{
 		"ControlName"		"CDialogCheckForUpdates"

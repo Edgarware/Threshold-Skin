@@ -22,7 +22,7 @@
 			render_bg 
 			{				
 				// background gradient        
-				0="gradient( x0+1, y0, x1-1, y1-45, dialogbg, almostblack )"
+				//0="gradient( x0+1, y0, x1-1, y1-45, dialogbg, almostblack )"
                 5="image( x0 + 3, y0 + 3, x1, y1, graphics/driver_dialog )"
 			}			
 		}

@@ -602,14 +602,4 @@
 		"textAlignment"		"north-east"
 		"wrap"		"0"
 	}
-	
-	style
-	{
-		
-	}
-	
-	layout
-	{
-		
-	}
 }
