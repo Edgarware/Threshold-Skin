@@ -31,9 +31,9 @@
 		     	{
 			        // background fill
 			        0="fill( x0 + 1, y0 + 2, x1 - 4, y1 - 1, Button.Back)"        
-    				}
-    		}   
-    		   
+    			}
+    		}
+  
 		friendlabelmore:hover
 		{
 			inset="-3 0 0 0"
@@ -43,7 +43,11 @@
 		    	 render_bg
 		    	 {
 		      	  // background fill
-		       		0="fill( x0 + 1, y0 + 2, x1 - 4, y1 - 1, Button.Hover )"
+					0="fill( x0 + 1, y0 + 2, x1 - 4, y1 - 1, Button.Back )"
+					1="fill( x0 + 1, y0 + 2, x0 + 3, y1 - 1, Button.Hover )"
+					2="fill( x1 - 6, y0 + 2, x1 - 4, y1 - 1, Button.Hover )"
+					3="fill( x0 + 1, y0 + 2, x1 - 4, y0 + 4, Button.Hover )"
+					4="fill( x0 + 1, y1 - 3, x1 - 4, y1 - 1, Button.Hover )"
 
     			}
     		}     
