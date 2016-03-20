@@ -12,7 +12,12 @@ steam.styles
 	
 	//Standard Element/Text colors ********
 	//TODO: Some of these colors arent actually used, fix or remove
-	DefaultBackground="31 31 31 255"
+	
+	Dark =  "14 14 14 255"
+	Neutral = "31 31 31 255"
+	Light = "43 43 43 255"
+	
+	DefaultBackground=Neutral
 	
 	DefaultText=white
 	DefaultText.Hover="210 210 210 255"
@@ -26,29 +31,29 @@ steam.styles
 	URL.Text=DefaultText.Hover
 	URL.Hover.Text=DefaultText
 		
-	Page.Back="43 43 43 255"
-	Page.Tab="14 14 14 255" 
-	Page.Tab.Active=Page.Back
-	Page.Tab.Hover=Accent
+	Page.Back=Neutral
+	Page.Tab=Light
+	Page.Tab.Active=Accent
+	Page.Tab.Hover="78 78 78 255"
 	Page.Tab.Active.Hover=Page.Tab.Active
 	Page.Tab.Text=DefaultText
 	Page.Tab.Active.Text=DefaultText
 	
-	List.Back=Page.Back
-	List.Header=Page.Back
-	List.Header.Div=DefaultBackground
-	List.Page=DefaultBackground
-	List.Page.Header=DefaultBackground
-	List.Page.Header.Div=Page.Back
+	List.Back=Dark
+	List.Header=Light
+	List.Header.Div=Neutral
+	List.Page=Dark
+	List.Page.Header=Light
+	List.Page.Header.Div=Neutral
 	List.Text=DefaultText
 	List.Header.Text=DefaultText
 	List.Header.Text.Hover=DefaultText.Hover
 	List.Text.Disabled=DefaultText.Disabled
 	
 	Button.Back="51 51 51 255"
-	Button.Page.Back="74 74 74 255"
+	Button.Page.Back="51 51 51 255"
 	Button.Hover="74 74 74 255"
-	Button.Page.Hover="96 96 96 255"
+	Button.Page.Hover="74 74 74 255"
 	Button.Active=Accent
 	Button.Disabled=Button.Back
 	Button.Text=DefaultText
@@ -56,9 +61,9 @@ steam.styles
 	Button.Active.Text=DefaultText
 	Button.Disabled.Text="109 109 109 255"
 	
-	Check.Outline="204 204 204 255"
-	Check.Hover.Outline=white
-	Check.Active=Accent
+	//Check.Outline="204 204 204 255"
+	//Check.Hover.Outline=white
+	//Check.Active=Accent
 	Check.Text=DefaultText
 	Check.Text.Hover=DefaultText.Hover
 	Check.Disabled.Text=DefaultText.Disabled
@@ -72,7 +77,7 @@ steam.styles
 	
 	ComboBox.Back="17 17 17 255"
 	ComboBox.Outline="119 119 119 255"
-	ComboBox.Hover="43 43 43 255"
+	ComboBox.Hover=Light
 	ComboBox.Active=ComboBox.Hover
 	ComboBox.Disabled=Button.Back
 	ComboBox.Text=DefaultText
@@ -121,11 +126,11 @@ steam.styles
 	Frame.Text="96 96 96 255"
 	Frame.Focus.Text=DefaultText
 	
-	Root.Header = "43 43 43 255"
+	Root.Header = Light
 	Root.LeftCol = DefaultBackground //Left Column
 	Root.LeftCol.Header= Root.Header
 	Root.LeftCol.Bottom = Root.LeftCol.Header
-	Root.Back = "14 14 14 255" //Scroll.Back
+	Root.Back = Dark //Scroll.Back
 	Root.RightCol = DefaultBackground //Right column (When needed)
 	Root.Div = Menu.Div
 	Root.BackTransparent="28 28 28 170" //For details header/grid chrome
@@ -147,8 +152,8 @@ steam.styles
 	
 	Uninstalled.Text=DefaultText.Disabled
 	Uninstalled.Hover.Text="94 94 94 255"
-	Installed.Text="200 200 200 255"
-	Installed.Hover.Text=DefaultText
+	Installed.Text=DefaultText
+	Installed.Hover.Text="200 200 200 255"
 	Shortcut.Text=Installed.Text
 	Shortcut.Hover.Text=DefaultText
 	Mod.Text=Installed.Text
@@ -221,7 +226,11 @@ steam.styles
   		render_bg
 		{     
 			// background fill
-			0="fill( x0, y0, x1, y1, Button.Hover)"             
+			0="fill( x0, y0, x1, y1, Button.Back )"
+			1="fill( x0, y0, x0+2, y1, Button.Hover)"
+			2="fill( x1-2, y0, x1, y1, Button.Hover)"
+			3="fill( x0, y0, x1, y0+2, Button.Hover)"
+			4="fill( x0, y1-2, x1, y1, Button.Hover)"			
 		}
     }
 
@@ -231,7 +240,11 @@ steam.styles
 		render_bg
 		{     
 			// background fill
-			0="fill( x0, y0, x1, y1, Button.Page.Hover)"
+			0="fill( x0, y0, x1, y1, Button.Page.Back )"
+			1="fill( x0, y0, x0+2, y1, Button.Page.Hover)"
+			2="fill( x1-2, y0, x1, y1, Button.Page.Hover)"
+			3="fill( x0, y0, x1, y0+2, Button.Page.Hover)"
+			4="fill( x0, y1-2, x1, y1, Button.Page.Hover)"
 		}
     }
     
@@ -249,7 +262,7 @@ steam.styles
 		textcolor=Button.Active.Text
 		render_bg
 		{     
-			0="fill( x0, y0, x1, y1,  Button.Active)"
+			0="fill( x0, y0, x1, y1, Button.Active)"
 		}
     }
     
@@ -910,7 +923,8 @@ steam.styles
 		selectedtextcolor=List.Text
 		selectedbgcolor=Accent
 		shadowtextcolor=List.Text.Disabled	// the color of disabled line items
-		inset="0 -1 1 1"
+		padding-left=10
+		inset="0 0 0 0"
 		render{}       
 		render_bg 
 		{
@@ -927,7 +941,8 @@ steam.styles
 		textcolor=List.Text
 		selectedtextcolor=List.Text
 		selectedbgcolor=Accent
-		inset="0 -1 1 1"
+		padding-left=10
+		inset="0 0 0 0"
 		bgcolor=none
 		render_bg
 		{     
@@ -946,7 +961,8 @@ steam.styles
 		selectedtextcolor=List.Text
 		selectedbgcolor=Accent
 		shadowtextcolor=List.Text.Disabled
-		inset="0 -1 1 1"
+		padding-left=10
+		inset="0 0 0 0"
 		render_bg {
 			// background gradient        
 			1="fill( x0, y0, x1, y1, Root.Back )"
@@ -967,13 +983,13 @@ steam.styles
     "GameItem_Installed"
     {
 		textcolor=Installed.Text
-		selectedtextcolor=Installed.Hover.Text
+		selectedtextcolor=Installed.Text
     }
       
     "GameItem_Installed:hover"
     {
 		textcolor=Installed.Hover.Text
-		selectedtextcolor=Installed.Hover.Text
+		selectedtextcolor=Installed.Text
     }
 
     "GameItem_Running"
@@ -1081,7 +1097,7 @@ steam.styles
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check_sm"
-		inset="0 5 0 0"
+		inset="0 0 0 0"
     }   
 
     ListPanelCheckBox:selected
@@ -1160,9 +1176,8 @@ steam.styles
 		font-size=13 [$OSX]
 		font-weight=400
 		textcolor=List.Header.Text
-		//font-style="uppercase"
 		bgcolor="none"
-		inset="1 3 0 0"
+		inset="0 0 0 0"
 		render_bg    
 		{
 			// fill
@@ -1191,10 +1206,8 @@ steam.styles
 		font-size=13 [$OSX]
 		font-weight=400
 		textcolor=List.Header.Text
-		//font-style="uppercase"
 		bgcolor="none"
 		inset="0 0 0 0"
-		inset="0 1 0 0" [$OSX]
 		
 		render_bg    
 		{
@@ -1211,7 +1224,7 @@ steam.styles
     
    	"Csteamrootdialog ListPanelSectionCollapser"
 	{
-		inset = "-2 1 3 1"
+		inset = "0 0 0 0" //"-2 1 3 1"
 		bgcolor=none
 		render_bg
 		{
@@ -1321,7 +1334,8 @@ steam.styles
     
     ListPanelInterior
     {     
-		inset="3 1 0 0"
+		inset="0 0 0 0"
+		padding-left=5
 		font-size=15
 		textcolor=List.Text
 		bgcolor="none" 
@@ -1338,7 +1352,6 @@ steam.styles
     ListPanelInterior:scrollbar
     {     
 		bgcolor=none
-		inset="3 1 -1 0"
 		textcolor=List.Text
 		render
 		{				
@@ -1358,7 +1371,7 @@ steam.styles
     
      "Csteamrootdialog ListPanelInterior"
     {     
-		inset="3 0 3 0"
+		inset="0 0 0 0"
 		bgcolor=none
 
 		render_bg 
@@ -1369,7 +1382,7 @@ steam.styles
 	
 	"Csteamrootdialog ListPanelInterior:scrollbar"
     {     
-		inset="3 0 -1 0"
+		inset="0 0 0 0"
 		bgcolor=none
 		render
 		{
@@ -1379,7 +1392,7 @@ steam.styles
 	
 	"Page ListPanelInterior"
 	{
-		inset="3 1 -1 0"
+		inset="0 0 0 0"
 		font-size=15
 		bgcolor=none
 		render
@@ -1395,7 +1408,7 @@ steam.styles
 	
 	"Page ListPanelInterior:scrollbar"
 	{
-		inset="3 1 -1 0"
+		inset="0 0 0 0"
 		bgcolor=none
 		render_bg 
 		{				
@@ -1406,23 +1419,22 @@ steam.styles
       
     ListPanelSectionHeader
     {     
-		inset="0 0 0 0"
+		inset="5 0 0 0"
 		textcolor=List.Header.Text
-		//font-style="uppercase"
+		minimum-height=30
 		render_bg
 		{
-			0="fill( x0 - 1, y0, x1, y1, List.Header)"
+			0="fill( x0, y0, x1, y1, List.Header)"
 		}    
     } 
 	
 	"Csteamrootdialog ListPanelSectionHeader"
     {     
-		inset="0 0 0 0"
+		inset="5 0 0 0"
 		textcolor=List.Header.Text
-		//font-style="uppercase"
 		render_bg
 		{
-			0="fill( x0 - 1, y0, x1, y1, Root.Header)"
+			0="fill( x0, y0, x1, y1, Root.Header)"
 		}    
     } 
     
@@ -1453,55 +1465,27 @@ steam.styles
 		bgcolor=none
     }
     
-    ListPanelSectionCollapser [!$OSX]
+    ListPanelSectionCollapser
     {
-      
 		bgcolor=none
 		render_bg {}
 		image="graphics/Threshold/icons/right" 
-		inset="-4 0 0 0"
-		padding-top=-2
-		padding-bottom=-2
+		inset="0 0 0 0"
     }
     
-    ListPanelSectionCollapser [$OSX]
-    {
-		bgcolor=none
-		render_bg {}   
-		image="graphics/icon_collapse_osx" 
-		inset="-4 0 0 0"
-		padding-top=-2
-		padding-bottom=-2
-    }
-    
-    ListPanelSectionCollapser:hover [!$OSX]
+    ListPanelSectionCollapser:hover
     {
 		image="graphics/Threshold/icons/right_hover" 
     }
     
-    ListPanelSectionCollapser:hover [$OSX]
-    {
-		image="graphics/icon_collapse_over_osx" 
-    }
-    
-    ListPanelSectionCollapser:selected [!$OSX]
+    ListPanelSectionCollapser:selected
     {
 		image="graphics/Threshold/icons/down" 
     }
     
-    ListPanelSectionCollapser:selected [$OSX]
-    {
-		image="graphics/icon_expand_osx" 
-    }
-    
-    ListPanelSectionCollapser:selected:hover [!$OSX]
+    ListPanelSectionCollapser:selected:hover
     {
 		image="graphics/Threshold/icons/down_hover" 
-    }
-    
-     ListPanelSectionCollapser:selected:hover [$OSX]
-    {
-		image="graphics/icon_expand_over_osx" 
     }
     
 	MainNav
@@ -1695,8 +1679,8 @@ steam.styles
 		inset="0 0 0 0"
 		render_bg
 		{
-			// background gradient
-			0="fill( x0, y0 , x1, y1, Page.Tab )"	
+			//Background
+			0="fill( x0, y0, x1, y1, Page.Tab )"
 		}
     }
 
@@ -1727,7 +1711,7 @@ steam.styles
 		render_bg
 		{
 			// background gradient
-			0="fill( x0, y0, x1, y1, Page.Tab.Hover )"
+			0="fill( x0, y0 , x1, y1, Page.Tab.Hover )"
 		}
     }
   
@@ -1744,11 +1728,6 @@ steam.styles
 			// background gradient
 			0="fill( x0, y0, x1, y1, Page.Tab.Active.Hover )"
 		}
-    }
-      
-	PageTab:Focus
-	{
-		textcolor=Page.Tab.Text
     }
 
 	"PageDragFrame PageTab"
@@ -3468,12 +3447,10 @@ steam.styles
 
 	SuperNavMenuItem
 	{
-		//padding-top=1
 		font-size=14
 		font-weight=regular
 		textcolor=Menu.Text
 		bgcolor=none
-		//font-style="uppercase"
 	}
 
 	SuperNavMenuItem:selected
@@ -3512,6 +3489,19 @@ steam.styles
 	"NotifyRemoteClientInfo"
 	{
 		textcolor="176 172 165 255"
+	}
+	
+	CGamePropertiesDialog
+	{
+		render_bg {
+			0="fill(x0, y0, x1, y0+56, Page.Tab)"
+		}
+	}
+	
+	COverlaySettingsDialog {
+		render_bg {
+			0="fill(x0, y0, x1, y0+60, Page.Tab)"
+		}
 	}
 	
   }
