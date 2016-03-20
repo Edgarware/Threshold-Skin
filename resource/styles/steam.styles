@@ -2867,7 +2867,7 @@ steam.styles
 		bgcolor=none
 		inset="1 -1 1 1"
 		render_bg {
-			// background gradient
+			// fill with white so we can tell where this shows up
 			2="fill( x0, y0, x1, y1, white)"
         }  
     }
