@@ -98,51 +98,6 @@
 		{
 			textcolor="Accent"
 		}
-		
-		PageTab
-		{
-			inset="0 0 0 0"
-			font-size=14
-			font-style=regular
-			render_bg
-			{
-				// background gradient
-				0="fill( x0, y0, x1, y1, Root.Header )"			
-			}
-		}
-		
-		PageTab:selected
-		{
-			font-size=14
-			font-style=regular
-			render_bg
-			{
-				// background gradient
-				0="fill( x0, y0, x1, y1, Accent )"		
-			}
-		}
-		
-		PageTab:hover
-		{
-			font-size=14
-			font-style=regular
-			render_bg
-			{
-				// background gradient
-				0="fill( x0, y0, x1, y1, Menu.Button.Hover )"
-			}
-		}
-	  
-		PageTab:selected:hover
-		{
-			font-size=14
-			font-style=regular
-			render_bg
-			{
-				// background gradient
-				0="fill( x0, y0, x1, y1, Accent )"
-			}
-		}
     
 	}
 

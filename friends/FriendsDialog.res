@@ -284,34 +284,6 @@
 			padding-left=0
 			padding-right=-1
 		}
-
-		PageTab
-		{
-			inset="0 0 0 0"
-			padding-left=5
-			padding-right=5
-			font-style=normal
-			render_bg
-			{
-			
-			}
-		}
-		
-		PageTab:selected
-		{
-			bgcolor=Accent
-		}
-		
-		PageTab:hover
-		{
-			bgcolor=Menu.Button.Hover
-		}
-	  
-		PageTab:selected:hover
-		{
-			bgcolor=Accent
-		}
-		
 	}
  	
  	layout
