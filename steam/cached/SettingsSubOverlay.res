@@ -1,78 +1,7 @@
 "steam/cached/SettingsSubOverlay.res"
 { //No longer used?
 	styles{
-		Page
-		{
-			bgcolor="none"
-			render_bg
-			{
-				// background gradient
-				0="fill( x0, y0, x1, y1, DefaultBackground )"
-			}
-		}
 		
-		"Page Button"
-		{     
-			font-family=basefont
-			font-size=13
-			font-weight=400
-			textcolor=Button.Text
-			bgcolor=none
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Back )"
-			}
-		}
-		
-		"Page Button:hover"
-		{   
-			textcolor=Button.Hover.Text
-			render_bg
-			{     
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Hover)"             
-			}
-		}
-		
-		"Page Button:focus"
-		{
-			textcolor=Button.Active.Text
-			render_bg
-			{
-				0="fill( x0, y0, x1, y1, Button.Active)"			    
-			}
-		} 
-		
-		"Page Button:active" // this is the left-mouse-currently-pressed state
-		{
-			textcolor=Button.Active.Text
-			render_bg
-			{     
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Active)"
-			}
-		}
-		
-		"Page Button:selected"
-		{
-			textcolor=Button.Active.Text
-			render_bg
-			{     
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Active)"
-			}
-		}
-		
-		"Page Button:disabled"
-		{
-			textcolor=Button.Disabled.Text
-			render_bg
-			{     
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Disabled)"             
-			}
-		}
 	}
 	
 	"EnableOverlayCheck"
