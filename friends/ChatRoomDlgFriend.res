@@ -120,7 +120,6 @@
 				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			}
 		}
-		
 
 		EmoticonMenuItemStyle
 		{
