@@ -51,14 +51,13 @@
 	{
 		status
 		{
-			bgcolor="DefaultBackground"
 			inset="8 0 0 0"
 		}
 	}
 	
 	layout
 	{
-		place { control=GameTabs x=0 y=32 width=max height=max margin-bottom=25}
-		place { control=StatusLabel align=bottom width=max height=24}
+		place { control=GameTabs x=0 y=28 width=max height=max margin-bottom=11}
+		place { control=StatusLabel width=0 height=0}
 	}
 }

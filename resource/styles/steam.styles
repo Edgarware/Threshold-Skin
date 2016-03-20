@@ -342,7 +342,7 @@ steam.styles
 		font-size=13 [$OSX]
 		font-weight=400
 		textcolor=List.Header.Text
-		inset="0 0 0 0"
+		inset="5 0 0 0"
 		render_bg
 		{
 			0="fill( x0-2, y0, x1, y1, Root.Header )"
@@ -1224,7 +1224,7 @@ steam.styles
     
    	"Csteamrootdialog ListPanelSectionCollapser"
 	{
-		inset = "0 0 0 0" //"-2 1 3 1"
+		inset = "0 1 0 0" //"-2 1 3 1"
 		bgcolor=none
 		render_bg
 		{
@@ -1234,7 +1234,7 @@ steam.styles
 	
 	"CGamesPage_Mini ListPanelSectionCollapser"
 	{
-		inset = "-2 1 3 1"
+		inset = "5 1 0 0"
 		bgcolor=none
 		render_bg
 		{
@@ -1253,7 +1253,7 @@ steam.styles
 			0="image( x0 + 5, y0 + 4, x1, y1, graphics/Threshold/icons/plus )"
         }   
         render_bg {
-			
+			1="fill( x0 , y0, x1, y1, List.Header)"
         }
 	}
     
@@ -1265,6 +1265,7 @@ steam.styles
 			0="image( x0 + 5, y0 + 4, x1, y1, graphics/Threshold/icons/plus_hover )"
         }   
         render_bg {
+			1="fill( x0 , y0, x1, y1, List.Header)"
 		}
 	}
 	ListPanelColumnSelectButton:selected
@@ -1275,6 +1276,7 @@ steam.styles
 			0="image( x0 + 5, y0 + 4, x1, y1, graphics/Threshold/icons/plus )"
         }   
         render_bg {
+			1="fill( x0 , y0, x1, y1, List.Header)"
 		}
 	}
 
@@ -1421,7 +1423,8 @@ steam.styles
     {     
 		inset="5 0 0 0"
 		textcolor=List.Header.Text
-		minimum-height=30
+		minimum-height=25
+		font-size=18
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, List.Header)"
@@ -1432,16 +1435,12 @@ steam.styles
     {     
 		inset="5 0 0 0"
 		textcolor=List.Header.Text
+		font-size=18
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, Root.Header)"
 		}    
-    } 
-    
-    ListPanelSectionHeader:hover
-    {     
-        textcolor=List.Header.Text
-    } 
+    }
     
 	"ListPanel RichText"
 	{
@@ -2264,7 +2263,7 @@ steam.styles
 		}
 		bgcolor=none
 		image="graphics/Threshold/icons/right"
-		inset="4 1 3 1"
+		inset="6 0 0 0"
     } 
 	
 	"CFriendsDialog SectionedlistpanelCollapser"
@@ -2275,10 +2274,15 @@ steam.styles
 		}
 		bgcolor=none
 		image="graphics/Threshold/icons/right"
-		inset="4 1 3 1"
+		inset="6 0 0 0"
     } 
     
     SectionedListPanelCollapser:hover
+    {
+		image="graphics/Threshold/icons/right_hover"
+    }
+	
+	"CFriendsDialog SectionedListPanelCollapser:hover"
     {
 		image="graphics/Threshold/icons/right_hover"
     }
@@ -2294,6 +2298,11 @@ steam.styles
     } 
     
     SectionedListPanelCollapser:selected:hover
+    {
+		image="graphics/Threshold/icons/down_hover"
+    }
+	
+	"CFriendsDialog SectionedListPanelCollapser:selected:hover"
     {
 		image="graphics/Threshold/icons/down_hover"
     }
@@ -3491,10 +3500,25 @@ steam.styles
 		textcolor="176 172 165 255"
 	}
 	
+	//Special window styling for older frames
 	CGamePropertiesDialog
 	{
 		render_bg {
 			0="fill(x0, y0, x1, y0+56, Page.Tab)"
+		}
+	}
+	
+	CServerBrowserDialog
+	{
+		render_bg {
+			0="fill(x0, y0, x1, y0+56, Page.Tab)"
+		}
+	}
+	
+	CInternetGames
+	{
+		render_bg {
+			0="fill(x0, y0, x1, y1 - 32, Page.Tab)"
 		}
 	}
 	
