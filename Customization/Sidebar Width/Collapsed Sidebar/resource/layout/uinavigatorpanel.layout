@@ -1018,9 +1018,9 @@
 		place [!$OSX] { control="forward" region=hidden x=50 height=40 width=40}
 		place [$OSX] { control="back,forward" x=3 y=17 height=30 width=30 spacing=2 margin-right=5 margin-top=0 }
 		
-		place {control="URLBar" region=right width=max height=40 }
+		place { control="URLBar" dir=right region=right width=max height=40 end-right=URLStatusImage}
 		place { control="EVCert" region=hidden}
-		place { control="PageLoadThrobber,refresh,stop,URLStatusImage" y=0 height=40 width=40 align=right region=hidden}
+		place { control="URLStatusImage,refresh,stop,PageLoadThrobber" height=40 width=40 align=right region=right}
  	
 		place { control="subnavgroup_library" y=0 height=40 width=max margin-right=0 region=hidden region=right}
 	
@@ -1043,8 +1043,8 @@
 		
 		place { control="library_filters_details,library_filters_list,library_filters_grid" align=right y=0 height=40 spacing=5 margin-right=9 width=20 region=right}
 
- 	  	place { control=emailreminderbar margin-top=0 margin-right=0 width=max height=50 region=right}
-		place { control=phonereminderbar margin-top=0 margin-left=0  width=max height=80 region=right}
+ 	  	place { control=emailreminderbar start=URLBar dir=down margin-top=0 margin-right=0 width=max height=50 region=right}
+		place { control=phonereminderbar start=URLBar dir=down margin-top=0 margin-left=0  width=max height=80 region=right}
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
 		place { control=DownloadsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }

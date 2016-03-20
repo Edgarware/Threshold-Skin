@@ -43,15 +43,14 @@
 			{
 			}      
 		}
-
 	}
 	
 	layout
 	{
 		region {name=hidden width=0 height=0}
 		place { control="StatusDownloading" height=50 width=50 align="top-center"} //Also Offline mode status
-		place { control="StatusPaused" start=StatusDownloading dir=down align="top-center" region=hidden}
-		place { control="StatusComplete" start=StatusDownloading dir=down align="top-center" region=hidden}
+		place { control="StatusPaused" dir=down align="top-center" y=18 region=hidden}
+		place { control="StatusComplete" dir=down align="top-center" y=18 region=hidden}
 	 	place { control="StatusProgressbar" width=50 height=5 align="bottom" }
 	}
 }

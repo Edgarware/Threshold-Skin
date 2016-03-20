@@ -3,7 +3,6 @@
 	controls
 	{
 
-			
 		"fullscreen"
 		{
 			"ControlName"		"Button"
@@ -153,9 +152,9 @@
 		    textcolor=Root.SubLabel.Text
 		    bgcolor="none"
 		    font-family=basefont
-		    font-size=13
+		    font-size=12
 		    font-style=regular
-			inset="0 1 0 0"
+			inset="0 0 0 0"
 		}
 
 		AccountBalanceStyle [$OSX]
@@ -163,7 +162,7 @@
 		    textcolor=Root.SubLabel.Text
 		    bgcolor="none"
 		    font-family=basefont
-		    font-size=13
+		    font-size=12
 		    font-weight=400
 		    font-style=regular
 		    inset="0 1 0 0"
@@ -347,16 +346,15 @@
 
 		CSteamRootDialog
 		{
-			bgcolor=none
-
+			bgcolor=almostblack
 
 			render_bg
 			{
 				// top area and graphics
-				1="fill( x0, y0, x0+50, y1, Root.LeftCol)"
-				2="fill( x0, y0, x1, y0+72, Root.Header)"
-				//3="fill( x0, y1-50, x0+250, y1, Root.LeftCol.Bottom )"
-				4="image( x0+1, y0+320, x1, y1, graphics/Threshold/tmp/beta )"
+				1="fill( x0, y0, x1, y0+72, Root.Header)"
+				2="fill( x0, y0+72, x0+50, y1, Root.LeftCol)"
+				//3="fill( x0, y1-50, x0+50, y1, Root.LeftCol.Bottom)"
+				4="fill( x0+50, y0+72, x1, y1, almostblack)"
 			}
 			render{
 				0="image (x0+15, y0+154, x1, y1, graphics/Threshold/store)"
@@ -422,57 +420,34 @@
    			inset="0 12 0 0"
 		}
 
-		view_friends [!$OSX]
+		view_friends
 		{
 			textcolor=none
-			bgcolor="none"
-			font-family=basefont
-			font-size=14
-			font-weight=400
-			font-style=regular,uppercase
-		}
-
-		view_friends [$OSX]
-		{
-			textcolor=none
-			bgcolor="none"
-			font-family=basefont
-			font-size=13
-			font-weight=400
-			font-style=regular,uppercase
-			padding-top=6
-			padding-left=24
-			padding-bottom=30
-
-		}
-
-		online_friends [!$OSX]
-		{
-			textcolor=Root.SubLabel.Text
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
 			font-weight=400
 			font-style=regular
 		}
-
-		online_friends [$OSX]
+		
+		view_friends:hover
 		{
-			textcolor="label2"
+			textcolor=none
+		}
+
+		online_friends
+		{
+			textcolor=Root.SubLabel.Text
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
+			font-weight=400
 			font-style=regular
 		}
 
 		online_friends:disabled
 		{
 			textcolor=Root.LeftCol.Disabled
-		}
-		
-		online_friends:hover
-		{
-			textcolor=Root.SubLabel.Text
 		}
 
 		support_alert
@@ -708,7 +683,6 @@
 		{
 			font-size = 16
 			textcolor=Root.Label.Text
-			padding-top=-4
 			padding-right=-14
 		}
 		
@@ -757,17 +731,16 @@
 		place { control="SupportAlert, ParentalLockButton, exitVR, startVR, UIStatusPanel" region=bottom align=bottom height=50 width=50 spacing=0 dir=down}
 
 		place [!$OSX]  { control="InboxButton,fullscreen,frame_minimize,frame_maximize,frame_close" align=right width=46 height=32 spacing=0 }
-		place { control=account_balance align=right height=31 margin-right=10 end-right=InboxButton }
 		place [$OSX] { control="frame_close,frame_minimize,frame_maximize" align=left margin-top=10 margin-left=4 spacing=-7 }
 		
-		place { control="add_game" x=14 y=16 region=hidden height=0 width=0}
+		place { control="add_game, account_balance_seperator" x=14 y=16 region=hidden height=0 width=0}
 		
-		region { name=account region=left y=48 margin-left=5 width=max height=50 }
+		region { name=account region=left y=47 margin-left=5 width=max height=63 }
 		place { control="FriendPanel" height=48 y=0 width=48 margin-left=0 region=account}
+		place { control="account_balance" start=FriendPanel dir=down y=0 x=8 region=account}
 
-		place { control="account_URL, universe_label" margin-left=52 y=13 spacing=5 region=hidden}
-		place { control="account_balance_seperator" start=account_URL x=1 y=0 spacing=4 region=hidden}
-		place { control="online_friends" height=12 y=30 margin-left=52 region=hidden}
+		place { control="account_URL, universe_label" margin-left=52 y=9 spacing=5 region=hidden}
+		place { control="online_friends" height=12 y=30 spacing=5 margin-left=52 region=hidden}
 		place { control="view_friends" height=12 y=30 margin-left=52 region=hidden}
 	}
 }
