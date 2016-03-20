@@ -1043,8 +1043,8 @@
 		
 		place { control="library_filters_details,library_filters_list,library_filters_grid" align=right y=0 height=40 spacing=5 margin-right=9 width=20 region=right}
 
- 	  	place { control=emailreminderbar margin-top=0 margin-right=0 width=max height=50 region=right}
-		place { control=phonereminderbar margin-top=0 margin-left=0  width=max height=80 region=right}
+ 	  	place { control=emailreminderbar start=URLBar dir=down margin-top=0 margin-right=0 width=max height=50 region=right}
+		place { control=phonereminderbar start=URLBar dir=down margin-top=0 margin-left=0  width=max height=80 region=right}
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
 		place { control=DownloadsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
