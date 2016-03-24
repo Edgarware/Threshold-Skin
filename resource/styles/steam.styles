@@ -55,6 +55,7 @@ steam.styles
 	Button.Hover="74 74 74 255"
 	Button.Page.Hover="74 74 74 255"
 	Button.Active=Accent
+	Button.Active.Hover=Accent2
 	Button.Disabled=Button.Back
 	Button.Text=DefaultText
 	Button.Hover.Text=DefaultText
@@ -130,7 +131,7 @@ steam.styles
 	Root.LeftCol = DefaultBackground //Left Column
 	Root.LeftCol.Header= Root.Header
 	Root.LeftCol.Bottom = Root.LeftCol.Header
-	Root.Back = Dark //Scroll.Back
+	Root.Back = Dark
 	Root.RightCol = DefaultBackground //Right column (When needed)
 	Root.Div = Menu.Div
 	Root.BackTransparent="28 28 28 170" //For details header/grid chrome
@@ -303,6 +304,34 @@ steam.styles
 		{     
 			// background fill
 			0="fill( x0, y0, x1, y1, Button.Active)"
+		}
+    }
+	
+	Button:selected:hover
+    {
+		textcolor=Button.Active.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Active)"
+			1="fill( x0, y0, x0+2, y1, Button.Active.Hover)"
+			2="fill( x1-2, y0, x1, y1, Button.Active.Hover)"
+			3="fill( x0, y0, x1, y0+2, Button.Active.Hover)"
+			4="fill( x0, y1-2, x1, y1, Button.Active.Hover)"
+		}
+    }
+
+    "Page Button:selected:hover"
+    {
+		textcolor=Button.Active.Text
+		render_bg
+		{     
+			// background fill
+			0="fill( x0, y0, x1, y1, Button.Active)"
+			1="fill( x0, y0, x0+2, y1, Button.Active.Hover)"
+			2="fill( x1-2, y0, x1, y1, Button.Active.Hover)"
+			3="fill( x0, y0, x1, y0+2, Button.Active.Hover)"
+			4="fill( x0, y1-2, x1, y1, Button.Active.Hover)"
 		}
     }
     
@@ -2596,7 +2625,11 @@ steam.styles
 		render_bg
 		{     
 			// background fill
-			0="fill( x0, y0, x1, y1, Button.Hover)"
+			0="fill( x0, y0, x1, y1, Button.Back )"
+			1="fill( x0, y0, x0+2, y1, Button.Hover)"
+			2="fill( x1-2, y0, x1, y1, Button.Hover)"
+			3="fill( x0, y0, x1, y0+2, Button.Hover)"
+			4="fill( x0, y1-2, x1, y1, Button.Hover)"
 		}
     }
     
@@ -2632,7 +2665,11 @@ steam.styles
 		bgcolor="none"
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, Button.Page.Hover)"
+			0="fill( x0, y0, x1, y1, Button.Page.Back )"
+			1="fill( x0, y0, x0+2, y1, Button.Page.Hover)"
+			2="fill( x1-2, y0, x1, y1, Button.Page.Hover)"
+			3="fill( x0, y0, x1, y0+2, Button.Page.Hover)"
+			4="fill( x0, y1-2, x1, y1, Button.Page.Hover)"
 		}
     }
   
