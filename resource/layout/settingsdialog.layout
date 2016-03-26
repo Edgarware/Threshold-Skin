@@ -20,7 +20,8 @@
 			render_bg
 			{     
 				0="fill( x0, y0, x0+200, y1, Light )"  
-				1="fill( x0+200, y0, x1, y1, DefaultBackground)" 				
+				1="fill( x0+200, y0, x1, y1, DefaultBackground)" 
+				2="image(x1 - 250, y1 - 50, x1, y1, graphics/Threshold/beta)"
 			}
 
 		}
