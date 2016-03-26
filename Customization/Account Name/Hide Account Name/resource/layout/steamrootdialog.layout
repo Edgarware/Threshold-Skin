@@ -679,7 +679,7 @@
 		{
 			font-size = 16
 			textcolor=Root.Label.Text
-			padding-right=-14
+			padding-right=-14 //This element has a drop-down arrow; this hides it
 		}
 		
 		AccountURLStyle:hover
@@ -690,6 +690,7 @@
 		AccountURLStyle:disabled
 		{
 			textcolor=Root.LeftCol.Disabled
+			padding-right=0
 		}
 	
 	}
@@ -737,7 +738,7 @@
 		place { control="FriendPanel" height=48 y=0 width=48 margin-left=0 region=account}
 		place { control="account_balance" start=FriendPanel dir=down y=0 x=8 region=account}
 
-		place { control="account_URL, universe_label" margin-left=52 y=13 spacing=5 region=hidden}
+		place { control="account_URL, universe_label" margin-left=52 y=9 spacing=5 region=hidden}
 		place { control="online_friends" height=12 y=30 spacing=5 margin-left=52 region=account}
 		place { control="view_friends" margin-left=52 y=13 region=account}
 	}

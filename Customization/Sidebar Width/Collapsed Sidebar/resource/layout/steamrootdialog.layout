@@ -683,7 +683,7 @@
 		{
 			font-size = 16
 			textcolor=Root.Label.Text
-			padding-right=-14
+			padding-right=-14 //This element has a drop-down arrow; this hides it
 		}
 		
 		AccountURLStyle:hover
@@ -694,6 +694,7 @@
 		AccountURLStyle:disabled
 		{
 			textcolor=Root.LeftCol.Disabled
+			padding-right=0
 		}
 	
 	}

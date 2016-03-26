@@ -694,6 +694,7 @@
 		AccountURLStyle:disabled
 		{
 			textcolor=Root.LeftCol.Disabled
+			padding-right=0
 		}
 	
 	}
