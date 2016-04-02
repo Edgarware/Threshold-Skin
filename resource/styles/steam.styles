@@ -8,7 +8,6 @@ steam.styles
 	// cool we can define font-families here as well
     basefont="Segoe UI"
 	semibold="Segoe UI Semibold"
-    basefont="Helvetica" [$OSX]
 	
 	//Standard Element/Text colors ********
 	//TODO: Some of these colors arent actually used, fix or remove
@@ -171,8 +170,8 @@ steam.styles
 		
  }
   
-	styles
-	{
+ styles
+ {
 	downarrow
 	{
 		image="graphics/Threshold/icons/down"    
@@ -201,7 +200,8 @@ steam.styles
 	Button
 	{     
 		font-family=basefont
-		font-size=13
+		font-size=12
+		font-size=13 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -358,7 +358,8 @@ steam.styles
     CFriendsListSectionAffordance //Group list header option dropdown button
     {     
 		inset="0 0 0 0"
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=DefaultText
     }
@@ -367,8 +368,8 @@ steam.styles
     {
 		bgcolor=none
 		font-family=basefont
-		font-size=14
-		font-size=13 [$OSX]
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Header.Text
 		inset="5 0 0 0"
@@ -383,8 +384,8 @@ steam.styles
 		inset="0 2 0 0"
 		bgcolor=none
 		font-family=basefont
-		font-size=14
-		font-size=13 [$OSX]
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=DefaultText
     }
@@ -393,7 +394,8 @@ steam.styles
     {
 		font-family=basefont
 		inset="0 0 0 0"
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check"
@@ -448,7 +450,8 @@ steam.styles
 	IndeterminateCheckButton
 	{
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		bgcolor=none
@@ -534,7 +537,8 @@ steam.styles
 		inset="3 0 0 0"
 		textcolor=ComboBox.Text
 		font-family=basefont
-		font-size="14"
+		font-size=12
+		font-size=14 [$WINDOWS]
 		selectedtextcolor=ComboBox.Text
 		selectedbgcolor=none
 		render_bg
@@ -870,7 +874,8 @@ steam.styles
 		padding-left="0"
 		padding-right="64"
 		padding-right="0" [$OSX]
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=Frame.Text
 		bgcolor="none"
@@ -883,13 +888,7 @@ steam.styles
     
     FrameTitle:framefocus
     {
-		font-family=basefont
-		inset="0 4 0 0" [$OSX]
-		font-size=14
-		font-weight=400
-		bgcolor="none"
 		textcolor=Frame.Focus.Text
-		textcolor="texthover" [$OSX]
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, TitleBar)"
@@ -902,7 +901,8 @@ steam.styles
 		bgcolor=none
 		inset="-6 -1 -1 -1"
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=List.Text
@@ -938,7 +938,8 @@ steam.styles
 		selectedtextcolor=Label.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
  	}
    
@@ -946,7 +947,8 @@ steam.styles
     {
 		bgcolor=none
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=List.Text
@@ -965,7 +967,8 @@ steam.styles
     "Page ListPanel"
 	{
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=List.Text
@@ -984,7 +987,8 @@ steam.styles
 	{
 		font-family=basefont
 		bgcolor="none"
-		font-size=15
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=List.Text
@@ -1122,7 +1126,8 @@ steam.styles
     ListPanelCheckBox
     {
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check_sm"
@@ -1166,7 +1171,8 @@ steam.styles
     "ListPanelColumnheader ListPanelCheckBox"
     {
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check_sm"
@@ -1182,7 +1188,8 @@ steam.styles
 	"ListPanelColumnheader ListPanelCheckBox:focus"
     {
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check_sm"
@@ -1201,8 +1208,8 @@ steam.styles
     ListPanelColumnheader
     {
 		font-family=basefont
-		font-size=14
-		font-size=13 [$OSX]
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Header.Text
 		bgcolor="none"
@@ -1231,8 +1238,8 @@ steam.styles
 	"Csteamrootdialog ListPanelColumnheader"
     {
 		font-family=basefont
-		font-size=14
-		font-size=13 [$OSX]
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Header.Text
 		bgcolor="none"
@@ -1367,7 +1374,8 @@ steam.styles
     {     
 		inset="0 0 0 0"
 		padding-left=5
-		font-size=15
+		font-size=13
+		font-size=15 [$WINDOWS]
 		textcolor=List.Text
 		bgcolor="none" 
 		render
@@ -1424,7 +1432,8 @@ steam.styles
 	"Page ListPanelInterior"
 	{
 		inset="0 0 0 0"
-		font-size=15
+		font-size=13
+		font-size=15 [$WINDOWS]
 		bgcolor=none
 		render
 		{		
@@ -1621,7 +1630,8 @@ steam.styles
     {
 		font-family=basefont
 		textcolor=Menu.Text
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		inset="0 0 0 0"
 		padding-right=6
@@ -1666,7 +1676,8 @@ steam.styles
     Notification
     {
 		font-family=basefont
-		font-size=15
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		bgcolor=Notification.Back
 		render_bg
@@ -1701,8 +1712,8 @@ steam.styles
     {
 		textcolor=Page.Tab.Text
 		font-family=basefont
-		font-size=13
-		//font-style=Uppercase
+		font-size=11
+		font-size=13 [$WINDOWS]
 		font-weight=400
 		inset="0 0 0 0"
 		render_bg
@@ -1716,11 +1727,6 @@ steam.styles
     PageTab:selected
     {
 		textcolor=Page.Tab.Active.Text
-		font-family=basefont
-		font-size=13
-		//font-style=Uppercase
-		font-weight=400
-		bgcolor="none"
 		render_bg
 		{
 			// background gradient
@@ -1732,10 +1738,6 @@ steam.styles
  	PageTab:hover
     {
 		textcolor=Page.Tab.Text
-		font-family=basefont
-		font-size=13
-		//font-style=Uppercase
-		font-weight=400
 		render_bg
 		{
 			// background gradient
@@ -1746,11 +1748,6 @@ steam.styles
     PageTab:selected:hover
     {
 		textcolor=Page.Tab.Active.Text
-		font-family=basefont
-		font-size=13
-		//font-style=Uppercase
-		font-weight=400
-		bgcolor="none"
 		render_bg
 		{
 			// background gradient
@@ -1760,7 +1757,8 @@ steam.styles
 
 	"PageDragFrame PageTab"
 	{
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-style=""
 	}
 
@@ -1778,7 +1776,8 @@ steam.styles
     Panel
 	{ 
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=DefaultText
 		bgcolor="none"
@@ -1836,7 +1835,8 @@ steam.styles
     RadioButton
     {
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=Radio.Text
 		render_bg {}
@@ -1905,7 +1905,8 @@ steam.styles
 		textcolor=TextBox.Text
 		selectedtextcolor=TextBox.Active.Text		
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		inset="0 0 0 0"
 		render_bg
@@ -1929,7 +1930,8 @@ steam.styles
 	
 	"RichText url"
 	{
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		textcolor=URL.Text
 		selectedtextcolor=TextBox.Active.Text
 		font-style=underline
@@ -1944,19 +1946,22 @@ steam.styles
 	{
 		textcolor=TextBox.Text
 		font-style=underline
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 	}
 	
 	// style of bold text in a rich text control
 	"RichText bold"
 	{
-		font-size=15
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=1000
 	}
 	
 	"RichText emphasis"
 	{
-		font-size=15
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-style=italic
 	}
 
@@ -2248,7 +2253,8 @@ steam.styles
     {
 		bgcolor=none
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=List.Text
@@ -2270,7 +2276,8 @@ steam.styles
     {
 		bgcolor=DefaultBackground
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=List.Text
@@ -2353,7 +2360,8 @@ steam.styles
     StatusLabel
     {
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=Label.Text
 		font-style=normal   
@@ -2371,7 +2379,8 @@ steam.styles
     StatusLabel:hover
     {
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=Label.Text
 		//font-style=uppercase
@@ -2380,7 +2389,8 @@ steam.styles
     TextEntry
     {
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
@@ -2566,7 +2576,8 @@ steam.styles
     TextEntryURL
 	{
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		textcolor=URL.Text
 		font-weight=400
 		bgcolor="none"
@@ -2596,7 +2607,8 @@ steam.styles
 		inset="1 0 0 0"
 		inset="1 3 0 0" [$OSX]
 		font-family=basefont
-		font-size=13
+		font-size=11
+		font-size=13 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2648,7 +2660,8 @@ steam.styles
     "Page ToggleButton"
     {
 		font-family=basefont
-		font-size=13
+		font-size=11
+		font-size=13 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2783,7 +2796,8 @@ steam.styles
 		textcolor=URL.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		font-style=underline
     }
@@ -2791,7 +2805,6 @@ steam.styles
    	URLLabel:Hover
 	{
 		textcolor=URL.Hover.Text
-		font-size=14
 	}
 		
 	URLLabelSimple
@@ -2799,17 +2812,8 @@ steam.styles
 		textcolor=URL.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=14
-		font-weight=400
-		font-style=regular
-    }
-
-	URLLabelSimple [$OSX]
-    {
-		textcolor="labelfocus"
-		bgcolor="none"
-		font-family=basefont
-		font-size=13
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		font-style=regular
     }
@@ -2825,17 +2829,8 @@ steam.styles
 		textcolor=URL.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=14
-		font-weight=400
-		font-style=regular
-    }
-
-	URLLabelSimple2 [$OSX]
-    {
-		textcolor="labelfocus"
-		bgcolor="none"
-		font-family=basefont
-		font-size=13
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		font-style=regular
     }
@@ -3163,7 +3158,8 @@ steam.styles
 	"html-findbar"
  	{
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		textcolor=DefaultText
 		font-weight=400
 		bgcolor="DefaultBackground"
@@ -3186,7 +3182,8 @@ steam.styles
  	"html-imebar" 
  	{
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		textcolor=DefaultText
 		font-weight=400
 		bgcolor="DefaultBackground"
@@ -3493,7 +3490,8 @@ steam.styles
 
 	SuperNavMenuItem
 	{
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=regular
 		textcolor=Menu.Text
 		bgcolor=none

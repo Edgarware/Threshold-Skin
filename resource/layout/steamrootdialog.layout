@@ -152,20 +152,10 @@
 		    textcolor=Root.SubLabel.Text
 		    bgcolor="none"
 		    font-family=basefont
-		    font-size=12
+		    font-size=10
+			font-size=12 [$WINDOWS]
 		    font-style=regular
 			inset="0 0 0 0"
-		}
-
-		AccountBalanceStyle [$OSX]
-		{
-		    textcolor=Root.SubLabel.Text
-		    bgcolor="none"
-		    font-family=basefont
-		    font-size=12
-		    font-weight=400
-		    font-style=regular
-		    inset="0 1 0 0"
 		}
     
 		AccountBalanceStyle:Hover
@@ -395,29 +385,9 @@
 
 		}
 		
-		ClientTitle [!$OSX]
+		ClientTitle
 		{
 			textcolor=none
-		}
-
-		ClientTitle [$OSX]
-		{
-			font-family=basefont
-			font-size=15
-      		font-weight=400
-      		textcolor="textdisabled"
-      		bgcolor="none"
-      		inset="0 12 0 0"
-		}
-
-		ClientTitle:FrameFocus [$OSX]
-		{
-			font-family=basefont
-   			font-size=15
-   			font-weight=400
-   			textcolor="texthover"
-   			bgcolor="none"
-   			inset="0 12 0 0"
 		}
 
 		view_friends
@@ -425,7 +395,8 @@
 			textcolor=none
 			bgcolor="none"
 			font-family=basefont
-			font-size=13
+			font-size=11
+			font-size=13 [$WINDOWS]
 			font-weight=400
 			font-style=regular
 		}
@@ -440,7 +411,8 @@
 			textcolor=Root.SubLabel.Text
 			bgcolor="none"
 			font-family=basefont
-			font-size=13
+			font-size=11
+			font-size=13 [$WINDOWS]
 			font-weight=400
 			font-style=regular
 		}
@@ -453,7 +425,8 @@
 		support_alert
 		{
 			font-family=basefont
-			font-size=14
+			font-size=12
+			font-size=14 [$WINDOWS]
 			font-weight=1000
 			font-style=none
 			textcolor=DefaultText
@@ -469,16 +442,6 @@
 		
 		support_alert:hover
 		{
-			font-family=basefont
-			font-size=14
-			font-weight=1000
-			font-style=none
-			textcolor=DefaultText
-			padding-left=50
-			padding-right=50
-			padding-top=6
-			inset="-8 -3 8 0"
-			render {}
 			render_bg {
 				0="fill( x0, y0 + 3, x1-1, y1, parental_lock_inactive3 )"
 			}
@@ -489,7 +452,8 @@
 		inbox_button [!$OSX]
 		{
 			font-family=basefont
-			font-size=14 
+			font-size=12
+			font-size=14 [$WINDOWS] 
 			font-weight=800
 			font-style=none
 			textcolor=Root.LeftCol.Text
@@ -501,22 +465,6 @@
 			render_bg
 			{
 				
-			}	
-		}
-		
-		inbox_button [$OSX]
-		{
-			font-family=basefont
-			font-size=13 
-			font-weight=800
-			font-style=none
-			textcolor=DefaultText
-
-			render 
-			{
-			}
-			render_bg
-			{
 			}	
 		}
 
@@ -564,7 +512,8 @@
 		inbox_button_active
 		{
 			font-family=basefont
-			font-size=18 
+			font-size=12
+			font-size=14 [$WINDOWS] 
 			font-weight=800
 			font-style=none
 			textcolor=none
@@ -681,7 +630,8 @@
 		
 		AccountURLStyle
 		{
-			font-size = 16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			textcolor=Root.Label.Text
 			padding-right=-14 //This element has a drop-down arrow; this hides it
 		}

@@ -72,7 +72,8 @@
 		emptylisttext
 		{
 			textcolor=DefaultText
-			font-size="15"
+			font-size=13
+			font-size=15 [$WINDOWS] 
 			render_bg {}
 		}
 
@@ -131,26 +132,17 @@
 			render_bg {}
 		}
 
-		"GamesPage_Details ListPanelColumnHeader" [!$OSX]
+		"GamesPage_Details ListPanelColumnHeader"
 		{
 			bgcolor="none"
-			font-size=14
+			font-size=12
+			font-size=14 [$WINDOWS]
 			inset="0 0 0 0"
 			render {}
 			render_bg 
 			{
 				0="fill( x0, y0, x1, y1, ButtonFace)"
 			}
-
-		}
-		
-		"GamesPage_Details ListPanelColumnHeader" [$OSX]
-		{
-			bgcolor="none"
-			font-size=13
-			inset="2 2 0 0"
-			render {}
-
 
 		}
 		
@@ -186,7 +178,8 @@
 			inset="0 0 0 0"
 			font-family=basefont
 			font-weight=700
-			font-size=17
+			font-size=14
+			font-size=17 [$WINDOWS]
 			textcolor=Accent
 			padding-top=12
 			padding-left=0
@@ -199,7 +192,8 @@
 		rightcolumnheadertext-red
 		{
 			inset="0 0 0 0"
-			font-size=17
+			font-size=14
+			font-size=17 [$WINDOWS]
 			textcolor=Accent
 			font-family=basefont
 			font-weight=700
@@ -215,7 +209,8 @@
 		{
 			
 			inset="0 0 0 0"
-			font-size=17
+			font-size=14
+			font-size=17 [$WINDOWS]
 			textcolor=Accent
 			font-family=basefont
 			font-weight=700
@@ -230,7 +225,8 @@
 		rightcolumnheadertext-blue
 		{
 			inset="0 0 0 0"
-			font-size=17
+			font-size=14
+			font-size=17 [$WINDOWS]
 			textcolor=Accent
 			font-family=basefont
 			font-weight=700
@@ -245,7 +241,8 @@
 		rightcolumnlink
 		{
 			inset="0 0 0 0"
-			font-size=15
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-style=normal
 			textcolor=DefaultText
 			font-family=basefont
