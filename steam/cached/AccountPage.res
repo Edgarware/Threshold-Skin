@@ -11,7 +11,7 @@
 		place { control=SecurityIcon,SecurityStatusState start=SecurityStatusLabel dir=right margin-left=0 spacing=4}
 		place { control=AccountLink start=LogoutLabel dir=right align=right margin-right=50}
 		
-		place { control=ManageSecurityButton,ChangePasswordButton,ChangeContactEmailButton start=SecurityStatusLabel dir=down margin-top=25 spacing=8 width=220}
+		place { control=ValidateContactEmailButton,ManageSecurityButton,ChangePasswordButton,ChangeContactEmailButton start=SecurityStatusLabel dir=down margin-top=25 spacing=8 width=220}
 		
 		place { control=Divider1 start=ChangeContactEmailButton dir=down margin-top=15 width=max margin-right=20}
 		
