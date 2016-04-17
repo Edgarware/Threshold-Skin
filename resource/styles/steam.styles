@@ -133,7 +133,7 @@ steam.styles
 	Root.Back = Dark
 	Root.RightCol = DefaultBackground //Right column (When needed)
 	Root.Div = Menu.Div
-	Root.BackTransparent="28 28 28 170" //For details header/grid chrome
+	Root.BackTransparent="14 14 14 170" //For details header/grid chrome
 	
 	Root.LeftCol.Text=DefaultText
 	Root.Label.Text=DefaultText
@@ -167,7 +167,6 @@ steam.styles
 	Running.Text=AccentText
 	Running.Hover.Text=AccentTextHover
 	
-		
  }
   
  styles
@@ -429,21 +428,18 @@ steam.styles
 	CheckButton:selected:hover
     {
 		textcolor=Check.Text.Hover
-		render_bg {}
 		image="graphics/Threshold/icons/check_sel_hover"	
     }
     
     CheckButton:disabled
     {
 		textcolor=Check.Disabled.Text
-		bgcolor=none
 		image="graphics/Threshold/icons/check_dis"
     }
     
     CheckButton:selected:disabled
     {
 		textcolor=Check.Disabled.Text
-		bgcolor=none
 		image="graphics/Threshold/icons/check_sel_dis"
     }
 
@@ -468,55 +464,45 @@ steam.styles
     {
         inset="1 1 1 1"
         textcolor=List.Text
-        bgcolor=none
-        render	{      	}  
+        bgcolor=List.Back
+        render	{}  
 		render_bg {				
 			// background gradient        
-			1="fill( x0, y0, x1, y1, List.Back )"
+			0="fill( x0, y0, x1, y1, List.Back )"
 		}
     } 
     
     CheckButtonList:scrollbar
     {
         inset="1 1 1 1"
-        textcolor=List.Text
-        bgcolor=none
-		render	{     		}
-    	render_bg {				
-			// background gradient        
-			1="fill( x0, y0, x1, y1, List.Back )"
-		}
     } 
     
     "Page CheckButtonList"
     {
         inset="1 1 1 1"
         textcolor=List.Text
-        bgcolor=none
+        bgcolor=List.Page
         render	{      	}  
 		render_bg
         {     
 			// background fill
-			1="fill( x0, y0, x1, y1, List.Page )"
+			0="fill( x0, y0, x1, y1, List.Page )"
       	}
     }
     
     "Page CheckButtonList:scrollbar"
     {
         inset="1 1 1 1"
-        textcolor=List.Text
-        bgcolor=none
-        render { }   
-        render_bg
-        {     
-			// background fill
-			1="fill( x0+1, y0, x1-1, y1-2, List.Page )"
-    	}
-   	 }
+   	}
     
     "CheckbuttonList Checkbutton"
     {
 		textcolor=Check.Text
+	}
+	
+	"CheckbuttonList Checkbutton:hover"
+    {
+		textcolor=Check.Text.Hover
 	} 
     
     "CheckbuttonList Checkbutton:focus"
@@ -528,7 +514,7 @@ steam.styles
     {
 		render_bg
 		{
-			//0="fill(x0+3,y0+4,x0+18,y0+18,Check.Active)"
+			
 		}	
 	} 
     
@@ -554,8 +540,6 @@ steam.styles
     
     ComboBox:hover
     {
-		selectedbgcolor="none"
-		selectedtextcolor=ComboBox.Text
 		render_bg
 		{     
 			// background fill
@@ -569,8 +553,6 @@ steam.styles
     
     ComboBox:focus:hover
     {
-		selectedbgcolor="none"
-		selectedtextcolor=ComboBox.Text
 		render_bg
 		{     
 			// background fill
@@ -638,7 +620,6 @@ steam.styles
     
     ComboBoxButton
     {      
-
 		bgcolor=none
 		padding-left=2
 		image="graphics/Threshold/icons/down"
@@ -647,76 +628,10 @@ steam.styles
 		}
     }
     
-    ComboBoxButton:hover
-    {
-		image="graphics/Threshold/icons/down"
-		// just draw a single line to divide it from the text
-		render_bg 
-		{
-		}
-    }
-    
-    ComboBoxButton:focus
-    {
-
-		bgcolor=none
-		image="graphics/Threshold/icons/down"
-		// just draw a single line to divide it from the text
-		render_bg 
-		{
-		}
-    }
-    
-    ComboBoxButton:focus:hover
-    {
-
-		bgcolor=none
-		image="graphics/Threshold/icons/down"
-		// just draw a single line to divide it from the text
-		render_bg 
-		{
-		}
-    }
-    
     
     "Page ComboBoxButton"
     {
-		bgcolor=none
 		image="graphics/Threshold/icons/down"
-		// just draw a single line to divide it from the text
-		render_bg 
-		{
-		}
-    }
-    
-    "Page ComboBoxButton:hover"
-    {
-		image="graphics/Threshold/icons/down"
-		// just draw a single line to divide it from the text
-		render_bg 
-		{
-		}
-    }
-    
-    "Page ComboBoxButton:focus"
-    {
-
-		bgcolor=none
-		image="graphics/Threshold/icons/down"
-		// just draw a single line to divide it from the text
-		render_bg 
-		{
-		}
-   	}
-    
-    "Page ComboBoxButton:focus:hover"
-    {
-		bgcolor=none
-		image="graphics/Threshold/icons/down"
-		// just draw a single line to divide it from the text
-		render_bg 
-		{
-		}
     }
     
     Divider
@@ -731,18 +646,11 @@ steam.styles
     Frame
     {
 		bgcolor="DefaultBackground"
-		render
-		{
-		}
     } 
     
     Frame:FrameFocus
     {
 		bgcolor="DefaultBackground"
-		render
-		{
-
-		}
     } 
     
     FrameBRGripPanel
@@ -764,45 +672,29 @@ steam.styles
 	
 	FrameMinimizeButton:hover
 	{  
-		render_bg {}
-		inset="12 11 0 0"
 		bgcolor="TitleBar.Hover"
-		image="graphics/Threshold/window_controls/min"
 	}
 	
 	FrameMinimizeButton:active
 	{  
-		render_bg {}
-		inset="12 11 0 0"
 		bgcolor="TitleBar.Hover"
-		image="graphics/Threshold/window_controls/min"
 	}
 
 	FrameMaximizeButton
 	{
 		render_bg {}
 		inset="12 11 0 0"
-		bgcolor="none"
 		image="graphics/Threshold/window_controls/max"
-		image="graphics/osx_max_down" [$OSX]
 	}
 	
 	FrameMaximizeButton:hover
 	{
-		render_bg {}
-		inset="12 11 0 0"
 		bgcolor="TitleBar.Hover"
-		image="graphics/Threshold/window_controls/max"
-		image="graphics/osx_max_down" [$OSX]
 	}
 	
 	FrameMaximizeButton:active
 	{
-		render_bg {}
-		inset="12 11 0 0"
 		bgcolor="TitleBar.Hover"
-		image="graphics/Threshold/window_controls/max"
-		image="graphics/osx_max_down" [$OSX]
 	}
 
 	// these are for when the maximize button becomes the restore button
@@ -811,25 +703,16 @@ steam.styles
 		render_bg {}
 		inset="12 11 0 0"
 		image="graphics/Threshold/window_controls/restore"
-		image="graphics/osx_win_dis" [$OSX]
 	}
 
 	FrameRestoreButton:hover
 	{
-		render_bg {}
-		inset="12 11 0 0"
 		bgcolor="TitleBar.Hover"
-		image="graphics/Threshold/window_controls/restore"
-		image="graphics/osx_max_hov" [$OSX]
 	}
 
 	FrameRestoreButton:active
 	{
-		render_bg {}
-		inset="12 11 0 0"
 		bgcolor="TitleBar.Hover"
-		image="graphics/Threshold/window_controls/restore"
-		image="graphics/osx_max_down" [$OSX]
 	}
 
 	FrameCloseButton
@@ -837,43 +720,29 @@ steam.styles
 		render_bg {}
 		inset="12 11 0 0"
 		image="graphics/Threshold/window_controls/close"
-		image="graphics/osx_win_dis" [$OSX]
 	}
 
 	FrameCloseButton:hover
 	{
-		render_bg {}
-		inset="12 11 0 0"
 		bgcolor="TitleBar.CloseButton"
-		image="graphics/Threshold/window_controls/close"
-		image="graphics/osx_close_hov" [$OSX]
 	}
 
-	FrameCloseButton:active [$OSX]
+	FrameCloseButton:active
 	{
-		render_bg {}
-		inset="12 11 0 0"
 		bgcolor="TitleBar.CloseButton"
-		image="graphics/Threshold/window_controls/close"
 	}
 
 	FrameCloseButton:disabled
 	{
-		render_bg {}
-		inset="12 11 0 0"
-		bgcolor="none"
 		image="graphics/Threshold/window_controls/close" 
-		image="graphics/osx_win_dis" [$OSX]
 	}
 
     FrameTitle
     {
 		font-family=basefont
 		inset="5 1 0 0"
-		inset="0 4 0 0" [$OSX]
 		padding-left="0"
 		padding-right="64"
-		padding-right="0" [$OSX]
 		font-size=12
 		font-size=14 [$WINDOWS]
 		font-weight=400
@@ -1141,30 +1010,23 @@ steam.styles
 
 	ListPanelCheckBox:focus
     {
-		textcolor=Check.Text
-		bgcolor=none
 		image="graphics/Threshold/icons/check_sm" 
     }
 
     ListPanelCheckBox:selected:focus
     {
-		textcolor=Check.Text
-		render_bg {}
-		bgcolor=none
 		image="graphics/Threshold/icons/check_sm_sel"
     }
     
     ListPanelCheckBox:disabled
     {
 		textcolor=Check.Disabled.Text
-		bgcolor=none
 		image="graphics/Threshold/icons/check_dis"
     }
     
     ListPanelCheckBox:disabled:select
     {
 		textcolor=Check.Disabled.Text
-		bgcolor=none
 		image="graphics/Threshold/icons/check_sel_dis"
     }
     
@@ -1181,28 +1043,17 @@ steam.styles
      
 	"ListPanelColumnHeader ListPanelCheckBox:selected"
     {
-		inset="4 0 0 0"
 		image="graphics/Threshold/icons/check_sm_sel"  
     }
 	
 	"ListPanelColumnheader ListPanelCheckBox:focus"
     {
-		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
-		font-weight=400
-		textcolor=Check.Text
 		image="graphics/Threshold/icons/check_sm"
-		inset="4 0 0 0"  
 	}
 
 	"ListPanelColumnheader ListPanelCheckBox:selected:focus"
     {
-		textcolor=Check.Text
-		render_bg {}
-		bgcolor=none
 		image="graphics/Threshold/icons/check_sm_sel"
-		inset="4 0 0 0"  
     }
     
     ListPanelColumnheader
@@ -1260,7 +1111,7 @@ steam.styles
     
    	"Csteamrootdialog ListPanelSectionCollapser"
 	{
-		inset = "0 1 0 0" //"-2 1 3 1"
+		inset = "0 1 0 0"
 		bgcolor=none
 		render_bg
 		{
@@ -1295,25 +1146,17 @@ steam.styles
     
 	ListPanelColumnSelectButton:hover
 	{
-        inset="-3 3 0 0"
         render
         {
 			0="image( x0 + 5, y0 + 4, x1, y1, graphics/Threshold/icons/plus_hover )"
-        }   
-        render_bg {
-			1="fill( x0 , y0, x1, y1, List.Header)"
-		}
+        }
 	}
 	ListPanelColumnSelectButton:selected
 	{
-        inset="-3 3 0 0"
         render
         {
 			0="image( x0 + 5, y0 + 4, x1, y1, graphics/Threshold/icons/plus )"
-        }   
-        render_bg {
-			1="fill( x0 , y0, x1, y1, List.Header)"
-		}
+        }
 	}
 
 	"CGamesListPanel ListPanelColumnSelectButton"   
@@ -1329,25 +1172,17 @@ steam.styles
 	}
 	"CGamesListPanel ListPanelColumnSelectButton:hover"   
 	{
-        inset="0 0 0 0"
         render
         {
 			0="image( x0+2, y0+2, x1, y1, graphics/Threshold/icons/plus_hover )"
         }   
-        render_bg {
-			1="fill( x0, y0, x1, y1, Root.Header )"
-        }
 	}
 	"CGamesListPanel ListPanelColumnSelectButton:selected"   
 	{
-        inset="0 0 0 0"
         render
         {
 			0="image( x0+2, y0+2, x1, y1, graphics/Threshold/icons/plus )"
         }  
-        render_bg {
-			1="fill( x0, y0, x1, y1, Root.Header )"
-        } 
 	}
    
     ListPanelDragger
@@ -1390,29 +1225,16 @@ steam.styles
     
     ListPanelInterior:scrollbar
     {     
-		bgcolor=none
-		textcolor=List.Text
-		render
-		{				
 
-		}
-		render_bg 
-		{				
-
-		}
     } 
 
 	"CSteamRootDialog ListPanel"
 	{
-		//padding-left=2
-		//padding-right=2
+		
 	}
     
      "Csteamrootdialog ListPanelInterior"
     {     
-		inset="0 0 0 0"
-		bgcolor=none
-
 		render_bg 
 		{
 			0="fill(x0, y0, x1, y1, Root.Back)"
@@ -1421,24 +1243,13 @@ steam.styles
 	
 	"Csteamrootdialog ListPanelInterior:scrollbar"
     {     
-		inset="0 0 0 0"
-		bgcolor=none
 		render
 		{
 		}
-
 	}
 	
 	"Page ListPanelInterior"
 	{
-		inset="0 0 0 0"
-		font-size=13
-		font-size=15 [$WINDOWS]
-		bgcolor=none
-		render
-		{		
-
-		}
 		render_bg 
 		{				
 			// background gradient        
@@ -1448,13 +1259,7 @@ steam.styles
 	
 	"Page ListPanelInterior:scrollbar"
 	{
-		inset="0 0 0 0"
-		bgcolor=none
-		render_bg 
-		{				
-			// background gradient        
-			0="fill( x0, y0, x1, y1, List.Page )"
-		}
+
 	}
       
     ListPanelSectionHeader
@@ -1471,9 +1276,6 @@ steam.styles
 	
 	"Csteamrootdialog ListPanelSectionHeader"
     {     
-		inset="5 0 0 0"
-		textcolor=List.Header.Text
-		font-size=18
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, Root.Header)"
@@ -1635,32 +1437,29 @@ steam.styles
 		font-weight=400
 		inset="0 0 0 0"
 		padding-right=6
-		bgcolor="none"
+		bgcolor=none
 		render_bg {}
     }
    
 	MenuItem:selected
     {
-		textcolor=Menu.Text
 		bgcolor=Menu.Hover
     }
 	
 	MenuItem:hover
     {
-		textcolor=Menu.Text
-		bgcolor="Menu.Hover"
+		bgcolor=Menu.Hover
     }
     
     MenuItem:disabled
     {
 		textcolor=Menu.Disabled.Text
-		shadowtextcolor=none
     }
     
     MenuItem:disabled:hover
     {
 		textcolor=Menu.Disabled.Text
-		shadowtextcolor=none
+		bgcolor=Menu.Hover
     }
    
     MenuSeparator
@@ -1852,7 +1651,6 @@ steam.styles
   
     RadioButton:selected
     {
-		render_bg {}
 		image="graphics/Threshold/icons/rad_sel"  
     }
 	
@@ -1865,28 +1663,24 @@ steam.styles
     RadioButton:focus
     {
 		textcolor=Radio.Text
-		bgcolor=none
 		image="graphics/Threshold/icons/rad"
     }
 	
 	RadioButton:focus:hover
     {
 		textcolor=Radio.Text.Hover
-		bgcolor=none
 		image="graphics/Threshold/icons/rad_hover"
     }
 
     RadioButton:selected:focus
     {
 		textcolor=Radio.Text  
-		bgcolor=none
 		image="graphics/Threshold/icons/rad_sel"
     }
 	
 	RadioButton:selected:focus:hover
     {
 		textcolor=Radio.Text.Hover  
-		bgcolor=none
 		image="graphics/Threshold/icons/rad_sel"
     }
     
@@ -1985,9 +1779,6 @@ steam.styles
     
     ScrollBarButton.up:hover
     {
-		bgcolor=none
-		inset="-1 2 0 0"
-		image="graphics/Threshold/scroll/up"
 		render_bg
 		{
 			// background fill
@@ -1997,8 +1788,6 @@ steam.styles
     
     ScrollBarButton.up:active
     {
-		inset="-1 2 0 0"
-		image="graphics/Threshold/scroll/up"
 		render_bg
 		{
 			// background fill
@@ -2008,8 +1797,6 @@ steam.styles
 
     ScrollBarButton.up:disabled
     {
-		inset="-1 2 0 0"
-		image="graphics/Threshold/scroll/up"
 		render_bg
 		{
 			// background fill
@@ -2031,8 +1818,6 @@ steam.styles
     
     ScrollBarButton.down:hover
 	{
-		inset="-2 0 0 0"
-		image="graphics/Threshold/scroll/down"
 		render_bg
 		{
 			// background fill
@@ -2042,8 +1827,6 @@ steam.styles
     
     ScrollBarButton.down:active
 	{
-		inset="-2 0 0 0"
-		image="graphics/Threshold/scroll/down"
 		render_bg
 		{
 			// background fill
@@ -2054,12 +1837,11 @@ steam.styles
     
     ScrollBarButton.down:disabled
 	{
-		inset="-2 0 0 0"
-		image="graphics/Threshold/scroll/down"
+		image="graphics/Threshold/scroll/down" //TODO
 		render_bg
 		{
 			// background fill
-			0="fill( x0, y0, x1, y1, buttonfaceDisabled )"
+			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
 		}
     }
     
@@ -2077,9 +1859,6 @@ steam.styles
     
     ScrollBarButton.left:hover
     {
-
-		image="graphics/Threshold/scroll/left"
-		inset="1 3 0 0"
 		render_bg 
 		{
 			// center fill
@@ -2101,8 +1880,6 @@ steam.styles
         
     ScrollBarButton.right:hover
     {
-		image="graphics/Threshold/scroll/right"
-		inset="0 2 0 0"
 		render_bg 
 		{
 			// center fill
@@ -2113,7 +1890,6 @@ steam.styles
     ScrollBarHandle  //vertical scrollbar thumb
     {
 		bgcolor=none
-		//image="graphics/icon_scroll_handle"
 		render_bg 
 		{
 			// center fill
@@ -2123,7 +1899,6 @@ steam.styles
        
     "ScrollBarHandle:hover"
     {
-		//image="graphics/icon_scroll_handle_over"
 		render_bg 
 		{
 			// center fill
@@ -2133,7 +1908,6 @@ steam.styles
     
     "ScrollBarHandle:active"
     {
-		//image="graphics/icon_scroll_handle_over"
 		render_bg 
 		{
 			// center fill
@@ -2145,7 +1919,6 @@ steam.styles
  
     "SliderHoriz"  //horizontal scrollbar thumb
     {
-		//image="graphics/icon_scroll_handle_horiz"
 		render 
 		{
 			// center fill
@@ -2155,8 +1928,6 @@ steam.styles
     
     "SliderHoriz:hover"
     {
-	
-		//image="graphics/icon_scroll_handle_over_horiz"
 		render 
       	{
 			// center fill
@@ -2166,8 +1937,6 @@ steam.styles
     
     "SliderHoriz:active"
     {
-	 
-    	//image="graphics/icon_scroll_handle_over_horiz"
       	render {
 			// center fill
         	0="fill( x0, y0, x1, y1, Scroll.Bar.Active )"	
@@ -2176,19 +1945,16 @@ steam.styles
     
     ScrollBarSlider // gutter
     {
-		bgcolor="none"
+		bgcolor=Scroll.Back
 		render{ }
 		render_bg
 		{
-
-			//background fill
-			2="fill(x0, y0, x1, y1, Scroll.Back)"
 		}
     }
     
     ScrollBarSliderHoriz // gutter
     {
-		bgcolor="none"
+		bgcolor=Scroll.Back
 		render{ }
 		render_bg { }
     }
@@ -2196,13 +1962,7 @@ steam.styles
    
     "GamesPage_Details ListPanel ScrollBarSlider" // gutter in games list detail view 
     {
-		bgcolor="none"
-		render{ }
-		render_bg
-		{
-			//background fill
-			0="fill( x0, y0, x1, y1, Scroll.Back)"
-		}
+		bgcolor=Scroll.Back
     }
     
     ScrollBarSlider:disabled 
@@ -2378,12 +2138,7 @@ steam.styles
 
     StatusLabel:hover
     {
-		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
-		font-weight=400
-		textcolor=Label.Text
-		//font-style=uppercase
+
     }    
 
     TextEntry
@@ -2605,7 +2360,6 @@ steam.styles
 	ToggleButton
     {
 		inset="1 0 0 0"
-		inset="1 3 0 0" [$OSX]
 		font-family=basefont
 		font-size=11
 		font-size=13 [$WINDOWS]
@@ -2621,19 +2375,12 @@ steam.styles
   
     ToggleButton:focus
     {     
-        textcolor=Button.Text
-        bgcolor="none"
-	 	render_bg
-		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Back )"
-		}
+
     }
     
     ToggleButton:hover
     {
 		textcolor=Button.Hover.Text
-		bgcolor="none"
 		render_bg
 		{     
 			// background fill
@@ -2648,7 +2395,6 @@ steam.styles
     ToggleButton:selected
     {
 		textcolor=Button.Active.Text
-		bgcolor="none"
 		render_bg
 		{
         	// background fill
@@ -2675,7 +2421,6 @@ steam.styles
     "Page ToggleButton:hover"
     {
 		textcolor=Button.Hover.Text
-		bgcolor="none"
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, Button.Page.Back )"
@@ -2688,18 +2433,11 @@ steam.styles
   
     "Page ToggleButton:focus"
     {
-		textcolor=Button.Hover.Text
-		bgcolor="none"
-		render_bg
-		{
-			0="fill( x0, y0, x1, y1, Button.Page.Back )"
-		}
     }
    
     "Page ToggleButton:selected"
     {
 		textcolor=Button.Hover.Text
-		bgcolor="none"
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, Button.Active)"
@@ -2728,11 +2466,9 @@ steam.styles
     // headline text inside a tooltip
    	tooltip_headline
    	{
-   		textcolor=SubLabel.Text
+   		textcolor=Accent
    		padding-left=4
-   		padding-top=1
-   		padding-bottom=0
-   		font-weight=1000   		
+   		font-weight=1000	
    	}
    	
     TreeNode
@@ -2767,28 +2503,7 @@ steam.styles
     {
 		render_bg
 		{
-			//-1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
-
-			// lines around
-			//1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
-			//2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
-			//3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
-			//4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
-        
-			// single pixel fills in the corners
-			//5="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
-			//6="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
-			//7="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
-			//8="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-			//11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
-			//12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
-			//13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
-			//14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
-			//15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
-			//16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
-			//17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
-			//18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-		}     
+		}
     }
     
     URLLabel
@@ -2842,7 +2557,7 @@ steam.styles
 
     
     // Steam-specific styles
-    CConsoleHistory //TODO: Maybe i'll theme this. Maybe.
+    CConsoleHistory
     {
 		font-family="Lucida Console"
 		font-size=9
@@ -2858,7 +2573,7 @@ steam.styles
 		render_bg 
 		{				
 			// background gradient        
-			1="fill( x0, y0, x1, y1, DefaultBackground )"
+			1="fill( x0, y0, x1, y1, Root.Back )"
 		}
     }
     
@@ -2906,93 +2621,78 @@ steam.styles
 	
     FullscreenButton
     {
-      bgcolor=none
-	  inset="12 0 0 0"
-      render_bg={}
-      image="graphics/Threshold/window_controls/fullscreen"
+		bgcolor=none
+		inset="12 0 0 0"
+		render_bg={}
+		image="graphics/Threshold/window_controls/fullscreen"
     }
     
 
     FullscreenButton:hover
     {
-      bgcolor="TitleBar.Hover"
-	  inset="12 0 0 0"
-      render_bg={}
-      image="graphics/Threshold/window_controls/fullscreen"
+		bgcolor="TitleBar.Hover"
     }
 	
     FullscreenButton:active
     {
-      bgcolor="TitleBar.Hover"
-	  inset="12 0 0 0"
-      render_bg={}
-      image="graphics/Threshold/window_controls/fullscreen"
+		bgcolor="TitleBar.Hover"
     }
 	
     FullscreenButton:disabled
     {
-      bgcolor=none
-	  inset="0 0 0 0"
-      render_bg={}
-      image=none
+		bgcolor=none
+		inset="0 0 0 0"
+		render_bg={}
+		image=none
     }
     
     VRButton
     {
-	  inset="3 0 0 0"
-      bgcolor=none
-      render_bg={}
-      image="graphics/Threshold/vr"
+		inset="3 0 0 0"
+		bgcolor=none
+		render_bg={}
+		image="graphics/Threshold/vr"
     }  
 
     VRButton:hover
     {
-      bgcolor=Menu.Hover
-      render_bg={}
-      image="graphics/Threshold/vr"
+		bgcolor=Menu.Hover
     }
 	
     VRButton:active
     {
-      bgcolor=Menu.Hover
-      render_bg={}
-      image="graphics/Threshold/vr"
+		bgcolor=Menu.Hover
     }
 	
     VRButton:disabled
     {
-      bgcolor=none
-      render_bg={}
-      image="none"
+		bgcolor=none
+		render_bg={}
+		image="none"
     }
     
     VRButtonExit
     {
-      bgcolor=none
-	  textcolor=none
-      render_bg={}
-      image="graphics/Threshold/vr"
+		inset="3 0 0 0"
+		bgcolor=none
+		textcolor=none
+		render_bg={}
+		image="graphics/Threshold/vr"
     }  
 
     VRButtonExit:hover
     {
-      bgcolor=Menu.Hover
-      render_bg={}
-      image="graphics/Threshold/vr"
+		bgcolor=Menu.Hover
     }
 	
     VRButtonExit:active
     {
-      bgcolor=Menu.Hover
-      render_bg={}
-      image="graphics/Threshold/vr"
+		bgcolor=Menu.Hover
     }
 	
     VRButtonExit:disabled
     {
-      bgcolor=none
-      render_bg={}
-      image="graphics/Threshold/vr"
+		bgcolor=none
     }
 	
 	BackButton
@@ -3015,7 +2715,6 @@ steam.styles
 		bgcolor=none
 		render_bg={}
 		image="graphics/Threshold/back"
-
     }
 	
     BackButton:disabled

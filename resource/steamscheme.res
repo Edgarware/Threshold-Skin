@@ -256,7 +256,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"13"
 				"weight"	"0"
 			}
@@ -265,7 +265,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"15"
 				"weight"	"1000"
 			}
@@ -274,7 +274,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"13"
 				"weight"	"800"
 				"underline" "1"
@@ -284,25 +284,25 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"11"
 				"weight"	"800"
 			}
 		}
-		ListSmall
+		"ListSmall"
 		{
-			1
+			"1"
 			{
-				name		Arial
-				tall		12
-				weight		0
+				name		"Segoe UI"
+				tall		"12"
+				weight		"0"
 			}
 		}
 		"DefaultVerySmall"
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"12"
 				"weight"	"800"
 			}
@@ -312,7 +312,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"18"
 				"weight"	"0"
 			}
@@ -321,7 +321,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"14"
 				"weight"	"1000"
 			}
@@ -330,7 +330,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"22"
 				"weight"	"1000"
 				"antialias" "1"
@@ -340,7 +340,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"13"
 				"weight"	"0"
 			}
@@ -349,7 +349,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"16"
 				"weight"	"600"
 				"antialias" "1"
@@ -401,7 +401,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"12"
 				"weight"	"800"
 			}
@@ -410,7 +410,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"13"
 				"weight"	"800"
 			}
@@ -420,7 +420,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"12"
 				"weight"	"0"
 			}
@@ -429,7 +429,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"12"
 				"weight"	"0"
 				"underline"	"1"
@@ -439,7 +439,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Segoe UI"
 				"tall"		"16"
 				"weight"	"1000"
 			}

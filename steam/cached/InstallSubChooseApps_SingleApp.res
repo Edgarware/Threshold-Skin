@@ -1,5 +1,22 @@
 "steam/cached/InstallSubChooseApps_SingleApp.res"
 {
+	styles{
+		
+	}
+	
+	layout{
+		region { name=body margin-top=20 margin-left=20 margin-right=20 width=max height=max }
+		place { control=Label1 region=body width=max}
+		place { control=CreateShortcutCheck,CreateStartMenuShortcutCheck region=body start=Label1 dir=down margin-top=15}
+		
+		place { control=InstallSize,DriveSpace,DownloadTimeLabel region=body start=CreateStartMenuShortcutCheck dir=down margin-top=15 spacing=7}
+		place { control=InstallSizeLabel,DriveSpaceLabel,DownloadTimeInfo region=body start=CreateStartMenuShortcutCheck dir=down margin-top=15 spacing=7 margin-left=200}
+		
+		place { control=InstallFolderLabel start=DownloadTimeLabel region=body dir=down margin-top=15 width=max}
+		place { control=InstallFolderCombo start=InstallFolderLabel region=body dir=down margin-top=7 width=max}
+		
+	}
+
 	"InstallSubChooseApps"
 	{
 		"ControlName"		"CInstallSubChooseApps"

@@ -1,5 +1,31 @@
 "steam/cached/InstallSubChooseApps.res"
 {
+	styles{
+		 "Page CheckButtonList"
+		{
+			inset="20 1 1 1"
+		}
+		
+		"Page CheckButtonList:scrollbar"
+		{
+			inset="20 1 1 1"
+		}
+	}
+	
+	layout{
+		region { name=body margin-top=20 margin-left=20 margin-right=20 width=max height=max }
+		place { control=Label1 region=body width=max}
+		
+		place { control=GameCheckButtonList margin-top=50 width=max height=120}
+		
+		place { control=InstallSize,DriveSpace region=body start=GameCheckButtonList dir=down margin-top=15 spacing=7}
+		place { control=InstallSizeLabel,DriveSpaceLabel region=body start=GameCheckButtonList dir=down margin-top=15 spacing=7 margin-left=200}
+		
+		place { control=InstallFolderLabel start=DriveSpace region=body dir=down margin-top=15 width=max}
+		place { control=InstallFolderCombo start=InstallFolderLabel region=body dir=down margin-top=7 width=max}
+		
+	}
+
 	"InstallSubChooseApps"
 	{
 		"ControlName"		"CInstallSubChooseApps"
