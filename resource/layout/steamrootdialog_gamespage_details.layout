@@ -272,7 +272,8 @@
 		rightcolumntag
 		{
 			inset="0 -5 0 0"
-			font-size=32
+			font-size=26
+			font-size=32 [$WINDOWS]
 			font-style=normal
 			textcolor=Accent
 			padding=10

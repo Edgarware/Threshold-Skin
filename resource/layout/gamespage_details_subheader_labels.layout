@@ -20,7 +20,8 @@
 		headertext
 		{
 			padding-bottom=-1
-			font-size=13
+			font-size=12
+			font-size=13 [$WINDOWS]
 			textcolor=Accent
 			font-weight=700
 		}
@@ -28,7 +29,8 @@
 		headertext-red
 		{
 			padding-bottom=-1
-			font-size=13
+			font-size=12
+			font-size=13 [$WINDOWS]
 			textcolor=Accent
 			font-weight=700
 		}
@@ -36,7 +38,8 @@
 		headertext-green
 		{
 			padding-bottom=-1
-			font-size=13
+			font-size=12
+			font-size=13 [$WINDOWS]
 			textcolor=Accent
 			font-weight=700
 		}
@@ -44,14 +47,16 @@
 		headertext-blue
 		{
 			padding-bottom=-1
-			font-size=13
+			font-size=12
+			font-size=13 [$WINDOWS]
 			textcolor=Accent
 			font-weight=700
 		}
 
 		valuetext
 		{
-			font-size=13
+			font-size=12
+			font-size=13 [$WINDOWS]
 		}
 	}
 

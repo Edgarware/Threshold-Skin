@@ -41,7 +41,8 @@
 		highlight
 		{
 			textcolor=DefaultText
-			font-size=20
+			font-size=16
+			font-size=20 [$WINDOWS]
 		}	
 		
 		checkbox

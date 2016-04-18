@@ -71,7 +71,8 @@
 		{   
 			inset="-3 0 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
@@ -106,7 +107,8 @@
 		{   
 			inset="20 0 0 1"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
@@ -154,7 +156,8 @@
 			
 			inset="20 0 0 1"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
@@ -204,7 +207,8 @@
 		{   
 			inset="23 0 0 1"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
