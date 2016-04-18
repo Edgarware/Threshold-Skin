@@ -21,7 +21,6 @@
 		DetailsBorderPanel
 		{ 
 			font-family=basefont
-			font-size=14
 			font-weight=400
 			render_bg{	
 				0="fill(x0, y0, x0+275, y1, Root.Back)"
@@ -41,14 +40,14 @@
 		EmptyDatabaseText
 		{
 			textcolor=DefaultText
-			font-size="15"
+			selectedtextcolor=DefaultText
 			render_bg{}
 		}
 		
 		CrawlingText
 		{
 			textcolor=DefaultText
-			font-size="15"
+			selectedtextcolor=DefaultText
 			render_bg{}
 		}
 		
@@ -64,7 +63,6 @@
 		// Some overrides for our listpanel
 		"MusicPage_Details_Content ListPanel"
 		{
-			font-size=15
 			padding-left=15
 			bgcolor=Root.Back
 			render_bg{}
@@ -85,23 +83,6 @@
 			bgcolor=Root.Back
 			render_bg{}
 		}
-		
-		"MusicPage_Details_Content ListPanelDragger"
-		{
-		}
-
-		"MusicPage_Details_Content ListPanelColumnHeader" [!$OSX]
-		{
-			font-size=14
-			inset="2 2 0 0"
-
-		}
-		
-		"MusicPage_Details_Content ListPanelColumnHeader" [$OSX]
-		{
-			font-size=13
-			inset="2 2 0 0"
-		}	
 
 		"AlbumOrArtistListStyle ListPanelColumnSelectButton"   
 		{

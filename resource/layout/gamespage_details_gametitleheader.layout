@@ -22,7 +22,8 @@
 		{
 			padding-bottom=5
 			padding-top=5
-			font-size=42
+			font-size=30
+			font-size=42 [$WINDOWS]
 			font-family=basefont
 			font-weight=400 
 			bgcolor=none

@@ -1267,7 +1267,8 @@ steam.styles
 		inset="5 0 0 0"
 		textcolor=List.Header.Text
 		minimum-height=25
-		font-size=18
+		font-size=14
+		font-size=18 [$WINDOWS]
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, List.Header)"
@@ -1286,14 +1287,16 @@ steam.styles
 	{
 		textcolor=TextBox.Text
 		font-family=basefont
-		font-size=15
+		font-size=13
+		font-size=15 [$WINDOWS]
 		bgcolor=none
 		render_bg {} 
 	}
 
 	"ListPanel RichText url" 
 	{
-		font-size=15
+		font-size=13
+		font-size=15 [$WINDOWS]
 		textcolor=TextBox.Text
 		font-style=underline
 	}
