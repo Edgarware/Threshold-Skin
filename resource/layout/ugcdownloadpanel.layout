@@ -40,8 +40,6 @@
 	
 	colors
 	{
-		dark_blue_grad = "12 27 38 255"
-		light_blue_grad = "32 72 102 255"
 	}
 
 	styles
@@ -54,14 +52,14 @@
 		{
 			render_bg
 			{
-				//0="gradient( x0, y0, x1, y1, dark_blue_grad, light_blue_grad )"
 				1="fill( x0, y0, x1, y1+3, Root.Header)"
 			}			
 		}
 
 		links
 		{
-			font-size=14
+			font-size=12
+			font-size=14 [$WINDOWS]
 			font-style=normal
 			font-family=basefont
 			//font-style="uppercase"
@@ -72,14 +70,7 @@
 
 		links:hover
 		{
-			font-size=14
-			font-style=normal
 			textcolor=DefaultText.Hover
-			font-family=basefont
-			//font-style="uppercase"
-			padding-left=0
-			padding-top=0
-			padding-bottom=0
 		}
 
 		rightcolumnlink:hover
@@ -90,7 +81,8 @@
 		label2
 		{
 			bgcolor			none
-			font-size		"14"
+			font-size=12
+			font-size=14 [$WINDOWS]
 			textcolor		Root.SubLabel.Text
 			padding-top		"0"
 			//font-style="uppercase"
@@ -100,7 +92,8 @@
 		{
 			font-family	basefont
 			bgcolor="none"
-			font-size	"18"
+			font-size=14
+			font-size=18 [$WINDOWS]
 			padding-top	"0"
 			font-weight	"700"
 		}
@@ -109,7 +102,8 @@
 		{
 			font-family	basefont
 			bgcolor="none"
-			font-size	"18"
+			font-size=14
+			font-size=18 [$WINDOWS]
 			padding-top	"0"
 			font-weight	"400"
 		}
@@ -123,7 +117,8 @@
 		graphdownloadrate
 		{
 			font-family		"Arial"
-			font-size="14"
+			font-size=12
+			font-size=14 [$WINDOWS]
 			//font-style="uppercase"
 			//padding-left	"10"
 			//padding-right	"20"
@@ -132,93 +127,50 @@
 		SmPauseButton
 		{
 
-			inset="30 0 0 0"
+			inset="2 0 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
-			//font-style=uppercase
 			bgcolor=none
+			image=graphics/Threshold/icons/pause
 
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/pause )"
-			}
-		}
-
-		SmPauseButton:Hover
-		{
-			inset="30 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText.Hover
-			//font-style=uppercase
-			bgcolor=none
-			render
-			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/pause )"
 			}
 		}
 
 		SmResumeButton
 		{
 
-			inset="30 0 0 0"
+			inset="2 0 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
-			//font-style=uppercase
 			bgcolor=none
+			image=graphics/Threshold/icons/install
+			
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/install  )"
-			}
-		}
-
-		SmResumeButton:Hover
-		{
-			inset="30 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText.Hover
-			//font-style=uppercase
-			bgcolor=none
-			render
-			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/install)"
 			}
 		}
 
 		SmRemoveButton
 		{
-			inset="30 0 0 0"
+			inset="2 0 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
-			//font-style=uppercase
 			bgcolor=none
-			render
-			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/close )"
-			}
-		}
+			image=graphics/Threshold/icons/close
 
-		SmRemoveButton:Hover
-		{
-			inset="30 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText.Hover
-			//font-style=uppercase
-			bgcolor=none
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/close )"
 			}
 		}
 
@@ -239,10 +191,10 @@
 
 			inset="23 0 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
-			//font-style="uppercase"
 			bgcolor=none
 
 			render
@@ -258,18 +210,6 @@
 	
 		ViewModsButton:Hover
 		{   
-			inset="23 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			//font-style=uppercase
-			bgcolor=none   
-
-			render
-			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/cusom/icons/workshop)"
-			}
 			render_bg
 			{
 				// background fill
@@ -279,18 +219,7 @@
 		
 		ViewModsButton:Disabled
 		{   
-			inset="23 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
 			textcolor=DefaultText.Hover
-			//font-style=uppercase
-			bgcolor=none   
-
-			render
-			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/workshop )"
-			}
 			render_bg
 			{
 				// background fill
@@ -310,11 +239,11 @@
 
 		// Left Column
 		place { control="gameimage" 		 margin-left=8 margin-top=15 width=184 height=69 }
-		place { control="workshopminibanner" margin-left=8 margin-top=82 width=184 height=30 }
+		place { control="workshopminibanner" margin-left=8 margin-top=15 width=184 height=69 }
 		
 		//Left-mid
 		place { control="namelabel" 		  region=column2 margin-top=16 margin-left=0 }
-		place { control="viewmodsbutton" 	  region=column2 start=namelabel dir=down margin-top=10 }
+		place { control="viewmodsbutton" 	  region=column2 start=namelabel dir=down margin-top=10 height=23}
 		place { control="downloadprogressbar" region=column2 start=viewmodsbutton margin-top=5 dir=down spacing=10 height=3 width=150 }
 		place { control="graphdownloadrate"   region=column2 start=downloadprogressbar dir=down margin-top=5 margin-left=0  }
 		
@@ -326,7 +255,7 @@
 		
 		// right 
 		place { control="updatetypelabel" 	region="column4" spacing=10 margin-top=22 align=right margin-right=16 }
-		place { control="pauseresumebutton" region="column4" width=28 dir=right spacing=10 margin-top=50 align=right margin-right=16}
+		place { control="pauseresumebutton" region="column4" width=26 dir=right spacing=10 margin-top=50 align=right margin-right=16}
 
 	}
 }

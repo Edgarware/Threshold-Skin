@@ -42,8 +42,6 @@
 	
 	colors
 	{
-		dark_blue_grad = "12 27 38 255"
-		light_blue_grad = "32 72 102 255"
 	}
 	
 	styles
@@ -62,15 +60,14 @@
 		{
 			render_bg
 			{
-				//0="gradient( x0, y0, x1, y1, dark_blue_grad, light_blue_grad )"
-				//2="image( x0, y0 - 55, x1, y1+8, graphics/clienttexture2b)"
 				1="fill( x0, y0, x1, y1+3, Root.Header)"
 			}			
 		}
 
 		links
 		{
-			font-size=14
+			font-size=12
+			font-size=14 [$WINDOWS]
 			font-style=normal
 			font-family=basefont
 			//font-style="uppercase"
@@ -81,14 +78,7 @@
 		
 		links:hover
 		{
-			font-size=14
-			font-style=normal
-			font-family=basefont
 			textcolor=DefaultText.Hover
-			//font-style="uppercase"
-			padding-left=0
-			padding-top=0
-			padding-bottom=0
 		}
 
 		links:disabled
@@ -98,7 +88,8 @@
 		
 		settingslink
 		{
-			font-size=14
+			font-size=12
+			font-size=14 [$WINDOWS]
 			font-style=normal
 			textcolor=DefaultText
 			font-family=basefont
@@ -109,13 +100,7 @@
 		
 		settingslink:hover
 		{
-			font-size=14
-			font-style=normal
 			textcolor=DefaultText.Hover
-			font-family=basefont
-			padding-left=0
-			padding-top=0
-			padding-bottom=0
 		}
 
 		settingslink:disabled
@@ -132,7 +117,8 @@
 		label2
 		{
 			bgcolor			none
-			font-size		"14"
+			font-size=12
+			font-size=14 [$WINDOWS]
 			padding-top		"0"
 			//font-style="uppercase"
 			textcolor=Root.SubLabel.Text
@@ -142,7 +128,8 @@
 		label3
 		{
 			bgcolor			none
-			font-size		"14"
+			font-size=12
+			font-size=14 [$WINDOWS]
 			textcolor		DefaultText
 			padding-top		"0"
 			font-style="uppercase"
@@ -152,7 +139,8 @@
 		{
 			font-family	basefont
 			bgcolor="none"
-			font-size	"18"
+			font-size=14
+			font-size=18 [$WINDOWS]
 			padding-top	"0"
 			font-weight	"700"
 		}	
@@ -161,7 +149,8 @@
 		{
 			font-family	basefont
 			bgcolor="none"
-			font-size	"18"
+			font-size=14
+			font-size=18 [$WINDOWS]
 			padding-top	"0"
 			font-weight	"400"
 		}								
@@ -171,9 +160,6 @@
 			//bgcolor=		"clientbg"
 		}
 
-				
-				
-				
 		gameImagePanel
 		{   
 			inset="0 0 0 0"
@@ -192,19 +178,20 @@
 			bgcolor=none
 			render_bg	
 			{
-				//0="image( x0 - 8, y0 - 3, x1 + 8, y1 + 0, graphics/downloads_bg )"
+			
 			}		
 			padding "4"
-		}					
+		}
+		
 		DetailsLaunchButton
 		{   
 
 			inset="20 -2 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
-			font-style="uppercase"
 			bgcolor=none
 
 			render
@@ -219,58 +206,30 @@
 		}
 	
 		DetailsLaunchButton:Hover
-		{   
-			inset="20 -2 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText
-			font-style=uppercase
-			bgcolor=none   
-
-			render
-			{
-				0="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/play )"
-			}
+		{    
 			render_bg
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Accent2 )"
-
-
 			}	
 		}
 		
 		DetailsLaunchButton:Disabled
 		{   
-			inset="20 -2 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText.Hover
-			font-style=uppercase
-			bgcolor=none   
-
-			render
-			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/Threshold/icons/play )"
-			}
 			render_bg
 			{
 				// background fill
 				0="fill( x0, y0, x1, y1, Button.Disabled )"
-
 			}
 		}
 
-		
-				
 		topOfQueueButton
 		{   
 		
 			inset="1 0 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
@@ -283,11 +242,11 @@
 		}			
 		
 		SmRemoveButton
-		{   
-		
+		{   	
 			inset="2 0 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
@@ -298,24 +257,6 @@
 			{
 			}
 		}
-		
-		SmRemoveButton:Hover
-		{   
-			inset="2 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor=DefaultText.Hover
-			//font-style=uppercase
-			bgcolor=none   
-			image=graphics/Threshold/icons/close
-			render
-			{
-			}
-
-		}
-		
-		
 		
 		SlimProgressBar
 		{
@@ -336,19 +277,20 @@
 		  
 		region { name="column1" x=0 width=200 }
 		region { name="column2" x=210 width=max }
-		region { name="column3" x=430 width=max }
+		region { name="column3" x=430 width=max margin-right=100}
 		region { name="column4" x=0 width=max overflow=allow-horizontal } //Wierd x setting to account for smallest window size
 		
 		// left column
 		place { control="spacer" }
-		place { control="gameimage" 	 start=spacer dir=down margin-left=8 width=192 height=85 }
-		place { control="workshopbanner" margin-left=8 margin-top=82 width=192 height=26 } 
+		place { control="gameimage" 	 margin-left=8 margin-top=24 width=184 height=69 }
+		place { control="workshopbanner" margin-left=8 margin-top=24 width=184 height=69 } 
+		place { control="downloadprogressbar" start=gameimage dir=down width=184 height=5  }
 		
 		// left-mid column
 		place { control="namelabel" 		  region=column2 margin-top=16 margin-left=0 }
-		place { control="launchbutton" 		  region=column2 start=namelabel dir=down margin-top=10 }
-		place { control="downloadprogressbar" region=column2 start=launchbutton margin-top=5 dir=down spacing=10 height=3 width=150 }
-		place { control="settingslink" 		  region=column2 start=downloadprogressbar dir=down margin-top=5 margin-left=0 }
+		place { control="launchbutton" 		  region=column2 margin-top=43 height=23}
+		place { control="newslink" 			  region=column2 margin-top=70 }
+		place { control="settingslink" 		  region=column2 margin-top=86 }
 
 		// right-mid column
 		place { control="downloadtotallabel,downloadtotalfield" region="column3" x=0 align=top margin-top=43 spacing=6 }
@@ -358,11 +300,8 @@
 		place { control="timeremaininglabel,timeremainingfield" region="column3" x=0 align=top margin-top=83 spacing=6 }
 				
 		// right column
-		place { control="updatetypelabel" region="column4" spacing=10 margin-top=22 align=right margin-right=16 }
-		place { control="topofqueuebutton,removefromqueuebutton" region="column4" height=22 width=26 dir=right spacing=10 margin-top=50 align=right margin-right=16 }
-		place { control="newslink" region="column4" spacing=10 margin-top=80 align=right	margin-right=16 }
-
-		// put the buttons along the bottom
+		place { control="updatetypelabel" region="column4" spacing=10 margin-top=40 align=right margin-right=16 }
+		place { control="topofqueuebutton,removefromqueuebutton" region="column4" height=22 width=26 dir=right spacing=10 margin-top=63 align=right margin-right=16 }
 		
 	}
 }

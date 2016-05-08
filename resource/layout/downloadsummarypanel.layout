@@ -133,19 +133,25 @@
 	   
 		throttleLabel
 		{
-			bgcolor	   none
-			font-size   "15"
+			font-size=14
+			font-size=17 [$WINDOWS]
 			textcolor   Root.Label.Text
 			padding-top	"0"
 			//font-style="uppercase"
-	    } 
+	    }
+		
 		throttleValue
 		{
-			bgcolor	   none
-			font-size   "15"
-			textcolor   "text"
+			font-size=14
+			font-size=17 [$WINDOWS]
+			textcolor   Root.Label.Text
 			padding-top	"0"
-			//font-style="uppercase"
+			font-style="normal"
+		}
+		
+		throttleValue:Hover
+		{
+			textcolor=Root.SubLabel.Text
 		}
 		
 		container
@@ -153,45 +159,43 @@
 			bgcolor="none"
 	   	}
 	
-		bigtext
+		Label
+		//bigtext Seems to not work, overload with Label
 		{
 			font-family=basefont
-			font-size=17
-			//font-style="uppercase"
+			font-size=14
+			font-size=17 [$WINDOWS]
 			textcolor=Root.Label.Text
 		}
 		
 		bigtextlabel 
 		{
 			font-family=basefont
-			font-size=17
-			//font-style="uppercase"
+			font-size=14
+			font-size=17 [$WINDOWS]
 			textcolor=Root.SubLabel.Text
 		}
 		
 		bigtextHeader 
 		{
 			font-family=basefont
-			font-size=17
-			//font-style="uppercase"
-			textcolor="label2"
+			font-size=14
+			font-size=17 [$WINDOWS]
 		}
-	
 	
 		bigTextNumbers 
 		{
 			font-family=basefont
-			font-size="17"
-			textcolor="text"
-			//font-style="uppercase"
+			font-size=14
+			font-size=17 [$WINDOWS]
 		}
 		
 		PauseButton
-		{   
-	
+		{
 			inset="20 -1 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			//font-style=uppercase
 			bgcolor=none
@@ -200,31 +204,14 @@
 			{
 				1="image( x0 + 6, y0 + 5, x1, y1, graphics/Threshold/icons/pause )"
 			}
-			
-		}
-	   
-		PauseButton:Hover
-		{	  
-			inset="20 -1 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			//font-style=uppercase
-			bgcolor=none   
-		   
-			render
-			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/Threshold/icons/pause )"
-			}
-			
 		}
 			
 		ResumeButton
-		{	  
-
+		{
 			inset="20 -1 0 0"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			font-weight=400
 			//font-style=uppercase
 			bgcolor=none
@@ -233,25 +220,8 @@
 			{
 				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/install )"
 			}
-			
 		}
-	   
-		ResumeButton:Hover
-		{	  
-			inset="20 -1 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			//font-style=uppercase
-			bgcolor=none   
-		   
-			render
-			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/install	)"
-			}
-			   
-		}
-		  
+
 		NetGraphPanel
 		{
 			bgcolor   "none"	
@@ -308,13 +278,13 @@
 		
 		//set aside some room for the	header section
 		region {name=hidden width=0 height=0}
-		region {name=head	dir=down x=15 height=134 width=max	margin-right=0	}
+		region {name=head dir=down x=15 height=max width=max margin-bottom=170 margin-right=0	}
 		region  {name=graph align=bottom width=1262 height=170 }	
 		
 		region { name=legend align=bottom margin-left=15 height=50 width=90}
 		
-		region { name=left_column x=0	y=50	 width=max  region=head }
-		region { name=middle_column x=0 y=160 width=max height=124}
+		region { name=left_column x=0 y=50 width=max region=head }
+		region { name=middle_column x=0 y=160 width=max region=head}
 
 		// graph
 		place { control="net_graphpanel" region=graph y=0 width="max" height="max" }				   
@@ -331,13 +301,13 @@
 		place { control="header"	region=head dir=down x=0	y=10	}
 		
 		// top right
-		place { control="pauseresumeallbutton" region=head align=right margin-right=10 margin-top=8 }
+		place { control="pauseresumeallbutton" region=head align=right margin-right=10 margin-top=8 height=23}
 		
 		// three rows of network	usage underneath the header
-		place { region=left_column  control="download_rate_value,download_rate" spacing=4 }
-		place { region=left_column  control="peak_download_rate_value, peak_download_rate" spacing=4 y=22 align=top }
-		place { region=left_column  control="total_downloaded_value, total_downloaded" spacing= 4	y=44	align=top	}
-		place { region=left_column  control="disk_status_value, disk_status_label" spacing=4 y=66 align=top	}
+		place { region=left_column  control="download_rate_value,download_rate" spacing=4 dir=right}
+		place { region=left_column  control="peak_download_rate_value, peak_download_rate" spacing=4 y=22 dir=right}
+		place { region=left_column  control="total_downloaded_value, total_downloaded" spacing=4 y=44 dir=right}
+		place { region=left_column  control="disk_status_value, disk_status_label" spacing=4 y=66 dir=right}
 		
 		// throttling info
 		place { region=middle_column controls="blackout_label, blackout_value" spacing=4 }
