@@ -100,11 +100,11 @@
 			padding-top=5
 			padding-right=10
 			padding-bottom=5
-			font-size=28
+			font-size=24
 			font-size=30 [$WINDOWS]
 			textcolor=Text
 			font-weight=400
-			bgcolor=DarkDialogBGTransparent
+			//bgcolor=DarkDialogBGTransparent
 			minimum-width=200
 		}
 		

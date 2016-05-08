@@ -26,7 +26,8 @@
 	{
 		communityfile_name
 		{
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 		}
 		
 		communityfile_image_border

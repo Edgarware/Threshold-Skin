@@ -987,7 +987,8 @@ steam.styles
     "GameColumn_BigText"
 	{
 		font-family=basefont
-		font-size=17
+		font-size=14
+		font-size=17 [$WINDOWS]
 		font-weight=700
 		textcolor=DefaultText
     }
@@ -1336,7 +1337,8 @@ steam.styles
 		selectedtextcolor=DefaultText
 		bgcolor="none"
 		font-family=basefont
-		font-size=21
+		font-size=16
+		font-size=21 [$WINDOWS]
 		font-weight=700
 		//font-style="uppercase"
     }
@@ -2133,16 +2135,12 @@ steam.styles
     StatusLabelDim
     {
 		font-family=basefont
-		font-size=12
+		font-size=10
+		font-size=12 [$WINDOWS]
 		font-weight=400
 		textcolor=SubLabel.Text
 		font-style=normal   
     }
-
-    StatusLabel:hover
-    {
-
-    }    
 
     TextEntry
     {
@@ -2268,7 +2266,8 @@ steam.styles
     TextEntryLarge //Used for password on login screen
     {
 		font-family=basefont
-		font-size=18
+		font-size=14
+		font-size=18 [$WINDOWS]
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
@@ -2493,7 +2492,8 @@ steam.styles
     TreeNodeText
     {
 		font-family=basefont
-		font-size=13
+		font-size=11
+		font-size=13 [$WINDOWS]
 		textcolor=DefaultText
 		selectedtextcolor=DefaultText
 		selectedbgcolor="TextSelectedBG"
@@ -2609,7 +2609,8 @@ steam.styles
     {
 		inset="0 0 0 0"
 		font-family=basefont
-		font-size=14
+		font-size=12
+		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor="Text"
 		selectedtextcolor="TextSelected"
@@ -2907,7 +2908,8 @@ steam.styles
       
 	gamedetails-headerlabel
 	{
-		font-size="20"
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-style="normal"
 		font-family=basefont
 		font-weight=700
@@ -2917,7 +2919,8 @@ steam.styles
 
 	gamedetails-headerlabel-red
 	{
-		font-size="20"
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-style="normal"
 		font-family=basefont
 		font-weight=700
@@ -2927,7 +2930,8 @@ steam.styles
  	
 	gamedetails-headerlabel-green
 	{
-		font-size="20"
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-style="normal"
 		textcolor="Accent"
 		font-family=basefont
@@ -2937,7 +2941,8 @@ steam.styles
 
 	gamedetails-headerlabel-blue
 	{
-		font-size="20"
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-style="normal"
 		textcolor="Accent"
 		font-family=basefont
@@ -2970,41 +2975,46 @@ steam.styles
 	
 	friends_chat_text //TODO: Chat text colors
 	{
-		textcolor="text"
-		selectedtextcolor="TextentrySelected"	
+		textcolor="DefaultText"
+		selectedtextcolor="DefaultText"	
 		SelectedBgColor=DefaultText.Back
-		font-size=16
+		font-size=14
+		font-size=16 [$WINDOWS]
 	}
 	
 	friends_chat_text_self
 	{
 		textcolor="ChatOwnTextColor"
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="DefaultText"	
 		selectedbgcolor=DefaultText.Back
-		font-size=16
+		font-size=14
+		font-size=16 [$WINDOWS]
 	}
 
 	friends_chat_history
 	{
 		textcolor="ChatDialog.HistoryColor"
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="DefaultText"	
 		selectedbgcolor=DefaultText.Back
-		font-size=16
+		font-size=14
+		font-size=16 [$WINDOWS]
 	}
 	
 	friends_chat_event
 	{
-		textcolor="Text"
-		font-size=16
-		selectedtextcolor="TextentrySelected"
+		textcolor="DefaultText"
+		font-size=14
+		font-size=16 [$WINDOWS]
+		selectedtextcolor="DefaultText"
 		selectedbgcolor=DefaultText.Back
 	}
 
 	friends_chat_bright_event
 	{
-		textcolor="text"
-		selectedtextcolor="TextentrySelected"
-		font-size=16
+		textcolor="DefaultText"
+		selectedtextcolor="DefaultText"
+		font-size=14
+		font-size=16 [$WINDOWS]
 		font-weight=1000
 	}
 
@@ -3012,62 +3022,79 @@ steam.styles
 	{
 		textcolor=URL.Text
 		font-style=underline
-		font-size=16
+		font-size=14
+		font-size=16 [$WINDOWS]
 		selectedtextcolor=URL.Hover.Text
 		selectedbgcolor=DefaultText.Back
+	}
+	
+	friends_chat_url:hover
+	{
+		textcolor=URL.Hover.Text
 	}
 	
 	friends_chat_name_ingame
 	{
 		textcolor="Friends.InGameColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
-		font-size=16
+		selectedtextcolor="DefaultText"	
+		selectedbgcolor="DefaultText.Back"
+		font-size=14
+		font-size=16 [$WINDOWS]
 	}
 
 	friends_chat_name_golden
 	{
 		textcolor="Friends.GoldenColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
-		font-size=16
+		selectedtextcolor="DefaultText"	
+		selectedbgcolor="DefaultText.Back"
+		font-size=14
+		font-size=16 [$WINDOWS]
 	}
 
 	
 	friends_chat_self
 	{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
-		font-size=16
+		selectedtextcolor="DefaultText"	
+		selectedbgcolor="DefaultText.Back"
+		font-size=14
+		font-size=16 [$WINDOWS]
 	}
 	
 	friends_chat_name
 	{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
-		font-size=16
+		selectedtextcolor="DefaultText"	
+		selectedbgcolor="DefaultText.Back"
+		font-size=14
+		font-size=16 [$WINDOWS]
 	}
 	
 	friends_chat_accountid
 	{
-		selectedtextcolor="TextentrySelected"	
-		selectedbgcolor="focus"
-		textcolor="text"
-		font-size=16
+		selectedtextcolor="DefaultText"	
+		selectedbgcolor="DefaultText.Back"
+		textcolor="DefaultText"
+		font-size=14
+		font-size=16 [$WINDOWS]
 	}
 	
 	friends_chat_securitylink
 	{
-		textcolor="text"
+		textcolor="DefaultText"
 		bgcolor="none"
 		font-family=basefont
-		font-size=16
+		font-size=14
+		font-size=16 [$WINDOWS]
 		font-weight=400
 		font-style=underline
-		selectedtextcolor="TextSelected"	
-		selectedbgcolor="Focus"
+		selectedtextcolor="DefaultText"	
+		selectedbgcolor="DefaultText.Back"
+	}
+	
+	friends_chat_securitylink:Hover
+	{
+		textcolor="DefaultText.Hover"
 	}
 	
 	CChatRoomDlg //TODO: Here lies (some) chat window things. May god have mercy on your soul

@@ -20,75 +20,76 @@
 	{
 		BackButtonSm
 		{
-		bgcolor=none
-		inset="5 0 0 0"
-		render_bg={}
-		image="graphics/Threshold/back"
+			bgcolor=none
+			inset="5 0 0 0"
+			render_bg={}
+			image="graphics/Threshold/back"
 		}
 		BackButtonSm:hover
 		{
-		bgcolor=Menu.Button.Hover
-		image="graphics/Threshold/back"
-		render_bg={
-			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
-		}
+			bgcolor=Menu.Button.Hover
+			image="graphics/Threshold/back"
+			render_bg={
+				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+			}
 		}
 		BackButtonSm:active
 		{
-		bgcolor=Accent
-		image="graphics/Threshold/back"
-		render_bg={
-			0="fill(x0,y0,x1,y1,Accent)"
-		}
+			bgcolor=Accent
+			image="graphics/Threshold/back"
+			render_bg={
+				0="fill(x0,y0,x1,y1,Accent)"
+			}
 		}
 		BackButtonSm:disabled
 		{
-		bgcolor=none
-		render_bg={}
-		image="graphics/Threshold/back_dis"
+			bgcolor=none
+			render_bg={}
+			image="graphics/Threshold/back_dis"
 		}
 		ForwardButtonSm
 		{
-		bgcolor=none
-		inset="5 0 0 0"
-		render_bg={}
-		image="graphics/Threshold/forward"
+			bgcolor=none
+			inset="5 0 0 0"
+			render_bg={}
+			image="graphics/Threshold/forward"
 		}
 		
 		ForwardButtonSm:hover
 		{
-		bgcolor=Menu.Button.Hover
-		image="graphics/Threshold/forward"
-		render_bg={
-			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
-		}
+			bgcolor=Menu.Button.Hover
+			image="graphics/Threshold/forward"
+			render_bg={
+				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+			}
 		}
 		ForwardButtonSm:active
 		{
-		bgcolor=Accent
-		image="graphics/Threshold/forward"
-		render_bg={
-			0="fill(x0,y0,x1,y1,Menu.Button.Accent)"
-		}
+			bgcolor=Accent
+			image="graphics/Threshold/forward"
+			render_bg={
+				0="fill(x0,y0,x1,y1,Menu.Button.Accent)"
+			}
 		}
 		ForwardButtonSm:disabled
 		{
-		bgcolor=none
-		render_bg={}
-		image="graphics/Threshold/forward_dis"
+			bgcolor=none
+			render_bg={}
+			image="graphics/Threshold/forward_dis"
 		}
 		
 			
 		LabelEVCert
 		{
-		font-family=basefont
-		font-size=14
-		textcolor="DefaultBackground"
-		font-weight=400
-		bgcolor="html.secureurl"
-		inset-left=4
-		inset-right=4
-		inset-top=-1		
+			font-family=basefont
+			font-size=12
+			font-size=14 [$WINDOWS]	
+			textcolor="DefaultBackground"
+			font-weight=400
+			bgcolor="html.secureurl"
+			inset-left=4
+			inset-right=4
+			inset-top=-1		
 		}
 		
 		URLStatusImage
@@ -99,7 +100,8 @@
 
 		TextEntryURL
 		{
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]	
 			inset="5 0 0 0"
 			render_bg { }
 			render { }			

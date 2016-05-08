@@ -29,14 +29,16 @@
 		infolabel
 		{
 
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 			textcolor=DefaultText
 		}
 
 		screenshotslabelmore
 		{
 			inset="-3 0 0 0"
-			font-size=18
+			font-size=14
+			font-size=18 [$WINDOWS]
 			textcolor=Button.Text
 			font-family=basefont
 			render_bg
@@ -49,7 +51,8 @@
 		screenshotslabelmore:hover
 		{
 			inset="-3 0 0 0"
-			font-size=18
+			font-size=14
+			font-size=18 [$WINDOWS]
 			textcolor=Button.Hover.Text
 			font-family=basefont
 			render_bg

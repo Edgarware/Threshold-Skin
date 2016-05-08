@@ -42,8 +42,9 @@
 
 		everythinglabel
 		{
-			textcolor="Text"
-			font-size=15
+			textcolor="DefaultText"
+			font-size=13
+			font-size=15 [$WINDOWS]
 		}	
 
 	}

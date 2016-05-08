@@ -27,7 +27,8 @@
 		{
 			font-family=basefont
 			bgcolor="none"
-			font-size="18"
+			font-size=14
+			font-size=18 [$WINDOWS]
 			textcolor=Accent
 			padding-top="0"
 			font-weight="500"
@@ -35,7 +36,8 @@
 
 		PermissionHeader
 		{
-			font-size="16"
+			font-size=14
+			font-size=16 [$WINDOWS]
 			textcolor=DefaultText
 		}
 
@@ -47,12 +49,14 @@
 		ViewerRequest
 		{
 			textcolor=DefaultText
-			font-size="16"
+			font-size=14
+			font-size=16 [$WINDOWS]
 		}
 
 		Label
 		{
-			font-size="14"
+			font-size=12
+			font-size=14 [$WINDOWS]
 		}
 	}
 

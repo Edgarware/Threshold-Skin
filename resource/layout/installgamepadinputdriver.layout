@@ -30,13 +30,15 @@
 		ConfirmTextHeader
 		{
 			textcolor="110 192 236 255"
-			font-size=30
+			font-size=24
+			font-size=30 [$WINDOWS]	
 		}	
 
 		ConfirmText
 		{
 			textcolor="110 192 236 255"
-			font-size=24
+			font-size=16
+			font-size=24 [$WINDOWS]	
 		}	
 	}
 	

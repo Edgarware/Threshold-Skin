@@ -27,7 +27,8 @@
 	{
 		ViewersTextStyle
 		{
-			font-size="20"
+			font-size=15
+			font-size=20 [$WINDOWS]
 		}		
 		
 		LiveBannerStyleIngame

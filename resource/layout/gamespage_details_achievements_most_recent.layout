@@ -38,18 +38,21 @@
 
 		mostrecent_label
 		{
-			font-size=17
+			font-size=14
+			font-size=17 [$WINDOWS]
 			font-weight=400
 		}
 		
 		mostrecent_name
 		{
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]
 		}
 
 		mostrecent_unlockedsofar
 		{
-			font-size=15
+			font-size=13
+			font-size=15 [$WINDOWS]
 			textcolor=Root.SubLabel.Text
 		}
 

@@ -22,13 +22,15 @@
 	{
 		title_label
 		{
-			font-size="17"
+			font-size=14
+			font-size=17 [$WINDOWS]
 			font-weight=800
 		}
 
 		date_and_author
 		{
-			font-size=14
+			font-size=12
+			font-size=14 [$WINDOWS]
 			textcolor=Root.SubLabel.Text
 		}
 
@@ -37,13 +39,15 @@
 			textcolor=Root.Label.Text
 			selectedtextcolor=Root.Label.Text
 			render_bg {}
-			font-size=15
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-family=basefont
 		}
 		
 		"newsitem_body url"
 		{
-			font-size=15
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-style="underline"
 			textcolor=URL.Text
 			selectedtextcolor=URL.Text	
@@ -51,7 +55,8 @@
 		
 		"newsitem_body url:hover"
 		{
-			font-size=15
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-style="underline"
 			textcolor=URL.Hover.Text
 			selectedtextcolor=URL.Hover.Text	
@@ -71,7 +76,8 @@
 		
 		more_link
 		{
-			font-size=15
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-style="underline"
 			font-weight=400
 			font-family=basefont

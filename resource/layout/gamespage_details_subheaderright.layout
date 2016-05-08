@@ -27,7 +27,8 @@
 		{   
 			inset="-3 0 0 0"
 			font-family=basefont
-			font-size=15
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-weight=400
 			textcolor="Text"
 			bgcolor=none

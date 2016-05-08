@@ -53,7 +53,7 @@
 			}
 		}		
 		
-		ClientTitle [!$OSX]
+		ClientTitle
 		{
 			font-family=basefont
 			font-size=14
@@ -63,17 +63,7 @@
       		inset="12 6 0 0"
 		}
 		
-		ClientTitle [$OSX]
-		{
-			font-family=basefont
-			font-size=15
-      		font-weight=400
-      		textcolor="textdisabled"
-      		bgcolor="none"
-      		inset="0 6 0 0"
-		}
-		
-		ClientTitle:FrameFocus [!$OSX]
+		ClientTitle:FrameFocus
 		{
 			font-family=basefont
    			font-size=14
@@ -81,17 +71,6 @@
    			textcolor="label"
    			bgcolor="none"
    			inset="12 6 0 0"
-		}
-			
-			
-		ClientTitle:FrameFocus [$OSX]
-		{
-			font-family=basefont
-   			font-size=15
-   			font-weight=400
-   			textcolor="texthover"
-   			bgcolor="none"
-   			inset="0 6 0 0"
 		}
 			
 		LibrarySearch

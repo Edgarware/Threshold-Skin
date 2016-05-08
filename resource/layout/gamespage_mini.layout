@@ -111,7 +111,8 @@
 		{
 			padding-left=0
 			font-family=basefont
-			font-size=20
+			font-size=15
+			font-size=20 [$WINDOWS]	
 			font-weight=400	
 			textcolor=Search.Active.Text
 			shadowtextcolor=DefaultCursor
@@ -152,7 +153,8 @@
 		NavLabel2
 		{
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$WINDOWS]	
 			font-weight=400
 			textcolor=Root.Label.Text
 			padding-right=5
