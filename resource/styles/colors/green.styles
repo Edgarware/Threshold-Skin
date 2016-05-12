@@ -16,5 +16,7 @@
 		TitleBar.Accent.Hover="34 107 62 255" //Hover state for Back
 		
 		Notification.Back="31 31 31 255"
+		Frame.Outline=Accent
+		Frame.Outline.Focus="125 125 125 255"
 	}
 }

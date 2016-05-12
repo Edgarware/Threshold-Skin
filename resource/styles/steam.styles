@@ -646,11 +646,22 @@ steam.styles
     Frame
     {
 		bgcolor="DefaultBackground"
+		render{
+			0="fill(x0, y0, x1, y0+1, Frame.Outline.Focus)"
+			1="fill(x0, y0, x0+1, y1, Frame.Outline.Focus)"
+			2="fill(x1-1, y0, x1, y1, Frame.Outline.Focus)"
+			3="fill(x0, y1-1, x1, y1, Frame.Outline.Focus)"
+		}
     } 
     
     Frame:FrameFocus
     {
-		bgcolor="DefaultBackground"
+		render{
+			0="fill(x0, y0, x1, y0+1, Frame.Outline)"
+			1="fill(x0, y0, x0+1, y1, Frame.Outline)"
+			2="fill(x1-1, y0, x1, y1, Frame.Outline)"
+			3="fill(x0, y1-1, x1, y1, Frame.Outline)"
+		}
     } 
     
     FrameBRGripPanel
