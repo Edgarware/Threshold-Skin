@@ -5,10 +5,10 @@
 		text = [!$OSX]	"#steam_menu_file"	
 		text = [$OSX]	"#SteamRootAccount"	
 		
-		MyAccount						{	text="My Account"						shellcmd="steam://url/StoreAccount/" }
-		GoOnline						{	text="Go Online"						command="goonline" }
-		GoOffline						{	text="Go Offline"						command="gooffline" }
-		ChangeUser						{	text="Change User"						command="ChangeUser" }
+		MyAccount						{	text="#Steam_Account_Link"				shellcmd="steam://url/StoreAccount/" }
+		GoOnline						{	text="#SteamUI_OfflineMode_GoOnline"	command="goonline" }
+		GoOffline						{	text="#SteamUI_OfflineMode_GoOffline"	command="gooffline" }
+		ChangeUser						{	text="#steam_menu_changeuser"			command="ChangeUser" }
 
 		Divider							{}
 
@@ -30,13 +30,14 @@
 		
 		Divider							{}
 
-		AddShortcut						{ 	text="Add Non-Steam Games"				shellcmd="steam://AddNonSteamGame" }
-		ActivateRetail					{ 	text="Activate Products"				command="ActivateRetail" }
-		BackupGames						{	text="Backup and Restore"				command="backupgames" }
-		RedeemWalletVoucher				{	text="Redeem Steam Wallet Codes"		shellcmd="steam://url/RedeemWalletVoucher" }
-		CheckForUpdates					{	text="Check for Updates"				command="CheckForUpdates" }
-		UpdateVideoDrivers	[$WINDOWS||$LINUX]	{	text="#steam_menu_updatevendorgraphicscard"		command="UpdateVideoDrivers" }
-		CheckForVideoDriverUpdates	[$WINDOWS||$LINUX]	{	text="#steam_menu_checkforvideodriverupdates"	command="CheckForVideoDriverUpdates" }
+		AddShortcut						{ 	text="#Steam_menu_AddShortcut"			shellcmd="steam://AddNonSteamGame" }
+		ActivateRetail					{ 	text="#Steam_RegisterProductCode"		command="ActivateRetail" }
+		BackupGames						{	text="#steam_menu_backupgames"			command="backupgames" }
+		RedeemWalletVoucher				{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
+		CheckForUpdates					{	text="#steam_menu_checkforupdates"				command="CheckForUpdates" }
+		UpdateVideoDrivers [$WINDOWS||$LINUX]			{	text="#steam_menu_updatevendorgraphicscard"		command="UpdateVideoDrivers" }
+		CheckForVideoDriverUpdates [$WINDOWS||$LINUX]	{	text="#steam_menu_checkforvideodriverupdates"	command="CheckForVideoDriverUpdates" }
+		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
 		Support							{	text="#steam_menu_support"				command="Support" }
 
 		Divider							{}
