@@ -932,8 +932,8 @@
 	layout
 	{
 		region {name=hidden width=0 height=0}
-		region {name=left width=225 y=32}
-		region {name=right x=225 y=32}
+		region {name=left width=230 y=32}
+		region {name=right x=230 y=32}
 		
 		place { control="label_store,label_library,label_community,label_me,label_news,label_console" dir=down x=0 y=110 spacing=0 width=max height=45 region=left} 
 		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" region=hidden}
