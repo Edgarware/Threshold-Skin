@@ -356,6 +356,7 @@
 				5="fill(x0, y0, x0+1, y1, Frame.Outline.Focus)"
 				6="fill(x1-1, y0, x1, y1, Frame.Outline.Focus)"
 				7="fill(x0, y1-1, x1, y1, Frame.Outline.Focus)"
+<<<<<<< HEAD
 			}
 		}
 		
@@ -372,6 +373,24 @@
 				7="fill(x0, y1-1, x1, y1, Frame.Outline)"
 			}
 		}
+=======
+			}
+		}
+		
+		CSteamRootDialog:FrameFocus{
+			render{
+				0="image (x0+15, y0+154, x1, y1, graphics/Threshold/store)"
+				1="image (x0+15, y0+199, x1, y1, graphics/Threshold/library)"
+				2="image (x0+15, y0+244, x1, y1, graphics/Threshold/community)"
+				3="image (x0+15, y0+289, x1, y1, graphics/Threshold/me)"
+				
+				4="fill(x0, y0, x1, y0+1, Frame.Outline)"
+				5="fill(x0, y0, x0+1, y1, Frame.Outline)"
+				6="fill(x1-1, y0, x1, y1, Frame.Outline)"
+				7="fill(x0, y1-1, x1, y1, Frame.Outline)"
+			}
+		}
+>>>>>>> 6fcae87... show friends button on collapsed sidebar
 		
 		"MenuBar MenuButton" 
 		{
@@ -418,11 +437,18 @@
 			font-size=13 [$WINDOWS]
 			font-weight=400
 			font-style=regular
+			render{
+			    0="image(x0+7, y0, x1, y1, graphics/Threshold/friends/friends_small)"
+			}
 		}
 		
 		view_friends:hover
 		{
 			textcolor=none
+            render_bg
+			{
+				0="fill(x0, y0, x1, y1, TitleBar.Hover)"
+			}
 		}
 
 		online_friends
