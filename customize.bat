@@ -2,12 +2,21 @@
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto gotAdmin)
 :UACPrompt
+echo This script is provided for use at YOUR OWN RISK. In no case shall any person who is related in any way with this script could be held liable for any damage, claim or other liability that is directly or indirectly related to your use of this script.
+echo If you do not want to continue, close this window.
+pause
 echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
 echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
 "%temp%\getadmin.vbs"
 goto End
 :GotAdmin
-if exist "%temp%\getadmin.vbs" (del "%temp%\getadmin.vbs")
+if exist "%temp%\getadmin.vbs" (
+    del "%temp%\getadmin.vbs"
+) ELSE (
+    echo This script is provided for use at YOUR OWN RISK. In no case shall any person who is related in any way with this script could be held liable for any damage, claim or other liability that is directly or indirectly related to your use of this script.
+    echo If you do not want to continue, close this window.
+    pause
+)
 pushd "%CD%"
 CD /D "%~dp0"
 del .\config.ini
