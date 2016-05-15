@@ -67,6 +67,7 @@
 				0="fill(x0, y0+32, x1, y0+64, Root.Header)"
 				1="fill(x0, y0+64, x1, y1-36, Root.Back)"
 				2="fill(x0, y1-36, x1, y1, DefaultBackground)"
+				3="fill(x0, y0+32, x0+335, y1, Root.LeftCol)"
 			}
 		} 
 
@@ -247,7 +248,7 @@
 		place { control="game_selector" region="listtop" start="selectorlabel" dir=right y=-4 }
 		
 		place {	control="grid" region="list" margin-top=32 margin-left=15 margin-bottom=35 width=max height=max }
-		place { control="no_screenshots" region="list" y=50 align="top-center" }
+		place { control="no_screenshots" region="hidden" y=50 align="top-center" }
 
 		place { control="DarkRegionDetails" region="details" x=0 y=0 width=max height=max z="-1" }
 		place { control="SSDetails" region="details" y=0 width=max height=250 align="top-center"  }
