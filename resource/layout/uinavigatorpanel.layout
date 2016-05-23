@@ -939,9 +939,8 @@
 		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" region=hidden}
 		place { control="label_community_new" start="label_community" y="-40" x="15" width=0 height=0 region=hidden}
 
-		place [!$OSX] { control="back" x=0 y=0 height=32 width=50}
-		place [!$OSX] { control="forward" region=left x=50 height=40 width=40}
-		place [$OSX] { control="back,forward" x=3 y=17 height=30 width=30 spacing=2 margin-right=5 margin-top=0 }
+		place { control="back" x=0 y=0 height=32 width=48}
+		place { control="forward" region=left x=48 height=40 width=40}
 		
 		place {control="URLBar" region=right width=max height=40 }
 		place { control="EVCert" region=hidden}
@@ -951,20 +950,16 @@
 	
 		place { control="label_search_icon" align=left height=40 region=right width=35}
 		place { control="library_search" start=label_search_icon height=40 dir=right region=right}
-		place  [$OSX] { control="label_search_icon,library_search" align=left y=56 height=17 spacing=1 x=11 }
 		
 		place { control="library_filters" x=275 y=0 height=40 region=right}
 	     
-		place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator" align=right y=0 height=38 spacing=3 margin-right=85 region=right}
-		place [!$OSX]{ control="library_zoom" width=82 height=20 align=right y=10 margin-right=105 region=right}
-		place [!$OSX]{ control="label_library_view" region=hidden }
-		place [$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=55 height=20 spacing=3 margin-right=84 }
+		place { control="label_library_zoom,library_zoom,label_zoom_separator" align=right y=0 height=38 spacing=3 margin-right=85 region=right}
+		place { control="library_zoom" width=82 height=20 align=right y=10 margin-right=105 region=right}
+		place { control="label_library_view" region=hidden }
 		
 		place { control="library_music_add_button" region=hidden}
 		place { control="library_music_player_icon" width=40}
 		place { control="library_music_menu,library_music_player_icon" align=right y=0 height=40 spacing=10 region=right}
-		
-		place [$OSX] { control="library_music_menu,library_music_add_button" align=left x=90 y=55 height=20 spacing=3 margin-right=179 region=right}
 		
 		place { control="library_filters_details,library_filters_list,library_filters_grid" align=right y=0 height=40 spacing=5 margin-right=9 width=20 region=right}
 
