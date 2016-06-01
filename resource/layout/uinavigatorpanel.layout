@@ -941,26 +941,26 @@
 
 		place { control="back" x=0 y=0 height=32 width=48}
 		place { control="forward" region=left x=48 height=40 width=40}
-		
-		place {control="URLBar" region=right width=max height=40 }
+
+		place { control="URLBar" region=right width=max height=40 }
 		place { control="EVCert" region=hidden}
 		place { control="PageLoadThrobber,refresh,stop,URLStatusImage" y=0 height=40 width=40 align=right region=left}
  	
 		place { control="subnavgroup_library" y=0 height=40 width=max margin-right=0 region=hidden region=right}
-	
+
 		place { control="label_search_icon" align=left height=40 region=right width=35}
 		place { control="library_search" start=label_search_icon height=40 dir=right region=right}
-		
+
 		place { control="library_filters" x=275 y=0 height=40 region=right}
-	     
+
 		place { control="label_library_zoom,library_zoom,label_zoom_separator" align=right y=0 height=38 spacing=3 margin-right=85 region=right}
 		place { control="library_zoom" width=82 height=20 align=right y=10 margin-right=105 region=right}
 		place { control="label_library_view" region=hidden }
-		
+
 		place { control="library_music_add_button" region=hidden}
 		place { control="library_music_player_icon" width=40}
 		place { control="library_music_menu,library_music_player_icon" align=right y=0 height=40 spacing=10 region=right}
-		
+
 		place { control="library_filters_details,library_filters_list,library_filters_grid" align=right y=0 height=40 spacing=5 margin-right=9 width=20 region=right}
 
  	  	place { control=emailreminderbar start=URLBar dir=down margin-top=0 margin-right=0 width=max height=50 region=right}

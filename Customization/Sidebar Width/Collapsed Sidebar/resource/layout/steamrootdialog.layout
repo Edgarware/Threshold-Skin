@@ -176,18 +176,12 @@
 		new_label	
 		{			
 			bgcolor=none
-			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
-			}
 			inset="0 0 0 0"
 		}
 		
 		new_label:hover
 		{
 			bgcolor=none
-			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
-			}
 			inset="0 0 0 0"
 		}
 
@@ -342,15 +336,16 @@
 			{
 				// top area and graphics
 				1="fill( x0, y0, x1, y0+72, Root.Header)"
-				2="fill( x0, y0+72, x0+50, y1, Root.LeftCol)"
-				//3="fill( x0, y1-50, x0+50, y1, Root.LeftCol.Bottom)"
-				4="fill( x0+50, y0+72, x1, y1, almostblack)"
+				2="fill( x0, y0+72, x0+48, y1, Root.LeftCol)"
+				//3="fill( x0, y1-48, x0+48, y1, Root.LeftCol.Bottom)"
+				4="fill( x0+48, y0+72, x1, y1, almostblack)"
 			}
-			render{
-				0="image (x0+15, y0+154, x1, y1, graphics/Threshold/store)"
-				1="image (x0+15, y0+199, x1, y1, graphics/Threshold/library)"
-				2="image (x0+15, y0+244, x1, y1, graphics/Threshold/community)"
-				3="image (x0+15, y0+289, x1, y1, graphics/Threshold/me)"
+			render
+			{
+				0="image (x0+14, y0+154, x1, y1, graphics/Threshold/store)"
+				1="image (x0+14, y0+199, x1, y1, graphics/Threshold/library)"
+				2="image (x0+14, y0+244, x1, y1, graphics/Threshold/community)"
+				3="image (x0+14, y0+289, x1, y1, graphics/Threshold/me)"
 				
 				4="fill(x0, y0, x1, y0+1, Frame.Outline.Focus)"
 				5="fill(x0, y0, x0+1, y1, Frame.Outline.Focus)"
@@ -360,11 +355,12 @@
 		}
 		
 		CSteamRootDialog:FrameFocus{
-			render{
-				0="image (x0+15, y0+154, x1, y1, graphics/Threshold/store)"
-				1="image (x0+15, y0+199, x1, y1, graphics/Threshold/library)"
-				2="image (x0+15, y0+244, x1, y1, graphics/Threshold/community)"
-				3="image (x0+15, y0+289, x1, y1, graphics/Threshold/me)"
+			render
+			{
+				0="image (x0+14, y0+154, x1, y1, graphics/Threshold/store)"
+				1="image (x0+14, y0+199, x1, y1, graphics/Threshold/library)"
+				2="image (x0+14, y0+244, x1, y1, graphics/Threshold/community)"
+				3="image (x0+14, y0+289, x1, y1, graphics/Threshold/me)"
 				
 				4="fill(x0, y0, x1, y0+1, Frame.Outline)"
 				5="fill(x0, y0, x0+1, y1, Frame.Outline)"
@@ -378,7 +374,7 @@
 			textcolor="none"
 			inset="0 0 0 0"
 			render{
-				0="image(x0+17,y0+14,x1,y1,graphics/Threshold/menu)"
+				0="image(x0+16,y0+14,x1,y1,graphics/Threshold/menu)"
 			}
 		}
 		
@@ -601,7 +597,7 @@
 			render {}
 			render_bg
 			{
-				1="image( x0+11, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
+				1="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
 			}	
 		}
 
@@ -611,7 +607,7 @@
 			render_bg
 			{
 				0="fill(x0,y0,x1,y1,Menu.Hover)"
-				2="image( x0+11, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
+				2="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
 				
 			}	
 			
@@ -622,7 +618,7 @@
 			render {}
 			render_bg
 			{
-				1="image( x0+11, y0+9, x1, y1, graphics/Threshold/familyview )"
+				1="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
 			}	
 			
 		}
@@ -634,7 +630,7 @@
 			render_bg
 			{
 				0="fill(x0,y0,x1,y1,Menu.Hover)"
-				2="image( x0+11, y0+9, x1, y1, graphics/Threshold/familyview )"
+				2="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
 				
 			}	
 			
@@ -701,19 +697,19 @@
 		
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=0 margin-top=0 }
 		
-		place { control="MenuBar" height=40 width=50 y=32 x=0 }
+		place { control="MenuBar" height=40 width=48 y=32 x=0 }
 
-		place { control="SupportAlert, ParentalLockButton, exitVR, startVR, UIStatusPanel" region=bottom align=bottom height=50 width=50 spacing=0 dir=down}
+		place { control="SupportAlert, ParentalLockButton, exitVR, startVR, UIStatusPanel" region=bottom align=bottom height=48 width=48 spacing=0 dir=down}
 
 		place { control="InboxButton,view_friends,fullscreen,frame_minimize,frame_maximize,frame_close" align=right width=46 height=32 spacing=0 }
 		
 		place { control="add_game, account_balance_seperator" x=14 y=16 region=hidden height=0 width=0}
 		
-		region { name=account region=left y=47 margin-left=5 width=max height=63 }
-		place { control="FriendPanel" height=48 y=0 width=48 margin-left=0 region=account}
+		region { name=account region=left y=47 margin-left=0 width=max height=63 }
+		place { control="FriendPanel" height=48 y=0 width=48 margin-left=4 region=account}
 		place { control="account_balance" start=FriendPanel dir=down y=0 x=8 region=account}
 
-		place { control="account_URL, universe_label" margin-left=52 y=9 spacing=5 region=hidden}
-		place { control="online_friends" height=12 y=30 spacing=5 margin-left=52 region=hidden}
+		place { control="account_URL, universe_label" margin-left=57 y=9 spacing=5 region=hidden}
+		place { control="online_friends" height=12 y=30 spacing=5 margin-left=57 region=hidden}
 	}
 }

@@ -14,7 +14,7 @@
 		{
 			render
 			{
-				0="image( x0+15, y0+15, x1, y1, graphics/Threshold/downloads)"
+				0="image( x0+8, y0+7, x1, y1, graphics/Threshold/downloads)"
 			}
 		}
 		
@@ -48,9 +48,9 @@
 	layout
 	{
 		region {name=hidden width=0 height=0}
-		place { control="StatusDownloading" height=50 width=50 align="top-center"} //Also Offline mode status
+		place { control="StatusDownloading" height=48 width=48 align="top-center"} //Also Offline mode status
 		place { control="StatusPaused" dir=down align="top-center" y=18 region=hidden}
 		place { control="StatusComplete" dir=down align="top-center" y=18 region=hidden}
-	 	place { control="StatusProgressbar" width=50 height=5 align="bottom" }
+	 	place { control="StatusProgressbar" width=48 height=5 align="bottom" }
 	}
 }
