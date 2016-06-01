@@ -133,6 +133,45 @@
 				1="fill( x0, y0, x1, y0 + 1, Chat.Div)"  // top
 			}
 		}
+		
+		button //Send button
+		{
+			inset="3 0 0 0"
+			textcolor=none
+			image="graphics/Threshold/send"
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, Chat.Back)"
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
+			}
+			render{}
+		}
+		
+		button:hover
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, Menu.Button.Hover)"
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
+			}
+		}
+		
+		button:active
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, Menu.Button.Active)"
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
+			}
+		}
+		
+		button:disabled
+		{
+			image="graphics/Threshold/send_dis"
+		}
 
 		EmoticonMenuItemStyle
 		{
@@ -224,7 +263,6 @@
 	layout
 	{
 		region { name="hidden" width=0 height=0}
-		place { control="SendButton" region=hidden height=30 width=40 align=right} //if only you could have individual styling
 		
 		place { control="Splitter" width=6 }
 		place { control="Splitter,UserList" align=right height=max }
@@ -232,7 +270,8 @@
 		place { control="TitlePanel" margin-left=6 y=2 height=50 width=max margin-right=6 end-right=UserList}
 		place { control="VoiceBar" y=34 height=24 width=max margin-left=8 margin-right=52 end-right=UserList}
 		place { control="ChatHistory" width=max height=max margin-bottom=84 margin-top=55 end-right=UserList}
-		place { control="EmoticonButton" height=42 align=bottom-right margin-bottom=42 end-right=UserList}
+		place { control="SendButton" height=42 width=42 align=bottom-right margin-bottom=42 end-right=UserList}
+		place { control="EmoticonButton" height=42 width=42 align=bottom-right margin-bottom=42 end-right=SendButton}
 		place { control="TextEntry" align=bottom end-right="EmoticonButton" margin-bottom=42 height=42 width=max }
 		place { control="StatusLabel" width=max margin-left=10 height=40 align=bottom end-right="VoiceChat"}
 		place { control="VoiceChat,ChatActionsButton" width=42 height=42 align=bottom-right spacing=0 dir=right end-right=UserList}
