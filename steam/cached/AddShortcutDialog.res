@@ -1,5 +1,14 @@
 "steam/cached/AddShortcutDialog.res"
 {
+	layout
+	{
+		place { control="Label1" margin-top=42 margin-left=20 margin-right=20}
+		place { control="AppList" width=max height=max margin-top=67 margin-bottom=50}
+		
+		region { name=bottom margin-left=20 margin-right=20 margin-bottom=15 height=35 width=max align=bottom}
+		place { control="BrowseButton,AddSelectedButton,CloseButton" region=bottom align=right dir=right spacing=10}
+	}
+	
 	"AddShortcutDialog"
 	{
 		"ControlName"		"CAddShortcutDialog"
