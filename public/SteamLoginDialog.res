@@ -4,7 +4,7 @@
 	styles{
 		CSteamLoginDialog
 		{
-			minimum-height=400
+			minimum-height=500
 		}
 		
 		"loginprocess_style_head"
@@ -48,18 +48,17 @@
 		region { name=body width=max height=max margin-top=150 margin-right=71 margin-left=71}
 		
 		place{ control=ImagePanelLogo align=top-center y=50 width=max height=70}
-		place{ control=UserNameLabel,PasswordLabel dir=down spacing=10 region=body height=30}
-		place{ control=UserNameEdit start=UserNameLabel dir=right margin-left=20 region=body height=30}
-		place{ control=PasswordEdit start=UserNameEdit dir=down margin-top=10 region=body height=30}
+		place{ control=UserNameLabel,UserNameEdit dir=down spacing=0 region=body height=30}
+		place{ control=PasswordLabel,PasswordEdit start=UserNameEdit dir=down spacing=0 margin-top=10 region=body height=30}
 		place{ control=PasswordCapsLockImage start=PasswordEdit dir=right margin-left=5 margin-top=3 height=24 width=24}
 		place{ control=SavePasswordCheck start=PasswordEdit dir=down margin-top=10 width=max}	
-		place{ control=CancelButton start=PasswordLabel margin-top=50 dir=down region=body width=150}
-		place{ control=LoginButton start=CancelButton margin-left=28 dir=right region=body width=150}
+		place{ control=CancelButton start=SavePasswordCheck margin-top=10 dir=down region=body width=150 height=23}
+		place{ control=LoginButton start=CancelButton margin-left=28 dir=right region=body width=150 height=23}
 		
 		place{ control=LoginErrorText margin-top=10 start=CancelButton dir=down region=body}
 		place{ control=Divider1 start=LoginErrorText dir=down margin-top=10 region=body width=max}
-		place{ control=CreateNewAccountButton start=Divider1 dir=down margin-top=20 region=body width=150}
-		place{ control=LostPasswordButton start=CreateNewAccountButton dir=right margin-left=28 region=body width=150}
+		place{ control=CreateNewAccountButton start=Divider1 dir=down margin-top=20 region=body width=150 height=23}
+		place{ control=LostPasswordButton start=CreateNewAccountButton dir=right margin-left=28 region=body width=150 height=23}
 		
 		place{ control=Label2,Label4,AlreadyLoggedIn,PasswordCapsLockLabel,LoginProcessText,LoginProcessLabel,LoginProcessThrobber,LoginProcessImage region=hidden}
 
