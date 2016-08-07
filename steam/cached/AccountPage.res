@@ -7,7 +7,7 @@
 	layout{
 		place { control=LogoutLabel,ContactEmailLabel,Label2,SecurityStatusLabel dir=down margin-top=20 margin-left=20 spacing=8 width=100}
 		place { control=AccountInfo, start=LogoutLabel dir=right margin-left=0}
-		place { control=EmailInfo,VACStatusLabel start=AccountInfo dir=down margin-top=8 spacing=8}
+		place { control=EmailInfo,VACStatusLabel,VacInfoLink start=AccountInfo dir=down margin-top=8 spacing=8}
 		place { control=SecurityIcon,SecurityStatusState start=SecurityStatusLabel dir=right margin-left=0 spacing=4}
 		place { control=AccountLink start=LogoutLabel dir=right align=right margin-right=50}
 		
