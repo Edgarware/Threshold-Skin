@@ -19,16 +19,17 @@ steam.styles
 	DefaultBackground=Neutral
 	
 	DefaultText=white
-	DefaultText.Hover="210 210 210 255"
-	DefaultText.Disabled="74 74 74 255"
+	DefaultText.Hover="153 153 153 255"
+	DefaultText.Disabled="102 102 102 255"
+	DefaultText.Selected=DefaultText
 	DefaultText.Back=Accent //For highlighted text
 	DefaultCursor=white
 		
 	Label.Text=DefaultText
 	SubLabel.Text="180 180 180 255" //Any label we want to have visual distinction, usually subheaders
 	
-	URL.Text=DefaultText.Hover
-	URL.Hover.Text=DefaultText
+	URL.Text=Accent
+	URL.Hover.Text=DefaultText.Hover
 		
 	Page.Back=Neutral
 	Page.Tab=Light
@@ -126,10 +127,10 @@ steam.styles
 	Frame.Text="96 96 96 255"
 	Frame.Focus.Text=DefaultText
 	
-	Root.Header = Light
-	Root.LeftCol = DefaultBackground //Left Column
-	Root.LeftCol.Header= Root.Header
-	Root.LeftCol.Bottom = Root.LeftCol.Header
+	Root.Header = DefaultBackground
+	Root.LeftCol = Light //Left Column
+	Root.LeftCol.Header= DefaultBackground
+	Root.LeftCol.Bottom = DefaultBackground
 	Root.Back = Dark
 	Root.RightCol = DefaultBackground //Right column (When needed)
 	Root.Div = Menu.Div
@@ -525,8 +526,8 @@ steam.styles
 		font-family=basefont
 		font-size=12
 		font-size=14 [$WINDOWS]
-		selectedtextcolor=ComboBox.Text
-		selectedbgcolor=none
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		render_bg
 		{     
 			// background fill
@@ -785,8 +786,8 @@ steam.styles
 		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
-		selectedtextcolor=List.Text
-		selectedbgcolor=Accent
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=List.Text.Disabled	// the color of disabled line items		
 		render{	}
 		render_bg { 
@@ -831,8 +832,8 @@ steam.styles
 		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
-		selectedtextcolor=List.Text
-		selectedbgcolor=Accent
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=List.Text.Disabled	// the color of disabled line items
 		padding-left=10
 		inset="0 0 0 0"
@@ -851,8 +852,8 @@ steam.styles
 		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
-		selectedtextcolor=List.Text
-		selectedbgcolor=Accent
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		padding-left=10
 		inset="0 0 0 0"
 		bgcolor=none
@@ -871,8 +872,8 @@ steam.styles
 		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
-		selectedtextcolor=List.Text
-		selectedbgcolor=Accent
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=List.Text.Disabled
 		padding-left=10
 		inset="0 0 0 0"
@@ -1310,6 +1311,8 @@ steam.styles
 		font-size=13
 		font-size=15 [$WINDOWS]
 		textcolor=TextBox.Text
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-style=underline
 	}
 
@@ -1713,7 +1716,8 @@ steam.styles
     RichText
     {
 		textcolor=TextBox.Text
-		selectedtextcolor=TextBox.Active.Text		
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back	
 		font-family=basefont
 		font-size=12
 		font-size=14 [$WINDOWS]
@@ -1743,7 +1747,8 @@ steam.styles
 		font-size=12
 		font-size=14 [$WINDOWS]
 		textcolor=URL.Text
-		selectedtextcolor=TextBox.Active.Text
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-style=underline
 	}
 	
@@ -2033,8 +2038,8 @@ steam.styles
 		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
-		selectedtextcolor=List.Text
-		selectedbgcolor=Accent
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		bgcolor="none"
 		inset="1 -1 1 1"  
 		render
@@ -2056,8 +2061,8 @@ steam.styles
 		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
-		selectedtextcolor=List.Text
-		selectedbgcolor=Accent
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		render { }
 		render_bg 
 		{
@@ -2161,7 +2166,7 @@ steam.styles
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
-		selectedtextcolor=TextBox.Active.Text
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=DefaultCursor  // this is the cursor color
 
@@ -2282,7 +2287,7 @@ steam.styles
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
-		selectedtextcolor=TextBox.Active.Text
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=DefaultCursor  // this is the cursor color
 
@@ -2349,7 +2354,7 @@ steam.styles
 		textcolor=URL.Text
 		font-weight=400
 		bgcolor="none"
-		selectedtextcolor=URL.Text
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=DefaultCursor	// this is the cursor color
 		inset-left=0
@@ -2506,8 +2511,8 @@ steam.styles
 		font-size=11
 		font-size=13 [$WINDOWS]
 		textcolor=DefaultText
-		selectedtextcolor=DefaultText
-		selectedbgcolor="TextSelectedBG"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		bgcolor=none
 		render {}
 		render_bg {}
@@ -2529,6 +2534,8 @@ steam.styles
 		font-size=14 [$WINDOWS]
 		font-weight=400
 		font-style=underline
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
     }
     
    	URLLabel:Hover
@@ -2545,6 +2552,8 @@ steam.styles
 		font-size=14 [$WINDOWS]
 		font-weight=400
 		font-style=regular
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
     }
     
 	URLLabelSimple:Hover
@@ -2562,6 +2571,8 @@ steam.styles
 		font-size=14 [$WINDOWS]
 		font-weight=400
 		font-style=regular
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
     }
     
 	URLLabelSimple2:Hover
@@ -2623,9 +2634,9 @@ steam.styles
 		font-size=12
 		font-size=14 [$WINDOWS]
 		font-weight=400
-		textcolor="Text"
-		selectedtextcolor="TextSelected"
-		selectedbgcolor=Accent
+		textcolor=DefaultText
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		bgcolor=none
 		inset="1 -1 1 1"
 		render_bg {
@@ -2877,7 +2888,7 @@ steam.styles
 		textcolor=DefaultText
 		font-weight=400
 		bgcolor="DefaultBackground"
-		selectedtextcolor=DefaultText
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=DefaultCursor	// this is the cursor color
 		inset-left=0
@@ -2901,7 +2912,7 @@ steam.styles
 		textcolor=DefaultText
 		font-weight=400
 		bgcolor="DefaultBackground"
-		selectedtextcolor=DefaultText
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=DefaultCursor	// this is the cursor color
 		inset-left=0
@@ -2969,7 +2980,7 @@ steam.styles
 		font-size=14
 		font-family="Menlo" [$OSX]
       	font-size=16 [$OSX]
-		selectedtextcolor=DefaultText
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 	}
 	
@@ -2980,15 +2991,15 @@ steam.styles
 		font-family="Menlo" [$OSX]
       	font-size=14 [$OSX]
 	    textcolor=DefaultText
-		selectedtextcolor=DefaultText	
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 	}
 	
 	friends_chat_text //TODO: Chat text colors
 	{
 		textcolor="DefaultText"
-		selectedtextcolor="DefaultText"	
-		SelectedBgColor=DefaultText.Back
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
@@ -2996,7 +3007,7 @@ steam.styles
 	friends_chat_text_self
 	{
 		textcolor="ChatOwnTextColor"
-		selectedtextcolor="DefaultText"	
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
@@ -3005,7 +3016,7 @@ steam.styles
 	friends_chat_history
 	{
 		textcolor="ChatDialog.HistoryColor"
-		selectedtextcolor="DefaultText"	
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
@@ -3016,14 +3027,15 @@ steam.styles
 		textcolor="DefaultText"
 		font-size=14
 		font-size=16 [$WINDOWS]
-		selectedtextcolor="DefaultText"
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 	}
 
 	friends_chat_bright_event
 	{
 		textcolor="DefaultText"
-		selectedtextcolor="DefaultText"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 		font-weight=1000
@@ -3035,7 +3047,7 @@ steam.styles
 		font-style=underline
 		font-size=14
 		font-size=16 [$WINDOWS]
-		selectedtextcolor=URL.Hover.Text
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 	}
 	
@@ -3047,8 +3059,8 @@ steam.styles
 	friends_chat_name_ingame
 	{
 		textcolor="Friends.InGameColor"
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
@@ -3056,8 +3068,8 @@ steam.styles
 	friends_chat_name_golden
 	{
 		textcolor="Friends.GoldenColor"
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
@@ -3066,8 +3078,8 @@ steam.styles
 	friends_chat_self
 	{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
@@ -3075,16 +3087,16 @@ steam.styles
 	friends_chat_name
 	{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
 	
 	friends_chat_accountid
 	{
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		textcolor="DefaultText"
 		font-size=14
 		font-size=16 [$WINDOWS]
@@ -3099,8 +3111,8 @@ steam.styles
 		font-size=16 [$WINDOWS]
 		font-weight=400
 		font-style=underline
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 	}
 	
 	friends_chat_securitylink:Hover
