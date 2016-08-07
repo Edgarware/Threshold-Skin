@@ -59,7 +59,7 @@
 			bgcolor=none
 			render_bg
 			{
-				0="fill( x0+275, y0, x1, y0+40, Root.Header)"
+				0="fill( x0+275, y0, x1, y0+48, Root.Header)"
 			}			
 		}
 		ListPanelStyle
@@ -90,7 +90,7 @@
 	layout
 	{
 		region { name=status x=0 y=0 margin=0}
-		region { name=main x=275 y=0 margin=0 margin-top=40}
+		region { name=main x=275 y=0 margin=0 margin-top=48}
 		place { control="downloadsummarypanel" region=status width=275 height=max}
 		place { control="panel_list" region=main width=max height=max}
 	}

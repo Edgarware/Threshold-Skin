@@ -12,6 +12,23 @@
 	{
 		CUIStatusPanel
 		{
+			render{
+				0="image( x1-40, y0+7, x1, y1, graphics/Threshold/downloads)"
+			}
+		}
+		
+		StatusLabelDim
+		{
+			textcolor=none
+		}
+
+		StatusLabelDim:hover
+		{
+			textcolor=none
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, Menu.Hover)"
+			}
 		}
 		
 		SlimProgressBar
@@ -30,9 +47,9 @@
 	layout
 	{
 		region {name=hidden width=0 height=0}
-		place { control="StatusDownloading" align="top-center"} //Also Offline mode status
-		place { control="StatusPaused" dir=down align="top-center" y=18}
-		place { control="StatusComplete" dir=down align="top-center" y=18}
-	 	place { control="StatusProgressbar" width=max height=5 align="bottom" }
+		place { control="StatusDownloading" align=right margin-right=60 y=16} //Also Offline mode status
+		place { control="StatusPaused" align=right width=48 height=48}
+		place { control="StatusComplete" align=right width=48 height=48}
+	 	place { control="StatusProgressbar" width=max height=5 align=bottom margin-right=60 }
 	}
 }

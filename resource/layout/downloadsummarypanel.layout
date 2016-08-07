@@ -126,8 +126,8 @@
 			inset="0 0 0 0"
 			render_bg
 			{
-				0="fill(x0, y0, x1, y0+40, Search.Back)"
-				1="fill(x0, y0+40, x1, y1, Root.Back)"
+				0="fill(x0, y0, x1, y0+48, Search.Back)"
+				1="fill(x0, y0+48, x1, y1, Root.Back)"
 			}
 	  	}
 	   
@@ -278,13 +278,13 @@
 		
 		//set aside some room for the	header section
 		region {name=hidden width=0 height=0}
-		region {name=head dir=down x=15 height=max width=max margin-bottom=170 margin-right=0	}
+		region {name=head height=48 width=max}
 		region  {name=graph align=bottom width=1262 height=170 }	
 		
 		region { name=legend align=bottom margin-left=15 height=50 width=90}
 		
-		region { name=left_column x=0 y=50 width=max region=head }
-		region { name=middle_column x=0 y=160 width=max region=head}
+		region { name=left_column x=0 y=58 width=max region=head }
+		region { name=middle_column x=0 y=168 width=max region=head}
 
 		// graph
 		place { control="net_graphpanel" region=graph y=0 width="max" height="max" }				   
@@ -298,7 +298,7 @@
 		place { control="disk_legend_label" region=legend y=14 x=12 }
 		
 		// put NETWORK	USAGE in the top left
-		place { control="header"	region=head dir=down x=0	y=10	}
+		place { control="header" x=15 region=head height=48}
 		
 		// top right
 		place { control="pauseresumeallbutton" region=head align=right margin-right=10 margin-top=8 height=23}
