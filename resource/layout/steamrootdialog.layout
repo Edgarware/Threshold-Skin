@@ -444,8 +444,8 @@
 		support_alert
 		{
 			font-family=basefont
-			font-size=12
-			font-size=14 [$WINDOWS]
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-weight=1000
 			font-style=none
 			textcolor=DefaultText
@@ -469,7 +469,8 @@
 		support_alert_ack
 		{
 			font-family=basefont
-			font-size=14
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-weight=1000
 			font-style=none
 			textcolor=white
@@ -494,8 +495,8 @@
 		inbox_button
 		{
 			font-family=basefont
-			font-size=12
-			font-size=14 [$WINDOWS] 
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-weight=800
 			font-style=none
 			textcolor=Root.LeftCol.Text
@@ -553,8 +554,8 @@
 		inbox_button_active
 		{
 			font-family=basefont
-			font-size=12
-			font-size=14 [$WINDOWS] 
+			font-size=13
+			font-size=15 [$WINDOWS]
 			font-weight=800
 			font-style=none
 			textcolor=none
@@ -669,8 +670,8 @@
 		
 		AccountURLStyle
 		{
-			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=13
+			font-size=15 [$WINDOWS]
 			textcolor=Root.Label.Text
 			padding-right=-14 //This element has a drop-down arrow; this hides it
 		}
