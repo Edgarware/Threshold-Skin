@@ -524,8 +524,8 @@ steam.styles
 		inset="3 0 0 0"
 		textcolor=ComboBox.Text
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		render_bg
@@ -819,8 +819,8 @@ steam.styles
 		selectedtextcolor=Label.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
  	}
    
@@ -828,8 +828,8 @@ steam.styles
     {
 		bgcolor=none
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -848,8 +848,8 @@ steam.styles
     "Page ListPanel"
 	{
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -999,8 +999,8 @@ steam.styles
     "GameColumn_BigText"
 	{
 		font-family=basefont
-		font-size=14
-		font-size=17 [$WINDOWS]
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-weight=700
 		textcolor=DefaultText
     }
@@ -1008,8 +1008,8 @@ steam.styles
     ListPanelCheckBox
     {
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check_sm"
@@ -1046,8 +1046,8 @@ steam.styles
     "ListPanelColumnheader ListPanelCheckBox"
     {
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check_sm"
@@ -1072,8 +1072,8 @@ steam.styles
     ListPanelColumnheader
     {
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Header.Text
 		bgcolor="none"
@@ -1102,8 +1102,8 @@ steam.styles
 	"Csteamrootdialog ListPanelColumnheader"
     {
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Header.Text
 		bgcolor="none"
@@ -1223,7 +1223,7 @@ steam.styles
 		inset="0 0 0 0"
 		padding-left=5
 		font-size=13
-		font-size=15 [$WINDOWS]
+		font-size=20 [$WINDOWS]
 		textcolor=List.Text
 		bgcolor="none" 
 		render
@@ -1280,8 +1280,8 @@ steam.styles
 		inset="5 0 0 0"
 		textcolor=List.Header.Text
 		minimum-height=25
-		font-size=14
-		font-size=18 [$WINDOWS]
+		font-size=15
+		font-size=20 [$WINDOWS]
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, List.Header)"
@@ -1352,7 +1352,7 @@ steam.styles
 		bgcolor="none"
 		font-family=basefont
 		font-size=16
-		font-size=21 [$WINDOWS]
+		font-size=24 [$WINDOWS]
 		font-weight=700
 		//font-style="uppercase"
     }
@@ -1451,8 +1451,8 @@ steam.styles
     {
 		font-family=basefont
 		textcolor=Menu.Text
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		inset="0 0 0 0"
 		padding-right=6
@@ -1530,8 +1530,8 @@ steam.styles
     {
 		textcolor=Page.Tab.Text
 		font-family=basefont
-		font-size=11
-		font-size=13 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		inset="0 0 0 0"
 		render_bg
@@ -1575,8 +1575,8 @@ steam.styles
 
 	"PageDragFrame PageTab"
 	{
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-style=""
 	}
 
@@ -1594,8 +1594,8 @@ steam.styles
     Panel
 	{ 
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=DefaultText
 		bgcolor="none"
@@ -1653,8 +1653,8 @@ steam.styles
     RadioButton
     {
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=Radio.Text
 		render_bg {}
@@ -1719,8 +1719,8 @@ steam.styles
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back	
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		inset="0 0 0 0"
 		render_bg
@@ -1744,8 +1744,8 @@ steam.styles
 	
 	"RichText url"
 	{
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		textcolor=URL.Text
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
@@ -1761,22 +1761,22 @@ steam.styles
 	{
 		textcolor=TextBox.Text
 		font-style=underline
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 	}
 	
 	// style of bold text in a rich text control
 	"RichText bold"
 	{
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=1000
 	}
 	
 	"RichText emphasis"
 	{
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-style=italic
 	}
 
@@ -2034,8 +2034,8 @@ steam.styles
     {
 		bgcolor=none
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -2057,8 +2057,8 @@ steam.styles
     {
 		bgcolor=DefaultBackground
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -2141,8 +2141,8 @@ steam.styles
     StatusLabel
     {
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=Label.Text
 		font-style=normal   
@@ -2151,8 +2151,8 @@ steam.styles
     StatusLabelDim
     {
 		font-family=basefont
-		font-size=10
-		font-size=12 [$WINDOWS]
+		font-size=11
+		font-size=13 [$WINDOWS]
 		font-weight=400
 		textcolor=SubLabel.Text
 		font-style=normal   
@@ -2161,8 +2161,8 @@ steam.styles
     TextEntry
     {
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
@@ -2282,8 +2282,8 @@ steam.styles
     TextEntryLarge //Used for password on login screen
     {
 		font-family=basefont
-		font-size=14
-		font-size=18 [$WINDOWS]
+		font-size=15
+		font-size=20 [$WINDOWS]
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
@@ -2349,8 +2349,8 @@ steam.styles
     TextEntryURL
 	{
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		textcolor=URL.Text
 		font-weight=400
 		bgcolor="none"
@@ -2379,8 +2379,8 @@ steam.styles
     {
 		inset="1 0 0 0"
 		font-family=basefont
-		font-size=11
-		font-size=13 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2424,8 +2424,8 @@ steam.styles
     "Page ToggleButton"
     {
 		font-family=basefont
-		font-size=11
-		font-size=13 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2508,8 +2508,8 @@ steam.styles
     TreeNodeText
     {
 		font-family=basefont
-		font-size=11
-		font-size=13 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		textcolor=DefaultText
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
@@ -2530,8 +2530,8 @@ steam.styles
 		textcolor=URL.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		font-style=underline
 		selectedtextcolor=DefaultText.Selected
@@ -2548,8 +2548,8 @@ steam.styles
 		textcolor=URL.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		font-style=regular
 		selectedtextcolor=DefaultText.Selected
@@ -2567,8 +2567,8 @@ steam.styles
 		textcolor=URL.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		font-style=regular
 		selectedtextcolor=DefaultText.Selected
@@ -2631,8 +2631,8 @@ steam.styles
     {
 		inset="0 0 0 0"
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=DefaultText
 		selectedtextcolor=DefaultText.Selected
@@ -2883,8 +2883,8 @@ steam.styles
 	"html-findbar"
  	{
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		textcolor=DefaultText
 		font-weight=400
 		bgcolor="DefaultBackground"
@@ -2907,8 +2907,8 @@ steam.styles
  	"html-imebar" 
  	{
 		font-family=basefont
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		textcolor=DefaultText
 		font-weight=400
 		bgcolor="DefaultBackground"
@@ -3000,8 +3000,8 @@ steam.styles
 		textcolor="DefaultText"
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 	}
 	
 	friends_chat_text_self
@@ -3009,8 +3009,8 @@ steam.styles
 		textcolor="ChatOwnTextColor"
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 	}
 
 	friends_chat_history
@@ -3018,15 +3018,15 @@ steam.styles
 		textcolor="ChatDialog.HistoryColor"
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 	}
 	
 	friends_chat_event
 	{
 		textcolor="DefaultText"
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 	}
@@ -3036,8 +3036,8 @@ steam.styles
 		textcolor="DefaultText"
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=1000
 	}
 
@@ -3045,8 +3045,8 @@ steam.styles
 	{
 		textcolor=URL.Text
 		font-style=underline
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 	}
@@ -3061,8 +3061,8 @@ steam.styles
 		textcolor="Friends.InGameColor"
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 	}
 
 	friends_chat_name_golden
@@ -3070,8 +3070,8 @@ steam.styles
 		textcolor="Friends.GoldenColor"
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 	}
 
 	
@@ -3080,8 +3080,8 @@ steam.styles
 		textcolor="Friends.OnlineColor"
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 	}
 	
 	friends_chat_name
@@ -3089,8 +3089,8 @@ steam.styles
 		textcolor="Friends.OnlineColor"
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 	}
 	
 	friends_chat_accountid
@@ -3098,8 +3098,8 @@ steam.styles
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		textcolor="DefaultText"
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 	}
 	
 	friends_chat_securitylink
@@ -3107,8 +3107,8 @@ steam.styles
 		textcolor="DefaultText"
 		bgcolor="none"
 		font-family=basefont
-		font-size=14
-		font-size=16 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		font-style=underline
 		selectedtextcolor=DefaultText.Selected
@@ -3148,7 +3148,8 @@ steam.styles
 	{
 		font-family=basefont
 		//font-style="uppercase"
-		font-size="13"
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=400
 		textcolor=DefaultText
 		bgcolor="none"
@@ -3242,8 +3243,8 @@ steam.styles
 
 	SuperNavMenuItem
 	{
-		font-size=12
-		font-size=14 [$WINDOWS]
+		font-size=13
+		font-size=15 [$WINDOWS]
 		font-weight=regular
 		textcolor=Menu.Text
 		bgcolor=none
