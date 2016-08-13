@@ -6,61 +6,37 @@
 		{
 			bgcolor=none
 			inset="13 0 0 0"
-			image="graphics/Threshold/back_sm"
-			render_bg{
-				0="fill(x0,y0,x1,y1,TitleBar.Accent)"
-				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
+			image="graphics/Threshold/back_sm_dis"
+			render_bg {}
+			render
+			{
+				0="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
 			}
 		}
 		
 		BackButton:framefocus
 		{
-			bgcolor=none
-			inset="13 0 0 0"
 			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent)"
-				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
+			}
+			render
+			{
+				0="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
 		BackButton:hover
 		{
-			bgcolor=none
-			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
-			}
-		}
-		
-		BackButton:hover:framefocus
-		{
-			bgcolor=none
-			image="graphics/Threshold/back_sm"
-			render_bg{
-				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
 		BackButton:active
 		{
-			bgcolor=none
-			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
-			}
-		}
-		
-		BackButton:active:framefocus
-		{
-			bgcolor=none
-			image="graphics/Threshold/back_sm"
-			render_bg{
-				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
-				1="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
@@ -68,16 +44,8 @@
 		{
 			bgcolor=none
 			image="none"
-			render_bg{
-				0="image(x0+13, y0+11, x1, y1, graphics/Threshold/titlefocus)"
-			}
-		}
-		
-		BackButton:disabled:framefocus //SIGH... Doesnt seem to work
-		{
-			bgcolor=none
-			image="none"
-			render_bg{
+			render_bg {}
+			render{
 				0="image(x0+13, y0+11, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}

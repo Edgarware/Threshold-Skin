@@ -23,10 +23,7 @@
 	{
 		dlcdetails 
 		{ 
-			render_bg
-			{
-				0="fill(x0+20,y1-1,x1-15,y1,Root.Div)"
-			}
+			bgcolor=Root.RightCol
 		}
 
 		bodycontent

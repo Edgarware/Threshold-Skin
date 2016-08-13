@@ -709,27 +709,25 @@
 		region {name=hidden width=0 height=0}
 		region {name=left width=230 y=32}
 		region {name=bottom-left region=left align=bottom height=48 width=max}
-		
-		region {name=bottom width=max height=48 align=bottom margin-left=230}
-		region { name=account align=bottom margin-left=235 width=max height=52 } //friendpanel has some weird top-padding, fix it
+		region {name=bottom width=max height=48 align=bottom}
+		region { name=account align=bottom-right margin-right=48 width=max height=52 margin-left=505}
 		
 		place { control="New" region=hidden}
-		
-		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=48 margin-top=0 }
+		place { control="add_game" x=14 y=16 region=hidden height=0 width=0}
 		
 		place { control="MenuBar" height=48 width=48 y=32 x=0 }
-		place { control="UIStatusPanel" height=48 width=200 region=bottom margin-left=200 margin-right=48 align=right}
+		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=48 margin-top=0 }
+		
+		place { control="ParentalLockButton, startVR, exitVR, SupportAlert" region=bottom-left align=right margin-right=48 height=48 width=48 spacing=0 dir=right}
+		place { control="UIStatusPanel" height=48 width=323 region=bottom margin-left=182}
 		place { control="InboxButton" height=48 width=48 region=bottom align=right }
-		place { control="ParentalLockButton, startVR, exitVR, SupportAlert" region=bottom-left height=48 width=48 spacing=0 dir=right}
+
 
 		place { control="fullscreen,frame_minimize,frame_maximize,frame_close" align=right width=46 height=32 spacing=0 }
-		
-		place { control="add_game" x=14 y=16 region=hidden height=0 width=0}
 
-		place { control="FriendPanel" height=48 y=0 width=48 margin-left=4 region=account}
-
-		place { control="account_URL, universe_label, account_balance_seperator, account_balance" margin-left=57 y=9 spacing=5 region=account}
-		place { control="online_friends" height=12 y=30 spacing=5 margin-left=57 region=account}
-		place { control="view_friends" height=12 y=30 margin-left=57 region=account}
+		place { control="FriendPanel" height=48 y=0 width=48 margin-left=4 region=account align=right}
+		place { control="account_balance,  account_balance_seperator, account_URL, universe_label" margin-right=54 y=9 spacing=5 region=account align=right}
+		place { control="online_friends" height=12 y=30 spacing=5 margin-right=66 region=account align=right}
+		place { control="view_friends" height=12 y=30 margin-right=66 region=account align=right}
 	}
 }

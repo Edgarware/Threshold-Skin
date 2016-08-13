@@ -192,33 +192,38 @@
 		
 		PauseButton
 		{
-			inset="20 -1 0 0"
+			inset="0 0 0 0"
 			font-family=basefont
 			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=20 [$WINDOWS]
 			font-weight=400
+			padding-right=4
+			padding-left=4
+			
 			//font-style=uppercase
 			bgcolor=none
-	
 			render
 			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/Threshold/icons/pause )"
+				//1="image( x0 + 10, y0 + 8, x1, y1, graphics/Threshold/icons/pause )"
 			}
 		}
 			
 		ResumeButton
 		{
-			inset="20 -1 0 0"
+			inset="0 0 0 0"
 			font-family=basefont
 			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=20 [$WINDOWS]
+			padding-right=4
+			padding-left=4
+			
 			font-weight=400
 			//font-style=uppercase
 			bgcolor=none
-
+			
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/install )"
+				//1="image( x0 + 10, y0 + 8, x1, y1, graphics/Threshold/icons/install )"
 			}
 		}
 
@@ -283,8 +288,8 @@
 		
 		region { name=legend align=bottom margin-left=15 height=50 width=90}
 		
-		region { name=left_column x=0 y=58 width=max region=head }
-		region { name=middle_column x=0 y=168 width=max region=head}
+		region { name=left_column x=15 y=58 width=max }
+		region { name=middle_column x=15 y=168 width=max }
 
 		// graph
 		place { control="net_graphpanel" region=graph y=0 width="max" height="max" }				   
@@ -301,7 +306,7 @@
 		place { control="header" x=15 region=head height=48}
 		
 		// top right
-		place { control="pauseresumeallbutton" region=head align=right margin-right=10 margin-top=8 height=23}
+		place { control="pauseresumeallbutton" region=head align=right margin-right=10 margin-top=8 height=32}
 		
 		// three rows of network	usage underneath the header
 		place { region=left_column  control="download_rate_value,download_rate" spacing=4 dir=right}

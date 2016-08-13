@@ -19,7 +19,7 @@
 	{
 		nonsteamdetails 
 		{ 
-			bgcolor=BackgroundStart
+			bgcolor=Root.RightCol
 		}
 
 		bodycontent
@@ -40,7 +40,7 @@
 
 	layout
 	{
-		region { name=body margin=10 width=max height=max }
+		region { name=body margin=10 margin-left=15 width=max height=max }
 		place { region=body control=headerlabel width=max }
 		place { region=body y=26 control=bodybasic dir=down width=max spacing=2 }
 	}

@@ -83,7 +83,7 @@
 			{     
 				render_bg
 				{
-					0="fill( x0 - 1, y0, x1, y1, Root.Header)"
+					0="fill( x0 - 1, y0, x1, y1, List.Header)"
 				}    
 			} 
 		

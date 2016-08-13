@@ -23,7 +23,7 @@
 		
 		ClientListButton
 		{
-			inset="-4 2 0 0"
+			inset="-4 4 0 0"
 			// minimum-width=20
 			// minimum-height set by code to match actual height of Launch button
 			// Do not set either minimum-width or -height here or it will override the code and the layout will break
@@ -71,8 +71,6 @@
 		{   
 			inset="-3 0 0 0"
 			font-family=basefont
-			font-size=14
-			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
@@ -107,8 +105,6 @@
 		{   
 			inset="20 0 0 1"
 			font-family=basefont
-			font-size=14
-			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
@@ -116,7 +112,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 6, x1, y1, graphics/Threshold/icons/play )"
+				1="image( x0 + 6, y0 + 7, x1, y1, graphics/Threshold/icons/play )"
 			}
 			render_bg
 			{
@@ -156,15 +152,13 @@
 			
 			inset="20 0 0 1"
 			font-family=basefont
-			font-size=14
-			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
 			bgcolor=none   
 			render
 			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/Threshold/icons/install)"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/Threshold/icons/install)"
 			}
 			render_bg
 			{
@@ -207,8 +201,6 @@
 		{   
 			inset="23 0 0 1"
 			font-family=basefont
-			font-size=14
-			font-size=16 [$WINDOWS]
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
@@ -216,7 +208,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/Threshold/icons/buy )"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/Threshold/icons/buy )"
 			}
 			render_bg
 			{
@@ -258,9 +250,9 @@
 	layout
 	{
 		// Y offset here should match the vertical padding value above in the colors section
-		region { name="play" y=0 x=0 width=max height=max margin=10 margon-bottom=10}
+		region { name="play" y=0 x=0 width=max height=max margin=10 }
 
-		place { control="launchbutton, clientlist" region=play dir=right align=middle spacing=0 }
+		place { control="launchbutton, clientlist" region=play dir=right spacing=0 height=32}
 		place { control=subheaderlabels start=clientlist x=10 region=play dir=right align=middle margin-top=-3 }
 	}
 }

@@ -13,7 +13,7 @@
 		CUIStatusPanel
 		{
 			render{
-				0="image( x1-40, y0+7, x1, y1, graphics/Threshold/downloads)"
+				0="image( x0+8, y0+7, x1, y1, graphics/Threshold/downloads)"
 			}
 		}
 		
@@ -47,9 +47,13 @@
 	layout
 	{
 		region {name=hidden width=0 height=0}
-		place { control="StatusDownloading" align=right margin-right=60 y=16} //Also Offline mode status
-		place { control="StatusPaused" align=right width=48 height=48}
-		place { control="StatusComplete" align=right width=48 height=48}
-	 	place { control="StatusProgressbar" width=max height=5 align=bottom margin-right=60 }
+		region {name=button width=48 height=48}
+		region {name=text width=max height=48 margin-left=48}
+		
+		place { control="StatusPaused" region=button height=max width=max}
+		place { control="StatusComplete" region=button height=max width=max}
+		
+		place { control="StatusDownloading" region=text margin-left=10 margin-top=7} //Also Offline mode status
+	 	place { control="StatusProgressbar" region=text width=max height=5 align=bottom margin-bottom=9 margin-right=10 margin-left=10}
 	}
 }

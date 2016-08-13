@@ -20,10 +20,8 @@
 
 		headertextlarge
 		{
-			padding-bottom=5
-			padding-top=5
-			font-size=30
-			font-size=42 [$WINDOWS]
+			font-size=32
+			font-size=46 [$WINDOWS]
 			font-family=basefont
 			font-weight=400 
 			bgcolor=none

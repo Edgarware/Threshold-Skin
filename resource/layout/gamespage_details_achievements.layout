@@ -32,12 +32,7 @@
 	{
 		achievementsdetails 
 		{ 
-			
-			render_bg
-			{
-				1="fill(x0+20,y1-1,x1-20,y1,Root.Div)"
-			}
-
+			bgcolor=Root.RightCol
 		}
 
 		everythinglabel
@@ -51,7 +46,7 @@
 
 	layout
 	{
-		region { name=body margin=10 margin-left=20 width=max height=max }
+		region { name=body margin=10 margin-left=15 width=max height=max }
 
 		place { region=body control=headerlabel width=max }
 		place { region=body control=mostrecent_area,everythinglabel,locked_area dir=down y=25 width=max }

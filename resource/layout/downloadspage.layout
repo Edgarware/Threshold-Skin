@@ -31,7 +31,7 @@
 			render_bg 
 			{	
 				// background gradient
-				0="fill( x0, y0 - 5, x1 + 2, y1+2, Root.Header)"
+				0="fill( x0, y0 - 5, x1 + 2, y1+2, List.Header)"
 			}
 		}
 		SectionHeaderStyle
@@ -41,7 +41,7 @@
 			render_bg 
 			{	
 				// background gradient
-				0="fill( x0, y0 - 5, x1, y1+2, Root.Header)"
+				0="fill( x0, y0 - 5, x1, y1+2, List.Header)"
 			}
 			render
 			{

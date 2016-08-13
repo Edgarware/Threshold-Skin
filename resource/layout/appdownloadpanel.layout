@@ -48,7 +48,7 @@
 	{
 		panelStyle
 		{
-			bgcolor=none
+			bgcolor=Root.RightCol
 			render_bg
 			{
 				
@@ -60,7 +60,7 @@
 		{
 			render_bg
 			{
-				1="fill( x0, y0, x1, y1+3, Root.Header)"
+				1="fill( x0, y0, x1, y1+3, List.Header)"
 			}			
 		}
 
