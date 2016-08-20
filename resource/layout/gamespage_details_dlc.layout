@@ -16,7 +16,7 @@
 
 		RichText.InsetX "0"
 		RichText.InsetY "3" 
-		GameDetailsDLC.ExtraVerticalSpacing "200"
+		GameDetailsDLC.ExtraVerticalSpacing "220"
 	}
 
 	styles
@@ -47,21 +47,18 @@
 
 		"mostrecenttime"
 		{
-			padding-top=3
-			minimum-width=256
 		}
 	}
 
 	layout
 	{
-		region { name=body margin=10 margin-left=20 margin-right=20 width=max height=max }
+		region { name=body margin=10 margin-left=15 margin-right=15 width=max height=max}
 		place { region=body control=headerlabel width=max }
-		place { region=body y=26 control=latestimage width=257 height=120 }
-		place { region=body y=26 control=overlayimage width=257 height=120 }
-		place { region=body y=159 width=257 control=latesttimelabel }
-		place { region=body width=max control=dlclist }
-		place { region=body y=26 control=latestimage,dlclist dir=right height=120 spacing=9 }
-		place { region=body y=156 control=latesttimelabel,moredlc dir=right spacing=10 }
+		place { region=body control=latestimage start=headerlabel dir=down width=257 height=120 margin-top=10}
+		place { region=body control=overlayimage start=headerlabel dir=down width=257 height=120 margin-top=10}
+		place { region=body control=dlclist start=latestimage dir=right width=max height=120 margin-left=10}
+		place { region=body control=latesttimelabel start=latestimage dir=down height=32 margin-top=10}
+		place { region=body control=moredlc start=dlclist dir=down height=32 margin-top=10}
 	}
 
 }

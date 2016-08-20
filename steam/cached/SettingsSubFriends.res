@@ -31,7 +31,7 @@
 		place { control="Label5" start=JoinGamePlaySoundCheck dir=down margin-top=15 } //when any friend comes online
 		place { control="FriendOnlineNotifyCheck,FriendOnlinePlaySoundCheck" start=Label5 dir=down margin-top=4}
 		
-		place { control="Label6" start=Label4 dir=right margin-left=80 } //when I recieve a message
+		place { control="Label6" start=Label3 dir=down margin-top=15 x=250 } //when I recieve a message
 		place { control="ReceiveMessageNotifyCheck,ReceiveMessagePlaySoundCheck" start=Label6 dir=down margin-top=4}
 		
 		place { control="Label7" start=ReceiveMessagePlaySoundCheck dir=down margin-top=15 } //flash window when i receive a message

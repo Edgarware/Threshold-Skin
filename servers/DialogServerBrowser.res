@@ -57,7 +57,7 @@
 	
 	layout
 	{
-		place { control=GameTabs x=0 y=28 width=max height=max margin-bottom=11}
+		place { control=GameTabs x=0 y=28 width=max height=max margin-bottom=10}
 		place { control=StatusLabel width=0 height=0}
 	}
 }

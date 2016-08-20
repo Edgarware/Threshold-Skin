@@ -8,6 +8,8 @@ steam.styles
 	// cool we can define font-families here as well
     basefont="Segoe UI"
 	light="Segoe UI Light"
+	semilight="Segoe UI Semilight"
+	semibold="Segoe UI Semibold"
 	bold="Segoe UI Bold"
 	
 	//Standard Element/Text colors ********
@@ -67,7 +69,6 @@ steam.styles
 	Check.Outline.Hover=white
 	Check.Outline.Disabled="119 119 119 255"
 	Check.Active=Accent
-
 	Check.Text=DefaultText
 	Check.Text.Hover=DefaultText
 	Check.Disabled.Text=DefaultText.Disabled
@@ -400,56 +401,86 @@ steam.styles
     CheckButton
     {
 		font-family=basefont
-		inset="0 0 0 0"
-		minimum-height=20
+		inset="20 0 0 0"
+		minimum-height=24
+		minimum-width=20
 		font-size=15
 		font-size=20 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
-		image="graphics/Threshold/icons/check"
+		//image="graphics/Threshold/icons/check"
+		render
+		{
+			0="fill(x0,y0+4,x0+2,y0+24,Check.Outline)"
+			1="fill(x0+2,y0+4,x0+18,y0+6,Check.Outline)"
+			2="fill(x0+2,y0+22,x0+18,y0+24,Check.Outline)"
+			3="fill(x0+18,y0+4,x0+20,y0+24,Check.Outline)"
+		}
     }
   
     CheckButton:selected
     {
-		image="graphics/Threshold/icons/check_sel" 		
-    }
-
-    CheckButton:focus
-    {
-		textcolor=Check.Text
-		image="graphics/Threshold/icons/check" 
-	
+		//image="graphics/Threshold/icons/check_sel"
+		render
+		{
+			0="fill(x0,y0+4,x0+20,y0+24,Check.Active)"
+			1="image(x0+2,y0+6,x1,y1,graphics/Threshold/icons/check_sel1)"
+		}
     }
 	
 	CheckButton:hover
     {
 		textcolor=Check.Text.Hover
-		image="graphics/Threshold/icons/check_hover" 
-
-    }
-
-    CheckButton:selected:focus
-    {
-		textcolor=Check.Text
-		image="graphics/Threshold/icons/check_sel"
+		//image="graphics/Threshold/icons/check_hover" 
+		render
+		{
+			0="fill(x0,y0+4,x0+2,y0+24,Check.Outline.Hover)"
+			1="fill(x0+2,y0+4,x0+18,y0+6,Check.Outline.Hover)"
+			2="fill(x0+2,y0+22,x0+18,y0+24,Check.Outline.Hover)"
+			3="fill(x0+18,y0+4,x0+20,y0+24,Check.Outline.Hover)"
+		}
     }
 	
 	CheckButton:selected:hover
     {
 		textcolor=Check.Text.Hover
-		image="graphics/Threshold/icons/check_sel_hover"	
+		//image="graphics/Threshold/icons/check_sel_hover"
+		render
+		{
+			0="fill(x0,y0+4,x0+20,y0+24,Check.Active)"
+			1="image(x0+2,y0+6,x1,y1,graphics/Threshold/icons/check_sel1)"
+			2="fill(x0,y0+4,x0+2,y0+24,Check.Outline.Hover)"
+			3="fill(x0+2,y0+4,x0+18,y0+6,Check.Outline.Hover)"
+			4="fill(x0+2,y0+22,x0+18,y0+24,Check.Outline.Hover)"
+			5="fill(x0+18,y0+4,x0+20,y0+24,Check.Outline.Hover)"
+		}
     }
     
     CheckButton:disabled
     {
 		textcolor=Check.Disabled.Text
-		image="graphics/Threshold/icons/check_dis"
+		//image="graphics/Threshold/icons/check_dis"
+		render
+		{
+			0="fill(x0,y0+4,x0+2,y0+24,Check.Outline.Disabled)"
+			1="fill(x0+2,y0+4,x0+18,y0+6,Check.Outline.Disabled)"
+			2="fill(x0+2,y0+22,x0+18,y0+24,Check.Outline.Disabled)"
+			3="fill(x0+18,y0+4,x0+20,y0+24,Check.Outline.Disabled)"
+		}
     }
     
     CheckButton:selected:disabled
     {
 		textcolor=Check.Disabled.Text
-		image="graphics/Threshold/icons/check_sel_dis"
+		//image="graphics/Threshold/icons/check_sel_dis"
+		render
+		{
+			0="fill(x0,y0+4,x0+2,y0+24,Check.Outline.Disabled)"
+			1="image(x0+2,y0+6,x1,y1,graphics/Threshold/icons/check_dis1)"
+			2="fill(x0+2,y0+4,x0+18,y0+6,Check.Outline.Disabled)"
+			3="fill(x0+2,y0+22,x0+18,y0+24,Check.Outline.Disabled)"
+			4="fill(x0+18,y0+4,x0+20,y0+24,Check.Outline.Disabled)"
+		}
     }
 
 	IndeterminateCheckButton
@@ -471,10 +502,10 @@ steam.styles
 
     CheckButtonList
     {
-        inset="1 1 1 1"
+        inset="0 1 1 1"
         textcolor=List.Text
         bgcolor=List.Back
-        render	{}  
+        render{}
 		render_bg {				
 			// background gradient        
 			0="fill( x0, y0, x1, y1, List.Back )"
@@ -483,12 +514,11 @@ steam.styles
     
     CheckButtonList:scrollbar
     {
-        inset="1 1 1 1"
     } 
     
     "Page CheckButtonList"
     {
-        inset="1 1 1 1"
+		inset="0 1 1 1"
         textcolor=List.Text
         bgcolor=List.Page
         render	{      	}  
@@ -501,7 +531,6 @@ steam.styles
     
     "Page CheckButtonList:scrollbar"
     {
-        inset="1 1 1 1"
    	}
     
     "CheckbuttonList Checkbutton"
@@ -781,8 +810,8 @@ steam.styles
 		selectedtextcolor=Label.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=12
-		font-size=15 [$WINDOWS]
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-weight=400
  	}
    
@@ -951,6 +980,7 @@ steam.styles
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check"
 		inset="0 0 0 0"
+		render{}
     }   
 
     ListPanelCheckBox:selected
@@ -2452,8 +2482,8 @@ steam.styles
 		textcolor=URL.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=13
-		font-size=15 [$WINDOWS]
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-weight=400
 		font-style=underline
 		selectedtextcolor=DefaultText.Selected
@@ -2857,46 +2887,42 @@ steam.styles
       
 	gamedetails-headerlabel
 	{
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=16
+		font-size=24 [$WINDOWS]
 		font-style="normal"
-		font-family=basefont
-		font-weight=700
+		font-family=semilight
+		font-weight=400
 		textcolor=DefaultText
-		//font-style="uppercase;"
 	}
 
 	gamedetails-headerlabel-red
 	{
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=16
+		font-size=24 [$WINDOWS]
 		font-style="normal"
-		font-family=basefont
-		font-weight=700
+		font-family=semilight
+		font-weight=400
 		textcolor="Accent"
-		//font-style="uppercase;"
 	}
  	
 	gamedetails-headerlabel-green
 	{
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=16
+		font-size=24 [$WINDOWS]
 		font-style="normal"
 		textcolor="Accent"
-		font-family=basefont
-		font-weight=700
-		//font-style="uppercase;"
+		font-family=semilight
+		font-weight=400
 	}
 
 	gamedetails-headerlabel-blue
 	{
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=16
+		font-size=24 [$WINDOWS]
 		font-style="normal"
 		textcolor="Accent"
-		font-family=basefont
-		font-weight=700
-		//font-style="uppercase;"
+		font-family=semilight
+		font-weight=400
 	}
 	
 	// styles for text used in RichText controls in various places
@@ -3219,28 +3245,28 @@ steam.styles
 	CGamePropertiesDialog
 	{
 		render_bg {
-			0="fill(x0, y0, x1, y0+56, Page.Tab)"
+			0="fill(x0, y0, x1, y0+64, Page.Tab)"
 		}
 	}
 	
 	CServerBrowserDialog
 	{
 		render_bg {
-			0="fill(x0, y0, x1, y0+56, Page.Tab)"
+			0="fill(x0, y0, x1, y0+64, Page.Tab)"
 		}
 	}
 	
 	CInternetGames
 	{
 		render_bg {
-			0="fill(x0, y0, x1, y1 - 32, Page.Tab)"
+			0="fill(x0, y0, x1, y1 - 42, Page.Tab)"
 		}
 	}
 	
 	COverlaySettingsDialog
 	{
 		render_bg {
-			0="fill(x0, y0, x1, y0+60, Page.Tab)"
+			0="fill(x0, y0, x1, y0+64, Page.Tab)"
 		}
 	}
 	

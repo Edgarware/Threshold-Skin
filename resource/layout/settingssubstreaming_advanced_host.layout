@@ -53,11 +53,13 @@
 	
 	layout
 	{
-		region { name="buttons" width=max height=36 align="bottom" }
+		region { name=hidden width=0 height=0}
+		region { name="buttons" width=max height=42 align="bottom" }
 	
+		place { control=DescriptionLabel region=hidden }
 		place
 		{
-			control="DescriptionLabel,DynamicallyAdjustResolution,EnableHardwareEncoding"
+			control="DynamicallyAdjustResolution,EnableHardwareEncoding"
 			dir=down
 			align=top
 			width=max
@@ -68,24 +70,13 @@
 		}
 		place
 		{
-			control="EnableHardwareEncoding"
-			dir=down
-			align=top
-			width=max
-			margin-left=20
-			margin-right=20
-			margin-top=100
-			spacing=0
-		}
-		place
-		{
 			control="EnableHardwareEncodingNVIDIA"
 			dir=down
 			align=top
 			width=max
 			margin-left=45
 			margin-right=20
-			margin-top=125
+			margin-top=105
 			spacing=0
 		}
 		place
@@ -96,7 +87,7 @@
 			width=max
 			margin-left=70
 			margin-right=20
-			margin-top=150
+			margin-top=135
 			spacing=0
 		}
 		place
@@ -107,7 +98,7 @@
 			width=max
 			margin-left=45
 			margin-right=20
-			margin-top=175
+			margin-top=165
 			spacing=0
 		}
 		place
@@ -118,7 +109,7 @@
 			width=max
 			margin-left=20
 			margin-right=20
-			margin-top=245
+			margin-top=225
 			spacing=0
 		}
 		place
@@ -129,16 +120,11 @@
 			width=max
 			margin-left=20
 			margin-right=20
-			margin-top=295
+			margin-top=280
 			spacing=0
 		}
 		
-		place { control="SupportInformationLabel" region="buttons"
-						margin-left=20 margin-top=0
-						margin-bottom=2 spacing=10 }
-		place { control="OKButton" region="buttons"
-		        width=92 height=25 align=right
-						margin-right=10 margin-top=0
-						margin-bottom=2 spacing=10 }
+		place { control="SupportInformationLabel" region="buttons" margin-left=20 height=32 }
+		place { control="OKButton" region="buttons" width=92 align=right margin-right=10 }
 	}
 }

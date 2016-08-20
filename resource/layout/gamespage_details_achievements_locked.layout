@@ -35,15 +35,15 @@
 		infolabel
 		{
 
-			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=15
+			font-size=20 [$WINDOWS]
 		}
 
 		achievementlabelmore
 		{
 			inset="-3 0 0 0"
-			font-size=14
-			font-size=18 [$WINDOWS]
+			font-size=15
+			font-size=20 [$WINDOWS]
 			textcolor=Button.Text
 			font-family=basefont
 		     	render_bg
@@ -56,8 +56,8 @@
 		achievementlabelmore:hover
 		{
 			inset="-3 0 0 0"
-			font-size=14
-			font-size=18 [$WINDOWS]
+			font-size=15
+			font-size=20 [$WINDOWS]
 			textcolor=Button.Hover.Text
 			font-family=basefont
 		    	 render_bg
@@ -83,13 +83,10 @@
 	layout
 	{
 		region { name=body margin=0 width=max height=max }
-		region { name=images region=body x=0 y=20 margin=2 width=max height=48 }
+		region { name=images region=body x=0 y=23 margin=2 width=max height=48 }
 
-		
 		place { region=body control=imageexplanation y=0 }
 
-
-			
 		place 
 		{ 
 			region=images 

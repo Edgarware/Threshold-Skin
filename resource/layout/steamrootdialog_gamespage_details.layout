@@ -271,12 +271,12 @@
 		rightcolumntag
 		{
 			inset="0 -5 0 0"
-			font-size=26
-			font-size=32 [$WINDOWS]
+			font-size=28
+			font-size=34 [$WINDOWS]
 			font-style=normal
 			textcolor=Accent
 			padding=10
-			font-family=basefont
+			font-family=light
 			render_bg
 			{
 				1="fill(x0,y0,x1,y1,Root.BackTransparent)"
@@ -301,8 +301,7 @@
 		region	{ name="details" y=0 x=275 width=max height=max margin-top=48 overflow=scroll-vertical} //overflow
 		region  { name="header" region=details y=0 x=0 width=max height=300}
 		region	{ name="headertext" region=header y=10 x=10 width=max height=max margin-right=20 }
-		region  { name="tags" region=header y=230 height=50 width=max}
-		region  { name="links" region=header align=bottom height=35 width=max overflow=scroll-horizontal }
+		region  { name="links" region=header align=bottom height=50 width=max overflow=scroll-horizontal }
 		region  { name="detailsbody" region=details y=300 margin-top=15 margin-right=15 margin-left=15 height=max width=max overflow=allow-vertical}
 
 		// Empty list text, which goes across regions
@@ -319,10 +318,8 @@
 			dir=down
 			width=max
 			spacing=15
-			
 		}
 
-		
 		// Details border
 		place 	{ control=DetailsBorder y=0 x=0 width=max height=max }
 
@@ -332,20 +329,22 @@
 		place { control=headerimageb region=header width=max height=max align=top-center margin-top=-75 }
 
 		// Header text
-		place 	{ control=gametitleheader region=headertext}
-		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down}
+		place 	{ control=gametitleheader region=headertext dir=down height=60 }
+		place	{ control=gamesubheader region=headertext start=gametitleheader dir=down height=55 }
+		place	{ control=*taglink region=headertext start=gamesubheader dir=right height=55}
 		
-		// Buttons and links on the right
+		// Links
 		place	
 		{ 
-			control=*taglink,sendguestpasslink,storelink,gamehublink,forumlink,ogglink,achievementslink,newslink,dlclink,cdkeylink,manuallink,guidelink,guideslink,supportlink,recommendlink
+			control=sendguestpasslink,storelink,gamehublink,forumlink,ogglink,achievementslink,newslink,dlclink,cdkeylink,manuallink,guidelink,guideslink,supportlink,recommendlink
 			region=links
-			dir=right 
+			height=32
+			dir=right
+			align=bottom
 		}
 		
 		place{ control="linkslabel,tagslabel,edittagslink" region=hidden}
 
-		
 	}
 
 }

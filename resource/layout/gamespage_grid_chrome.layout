@@ -62,82 +62,77 @@
 			textcolor=DefaultText
 			bgcolor="none"
 			font-family=basefont
-			//font-weight=700
 			inset="1 1 0 0 "
-			// modified font size
-			font-size=14
-			font-size=16 [$WINDOWS]	
+			font-size=15
+			font-size=20 [$WINDOWS]	
 		}
 		
 		CUILaunchButton
 		{   
-		  font-family=basefont
-		  font-size=14
-			font-size=16 [$WINDOWS]	
-		  font-weight=400
-		  textcolor=DefaultText
-		  font-style=none
-		  bgcolor=none   
-		  padding-left=23
-		  padding-top=1
-		  render
-		  {
-			1="image( x0+4, y0+3, x1, y1, graphics/Threshold/icons/play )"
-		  }
-
-      
+			font-family=basefont
+			font-size=15
+			font-size=20 [$WINDOWS]	
+			font-weight=400
+			textcolor=DefaultText
+			font-style=none
+			bgcolor=none   
+			padding-left=23
+			padding-top=1
+			render
+			{
+				1="image( x0+4, y0+4, x1, y1, graphics/Threshold/icons/play )"
+			}
 		}
 		
 		CUILaunchButton:Hover
 		{   
-		  font-family=basefont
-		  font-size=14
-		  font-size=16 [$WINDOWS]	
-		  font-weight=400
-		  textcolor=DefaultText.Hover
-		  font-style=none
-		  padding-top=1
-		  bgcolor=none   
-		  
-		  render
-		  {
-			1="image( x0+4, y0+3, x1, y1, graphics/Threshold/icons/play_hover )"
-		  }
+			font-family=basefont
+			font-size=15
+			font-size=20 [$WINDOWS]	
+			font-weight=400
+			textcolor=DefaultText.Hover
+			font-style=none
+			padding-top=1
+			bgcolor=none   
+
+			render
+			{
+				1="image( x0+4, y0+4, x1, y1, graphics/Threshold/icons/play_hover )"
+			}
 		}
 	
 		CUIDetailsButton
 		{   
-		  font-family=basefont
-		  font-size=14
-		  font-size=16 [$WINDOWS]	
-		  font-weight=400
-		  textcolor=DefaultText
-		  font-style=none
-		  bgcolor=none   
-		  padding-left=22
-		  padding-top=1
-		  
-		  render
-		  {
-			1="image( x0, y0+3, x1, y1, graphics/Threshold/icons/search_hover )"
-		  }
-      
+			font-family=basefont
+			font-size=15
+			font-size=20 [$WINDOWS]	
+			font-weight=400
+			textcolor=DefaultText
+			font-style=none
+			bgcolor=none   
+			padding-left=22
+			padding-top=1
+
+			render
+			{
+				1="image( x0, y0+4, x1, y1, graphics/Threshold/icons/search_hover )"
+			}
 		}
 		
 		CUIDetailsButton:Hover
 		{   
-		  font-family=basefont
-		  font-size=14
-		  font-size=16 [$WINDOWS]	
-		  font-weight=400
-		  textcolor=DefaultText.Hover
-		  font-style=none
-		  bgcolor=none   
-		  padding-top=1
-		  render
-		  {
-			1="image( x0, y0+3, x1, y1, graphics/Threshold/icons/search )"
-		  }
+			font-family=basefont
+			font-size=15
+			font-size=20 [$WINDOWS]	
+			font-weight=400
+			textcolor=DefaultText.Hover
+			font-style=none
+			bgcolor=none   
+			padding-top=1
+			render
+			{
+				1="image( x0, y0+4, x1, y1, graphics/Threshold/icons/search )"
+			}
 		}
 	
 
@@ -159,7 +154,7 @@
 
 		place
 		{
-			control="launch,divider,details"	region="actions"		align=top-center spacing=7 margin-bottom=18 margin-left=0 margin-top=8
+			control="launch,divider,details"	region="actions"		align=top-center spacing=8 margin-bottom=18 margin-left=0 margin-top=8
 		}
 	}
 }

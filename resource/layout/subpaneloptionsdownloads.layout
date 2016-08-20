@@ -66,7 +66,7 @@
 		
 		padded
 		{
-			//padding-top=6
+			padding-top=6
 		}
 		
 		
@@ -96,10 +96,10 @@
 		place { controls="AutoUpdateTimeRestrictEndLabel" region=box start=AutoUpdateTimeRestrictStart dir=right margin-left=20 }
 		place { controls="AutoUpdateTimeRestrictEnd" region=box start=AutoUpdateTimeRestrictEndLabel dir=right margin-left=10 width=78 }
 		
-		place { controls="ThrottleRatesLabel" region=box start=RestrictionsLabel dir=down margin-top=13 margin-left=260 }
+		place { controls="ThrottleRatesLabel" region=box start=RestrictionsLabel dir=down margin-left=260 margin-top=6 }
 		place { controls="ThrottleRates" region=box start=ThrottleRatesLabel dir=down width=235 height=25 margin-top=10 }
 		
-		place { controls="AllowDownloadsDuringGameplayCheckbox" region=box start=AutoUpdateTimeRestrictStartLabel dir=down margin-top=10 }
+		place { controls="AllowDownloadsDuringGameplayCheckbox" region=box start=AutoUpdateTimeRestrictStartLabel dir=down margin-top=15 }
 		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=box start=AllowDownloadsDuringGameplayCheckbox dir=down }
 		place { controls="DownloadRatesInBitsCheckbox" region=box start=ThrottleDownloadsWhileStreamingCheckbox dir=down }
 		

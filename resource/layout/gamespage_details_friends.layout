@@ -13,7 +13,7 @@
 
 	colors
 	{
-		GameDetailsFriends.ExtraVerticalSpacing=75	
+		GameDetailsFriends.ExtraVerticalSpacing=100	
 	}
 
 	styles
@@ -26,7 +26,7 @@
 		infolabel
 		{
 			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=18 [$WINDOWS]
 		}	
 		
 	}
@@ -39,7 +39,9 @@
 		place 
 		{ 
 			region=body
-			y=25 
+			start=headerlabel
+			dir=down
+			margin-top=10
 			width=max
 			height=72
 			control=listplayingnow,listplayever
@@ -47,6 +49,6 @@
 			spacing=0
 			margin=0
 		}
-		place {	region=body control=viewall align=bottom margin-bottom=5 }
+		place {	region=body control=viewall start=listplayever dir=down margin-top=10 }
 	}
 }

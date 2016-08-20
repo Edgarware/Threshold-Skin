@@ -38,14 +38,14 @@
 	{
 		region { name=box margin-top=20 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
 		
-		place { control=SteamCloudInfo region=box width=350 }
+		place { control=SteamCloudInfo region=box width=max }
 		place { 
 			controls=", EnableCloudCheck, EnableScreenshotsCheck" 
 			start = SteamCloudInfo
 			margin-top = 10
 			region=box 
 			dir=down 
-			width=450
+			width=max
 			spacing = 1
 			}		
 	}

@@ -39,20 +39,21 @@
 		mostrecent_label
 		{
 			font-size=14
-			font-size=17 [$WINDOWS]
+			font-size=16 [$WINDOWS]
 			font-weight=400
 		}
 		
 		mostrecent_name
 		{
-			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=17
+			font-size=26 [$WINDOWS]
 		}
 
 		mostrecent_unlockedsofar
 		{
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=14
+			font-size=16 [$WINDOWS]
+			font-family=semibold
 			textcolor=Root.SubLabel.Text
 		}
 
@@ -72,7 +73,7 @@
 			bgcolor=Accent
 			render
 			{
-				0="fill( x0, y0, x1, y1, Accent )"
+				0="fill( x0, y0, x1+1, y1, Accent )" //Progressbar is 1px off
 			}
 		}
 	}
@@ -81,14 +82,14 @@
 	{
 		region { name=body margin=0 width=max height=max }
 
-		place { region=body control=mostrecent_label x=82 y=8 width=max }
+		place { region=body control=mostrecent_label x=82 y=9 width=max }
 		place { region=body control=mostrecent_name x=82 y=25 width=max }
-		place { region=body control=mostrecent_unlockedsofar x=82 y=44 width=max }
+		place { region=body control=mostrecent_unlockedsofar x=82 y=54 width=max }
 
 		place { region=body control=mostrecent_background x=2 y=2 width=80 height=80 }
 		place { region=body control=mostrecent_image x=5 y=10 width=64 height=64 }
 
-		place { region=body control=progressbackground y=92 width=max height=10 margin-right=44 }
-		place { region=body control=progressbarimage y=92 height=10 margin-left=0 margin-right=0 }
+		place { region=body control=progressbackground y=92 width=max height=10}
+		place { region=body control=progressbarimage y=92 height=10}
 	}
 }

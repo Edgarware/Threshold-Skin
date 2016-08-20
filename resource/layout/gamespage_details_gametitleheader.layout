@@ -22,7 +22,7 @@
 		{
 			font-size=32
 			font-size=46 [$WINDOWS]
-			font-family=basefont
+			font-family=light
 			font-weight=400 
 			bgcolor=none
 		}

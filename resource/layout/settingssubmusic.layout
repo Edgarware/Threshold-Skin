@@ -65,14 +65,14 @@
 		LibraryListStyle
 		{
 			bgcolor=List.Back
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=15
+			font-size=20 [$WINDOWS]
 		}
 		
 		HeaderText
 		{
 			textcolor=DefaultText
-			font-size=16
+			font-size=15
 			font-size=20 [$WINDOWS]
 		}
 		
@@ -99,9 +99,10 @@
 
 		place { control=DatabaseDivider region=content start=ResetDatabaseButton dir=down margin-top=15 width=max }
 		
-		place { control=VolumeHeader region=content start=DatabaseDivider dir=down margin-top=10 }
-		place { control=VolumeSlider,EnableMediaKeysCheckbox region=content start=VolumeHeader dir=right margin-left=10 spacing=10 }
-		place { control=VolumeDivider region=content start=VolumeHeader dir=down margin-top=10 width=max }
+		place { control=VolumeHeader region=content start=DatabaseDivider dir=down margin-top=15 }
+		place { control=VolumeSlider region=content start=VolumeHeader dir=right margin-left=10 width=200 spacing=10 }
+		place { control=EnableMediaKeysCheckbox region=content start=VolumeHeader dir=down margin-top=10 spacing=10 }
+		place { control=VolumeDivider region=content start=EnableMediaKeysCheckbox dir=down margin-top=10 width=max }
 		
 		place { control=PauseMusicHeader region=content start=VolumeDivider dir=down margin-top=10 }
 		place { control="PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox" region=content start=PauseMusicHeader dir=down margin-top=5 }

@@ -164,7 +164,7 @@
 
 			render
 			{
-				1="image( x0, y0 + 5, x1, y1, graphics/Threshold/music/play )"
+				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play )"
 			}
 		}
 		ActionButtonStyle:hover
@@ -172,7 +172,7 @@
 			textcolor=DefaultText.Hover
 			render
 			{
-				1="image( x0, y0 + 5, x1, y1, graphics/Threshold/music/play_hover )"
+				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play_hover )"
 			}
 		}
 		
@@ -181,14 +181,14 @@
 			textcolor=DefaultText.Hover
 			render
 			{
-				1="image( x0, y0 + 5, x1, y1, graphics/Threshold/music/play )"
+				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play )"
 			}
 		}
 	}
 
 	layout
 	{
-		region { name=bodyregion x=10 y=10 width=max height=max overflow=scroll-vertical }		
+		region { name=bodyregion margin=10 overflow=allow-vertical}		
 		//region { name=headerregion x=10 y=20 width=max height=max overflow=scroll-vertical }
 		//region { name=leftcolumn x=20 width=200 overflow=scroll-vertical }
 		//region { name=trackcolumn width=max overflow=scroll-vertical }

@@ -361,9 +361,9 @@
 	layout
 	{
 		region { name=filters align=left margin-bottom=32 margin-right=12 margin-left=12 width=200 height=max}
-		region { name="bottom" align=bottom width=max height=24 margin=0 }
+		region { name="bottom" align=bottom width=max height=32 margin=0 }
 		
-		place { control=gamelist margin-bottom=32 margin-left=200 width=max height=max}
+		place { control=gamelist y=10 margin-bottom=42 margin-left=200 width=max height=max}
 		
 		place { control="GameFilterLabel, GameFilter" margin-top=15 dir=down spacing=8 region=filters }
 		place { control="MapFilterLabel, MapFilter" start=GameFilter margin-top=15 dir=down spacing=8 region=filters }
@@ -372,7 +372,7 @@
 		place { control="ServerEmptyFilterCheck, ServerFullFilterCheck, NoPasswordFilterCheck" start=SecureFilter margin-top=15 dir=down region=filters}
 		
 		place { control="AddServerButton,RefreshQuickButton,RefreshButton,ConnectButton" region="bottom" margin-right=12 spacing=8 height=24 align=right }
-		place { control="Filter,FilterString" region="bottom" height=24 width=max end-right="AddServerButton" margin-left=12 spacing=8 }
+		place { control="Filter,FilterString" region="bottom" height=32 width=max end-right="AddServerButton" margin-left=12 spacing=8 }
 		
 		
 	}

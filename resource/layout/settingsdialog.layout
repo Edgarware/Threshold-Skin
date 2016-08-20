@@ -50,12 +50,12 @@
 	}
 	layout
 	{
-		region { name="buttons" width=max height=36 align="bottom" }
-		region { name="body" margin-bottom=46 }		
+		region { name="buttons" width=max height=42 align="bottom" }
+		region { name="body" margin-bottom=52 }		
 		
 		place { control="settingslist,sheet" region=body width=max height=max spacing=-4  }
 		place { control="settingslist" margin-top=32  }
 		place { control="sheet" margin-left=200 margin-top=32 }
-		place { control="okbutton,cancelbutton" region="buttons" width=92 height=32 align=right margin-right=10 margin-top=0 margin-bottom=2 spacing=10 }
+		place { control="okbutton,cancelbutton" region="buttons" width=92 height=32 align=right margin-right=10 spacing=10 }
 	}
 }

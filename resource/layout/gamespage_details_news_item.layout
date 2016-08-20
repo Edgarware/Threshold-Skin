@@ -22,15 +22,16 @@
 	{
 		title_label
 		{
-			font-size=14
-			font-size=17 [$WINDOWS]
-			font-weight=800
+			font-size=15
+			font-size=20 [$WINDOWS]
+			font-weight=400
 		}
 
 		date_and_author
 		{
-			font-size=12
-			font-size=14 [$WINDOWS]
+			font-size=13
+			font-size=15 [$WINDOWS]
+			font-family=semibold
 			textcolor=Root.SubLabel.Text
 		}
 
@@ -64,7 +65,8 @@
 		
 		"newsitem_body bold"
 		{
-			font-weight=1000
+			font-weight=400
+			font-family=bold
 			textcolor=Root.Label.Text
 			selectedtextcolor=Root.Label.Text	
 		}
@@ -72,6 +74,7 @@
 		{
 			textcolor=Root.Label.Text
 			selectedtextcolor=Root.Label.Text
+			font-style="italic"
 		}
 		
 		more_link

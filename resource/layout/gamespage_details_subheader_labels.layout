@@ -19,48 +19,45 @@
 	{
 		headertext
 		{
-			padding-bottom=-1
-			font-size=12
-			font-size=13 [$WINDOWS]
+			font-size=13
+			font-size=15 [$WINDOWS]
 			textcolor=Accent
-			font-weight=700
 		}
 
 		headertext-red
 		{
-			padding-bottom=-1
-			font-size=12
-			font-size=13 [$WINDOWS]
+			font-size=13
+			font-size=15 [$WINDOWS]
 			textcolor=Accent
-			font-weight=700
 		}
 
 		headertext-green
 		{
-			padding-bottom=-1
-			font-size=12
-			font-size=13 [$WINDOWS]
+			font-size=13
+			font-size=15 [$WINDOWS]
 			textcolor=Accent
-			font-weight=700
 		}
 
 		headertext-blue
 		{
-			padding-bottom=-1
-			font-size=12
-			font-size=13 [$WINDOWS]
+			font-size=13
+			font-size=15 [$WINDOWS]
 			textcolor=Accent
-			font-weight=700
 		}
 
 		valuetext
 		{
-			font-size=12
-			font-size=13 [$WINDOWS]
+			font-size=13
+			font-size=15 [$WINDOWS]
 		}
 	}
 
 	layout
 	{
+		place { control=totalplaytimeheader,streamheader,shareheader,gameplayedheader dir=down spacing=0}
+		place { control=totalplaytimevalue start=totalplaytimeheader dir=right}
+		place { control=streamvalue start=streamheader dir=right}
+		place { control=sharevalue start=shareheader dir=right}
+		place { control=gameplayedvalue start=gameplayedheader dir=right}
 	}
 }

@@ -39,11 +39,10 @@
 	
 	layout
 	{
-		region { name="buttons" width=max height=36 align="bottom" }
+		region { name=hidden width=0 height=0}
+		region { name="buttons" width=max height=42 align="bottom" }
 
-		place { control="DescriptionLabel"
-				margin-left=20 margin-right=20 margin-top=40 width=max
-				margin-bottom=2 }
+		place { control="DescriptionLabel" region=hidden margin-left=20 margin-right=20 margin-top=40 width=max margin-bottom=2 }
 
 		place
 		{
@@ -52,15 +51,10 @@
 			width=max
 			margin-left=20
 			margin-right=20
-			margin-top=90
+			margin-top=40
 			spacing=10
 		}
-		place { control="SupportInformationLabel" region="buttons"
-						margin-left=20 margin-top=0 height=25
-						margin-bottom=2 spacing=10 }
-		place { control="OKButton" region="buttons"
-		        width=92 height=25 align=right
-						margin-right=10 margin-top=0
-						margin-bottom=2 spacing=10 }
+		place { control="SupportInformationLabel" region="buttons" margin-left=20 margin-top=0 height=32 }
+		place { control="OKButton" region="buttons" width=92 align=right margin-right=10 }
 	}
 }
