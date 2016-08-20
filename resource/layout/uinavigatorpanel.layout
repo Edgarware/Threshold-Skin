@@ -7,10 +7,12 @@
 			bgcolor=none
 			inset="13 0 0 0"
 			image="graphics/Threshold/back_sm_dis"
-			render_bg {}
+			render_bg {
+				0="fill(x0,y0,x1,y1,TitleBar)"
+			}
 			render
 			{
-				0="image(x0+60, y0+11, x1, y1, graphics/Threshold/title)"
+				0="image(x0+60, y0+12, x1, y1, graphics/Threshold/title)"
 			}
 		}
 		
@@ -22,7 +24,7 @@
 			}
 			render
 			{
-				0="image(x0+60, y0+11, x1, y1, graphics/Threshold/titlefocus)"
+				0="image(x0+60, y0+12, x1, y1, graphics/Threshold/titlefocus)"
 			}
 		}
 		
@@ -45,9 +47,7 @@
 			bgcolor=none
 			image="none"
 			render_bg {}
-			render{
-				0="image(x0+13, y0+11, x1, y1, graphics/Threshold/titlefocus)"
-			}
+			render {}
 		}
 		
 		grouper
@@ -249,13 +249,14 @@
 		NavLabel2
 		{
 			font-family=basefont
-			font-size=16
-			font-size=24 [$WINDOWS]
+			font-size=15
+			font-size=20 [$WINDOWS]
 			font-weight=400
 			textcolor=Root.Label.Text
+			font-style=uppercase
 			inset="0 0 6 0"
 			render{
-				0="image(x1-7,y0+22,x1,y1,graphics/Threshold/icons/down)"
+				0="image(x1-7,y0+20,x1,y1,graphics/Threshold/icons/down)"
 			}
 		}
 		
@@ -264,7 +265,7 @@
 			textcolor=Root.Label.Hover.Text
 			inset="0 0 6 0"
 			render{
-				0="image(x1-7,y0+22,x1,y1,graphics/Threshold/icons/down_hover)"
+				0="image(x1-7,y0+20,x1,y1,graphics/Threshold/icons/down_hover)"
 			}
 		}	
 		
@@ -273,7 +274,7 @@
 			textcolor=Root.Label.Text
 			inset="0 0 6 0"
 			render{
-				0="image(x1-7,y0+22,x1,y1,graphics/Threshold/icons/down)"
+				0="image(x1-7,y0+20,x1,y1,graphics/Threshold/icons/down)"
 			}
 		}
 		

@@ -399,11 +399,6 @@
 			}
 
 		}
-		
-		ClientTitle
-		{
-			textcolor=none
-		}
 
 		view_friends
 		{

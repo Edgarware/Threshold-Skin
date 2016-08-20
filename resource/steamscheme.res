@@ -167,7 +167,7 @@ Scheme
 				xpos	0 //9
 				ypos	32
 				wide	max
-				tall	r48
+				tall	r52
 			}
 			
 			// these buttons are still a bit special - if some of them are hidden, they shuffle
@@ -175,25 +175,25 @@ Scheme
 			ApplyButton
 			{
 				xpos	r101
-				ypos	r36
+				ypos	r42
 				wide	92
-				tall	24
+				tall	32
 			}
 			
 			CancelButton
 			{
 				xpos	r203
-				ypos	r36
+				ypos	r42
 				wide	92
-				tall	24
+				tall	32
 			}
 			
 			OKButton
 			{
 				xpos	r304
-				ypos	r36
+				ypos	r42
 				wide	92
-				tall	24
+				tall	32
 			}
 		}
 		
@@ -204,40 +204,40 @@ Scheme
 				xpos	0
 				ypos	32
 				wide	max
-				tall	r48
+				tall	r52
 				AutoResize	3
 			}
 		
 			PrevButton
 			{
 				xpos	r306
-				ypos	r36
+				ypos	r42
 				wide	92
-				tall	24
+				tall	32
 				PinCorner	3
 			}
 			NextButton
 			{
 				xpos	r204
-				ypos	r36
+				ypos	r42
 				wide	92
-				tall	24
+				tall	32
 				PinCorner	3
 			}
 			CancelButton
 			{
 				xpos	r102
-				ypos	r36
+				ypos	r42
 				wide	92
-				tall	24
+				tall	32
 				PinCorner	3
 			}
 			FinishButton
 			{
 				xpos	r102
-				ypos	r36
+				ypos	r42
 				wide	92
-				tall	24
+				tall	32
 				PinCorner	3
 			}
 		}

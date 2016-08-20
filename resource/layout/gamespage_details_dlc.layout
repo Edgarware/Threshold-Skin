@@ -36,13 +36,13 @@
 		"DLC_Uninstalled"
 		{
 			textcolor=DefaultText.Disabled
-			selectedtextcolor=DefaultText.Disabled
+			selectedtextcolor=DefaultText
 		}
 
 		"DLC_Installed"
 		{
 			textcolor=DefaultText
-			selectedtextcolor=DefaultText.Disabled
+			selectedtextcolor=DefaultText
 		}
 
 		"mostrecenttime"

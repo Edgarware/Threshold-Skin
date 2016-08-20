@@ -7,7 +7,8 @@ steam.styles
   {
 	// cool we can define font-families here as well
     basefont="Segoe UI"
-	semibold="Segoe UI Semibold"
+	light="Segoe UI Light"
+	bold="Segoe UI Bold"
 	
 	//Standard Element/Text colors ********
 	//TODO: Some of these colors arent actually used, fix or remove
@@ -62,23 +63,26 @@ steam.styles
 	Button.Active.Text=DefaultText
 	Button.Disabled.Text="109 109 109 255"
 	
-	//Check.Outline="204 204 204 255"
-	//Check.Hover.Outline=white
-	//Check.Active=Accent
+	Check.Outline="204 204 204 255"
+	Check.Outline.Hover=white
+	Check.Outline.Disabled="119 119 119 255"
+	Check.Active=Accent
+
 	Check.Text=DefaultText
-	Check.Text.Hover=DefaultText.Hover
+	Check.Text.Hover=DefaultText
 	Check.Disabled.Text=DefaultText.Disabled
 	
 	Radio.Outline="204 204 204 255"
 	Radio.Hover.Outline=white
 	Radio.Active=Accent
 	Radio.Text=DefaultText
-	Radio.Text.Hover=DefaultText.Hover
+	Radio.Text.Hover=DefaultText
 	Radio.Disabled.Text=DefaultText.Disabled
 	
 	ComboBox.Back="17 17 17 255"
+	ComboBox.Hover="Light"
 	ComboBox.Outline="119 119 119 255"
-	ComboBox.Hover=Light
+	ComboBox.Outline.Hover="153 153 153 255"
 	ComboBox.Active=ComboBox.Hover
 	ComboBox.Disabled=Button.Back
 	ComboBox.Text=DefaultText
@@ -202,6 +206,7 @@ steam.styles
 	Button
 	{     
 		font-family=basefont
+		minimum-height=32
 		font-size=15
 		font-size=20 [$WINDOWS]
 		font-weight=400
@@ -396,6 +401,7 @@ steam.styles
     {
 		font-family=basefont
 		inset="0 0 0 0"
+		minimum-height=20
 		font-size=15
 		font-size=20 [$WINDOWS]
 		font-weight=400
@@ -524,6 +530,7 @@ steam.styles
     ComboBox
     {
 		inset="3 0 0 0"
+		minimum-height=32
 		textcolor=ComboBox.Text
 		font-family=basefont
 		font-size=15
@@ -534,10 +541,10 @@ steam.styles
 		{     
 			// background fill
 			0="fill( x0, y0, x1, y1, ComboBox.Back )"
-			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
-			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
-			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
-			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
+			1="fill(x0, y0, x0+2, y1, ComboBox.Outline)" //left
+			2="fill(x1-2, y0, x1, y1, ComboBox.Outline)" //right
+			3="fill(x0, y0, x1, y0+2, ComboBox.Outline)" //top
+			4="fill(x0, y1-2, x1, y1, ComboBox.Outline)" //bottom
 		}
     }
     
@@ -546,95 +553,22 @@ steam.styles
 		render_bg
 		{     
 			// background fill
-			0="fill( x0, y0, x1, y1, ComboBox.Hover )"
-			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
-			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
-			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
-			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
-		}
-    }
-    
-    ComboBox:focus:hover
-    {
-		render_bg
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, ComboBox.Hover )"
-			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
-			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
-			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
-			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
-		}
-    }
-	
-    
-    "Page ComboBox"
-    {
-		render_bg
-		{     
-			// background fill
 			0="fill( x0, y0, x1, y1, ComboBox.Back )"
-			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
-			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
-			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
-			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
+			1="fill(x0, y0, x0+2, y1, ComboBox.Outline.Hover)" //left
+			2="fill(x1-2, y0, x1, y1, ComboBox.Outline.Hover)" //right
+			3="fill(x0, y0, x1, y0+2, ComboBox.Outline.Hover)" //top
+			4="fill(x0, y1-2, x1, y1, ComboBox.Outline.Hover)" //bottom
 		}
     }
-    
-    "Page ComboBox:focus"
-    {
-		render_bg
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, ComboBox.Back )"
-			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
-			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
-			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
-			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
-		}
-    }
-    
-    "Page ComboBox:hover"
-    {
-		render_bg
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, ComboBox.Hover )"
-			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
-			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
-			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
-			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
-		}
-    }
-    
-    "Page ComboBox:focus:hover"
-    {
-		render_bg
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, ComboBox.Hover )"
-			1="fill(x0, y0, x0+1, y1, ComboBox.Outline)" //left
-			2="fill(x1-1, y0, x1, y1, ComboBox.Outline)" //right
-			3="fill(x0, y0, x1, y0+1, ComboBox.Outline)" //top
-			4="fill(x0, y1-1, x1, y1, ComboBox.Outline)" //bottom
-		}
-    }
-    
     
     ComboBoxButton
     {      
 		bgcolor=none
-		padding-left=2
-		image="graphics/Threshold/icons/down"
+		textcolor=none
 		render_bg 
 		{
+			0="image(x0+6,y0+10,x1,y1,graphics/Threshold/icons/down)"
 		}
-    }
-    
-    
-    "Page ComboBoxButton"
-    {
-		image="graphics/Threshold/icons/down"
     }
     
     Divider
@@ -691,6 +625,7 @@ steam.styles
 	
 	FrameMinimizeButton:hover
 	{  
+		image="graphics/Threshold/window_controls/min"
 		bgcolor="TitleBar.Hover"
 	}
 	
@@ -713,6 +648,7 @@ steam.styles
 	
 	FrameMaximizeButton:hover
 	{
+		image="graphics/Threshold/window_controls/max"
 		bgcolor="TitleBar.Hover"
 	}
 	
@@ -736,6 +672,7 @@ steam.styles
 	
 	FrameRestoreButton:hover
 	{
+		image="graphics/Threshold/window_controls/restore"
 		bgcolor="TitleBar.Hover"
 	}
 
@@ -758,6 +695,7 @@ steam.styles
 
 	FrameCloseButton:hover
 	{
+		image="graphics/Threshold/window_controls/close"
 		bgcolor="TitleBar.CloseButton"
 	}
 
@@ -771,6 +709,7 @@ steam.styles
 	{
 		image="graphics/Threshold/window_controls/close" 
 	}
+	
 
     FrameTitle
     {
@@ -842,8 +781,8 @@ steam.styles
 		selectedtextcolor=Label.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=12
+		font-size=15 [$WINDOWS]
 		font-weight=400
  	}
    
@@ -851,8 +790,8 @@ steam.styles
     {
 		bgcolor=none
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -871,8 +810,8 @@ steam.styles
     "Page ListPanel"
 	{
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -891,8 +830,8 @@ steam.styles
 	{
 		font-family=basefont
 		bgcolor="none"
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -909,12 +848,12 @@ steam.styles
     "GameItem_Uninstalled"
     {
 		textcolor=Uninstalled.Text
-		selectedtextcolor=Uninstalled.Hover.Text
+		selectedtextcolor=Uninstalled.Text
     }
     "GameItem_Uninstalled:hover"
     {
 		textcolor=Uninstalled.Hover.Text
-		selectedtextcolor=Uninstalled.Hover.Text
+		selectedtextcolor=Uninstalled.Text
 	}
  
     "GameItem_Installed"
@@ -922,7 +861,6 @@ steam.styles
 		textcolor=Installed.Text
 		selectedtextcolor=Installed.Text
     }
-      
     "GameItem_Installed:hover"
     {
 		textcolor=Installed.Hover.Text
@@ -934,7 +872,6 @@ steam.styles
       textcolor=Running.Text
       selectedtextcolor=Running.Hover.Text
     }
-    
     "GameItem_Running:hover"
     {
       textcolor=Running.Hover.Text
@@ -944,79 +881,56 @@ steam.styles
     "GameItem_Shortcut"
     {
 		textcolor=Shortcut.Text
-		selectedtextcolor=Shortcut.Hover.Text
+		selectedtextcolor=Shortcut.Text
     }
-      
     "GameItem_Shortcut:hover"
     {
         textcolor=Shortcut.Hover.Text
-        selectedtextcolor=Shortcut.Hover.Text
+        selectedtextcolor=Shortcut.Text
     }
-    
+	
     "GameItem_Mod"
     {
 		textcolor=Mod.Text
-		selectedtextcolor=Mod.Hover.Text
+		selectedtextcolor=Mod.Text
     }
-      
     "GameItem_Mod:hover"
     {
         textcolor=Mod.Hover.Text
-        selectedtextcolor=Mod.Hover.Text
+        selectedtextcolor=Mod.Text
     }
 
     "GameItem_Updating"
     {
     	textcolor=Updating.Text
-    	selectedtextcolor=Updating.Hover.Text
+    	selectedtextcolor=Updating.Text
     }
-    
     "GameItem_Updating:hover"
     {
     	textcolor=Updating.Hover.Text
-    	selectedtextcolor=Updating.Hover.Text
-    }
-    
-    "GameItem_Updating:selected"
-    {
-    	textcolor=Updating.Hover.Text
-    	selectedtextcolor=Updating.Hover.Text
+    	selectedtextcolor=Updating.Text
     }
     
     "GameItem_Decrypting"
     {
     	textcolor=Decrypting.Text
-    	selectedtextcolor=Decrypting.Hover.Text
+    	selectedtextcolor=Decrypting.Text
     }
-    
     "GameItem_Decrypting:hover"
     {
     	textcolor=Decrypting.Hover.Text
-    	selectedtextcolor=Decrypting.Hover.Text
-    }
-    
-    "GameItem_Decrypting:selected"
-    {
-    	textcolor=Decrypting.Hover.Text
-    	selectedtextcolor=Decrypting.Hover.Text
+    	selectedtextcolor=Decrypting.Text
     }
     
     "GameItem_Syncing"
     {
     	textcolor=Syncing.Text
-    	selectedtextcolor=Syncing.Hover.Text
+    	selectedtextcolor=Syncing.Text
     }
-    
     "GameItem_Syncing:hover"
     {
     	textcolor=Syncing.Hover.Text
-    	selectedtextcolor=Syncing.Hover.Text
-    }
-    
-    "GameItem_Syncing:selected"
-    {
-    	textcolor=Syncing.Hover.Text
-    	selectedtextcolor=Syncing.Hover.Text
+    	selectedtextcolor=Syncing.Text
     }
     
     "GameColumn_BigText"
@@ -1031,27 +945,27 @@ steam.styles
     ListPanelCheckBox
     {
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
-		image="graphics/Threshold/icons/check_sm"
+		image="graphics/Threshold/icons/check"
 		inset="0 0 0 0"
     }   
 
     ListPanelCheckBox:selected
     {
-		image="graphics/Threshold/icons/check_sm_sel"   
+		image="graphics/Threshold/icons/check_sel"   
     }
 
 	ListPanelCheckBox:focus
     {
-		image="graphics/Threshold/icons/check_sm" 
+		image="graphics/Threshold/icons/check" 
     }
 
     ListPanelCheckBox:selected:focus
     {
-		image="graphics/Threshold/icons/check_sm_sel"
+		image="graphics/Threshold/icons/check_sel"
     }
     
     ListPanelCheckBox:disabled
@@ -1069,6 +983,7 @@ steam.styles
     "ListPanelColumnheader ListPanelCheckBox"
     {
 		font-family=basefont
+		minimum-height=0
 		font-size=15
 		font-size=20 [$WINDOWS]
 		font-weight=400
@@ -1095,6 +1010,7 @@ steam.styles
     ListPanelColumnheader
     {
 		font-family=basefont
+		minimum-height=0
 		font-size=15
 		font-size=20 [$WINDOWS]
 		font-weight=400
@@ -1245,8 +1161,8 @@ steam.styles
     {     
 		inset="0 0 0 0"
 		padding-left=5
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		textcolor=List.Text
 		bgcolor="none" 
 		render
@@ -1302,7 +1218,7 @@ steam.styles
     {     
 		inset="5 0 0 0"
 		textcolor=List.Header.Text
-		minimum-height=25
+		minimum-height=32
 		font-size=15
 		font-size=20 [$WINDOWS]
 		render_bg
@@ -1669,8 +1585,8 @@ steam.styles
     RadioButton
     {
 		font-family=basefont
-		font-size=13
-		font-size=15 [$WINDOWS]
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-weight=400
 		textcolor=Radio.Text
 		render_bg {}
@@ -1773,14 +1689,6 @@ steam.styles
 		textcolor=URL.Hover.Text
 	}
 	
-	"CFriendPanel RichText URL" 
-	{
-		textcolor=TextBox.Text
-		font-style=underline
-		font-size=13
-		font-size=15 [$WINDOWS]
-	}
-	
 	// style of bold text in a rich text control
 	"RichText bold"
 	{
@@ -1798,12 +1706,14 @@ steam.styles
 
 	ScrollBar
 	{
+		minimum-height=0
 		inset="0 0 0 0"
 	}
     
     ScrollBarButton.up
     {
 		bgcolor=none
+		minimum-height=0
 		inset="-1 2 0 0"
 		image="graphics/Threshold/scroll/up"
 		render_bg
@@ -1844,6 +1754,7 @@ steam.styles
     ScrollBarButton.down
 	{
 		bgcolor=none
+		minimum-height=0
 		inset="-2 0 0 0"
 		image="graphics/Threshold/scroll/down"
 		render_bg
@@ -1885,6 +1796,7 @@ steam.styles
     ScrollBarButton.left
     {
 		bgcolor=none
+		minimum-height=0
 		inset="1 3 0 0"
 		image="graphics/Threshold/scroll/left"
 		render_bg 
@@ -1906,6 +1818,7 @@ steam.styles
     ScrollBarButton.right
     {
 		bgcolor=none
+		minimum-height=0
 		image="graphics/Threshold/scroll/right"
 		inset="0 2 0 0"
 		render_bg 
@@ -1927,6 +1840,7 @@ steam.styles
     ScrollBarHandle  //vertical scrollbar thumb
     {
 		bgcolor=none
+		minimum-height=0
 		render_bg 
 		{
 			// center fill
@@ -1956,6 +1870,7 @@ steam.styles
  
     "SliderHoriz"  //horizontal scrollbar thumb
     {
+		minimum-height=0
 		render 
 		{
 			// center fill
@@ -1994,12 +1909,6 @@ steam.styles
 		bgcolor=Scroll.Back
 		render{ }
 		render_bg { }
-    }
-    
-   
-    "GamesPage_Details ListPanel ScrollBarSlider" // gutter in games list detail view 
-    {
-		bgcolor=Scroll.Back
     }
     
     ScrollBarSlider:disabled 
@@ -2106,6 +2015,7 @@ steam.styles
 			1="fill( x0, y0, x1, y1, List.Header )" 
 		}
 		bgcolor=none
+		minimum-height=0
 		image="graphics/Threshold/icons/right"
 		inset="6 0 0 0"
     } 
@@ -2177,8 +2087,9 @@ steam.styles
     TextEntry
     {
 		font-family=basefont
-		font-size=13
-		font-size=15 [$WINDOWS]
+		minimum-height=32
+		font-size=15
+		font-size=20 [$WINDOWS]
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
@@ -2395,8 +2306,8 @@ steam.styles
     {
 		inset="1 0 0 0"
 		font-family=basefont
-		font-size=13
-		font-size=15 [$WINDOWS]
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2405,11 +2316,6 @@ steam.styles
 			// background fill
 			0="fill( x0, y0, x1, y1, Button.Back )"
 		}
-    }
-  
-    ToggleButton:focus
-    {     
-
     }
     
     ToggleButton:hover
@@ -2440,8 +2346,8 @@ steam.styles
     "Page ToggleButton"
     {
 		font-family=basefont
-		font-size=13
-		font-size=15 [$WINDOWS]
+		font-size=15
+		font-size=20 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2676,6 +2582,7 @@ steam.styles
 	
     FullscreenButton:hover
     {
+		image="graphics/Threshold/window_controls/fullscreen"
 		bgcolor="TitleBar.Hover"
     }
 	
