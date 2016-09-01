@@ -5,19 +5,20 @@
 	}
 	
 	layout{
-		place { control=Label1,DeviceName dir=down spacing=8 margin-top=20 margin-left=20 width=300 }
-		place { control=ChangeDeviceButton start=DeviceName dir=right margin-left=15 width=150 }
-		place { control=ReinitAudio start=DeviceName dir=down margin-top=15}
-		place { control=RepairAudio start=ReinitAudio dir=right margin-left=20}
+		place { control=Label1 dir=down margin-top=20 margin-left=20}
+		place { control=DeviceName start=Label1 dir=down margin-top=8 width=max margin-right=20 end-right=ChangeDeviceButton}
+		place { control=ChangeDeviceButton start=DeviceName dir=right align=right margin-right=20 }
+		place { control=ReinitAudio start=DeviceName dir=down margin-top=15 width=235}
+		place { control=RepairAudio start=ReinitAudio dir=right width=max margin-left=20}
 		
 		place { control=Divider1 start=ReinitAudio dir=down margin-top=40 width=max margin-right=20}
 		
-		place { control=MicrophoneLabel,MicrophoneVolume start=Divider1 dir=down margin-top=15 spacing=4}
-		place { control=SpeakerLabel,SpeakerVolume start=MicrophoneVolume dir=down margin-top=15 spacing=4}
+		place { control=MicrophoneLabel,MicrophoneVolume start=Divider1 dir=down margin-top=15 spacing=4 width=235}
+		place { control=SpeakerLabel,SpeakerVolume start=MicrophoneVolume dir=down margin-top=15 spacing=4 width=235}
 		
-		place { control=TestMicrophone start=Divider1 dir=down margin-top=25 width=190 align=right margin-right=80}
+		place { control=TestMicrophone start=Divider1 dir=down margin-top=25 width=235 align=right margin-right=20}
 		place { control=MicMeter,MicBoost start=TestMicrophone dir=down margin-top=15 spacing=0}
-		place { control=MicMeter2 start=TestMicrophone dir=down margin-top=15} //Actual volume meter
+		place { control=MicMeter2 start=TestMicrophone dir=down margin-top=15 } //Actual volume meter
 		
 		place { control=Divider2 start=SpeakerVolume dir=down margin-top=15 width=max margin-right=20}
 		

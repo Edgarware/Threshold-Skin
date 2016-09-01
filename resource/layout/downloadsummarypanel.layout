@@ -127,7 +127,7 @@
 			render_bg
 			{
 				0="fill(x0, y0, x1, y0+48, Search.Back)"
-				1="fill(x0, y0+48, x1, y1, Root.Back)"
+				1="fill(x0, y0+48, x1, y1, Root.Header)"
 			}
 	  	}
 	   
@@ -194,12 +194,7 @@
 		{
 			inset="0 0 0 0"
 			font-family=basefont
-			font-size=14
-			font-size=20 [$WINDOWS]
 			font-weight=400
-			padding-right=4
-			padding-left=4
-			
 			//font-style=uppercase
 			bgcolor=none
 			render
@@ -212,11 +207,6 @@
 		{
 			inset="0 0 0 0"
 			font-family=basefont
-			font-size=14
-			font-size=20 [$WINDOWS]
-			padding-right=4
-			padding-left=4
-			
 			font-weight=400
 			//font-style=uppercase
 			bgcolor=none

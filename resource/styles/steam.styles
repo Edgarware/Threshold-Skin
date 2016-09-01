@@ -208,8 +208,10 @@ steam.styles
 	{     
 		font-family=basefont
 		minimum-height=32
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		padding-left=4
+		padding-right=4
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -404,8 +406,8 @@ steam.styles
 		inset="20 0 0 0"
 		minimum-height=24
 		minimum-width=20
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		//image="graphics/Threshold/icons/check"
@@ -486,8 +488,8 @@ steam.styles
 	IndeterminateCheckButton
 	{
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		bgcolor=none
@@ -562,8 +564,8 @@ steam.styles
 		minimum-height=32
 		textcolor=ComboBox.Text
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		render_bg
@@ -810,8 +812,8 @@ steam.styles
 		selectedtextcolor=Label.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
  	}
    
@@ -965,8 +967,8 @@ steam.styles
     "GameColumn_BigText"
 	{
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=700
 		textcolor=DefaultText
     }
@@ -1014,8 +1016,8 @@ steam.styles
     {
 		font-family=basefont
 		minimum-height=0
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check_sm"
@@ -1041,8 +1043,8 @@ steam.styles
     {
 		font-family=basefont
 		minimum-height=0
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Header.Text
 		bgcolor="none"
@@ -1071,8 +1073,8 @@ steam.styles
 	"Csteamrootdialog ListPanelColumnheader"
     {
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=List.Header.Text
 		bgcolor="none"
@@ -1249,8 +1251,8 @@ steam.styles
 		inset="5 0 0 0"
 		textcolor=List.Header.Text
 		minimum-height=32
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, List.Header)"
@@ -1413,8 +1415,8 @@ steam.styles
     {
 		font-family=basefont
 		textcolor=Menu.Text
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=16 [$WINDOWS]
 		font-weight=400
 		inset="0 0 0 0"
 		padding-right=6
@@ -1490,10 +1492,11 @@ steam.styles
       
 	PageTab
     {
+		minimum-height=0
 		textcolor=Page.Tab.Text
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		inset="0 0 0 0"
 		render_bg
@@ -1615,8 +1618,8 @@ steam.styles
     RadioButton
     {
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=Radio.Text
 		render_bg {}
@@ -2118,8 +2121,8 @@ steam.styles
     {
 		font-family=basefont
 		minimum-height=32
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
@@ -2239,8 +2242,8 @@ steam.styles
     TextEntryLarge //Used for password on login screen
     {
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
@@ -2336,8 +2339,8 @@ steam.styles
     {
 		inset="1 0 0 0"
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2376,8 +2379,8 @@ steam.styles
     "Page ToggleButton"
     {
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2417,6 +2420,8 @@ steam.styles
     // the background and frame of a tooltip
     TooltipWindow
     {
+		font-size=14
+		font-size=16 [$WINDOWS]
         bgcolor="Menu.Back"
 		render_bg{
 			1="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
@@ -2429,6 +2434,8 @@ steam.styles
 	// body text inside a tooltip
     "TooltipWindow Label"
     {
+		font-size=14
+		font-size=16 [$WINDOWS]
 		padding-left=4
         textcolor=Label.Text
     }
@@ -2436,9 +2443,10 @@ steam.styles
     // headline text inside a tooltip
    	tooltip_headline
    	{
-   		textcolor=Accent
+		font-size=14
+		font-size=16 [$WINDOWS]
    		padding-left=4
-   		font-weight=1000	
+		textcolor=Accent
    	}
    	
     TreeNode
@@ -2482,8 +2490,8 @@ steam.styles
 		textcolor=URL.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=15
-		font-size=20 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		font-style=underline
 		selectedtextcolor=DefaultText.Selected
@@ -3196,8 +3204,8 @@ steam.styles
 
 	SuperNavMenuItem
 	{
-		font-size=13
-		font-size=15 [$WINDOWS]
+		font-size=14
+		font-size=16 [$WINDOWS]
 		font-weight=regular
 		textcolor=Menu.Text
 		bgcolor=none
