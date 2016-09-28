@@ -1,5 +1,13 @@
 "steam/cached/gameproperties_localfiles.res"
 {
+	layout{
+		region { name=main margin=20 }
+		
+		place { controls=DiskUsageLabel region=main }
+		place { controls="OpenInstallFolder,BackupButton,DeleteButton,VerifyButton" dir=down region=main start=DiskUsageLabel spacing=5 width=320 margin-top=10 }
+		place { controls=BuildIDLabel region=main start=VerifyButton dir=down margin-top=10 }
+	}
+
 	"GamePropertiesLocalFiles"
 	{
 		"ControlName"		"CSubGamePropertiesLocalFilesPage"

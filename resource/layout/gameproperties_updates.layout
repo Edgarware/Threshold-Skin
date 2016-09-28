@@ -121,21 +121,21 @@
 		region { name=main margin=20 }
 		
 		place { controls="AutoUpdatesLabel" region=main }
-		place { controls="UpdateCombo" region=main start=AutoUpdatesLabel dir=down width=334 height=24 margin-top=12 }
-		place { controls="UpdateInfoText" region=main start=UpdateCombo dir=down width=328 height=42 margin-top=6 }
+		place { controls="UpdateCombo" region=main start=AutoUpdatesLabel dir=down width=420 height=24 margin-top=12 }
+		place { controls="UpdateInfoText" region=main start=UpdateCombo dir=down width=max height=42 margin-top=6 }
 		place { controls="UpdateNewsURL" region=main start=UpdateInfoText dir=down width=418 height=28 margin-top=6 }
 		
 		place { controls="Divider1" region=main start=UpdateNewsURL dir=down width=max margin-top=26 }
 		
 		place { controls="BackgroundDownloadsLabel" region=main start=Divider1 dir=down width=334 margin-top=8 }
-		place { controls="BackgroundDownloadsInfo" region=main start=BackgroundDownloadsLabel dir=down width=450 margin-top=12 }
-		place { controls="BackgroundDownloadsCombo" region=main start=BackgroundDownloadsInfo dir=down width=334 height=24 margin-top=8 }
+		place { controls="BackgroundDownloadsInfo" region=main start=BackgroundDownloadsLabel dir=down width=max margin-top=12 }
+		place { controls="BackgroundDownloadsCombo" region=main start=BackgroundDownloadsInfo dir=down width=420 height=24 margin-top=8 }
 		
 		place { controls="Divider2" region=main start=BackgroundDownloadsCombo dir=down width=max margin-top=26 }
 		
-		place { controls="CloudLabel" region=main start=Divider2 dir=down width=450 margin-top=8 }
-		place { controls="CloudInfoLabel" region=main start=CloudLabel dir=down width=450 height=28 margin-top=12 }
-		place { controls="EnableCloudCheck" region=main start=CloudInfoLabel dir=down width=420 height=28 margin-top=0 }
+		place { controls="CloudLabel" region=main start=Divider2 dir=down width=max margin-top=8 }
+		place { controls="CloudInfoLabel" region=main start=CloudLabel dir=down width=max height=42 margin-top=12 }
+		place { controls="EnableCloudCheck" region=main start=CloudInfoLabel dir=down width=max height=28 margin-top=0 }
 		place { controls="CloudUsageLabel" region=main start=EnableCloudCheck dir=down width=420 height=28 margin-top=0 margin-left=28 }
 		place { controls="CloudEnableLinkLabel" region=main start=CloudUsageLabel height=28 dir=down spacing=4 wrap=1 margin-top=0 margin-left=-28 }
 		place { controls="CloudEnableLinkLabelExtraText" region=main start=CloudEnableLinkLabel height=28 dir=right margin-left=4 wrap=1 margin-top=0 }

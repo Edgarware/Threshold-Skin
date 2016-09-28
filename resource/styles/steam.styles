@@ -135,6 +135,7 @@ steam.styles
 	Frame.Focus.Text=DefaultText
 	
 	Root.Header = DefaultBackground
+	Root.TabBar = Light
 	Root.LeftCol = Light //Left Column
 	Root.LeftCol.Header= DefaultBackground
 	Root.LeftCol.Bottom = DefaultBackground
@@ -1548,6 +1549,8 @@ steam.styles
 	TabCloseButton
     {
 		render_bg {}
+		minimum-height=0
+		padding=0
 		image="graphics/Threshold/icons/tiny_x"
     }
 
@@ -2607,6 +2610,7 @@ steam.styles
 	
     FullscreenButton
     {
+		padding=0
 		bgcolor=none
 		inset="12 0 0 0"
 		render_bg={}
@@ -2639,6 +2643,7 @@ steam.styles
     
     VRButton
     {
+		padding=0
 		inset="2 0 0 0"
 		bgcolor=none
 		render_bg={}
@@ -2664,6 +2669,7 @@ steam.styles
     
     VRButtonExit
     {
+		padding=0
 		inset="2 0 0 0"
 		bgcolor=none
 		textcolor=none
@@ -2688,6 +2694,7 @@ steam.styles
 	
 	BackButton
     {
+		padding=0
 		bgcolor=none
 		inset="0 0 0 0"
 		render_bg={}
@@ -2717,6 +2724,7 @@ steam.styles
     
     ForwardButton
     {
+		padding=0
 		bgcolor=none
 		inset="0 0 0 0"
 		render_bg={}
@@ -2746,6 +2754,7 @@ steam.styles
     
     HomeButton
     {
+		padding=0
 		bgcolor=none
 		inset="5 0 0 0"
 		render_bg={}
@@ -2781,6 +2790,7 @@ steam.styles
 	
     ReloadButton
     {
+		padding=0
 		bgcolor=none
 		inset="5 0 0 0"
 		render_bg={}
@@ -2814,6 +2824,7 @@ steam.styles
     
     StopButton
     {
+		padding=0
 		bgcolor=none
 		inset="5 0 0 0"
 		render_bg={}

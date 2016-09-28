@@ -16,8 +16,7 @@
 			{
 				//Has no frametitle, need to draw one
 				0="fill(x0,y0,x1,y0+32,TitleBar.Focus)"
-				1="fill(x0,y0+32,x1,y0+56,Root.Header)"
-				2="fill(x0,y0+56,x1,y1,DefaultBackground)"
+				1="fill(x0,y0+32,x1,y0+56,Root.TabBar)"
 			}
 		}
 		
@@ -28,7 +27,7 @@
 			{
 				//Has no frametitle, need to draw one
 				0="fill(x0,y0,x1,y0+32,TitleBar)"
-				1="fill(x0,y0+32,x1,y1,Root.Header)"
+				1="fill(x0,y0+32,x1,y1,Root.TabBar)"
 			}
 		}
 		

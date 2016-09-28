@@ -27,8 +27,9 @@
 		SectionedListPanelCollapser
 		{
 			inset = "0 -4 0 0"
+			minimum-height=0
 			bgcolor=none
-			render_bg 
+			render_bg
 			{	
 				// background gradient
 				0="fill( x0, y0 - 5, x1 + 2, y1+2, List.Header)"
@@ -60,12 +61,13 @@
 			render_bg
 			{
 				0="fill( x0+275, y0, x1, y0+48, Root.Header)"
+				1="fill( x0+275, y0+48, x1, y1, Root.Back)"
 			}			
 		}
 		ListPanelStyle
 		{
 			inset = "0 0 0 0"
-			bgcolor=Root.Back
+			bgcolor=none
 			font-family=basefont
 			font-size=12
 			font-size=14 [$WINDOWS]

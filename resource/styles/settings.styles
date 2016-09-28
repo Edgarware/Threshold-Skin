@@ -51,16 +51,16 @@
     
     HTML.SearchInsetY 5
     HTML.SearchInsetX 10
-    HTML.SearchWide 348
-    HTML.SearchTall 38
+    HTML.SearchWide 400
+    HTML.SearchTall 52
     HTML.SearchAnimationTime 0.25
 
     HTML.IMEInsetY 5
     HTML.IMEInsetX 10
-    HTML.IMEWide 348
-    HTML.IMETall 38
+    HTML.IMEWide 400
+    HTML.IMETall 52
     HTML.IMEAnimationTime 0.25
 
-    MessageBox.ButtonHeight		24
+    MessageBox.ButtonHeight		32
   }
 }

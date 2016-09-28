@@ -95,9 +95,12 @@
 		}
 		"Textentryfocus_chat"
 		{
+			// opaque bgcolor for rendering optimization during typing
+			bgcolor=TextBox.Back
 			render
 			{
-				
+				// lines around
+				0="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			}
 			font-size=16
 		}	
@@ -137,6 +140,7 @@
 		button //Send button
 		{
 			inset="3 0 0 0"
+			padding=0
 			textcolor=none
 			image="graphics/Threshold/send"
 			render_bg

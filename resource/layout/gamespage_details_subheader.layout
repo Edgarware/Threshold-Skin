@@ -112,7 +112,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 8, x1, y1, graphics/Threshold/icons/play )"
+				1="image( x0 + 8, y0 + 8, x1, y1, graphics/Threshold/icons/play )"
 			}
 			render_bg
 			{
@@ -158,7 +158,7 @@
 			bgcolor=none   
 			render
 			{
-				1="image( x0 + 6, y0 + 7, x1, y1, graphics/Threshold/icons/install)"
+				1="image( x0 + 8, y0 + 8, x1, y1, graphics/Threshold/icons/install)"
 			}
 			render_bg
 			{

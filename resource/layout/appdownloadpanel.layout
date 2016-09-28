@@ -68,10 +68,7 @@
 		{
 			font-style=normal
 			font-family=basefont
-			//font-style="uppercase"
-			padding-left=0
-			padding-top=0
-			padding-bottom=0
+			font-size=15
 		}
 		
 		links:hover
@@ -89,9 +86,7 @@
 			font-style=normal
 			textcolor=DefaultText
 			font-family=basefont
-			padding-left=0
-			padding-top=0
-			padding-bottom=0
+			font-size=15
 		}
 		
 		settingslink:hover
@@ -116,7 +111,7 @@
 			padding-top="0"
 			//font-style="uppercase"
 			textcolor=Root.SubLabel.Text
-
+			font-size=18
 		}
 		
 		label3
@@ -124,17 +119,17 @@
 			bgcolor=none
 			textcolor=DefaultText
 			padding-top="0"
-			font-style="uppercase"
+			//font-style="uppercase"
 		}
 
 		ModuleHeading
 		{
-			font-family=basefont
+			font-family=semilight
 			bgcolor="none"
-			font-size=14
-			font-size=18 [$WINDOWS]
+			font-size=16
+			font-size=24 [$WINDOWS]
 			padding-top	"0"
-			font-weight	"700"
+			font-weight	"400"
 		}	
 		
 		ModuleHeading2
@@ -185,7 +180,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/play )"
+				1="image( x0 + 6, y0 + 7, x1, y1, graphics/Threshold/icons/play )"
 			}
 			render_bg
 			{
@@ -213,9 +208,10 @@
 		}
 
 		topOfQueueButton
-		{   
-		
+		{
 			inset="1 0 0 0"
+			padding-left=0
+			padding-right=0
 			font-family=basefont
 			font-weight=400
 			textcolor=DefaultText
@@ -231,6 +227,8 @@
 		SmRemoveButton
 		{   	
 			inset="2 0 0 0"
+			padding-left=0
+			padding-right=0
 			font-family=basefont
 			font-weight=400
 			textcolor=DefaultText
@@ -258,12 +256,13 @@
 
 	layout
 	{
-		//region { name="bottom" y=75 height=60 width=400 }
+		
 		  
 		region { name="column1" x=0 width=200 }
 		region { name="column2" x=210 width=max }
 		region { name="column3" x=430 width=max margin-right=100}
 		region { name="column4" x=0 width=max overflow=allow-horizontal } //Wierd x setting to account for smallest window size
+		region { name="bottom" region=column4 align=bottom height=60 width=max }
 		
 		// left column
 		place { control="spacer" }
@@ -273,9 +272,9 @@
 		
 		// left-mid column
 		place { control="namelabel" 		  region=column2 margin-top=16 margin-left=0 }
-		place { control="launchbutton" 		  region=column2 margin-top=43 height=23}
-		place { control="newslink" 			  region=column2 margin-top=70 }
-		place { control="settingslink" 		  region=column2 margin-top=86 }
+		place { control="launchbutton" 		  region=column2 margin-top=43 height=32}
+		place { control="newslink" 			  region=column2 margin-top=75 }
+		place { control="settingslink" 		  region=column2 margin-top=90 }
 
 		// right-mid column
 		place { control="downloadtotallabel,downloadtotalfield" region="column3" x=0 align=top margin-top=43 spacing=6 }
@@ -286,7 +285,7 @@
 				
 		// right column
 		place { control="updatetypelabel" region="column4" spacing=10 margin-top=40 align=right margin-right=16 }
-		place { control="topofqueuebutton,removefromqueuebutton" region="column4" height=22 width=26 dir=right spacing=10 margin-top=63 align=right margin-right=16 }
+		place { control="topofqueuebutton,removefromqueuebutton" region="bottom" height=32 width=32 dir=right spacing=10 margin-bottom=10 align=right margin-right=20 }
 		
 	}
 }

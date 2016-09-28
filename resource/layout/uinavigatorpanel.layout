@@ -5,6 +5,8 @@
 		BackButton
 		{
 			bgcolor=none
+			padding-left=0
+			padding-right=0
 			inset="13 0 0 0"
 			image="graphics/Threshold/back_sm_dis"
 			render_bg {
@@ -30,6 +32,7 @@
 		
 		BackButton:hover
 		{
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
 			}
@@ -37,6 +40,7 @@
 		
 		BackButton:active
 		{
+			image="graphics/Threshold/back_sm"
 			render_bg{
 				0="fill(x0,y0,x1,y1,TitleBar.Accent.Hover)"
 			}

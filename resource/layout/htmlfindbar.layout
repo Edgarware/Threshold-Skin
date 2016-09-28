@@ -12,6 +12,7 @@
 
 	styles
 	{
+		
 		FindEntry:focus
 		{
 			textcolor=TextBox.Hover.Text
@@ -27,40 +28,25 @@
 		}
 		CloseButtonSm
 		{
-			padding-right=2
-			inset="-1 0 0 0"
-			image="graphics/Threshold/icons/close"
-		}
-		CloseButtonSm:hover
-		{
+			inset="1 0 0 0"
 			image="graphics/Threshold/icons/close"
 		}
 		NextButtonSm
 		{
-			padding-right=3
-			inset="-1 1 0 0"
-			image="graphics/Threshold/icons/down"
-		}
-		NextButtonSm:hover
-		{
+			inset="0 0 0 0"
 			image="graphics/Threshold/icons/down"
 		}
 		PrevButtonSm
 		{
-			padding-right=3
-			inset="-1 -1 0 0"
-			image="graphics/Threshold/icons/up"
-		}
-		PrevButtonSm:hover
-		{
+			inset="0 0 0 0"
 			image="graphics/Threshold/icons/up"
 		}
 	}
 		
 	layout
 	{
-		place { control="FindEntry" width=max align=left y=7 margin-left=5 margin-right=77  }
-		place { control="FindCount,Next,Previous,Close" align=right height=20 margin-right=5 margin-top=9 spacing=5 }
+		place { control="FindEntry" width=max align=left y=10 margin-left=8 margin-right=128  }
+		place { control="FindCount,Next,Previous,Close" width=32 align=right margin-right=8 margin-top=10 spacing=8 }
 		place { control="SearchThisPage" width=0 height=0}
 
 	}
