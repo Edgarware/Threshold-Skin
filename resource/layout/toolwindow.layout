@@ -16,7 +16,7 @@
 			{
 				//Has no frametitle, need to draw one
 				0="fill(x0,y0,x1,y0+32,TitleBar.Focus)"
-				1="fill(x0,y0+32,x1,y0+56,Root.TabBar)"
+				1="fill(x0,y0+32,x1,y1,Root.TabBar)"
 			}
 		}
 		
@@ -103,7 +103,6 @@
 	layout
 	{
 		place { control="frame_minimize, frame_maximize, frame_close" align=right margin-top=0 margin-right=0 width=46 height=32 spacing=0 }
-		place [!$OSX] { control="ToolWindowSheet" x=0 y=28 height=max width=max margin-right=0 }
-		place [$OSX] { control="ToolWindowSheet" x=8 y=23 height=max width=max margin-right=8 }
+		place { control="ToolWindowSheet" x=0 y=28 height=max width=max margin-right=0 }
 	}
 }

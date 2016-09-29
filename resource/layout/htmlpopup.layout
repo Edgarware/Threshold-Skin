@@ -21,7 +21,7 @@
 		BackButtonSm
 		{
 			bgcolor=none
-			inset="5 0 0 0"
+			inset="0 0 0 0"
 			render_bg={}
 			image="graphics/Threshold/back"
 		}
@@ -50,7 +50,7 @@
 		ForwardButtonSm
 		{
 			bgcolor=none
-			inset="5 0 0 0"
+			inset="0 0 0 0"
 			render_bg={}
 			image="graphics/Threshold/forward"
 		}

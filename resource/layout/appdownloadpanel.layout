@@ -48,10 +48,9 @@
 	{
 		panelStyle
 		{
-			bgcolor=Root.RightCol
 			render_bg
 			{
-				
+				1="fill( x0, y0+10, x1, y1, Root.RightCol)"
 			}
 			
 		}
@@ -60,7 +59,7 @@
 		{
 			render_bg
 			{
-				1="fill( x0, y0, x1, y1+3, List.Header)"
+				1="fill( x0, y0, x1, y1+3, Root.TabBar)"
 			}			
 		}
 
@@ -111,7 +110,8 @@
 			padding-top="0"
 			//font-style="uppercase"
 			textcolor=Root.SubLabel.Text
-			font-size=18
+			font-size=14
+			font-size=18 [$WINDOWS]
 		}
 		
 		label3
@@ -136,8 +136,8 @@
 		{
 			font-family=basefont
 			bgcolor="none"
-			font-size=14
-			font-size=18 [$WINDOWS]
+			font-size=15
+			font-size=20 [$WINDOWS]
 			padding-top	"0"
 		}								
 		
@@ -172,7 +172,7 @@
 		DetailsLaunchButton
 		{   
 
-			inset="20 -2 0 0"
+			inset="20 0 0 1"
 			font-family=basefont
 			font-weight=400
 			textcolor=DefaultText
@@ -180,7 +180,7 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 7, x1, y1, graphics/Threshold/icons/play )"
+				1="image( x0 + 8, y0 + 8, x1, y1, graphics/Threshold/icons/play )"
 			}
 			render_bg
 			{
@@ -209,7 +209,7 @@
 
 		topOfQueueButton
 		{
-			inset="1 0 0 0"
+			inset="4 0 0 0"
 			padding-left=0
 			padding-right=0
 			font-family=basefont
@@ -226,7 +226,7 @@
 		
 		SmRemoveButton
 		{   	
-			inset="2 0 0 0"
+			inset="5 0 0 0"
 			padding-left=0
 			padding-right=0
 			font-family=basefont
@@ -259,33 +259,33 @@
 		
 		  
 		region { name="column1" x=0 width=200 }
-		region { name="column2" x=210 width=max }
+		region { name="column2" x=215 width=max}
 		region { name="column3" x=430 width=max margin-right=100}
 		region { name="column4" x=0 width=max overflow=allow-horizontal } //Wierd x setting to account for smallest window size
-		region { name="bottom" region=column4 align=bottom height=60 width=max }
+		region { name="bottom" region=column4 align=bottom height=47 margin-bottom=15 width=max }
 		
 		// left column
 		place { control="spacer" }
-		place { control="gameimage" 	 margin-left=8 margin-top=24 width=184 height=69 }
-		place { control="workshopbanner" margin-left=8 margin-top=24 width=184 height=69 } 
+		place { control="gameimage" 	 margin-left=15 margin-top=30 width=184 height=69 }
+		place { control="workshopbanner" margin-left=15 margin-top=30 width=184 height=69 } 
 		place { control="downloadprogressbar" start=gameimage dir=down width=184 height=5  }
 		
 		// left-mid column
-		place { control="namelabel" 		  region=column2 margin-top=16 margin-left=0 }
-		place { control="launchbutton" 		  region=column2 margin-top=43 height=32}
-		place { control="newslink" 			  region=column2 margin-top=75 }
-		place { control="settingslink" 		  region=column2 margin-top=90 }
+		place { control="namelabel" 		  region=column2 margin-top=24 margin-left=0 }
+		place { control="launchbutton" 		  region=column2 margin-top=53 height=32}
+		place { control="newslink" 			  region=column2 align=bottom margin-bottom=15 }
+		place { control="settingslink" 		  region=column2 start=newslink dir=right margin-left=15 margin-right=100}
 
 		// right-mid column
-		place { control="downloadtotallabel,downloadtotalfield" region="column3" x=0 align=top margin-top=43 spacing=6 }
-		place { control="starttimelabel,starttimefield" 		region="column3" x=0 align=top margin-top=63 spacing=6 }
-		place { control="timecompletedlabel,timecompletedfield" region="column3" x=0 align=top margin-top=63 spacing=6 }
-		place { control="pausereasonlabel,pausereasonfield" 	region="column3" x=0 align=top margin-top=63 spacing=6 }
-		place { control="timeremaininglabel,timeremainingfield" region="column3" x=0 align=top margin-top=83 spacing=6 }
+		place { control="downloadtotallabel,downloadtotalfield" region="column3" x=0 align=top margin-top=48 spacing=6 }
+		place { control="starttimelabel,starttimefield" 		region="column3" x=0 align=top margin-top=68 spacing=6 }
+		place { control="timecompletedlabel,timecompletedfield" region="column3" x=0 align=top margin-top=68 spacing=6 }
+		place { control="pausereasonlabel,pausereasonfield" 	region="column3" x=0 align=top margin-top=68 spacing=6 }
+		place { control="timeremaininglabel,timeremainingfield" region="column3" x=0 align=top margin-top=88 spacing=6 }
 				
 		// right column
-		place { control="updatetypelabel" region="column4" spacing=10 margin-top=40 align=right margin-right=16 }
-		place { control="topofqueuebutton,removefromqueuebutton" region="bottom" height=32 width=32 dir=right spacing=10 margin-bottom=10 align=right margin-right=20 }
+		place { control="updatetypelabel" region="column4" spacing=10 margin-top=40 align=right margin-right=15 }
+		place { control="topofqueuebutton,removefromqueuebutton" region="bottom" height=32 width=32 dir=right spacing=10 align=right margin-right=15 }
 		
 	}
 }

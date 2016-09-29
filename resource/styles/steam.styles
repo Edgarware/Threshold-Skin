@@ -1496,8 +1496,8 @@ steam.styles
 		minimum-height=0
 		textcolor=Page.Tab.Text
 		font-family=basefont
-		font-size=14
-		font-size=18 [$WINDOWS]
+		font-size=13
+		font-size=16 [$WINDOWS]
 		font-weight=400
 		inset="0 0 0 0"
 		render_bg
@@ -2103,8 +2103,8 @@ steam.styles
     StatusLabel
     {
 		font-family=basefont
-		font-size=13
-		font-size=15 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		font-weight=400
 		textcolor=Label.Text
 		font-style=normal   
@@ -2139,10 +2139,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}     
     }
     
@@ -2152,10 +2152,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}      
     }
 	
@@ -2166,10 +2166,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Hover )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Hover )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Hover )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Hover )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Hover )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Hover )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Hover )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Hover )"  // right
 		}
 	}
 	
@@ -2180,10 +2180,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Hover )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Hover )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Hover )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Hover )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Hover )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Hover )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Hover )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Hover )"  // right
 		}
 	}
     
@@ -2195,10 +2195,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Active)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Active )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Active )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Active )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Active )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Active )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Active )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Active )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Active )"  // right
 		}     
     }
        
@@ -2210,10 +2210,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Active)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Active )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Active )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Active )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Active )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Active )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Active )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Active )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Active )"  // right
 		}      
     }
     
@@ -2225,10 +2225,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}     
     }
     
@@ -2259,10 +2259,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}   
     }
 
@@ -2273,10 +2273,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Hover )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Hover )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Hover )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Hover )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Hover )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Hover )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Hover )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Hover )"  // right
 		} 
     }
 	
@@ -2288,10 +2288,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Active)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Active )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Active )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Active )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Active )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Active )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Active )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Active )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Active )"  // right
 		}  
     }
     
@@ -2302,10 +2302,10 @@ steam.styles
 		{
 			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}  
     }
     
@@ -2330,11 +2330,7 @@ steam.styles
 		textcolor=URL.Hover.Text
 		render
 		{
-			// lines around
-			1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonFaceDisabled )"  // top
-			2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonFaceDisabled )"  // bottom
-			3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonFaceDisabled )"  // left
-			4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonFaceDisabled )"  // right
+
 		}			
 	}
 	
@@ -2694,7 +2690,6 @@ steam.styles
 	
 	BackButton
     {
-		padding=0
 		bgcolor=none
 		inset="0 0 0 0"
 		render_bg={}
@@ -2724,7 +2719,6 @@ steam.styles
     
     ForwardButton
     {
-		padding=0
 		bgcolor=none
 		inset="0 0 0 0"
 		render_bg={}
@@ -2754,9 +2748,8 @@ steam.styles
     
     HomeButton
     {
-		padding=0
 		bgcolor=none
-		inset="5 0 0 0"
+		inset="1 0 0 0"
 		render_bg={}
 		image="graphics/Threshold/home"
     }
@@ -2790,9 +2783,8 @@ steam.styles
 	
     ReloadButton
     {
-		padding=0
 		bgcolor=none
-		inset="5 0 0 0"
+		inset="1 0 0 0"
 		render_bg={}
 		image="graphics/Threshold/reload"
     }
@@ -2824,9 +2816,8 @@ steam.styles
     
     StopButton
     {
-		padding=0
 		bgcolor=none
-		inset="5 0 0 0"
+		inset="1 0 0 0"
 		render_bg={}
 		image="graphics/Threshold/stop"
     }

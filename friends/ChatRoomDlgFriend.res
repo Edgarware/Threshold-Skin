@@ -125,8 +125,7 @@
 		
 		button //Send button
 		{
-			inset="3 0 0 0"
-			padding=0
+			inset="0 0 0 0"
 			textcolor=none
 			image="graphics/Threshold/send"
 			render_bg
@@ -167,7 +166,7 @@
 		{
 			inset="-5 0 0 0"
 			padding=0
-			font-size=24
+			font-size=16
 			bgcolor=none
 		}
 		

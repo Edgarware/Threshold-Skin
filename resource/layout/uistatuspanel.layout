@@ -53,7 +53,7 @@
 		place { control="StatusPaused" region=button height=max width=max}
 		place { control="StatusComplete" region=button height=max width=max}
 		
-		place { control="StatusDownloading" region=text margin-left=10 margin-top=7} //Also Offline mode status
+		place { control="StatusDownloading" region=text margin-left=10 margin-top=9} //Also Offline mode status
 	 	place { control="StatusProgressbar" region=text width=max height=5 align=bottom margin-bottom=9 margin-right=10 margin-left=10}
 	}
 }

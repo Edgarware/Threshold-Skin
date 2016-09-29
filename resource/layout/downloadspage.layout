@@ -26,23 +26,23 @@
 	{
 		SectionedListPanelCollapser
 		{
-			inset = "0 -4 0 0"
+			inset = "-1 -5 0 0"
 			minimum-height=0
 			bgcolor=none
 			render_bg
 			{	
 				// background gradient
-				0="fill( x0, y0 - 5, x1 + 2, y1+2, List.Header)"
+				0="fill( x0, y0-5, x1+2, y1, List.Header)"
 			}
 		}
 		SectionHeaderStyle
 		{
 			//font-style="uppercase"
-			inset = "0 -1 0 0"
+			inset = "0 -3 0 0"
 			render_bg 
 			{	
 				// background gradient
-				0="fill( x0, y0 - 5, x1, y1+2, List.Header)"
+				0="fill( x0, y0-5, x1, y1, List.Header)"
 			}
 			render
 			{
@@ -94,6 +94,6 @@
 		region { name=status x=0 y=0 margin=0}
 		region { name=main x=275 y=0 margin=0 margin-top=48}
 		place { control="downloadsummarypanel" region=status width=275 height=max}
-		place { control="panel_list" region=main width=max height=max margin=10}
+		place { control="panel_list" region=main width=max height=max margin=10 spacing=10 }
 	}
 }

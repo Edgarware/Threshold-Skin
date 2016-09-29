@@ -155,7 +155,7 @@
 			{
 				0="fill(x0, y0, x1, y0 + 82, DefaultBackground)"
 				0="fill(x0, y0 + 81, x1, y0 + 82, Root.Div)"
-				1="fill(x0, y0 + 82, x1, y1, Root.Header)"
+				1="fill(x0, y0 + 82, x1, y1, Root.TabBar)"
 			}
 		}	
 		
@@ -289,17 +289,16 @@
  	layout
  	{
 		region {name=hidden width=0 height=0}
-		place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
-		place 	[!$OSX] { control="frame_title" visible=0 x=0 y=0 width=max height=0 }
+		place 	{ control="frame_title" visible=0 x=0 y=0 width=max height=0 }
 
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=0 width=max height=32 }
-		place [!$OSX] { control="MenuBar" margin-left=0 height=32 width=50}
+		place { control="MenuBar" margin-left=0 height=32 width=50}
 
 		place { control="FriendPanelSelf" align=top margin-left=15 y=30 } //modifying the width & height of this element kills cpu usage
 		
 		place { control="friends_search"  width=max}
-		place [!$OSX] { control="friends_search_icon,friends_search" align=left y=82 height=40 spacing=0 x=0}
+		place { control="friends_search_icon,friends_search" align=left y=82 height=40 spacing=0 x=0}
 		
 		//place { control="friends_search_icon" align=right dir=right margin-right=145 height=31}
 		//place { control="friends_search" start=friends_search_icon dir=right y=-2 margin-right=45 width=100 height=31}
