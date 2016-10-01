@@ -2312,8 +2312,8 @@ steam.styles
     TextEntryURL
 	{
 		font-family=basefont
-		font-size=13
-		font-size=15 [$WINDOWS]
+		font-size=14
+		font-size=18 [$WINDOWS]
 		textcolor=URL.Text
 		font-weight=400
 		bgcolor="none"

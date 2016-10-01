@@ -29,24 +29,27 @@
 		CloseButtonSm
 		{
 			inset="1 0 0 0"
+			minimum-width=32
 			image="graphics/Threshold/icons/close"
 		}
 		NextButtonSm
 		{
 			inset="0 0 0 0"
+			minimum-width=32
 			image="graphics/Threshold/icons/down"
 		}
 		PrevButtonSm
 		{
 			inset="0 0 0 0"
+			minimum-width=32
 			image="graphics/Threshold/icons/up"
 		}
 	}
 		
 	layout
 	{
-		place { control="FindEntry" width=max align=left y=10 margin-left=8 margin-right=128  }
-		place { control="FindCount,Next,Previous,Close" width=32 align=right margin-right=8 margin-top=10 spacing=8 }
+		place { control="FindEntry" width=max align=left y=10 margin-left=8 margin-right=126 }
+		place { control="FindCount,Next,Previous,Close" height=32 align=right margin-right=8 margin-top=10 spacing=8 }
 		place { control="SearchThisPage" width=0 height=0}
 
 	}

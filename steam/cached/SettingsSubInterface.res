@@ -16,8 +16,8 @@
 		place [$WINDOWS] { controls=Divider2 start=H264HWAccelCheck dir=down margin-top=15 width=max margin-right=20}
 		place [!$WINDOWS] { controls=Divider2 start=UrlBarCheck dir=down margin-top=15 width=max margin-right=20}
 		
-		place { controls=NotifyAvailableGamesCheck start=Divider2 dir=down width=max height=24 margin-right=20 margin-top=15}
-		place { controls=SetJumpListOptionsButton start=NotifyAvailableGamesCheck dir=down margin-top=0}
+		place { controls=NotifyAvailableGamesCheck start=Divider2 dir=down width=max margin-right=20 margin-top=15}
+		place { controls=SetJumpListOptionsButton start=NotifyAvailableGamesCheck dir=down margin-top=10}
 	}
 	
 	"LanguageCombo"

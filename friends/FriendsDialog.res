@@ -279,10 +279,10 @@
 		FriendsSearchIcon:disabled
 		{
 			bgcolor="none"
-			inset="1 0 0 0"
+			inset="4 2 0 0"
 			image="none"
-			padding-left=0
-			padding-right=-1
+			padding-left=10
+			padding-right=5
 		}
 	}
  	
@@ -306,7 +306,7 @@
 		place { control="FriendsDialogSheet" y=118 dir=down width=max height=max spacing=3}	
 		
 		place { control="DownLabel" x=0 y=90 width=max margin-left=15 margin-right=15}
-		place { control="NoFriendsAddFriendButton" width=70 height=25 align=right start="DownLabel" dir=down margin-top=10 margin-right=15}
+		place { control="NoFriendsAddFriendButton" height=32 align=right start="DownLabel" dir=down margin-top=10 margin-right=15}
 	
 		place { control="addFriendsButton" align=bottom margin-left=16 margin-right=9 margin-bottom=7 height=24 region=hidden}
  	}

@@ -11,22 +11,16 @@
 		
 		PositionLabelStyle	
 		{ 
-			padding-bottom=10
-			font-size=116
+			padding-bottom=0
 			textcolor=Sublabel.Text
-			font-family=basefont
-			font-weight=400 
 			bgcolor=none				
 		}
 		
 		TrackLabelStyle 
 		{ 
-			padding-bottom=50
+			padding-bottom=0
 			padding-top=0
-			font-size=16
 			textcolor=DefaultText
-			font-family=basefont
-			font-weight=400 
 			bgcolor=none		
 		}
 		
@@ -42,7 +36,7 @@
 		region { name=panelregion width=max }
 		
 		place {	control="PositionLabel" width=40 region="panelregion"  }
-		place {	control="TrackLabel" x=50 region="panelregion" width=max}
+		place {	control="TrackLabel" x=50 region="panelregion" width=max }
 	}
 	
 }

@@ -114,8 +114,8 @@
 		place { control=ArtistList region=list width=275 height=max margin=0}
 		place { control=PlaylistList region=list width=275 height=max margin=0}
 		
-		place { control=*MusicPageDetailsAlbum region=details width=max dir=down spacing=10 margin=10}
-		place { control=*MusicPageDetailsPlaylist region=details width=max dir=down spacing=10 margin=10}
+		place { control=*MusicPageDetailsAlbum region=details width=max dir=down spacing=33 margin=15}
+		place { control=*MusicPageDetailsPlaylist region=details width=max dir=down spacing=33 margin=15}
 		
 		place 	{ control=BackgroundImageA region=hidden width=1024 height=1024 x=0 y=0 } //because we really need another picture of the album art
 		place 	{ control=BackgroundImageB region=hidden width=1024 height=1024 x=0 y=0 }

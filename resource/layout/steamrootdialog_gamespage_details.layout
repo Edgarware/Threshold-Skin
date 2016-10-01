@@ -300,7 +300,7 @@
 		region	{ name="list" y=0 x=0 width=275 height=max margin-top=48 margin-bottom=0 }
 		region	{ name="details" y=0 x=275 width=max height=max margin-top=48 overflow=scroll-vertical} //overflow
 		region  { name="header" region=details y=0 x=0 width=max height=300}
-		region	{ name="headertext" region=header y=10 x=10 width=max height=max margin-right=20 }
+		region	{ name="headertext" region=header y=15 x=15 width=max height=max margin-right=20 }
 		region  { name="links" region=header align=bottom height=50 width=max overflow=scroll-horizontal }
 		region  { name="detailsbody" region=details y=300 margin-top=15 margin-right=15 margin-left=15 height=max width=max overflow=allow-vertical}
 

@@ -83,31 +83,29 @@
 			}
 			render_bg 
 			{				
-				0="fill( x0, y0, x1, y1, Root.RightCol )"
+				0="fill( x0, y0, x1, y1+18, Root.RightCol )"
 			}
 		}
 		
 		AlbumTitleStyle
 		{
-			font-size=42
+			font-size=46
 			textcolor=DefaultText
-			font-family=basefont
-			font-weight=400
-			padding-bottom=5
+			font-family=light
+			padding-bottom=2
 		}
 
 		ArtistStyle
 		{
 			font-size=24
-			textcolor=DefaultText.Hover
-			font-family=basefont
-			font-weight=400 
+			textcolor=DefaultText
+			font-family=semilight 
 			bgcolor=none
 		}
 		
 		TracksInfoStyle
 		{
-			font-size=15
+			font-size=18
 			textcolor=DefaultText.Hover
 			font-family=basefont
 			font-weight=400 
@@ -118,13 +116,11 @@
 		{
 			padding-bottom=10
 			padding-top=0
-			font-size=15
 			textcolor=DefaultText
 			font-family=basefont
 			font-weight=400 
 			bgcolor=none
 			render_bg{
-				//0="fill(x0,y1-1,x1,y1, Menu.Div)"
 			}
 		}
 		
@@ -140,8 +136,6 @@
 		
 		AdditionalActionButtonStyle
 		{
-			font-size=14
-			font-size=13 [$OSX]
 			font-family=basefont
 			textcolor=DefaultText
 			render_bg	{}
@@ -155,9 +149,7 @@
 		
 		ActionButtonStyle
 		{   
-			inset="15 0 0 0"
-			font-size=14
-			font-size=13 [$OSX]
+			inset="10 0 0 0"
 			font-family=basefont
 			textcolor=DefaultText
 			render_bg	{}
@@ -178,7 +170,7 @@
 		
 		ActionButtonStyle:active
 		{
-			textcolor=DefaultText.Hover
+			textcolor=DefaultText
 			render
 			{
 				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play )"
@@ -188,7 +180,7 @@
 
 	layout
 	{
-		region { name=bodyregion margin=10 overflow=allow-vertical}		
+		region { name=bodyregion margin=18 margin-bottom=0 overflow=allow-vertical}		
 		//region { name=headerregion x=10 y=20 width=max height=max overflow=scroll-vertical }
 		//region { name=leftcolumn x=20 width=200 overflow=scroll-vertical }
 		//region { name=trackcolumn width=max overflow=scroll-vertical }
