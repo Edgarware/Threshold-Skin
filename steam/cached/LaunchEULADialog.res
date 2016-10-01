@@ -1,5 +1,20 @@
 "steam/cached/LaunchEULADialog.res"
 {
+
+	layout{
+		region { name=body margin-top=42 margin-left=20 margin-right=20 width=max height=max }
+		region { name=bottom align=bottom height=42 width=max }
+		
+		place { control=Label1 region=body width=max}
+		place { control=HTML width=max height=max margin-top=75 margin-bottom=100}
+		place { control=Label2 region=body start=HTML margin-top=10 dir=down width=max}
+		
+		place { control="AcceptButton,DeclineButton" region="bottom" align=right
+						width=92 height32 align=right
+						margin-right=10 margin-top=0
+						margin-bottom=10 spacing=10 }
+	}
+
 	"LaunchEULADialog"
 	{
 		"ControlName"		"SimpleDialog"

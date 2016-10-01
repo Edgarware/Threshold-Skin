@@ -38,7 +38,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0, y0, x1 - 1, y1 - 1, DefaultBackground )"
+				0="fill( x0, y0, x1 - 1, y1 - 8, DefaultBackground )"
 				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/Threshold/icons/plus_sm)"	
 			}
 		}
@@ -48,7 +48,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0, y0, x1 - 1, y1 - 1, Menu.Button.Hover )"	
+				0="fill( x0, y0, x1 - 1, y1 - 8, Menu.Button.Hover )"	
 				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/Threshold/icons/plus_sm)"				
 			}
 		}
@@ -56,6 +56,8 @@
 		  
 		MenuButton // Show tabs button
 		{ 
+			padding-left=5
+			padding-right=5
 			inset="-3 4 0 0"
 			bgcolor=none
 			render_bg

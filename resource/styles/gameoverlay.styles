@@ -8,9 +8,9 @@ gameoverlay.styles
 		semi_black "20 20 20 128"
 		semi_gray "20 20 20 220"
 		
-		Overlay.Header=Root.Header
-		Overlay.Back=Root.LeftCol
-		Overlay.Footer=Root.LeftCol.Bottom
+		Overlay.Header=Root.LeftCol
+		Overlay.Back=Root.RightCol
+		Overlay.Footer=Root.LeftCol
 		Overlay.Item.Hover="96 96 96 96"
 		Overlay.Sidebar="0 0 0 96"
 		Overlay.Sidebar.Hover="96 96 96 96"
@@ -32,7 +32,7 @@ gameoverlay.styles
 		detailsboxtitle
 		{
 			font-size=28
-			//font-style=uppercase
+			font-family=semilight
 			textcolor=Accent
 		}
 	}

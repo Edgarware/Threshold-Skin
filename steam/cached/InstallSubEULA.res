@@ -9,7 +9,6 @@
 		region { name=body margin-top=20 margin-left=20 margin-right=20 width=max height=max }
 		place { control=Label1 region=body width=max}
 		place { control=HTMLEULA width=max height=max margin-top=70}
-		
 	}
 	
 	"InstallSubEULA"

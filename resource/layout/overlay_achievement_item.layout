@@ -13,7 +13,8 @@
 	{
 		name
 		{
-			font-size=18
+			font-size=17
+			font-size=26 [$WINDOWS]
 			textcolor=DefaultText
 		}
 	
@@ -25,6 +26,6 @@
 		
 		place { region=body control=icon y=0 x=0 width=64 height=64 }
 		place { region=body control=caption y=32 x=74 }
-		place { region=body control=name y=12 x=74 }
+		place { region=body control=name y=6 x=74 }
 	}
 }

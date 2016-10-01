@@ -2606,9 +2606,8 @@ steam.styles
 	
     FullscreenButton
     {
-		padding=0
 		bgcolor=none
-		inset="12 0 0 0"
+		inset="8 0 0 0"
 		render_bg={}
 		image="graphics/Threshold/window_controls/fullscreen_focus"
     }
@@ -2639,8 +2638,7 @@ steam.styles
     
     VRButton
     {
-		padding=0
-		inset="2 0 0 0"
+		inset="-2 0 0 0"
 		bgcolor=none
 		render_bg={}
 		image="graphics/Threshold/vr"

@@ -21,14 +21,6 @@
 	styles
 	{
 
-		Button
-		{
-			font-size=13
-			font-family=basefont
-			font-weight=400
-			inset=2
-		}
-
 		PreviewImage
 		{
 		}

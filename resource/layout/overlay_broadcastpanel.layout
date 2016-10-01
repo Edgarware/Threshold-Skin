@@ -20,14 +20,6 @@
 				0="fill(x0, y0, x1, y1, Overlay.Sidebar)"
 			}		
 		}
-		
-		Button
-		{
-			font-size=13
-			font-family=basefont
-			font-weight=400
-			inset=2
-		}
 
 		highlight
 		{

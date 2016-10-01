@@ -45,7 +45,6 @@
 	
 		label
 		{
-			font-size=14
 		}
 		
 		controlbutton
@@ -59,8 +58,6 @@
 			{
 				// lines around
 			}     
-
-			//font-size=16
 		}
 
 		CEmoticonButton

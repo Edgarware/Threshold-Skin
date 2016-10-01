@@ -26,18 +26,10 @@
 	colors
 	{
 
-	}	
+	}
 	
 	styles
 	{
-		
-		button
-		{
-		font-size=13
-		font-family=basefont
-		font-weight=400
-		inset=2
-		}
 		
 		highlight
 		{
@@ -60,7 +52,7 @@
 			bgcolor=Accent
 			render
 			{
-				0="fill( x0, y0, x1, y1, Accent )"
+				0="fill( x0, y0, x1+1, y1, Accent )" //Progressbar is 1px off
 			}
 		}
 		
@@ -71,14 +63,13 @@
 	{
 		region { name=box margin-top=10 margin-bottom=10 margin-left=20 margin-right=20 width=max height=max }
 		
-		
 		place { control="TitleText,ProgressTextEarned" region=box dir=right spacing=20 height=28}
 		
 		place { control=*achievement region=box y=40 x=0 width=200 height=max margin-bottom=50 }
 
 		
-		place { control=progressbackground region=box align=bottom width=max height=10 margin-bottom=35}
-		place { control=progressbarimage region=box align=bottom height=10 margin-bottom=35}
+		place { control=progressbackground region=box align=bottom width=max height=10 margin-bottom=40}
+		place { control=progressbarimage region=box align=bottom height=10 margin-bottom=40}
 
 		place { controls=ViewAchievementsButton region=box align=bottom }
 		
