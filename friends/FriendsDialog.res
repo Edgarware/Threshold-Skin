@@ -163,7 +163,6 @@
 		{
 			font-family=basefont
 			font-size=14
-			font-size=13 [$OSX]
 			font-weight=400
 			padding-left=15
 			padding-right=0
@@ -199,16 +198,6 @@
 			{
 				0="fill( x0, y0, x1, y0 + 32, TitleBar.Focus)" //SIGH...
 			}
-		}
-
-		FriendsTitle [$OSX]
-		{
-			font-family=basefont
-			font-size=15
-			font-weight=400
-			textcolor="textdisabled"
-			bgcolor="none"
-			inset="0 9 0 0"
 		}
 
 		FriendsTitle:FrameFocus

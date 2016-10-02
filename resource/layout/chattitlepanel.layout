@@ -31,8 +31,8 @@
 		
 		statuslabel
 		{
-			font-size=12
-			font-size=14 [$WINDOWS]
+			font-size=12 [$LINUX]
+			font-size=14
 		}
 	
 	}

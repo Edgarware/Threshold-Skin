@@ -72,8 +72,8 @@
 			padding-top=5
 			padding-right=10
 			padding-bottom=5
-			font-size=26
-			font-size=34 [$WINDOWS]
+			font-size=26 [$LINUX]
+			font-size=34
 			textcolor=Text
 			font-weight=400
 			//bgcolor=DarkDialogBGTransparent
@@ -106,8 +106,8 @@
 		{
 			padding-left=-4
 			font-family=basefont
-			font-size=15
-			font-size=20 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=20
 			textcolor=Search.Active.Text
 			shadowtextcolor=DefaultCursor
 			render_bg{
@@ -164,8 +164,8 @@
 		MusicAddButton
 		{
 			inset="5 0 0 0"
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-family=basefont
 			textcolor="labelfocus"
 			font-style=uppercase
@@ -211,8 +211,8 @@
 		{
 			padding-left=0
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=400
 			textcolor="LabelDisabled"
 			font-style=uppercase
@@ -221,8 +221,8 @@
 		NavLabel
 		{
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS] 
+			font-size=13 [$LINUX]
+			font-size=15 
 			font-weight=400
 			textcolor="Label"
 			font-style=uppercase
@@ -231,8 +231,8 @@
 		NavLabelView
 		{
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=400
 			textcolor="LabelDisabled"
 			font-style=uppercase
@@ -242,8 +242,8 @@
 		NavLabelZoom
 		{
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=400
 			textcolor=Root.SubLabel.Text
 			font-style=uppercase 
@@ -253,8 +253,8 @@
 		NavLabel2
 		{
 			font-family=basefont
-			font-size=15
-			font-size=20 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=20
 			font-weight=400
 			textcolor=Root.Label.Text
 			font-style=uppercase
@@ -706,8 +706,8 @@
 			textcolor=Root.LeftCol.Text
 			bgcolor="none"
 			font-family=basefont
-			font-size=15
-			font-size=20 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=20
 			font-weight=400 
 			inset="57 0 0 0"
 		}
@@ -750,8 +750,8 @@
 			textcolor="Labelfocus"
 			bgcolor="none"
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=400 
 			font-style="uppercase"
 			padding-left=5
@@ -800,8 +800,8 @@
 		LabelEVCert
 		{
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor="darkclientbg"
 			font-weight=400
 			bgcolor="html.secureurl"

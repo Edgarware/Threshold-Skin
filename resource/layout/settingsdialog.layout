@@ -30,8 +30,8 @@
 			//inset="6 -14 4 0"
 			minimum-width="200" //Jumps between 200 and 194. Dont believe it's lies
 			minimum-height="525"
-			font-size=15
-			font-size=20 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=20
 			padding-left=15
 		}
 		

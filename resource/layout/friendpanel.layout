@@ -137,16 +137,16 @@
 		namestyle
 		{
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 		}
 		
 		nameInstanceStyle
 		{
 			font-family=basefont
 			textcolor=DefaultText
-			font-size=12
-			font-size=14 [$WINDOWS]
+			font-size=12 [$LINUX]
+			font-size=14
 		}
 		
 		menuButtonStyle
@@ -166,14 +166,14 @@
 		controlPanelLinkStyle
 		{
 			font-family=basefont
-			font-size=12
-			font-size=14 [$WINDOWS]
+			font-size=12 [$LINUX]
+			font-size=14
 		}
 		statusStyle
 		{
 			font-family=basefont
-			font-size=11
-			font-size=13 [$WINDOWS]
+			font-size=11 [$LINUX]
+			font-size=13
 		}
 		
 		statusStyle:hover

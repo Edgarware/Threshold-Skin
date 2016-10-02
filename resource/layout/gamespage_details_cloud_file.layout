@@ -20,8 +20,8 @@
 		filestyle 
 		{ 
 			padding=4
-			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=14 [$LINUX]
+			font-size=16
 		}
 		
 		CCloudFilePanel:hover

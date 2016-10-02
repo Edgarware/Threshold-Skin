@@ -24,8 +24,8 @@
 		friendlabelmore
 		{
 			inset="-3 0 0 0"
-			font-size=15
-			font-size=20 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=20
 			textcolor=Button.Text
 			font-family=basefont
 		     	render_bg
@@ -37,11 +37,7 @@
   
 		friendlabelmore:hover
 		{
-			inset="-3 0 0 0"
-			font-size=15
-			font-size=20 [$WINDOWS]
 			textcolor=Button.Hover.Text
-			font-family=basefont
 		    	 render_bg
 		    	 {
 		      	  // background fill
@@ -57,8 +53,8 @@
 		
 		infolabel
 		{
-			font-size=15
-			font-size=20 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=20
 		}	
 	}
 

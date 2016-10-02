@@ -19,8 +19,8 @@
 			padding-left=0
 			padding-bottom=1
 			padding-top=0
-			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=14 [$LINUX]
+			font-size=16
 			textcolor=Text
 			font-style=uppercase;
 		}
@@ -30,8 +30,8 @@
 			padding-left=0
 			padding-bottom=1
 			padding-top=0
-			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=14 [$LINUX]
+			font-size=16
 			textcolor=contributiontext
 			font-style=uppercase;
 		}

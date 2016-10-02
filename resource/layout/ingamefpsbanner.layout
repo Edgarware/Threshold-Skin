@@ -9,20 +9,20 @@
 	{
 		CounterTextSmall
 		{
-			font-size=10
-			font-size=12 [$WINDOWS]	
+			font-size=10 [$LINUX]
+			font-size=12	
 		}
 		
 		CounterTextMedium
 		{
-			font-size=12
-			font-size=14 [$WINDOWS]	
+			font-size=12 [$LINUX]
+			font-size=14
 		}
 		
 		CounterTextLarge
 		{
-			font-size=14
-			font-size=16 [$WINDOWS]	
+			font-size=14 [$LINUX]
+			font-size=16
 		}
 		
 		HighContrast

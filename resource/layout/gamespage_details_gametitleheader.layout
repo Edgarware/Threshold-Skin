@@ -20,8 +20,8 @@
 
 		headertextlarge
 		{
-			font-size=32
-			font-size=46 [$WINDOWS]
+			font-size=32 [$LINUX]
+			font-size=46
 			font-family=light
 			font-weight=400 
 			bgcolor=none

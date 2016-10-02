@@ -82,8 +82,8 @@
 		LabelEVCert
 		{
 			font-family=basefont
-			font-size=12
-			font-size=14 [$WINDOWS]	
+			font-size=12 [$LINUX]
+			font-size=14
 			textcolor="DefaultBackground"
 			font-weight=400
 			bgcolor="html.secureurl"
@@ -100,8 +100,8 @@
 
 		TextEntryURL
 		{
-			font-size=14
-			font-size=16 [$WINDOWS]	
+			font-size=14 [$LINUX]
+			font-size=16
 			inset="5 0 0 0"
 			render_bg { }
 			render { }			

@@ -152,8 +152,8 @@
 		    textcolor=Root.SubLabel.Text
 		    bgcolor="none"
 		    font-family=basefont
-		    font-size=10
-			font-size=12 [$WINDOWS]
+		    font-size=10  [$LINUX]
+			font-size=12
 		    font-style=regular
 			inset="0 0 0 0"
 		}
@@ -305,7 +305,6 @@
 		AddGameButton
 		{
 			font-size=14
-			font-size=13 [$OSX]
 			font-family=basefont
 			textcolor="labelfocus"
 			padding-right=30
@@ -405,8 +404,8 @@
 			textcolor=none
 			bgcolor="none"
 			font-family=basefont
-			font-size=11
-			font-size=13 [$WINDOWS]
+			font-size=11 [$LINUX]
+			font-size=13
 			font-weight=400
 			font-style=regular
 		}
@@ -421,8 +420,8 @@
 			textcolor=Root.SubLabel.Text
 			bgcolor="none"
 			font-family=basefont
-			font-size=11
-			font-size=13 [$WINDOWS]
+			font-size=11 [$LINUX]
+			font-size=13
 			font-weight=400
 			font-style=regular
 			render
@@ -439,8 +438,8 @@
 		support_alert
 		{
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=1000
 			font-style=none
 			textcolor=DefaultText
@@ -464,8 +463,8 @@
 		support_alert_ack
 		{
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=1000
 			font-style=none
 			textcolor=white
@@ -490,8 +489,8 @@
 		inbox_button
 		{
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=800
 			font-style=none
 			textcolor=Root.LeftCol.Text
@@ -549,8 +548,8 @@
 		inbox_button_active
 		{
 			font-family=basefont
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=800
 			font-style=none
 			textcolor=none
@@ -665,8 +664,8 @@
 		
 		AccountURLStyle
 		{
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor=Root.Label.Text
 			padding-right=-14 //This element has a drop-down arrow; this hides it
 		}

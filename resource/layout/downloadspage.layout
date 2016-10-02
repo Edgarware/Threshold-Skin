@@ -69,8 +69,8 @@
 			inset = "0 0 0 0"
 			bgcolor=none
 			font-family=basefont
-			font-size=12
-			font-size=14 [$WINDOWS]
+			font-size=12 [$LINUX]
+			font-size=14
 			font-weight=400
 			textcolor="Text"
 			selectedtextcolor=DefaultText

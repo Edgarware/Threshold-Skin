@@ -60,8 +60,8 @@
 		highlight
 		{
 			textcolor=DefaultText
-			font-size=16
-			font-size=20 [$WINDOWS]
+			font-size=16 [$LINUX]
+			font-size=20
 		}	
 		
 		padded

@@ -19,36 +19,36 @@
 	{
 		headertext
 		{
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor=Accent
 		}
 
 		headertext-red
 		{
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor=Accent
 		}
 
 		headertext-green
 		{
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor=Accent
 		}
 
 		headertext-blue
 		{
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor=Accent
 		}
 
 		valuetext
 		{
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 		}
 	}
 

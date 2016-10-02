@@ -72,8 +72,8 @@
 		emptylisttext
 		{
 			textcolor=DefaultText
-			font-size=13
-			font-size=15 [$WINDOWS] 
+			font-size=13 [$LINUX]
+			font-size=15
 			render_bg {}
 		}
 
@@ -134,8 +134,8 @@
 		"GamesPage_Details ListPanelColumnHeader"
 		{
 			bgcolor="none"
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			inset="0 0 0 0"
 			render {}
 			render_bg 
@@ -177,8 +177,8 @@
 			inset="0 0 0 0"
 			font-family=basefont
 			font-weight=700
-			font-size=15
-			font-size=18 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=18
 			textcolor=Accent
 			padding-top=12
 			padding-left=0
@@ -191,8 +191,8 @@
 		rightcolumnheadertext-red
 		{
 			inset="0 0 0 0"
-			font-size=15
-			font-size=18 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=18
 			textcolor=Accent
 			font-family=basefont
 			font-weight=700
@@ -208,8 +208,8 @@
 		{
 			
 			inset="0 0 0 0"
-			font-size=15
-			font-size=18 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=18
 			textcolor=Accent
 			font-family=basefont
 			font-weight=700
@@ -224,8 +224,8 @@
 		rightcolumnheadertext-blue
 		{
 			inset="0 0 0 0"
-			font-size=15
-			font-size=18 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=18
 			textcolor=Accent
 			font-family=basefont
 			font-weight=700
@@ -240,8 +240,8 @@
 		rightcolumnlink
 		{
 			inset="0 0 0 0"
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-style=normal
 			textcolor=DefaultText
 			font-family=basefont
@@ -271,8 +271,8 @@
 		rightcolumntag
 		{
 			inset="0 -5 0 0"
-			font-size=28
-			font-size=34 [$WINDOWS]
+			font-size=28 [$LINUX]
+			font-size=34
 			font-style=normal
 			textcolor=Accent
 			padding=10

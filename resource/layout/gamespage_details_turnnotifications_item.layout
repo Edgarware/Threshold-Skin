@@ -11,14 +11,14 @@
 	{
 		titlestyle
 		{ 
-			font-size=15
-			font-size=20 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=20
 		}
 
 		messagestyle
 		{ 
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 		}
 
 		turnnotification_odd

@@ -63,15 +63,15 @@
 			bgcolor="none"
 			font-family=basefont
 			inset="1 1 0 0 "
-			font-size=15
-			font-size=20 [$WINDOWS]	
+			font-size=15 [$LINUX]
+			font-size=20
 		}
 		
 		CUILaunchButton
 		{   
 			font-family=basefont
-			font-size=15
-			font-size=20 [$WINDOWS]	
+			font-size=15 [$LINUX]
+			font-size=20
 			font-weight=400
 			textcolor=DefaultText
 			font-style=none
@@ -87,8 +87,8 @@
 		CUILaunchButton:Hover
 		{   
 			font-family=basefont
-			font-size=15
-			font-size=20 [$WINDOWS]	
+			font-size=15 [$LINUX]
+			font-size=20
 			font-weight=400
 			textcolor=DefaultText.Hover
 			font-style=none
@@ -104,8 +104,8 @@
 		CUIDetailsButton
 		{   
 			font-family=basefont
-			font-size=15
-			font-size=20 [$WINDOWS]	
+			font-size=15 [$LINUX]
+			font-size=20
 			font-weight=400
 			textcolor=DefaultText
 			font-style=none
@@ -122,8 +122,8 @@
 		CUIDetailsButton:Hover
 		{   
 			font-family=basefont
-			font-size=15
-			font-size=20 [$WINDOWS]	
+			font-size=15 [$LINUX]
+			font-size=20	
 			font-weight=400
 			textcolor=DefaultText.Hover
 			font-style=none

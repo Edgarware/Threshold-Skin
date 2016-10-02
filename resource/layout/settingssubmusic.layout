@@ -65,15 +65,15 @@
 		LibraryListStyle
 		{
 			bgcolor=List.Back
-			font-size=15
-			font-size=20 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=20
 		}
 		
 		HeaderText
 		{
 			textcolor=DefaultText
-			font-size=15
-			font-size=20 [$WINDOWS]
+			font-size=15 [$LINUX]
+			font-size=20
 		}
 		
 		

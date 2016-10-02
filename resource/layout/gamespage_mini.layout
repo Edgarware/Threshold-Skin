@@ -111,8 +111,8 @@
 		{
 			padding-left=0
 			font-family=basefont
-			font-size=15
-			font-size=20 [$WINDOWS]	
+			font-size=15 [$LINUX]
+			font-size=20	
 			font-weight=400	
 			textcolor=Search.Active.Text
 			shadowtextcolor=DefaultCursor
@@ -153,8 +153,8 @@
 		NavLabel2
 		{
 			font-family=basefont
-			font-size=14
-			font-size=16 [$WINDOWS]	
+			font-size=14 [$LINUX]
+			font-size=16
 			font-weight=400
 			textcolor=Root.Label.Text
 			padding-right=5
@@ -209,15 +209,14 @@
  	layout
  	{
 		place { control="frame_captiongrip" margin=2 width=max height=38 }
-		place [!$OSX] { control="MenuBar" margin-left=0 height=32 width=50}
+		place { control="MenuBar" margin-left=0 height=32 width=50}
 		
 		place { control="subnavgroup_library" align=top-center y=38 height=26 width=max margin-right=9 margin-left=9 }
 		
 		place { control="gameslist" align=left margin-left=0 margin-right=0 margin-top=96 margin-bottom=0 width=max height=max }
 		
 		place { control="library_search"  width=max}
-		place [!$OSX] { control="label_search_icon,library_search" align=left y=32 height=40 spacing=0 x=0}
-		place  [$OSX] { control="label_search_icon,library_search" align=left y=43 height=17 spacing=1 x=13 }
+		place { control="label_search_icon,library_search" align=left y=32 height=40 spacing=0 x=0}
 		
 		place { control="library_filters" align=left margin-top=72 height=24 }
  	}

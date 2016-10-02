@@ -28,8 +28,8 @@
 
 		bodycontent
 		{
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			render_bg {}
 		}
 

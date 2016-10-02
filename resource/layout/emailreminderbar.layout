@@ -71,8 +71,8 @@
 		soft
 		{
 			
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 		
 			textcolor="209 242 133 255"
 		}
@@ -80,8 +80,8 @@
 		bright
 		{
 			
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 		
 			textcolor="255 255 255 255"
 		}

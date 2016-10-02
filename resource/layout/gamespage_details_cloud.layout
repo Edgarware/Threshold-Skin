@@ -29,14 +29,14 @@
 
 		everythinglabel
 		{
-			font-size=13
-			font-size=15 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 		}	
 
 		infolabel
 		{
-			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=14 [$LINUX]
+			font-size=16
 		}	
 	}
 
