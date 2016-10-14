@@ -703,7 +703,7 @@
 		
 		CUINavButton
 		{
-			textcolor=Root.LeftCol.Text
+			textcolor=none
 			bgcolor="none"
 			font-family=basefont
 			font-size=15 [$LINUX]
@@ -714,7 +714,7 @@
 
 		CUINavButton:disabled
 		{
-			textcolor=Root.LeftCol.Disabled
+			textcolor=none
 			bgcolor="none"
 			font-family=basefont
 			font-weight=400 
@@ -722,7 +722,7 @@
 		
 		CUINavButton:hover
 		{
-			textcolor=Root.LeftCol.Text
+			textcolor=none
 			render_bg 
 			{
 				4="fill( x0, y0, x1, y1, Menu.Hover )"
@@ -731,13 +731,13 @@
 
 		CUINavButton:disabled:hover
 		{
-			textcolor=Root.LeftCol.Disabled
+			textcolor=none
 			//font-style="uppercase"
 		}
 
 		CUINavButton:selected
 		{
-			textcolor=Root.LeftCol.Text
+			textcolor=none
 			//bgcolor=none
 			render_bg 
 			{
@@ -875,19 +875,19 @@
 	layout
 	{
 		region {name=hidden width=0 height=0}
-		region {name=left width=240 y=32}
-		region {name=right x=240 y=32}
+		region {name=left width=48 y=32}
+		region {name=right x=48 y=32}
 		
 		place { control="label_store,label_library,label_community,label_me,label_news,label_console" dir=down x=0 y=48 spacing=0 width=max height=48 region=left} 
 		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" region=hidden}
 		place { control="label_community_new" start="label_community" y="-40" x="15" width=0 height=0 region=hidden}
 
 		place { control="back" x=0 y=0 height=32 width=48}
-		place { control="forward" region=left x=48 height=48 width=48}
+		place { control="forward" region=hidden x=48 height=48 width=48}
 
-		place { control="URLBar" region=right width=max height=48 }
+		place { control="URLBar" dir=right region=right width=max height=48 end-right=URLStatusImage}
 		place { control="EVCert" region=hidden}
-		place { control="PageLoadThrobber,refresh,stop,URLStatusImage" y=0 height=48 width=48 align=right region=left}
+		place { control="URLStatusImage,refresh,stop,PageLoadThrobber" height=48 width=48 align=right region=right}
  	
 		place { control="subnavgroup_library" y=0 height=48 width=max margin-right=0 region=hidden region=right}
 

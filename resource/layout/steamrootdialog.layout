@@ -700,10 +700,10 @@
 	
 	layout
 	{
-		region {name=hidden width=0 height=0}
-		region {name=left width=240 y=32}
-		region {name=bottom-left region=left align=bottom height=48 width=max}
-		region {name=bottom width=max height=48 align=bottom}
+		region { name=hidden width=0 height=0}
+		region { name=left width=240 y=32}
+		region { name=bottom-left region=left align=bottom height=48 width=max}
+		region { name=bottom width=max height=48 align=bottom}
 		region { name=account align=bottom-right margin-right=48 width=max height=52 margin-left=505}
 		
 		place { control="New" region=hidden}
@@ -711,7 +711,7 @@
 		
 		place { control="MenuBar" height=48 width=48 y=32 x=0 }
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=48 margin-top=0 }
-		
+	
 		place { control="ParentalLockButton, startVR, exitVR, SupportAlert" region=bottom-left align=right margin-right=48 height=48 width=48 spacing=0 dir=right}
 		place { control="UIStatusPanel" height=48 width=323 region=bottom margin-left=192}
 		place { control="InboxButton" height=48 width=48 region=bottom align=right }

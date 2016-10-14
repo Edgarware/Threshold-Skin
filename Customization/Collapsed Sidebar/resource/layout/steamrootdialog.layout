@@ -146,14 +146,14 @@
 	
 	styles
 	{    		
-				
+			
 		AccountBalanceStyle
 		{
 		    textcolor=Root.SubLabel.Text
 		    bgcolor="none"
 		    font-family=basefont
-		    font-size=10
-			font-size=12 [$WINDOWS]
+		    font-size=10  [$LINUX]
+			font-size=12
 		    font-style=regular
 			inset="0 0 0 0"
 		}
@@ -176,18 +176,12 @@
 		new_label	
 		{			
 			bgcolor=none
-			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
-			}
 			inset="0 0 0 0"
 		}
 		
 		new_label:hover
 		{
 			bgcolor=none
-			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
-			}
 			inset="0 0 0 0"
 		}
 
@@ -311,7 +305,6 @@
 		AddGameButton
 		{
 			font-size=14
-			font-size=13 [$OSX]
 			font-family=basefont
 			textcolor="labelfocus"
 			padding-right=30
@@ -330,7 +323,7 @@
 			{
 				//0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse_over )"
 			}
-		}	
+		}
 		
 
 
@@ -341,16 +334,17 @@
 			render_bg
 			{
 				// top area and graphics
-				1="fill( x0, y0, x1, y0+72, Root.Header)"
-				2="fill( x0, y0+72, x0+230, y1-50, Root.LeftCol)"
-				3="fill( x0, y1-50, x0+230, y1, Root.LeftCol.Bottom)"
-				4="fill( x0+230, y0+72, x1, y1, almostblack)"
+				1="fill( x0+48, y0, x1, y0+80, Root.Header)"
+				2="fill( x0, y0+32, x0+48, y1, Root.LeftCol)"
+				3="fill( x0+48, y1-48, x1, y1, Root.Header)"
+				4="fill( x0+48, y0+80, x1, y1-48, almostblack)"
 			}
-			render{
-				0="image (x0+15, y0+154, x1, y1, graphics/Threshold/store)"
-				1="image (x0+15, y0+199, x1, y1, graphics/Threshold/library)"
-				2="image (x0+15, y0+244, x1, y1, graphics/Threshold/community)"
-				3="image (x0+15, y0+289, x1, y1, graphics/Threshold/me)"
+			render
+			{
+				0="image (x0+14, y0+94, x1, y1, graphics/Threshold/store)"
+				1="image (x0+14, y0+142, x1, y1, graphics/Threshold/library)"
+				2="image (x0+14, y0+190, x1, y1, graphics/Threshold/community)"
+				3="image (x0+14, y0+237, x1, y1, graphics/Threshold/me)"
 				
 				4="fill(x0, y0, x1, y0+1, Frame.Outline.Focus)"
 				5="fill(x0, y0, x0+1, y1, Frame.Outline.Focus)"
@@ -360,11 +354,12 @@
 		}
 		
 		CSteamRootDialog:FrameFocus{
-			render{
-				0="image (x0+15, y0+154, x1, y1, graphics/Threshold/store)"
-				1="image (x0+15, y0+199, x1, y1, graphics/Threshold/library)"
-				2="image (x0+15, y0+244, x1, y1, graphics/Threshold/community)"
-				3="image (x0+15, y0+289, x1, y1, graphics/Threshold/me)"
+			render
+			{
+				0="image (x0+14, y0+94, x1, y1, graphics/Threshold/store)"
+				1="image (x0+14, y0+142, x1, y1, graphics/Threshold/library)"
+				2="image (x0+14, y0+190, x1, y1, graphics/Threshold/community)"
+				3="image (x0+14, y0+237, x1, y1, graphics/Threshold/me)"
 				
 				4="fill(x0, y0, x1, y0+1, Frame.Outline)"
 				5="fill(x0, y0, x0+1, y1, Frame.Outline)"
@@ -378,7 +373,7 @@
 			textcolor="none"
 			inset="0 0 0 0"
 			render{
-				0="image(x0+17,y0+14,x1,y1,graphics/Threshold/menu)"
+				0="image(x0+16,y0+18,x1,y1,graphics/Threshold/menu)"
 			}
 		}
 		
@@ -403,19 +398,14 @@
 			}
 
 		}
-		
-		ClientTitle
-		{
-			textcolor=none
-		}
 
 		view_friends
 		{
 			textcolor=none
 			bgcolor="none"
 			font-family=basefont
-			font-size=11
-			font-size=13 [$WINDOWS]
+			font-size=11 [$LINUX]
+			font-size=13
 			font-weight=400
 			font-style=regular
 		}
@@ -430,8 +420,8 @@
 			textcolor=Root.SubLabel.Text
 			bgcolor="none"
 			font-family=basefont
-			font-size=11
-			font-size=13 [$WINDOWS]
+			font-size=11 [$LINUX]
+			font-size=13
 			font-weight=400
 			font-style=regular
 			render
@@ -448,8 +438,8 @@
 		support_alert
 		{
 			font-family=basefont
-			font-size=12
-			font-size=14 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=1000
 			font-style=none
 			textcolor=DefaultText
@@ -470,20 +460,44 @@
 			}
 		}
 
+		support_alert_ack
+		{
+			font-family=basefont
+			font-size=13 [$LINUX]
+			font-size=15
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack1 )"
 
+			}
+		}
+
+		support_alert_ack:hover
+		{
+			render_bg {
+				0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack2 )"
+			}
+		}
 
 		inbox_button
 		{
 			font-family=basefont
-			font-size=12
-			font-size=14 [$WINDOWS] 
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=800
 			font-style=none
 			textcolor=Root.LeftCol.Text
 
 			render 
 			{
-				0="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
+				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -496,7 +510,7 @@
 
 			render 
 			{
-				0="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
+				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -509,7 +523,7 @@
 
 			render 
 			{
-				0="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
+				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -523,7 +537,7 @@
 			textcolor=Root.LeftCol.Disabled
 			render 
 			{
-				0="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail_dis)"
+				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail_dis)"
 			}
 			render_bg
 			{
@@ -534,15 +548,15 @@
 		inbox_button_active
 		{
 			font-family=basefont
-			font-size=12
-			font-size=14 [$WINDOWS] 
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=800
 			font-style=none
 			textcolor=none
 
 			render 
 			{
-				0="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
+				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -554,7 +568,7 @@
 		{
 			render 
 			{
-				0="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
+				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -566,7 +580,7 @@
 		{
 			render 
 			{
-				0="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail)"
+				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
@@ -579,7 +593,7 @@
 		{
 			render 
 			{
-				0="image(x0+9,y0+7,x1,y1,graphics/Threshold/mail_dis)"
+				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail_dis)"
 			}
 			render_bg
 			{
@@ -594,7 +608,7 @@
 			render {}
 			render_bg
 			{
-				1="image( x0+11, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
+				1="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
 			}	
 		}
 
@@ -604,7 +618,7 @@
 			render_bg
 			{
 				0="fill(x0,y0,x1,y1,Menu.Hover)"
-				2="image( x0+11, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
+				2="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
 				
 			}	
 			
@@ -615,7 +629,7 @@
 			render {}
 			render_bg
 			{
-				1="image( x0+11, y0+9, x1, y1, graphics/Threshold/familyview )"
+				1="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
 			}	
 			
 		}
@@ -627,7 +641,7 @@
 			render_bg
 			{
 				0="fill(x0,y0,x1,y1,Menu.Hover)"
-				2="image( x0+11, y0+9, x1, y1, graphics/Threshold/familyview )"
+				2="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
 				
 			}	
 			
@@ -650,8 +664,8 @@
 		
 		AccountURLStyle
 		{
-			font-size=14
-			font-size=16 [$WINDOWS]
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor=Root.Label.Text
 			padding-right=-14 //This element has a drop-down arrow; this hides it
 		}
@@ -686,30 +700,27 @@
 	
 	layout
 	{
-		region {name=hidden width=0 height=0}
-		region {name=left width=230 y=32}
-		region {name=bottom region=left width=max height=50 align=bottom}
+		region { name=hidden width=0 height=0}
+		region { name=left width=48 y=32}
+		region { name=bottom-left region=left align=bottom height=max width=48}
+		region { name=bottom width=max height=48 align=bottom}
+		region { name=account align=bottom-right margin-right=48 width=max height=52 margin-left=505}
 		
 		place { control="New" region=hidden}
+		place { control="add_game" x=14 y=16 region=hidden height=0 width=0}
 		
-		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=0 margin-top=0 }
-		
-		place { control="UIStatusPanel" x=0 region=left width=max height=42 align=bottom margin-bottom=50 }
-		
-		place { control="MenuBar" height=40 width=50 y=32 x=0 }
-		
-		place { control="SupportAlert, ParentalLockButton, exitVR, startVR, InboxButton" region=bottom align=right height=50 width=50 spacing=0 dir=right}
+		place { control="MenuBar" height=48 width=48 y=32 x=0 }
+		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=48 margin-top=0 }
+	
+		place { control="ParentalLockButton, startVR, exitVR, SupportAlert" region=bottom-left align=bottom margin-bottom=48 height=48 width=48 spacing=0 dir=down}
+		place { control="UIStatusPanel" height=48 width=323 region=bottom margin-left=0}
+		place { control="InboxButton" height=48 width=48 region=bottom align=right }
 
-		place { control="fullscreen,frame_minimize,frame_maximize,frame_close" align=right margin-top=0 margin-right=0 width=46 height=32 spacing=0 }
-		
-		place { control="add_game, account_balance_seperator" x=14 y=16 region=hidden height=0 width=0}
-		
-		region { name=account region=left y=47 margin-left=5 width=max height=63 }
-		place { control="FriendPanel" height=48 y=0 width=48 margin-left=0 region=account}
-		place { control="account_balance" start=FriendPanel dir=down y=0 x=8 region=account}
+		place { control="fullscreen,frame_minimize,frame_maximize,frame_close" align=right width=46 height=32 spacing=0 }
 
-		place { control="account_URL, universe_label" margin-left=52 y=9 spacing=5 region=account}
-		place { control="online_friends" height=12 y=30 spacing=5 margin-left=52 region=account}
-		place { control="view_friends" height=12 y=30 margin-left=52 region=account}
+		place { control="FriendPanel" height=48 y=0 width=48 margin-left=4 region=account align=right}
+		place { control="account_balance,  account_balance_seperator, account_URL, universe_label" margin-right=54 y=9 spacing=5 region=account align=right}
+		place { control="online_friends" height=12 y=30 spacing=5 margin-right=66 region=account align=right}
+		place { control="view_friends" height=12 y=30 margin-right=56 region=account align=right}
 	}
 }
