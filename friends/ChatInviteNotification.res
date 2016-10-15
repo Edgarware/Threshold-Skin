@@ -1,5 +1,14 @@
 "friends/ChatInviteNotification.res"
 {
+	styles
+	{
+		Label
+		{
+			font-size=14 [$LINUX]
+			font-size=16
+		}
+	}
+
 	layout{
 		place {control="ImageAvatar" x=16 y=16 width=42 height=42}
 		place {control="NotificationClickPanel" x=0 y=0 width=max height=max}

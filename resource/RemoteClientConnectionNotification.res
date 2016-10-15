@@ -1,6 +1,14 @@
 "resource/RemoteClientConnectionNotification.res"
 {
-		
+	styles
+	{
+		Label
+		{
+			font-size=14 [$LINUX]
+			font-size=16
+		}
+	}
+
 	"RemoteClientConnectionNotification"
 	{
 		"ControlName"		"CRemoteClientConnectionNotification"

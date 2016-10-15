@@ -1,6 +1,15 @@
 "resource/BroadcastPublicState.res"
 {
-		
+
+	styles
+	{
+		Label
+		{
+			font-size=14 [$LINUX]
+			font-size=16
+		}
+	}
+
 	"BroadcastPublicStateNotification"
 	{
 		"ControlName"		"BroadcastPublicStateNotification"

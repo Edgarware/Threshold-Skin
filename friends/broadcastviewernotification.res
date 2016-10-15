@@ -1,5 +1,14 @@
 "friends/BroadcastViewerNotification.res"
 {
+	styles
+	{
+		Label
+		{
+			font-size=14 [$LINUX]
+			font-size=16
+		}
+	}
+
 	"BroadcastViewerNotification"
 	{
 		"ControlName"		"BroadcastViewerNotification"

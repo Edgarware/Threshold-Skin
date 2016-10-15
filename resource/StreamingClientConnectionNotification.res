@@ -1,6 +1,14 @@
 "resource/StreamingClientConnectionNotification.res"
 {
-		
+	styles
+	{
+		Label
+		{
+			font-size=14 [$LINUX]
+			font-size=16
+		}
+	}
+
 	"StreamingClientConnectionNotification"
 	{
 		"ControlName"		"CStreamingClientConnectionNotification"

@@ -1,5 +1,14 @@
 "public/ScreenshotErrorNotification.res"
 {
+	styles
+	{
+		Label
+		{
+			font-size=14 [$LINUX]
+			font-size=16
+		}
+	}
+
 	layout{
 		place {control="ErrorIcon" x=14 y=14 width=48 height=48}
 		place {control="LabelInfo" x=68 y=14 width=158 height=16}

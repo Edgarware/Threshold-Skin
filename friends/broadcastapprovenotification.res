@@ -1,5 +1,15 @@
 "friends/BroadcastApproveNotification.res"
 {
+
+	styles
+	{
+		Label
+		{
+			font-size=14 [$LINUX]
+			font-size=16
+		}
+	}
+
 	"BroadcastApproveNotification"
 	{
 		"ControlName"		"BroadcastApproveNotification"

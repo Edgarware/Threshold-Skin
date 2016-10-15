@@ -1,5 +1,15 @@
 "friends/BroadcastCantStartFriend.res"
 {
+
+	styles
+	{
+		Label
+		{
+			font-size=14 [$LINUX]
+			font-size=16
+		}
+	}
+
 	"BroadcastCantStartFriend"
 	{
 		"ControlName"		"BroadcastCantStartFriend"

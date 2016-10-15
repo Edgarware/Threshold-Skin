@@ -1,11 +1,21 @@
 "friends/AchievementNotification.res"
 {
 
-	layout{
+	styles
+	{
+		Label
+		{
+			font-size=14 [$LINUX]
+			font-size=18
+		}
+	}
+	
+	layout
+	{
 		place {control="AchievementIcon" x=14 y=15 width=64 height=64}
 		place {control="IconBorder" x=13 y=14 width=66 height=66}
-		place {control="LabelTitle" x=88 y=30 width=144 height=20}
-		place {control="LabelDescription" x=88 y=48 width=144 height=20}
+		place {control="LabelTitle" x=88 y=26 width=max height=32}
+		place {control="LabelText" x=88 y=48 width=max height=32}
 	}
 	
 	"AchievementNotification"
