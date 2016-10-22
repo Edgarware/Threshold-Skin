@@ -159,22 +159,25 @@ steam.styles
 	Chat.Popup = DefaultBackground
 	Chat.Div = Light
 	
+	//Games that are currently playable (installed, running, etc) use "Installed.Text"
+	//Games that are currently not playable (uninstalled, updating) use "Uninstalled.Text"
+	//Todo: Find a color between uninstalled & installed for updating, to reduce confusion
 	Uninstalled.Text=DefaultText.Disabled
 	Uninstalled.Hover.Text="94 94 94 255"
 	Installed.Text=DefaultText
 	Installed.Hover.Text="200 200 200 255"
 	Shortcut.Text=Installed.Text
-	Shortcut.Hover.Text=DefaultText
+	Shortcut.Hover.Text=Installed.Hover.Text
 	Mod.Text=Installed.Text
-	Mod.Hover.Text=DefaultText
-	Updating.Text=AccentText //active game text needs to be accent specific to prevent conflicts
-	Updating.Hover.Text=AccentTextHover
-	Decrypting.Text=AccentText
-	Decrypting.Hover.Text=AccentTextHover
-	Syncing.Text=AccentText
-	Syncing.Hover.Text=AccentTextHover
-	Running.Text=AccentText
-	Running.Hover.Text=AccentTextHover
+	Mod.Hover.Text=Installed.Hover.Text
+	Updating.Text=Uninstalled.Text
+	Updating.Hover.Text=Uninstalled.Hover.Text
+	Decrypting.Text=Uninstalled.Text
+	Decrypting.Hover.Text=Uninstalled.Hover.Text
+	Syncing.Text=Installed.Text
+	Syncing.Hover.Text=Installed.Hover.Text
+	Running.Text=Installed.Text
+	Running.Hover.Text=Installed.Hover.Text
 	
  }
   
@@ -897,13 +900,13 @@ steam.styles
     "GameItem_Installed:hover"
     {
 		textcolor=Installed.Hover.Text
-		selectedtextcolor=Installed.Text
+		selectedtextcolor=Installed.Hover.Text
     }
 
     "GameItem_Running"
     {
       textcolor=Running.Text
-      selectedtextcolor=Running.Hover.Text
+      selectedtextcolor=Running.Text
     }
     "GameItem_Running:hover"
     {
@@ -941,7 +944,7 @@ steam.styles
     "GameItem_Updating:hover"
     {
     	textcolor=Updating.Hover.Text
-    	selectedtextcolor=Updating.Text
+    	selectedtextcolor=Updating.Hover.Text
     }
     
     "GameItem_Decrypting"
@@ -952,7 +955,7 @@ steam.styles
     "GameItem_Decrypting:hover"
     {
     	textcolor=Decrypting.Hover.Text
-    	selectedtextcolor=Decrypting.Text
+    	selectedtextcolor=Decrypting.Hover.Text
     }
     
     "GameItem_Syncing"
@@ -963,7 +966,7 @@ steam.styles
     "GameItem_Syncing:hover"
     {
     	textcolor=Syncing.Hover.Text
-    	selectedtextcolor=Syncing.Text
+    	selectedtextcolor=Syncing.Hover.Text
     }
     
     "GameColumn_BigText"

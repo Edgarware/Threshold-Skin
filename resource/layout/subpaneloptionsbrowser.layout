@@ -39,8 +39,11 @@
 		place { start=DescriptionLabel controls=OverlayHomePageLabel dir=down margin-top=20 width=200 }
 		place { start=OverlayHomePageLabel controls=OverlayHomePage dir=down margin-top=5 width=240 }
 		place { start=OverlayHomePage controls=Divider1 dir=down region=bottom width=max margin-top=15 }
-		place { start=Divider1 controls=ClearWebCacheButton height=20 width=240 region=bottom dir=down margin-top=15 }
-		place { start=ClearWebCacheButton controls=ClearAllCookiesButton height=20 width=240 region=bottom dir=down margin-top=15 }
+		place { controls=OverlayHomePageLabel start=DescriptionLabel dir=down margin-top=20 }
+		place { controls=OverlayHomePage start=OverlayHomePageLabel dir=down margin-top=5 width=240 }
+		place { controls=Divider1 start=OverlayHomePage dir=down width=max margin-top=15 margin-right=20}
+		place { controls=ClearWebCacheButton start=Divider1 height=20 width=240 region=bottom dir=down margin-top=15 }
+		place { controls=ClearAllCookiesButton start=ClearWebCacheButton height=20 width=240 region=bottom dir=down margin-top=15 }
 		
 	}
 }

@@ -1,0 +1,21 @@
+"magenta.styles"
+{
+	colors
+	{
+		Accent="234 0 94 255"
+		Accent2="153 0 94 255" //Some button hover states
+		
+		AccentInv="0 255 255 255" //Complimentary color for disk usage
+		AccentText="0 200 200 255" //Updating game text, usually a permutation of AccentInv
+		AccentTextHover="0 230 230 255" //Updating game hover text, traditionally AccentText+30RGB
+		
+		TitleBar=Accent //TitleBar background
+		TitleBar.Focus="8 8 8 255" //For loss of focus
+		TitleBar.Accent=Accent2 //Accent colored button backgrounds (Back, MenuButton)
+		TitleBar.Accent.Hover="191 0 117 255" //Hover state for Back
+		
+		Notification.Back="31 31 31 255"
+		Frame.Outline=Accent
+		Frame.Outline.Focus="125 125 125 255"
+	}
+}
