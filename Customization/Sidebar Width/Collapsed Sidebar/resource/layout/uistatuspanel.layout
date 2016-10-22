@@ -14,7 +14,7 @@
 		{
 			render
 			{
-				0="image( x0+15, y0+15, x1, y1, graphics/Threshold/downloads)"
+				0="image( x0+9, y0+8, x1, y1, graphics/Threshold/downloads)"
 			}
 		}
 		

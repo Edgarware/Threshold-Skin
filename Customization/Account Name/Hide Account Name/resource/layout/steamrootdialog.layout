@@ -176,18 +176,12 @@
 		new_label	
 		{			
 			bgcolor=none
-			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
-			}
 			inset="0 0 0 0"
 		}
 		
 		new_label:hover
 		{
 			bgcolor=none
-			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/tmp/beta)"
-			}
 			inset="0 0 0 0"
 		}
 
