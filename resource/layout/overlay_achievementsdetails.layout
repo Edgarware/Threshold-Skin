@@ -60,7 +60,7 @@
 			bgcolor=Accent
 			render
 			{
-				0="fill( x0, y0, x1, y1, Accent )"
+				0="fill( x0, y0, x1+1, y1, Accent )" //Progressbar is 1px off
 			}
 		}
 		

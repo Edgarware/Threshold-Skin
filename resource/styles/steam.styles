@@ -21,6 +21,7 @@ steam.styles
 	DefaultText=white
 	DefaultText.Hover="210 210 210 255"
 	DefaultText.Disabled="74 74 74 255"
+	DefaultText.Selected=DefaultText
 	DefaultText.Back=Accent //For highlighted text
 	DefaultCursor=white
 		
@@ -150,22 +151,25 @@ steam.styles
 	Chat.Popup = DefaultBackground
 	Chat.Div = Root.Header
 	
+	//Games that are currently playable (installed, running, etc) use "Installed.Text"
+	//Games that are currently not playable (uninstalled, updating) use "Uninstalled.Text"
+	//Todo: Find a color between uninstalled & installed for updating, to reduce confusion
 	Uninstalled.Text=DefaultText.Disabled
 	Uninstalled.Hover.Text="94 94 94 255"
 	Installed.Text=DefaultText
 	Installed.Hover.Text="200 200 200 255"
 	Shortcut.Text=Installed.Text
-	Shortcut.Hover.Text=DefaultText
+	Shortcut.Hover.Text=Installed.Hover.Text
 	Mod.Text=Installed.Text
-	Mod.Hover.Text=DefaultText
-	Updating.Text=AccentText //active game text needs to be accent specific to prevent conflicts
-	Updating.Hover.Text=AccentTextHover
-	Decrypting.Text=AccentText
-	Decrypting.Hover.Text=AccentTextHover
-	Syncing.Text=AccentText
-	Syncing.Hover.Text=AccentTextHover
-	Running.Text=AccentText
-	Running.Hover.Text=AccentTextHover
+	Mod.Hover.Text=Installed.Hover.Text
+	Updating.Text=Uninstalled.Text
+	Updating.Hover.Text=Uninstalled.Hover.Text
+	Decrypting.Text=Uninstalled.Text
+	Decrypting.Hover.Text=Uninstalled.Hover.Text
+	Syncing.Text=Installed.Text
+	Syncing.Hover.Text=Installed.Hover.Text
+	Running.Text=Installed.Text
+	Running.Hover.Text=Installed.Hover.Text
 	
  }
   
@@ -885,7 +889,7 @@ steam.styles
     "GameItem_Uninstalled"
     {
 		textcolor=Uninstalled.Text
-		selectedtextcolor=Uninstalled.Hover.Text
+		selectedtextcolor=Uninstalled.Text
     }
     "GameItem_Uninstalled:hover"
     {
@@ -902,13 +906,13 @@ steam.styles
     "GameItem_Installed:hover"
     {
 		textcolor=Installed.Hover.Text
-		selectedtextcolor=Installed.Text
+		selectedtextcolor=Installed.Hover.Text
     }
 
     "GameItem_Running"
     {
       textcolor=Running.Text
-      selectedtextcolor=Running.Hover.Text
+      selectedtextcolor=Running.Text
     }
     
     "GameItem_Running:hover"
@@ -920,7 +924,7 @@ steam.styles
     "GameItem_Shortcut"
     {
 		textcolor=Shortcut.Text
-		selectedtextcolor=Shortcut.Hover.Text
+		selectedtextcolor=Shortcut.Text
     }
       
     "GameItem_Shortcut:hover"
@@ -932,7 +936,7 @@ steam.styles
     "GameItem_Mod"
     {
 		textcolor=Mod.Text
-		selectedtextcolor=Mod.Hover.Text
+		selectedtextcolor=Mod.Text
     }
       
     "GameItem_Mod:hover"
@@ -944,7 +948,7 @@ steam.styles
     "GameItem_Updating"
     {
     	textcolor=Updating.Text
-    	selectedtextcolor=Updating.Hover.Text
+    	selectedtextcolor=Updating.Text
     }
     
     "GameItem_Updating:hover"
@@ -953,16 +957,10 @@ steam.styles
     	selectedtextcolor=Updating.Hover.Text
     }
     
-    "GameItem_Updating:selected"
-    {
-    	textcolor=Updating.Hover.Text
-    	selectedtextcolor=Updating.Hover.Text
-    }
-    
     "GameItem_Decrypting"
     {
     	textcolor=Decrypting.Text
-    	selectedtextcolor=Decrypting.Hover.Text
+    	selectedtextcolor=Decrypting.Text
     }
     
     "GameItem_Decrypting:hover"
@@ -971,25 +969,13 @@ steam.styles
     	selectedtextcolor=Decrypting.Hover.Text
     }
     
-    "GameItem_Decrypting:selected"
-    {
-    	textcolor=Decrypting.Hover.Text
-    	selectedtextcolor=Decrypting.Hover.Text
-    }
-    
     "GameItem_Syncing"
     {
     	textcolor=Syncing.Text
-    	selectedtextcolor=Syncing.Hover.Text
+    	selectedtextcolor=Syncing.Text
     }
     
     "GameItem_Syncing:hover"
-    {
-    	textcolor=Syncing.Hover.Text
-    	selectedtextcolor=Syncing.Hover.Text
-    }
-    
-    "GameItem_Syncing:selected"
     {
     	textcolor=Syncing.Hover.Text
     	selectedtextcolor=Syncing.Hover.Text
@@ -2624,7 +2610,7 @@ steam.styles
 		font-size=14 [$WINDOWS]
 		font-weight=400
 		textcolor="Text"
-		selectedtextcolor="TextSelected"
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=Accent
 		bgcolor=none
 		inset="1 -1 1 1"
@@ -2987,8 +2973,8 @@ steam.styles
 	friends_chat_text //TODO: Chat text colors
 	{
 		textcolor="DefaultText"
-		selectedtextcolor="DefaultText"	
-		SelectedBgColor=DefaultText.Back
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
@@ -2996,7 +2982,7 @@ steam.styles
 	friends_chat_text_self
 	{
 		textcolor="ChatOwnTextColor"
-		selectedtextcolor="DefaultText"	
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
@@ -3005,7 +2991,7 @@ steam.styles
 	friends_chat_history
 	{
 		textcolor="ChatDialog.HistoryColor"
-		selectedtextcolor="DefaultText"	
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
@@ -3016,14 +3002,15 @@ steam.styles
 		textcolor="DefaultText"
 		font-size=14
 		font-size=16 [$WINDOWS]
-		selectedtextcolor="DefaultText"
+		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 	}
 
 	friends_chat_bright_event
 	{
 		textcolor="DefaultText"
-		selectedtextcolor="DefaultText"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 		font-weight=1000
@@ -3047,8 +3034,8 @@ steam.styles
 	friends_chat_name_ingame
 	{
 		textcolor="Friends.InGameColor"
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
@@ -3056,8 +3043,8 @@ steam.styles
 	friends_chat_name_golden
 	{
 		textcolor="Friends.GoldenColor"
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
@@ -3066,8 +3053,8 @@ steam.styles
 	friends_chat_self
 	{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
@@ -3075,16 +3062,16 @@ steam.styles
 	friends_chat_name
 	{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		font-size=14
 		font-size=16 [$WINDOWS]
 	}
 	
 	friends_chat_accountid
 	{
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 		textcolor="DefaultText"
 		font-size=14
 		font-size=16 [$WINDOWS]
@@ -3099,8 +3086,8 @@ steam.styles
 		font-size=16 [$WINDOWS]
 		font-weight=400
 		font-style=underline
-		selectedtextcolor="DefaultText"	
-		selectedbgcolor="DefaultText.Back"
+		selectedtextcolor=DefaultText.Selected
+		selectedbgcolor=DefaultText.Back
 	}
 	
 	friends_chat_securitylink:Hover

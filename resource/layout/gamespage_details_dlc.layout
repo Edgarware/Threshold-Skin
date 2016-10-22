@@ -45,7 +45,7 @@
 		"DLC_Installed"
 		{
 			textcolor=DefaultText
-			selectedtextcolor=DefaultText.Disabled
+			selectedtextcolor=DefaultText
 		}
 
 		"mostrecenttime"
