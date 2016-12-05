@@ -7,7 +7,12 @@ A Windows 10 Style Steam Skin
 [Wiki](http://github.com/Edgarware/Threshold-Skin/wiki)
 
 ##Installation
+
+### Windows
 Copy the skin folder to C:\Program Files (x86)\Steam\skins
+
+### Linux
+Copy the skin folder to ~/.steam/skins/
 
 In Steam go to Settings > Interface > and choose Threshold from the list of skins
 
