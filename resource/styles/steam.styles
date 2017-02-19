@@ -211,12 +211,11 @@ steam.styles
 	Button
 	{     
 		font-family=basefont
-		minimum-height=32
-		font-size=14
+		minimum-height=30
 		padding-left=4
 		padding-right=4
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=12 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -373,8 +372,8 @@ steam.styles
     CFriendsListSectionAffordance //Group list header option dropdown button
     {     
 		inset="0 0 0 0"
-		font-size=12 [$LINUX]
-		font-size=14
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=DefaultText
     }
@@ -383,8 +382,8 @@ steam.styles
     {
 		bgcolor=none
 		font-family=basefont
-		font-size=12 [$LINUX]
-		font-size=14
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=List.Header.Text
 		inset="5 0 0 0"
@@ -399,8 +398,8 @@ steam.styles
 		inset="0 2 0 0"
 		bgcolor=none
 		font-family=basefont
-		font-size=12 [$LINUX]
-		font-size=14
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=DefaultText
     }
@@ -409,10 +408,10 @@ steam.styles
     {
 		font-family=basefont
 		inset="20 0 0 0"
-		minimum-height=24
+		minimum-height=26
 		minimum-width=20
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=Check.Text
 		//image="graphics/Threshold/icons/check"
@@ -493,8 +492,8 @@ steam.styles
 	IndeterminateCheckButton
 	{
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=Check.Text
 		bgcolor=none
@@ -566,11 +565,11 @@ steam.styles
     ComboBox
     {
 		inset="3 0 0 0"
-		minimum-height=32
+		minimum-height=30
 		textcolor=ComboBox.Text
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		render_bg
@@ -780,8 +779,8 @@ steam.styles
 		bgcolor=none
 		inset="-6 -1 -1 -1"
 		font-family=basefont
-		font-size=12 [$LINUX]
-		font-size=14
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -817,8 +816,8 @@ steam.styles
 		selectedtextcolor=Label.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
  	}
    
@@ -826,8 +825,8 @@ steam.styles
     {
 		bgcolor=none
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -846,8 +845,8 @@ steam.styles
     "Page ListPanel"
 	{
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -866,8 +865,8 @@ steam.styles
 	{
 		font-family=basefont
 		bgcolor="none"
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
@@ -972,8 +971,8 @@ steam.styles
     "GameColumn_BigText"
 	{
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=700
 		textcolor=DefaultText
     }
@@ -981,8 +980,8 @@ steam.styles
     ListPanelCheckBox
     {
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check"
@@ -1021,8 +1020,8 @@ steam.styles
     {
 		font-family=basefont
 		minimum-height=0
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=Check.Text
 		image="graphics/Threshold/icons/check_sm"
@@ -1048,8 +1047,8 @@ steam.styles
     {
 		font-family=basefont
 		minimum-height=0
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=List.Header.Text
 		bgcolor="none"
@@ -1078,8 +1077,8 @@ steam.styles
 	"Csteamrootdialog ListPanelColumnheader"
     {
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=List.Header.Text
 		bgcolor="none"
@@ -1198,8 +1197,8 @@ steam.styles
     {     
 		inset="0 0 0 0"
 		padding-left=5
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		textcolor=List.Text
 		bgcolor="none" 
 		render
@@ -1255,9 +1254,9 @@ steam.styles
     {     
 		inset="5 0 0 0"
 		textcolor=List.Header.Text
-		minimum-height=32
-		font-size=14 [$LINUX]
-		font-size=18
+		minimum-height=30
+		font-size=13 [$LINUX]
+		font-size=15
 		render_bg
 		{
 			0="fill( x0, y0, x1, y1, List.Header)"
@@ -1420,8 +1419,8 @@ steam.styles
     {
 		font-family=basefont
 		textcolor=Menu.Text
-		font-size=14 [$LINUX]
-		font-size=16
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		inset="0 0 0 0"
 		padding-right=6
@@ -1501,7 +1500,7 @@ steam.styles
 		textcolor=Page.Tab.Text
 		font-family=basefont
 		font-size=13 [$LINUX]
-		font-size=16
+		font-size=15
 		font-weight=400
 		inset="0 0 0 0"
 		render_bg
@@ -1625,8 +1624,8 @@ steam.styles
     RadioButton
     {
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=Radio.Text
 		render_bg {}
@@ -2107,8 +2106,8 @@ steam.styles
     StatusLabel
     {
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=Label.Text
 		font-style=normal   
@@ -2127,9 +2126,9 @@ steam.styles
     TextEntry
     {
 		font-family=basefont
-		minimum-height=32
-		font-size=14 [$LINUX]
-		font-size=18
+		minimum-height=30
+		font-size=13 [$LINUX]
+		font-size=15
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
@@ -2249,8 +2248,8 @@ steam.styles
     TextEntryLarge //Used for password on login screen
     {
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		textcolor=TextBox.Text
 		font-weight=400
 		bgcolor="none"
@@ -2316,8 +2315,8 @@ steam.styles
     TextEntryURL
 	{
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		textcolor=URL.Text
 		font-weight=400
 		bgcolor="none"
@@ -2342,8 +2341,8 @@ steam.styles
     {
 		inset="1 0 0 0"
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2382,8 +2381,8 @@ steam.styles
     "Page ToggleButton"
     {
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		textcolor=Button.Text
 		bgcolor=none
@@ -2423,8 +2422,8 @@ steam.styles
     // the background and frame of a tooltip
     TooltipWindow
     {
-		font-size=14 [$LINUX]
-		font-size=16
+		font-size=13 [$LINUX]
+		font-size=15
         bgcolor="Menu.Back"
 		render_bg{
 			1="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
@@ -2437,8 +2436,8 @@ steam.styles
 	// body text inside a tooltip
     "TooltipWindow Label"
     {
-		font-size=14 [$LINUX]
-		font-size=16
+		font-size=13 [$LINUX]
+		font-size=15
 		padding-left=4
         textcolor=Label.Text
     }
@@ -2446,8 +2445,8 @@ steam.styles
     // headline text inside a tooltip
    	tooltip_headline
    	{
-		font-size=14 [$LINUX]
-		font-size=16
+		font-size=13 [$LINUX]
+		font-size=15
    		padding-left=4
 		textcolor=Accent
    	}
@@ -2493,8 +2492,8 @@ steam.styles
 		textcolor=URL.Text
 		bgcolor="none"
 		font-family=basefont
-		font-size=14 [$LINUX]
-		font-size=18
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=400
 		font-style=underline
 		selectedtextcolor=DefaultText.Selected
@@ -3208,8 +3207,8 @@ steam.styles
 
 	SuperNavMenuItem
 	{
-		font-size=14 [$LINUX]
-		font-size=16
+		font-size=13 [$LINUX]
+		font-size=15
 		font-weight=regular
 		textcolor=Menu.Text
 		bgcolor=none
