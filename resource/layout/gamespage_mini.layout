@@ -33,6 +33,7 @@
 		
 		"CGamesPage_Mini ListPanelColumnSelectButton" // the games list column chooser
 			{
+				bgcolor=none
 				inset="0 0 0 0"
 				render
 				{
@@ -45,6 +46,7 @@
 			
 		"CGamesPage_Mini ListPanelColumnSelectButton:hover" // the games list column chooser
 			{
+				bgcolor=none
 				inset="0 0 0 0"
 				render
 				{
@@ -97,7 +99,7 @@
 		}
 		
 		CGamesPage_Mini 
-		{			
+		{
 			bgcolor="DefaultBackground"
 			render_bg{
 				0="fill( x0, y0, x1, y0+96, Root.Header)"
@@ -197,9 +199,6 @@
 			bgcolor=none
 			render_bg 
 			{
-				// background gradient
-				//0="gradient( x0+1, y0+1, x1-2, y0 + 149, none, AlmostBlack )"
-				//1="fill( x0+1, y0 + 149, x1-2, y1, AlmostBlack )" 
 
 			}
 		}

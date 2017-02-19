@@ -40,11 +40,13 @@
 			render_bg{
 				
 			}
+			bgcolor=none
 		}
 		
 		ListPanel
 		{
 			render_bg {}
+			bgcolor=none
 		} 
 		
 	}

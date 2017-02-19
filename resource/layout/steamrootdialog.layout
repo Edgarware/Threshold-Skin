@@ -312,7 +312,6 @@
 			font-style=uppercase
 			render_bg
 			{
-				//0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse )"
 			}
 		}
 		
@@ -321,7 +320,6 @@
 			textcolor="white"
 			render_bg
 			{
-				//0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse_over )"
 			}
 		}
 		
@@ -379,22 +377,22 @@
 		
 		"MenuBar MenuButton:hover" 
 		{
+			bgcolor=Menu.Button.Hover
 			render_bg {
-				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
 			}
 		}
 		
 		"MenuBar MenuButton:frameFocus:hover" 
 		{
+			bgcolor=Menu.Button.Hover
 			render_bg {
-				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
 			}
 		}
 		
 		"MenuBar MenuButton:frameFocus:selected" 
 		{
+			bgcolor=Accent
 			render_bg {
-				0="fill(x0,y0,x1,y1,Accent)"
 			}
 
 		}
@@ -501,34 +499,30 @@
 			}
 			render_bg
 			{
-				
 			}	
 		}
 
 		inbox_button:hover
 		{
-
+			bgcolor=Menu.Hover
 			render 
 			{
 				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, Menu.Hover)"
 			}	
 		}
 
 		inbox_button:selected
 		{
-
+			bgcolor=Menu.Hover
 			render 
 			{
 				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
-				// background fill
-				0="fill(x0,y0,x1,y1,Menu.Hover)"
 			}	
 		}
 
@@ -541,7 +535,6 @@
 			}
 			render_bg
 			{
-				// background fill
 			}	
 		}	
 
@@ -553,39 +546,36 @@
 			font-weight=800
 			font-style=none
 			textcolor=none
-
+			bgcolor=Accent
 			render 
 			{
 				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, Accent)"
 			}	
 		}
 		
 		inbox_button_active:hover
 		{
+			bgcolor=Accent2
 			render 
 			{
 				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
-				// background fill
-				0="fill(x0, y0, x1, y1, Accent2)"
 			}	
 		}
 		inbox_button_active:selected
 		{
+			bgcolor=Accent2
 			render 
 			{
 				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
 			}
 			render_bg
 			{
-				// background fill
-				0="fill(x0, y0, x1, y1, Accent2)"
 			}	
 		}
 
@@ -605,44 +595,38 @@
 		parental_lock_button
 		{
 			bgcolor=none
-			render {}
-			render_bg
+			render
 			{
-				1="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
+				0="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
 			}	
 		}
 
 		parental_lock_button:hover
 		{
 			render {}
-			render_bg
+			bgcolor=Menu.Hover
+			render
 			{
-				0="fill(x0,y0,x1,y1,Menu.Hover)"
-				2="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
-				
+				0="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
 			}	
 			
 		}
 
 		parental_lock_button:selected
 		{
-			render {}
-			render_bg
+			render
 			{
 				1="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
-			}	
-			
+			}
 		}
 
 
 		parental_lock_button:selected:hover
 		{
-			render {}
-			render_bg
+			bgcolor=Menu.Hover
+			render
 			{
-				0="fill(x0,y0,x1,y1,Menu.Hover)"
 				2="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
-				
 			}	
 			
 		}
