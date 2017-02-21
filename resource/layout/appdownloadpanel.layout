@@ -216,12 +216,7 @@
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
-			bgcolor=none
 			image=graphics/Threshold/icons/queue
-
-			render
-			{
-			}
 		}			
 		
 		SmRemoveButton
@@ -233,12 +228,7 @@
 			font-weight=400
 			textcolor=DefaultText
 			//font-style=uppercase
-			bgcolor=none
 			image=graphics/Threshold/icons/close
-
-			render
-			{
-			}
 		}
 		
 		SlimProgressBar
