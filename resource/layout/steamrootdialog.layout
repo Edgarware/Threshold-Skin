@@ -342,7 +342,7 @@
 				0="image (x0+14, y0+94, x1, y1, graphics/Threshold/store)"
 				1="image (x0+14, y0+142, x1, y1, graphics/Threshold/library)"
 				2="image (x0+14, y0+190, x1, y1, graphics/Threshold/community)"
-				3="image (x0+14, y0+237, x1, y1, graphics/Threshold/me)"
+				3="image (x0+14, y0+238, x1, y1, graphics/Threshold/me)"
 				
 				4="fill(x0, y0, x1, y0+1, Frame.Outline.Focus)"
 				5="fill(x0, y0, x0+1, y1, Frame.Outline.Focus)"
@@ -357,7 +357,7 @@
 				0="image (x0+14, y0+94, x1, y1, graphics/Threshold/store)"
 				1="image (x0+14, y0+142, x1, y1, graphics/Threshold/library)"
 				2="image (x0+14, y0+190, x1, y1, graphics/Threshold/community)"
-				3="image (x0+14, y0+237, x1, y1, graphics/Threshold/me)"
+				3="image (x0+14, y0+238, x1, y1, graphics/Threshold/me)"
 				
 				4="fill(x0, y0, x1, y0+1, Frame.Outline)"
 				5="fill(x0, y0, x0+1, y1, Frame.Outline)"
@@ -670,7 +670,7 @@
 	colors
 	{
 		support_flag_red "169 72 71 255"
-		
+
 		support_hover_red1 "193 94 93 255"
 		support_hover_red2 "156 64 63 255"
 		
@@ -681,7 +681,7 @@
 		
 		disabledborder "63 63 63 255"
 	}
-	
+
 	layout
 	{
 		region { name=hidden width=0 height=0}

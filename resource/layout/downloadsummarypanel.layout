@@ -196,11 +196,6 @@
 			font-family=basefont
 			font-weight=400
 			//font-style=uppercase
-			bgcolor=none
-			render
-			{
-				//1="image( x0 + 10, y0 + 8, x1, y1, graphics/Threshold/icons/pause )"
-			}
 		}
 			
 		ResumeButton
@@ -209,44 +204,18 @@
 			font-family=basefont
 			font-weight=400
 			//font-style=uppercase
-			bgcolor=none
-			
-			render
-			{
-				//1="image( x0 + 10, y0 + 8, x1, y1, graphics/Threshold/icons/install )"
-			}
 		}
 
 		NetGraphPanel
 		{
 			bgcolor   "none"	
 			textcolor Accent
-			render_bg
-			{
-				// no background
-				// 0="fill( x0, y0, x1,	y1, red	)"
-			}
-			render
-			{
-				//0="fill( x0, y0, x0+50,	y1, panelBackground	)"
-				//1="gradient_horizontal( x0, y0, x0+100, y1, SecHeader1,	panelBackgroundTransparent )"
-			}
 		}
 		
 		DiscGraphPanel
 		{
 			bgcolor   "none"	
 			textcolor="AccentInv"
-			render_bg
-			{
-				// no background
-				// 0="fill( x0, y0, x1,	y1, red	)"
-			}
-			render
-			{
-				//0="fill( x0, y0, x0+50,	y1, panelBackground	)"
-				//1="gradient_horizontal( x0, y0, x0+100, y1, SecHeader1,	panelBackgroundTransparent )"
-			}
 		}
 		
 		DiskLegendPanel

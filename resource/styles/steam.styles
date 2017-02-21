@@ -5,8 +5,8 @@ steam.styles
   include "config.ini"
   colors
   {
-	// cool we can define font-families here as well
-    basefont="Segoe UI"
+	//Font Familys
+	basefont="Segoe UI" 
 	light="Segoe UI Light"
 	semilight="Segoe UI Semilight"
 	semibold="Segoe UI Semibold"
@@ -20,7 +20,7 @@ steam.styles
 	Light = "43 43 43 255"
 	
 	DefaultBackground=Neutral
-	
+
 	DefaultText=white
 	DefaultText.Hover="153 153 153 255"
 	DefaultText.Disabled="102 102 102 255"
@@ -33,7 +33,7 @@ steam.styles
 	
 	URL.Text=Accent
 	URL.Hover.Text=DefaultText.Hover
-		
+
 	Page.Back=Neutral
 	Page.Tab=Light
 	Page.Tab.Active=Accent
@@ -159,23 +159,23 @@ steam.styles
 	Chat.Popup = DefaultBackground
 	Chat.Div = Light
 	
-	//Games that are currently playable (installed, running, etc) use "Installed.Text"
-	//Games that are currently not playable (uninstalled, updating) use "Uninstalled.Text"
-	//Todo: Find a color between uninstalled & installed for updating, to reduce confusion
+	//Games that are installed/running use "Installed.Text"
+	//Games that are uninstalled use "Uninstalled.Text"
+	//Games that are updating/have updates use "Updating.Text"
 	Uninstalled.Text=DefaultText.Disabled
 	Uninstalled.Hover.Text="94 94 94 255"
 	Installed.Text=DefaultText
-	Installed.Hover.Text="200 200 200 255"
+	Installed.Hover.Text="210 210 210 255"
+	Updating.Text=DefaultText.Hover
+	Updating.Hover.Text="120 120 120 255"
 	Shortcut.Text=Installed.Text
 	Shortcut.Hover.Text=Installed.Hover.Text
 	Mod.Text=Installed.Text
 	Mod.Hover.Text=Installed.Hover.Text
-	Updating.Text=Uninstalled.Text
-	Updating.Hover.Text=Uninstalled.Hover.Text
-	Decrypting.Text=Uninstalled.Text
-	Decrypting.Hover.Text=Uninstalled.Hover.Text
-	Syncing.Text=Installed.Text
-	Syncing.Hover.Text=Installed.Hover.Text
+	Decrypting.Text=Updating.Text
+	Decrypting.Hover.Text=Updating.Hover.Text
+	Syncing.Text=Updating.Text
+	Syncing.Hover.Text=Updating.Hover.Text
 	Running.Text=Installed.Text
 	Running.Hover.Text=Installed.Hover.Text
 	
@@ -219,154 +219,145 @@ steam.styles
 		font-size=18
 		font-weight=400
 		textcolor=Button.Text
-		bgcolor=none
+		bgcolor=Button.Back
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Back )"
 		}
 	}
 	 
     "Page Button"
-    {     
+    {
+		bgcolor=Button.Page.Back
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Page.Back)"	
 		}
     }
     
 	Button:hover
     {   
   		textcolor=Button.Hover.Text
-  		render_bg
+		bgcolor=Button.Back
+  		render
 		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Back )"
-			1="fill( x0, y0, x0+2, y1, Button.Hover)"
-			2="fill( x1-2, y0, x1, y1, Button.Hover)"
-			3="fill( x0, y0, x1, y0+2, Button.Hover)"
-			4="fill( x0, y1-2, x1, y1, Button.Hover)"			
+			// lines around
+			0="fill( x0, y0, x0+2, y1, Button.Hover)"
+			1="fill( x1-2, y0, x1, y1, Button.Hover)"
+			2="fill( x0, y0, x1, y0+2, Button.Hover)"
+			3="fill( x0, y1-2, x1, y1, Button.Hover)"			
 		}
     }
 
     "Page Button:hover"
     {   
 		textcolor=Button.Hover.Text
-		render_bg
+		bgcolor=Button.Page.Back
+		render
 		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Page.Back )"
-			1="fill( x0, y0, x0+2, y1, Button.Page.Hover)"
-			2="fill( x1-2, y0, x1, y1, Button.Page.Hover)"
-			3="fill( x0, y0, x1, y0+2, Button.Page.Hover)"
-			4="fill( x0, y1-2, x1, y1, Button.Page.Hover)"
+			// lines around
+			0="fill( x0, y0, x0+2, y1, Button.Page.Hover)"
+			1="fill( x1-2, y0, x1, y1, Button.Page.Hover)"
+			2="fill( x0, y0, x1, y0+2, Button.Page.Hover)"
+			3="fill( x0, y1-2, x1, y1, Button.Page.Hover)"
 		}
     }
     
     Button:focus
     {
 		textcolor=Button.Active.Text
-		render_bg
-	    {
-			0="fill( x0, y0, x1, y1, Button.Active)"			    
+		bgcolor=Button.Active
+		render
+	    {		    
 	    }
     }
     
     "Page Button:focus"
     {
 		textcolor=Button.Active.Text
-		render_bg
-		{     
-			0="fill( x0, y0, x1, y1, Button.Active)"
+		bgcolor=Button.Active
+		render
+		{
 		}
     }
     
     Button:active // this is the left-mouse-currently-pressed state
 	{
 		textcolor=Button.Active.Text
-		render_bg
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Active)"
+		bgcolor=Button.Active
+		render
+		{
 		}
     }
     
     "Page Button:active"
     {
 		textcolor=Button.Active.Text
-		render_bg
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Active)"
+		bgcolor=Button.Active
+		render
+		{
 		}
     }
     
     Button:selected
     {
 		textcolor=Button.Active.Text
-		render_bg
+		bgcolor=Button.Active
+		render
 		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Active)"
 		}
     }
 
     "Page Button:selected"
     {
 		textcolor=Button.Active.Text
-		render_bg
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Active)"
+		bgcolor=Button.Active
+		render
+		{
 		}
     }
 	
 	Button:selected:hover
     {
 		textcolor=Button.Active.Text
-		render_bg
+		bgcolor=Button.Active
+		render
 		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Active)"
-			1="fill( x0, y0, x0+2, y1, Button.Active.Hover)"
-			2="fill( x1-2, y0, x1, y1, Button.Active.Hover)"
-			3="fill( x0, y0, x1, y0+2, Button.Active.Hover)"
-			4="fill( x0, y1-2, x1, y1, Button.Active.Hover)"
+			// lines around
+			0="fill( x0, y0, x0+2, y1, Button.Active.Hover)"
+			1="fill( x1-2, y0, x1, y1, Button.Active.Hover)"
+			2="fill( x0, y0, x1, y0+2, Button.Active.Hover)"
+			3="fill( x0, y1-2, x1, y1, Button.Active.Hover)"
 		}
     }
 
     "Page Button:selected:hover"
     {
 		textcolor=Button.Active.Text
-		render_bg
+		bgcolor=Button.Active
+		render
 		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Active)"
-			1="fill( x0, y0, x0+2, y1, Button.Active.Hover)"
-			2="fill( x1-2, y0, x1, y1, Button.Active.Hover)"
-			3="fill( x0, y0, x1, y0+2, Button.Active.Hover)"
-			4="fill( x0, y1-2, x1, y1, Button.Active.Hover)"
+			// lines around
+			0="fill( x0, y0, x0+2, y1, Button.Active.Hover)"
+			1="fill( x1-2, y0, x1, y1, Button.Active.Hover)"
+			2="fill( x0, y0, x1, y0+2, Button.Active.Hover)"
+			3="fill( x0, y1-2, x1, y1, Button.Active.Hover)"
 		}
     }
     
     Button:disabled
     {
 		textcolor=Button.Disabled.Text
-		render_bg
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Disabled)"             
+		bgcolor=Button.Disabled
+		render
+		{        
 		}
     }   
     
     "Page Button:disabled"
     {     
 		textcolor=Button.Disabled.Text
-		render_bg
+		bgcolor=Button.Disabled
+		render
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Disabled )"             
 		}   
     }
        
@@ -513,9 +504,7 @@ steam.styles
         textcolor=List.Text
         bgcolor=List.Back
         render{}
-		render_bg {				
-			// background gradient        
-			0="fill( x0, y0, x1, y1, List.Back )"
+		render_bg {
 		}
     } 
     
@@ -530,9 +519,7 @@ steam.styles
         bgcolor=List.Page
         render	{      	}  
 		render_bg
-        {     
-			// background fill
-			0="fill( x0, y0, x1, y1, List.Page )"
+        {
       	}
     }
     
@@ -573,27 +560,27 @@ steam.styles
 		font-size=18
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		render_bg
+		bgcolor=ComboBox.Back
+		render
 		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, ComboBox.Back )"
-			1="fill(x0, y0, x0+2, y1, ComboBox.Outline)" //left
-			2="fill(x1-2, y0, x1, y1, ComboBox.Outline)" //right
-			3="fill(x0, y0, x1, y0+2, ComboBox.Outline)" //top
-			4="fill(x0, y1-2, x1, y1, ComboBox.Outline)" //bottom
+			// lines around
+			0="fill(x0, y0, x0+2, y1, ComboBox.Outline)" //left
+			1="fill(x1-2, y0, x1, y1, ComboBox.Outline)" //right
+			2="fill(x0, y0, x1, y0+2, ComboBox.Outline)" //top
+			3="fill(x0, y1-2, x1, y1, ComboBox.Outline)" //bottom
 		}
     }
     
     ComboBox:hover
     {
-		render_bg
+		bgcolor=ComboBox.Back
+		render
 		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, ComboBox.Back )"
-			1="fill(x0, y0, x0+2, y1, ComboBox.Outline.Hover)" //left
-			2="fill(x1-2, y0, x1, y1, ComboBox.Outline.Hover)" //right
-			3="fill(x0, y0, x1, y0+2, ComboBox.Outline.Hover)" //top
-			4="fill(x0, y1-2, x1, y1, ComboBox.Outline.Hover)" //bottom
+			// lines around
+			0="fill(x0, y0, x0+2, y1, ComboBox.Outline.Hover)" //left
+			1="fill(x1-2, y0, x1, y1, ComboBox.Outline.Hover)" //right
+			2="fill(x0, y0, x1, y0+2, ComboBox.Outline.Hover)" //top
+			3="fill(x0, y1-2, x1, y1, ComboBox.Outline.Hover)" //bottom
 		}
     }
     
@@ -601,6 +588,7 @@ steam.styles
     {      
 		bgcolor=none
 		textcolor=none
+		render{}
 		render_bg 
 		{
 			0="image(x0+6,y0+10,x1,y1,graphics/Threshold/icons/down)"
@@ -757,10 +745,9 @@ steam.styles
 		font-size=14
 		font-weight=400
 		textcolor=Frame.Text
-		bgcolor="none"
+		bgcolor=TitleBar.Focus
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, TitleBar.Focus)"
 		}
     }
 
@@ -768,9 +755,9 @@ steam.styles
     FrameTitle:framefocus
     {
 		textcolor=Frame.Focus.Text
+		bgcolor=TitleBar
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, TitleBar)"
 		}
     }
     
@@ -806,7 +793,6 @@ steam.styles
 		//inset="2 2 2 2"
 		render_bg 
 		{
-			0="fill( x0, y0, x1, y1, almostblack )" // bg
 	    }
      
     }
@@ -824,7 +810,7 @@ steam.styles
    
     ListPanel
     {
-		bgcolor=none
+		bgcolor=List.Back
 		font-family=basefont
 		font-size=14 [$LINUX]
 		font-size=18
@@ -838,8 +824,6 @@ steam.styles
 		render{}       
 		render_bg 
 		{
-			// background gradient        
-			0="fill( x0, y0, x1, y1, List.Back)"
 		}
 	}
       
@@ -854,18 +838,16 @@ steam.styles
 		selectedbgcolor=DefaultText.Back
 		padding-left=10
 		inset="0 0 0 0"
-		bgcolor=none
+		bgcolor=List.Page
 		render_bg
-		{     
-			// background fill
-			1="fill( x0, y1, x1, y1, List.Page )"
+		{
 		}
 	}
     
     "CGamesListPanel"
 	{
 		font-family=basefont
-		bgcolor="none"
+		bgcolor=Root.Back
 		font-size=14 [$LINUX]
 		font-size=18
 		font-weight=400
@@ -876,8 +858,6 @@ steam.styles
 		padding-left=10
 		inset="0 0 0 0"
 		render_bg {
-			// background gradient        
-			1="fill( x0, y0, x1, y1, Root.Back )"
         }
     }
   
@@ -1052,13 +1032,12 @@ steam.styles
 		font-size=18
 		font-weight=400
 		textcolor=List.Header.Text
-		bgcolor="none"
+		bgcolor=List.Header
 		inset="0 0 0 0"
+		render={}
 		render_bg    
 		{
-			// fill
-			0="fill (x0, y0, x1, y1, List.Header)" // bg
-		}   
+		}
 	}
     
     ListPanelColumnHeader:hover
@@ -1068,10 +1047,9 @@ steam.styles
 	
 	"Page ListPanelColumnHeader"
 	{
+		bgcolor=List.Page.Header
 		render_bg    
 		{
-			// fill
-			0="fill (x0, y0, x1, y1, List.Page.Header)" // bg
 		} 
 	}
       
@@ -1082,13 +1060,11 @@ steam.styles
 		font-size=18
 		font-weight=400
 		textcolor=List.Header.Text
-		bgcolor="none"
+		bgcolor=List.Header
 		inset="0 0 0 0"
 		
 		render_bg    
 		{
-			// fill
-			0="fill (x0, y0, x1, y1, List.Header )" // bg fill
 		}   
 	}
 
@@ -1101,20 +1077,18 @@ steam.styles
    	"Csteamrootdialog ListPanelSectionCollapser"
 	{
 		inset = "0 1 0 0"
-		bgcolor=none
+		bgcolor=List.Header
 		render_bg
 		{
-			1="fill( x0 , y0, x1, y1, List.Header )"
 		}    
 	}
 	
 	"CGamesPage_Mini ListPanelSectionCollapser"
 	{
 		inset = "5 1 0 0"
-		bgcolor=none
+		bgcolor=List.Header
 		render_bg
 		{
-			1="fill( x0 , y0, x1, y1, List.Header  )"
 		}    
 	}
     
@@ -1123,13 +1097,12 @@ steam.styles
 	ListPanelColumnSelectButton // the games list column chooser  
 	{
         inset="-3 3 0 0"
-		bgcolor=none
+		bgcolor=List.Header
         render
         {
 			0="image( x0 + 5, y0 + 4, x1, y1, graphics/Threshold/icons/plus )"
         }   
         render_bg {
-			1="fill( x0 , y0, x1, y1, List.Header)"
         }
 	}
     
@@ -1151,12 +1124,12 @@ steam.styles
 	"CGamesListPanel ListPanelColumnSelectButton"   
 	{
         inset="0 0 0 0"
+		bgcolor=List.Header
         render
         {
 			0="image( x0+2, y0+2, x1, y1, graphics/Threshold/icons/plus )"
         }   
         render_bg {
-			1="fill( x0, y0, x1, y1, List.Header )"
         }
 	}
 	"CGamesListPanel ListPanelColumnSelectButton:hover"   
@@ -1223,10 +1196,10 @@ steam.styles
 	}
     
      "Csteamrootdialog ListPanelInterior"
-    {     
+    {
+		bgcolor=Root.Back
 		render_bg 
 		{
-			0="fill(x0, y0, x1, y1, Root.Back)"
 		}
 	}
 	
@@ -1239,10 +1212,9 @@ steam.styles
 	
 	"Page ListPanelInterior"
 	{
+		bgcolor=List.Page
 		render_bg 
-		{				
-			// background gradient        
-			0="fill( x0, y0, x1, y1, List.Page )"
+		{
 		}
 	}
 	
@@ -1258,17 +1230,17 @@ steam.styles
 		minimum-height=32
 		font-size=14 [$LINUX]
 		font-size=18
+		bgcolor=List.Header
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, List.Header)"
 		}    
     } 
 	
 	"Csteamrootdialog ListPanelSectionHeader"
-    {     
+    {
+		bgcolor=List.Header
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, List.Header)"
 		}    
     }
     
@@ -1279,6 +1251,7 @@ steam.styles
 		font-size=13 [$LINUX]
 		font-size=15
 		bgcolor=none
+		render{}
 		render_bg {} 
 	}
 
@@ -1335,17 +1308,16 @@ steam.styles
 
 	Menu
     {
-		bgcolor=none
+		bgcolor=Menu.Back
 		padding-right=4
 		inset="2 2 2 2"
       
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, Menu.Back )"
-			1="fill(x0, y0, x0+1, y1, Menu.Outline)" //left
-			2="fill(x1-1, y0, x1, y1, Menu.Outline)" //right
-			3="fill(x0, y0, x1, y0+1, Menu.Outline)" //top
-			4="fill(x0, y1-1, x1, y1, Menu.Outline)" //bottom
+			0="fill(x0, y0, x0+1, y1, Menu.Outline)" //left
+			1="fill(x1-1, y0, x1, y1, Menu.Outline)" //right
+			2="fill(x0, y0, x1, y0+1, Menu.Outline)" //top
+			3="fill(x0, y1-1, x1, y1, Menu.Outline)" //bottom
 		}
       
 		render {}
@@ -1380,18 +1352,16 @@ steam.styles
 	"MenuBar MenuButton:hover" 
 	{
 		textcolor="none"
-		//bgcolor=Menu.Hover
+		bgcolor=TitleBar.Hover
 		render_bg {
-			0="fill(x0,y0,x1,y1,TitleBar.Hover)"
 		}
 	}
 	
 	"MenuBar MenuButton:selected" 
 	{
 		textcolor="none"
-		//bgcolor=Menu.Hover
+		bgcolor=TitleBar.Accent
 		render_bg {
-			0="fill(x0,y0,x1,y1,TitleBar.Accent)"
 		}
 
 	}
@@ -1504,10 +1474,10 @@ steam.styles
 		font-size=16
 		font-weight=400
 		inset="0 0 0 0"
+		bgcolor=Page.Tab
+		render={}
 		render_bg
 		{
-			//Background
-			0="fill( x0, y0, x1, y1, Page.Tab )"
 		}
     }
 
@@ -1515,10 +1485,9 @@ steam.styles
     PageTab:selected
     {
 		textcolor=Page.Tab.Active.Text
+		bgcolor=Page.Tab.Active
 		render_bg
 		{
-			// background gradient
-			0="fill( x0, y0, x1, y1, Page.Tab.Active )"
 		}
     }
 
@@ -1526,20 +1495,18 @@ steam.styles
  	PageTab:hover
     {
 		textcolor=Page.Tab.Text
+		bgcolor=Page.Tab.Hover
 		render_bg
 		{
-			// background gradient
-			0="fill( x0, y0 , x1, y1, Page.Tab.Hover )"
 		}
     }
   
     PageTab:selected:hover
     {
 		textcolor=Page.Tab.Active.Text
+		bgcolor=Page.Tab.Active.Hover
 		render_bg
 		{
-			// background gradient
-			0="fill( x0, y0, x1, y1, Page.Tab.Active.Hover )"
 		}
     }
 
@@ -1553,6 +1520,7 @@ steam.styles
 	TabCloseButton
     {
 		render_bg {}
+		bgcolor=none
 		minimum-height=0
 		padding=0
 		image="graphics/Threshold/icons/tiny_x"
@@ -1677,11 +1645,10 @@ steam.styles
     
     RadioButtonList
     {
-		bgcolor="none"
+		bgcolor=List.Back
 		inset="-2 0 0 0"
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, List.Back  )"
 		}     
     }
         
@@ -1695,15 +1662,15 @@ steam.styles
 		font-size=15
 		font-weight=400
 		inset="0 0 0 0"
-		render_bg
+		//bgcolor=TextBox.Back
+		bgcolor=none
+		render
 		{
-			0="fill( x0, y0, x1, y1, TextBox.Back )"
-        
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
+			//0="fill( x0, y0, x1, y0 + 1, TextBox.Outline )"  // top
+			//1="fill( x0, y1 - 1, x1, y1, TextBox.Outline )"  // bottom
+			//2="fill( x0, y0, x0 + 1, y1, TextBox.Outline )"  // left
+			//3="fill( x1 - 1, y0, x1, y1, TextBox.Outline )"  // right
 		}     
     }
          
@@ -1752,157 +1719,136 @@ steam.styles
     
     ScrollBarButton.up
     {
-		bgcolor=none
+		bgcolor=Scroll.Button.Back
 		minimum-height=0
 		inset="-1 2 0 0"
 		image="graphics/Threshold/scroll/up"
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
 		}
 		
     }
     
     ScrollBarButton.up:hover
     {
+		bgcolor=Scroll.Button.Hover
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Hover )"
 		}
     }
     
     ScrollBarButton.up:active
     {
+		bgcolor=Scroll.Button.Active
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Active )"
 		}
     }
 
     ScrollBarButton.up:disabled
     {
+		bgcolor=Scroll.Button.Disabled
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, buttonfaceDisabled )"
 		}
     }
 	
     ScrollBarButton.down
 	{
-		bgcolor=none
+		bgcolor=Scroll.Button.Back
 		minimum-height=0
 		inset="-2 0 0 0"
 		image="graphics/Threshold/scroll/down"
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
 		}
     }
     
     ScrollBarButton.down:hover
 	{
+		bgcolor=Scroll.Button.Hover
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Hover )"
 		}
     }
     
     ScrollBarButton.down:active
 	{
+		bgcolor=Scroll.Button.Active
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Active )"
 		}
     }
     
     
     ScrollBarButton.down:disabled
 	{
-		image="graphics/Threshold/scroll/down" //TODO
+		bgcolor=Scroll.Button.Disabled
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
 		}
     }
     
     ScrollBarButton.left
     {
-		bgcolor=none
+		bgcolor=Scroll.Button.Back
 		minimum-height=0
 		inset="1 3 0 0"
 		image="graphics/Threshold/scroll/left"
 		render_bg 
 		{
-			// center fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
 		}
     }
     
     ScrollBarButton.left:hover
     {
+		bgcolor=Scroll.Button.Hover
 		render_bg 
 		{
-			// center fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Hover )"
 	    }
     }
         
     ScrollBarButton.right
     {
-		bgcolor=none
+		bgcolor=Scroll.Button.Back
 		minimum-height=0
 		image="graphics/Threshold/scroll/right"
 		inset="0 2 0 0"
 		render_bg 
 		{
-			// center fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Back )"
 	    }
     }
         
     ScrollBarButton.right:hover
     {
+		bgcolor=Scroll.Button.Hover
 		render_bg 
 		{
-			// center fill
-			0="fill( x0, y0, x1, y1, Scroll.Button.Hover )"
 		}
     }
     
     ScrollBarHandle  //vertical scrollbar thumb
     {
-		bgcolor=none
+		bgcolor=Scroll.Bar.Back
 		minimum-height=0
 		render_bg 
 		{
-			// center fill
-			0="fill( x0, y0, x1, y1, Scroll.Bar.Back )"
 		}
     }
        
     "ScrollBarHandle:hover"
     {
+		bgcolor=Scroll.Bar.Hover
 		render_bg 
 		{
-			// center fill
-			0="fill( x0, y0, x1, y1, Scroll.Bar.Hover )"
 		}
     }
     
     "ScrollBarHandle:active"
     {
+		bgcolor=Scroll.Bar.Active
 		render_bg 
 		{
-			// center fill
-			0="fill( x0, y0, x1, y1, Scroll.Bar.Active )"
 		}
     }
     
@@ -1910,28 +1856,25 @@ steam.styles
  
     "SliderHoriz"  //horizontal scrollbar thumb
     {
+		bgcolor=Scroll.Bar.Back
 		minimum-height=0
 		render 
 		{
-			// center fill
-			1="fill( x0, y0, x1, y1, Scroll.Bar.Back )"		
 		}
     }
     
     "SliderHoriz:hover"
     {
+		bgcolor=Scroll.Bar.Hover
 		render 
-      	{
-			// center fill
-			0="fill( x0, y0, x1, y1, Scroll.Bar.Hover )"	
+      	{	
 		}
     }
     
     "SliderHoriz:active"
     {
+		bgcolor=Scroll.Bar.Active
       	render {
-			// center fill
-        	0="fill( x0, y0, x1, y1, Scroll.Bar.Active )"	
 		}
     }
     
@@ -1959,37 +1902,33 @@ steam.styles
     
     "ScrollBar SliderHoriz" // gutter
     {
-		bgcolor="none"
+		bgcolor=Scroll.Back
     }
 
 	"HTML ScrollBar"
 	{
-		bgcolor="none"
-		render_bg { 
-			0="fill(x0,y0,x1, y1, Scroll.Back)"
+		bgcolor=Scroll.Back
+		render_bg {
 		}
 	}
 	"HTML ScrollBar.Horizontal"
 	{
-		bgcolor="none"
-		render_bg { 
-			0="fill(x0,y0,x1,y1, Scroll.Back)"
+		bgcolor=Scroll.Back
+		render_bg {
 		}
 	}
 	
 	"HTML ScrollBarSlider.Horizontal" 
 	{
-		bgcolor=none
+		bgcolor=Scroll.Back
 		render_bg {
-			//background fill
-			0="fill( x0, y0, x1, y1, Scroll.Back)"
 		}
 
 	}
 
 	"HTML SliderHoriz"
 	{
-		bgcolor=none
+		bgcolor=Scroll.Back
 		render_bg
 		{
 		}
@@ -1997,7 +1936,7 @@ steam.styles
  
     SectionedListPanel
     {
-		bgcolor=none
+		bgcolor=List.Back
 		font-family=basefont
 		font-size=13 [$LINUX]
 		font-size=15
@@ -2005,16 +1944,12 @@ steam.styles
 		textcolor=List.Text
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
-		bgcolor="none"
 		inset="1 -1 1 1"  
 		render
-		{				
-
+		{
 		}
 		render_bg 
 		{
-			// background fill
-	   		1="fill( x0, y0, x1, y1, List.Back )"   		
 		}    
     }  
     
@@ -2030,10 +1965,7 @@ steam.styles
 		selectedbgcolor=DefaultText.Back
 		render { }
 		render_bg 
-		{
-			// background fill
-	   		//0="gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )"
-	   		//1="fill( x0, y0, x1, y1, Root.Back )"   		
+		{  		
 		}    
     }
     
@@ -2041,9 +1973,8 @@ steam.styles
     {
 		render_bg 
 		{
-			1="fill( x0, y0, x1, y1, List.Header )" 
 		}
-		bgcolor=none
+		bgcolor=List.Header
 		image="graphics/Threshold/icons/right"
 		inset="6 0 0 0"
     } 
@@ -2052,9 +1983,9 @@ steam.styles
     {
 		render_bg 
 		{
-			1="fill( x0, y0, x1, y1, List.Header )" 
 		}
-		bgcolor=none
+		render{}
+		bgcolor=List.Header
 		minimum-height=0
 		image="graphics/Threshold/icons/right"
 		inset="6 0 0 0"
@@ -2132,62 +2063,59 @@ steam.styles
 		font-size=18
 		textcolor=TextBox.Text
 		font-weight=400
-		bgcolor="none"
+		bgcolor=TextBox.Back
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=DefaultCursor  // this is the cursor color
 
 		inset-left=4
 		inset-top=0
-		render_bg
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}     
     }
     
 	"Page TextEntry"
     {
-		render_bg
+		bgcolor=TextBox.Back
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}      
     }
 	
 	TextEntry:hover
 	{
 		textcolor=TextBox.Hover.Text
-		render_bg
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Hover )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Hover )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Hover )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Hover )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Hover )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Hover )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Hover )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Hover )"  // right
 		}
 	}
 	
 	"Page TextEntry:hover"
 	{
 		textcolor=TextBox.Hover.Text
-		render_bg
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Hover )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Hover )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Hover )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Hover )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Hover )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Hover )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Hover )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Hover )"  // right
 		}
 	}
     
@@ -2195,14 +2123,14 @@ steam.styles
     {     
 		textcolor=TextBox.Active.Text
 		shadowtextcolor=TextBox.Active.Cursor
-		render_bg
+		bgcolor=TextBox.Active
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Active)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Active )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Active )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Active )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Active )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Active )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Active )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Active )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Active )"  // right
 		}     
     }
        
@@ -2210,14 +2138,14 @@ steam.styles
     {     
 		textcolor=TextBox.Active.Text
 		shadowtextcolor=TextBox.Active.Cursor
-		render_bg
+		bgcolor=TextBox.Active
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Active)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Active )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Active )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Active )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Active )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Active )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Active )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Active )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Active )"  // right
 		}      
     }
     
@@ -2225,14 +2153,14 @@ steam.styles
     TextEntry:disabled
     {     
 		textcolor=TextBox.Disabled.Text
-		render_bg
+		bgcolor=TextBox.Back
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}     
     }
     
@@ -2253,34 +2181,32 @@ steam.styles
 		font-size=18
 		textcolor=TextBox.Text
 		font-weight=400
-		bgcolor="none"
+		bgcolor=TextBox.Back
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		shadowtextcolor=DefaultCursor  // this is the cursor color
 
 		inset-left=4
-		render_bg
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}   
     }
 
     TextEntryLarge:hover
     {     
 		textcolor=TextBox.Hover.Text
-		render_bg
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Hover )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Hover )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Hover )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Hover )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Hover )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Hover )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Hover )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Hover )"  // right
 		} 
     }
 	
@@ -2288,28 +2214,27 @@ steam.styles
     {     
 		textcolor=TextBox.Active.Text
 		shadowtextcolor=TextBox.Active.Cursor
-		render_bg
+		bgcolor=TextBox.Active
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Active)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Active )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Active )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Active )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Active )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline.Active )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline.Active )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline.Active )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline.Active )"  // right
 		}  
     }
     
     TextEntryLarge:disabled
     {     
 		textcolor=TextBox.Disabled.Text
-		render_bg
+		render
 		{
-			0="fill(x0, y0, x1, y1, TextBox.Back)"
 			// lines around
-			1="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
-			2="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
-			4="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
+			0="fill( x0, y0, x1, y0 + 2, TextBox.Outline )"  // top
+			1="fill( x0, y1 - 2, x1, y1, TextBox.Outline )"  // bottom
+			2="fill( x0, y0, x0 + 2, y1, TextBox.Outline )"  // left
+			3="fill( x1 - 2, y0, x1, y1, TextBox.Outline )"  // right
 		}  
     }
     
@@ -2346,11 +2271,9 @@ steam.styles
 		font-size=18
 		font-weight=400
 		textcolor=Button.Text
-		bgcolor=none
+		bgcolor=Button.Back
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Back )"
 		}
     }
     
@@ -2360,21 +2283,19 @@ steam.styles
 		render_bg
 		{     
 			// background fill
-			0="fill( x0, y0, x1, y1, Button.Back )"
-			1="fill( x0, y0, x0+2, y1, Button.Hover)"
-			2="fill( x1-2, y0, x1, y1, Button.Hover)"
-			3="fill( x0, y0, x1, y0+2, Button.Hover)"
-			4="fill( x0, y1-2, x1, y1, Button.Hover)"
+			0="fill( x0, y0, x0+2, y1, Button.Hover)"
+			1="fill( x1-2, y0, x1, y1, Button.Hover)"
+			2="fill( x0, y0, x1, y0+2, Button.Hover)"
+			3="fill( x0, y1-2, x1, y1, Button.Hover)"
 		}
     }
     
     ToggleButton:selected
     {
 		textcolor=Button.Active.Text
+		bgcolor=Button.Active
 		render_bg
 		{
-        	// background fill
-			0="fill( x0, y0, x1, y1, Button.Active)"
 		}
     }
   
@@ -2386,11 +2307,9 @@ steam.styles
 		font-size=18
 		font-weight=400
 		textcolor=Button.Text
-		bgcolor=none
+		bgcolor=Button.Page.Back
 		render_bg
 		{
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Page.Back)"
 		}
     }
     
@@ -2399,24 +2318,19 @@ steam.styles
 		textcolor=Button.Hover.Text
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, Button.Page.Back )"
 			1="fill( x0, y0, x0+2, y1, Button.Page.Hover)"
 			2="fill( x1-2, y0, x1, y1, Button.Page.Hover)"
 			3="fill( x0, y0, x1, y0+2, Button.Page.Hover)"
 			4="fill( x0, y1-2, x1, y1, Button.Page.Hover)"
 		}
     }
-  
-    "Page ToggleButton:focus"
-    {
-    }
    
     "Page ToggleButton:selected"
     {
 		textcolor=Button.Hover.Text
+		bgcolor=Button.Active
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, Button.Active)"
 		}
     }
     
@@ -2553,15 +2467,13 @@ steam.styles
 		font-size=14 [$OSX]
 		textcolor=DefaultText
 		selectedtextcolor=DefaultText
+		bgcolor=Root.Back
       
 		render
-		{				
-
+		{
 		}
 		render_bg 
-		{				
-			// background gradient        
-			1="fill( x0, y0, x1, y1, Root.Back )"
+		{
 		}
     }
     
@@ -2603,8 +2515,6 @@ steam.styles
 		bgcolor=none
 		inset="1 -1 1 1"
 		render_bg {
-			// fill with white so we can tell where this shows up
-			2="fill( x0, y0, x1, y1, white)"
         }  
     }
 	
@@ -2613,6 +2523,7 @@ steam.styles
 		bgcolor=none
 		inset="8 0 0 0"
 		render_bg={}
+		render={}
 		image="graphics/Threshold/window_controls/fullscreen_focus"
     }
 
@@ -2645,6 +2556,7 @@ steam.styles
 		inset="-2 0 0 0"
 		bgcolor=none
 		render_bg={}
+		render={}
 		image="graphics/Threshold/vr"
     }  
 
@@ -2672,6 +2584,7 @@ steam.styles
 		bgcolor=none
 		textcolor=none
 		render_bg={}
+		render={}
 		image="graphics/Threshold/vr"
     }  
 
@@ -2758,21 +2671,19 @@ steam.styles
     
     HomeButton:hover
     {
-		bgcolor=none
+		bgcolor=Menu.Button.Hover
 		render_bg={}
 		image="graphics/Threshold/home"
 		render_bg={
-			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
 		}
     }
 	
     HomeButton:active
     {
-		bgcolor=none
+		bgcolor=Accent
 		render_bg={}
 		image="graphics/Threshold/home"
 		render_bg={
-			0="fill(x0,y0,x1,y1,Accent)"
 		}
     }
 	
@@ -2793,19 +2704,17 @@ steam.styles
     
     ReloadButton:hover
     {
-		bgcolor=none
+		bgcolor=Menu.Button.Hover
 		image="graphics/Threshold/reload"
 		render_bg={
-			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
 		}
     }
 
     ReloadButton:active
     {
-		bgcolor=none
+		bgcolor=Accent
 		image="graphics/Threshold/reload"
 		render_bg={
-			0="fill(x0,y0,x1,y1,Accent)"
 		}
     }
 
@@ -2826,19 +2735,17 @@ steam.styles
     
     StopButton:hover
     {
-		bgcolor=none
+		bgcolor=Menu.Button.Hover
 		image="graphics/Threshold/stop"
 		render_bg={
-			0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
 		}
     }
 
     StopButton:active
     {
-		bgcolor=none
+		bgcolor=Accent
 		image="graphics/Threshold/stop"
 		render_bg={
-			0="fill(x0,y0,x1,y1,Accent)"
 		}
     }
 
@@ -2866,10 +2773,10 @@ steam.styles
 		render
 		{
 			// lines around
-		    1="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
-			2="fill( x0, y1 - 1, x1, y1, Menu.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, Menu.Outline )"  // left
-			4="fill( x1 - 1, y0, x1, y1, Menu.Outline )"  // right
+		    0="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
+			1="fill( x0, y1 - 1, x1, y1, Menu.Outline )"  // bottom
+			2="fill( x0, y0, x0 + 1, y1, Menu.Outline )"  // left
+			3="fill( x1 - 1, y0, x1, y1, Menu.Outline )"  // right
 		}     	
 	}
 		
@@ -2890,10 +2797,10 @@ steam.styles
 		render
 		{
 		    // lines around
-		    1="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
-			2="fill( x0, y1 - 1, x1, y1, Menu.Outline )"  // bottom
-			3="fill( x0, y0, x0 + 1, y1, Menu.Outline )"  // left
-			4="fill( x1 - 1, y0, x1, y1, Menu.Outline )"  // right
+		    0="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
+			1="fill( x0, y1 - 1, x1, y1, Menu.Outline )"  // bottom
+			2="fill( x0, y0, x0 + 1, y1, Menu.Outline )"  // left
+			3="fill( x1 - 1, y0, x1, y1, Menu.Outline )"  // right
 		}     	
 	}
       
@@ -3087,25 +2994,24 @@ steam.styles
 	
 	CChatRoomDlg //TODO: Here lies (some) chat window things. May god have mercy on your soul
 	{			
-		bgcolor="none"
+		bgcolor=DefaultBackground
 
 		render
 		{
 		}
 		render_bg
 		{	
-			0="fill(x0,y0,x1,y1,DefaultBackground)"
 		}
 
 	}
 		
 	ChatListPanel
 	{	
+		bgcolor=Chat.Back
 		render {}
 
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, Chat.Back)"
 		}
 	}
 		
@@ -3117,12 +3023,10 @@ steam.styles
 		font-size=15
 		font-weight=400
 		textcolor=DefaultText
-		bgcolor="none"
+		bgcolor=Button.Back
 		minimum-width=120
 		render_bg 
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, Button.Back )"             
+		{          
 		}
 	}
 	
@@ -3130,9 +3034,7 @@ steam.styles
 	{
 		textcolor=DefaultText.Disabled
 		render_bg
-		{     
-			// background fill
-			0="fill( x0, y0, x1, y1, none )"   
+		{
 		}
     }    
     
@@ -3192,17 +3094,16 @@ steam.styles
 	{
 		padding-left=8
 		padding-right=8
-
+		bgcolor=Menu.Back
 		render {}
 
 		render_bg
 		{
 			// top area and graphic
-			0="fill( x0, y0, x1, y1, Menu.Back )"
-			1="fill(x0, y0, x0+1, y1, Menu.Outline)" //left
-			2="fill(x1-1, y0, x1, y1, Menu.Outline)" //right
-			3="fill(x0, y0, x1, y0+1, Menu.Outline)" //top
-			4="fill(x0, y1-1, x1, y1, Menu.Outline)" //bottom
+			0="fill(x0, y0, x0+1, y1, Menu.Outline)" //left
+			1="fill(x1-1, y0, x1, y1, Menu.Outline)" //right
+			2="fill(x0, y0, x1, y0+1, Menu.Outline)" //top
+			3="fill(x0, y1-1, x1, y1, Menu.Outline)" //bottom
 		}
 	}
 
