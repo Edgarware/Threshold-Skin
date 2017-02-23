@@ -38,21 +38,22 @@
 
 		mostrecent_label
 		{
-			font-size=14 [$LINUX]
-			font-size=16
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=400
 		}
 		
 		mostrecent_name
 		{
-			font-size=17 [$LINUX]
-			font-size=26
+			font-size=16 [$LINUX]
+			font-size=24
+			font-family=semilight
 		}
 
 		mostrecent_unlockedsofar
 		{
-			font-size=14 [$LINUX]
-			font-size=16
+			font-size=13 [$LINUX]
+			font-size=15
 			font-family=semibold
 			textcolor=Root.SubLabel.Text
 		}
@@ -83,7 +84,7 @@
 		region { name=body margin=0 width=max height=max }
 
 		place { region=body control=mostrecent_label x=82 y=9 width=max }
-		place { region=body control=mostrecent_name x=82 y=25 width=max }
+		place { region=body control=mostrecent_name x=82 y=27 width=max }
 		place { region=body control=mostrecent_unlockedsofar x=82 y=54 width=max }
 
 		place { region=body control=mostrecent_background x=2 y=2 width=80 height=80 }

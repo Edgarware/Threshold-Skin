@@ -71,6 +71,7 @@
 			padding-bottom=5
 			font-size=26 [$LINUX]
 			font-size=34
+			font-family=light
 			textcolor=Text
 			font-weight=400
 			//bgcolor=DarkDialogBGTransparent

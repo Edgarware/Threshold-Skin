@@ -30,13 +30,15 @@
 		ConfirmTextHeader
 		{
 			textcolor="110 192 236 255"
-			font-size=24 [$LINUX]
-			font-size=30
+			font-family=light
+			font-size=27 [$LINUX]
+			font-size=34
 		}	
 
 		ConfirmText
 		{
 			textcolor="110 192 236 255"
+			font-family=semilight
 			font-size=16 [$LINUX]
 			font-size=24
 		}	

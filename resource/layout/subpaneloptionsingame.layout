@@ -54,7 +54,7 @@
 	
 	layout
 	{
-		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
+		region { name=box margin-top=20 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
 		
 		place { controls=TitleLabel region=box }
 		place { controls=DescriptionLabel width=max region=box start=TitleLabel width=max dir=down margin-top=8 }

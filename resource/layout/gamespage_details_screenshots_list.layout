@@ -29,16 +29,16 @@
 		infolabel
 		{
 
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor=DefaultText
 		}
 
 		screenshotslabelmore
 		{
 			inset="-3 0 0 0"
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor=Button.Text
 			font-family=basefont
 			render_bg
@@ -51,8 +51,8 @@
 		screenshotslabelmore:hover
 		{
 			inset="-3 0 0 0"
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=13 [$LINUX]
+			font-size=15
 			textcolor=Button.Hover.Text
 			font-family=basefont
 			render_bg

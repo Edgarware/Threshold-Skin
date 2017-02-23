@@ -24,8 +24,8 @@
 		
 		infolabel
 		{
-			font-size=14 [$LINUX]
-			font-size=16
+			font-size=13 [$LINUX]
+			font-size=15
 		}	
 	}
 

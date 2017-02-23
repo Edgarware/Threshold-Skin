@@ -38,8 +38,8 @@
 		everythinglabel
 		{
 			textcolor="DefaultText"
-			font-size=15 [$LINUX]
-			font-size=20
+			//font-size=13 [$LINUX]
+			//font-size=25
 		}	
 
 	}

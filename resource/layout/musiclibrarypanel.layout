@@ -177,9 +177,8 @@
 		
 		NavLabel2
 		{
-			font-family=basefont
-			font-size=16 [$LINUX]
-			font-size=24
+			font-size=15 [$LINUX]
+			font-size=20
 			font-weight=400
 			textcolor=Root.Label.Text
 			inset="0 0 6 0"
