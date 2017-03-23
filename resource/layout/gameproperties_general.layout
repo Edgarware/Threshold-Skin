@@ -109,7 +109,6 @@
 	layout
 	{
 		region { name=main margin=20 }
-		region { name=hidden width=0 height=0}
 		place { control=HomepageLabelName,DeveloperLabelName,ManualLabelName spacing=10 dir=down region=main }
 		place { controls=HomepageLabel,DeveloperLabel spacing=10 dir=down x=100 region=main }
 		place { control=ManualLabel start=DeveloperLabel spacing=10 margin-top=10 dir=down region=main }
@@ -120,14 +119,9 @@
 		place {control=Divider1 start=ManualLabelName dir=down margin-top=20 region=main width=max }
 		
 		place {controls=EnableOverlayCheck,EnableDesktopGameTheater start=Divider1 dir=down margin-top=20 spacing=0 width=max region=main }
-<<<<<<< HEAD
 		place {controls=LaunchOptionsButton,CreateDesktopShortcutButton start=EnableDesktopGameTheater dir=down margin-top=15 spacing=10 width=240 height=24 region=main }
 		
 		place {controls=FamilySharingUnsupportedLabel margin-top=472 margin-left=20 }
 
-=======
-		place {controls=LaunchOptionsButton,CreateDesktopShortcutButton start=EnableOverlayCheck y=30 dir=down margin-top=20 spacing=10 width=240 height=24 region=main }
-		place {controls=FamilySharingUnsupportedLabel margin-top=472 margin-left=20 }
->>>>>>> master
 	}
 }

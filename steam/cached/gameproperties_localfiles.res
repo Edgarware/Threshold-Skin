@@ -4,7 +4,7 @@
 		region { name=main margin=20 }
 		
 		place { controls=DiskUsageLabel region=main }
-		place { controls="OpenInstallFolder,BackupButton,DeleteButton,VerifyButton" dir=down region=main start=DiskUsageLabel spacing=5 width=320 margin-top=10 }
+		place { controls="OpenInstallFolder,MoveInstallFolder,BackupButton,DeleteButton,VerifyButton" dir=down region=main start=DiskUsageLabel spacing=5 width=320 margin-top=10 }
 		place { controls=BuildIDLabel region=main start=VerifyButton dir=down margin-top=10 }
 	}
 
@@ -143,6 +143,26 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 		"Command"		"OpenInstallFolder"
+		"Default"		"0"
+	}
+	"MoveInstallFolder"
+	{
+		"ControlName"		"Button"
+		"fieldName"		"MoveInstallFolder"
+		"xpos"		"24"
+		"ypos"		"186"
+		"wide"		"256"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"tabPosition"		"4"
+		"paintbackground"		"1"
+		"labelText"		"#Steam_GamePropertiesMoveFolder"
+		"textAlignment"		"west"
+		"wrap"		"0"
+		"Command"		"MoveInstallFolder"
 		"Default"		"0"
 	}
 }
