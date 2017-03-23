@@ -59,50 +59,48 @@
 		region { name=hidden width=0 height=0}
 		region { name="buttons" width=max height=42 align="bottom" }
 	
-		place { control=DescriptionLabel region=hidden }
+		place { control=DescriptionLabel margin-top=40 margin-left=20 margin-right=20 width=max}
 		place
 		{
 			control="ChangeDesktopResolution,DynamicallyAdjustResolution,EnableCaptureNVFBC,EnableHardwareEncoding"
 			dir=down
-			align=top
+			start=DescriptionLabel
 			width=max
-			margin-left=20
 			margin-right=20
-			margin-top=40
-			spacing=5
+			margin-top=10
+			spacing=2
 		}
 		place
 		{
 			control="EnableHardwareEncodingNVIDIA,EnableHardwareEncodingAMD,EnableHardwareEncodingIntel,EnableTrafficPriorityLabel,EnableTrafficPriority"
+			margin-top=5
 			dir=down
-			align=top
+			start=EnableHardwareEncoding
 			width=max
-			margin-left=45
+			margin-left=30
 			margin-right=20
-			margin-top=205
-			spacing=0
+			spacing=2
 		}
 		place
 		{
 			control="SoftwareEncodingThreadsLabel,SoftwareEncodingThreads"
 			dir=down
-			align=top
+			start=EnableHardwareEncoding
+			margin-top=105
 			width=max
-			margin-left=20
 			margin-right=20
-			margin-top=305
-			spacing=0
+			spacing=5
 		}
 		place
 		{
 			control="EnableTrafficPriorityLabel,EnableTrafficPriority"
 			dir=down
-			align=top
+			start=SoftwareEncodingThreads
+			margin-top=15
 			width=max
-			margin-left=20
-			margin-right=20
 			margin-top=365
-			spacing=0
+			margin-right=20
+			spacing=5
 		}
 		
 		place { control="SupportInformationLabel" region="buttons" margin-left=20 height=32 }

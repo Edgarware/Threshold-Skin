@@ -41,8 +41,8 @@
 		highlight
 		{
 			textcolor=DefaultText
-			font-size=16 [$LINUX]
-			font-size=20
+			font-size=18 [$LINUX]
+			font-size=24
 		}	
 		
 		checkbox

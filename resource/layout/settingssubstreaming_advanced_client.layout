@@ -42,18 +42,52 @@
 		region { name=hidden width=0 height=0}
 		region { name="buttons" width=max height=42 align="bottom" }
 
-		place { control="DescriptionLabel" region=hidden margin-left=20 margin-right=20 margin-top=40 width=max margin-bottom=2 }
+		place { control="DescriptionLabel" margin-left=20 margin-right=20 margin-top=40 width=max }
 
 		place
 		{
-			control="BandwidthLabel,BandwidthLimit,ResolutionLabel,ResolutionLimit,AudioChannelsLabel,AudioChannelSelect,EnableHardwareDecoding,EnableDebugOverlay"
+			control="BandwidthLabel,BandwidthLimit"
+			dir=down
+			start=DescriptionLabel
+			width=max
+			margin-right=20
+			margin-top=15
+			spacing=5
+		}
+
+		place
+		{
+			control="ResolutionLabel,ResolutionLimit"
+			dir=down
+			start=BandwidthLimit
+			width=max
+			margin-right=20
+			margin-top=10
+			spacing=5
+		}
+
+		place
+		{
+			control="AudioChannelsLabel,AudioChannelSelect"
+			dir=down
+			start=ResolutionLimit
+			width=max
+			margin-right=20
+			margin-top=10
+			spacing=5
+		}
+
+		place
+		{
+			control="EnableHardwareDecoding,EnableDebugOverlay"
+			start=AudioChannelSelect
 			dir=down
 			width=max
-			margin-left=20
 			margin-right=20
-			margin-top=40
-			spacing=10
+			margin-top=15
+			spacing=2
 		}
+
 		place { control="SupportInformationLabel" region="buttons" margin-left=20 margin-top=0 height=32 }
 		place { control="OKButton" region="buttons" width=92 align=right margin-right=10 }
 	}

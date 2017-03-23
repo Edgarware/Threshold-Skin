@@ -133,8 +133,8 @@
 	   
 		throttleLabel
 		{
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=12 [$LINUX]
+			font-size=15
 			textcolor   Root.Label.Text
 			padding-top	"0"
 			//font-style="uppercase"
@@ -142,8 +142,8 @@
 		
 		throttleValue
 		{
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=12 [$LINUX]
+			font-size=15
 			textcolor   Root.Label.Text
 			padding-top	"0"
 			font-style="normal"
@@ -163,31 +163,31 @@
 		//bigtext Seems to not work, overload with Label
 		{
 			font-family=basefont
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=14 [$LINUX]
+			font-size=18
 			textcolor=Root.Label.Text
 		}
 		
 		bigtextlabel 
 		{
 			font-family=basefont
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=14 [$LINUX]
+			font-size=18
 			textcolor=Root.SubLabel.Text
 		}
 		
 		bigtextHeader 
 		{
 			font-family=basefont
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=14 [$LINUX]
+			font-size=18
 		}
 	
 		bigTextNumbers 
 		{
 			font-family=basefont
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=14 [$LINUX]
+			font-size=18
 		}
 		
 		PauseButton

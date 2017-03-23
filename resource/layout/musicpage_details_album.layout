@@ -149,14 +149,14 @@
 		
 		ActionButtonStyle
 		{   
-			inset="10 0 0 0"
+			inset="18 0 0 0"
 			font-family=basefont
 			textcolor=DefaultText
 			render_bg	{}
 
 			render
 			{
-				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play )"
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play )"
 			}
 		}
 		ActionButtonStyle:hover
@@ -164,7 +164,7 @@
 			textcolor=DefaultText.Hover
 			render
 			{
-				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play_hover )"
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play_hover )"
 			}
 		}
 		
@@ -173,7 +173,7 @@
 			textcolor=DefaultText
 			render
 			{
-				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play )"
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play )"
 			}
 		}
 	}
@@ -190,7 +190,7 @@
 		place { control="AlbumTitleLabel" region=bodyregion start=CoverImage dir=right x=20 y=0 }
 		place { control="ArtistLabel,TracksInfoLabel" region=bodyregion start=AlbumTitleLabel dir=down}
 		place { control="PlayTracksButton" region=bodyregion y=5 start=TracksInfoLabel dir=down}
-		place { control="AddTracksToQueueButton,AddTracksToPlaylistButton,PlayAlbumButton,AddAlbumToQueueButton,AddAlbumToPlaylistButton,ShowAlbumButton,ShowAlbumInSystemButton" region=bodyregion dir=right start=PlayTracksButton spacing=5  }
+		place { control="AddTracksToQueueButton,AddTracksToPlaylistButton,PlayAlbumButton,AddAlbumToQueueButton,AddAlbumToPlaylistButton,ShowAlbumButton,ShowAlbumInSystemButton" margin-left=5 region=bodyregion dir=right start=PlayTracksButton spacing=5  }
 		place { control=*MusicPageDetailsTrack dir=down y=220 x=0 width=max region=bodyregion}
 	}
 }

@@ -1245,7 +1245,7 @@ steam.styles
     
 	"ListPanel RichText"
 	{
-		textcolor=TextBox.Text
+		textcolor=TextBox.Hover.Text
 		font-family=basefont
 		font-size=13 [$LINUX]
 		font-size=15
@@ -1258,7 +1258,7 @@ steam.styles
 	{
 		font-size=13 [$LINUX]
 		font-size=15
-		textcolor=TextBox.Text
+		textcolor=URL.Text
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 		font-style=underline
@@ -1653,7 +1653,7 @@ steam.styles
         
     RichText
     {
-		textcolor=TextBox.Text
+		textcolor=TextBox.Hover.Text
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back	
 		font-family=basefont

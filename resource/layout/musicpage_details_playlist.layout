@@ -96,14 +96,14 @@
 		
 		ActionButtonStyle
 		{   
-			inset="10 0 0 0"
+			inset="18 0 0 0"
 			font-family=basefont
 			textcolor=DefaultText
 			render_bg	{}
 
 			render
 			{
-				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play )"
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play )"
 			}
 		}
 		ActionButtonStyle:hover
@@ -111,7 +111,7 @@
 			textcolor=DefaultText.Hover
 			render
 			{
-				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play_hover )"
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play_hover )"
 			}
 		}
 		
@@ -120,7 +120,7 @@
 			textcolor=DefaultText
 			render
 			{
-				1="image( x0, y0 + 8, x1, y1, graphics/Threshold/music/play )"
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play )"
 			}
 		}
 }
@@ -133,7 +133,7 @@
 		place { control="PlaylistTitleLabel" region=bodyregion start=CoverImage dir=right x=20 y=0 }
 		place { control="TracksInfoLabel" region=bodyregion start=PlaylistTitleLabel y=5 dir=down}
 		place { control="PlayPlaylistButton" region=bodyregion y=5 start=TracksInfoLabel dir=down}
-		place { control="AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton" region=bodyregion dir=right spacing=5 start=PlayPlaylistButton}
+		place { control="AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton" margin-left=5 region=bodyregion dir=right spacing=5 start=PlayPlaylistButton}
 		place { control=*MusicPageDetailsPlaylistTrack dir=down y=120 x=0 width=max region=bodyregion}
 	}
 }

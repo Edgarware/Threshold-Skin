@@ -91,7 +91,7 @@
 		place { region=bottom control=HostDivider width=max}
 		place { region=bottom control=HostLabel width=max start=HostDivider dir=down margin-top=15 }
 		place { region=bottom control=UnsupportedPlatform width=max start=HostLabel dir=down margin-top=10 }
-		place { region=bottom control=AdvancedHostOptions start=UnsupportedPlatform dir=down margin-top=10 }
+		place { region=bottom control=AdvancedHostOptions start=HostLabel dir=down margin-top=10 }
 		
 		place { region=bottom control=ClientDivider width=max start=AdvancedHostOptions dir=down margin-top=15 }
 		place { region=bottom control=ClientLabel width=max start=ClientDivider dir=down margin-top=15 }

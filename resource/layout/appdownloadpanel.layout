@@ -110,8 +110,8 @@
 			padding-top="0"
 			//font-style="uppercase"
 			textcolor=Root.SubLabel.Text
-			font-size=14 [$LINUX]
-			font-size=18
+			font-size=13 [$LINUX]
+			font-size=15
 		}
 		
 		label3
@@ -136,8 +136,8 @@
 		{
 			font-family=basefont
 			bgcolor="none"
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=14 [$LINUX]
+			font-size=18
 			padding-top	"0"
 		}								
 		

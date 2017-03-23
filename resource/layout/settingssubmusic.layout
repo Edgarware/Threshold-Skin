@@ -72,8 +72,8 @@
 		HeaderText
 		{
 			textcolor=DefaultText
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=18 [$LINUX]
+			font-size=24
 		}
 		
 		

@@ -20,8 +20,8 @@
 		BigLable
 		{
 			textcolor=DefaultText
-			font-size=15 [$LINUX]
-			font-size=20
+			font-size=16 [$LINUX]
+			font-size=24
 		}	
 	}
 		
