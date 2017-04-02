@@ -26,33 +26,28 @@
 	{
 		SectionedListPanelCollapser
 		{
-			inset = "-1 -5 0 0"
-			minimum-height=0
+			inset = "0 0 0 0"
+			minimum-height=26
 			bgcolor=none
 			render_bg
 			{	
-				// background gradient
-				0="fill( x0, y0-5, x1+2, y1, List.Header)"
+				0="fill( x0, y0, x1+2, y1, List.Header)"
 			}
+			render{}
 		}
 		SectionHeaderStyle
 		{
-			//font-style="uppercase"
-			inset = "0 -3 0 0"
-			render_bg 
-			{	
-				// background gradient
-				0="fill( x0, y0-5, x1, y1, List.Header)"
-			}
-			render
+			inset = "0 4 0 0"
+			minimum-height=26
+			render_bg
 			{
-				
+				0="fill( x0, y0, x1-10, y1, Root.TabBar)"
 			}
+			render{}
 		}
 		SectionHeaderStyleLabel
 		{
 			inset = "0 0 0 0"
-			//font-style="uppercase"
 		}
 		DownloadsPageStyle
 		{
@@ -82,8 +77,8 @@
 	layout
 	{
 		region { name=status x=0 y=0 margin=0}
-		region { name=main x=275 y=0 margin=0 margin-top=48}
+		region { name=main x=275 y=0 margin-top=48}
 		place { control="downloadsummarypanel" region=status width=275 height=max}
-		place { control="panel_list" region=main width=max height=max margin=10 spacing=10 }
+		place { control="panel_list" region=main x=10 width=max height=max margin=0 spacing=10 }
 	}
 }

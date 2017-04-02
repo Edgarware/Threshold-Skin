@@ -102,7 +102,7 @@
 		{
 			bgcolor="DefaultBackground"
 			render_bg{
-				0="fill( x0, y0, x1, y0+96, Root.Header)"
+				0="fill( x0, y0, x1, y0+96, Root.TabBar)"
 				1="fill( x0, y0+96, x1, y1, Root.Back)"
 			}
 		}	
@@ -118,6 +118,7 @@
 			font-weight=400	
 			textcolor=Search.Active.Text
 			shadowtextcolor=DefaultCursor
+			render{}
 			render_bg{ 
 				0="fill(x0,y0,x1,y1,Search.Back)"
 			}  			

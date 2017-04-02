@@ -81,7 +81,7 @@ steam.styles
 	Radio.Disabled.Text=DefaultText.Disabled
 	
 	ComboBox.Back="17 17 17 255"
-	ComboBox.Hover="Light"
+	ComboBox.Hover=Light
 	ComboBox.Outline="119 119 119 255"
 	ComboBox.Outline.Hover="153 153 153 255"
 	ComboBox.Active=ComboBox.Hover
@@ -162,12 +162,12 @@ steam.styles
 	//Games that are installed/running use "Installed.Text"
 	//Games that are uninstalled use "Uninstalled.Text"
 	//Games that are updating/have updates use "Updating.Text"
-	Uninstalled.Text=DefaultText.Disabled
-	Uninstalled.Hover.Text="94 94 94 255"
+	Uninstalled.Text="100 100 100 255"
+	Uninstalled.Hover.Text="80 80 80 255"
 	Installed.Text=DefaultText
-	Installed.Hover.Text="210 210 210 255"
-	Updating.Text=DefaultText.Hover
-	Updating.Hover.Text="120 120 120 255"
+	Installed.Hover.Text="200 200 200 255"
+	Updating.Text="165 165 165 255"
+	Updating.Hover.Text="140 140 140 255"
 	Shortcut.Text=Installed.Text
 	Shortcut.Hover.Text=Installed.Hover.Text
 	Mod.Text=Installed.Text
@@ -1077,18 +1077,14 @@ steam.styles
 	{
 		inset = "0 1 0 0"
 		bgcolor=List.Header
-		render_bg
-		{
-		}    
+		render{}
 	}
 	
 	"CGamesPage_Mini ListPanelSectionCollapser"
 	{
 		inset = "5 1 0 0"
 		bgcolor=List.Header
-		render_bg
-		{
-		}    
+		render{}
 	}
     
 

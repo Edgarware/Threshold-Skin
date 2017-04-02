@@ -250,9 +250,39 @@
 	layout
 	{
 		// Y offset here should match the vertical padding value above in the colors section
-		region { name="play" y=0 x=0 width=max height=max margin-left=10 margin-right=10 margin-top=10 }
+		region { name="header" y=0 x=0 width=max height=max }
 
-		place { control="launchbutton, clientlist" region=play align=middle dir=right spacing=0 height=32}
-		place { control=subheaderlabels start=clientlist x=10 region=play dir=right align=middle margin-top=-3 }
+		place { 
+			control=launchbutton
+			region=header
+			dir=right
+			align=middle
+			margin-left=10
+			margin-right=0
+			margin-top=10
+			margin-bottom=10
+			spacing=0
+		}
+		place { 
+			start=launchbutton
+			control=clientlist
+			region=header
+			dir=right
+			align=middle
+			margin-left=0
+			margin-right=0
+			spacing=0
+		}
+		place { 
+			start=clientlist
+			control=subheaderlabels
+			region=header
+			dir=right
+			align=middle
+			margin-top=-3
+			margin-left=10
+			margin-right=0
+			spacing=10
+		}
 	}
 }

@@ -243,12 +243,11 @@
 		//set aside some room for the	header section
 		region {name=hidden width=0 height=0}
 		region {name=head height=48 width=max}
-		region  {name=graph align=bottom width=1262 height=170 }	
+
+		region {name=graph align=bottom width=1262 height=170 }	
+		region {name=legend align=bottom margin-left=15 height=80 width=max}
 		
-		region { name=legend align=bottom margin-left=15 height=50 width=90}
-		
-		region { name=left_column x=15 y=58 width=max }
-		region { name=middle_column x=15 y=168 width=max }
+		region { name=left_column x=15 y=58 width=max height=max margin-bottom=170}
 
 		// graph
 		place { control="net_graphpanel" region=graph y=0 width="max" height="max" }				   
@@ -260,22 +259,23 @@
 		
 		place { control="disk_legend_panel" region=legend y=18 x=0  width=9 height=9 }
 		place { control="disk_legend_label" region=legend y=14 x=12 }
+
+		// throttling info
+		place { region=legend controls="blackout_label" start=disk_legend_panel dir=down margin-top=15 }
+		place { region=legend controls="blackout_value" start=blackout_label dir=right margin-left=4 }
+		place { region=legend control="throttling_label" start=blackout_label dir=down margin-top=4 }
+		place { region=legend control="throttling_value" start=throttling_label dir=right margin-left=4 }
 		
-		// put NETWORK	USAGE in the top left
+		// put NETWORK USAGE in the top left
 		place { control="header" x=15 region=head height=48}
 		
 		// top right
 		place { control="pauseresumeallbutton" region=head align=right margin-right=10 margin-top=8 height=32}
 		
-		// three rows of network	usage underneath the header
+		// three rows of network usage underneath the header
 		place { region=left_column  control="download_rate_value,download_rate" spacing=6 dir=right}
 		place { region=left_column  control="peak_download_rate_value, peak_download_rate" spacing=6 y=22 dir=right}
 		place { region=left_column  control="total_downloaded_value, total_downloaded" spacing=6 y=44 dir=right}
 		place { region=left_column  control="disk_status_value, disk_status_label" spacing=6 y=66 dir=right}
-		
-		// throttling info
-		place { region=middle_column controls="blackout_label, blackout_value" spacing=4 }
-		place { region=middle_column control="throttling_label" start=blackout_label dir=down margin-top=4 }
-		place { region=middle_column control="throttling_value" start=throttling_label dir=right margin-left=4 }
 	}
 }

@@ -50,7 +50,7 @@
 		{
 			render_bg
 			{
-				1="fill( x0, y0+10, x1, y1, Root.RightCol)"
+				1="fill( x0, y0+10, x1-10, y1, Root.RightCol)"
 			}
 			
 		}
@@ -59,8 +59,13 @@
 		{
 			render_bg
 			{
-				1="fill( x0, y0, x1, y1+3, Root.TabBar)"
-			}			
+				0="fill(x0, y0+10, x1-10, y1+10, Root.TabBar)"
+			}
+			render
+			{
+				//Got some real nutty artifacting, just cover that up...
+				1="fill(x0, y0, x1, y0+10, Root.Back)"
+			}
 		}
 
 		links
@@ -251,7 +256,7 @@
 		region { name="column1" x=0 width=200 }
 		region { name="column2" x=215 width=max}
 		region { name="column3" x=430 width=max margin-right=100}
-		region { name="column4" x=0 width=max overflow=allow-horizontal } //Wierd x setting to account for smallest window size
+		region { name="column4" x=0 width=max overflow=allow-horizontal margin-right=10 } //Wierd x setting to account for smallest window size
 		region { name="bottom" region=column4 align=bottom height=47 margin-bottom=15 width=max }
 		
 		// left column
