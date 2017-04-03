@@ -51,6 +51,7 @@
 	colors
 	{
 		BorderThumbnailUnpublished="0 0 0 255"
+		BorderThumbnailHover="200 200 200 255"
 		BorderThumbnailUploaded="0 0 0 255"
 		BorderThumbnailPublished="0 0 0 255"
 		BorderThumbnailSelected="139 185 224 255"
@@ -60,13 +61,13 @@
 	{
 		CScreenshotManager
 		{
-			//minimum-width=712
-			//minimum-height=500
+			minimum-width=730
+			minimum-height=450
 			render_bg
 			{
-				0="fill(x0, y0+32, x1, y0+64, Root.Header)"
-				1="fill(x0, y0+64, x1, y1-36, Root.Back)"
-				2="fill(x0, y1-36, x1, y1, DefaultBackground)"
+				0="fill(x0, y0+32, x1, y0+80, Root.Header)"
+				1="fill(x0, y0+80, x1, y1-48, Root.Back)"
+				2="fill(x0, y1-48, x1, y1, DefaultBackground)"
 				3="fill(x0, y0+32, x0+335, y1, Root.LeftCol)"
 			}
 		} 
@@ -76,22 +77,34 @@
 			bgcolor="0 0 0 255"
 			render {
 				// lines around
-				1="fill( x0, y0, x0 + 1, y1, BorderThumbnailUnpublished )"  //left
-				2="fill( x1 - 1, y0, x1, y1, BorderThumbnailUnpublished )"  //right
-				3="fill( x0, y0, x1, y0 + 1, BorderThumbnailUnpublished )"  //top
-				4="fill( x0, y1 - 1, x1, y1, BorderThumbnailUnpublished )"  //btm
+				1="fill( x0, y0, x0 + 2, y1, BorderThumbnailUnpublished )"  //left
+				2="fill( x1 - 2, y0, x1, y1, BorderThumbnailUnpublished )"  //right
+				3="fill( x0, y0, x1, y0 + 2, BorderThumbnailUnpublished )"  //top
+				4="fill( x0, y1 - 2, x1, y1, BorderThumbnailUnpublished )"  //btm
 			}
 		}
 
-		ThumbnailPublished
+		ThumbnailUnpublished:hover
 		{
 			bgcolor="0 0 0 255"
 			render {
 				// lines around
-				1="fill( x0, y0, x0 + 1, y1, BorderThumbnailPublished )"  //left
-				2="fill( x1 - 1, y0, x1, y1, BorderThumbnailPublished )"  //right
-				3="fill( x0, y0, x1, y0 + 1, BorderThumbnailPublished )"  //top
-				4="fill( x0, y1 - 1, x1, y1, BorderThumbnailPublished )"  //btm
+				1="fill( x0, y0, x0 + 2, y1, BorderThumbnailHover )"  //left
+				2="fill( x1 - 2, y0, x1, y1, BorderThumbnailHover )"  //right
+				3="fill( x0, y0, x1, y0 + 2, BorderThumbnailHover )"  //top
+				4="fill( x0, y1 - 2, x1, y1, BorderThumbnailHover )"  //btm
+			}
+		}
+
+		ThumbnailPublished //Not used?
+		{
+			bgcolor="0 0 0 255"
+			render {
+				// lines around
+				1="fill( x0, y0, x0 + 2, y1, BorderThumbnailPublished )"  //left
+				2="fill( x1 - 2, y0, x1, y1, BorderThumbnailPublished )"  //right
+				3="fill( x0, y0, x1, y0 + 2, BorderThumbnailPublished )"  //top
+				4="fill( x0, y1 - 2, x1, y1, BorderThumbnailPublished )"  //btm
 			}
 		}
 
@@ -100,23 +113,34 @@
 			bgcolor="0 0 0 255"
 			render {
 				// lines around
-				1="fill( x0, y0, x0 + 1, y1, Accent )"  //left
-				2="fill( x1 - 1, y0, x1, y1, Accent )"  //right
-				3="fill( x0, y0, x1, y0 + 1, Accent )"  //top
-				4="fill( x0, y1 - 1, x1, y1, Accent )"  //btm
-
+				1="fill( x0, y0, x0 + 2, y1, Accent )"  //left
+				2="fill( x1 - 2, y0, x1, y1, Accent )"  //right
+				3="fill( x0, y0, x1, y0 + 2, Accent )"  //top
+				4="fill( x0, y1 - 2, x1, y1, Accent )"  //btm
 			}
 		}
 
-		ThumbnailUploaded
+		ThumbnailSelected:hover
 		{
 			bgcolor="0 0 0 255"
 			render {
 				// lines around
-				1="fill( x0, y0, x0 + 1, y1, BorderThumbnailUploaded )"  //left
-				2="fill( x1 - 1, y0, x1, y1, BorderThumbnailUploaded )"  //right
-				3="fill( x0, y0, x1, y0 + 1, BorderThumbnailUploaded )"  //top
-				4="fill( x0, y1 - 1, x1, y1, BorderThumbnailUploaded )"  //btm
+				1="fill( x0, y0, x0 + 2, y1, Accent2 )"  //left
+				2="fill( x1 - 2, y0, x1, y1, Accent2 )"  //right
+				3="fill( x0, y0, x1, y0 + 2, Accent2 )"  //top
+				4="fill( x0, y1 - 2, x1, y1, Accent2 )"  //btm
+			}
+		}
+
+		ThumbnailUploaded //Not used?
+		{
+			bgcolor="0 0 0 255"
+			render {
+				// lines around
+				1="fill( x0, y0, x0 + 2, y1, BorderThumbnailUploaded )"  //left
+				2="fill( x1 - 2, y0, x1, y1, BorderThumbnailUploaded )"  //right
+				3="fill( x0, y0, x1, y0 + 2, BorderThumbnailUploaded )"  //top
+				4="fill( x0, y1 - 2, x1, y1, BorderThumbnailUploaded )"  //btm
 			}
 		}
 
@@ -140,8 +164,7 @@
 		{
 			inset="0 0 0 0"
 			textcolor=DefaultText
-			font-size=17
-			//inset=2
+			font-size=20
 			font-style="italic"
 		}
 
@@ -172,11 +195,6 @@
 		
 		gameselector
 		{
-			minimum-width=256
-			minimum-height=10
-			font-size=13
-			font-family=basefont
-			font-weight=700
 		}
 		
 		ScreenshotLoadingThrobber
@@ -190,19 +208,18 @@
 		{
 			font-size=60
 			font-family=basefont
-			font-weight=700
 		}
 
 		NoSelectionTitle
 		{
 			font-size=24
-			font-family=basefont
-			font-weight=400
+			font-family=semilight
+			textcolor=Accent
 		}
 
 		NoSelectionInstructions
 		{
-			font-size=16
+			font-size=15
 			font-family=basefont
 		}
 		
@@ -237,17 +254,17 @@
 		
 		region { name="details" width=335 margin-top=32 height=max }
 		region { name=detailsinfo region=details height=32 width=max y=218}
-		region { name=detailscomment region=details height=max margin-top=250 margin-bottom=35}
-		region { name=detailsbottom region=details height=35 width=max align=bottom}
+		region { name=detailscomment region=details height=max margin-top=245 margin-bottom=35}
+		region { name=detailsbottom region=details height=45 width=max align=bottom}
 		
 		region { name="list" align=right margin-left=335 margin-top=32 width=max }
-		region { name="listtop" region=list height=32 margin-left=10}
-		region { name="listbottom" region=list height=35 align=bottom}
+		region { name="listtop" region=list height=48 margin-left=10}
+		region { name="listbottom" region=list height=45 align=bottom}
 
-		place { control="selectorlabel" region="listtop" x=0 y=8 }
-		place { control="game_selector" region="listtop" start="selectorlabel" dir=right y=-4 }
+		place { control="selectorlabel" region="hidden" x=0 y=8 }
+		place { control="game_selector" region="listtop" x=10 y=9 width=max dir=right margin-right=20}
 		
-		place {	control="grid" region="list" margin-top=32 margin-left=15 margin-bottom=35 width=max height=max }
+		place {	control="grid" region="list" margin-top=48 margin-left=20 margin-bottom=48 width=max height=max }
 		place { control="no_screenshots" region="hidden" y=50 align="top-center" }
 
 		place { control="DarkRegionDetails" region="details" x=0 y=0 width=max height=max z="-1" }
@@ -256,8 +273,8 @@
 		place { control="SSSize,SSSizeOriginal" region="detailsinfo" margin-right=15 align=right height=max dir=right }
 
 		place { control="publish_caption" region="detailscomment" margin-top=15 height=40 margin-right=10 margin-left=10 width=max  }
-		place { control="publish_charsleft" region="detailscomment" align=right start=publish_caption dir=down margin-top=5 height=20 margin-right=10}
-		place { control="spoiler_checkbox" region="detailscomment" start=publish_caption dir=down}
+		place { control="publish_charsleft" region="detailscomment" align=right start=publish_caption dir=down margin-top=10 height=20 margin-right=10}
+		place { control="spoiler_checkbox" region="detailscomment" start=publish_caption dir=down margin-top=5}
 		place { control="details_caption" region="detailscomment" margin-top=15 height=40 margin-right=10 margin-left=10 width=max }
 
 		place { control="null_placer" region="hidden" width=1 align=bottom margin-bottom=2 }
@@ -273,7 +290,7 @@
 		place { control="multi_img_delete,multi_img_upload" region=details y=160 align="top-center" spacing=8 }
 
 		place { control="file_not_loaded_label" region="details" y=140 align="top-center" }
-		place { control="instr_no_selection_title,instr_no_selection" region="details" y=20 width=max margin-left=15 margin-right=15 dir=down spacing=30 }
+		place { control="instr_no_selection_title,instr_no_selection" region="details" y=20 width=max margin-left=20 margin-right=10 dir=down spacing=15 }
 	
 	}
 }
