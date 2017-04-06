@@ -16,6 +16,8 @@
 		{
 			textcolor=none
 			render_bg{}
+			render{}
+			bgcolor=none
 		}
 		
 		Button:hover

@@ -62,11 +62,13 @@
 		place [!$OSX&&!$LINUX] { controls=EnableSCTenfootOverlayCheck region=box start=EnableOverlayCheck dir=down }
 		place [!$OSX&&!$LINUX] { controls=EnableVRDesktopGameTheaterCheck region=box start=EnableSCTenfootOverlayCheck dir=down }
 		
-		place { controls=HotKeySelectorLabel,HotKeySelector start=EnableVRDesktopGameTheaterCheck margin-top=10 dir=down spacing=5 width=220 region=box }
+		[$WINDOWS] place { controls=HotKeySelectorLabel,HotKeySelector start=EnableVRDesktopGameTheaterCheck margin-top=10 dir=down spacing=5 width=220 region=box }
+		place { controls=HotKeySelectorLabel,HotKeySelector start=EnableOverlayCheck margin-top=10 dir=down spacing=5 width=220 region=box }
 		
 		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck dir=down spacing=5 start=HotKeySelector margin-top=55 width=220 region=box }
 			
-		place { controls=ScreenshotLabel start=EnableVRDesktopGameTheaterCheck margin-top=10 x=270 dir=down region=box }
+		[$WINDOWS] place { controls=ScreenshotLabel start=EnableVRDesktopGameTheaterCheck margin-top=10 x=270 dir=down region=box }
+		place { controls=ScreenshotLabel start=EnableOverlayCheck margin-top=10 x=270 dir=down region=box }
 		place { controls=ScreenshotHotKeySelector,SetScreenshotFolderButton 
 			dir=down 
 			start=ScreenshotLabel
