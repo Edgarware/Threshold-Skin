@@ -3176,6 +3176,13 @@ steam.styles
 			0="fill(x0, y0, x1, y0+64, Page.Tab)"
 		}
 	}
+
+	CPlayersDialog
+	{
+		render_bg {
+			0="fill(x0, y0, x1, y0+64, Page.Tab)"
+		}
+	}
 	
   }
 }

@@ -1,5 +1,12 @@
 "friends/PlayersSubRecentPlayers.res"
 {
+	layout{
+		region {name="bottom" align=bottom height=50 width=max}
+		place {control="PlayersList" x=0 y=0 width=max height=max margin-bottom=50}
+		place {control="AddFriendButton" region=bottom align=right margin-right=10 margin-top=12}
+	}
+	
+	
 	"PlayersList"
 	{
 		"ControlName"		"ListPanel"
