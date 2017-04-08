@@ -487,147 +487,91 @@
 		inbox_button
 		{
 			font-family=basefont
+			inset="-6 0 0 0"
 			font-size=13 [$LINUX]
 			font-size=15
 			font-weight=800
 			font-style=none
 			textcolor=Root.LeftCol.Text
-
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-			}	
+			image="graphics/Threshold/mail"
+			render{}
+			render_bg{}	
 		}
 
 		inbox_button:hover
 		{
 			bgcolor=Menu.Hover
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-			}	
+			render{}
 		}
 
 		inbox_button:selected
 		{
 			bgcolor=Menu.Hover
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-			}	
+			render{}
 		}
 
 		inbox_button:disabled
 		{
 			textcolor=Root.LeftCol.Disabled
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail_dis)"
-			}
-			render_bg
-			{
-			}	
+			image="graphics/Threshold/mail_dis"
+			render{}
 		}	
 
 		inbox_button_active
 		{
 			font-family=basefont
+			inset="-6 0 0 0"
 			font-size=13 [$LINUX]
 			font-size=15
 			font-weight=800
 			font-style=none
 			textcolor=none
 			bgcolor=Accent
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-			}	
+			image="graphics/Threshold/mail"
+			render {}
+			render_bg{}
 		}
 		
 		inbox_button_active:hover
 		{
 			bgcolor=Accent2
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-			}	
+			render {}
 		}
 		inbox_button_active:selected
 		{
 			bgcolor=Accent2
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-			}	
+			render {}
 		}
 
 		inbox_button_active:disabled
 		{
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail_dis)"
-			}
-			render_bg
-			{
-			}	
+			image="graphics/Threshold/mail_dis"
+			render {}
 		}	
-		
-		
 		
 		parental_lock_button
 		{
 			bgcolor=none
-			render
-			{
-				0="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
-			}	
+			image="graphics/Threshold/notfamilyview"
+			render{}
+			render_bg{}	
 		}
 
 		parental_lock_button:hover
 		{
-			render {}
 			bgcolor=Menu.Hover
-			render
-			{
-				0="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
-			}	
-			
 		}
 
 		parental_lock_button:selected
 		{
-			render
-			{
-				1="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
-			}
+			image="graphics/Threshold/familyview"
 		}
 
 
 		parental_lock_button:selected:hover
 		{
 			bgcolor=Menu.Hover
-			render
-			{
-				2="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
-			}	
+			image="graphics/Threshold/familyview"
 			
 		}
     

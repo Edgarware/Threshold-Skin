@@ -80,9 +80,10 @@
 			font-size=20
 			textcolor=Search.Active.Text
 			shadowtextcolor=DefaultCursor
+			bgcolor=Search.Back
 			render_bg{
-				0="fill(x0,y0,x1,y1,Search.Back)"
 			}
+			render{}
 			
 		}
 		
@@ -109,18 +110,18 @@
 		{
 			font-style=DefaultText.Disabled
 			textcolor="None"
+			
 		}
-		
+			
 		LibrarySearchIcon
 		{
-			bgcolor="none"
+			bgcolor=Search.Back
 			inset="15 2 0 0"
 			image="graphics/Threshold/icons/search"
 			padding-left=0
 			padding-right=0
 			padding-top=0
 			render_bg{
-				0="fill(x0,y0,x1,y1,Search.Back)"
 			}
 		
 		}
@@ -132,33 +133,34 @@
 
 		MusicAddButton
 		{
-			font-size=14
+			inset="5 0 0 0"
+			font-size=13 [$LINUX]
+			font-size=15
 			font-family=basefont
 			textcolor="labelfocus"
 			font-style=uppercase
+			image="graphics/Threshold/icons/plus"
 			render_bg
 			{
-				0="image( x0, y0 + 5, x1, y1, graphics/icon_collapse )"
 			}
 		}
 		
 		MusicAddButton:hover
 		{
 			textcolor="white"
+			image="graphics/Threshold/icons/plus_hover"
 			render_bg
 			{
-				0="image( x0, y0 + 5, x1, y1, graphics/icon_collapse_over )"
+
 			}
 		}			
 		
 		MusicPlayerIcon
 		{
 			bgcolor="none"
-			inset="0 0 0 0"
+			inset="-14 0 0 0" //Not sure why this offset is so much larger...
 			render_bg={}
 			image="graphics/Threshold/icons/music_player"
-			padding-left=6
-			padding-right=6
 		}
 		
 		MusicPlayerIcon:hover

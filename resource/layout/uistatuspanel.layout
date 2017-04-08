@@ -13,7 +13,7 @@
 		CUIStatusPanel
 		{
 			render{
-				0="image( x0+8, y0+7, x1, y1, graphics/Threshold/downloads)"
+				0="image( x0, y0, x1, y1, graphics/Threshold/downloads)"
 			}
 		}
 		

@@ -2548,7 +2548,7 @@ steam.styles
     
     VRButton
     {
-		inset="-2 0 0 0"
+		inset="-10 0 0 0"
 		bgcolor=none
 		render_bg={}
 		render={}
@@ -2574,10 +2574,8 @@ steam.styles
     
     VRButtonExit
     {
-		padding=0
-		inset="2 0 0 0"
+		inset="-10 0 0 0"
 		bgcolor=none
-		textcolor=none
 		render_bg={}
 		render={}
 		image="graphics/Threshold/vr"
@@ -2596,6 +2594,7 @@ steam.styles
     VRButtonExit:disabled
     {
 		bgcolor=none
+		image="none"
     }
 	
 	BackButton
