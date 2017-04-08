@@ -288,68 +288,49 @@
 
 		ViewDetailButton
 		{
-			bgcolor="none"
+			bgcolor=DefaultText
 			inset="0 0 0 0"
-			
-			//image="graphics/icon_button_detail"
 			padding-left=0
 			padding-right=0
 			render{
 				0="image(x0,y0,x1,y1,graphics/Threshold/detail)"
 			}
-			render_bg{
-				0="fill(x0,y0,x1,y1,DefaultText)"
-			}
+			render_bg{}
 		}
 		
 		ViewDetailButton:hover
 		{
-			bgcolor="none"
-			//image="graphics/icon_button_detail_over"
-			render_bg{
-				0="fill(x0,y0,x1,y1,DefaultText.Hover)"
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
 			}
 		}
 
 		ViewDetailButton:active
 		{
-			bgcolor="none"
-			//image="graphics/icon_button_detail_down"
-			render_bg{
-				0="fill(x0,y0,x1,y1,Accent)"
-			}
+			bgcolor=Accent
 		}
 		
 		ViewDetailButton:selected
 		{
-			bgcolor="none"
-			//image="graphics/icon_button_detail_down"
-			render_bg{
-				0="fill(x0,y0,x1,y1,Accent)"
-			}
+			bgcolor=Accent
 		}
 		
 		ViewDetailButton:selcted:hover
 		{
-			bgcolor="none"
-			//image="graphics/icon_button_detail_down"
-			render_bg{
-				0="fill(x0,y0,x1,y1,Accent2)"
+			bgcolor=Accent
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
 			}
 		}
 
 		ViewDetailButton:disabled
 		{
-			bgcolor="none"
-			//image="graphics/icon_button_detail_disabled"
-			render_bg{
-				0="fill(x0,y0,x1,y1,DefaultText.Disabled)"
-			}
+			bgcolor=DefaultText.Disabled
 		}
 		
 		ViewGridButton
 		{
-			bgcolor="none"
+			bgcolor=DefaultText
 			inset="1 0 0 0"
 			//image="graphics/icon_button_grid"
 			padding-left=0
@@ -357,116 +338,79 @@
 			render{
 				0="image(x0,y0,x1,y1,graphics/Threshold/grid)"
 			}
-			render_bg{
-				0="fill(x0,y0,x1,y1,DefaultText)"
-			}
+			render_bg{}
 		}
 		
 		ViewGridButton:hover
 		{
-			bgcolor=Menu.Button.Hover
-			//image="graphics/icon_button_grid_over"
-			render_bg{
-				0="fill(x0,y0,x1,y1,DefaultText.Hover)"
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
 			}
 		}
 
 		ViewGridButton:active
 		{
-			bgcolor="none"
-			//image="graphics/icon_button_grid_down"
-			render_bg{
-				0="fill(x0,y0,x1,y1,Accent)"
-			}
+			bgcolor=Accent
 		}
 		
 		ViewGridButton:selected
 		{
-			bgcolor="none"
-			//image="graphics/icon_button_grid_down"
-			render_bg{
-				0="fill(x0,y0,x1,y1,Accent)"
-			}
+			bgcolor=Accent
 		}
 
 		ViewGridButton:selected:hover
 		{
-			bgcolor=Menu.Button.Hover
-			//image="graphics/icon_button_grid_down"
-			render_bg{
-				0="fill(x0,y0,x1,y1,Accent2)"
+			bgcolor=Accent
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
 			}
 		}
 		
 		ViewGridButton:disabled
 		{
-			bgcolor="none"
-			//image="graphics/icon_button_grid_disabled"
-			render_bg{
-				0="fill(x0,y0,x1,y1,DefaultText.Disabled)"
-			}
+			bgcolor=DefaultText.Disabled)
 		}
 		
 		ViewListButton
 		{
-			bgcolor="none"
+			bgcolor=DefaultText
 			inset="1 0 0 0"
-			//image="graphics/icon_button_list"
 			padding-left=0
 			padding-right=0
 			render{
 				0="image(x0,y0,x1,y1,graphics/Threshold/list)"
 			}
-			render_bg{
-				0="fill(x0,y0,x1,y1,DefaultText)"
-			}
 		}
 		
 		ViewListButton:hover
 		{
-			bgcolor=Menu.Button.Hover
-			//image="graphics/icon_button_list_over"
-			render_bg{
-				0="fill(x0,y0,x1,y1,DefaultText.Hover)"
+			bgcolor=DefaultText
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
 			}
 		}
 
 		ViewListButton:active
 		{
-			bgcolor="none"
-			render_bg={}
-			//image="graphics/icon_button_list_down"
-			render_bg{
-				0="fill(x0,y0,x1,y1,Accent)"
-			}
+			bgcolor=Accent
 		}
 		
 		ViewListButton:selected
 		{
-			bgcolor="none"
-			render_bg={}
-			//image="graphics/icon_button_list_down"
-			render_bg{
-				0="fill(x0,y0,x1,y1,Accent)"
-			}
+			bgcolor=Accent
 		}
 		
 		ViewListButton:selected:hover
 		{
-			bgcolor=Menu.Button.Hover
-			//image="graphics/icon_button_list_down"
-			render_bg{
-				0="fill(x0,y0,x1,y1,Accent2)"
+			bgcolor=Accent
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
 			}
 		}
 		
 		ViewListButton:disabled
 		{
-			bgcolor="none"
-			//image="graphics/icon_button_list_disabled"
-			render_bg{
-				0="fill(x0,y0,x1,y1,DefaultText.Disabled)"
-			}
+			bgcolor=DefaultText.Disabled
 		}
 		
 		WebPanelStyle
