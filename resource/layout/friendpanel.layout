@@ -220,9 +220,9 @@
 		BigPictureStatusStyleInGame
 		{
 			image="graphics/icon_status_bigpic_ingame"
-			padding-left=4
+			padding-left=2
 		}
-		
+	
 		MobileStatusStyleInGame
 		{
 			image="graphics/icon_status_mobile_ingame"
@@ -237,7 +237,7 @@
 
 		VRStatusStyleInGame
 		{
-			image="graphics/icon_vr_happy"
+			image="graphics/icon_status_vr_ingame"
 			padding-left=4
 		}
 
@@ -250,7 +250,7 @@
 		place {	control="AvatarImage"			x=6 y=9 width=32 height=32		}
 		
 		place {	control="Clanstatusimage"			x=20  width=15 }
-		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,MenuButton" x=50 y=8  }
+		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,VRStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,MenuButton" x=50 y=8  }
 		place { control="StatusLabel,GameLabel" x=50 y=23 spacing=10}
 		
 		// this control is shown in the invite-to-game dialog in the overlay
