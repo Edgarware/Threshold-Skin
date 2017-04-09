@@ -154,16 +154,16 @@ steam.styles
 	//Games that are currently playable (installed, running, etc) use "Installed.Text"
 	//Games that are currently not playable (uninstalled, updating) use "Uninstalled.Text"
 	//Todo: Find a color between uninstalled & installed for updating, to reduce confusion
-	Uninstalled.Text=DefaultText.Disabled
-	Uninstalled.Hover.Text="94 94 94 255"
+	Uninstalled.Text="100 100 100 255"
+	Uninstalled.Hover.Text="80 80 80 255"
 	Installed.Text=DefaultText
 	Installed.Hover.Text="200 200 200 255"
+	Updating.Text="165 165 165 255"
+	Updating.Hover.Text="140 140 140 255"
 	Shortcut.Text=Installed.Text
 	Shortcut.Hover.Text=Installed.Hover.Text
 	Mod.Text=Installed.Text
 	Mod.Hover.Text=Installed.Hover.Text
-	Updating.Text=Uninstalled.Text
-	Updating.Hover.Text=Uninstalled.Hover.Text
 	Decrypting.Text=Uninstalled.Text
 	Decrypting.Hover.Text=Uninstalled.Hover.Text
 	Syncing.Text=Installed.Text
