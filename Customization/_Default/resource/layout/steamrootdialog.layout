@@ -153,9 +153,9 @@
 		    bgcolor="none"
 		    font-family=basefont
 		    font-size=10  [$LINUX]
-			font-size=12
+			font-size=13
 		    font-style=regular
-			inset="0 0 0 0"
+			inset="0 5 0 0"
 		}
     
 		AccountBalanceStyle:Hover
@@ -167,10 +167,10 @@
 		{
 			textcolor=Root.SubLabel.Text
 			font-family=basefont
-			font-size=13
+			font-size=14
 			font-weight=400
 		    font-style=regular
-			inset="0 0 0 0"
+			inset="0 3 0 0"
 		}
 		
 		new_label	
@@ -312,7 +312,6 @@
 			font-style=uppercase
 			render_bg
 			{
-				//0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse )"
 			}
 		}
 		
@@ -321,7 +320,6 @@
 			textcolor="white"
 			render_bg
 			{
-				//0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse_over )"
 			}
 		}
 		
@@ -344,7 +342,7 @@
 				0="image (x0+14, y0+94, x1, y1, graphics/Threshold/store)"
 				1="image (x0+14, y0+142, x1, y1, graphics/Threshold/library)"
 				2="image (x0+14, y0+190, x1, y1, graphics/Threshold/community)"
-				3="image (x0+14, y0+237, x1, y1, graphics/Threshold/me)"
+				3="image (x0+14, y0+238, x1, y1, graphics/Threshold/me)"
 				
 				4="fill(x0, y0, x1, y0+1, Frame.Outline.Focus)"
 				5="fill(x0, y0, x0+1, y1, Frame.Outline.Focus)"
@@ -359,7 +357,7 @@
 				0="image (x0+14, y0+94, x1, y1, graphics/Threshold/store)"
 				1="image (x0+14, y0+142, x1, y1, graphics/Threshold/library)"
 				2="image (x0+14, y0+190, x1, y1, graphics/Threshold/community)"
-				3="image (x0+14, y0+237, x1, y1, graphics/Threshold/me)"
+				3="image (x0+14, y0+238, x1, y1, graphics/Threshold/me)"
 				
 				4="fill(x0, y0, x1, y0+1, Frame.Outline)"
 				5="fill(x0, y0, x0+1, y1, Frame.Outline)"
@@ -379,22 +377,22 @@
 		
 		"MenuBar MenuButton:hover" 
 		{
+			bgcolor=Menu.Button.Hover
 			render_bg {
-				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
 			}
 		}
 		
 		"MenuBar MenuButton:frameFocus:hover" 
 		{
+			bgcolor=Menu.Button.Hover
 			render_bg {
-				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
 			}
 		}
 		
 		"MenuBar MenuButton:frameFocus:selected" 
 		{
+			bgcolor=Accent
 			render_bg {
-				0="fill(x0,y0,x1,y1,Accent)"
 			}
 
 		}
@@ -489,161 +487,91 @@
 		inbox_button
 		{
 			font-family=basefont
+			inset="-6 0 0 0"
 			font-size=13 [$LINUX]
 			font-size=15
 			font-weight=800
 			font-style=none
 			textcolor=Root.LeftCol.Text
-
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-				
-			}	
+			image="graphics/Threshold/mail"
+			render{}
+			render_bg{}	
 		}
 
 		inbox_button:hover
 		{
-
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-				0="fill(x0, y0, x1, y1, Menu.Hover)"
-			}	
+			bgcolor=Menu.Hover
+			render{}
 		}
 
 		inbox_button:selected
 		{
-
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-				// background fill
-				0="fill(x0,y0,x1,y1,Menu.Hover)"
-			}	
+			bgcolor=Menu.Hover
+			render{}
 		}
 
 		inbox_button:disabled
 		{
 			textcolor=Root.LeftCol.Disabled
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail_dis)"
-			}
-			render_bg
-			{
-				// background fill
-			}	
+			image="graphics/Threshold/mail_dis"
+			render{}
 		}	
 
 		inbox_button_active
 		{
 			font-family=basefont
+			inset="-6 0 0 0"
 			font-size=13 [$LINUX]
 			font-size=15
 			font-weight=800
 			font-style=none
 			textcolor=none
-
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-				0="fill(x0, y0, x1, y1, Accent)"
-			}	
+			bgcolor=Accent
+			image="graphics/Threshold/mail"
+			render {}
+			render_bg{}
 		}
 		
 		inbox_button_active:hover
 		{
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-				// background fill
-				0="fill(x0, y0, x1, y1, Accent2)"
-			}	
+			bgcolor=Accent2
+			render {}
 		}
 		inbox_button_active:selected
 		{
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail)"
-			}
-			render_bg
-			{
-				// background fill
-				0="fill(x0, y0, x1, y1, Accent2)"
-			}	
+			bgcolor=Accent2
+			render {}
 		}
 
 		inbox_button_active:disabled
 		{
-			render 
-			{
-				0="image(x0+8,y0+7,x1,y1,graphics/Threshold/mail_dis)"
-			}
-			render_bg
-			{
-			}	
+			image="graphics/Threshold/mail_dis"
+			render {}
 		}	
-		
-		
 		
 		parental_lock_button
 		{
 			bgcolor=none
-			render {}
-			render_bg
-			{
-				1="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
-			}	
+			image="graphics/Threshold/notfamilyview"
+			render{}
+			render_bg{}	
 		}
 
 		parental_lock_button:hover
 		{
-			render {}
-			render_bg
-			{
-				0="fill(x0,y0,x1,y1,Menu.Hover)"
-				2="image( x0+10, y0+9, x1, y1, graphics/Threshold/notfamilyview )"
-				
-			}	
-			
+			bgcolor=Menu.Hover
 		}
 
 		parental_lock_button:selected
 		{
-			render {}
-			render_bg
-			{
-				1="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
-			}	
-			
+			image="graphics/Threshold/familyview"
 		}
 
 
 		parental_lock_button:selected:hover
 		{
-			render {}
-			render_bg
-			{
-				0="fill(x0,y0,x1,y1,Menu.Hover)"
-				2="image( x0+10, y0+9, x1, y1, graphics/Threshold/familyview )"
-				
-			}	
+			bgcolor=Menu.Hover
+			image="graphics/Threshold/familyview"
 			
 		}
     
@@ -686,7 +614,7 @@
 	colors
 	{
 		support_flag_red "169 72 71 255"
-		
+
 		support_hover_red1 "193 94 93 255"
 		support_hover_red2 "156 64 63 255"
 		
@@ -697,7 +625,7 @@
 		
 		disabledborder "63 63 63 255"
 	}
-	
+
 	layout
 	{
 		region { name=hidden width=0 height=0}
@@ -719,7 +647,7 @@
 		place { control="fullscreen,frame_minimize,frame_maximize,frame_close" align=right width=46 height=32 spacing=0 }
 
 		place { control="FriendPanel" height=48 y=0 width=48 margin-left=4 region=account align=right}
-		place { control="account_balance,  account_balance_seperator, account_URL, universe_label" margin-right=54 y=9 spacing=5 region=account align=right}
+		place { control="account_balance, account_balance_seperator, account_URL, universe_label" dir=right margin-right=54 margin-top=9 spacing=5 region=account align=right}
 		place { control="online_friends" height=12 y=30 spacing=5 margin-right=66 region=account align=right}
 		place { control="view_friends" height=12 y=30 margin-right=56 region=account align=right}
 	}
