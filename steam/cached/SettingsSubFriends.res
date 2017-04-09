@@ -31,6 +31,9 @@
 		place { control="Label5" start=JoinGamePlaySoundCheck dir=down margin-top=15 } //when any friend comes online
 		place { control="FriendOnlineNotifyCheck,FriendOnlinePlaySoundCheck" start=Label5 dir=down margin-top=4}
 		
+		place { control="LabelGroupEvents" start=FriendOnlinePlaySoundCheck dir=down margin-top=15 } //for group events and announcements
+		place { control="EventsAndAnnouncementsNotifyCheck,EventsAndAnnouncementsPlaySoundCheck" start=LabelGroupEvents dir=down margin-top=4 }
+ 		
 		place { control="Label6" start=Label4 dir=right margin-left=80 } //when I recieve a message
 		place { control="ReceiveMessageNotifyCheck,ReceiveMessagePlaySoundCheck" start=Label6 dir=down margin-top=4}
 		
@@ -349,6 +352,63 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
+	"LabelGroupEvents"
+	{
+		"ControlName"		"Label"
+		"fieldName"		"LabelGroupEvents"
+		"xpos"		"20"
+		"ypos"		"390"
+		"wide"		"202"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"paintbackground"		"1"
+		"labelText"		"#Friends_WhenGroupEventsOrAnnouncementsHappen"
+		"textAlignment"		"west"
+		"wrap"		"0"
+	}
+	"EventsAndAnnouncementsNotifyCheck"
+	{
+		"ControlName"		"CheckButton"
+		"fieldName"		"EventsAndAnnouncementsNotifyCheck"
+		"xpos"		"25"
+		"ypos"		"409"
+		"wide"		"202"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"5"
+		"paintbackground"		"1"
+		"labelText"		"#Friends_DisplayNotification"
+		"textAlignment"		"west"
+		"wrap"		"0"
+		"Default"		"0"
+	}
+	"EventsAndAnnouncementsPlaySoundCheck"
+	{
+		"ControlName"		"CheckButton"
+		"fieldName"		"EventsAndAnnouncementsPlaySoundCheck"
+		"xpos"		"25"
+		"ypos"		"430"
+		"wide"		"202"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"6"
+		"paintbackground"		"1"
+		"labelText"		"#Friends_PlayASound"
+		"textAlignment"		"west"
+		"wrap"		"0"
+		"Default"		"0"
+	}
+
 	"Label6"
 	{
 		"ControlName"		"Label"
