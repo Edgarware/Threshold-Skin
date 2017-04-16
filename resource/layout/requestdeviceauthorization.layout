@@ -16,7 +16,7 @@
 	{
 		BigLable
 		{
-			textcolor=Text
+			textcolor=DefaultText
 			font-size=18
 		}	
 	}

@@ -28,10 +28,8 @@
 
 		Password
 		{
-
 			minimum-height=50
 			font-size=40
-
 		}
 
 		Hey
