@@ -1,5 +1,22 @@
 "friends/friendnotificationoptionsdialog.res"
 {
+	layout{
+		region {name="bottom" align=bottom width=max height=40}
+		place {control=Label4 margin-left=20 y=50  width=max}
+		place {control=JoinGameNotifyCheck start=Label4 margin-top=5 margin-left=20 dir=down width=max}
+		place {control=JoinGamePlaySoundCheck start=JoinGameNotifyCheck dir=down width=max}
+
+		place {control=Label5 start=Label4  margin-top=70 width=max dir=down}
+		place {control=FriendOnlineNotifyCheck start=Label5 margin-top=5 margin-left=20 dir=down width=max}
+		place {control=FriendOnlinePlaySoundCheck start=FriendOnlineNotifyCheck dir=down width=max}
+
+		place {control=Label6 start=Label5  margin-top=70 dir=down width=max}
+		place {control=ReceiveMessageNotifyCheck start=Label6 margin-top=5 margin-left=20 dir=down width=max}
+		place {control=ReceiveMessagePlaySoundCheck start=ReceiveMessageNotifyCheck dir=down width=max}
+
+		place {control=OKButton,Button1 dir=right spacing=10 region="bottom" align=right margin-right=10}
+	}
+
 	"CFriendNotificationOptionsDialog"
 	{
 		"ControlName"		"CFriendNotificationOptionsDialog"

@@ -128,32 +128,32 @@
 			inset="0 0 0 0"
 			textcolor=none
 			image="graphics/Threshold/send"
+			bgcolor=Chat.Back
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, Chat.Back)"
 				// lines around
-				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
+				0="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			}
 			render{}
 		}
 		
 		button:hover
 		{
+			bgcolor=Menu.Button.Hover
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, Menu.Button.Hover)"
 				// lines around
-				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
+				0="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			}
 		}
 		
 		button:active
 		{
+			bgcolor=Menu.Button.Active
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, Menu.Button.Active)"
 				// lines around
-				1="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
+				0="fill( x0, y0, x1, y0 + 1, Chat.Div )"  // top
 			}
 		}
 		
