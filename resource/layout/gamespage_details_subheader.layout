@@ -27,43 +27,24 @@
 			// minimum-width=20
 			// minimum-height set by code to match actual height of Launch button
 			// Do not set either minimum-width or -height here or it will override the code and the layout will break
-			bgcolor=none
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent )"
-			}
-			render
-			{
-			}
+			bgcolor=Accent
+			render_bg {}
+			render {}
 		}
 		
 		ClientListButton:hover
 		{
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}
+			bgcolor=Accent.Hover
 		}	
 		
 		ClientListButton:active
 		{
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}
+			bgcolor=Accent.Hover
 		}	
 				
 		ClientListButton:selected
 		{
-			bgcolor=none
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}
+			bgcolor=Accent.Hover
 		}	
 		
 
@@ -72,33 +53,21 @@
 			inset="-3 0 0 0"
 			font-family=basefont
 			font-weight=400
-			textcolor=DefaultText
+			textcolor=Accent.Text
 			//font-style=uppercase
-			bgcolor=none
+			bgcolor=Accent
 
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent )"
-			}	
+			render_bg {}
 		}
 		
 		DetailsButton:hover
 		{
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}	
+			bgcolor=Accent.Hover
 		}
 		
 		DetailsButton:active
 		{
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}	
+			bgcolor=Accent.Hover
 		}
 		
 		DetailsLaunchButton
@@ -106,45 +75,31 @@
 			inset="20 0 0 1"
 			font-family=basefont
 			font-weight=400
-			textcolor=DefaultText
+			textcolor=Accent.Text
 			//font-style=uppercase
-			bgcolor=none
+			bgcolor=Accent
 
 			render
 			{
-				1="image( x0 + 8, y0 + 8, x1, y1, graphics/Threshold/icons/play )"
+				1="image( x0 + 9, y0 + 7, x1, y1, graphics/Threshold/icons/play )"
 			}
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent )"
-			}	
+			render_bg {}	
 		}
 	
 		DetailsLaunchButton:Hover
-		{   
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}	
+		{
+			bgcolor=Accent.Hover
 		}
 		
 		DetailsLaunchButton:Selected
 		{ 
-			render_bg
-			{
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}
+			bgcolor=Accent.Hover
 		}
 		
 		
 		DetailsLaunchButton:Active
-		{ 
-			render_bg
-			{
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}	
+		{
+			bgcolor=Accent.Hover
 		}
 				
 		DetailsInstallButton
@@ -153,97 +108,63 @@
 			inset="20 0 0 1"
 			font-family=basefont
 			font-weight=400
-			textcolor=DefaultText
+			textcolor=Accent.Text
 			//font-style=uppercase
-			bgcolor=none   
+			bgcolor=Accent 
 			render
 			{
-				1="image( x0 + 8, y0 + 8, x1, y1, graphics/Threshold/icons/install)"
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/icons/install)"
 			}
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent )"
-			}	
+			render_bg {}
 		}
 		
 		DetailsInstallButton:Hover
-		{  
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}	
+		{
+			bgcolor=Accent.Hover
 		}
 		
 		DetailsInstallButton:Selected
 		{
-
-			render_bg
-			{
-       			// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"          
-			}
+			bgcolor=Accent.Hover
 		}
 		
 		
 		DetailsInstallButton:Active
 		{
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}	
+			bgcolor=Accent.Hover
 		}
 		
 		
 		DetailsBuyButton
 		{   
-			inset="23 0 0 1"
+			inset="20 0 0 1"
 			font-family=basefont
 			font-weight=400
-			textcolor=DefaultText
+			textcolor=Accent.Text
 			//font-style=uppercase
-			bgcolor=none
+			bgcolor=Accent
 
 			render
 			{
 				1="image( x0 + 6, y0 + 7, x1, y1, graphics/Threshold/icons/buy )"
 			}
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent )"
-			}	
+			render_bg {}
 		}
 		
 		DetailsBuyButton:hover
 		{   
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}	
+			bgcolor=Accent.Hover
 		}
 		
 		DetailsBuyButton:active
 		{
-			render_bg
-			{
-        		// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}	
+			bgcolor=Accent.Hover
 		}
 		
 		
 		DetailsBuyButton:Selected
 		{
-
-			render_bg
-			{     
-        		// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}
+			bgcolor=Accent.Hover
 		}
 	}
 

@@ -534,12 +534,12 @@
 		
 		inbox_button_active:hover
 		{
-			bgcolor=Accent2
+			bgcolor=Accent.Hover
 			render {}
 		}
 		inbox_button_active:selected
 		{
-			bgcolor=Accent2
+			bgcolor=Accent.Hover
 			render {}
 		}
 

@@ -484,7 +484,7 @@
 		CUINavButton:selected
 		{
 			textcolor=Root.LeftCol.Text
-			bgcolor=Accent2
+			bgcolor=Accent.Hover
 			render_bg 
 			{
 			}

@@ -213,7 +213,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
+				0="fill( x0, y0, x1, y1, Accent.Hover )"
 			}	
 		}
 		

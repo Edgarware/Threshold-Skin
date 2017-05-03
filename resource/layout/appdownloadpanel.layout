@@ -176,40 +176,40 @@
 		
 		DetailsLaunchButton
 		{   
-
 			inset="20 0 0 1"
 			font-family=basefont
 			font-weight=400
-			textcolor=DefaultText
-			bgcolor=none
+			textcolor=Accent.Text
+			//font-style=uppercase
+			bgcolor=Accent
 
 			render
 			{
-				1="image( x0 + 8, y0 + 8, x1, y1, graphics/Threshold/icons/play )"
+				1="image( x0 + 9, y0 + 7, x1, y1, graphics/Threshold/icons/play )"
 			}
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent )"
-			}	
+			render_bg {}	
 		}
 	
 		DetailsLaunchButton:Hover
-		{    
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Accent2 )"
-			}	
+		{
+			bgcolor=Accent.Hover
+		}
+		
+		DetailsLaunchButton:Selected
+		{ 
+			bgcolor=Accent.Hover
+		}
+		
+		
+		DetailsLaunchButton:Active
+		{
+			bgcolor=Accent.Hover
 		}
 		
 		DetailsLaunchButton:Disabled
-		{   
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0, x1, y1, Button.Disabled )"
-			}
+		{ 
+			bgcolor=Button.Disabled
+			textcolor=DefaultText
 		}
 
 		topOfQueueButton

@@ -3,18 +3,20 @@
 	colors
 	{
 		Accent="232 17 35 255"
-		Accent2="153 0 13 255" //Some button hover states
-		
+		Accent.Hover="153 0 13 255"
+		Accent.Selected="163 25 36 255"
+		Accent.Text="255 255 255 255" //Color of text on Accent color, usually white or black
+
 		AccentInv="20 173 208 255" //Complimentary color for disk usage
-		AccentText="0 153 188 255" //Updating game text, usually a permutation of AccentInv
-		AccentTextHover="30 183 218 255" //Updating game hover text, traditionally AccentText+30RGB
 		
+		//These are for the Colored Titlebar Option
 		TitleBar=Accent //TitleBar background
 		TitleBar.Focus="8 8 8 255" //For loss of focus
-		TitleBar.Accent=Accent2 //Accent colored button backgrounds (Back, MenuButton)
-		TitleBar.Accent.Hover="163 25 36 255" //Hover state for Back
-		
+		TitleBar.Accent=Accent.Hover //Colored buttons on/close to Titlebar
+		TitleBar.Accent.Hover=Accent.Selected //Hover states for colored buttons
 		Notification.Back="31 31 31 255"
+
+		//These are for the Window Border Option
 		Frame.Outline=Accent
 		Frame.Outline.Focus="125 125 125 255"
 	}

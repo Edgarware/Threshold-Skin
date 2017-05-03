@@ -24,7 +24,7 @@ steam.styles
 	DefaultText=white
 	DefaultText.Hover="153 153 153 255"
 	DefaultText.Disabled="102 102 102 255"
-	DefaultText.Selected=DefaultText
+	DefaultText.Selected=Accent.Text
 	DefaultText.Back=Accent //For highlighted text
 	DefaultCursor=white
 		
@@ -40,7 +40,7 @@ steam.styles
 	Page.Tab.Hover="78 78 78 255"
 	Page.Tab.Active.Hover=Page.Tab.Active
 	Page.Tab.Text=DefaultText
-	Page.Tab.Active.Text=DefaultText
+	Page.Tab.Active.Text=Accent.Text
 	
 	List.Back=Dark
 	List.Header=Light
@@ -58,11 +58,11 @@ steam.styles
 	Button.Hover="74 74 74 255"
 	Button.Page.Hover="74 74 74 255"
 	Button.Active=Accent
-	Button.Active.Hover=Accent2
+	Button.Active.Hover=Accent.Hover
 	Button.Disabled=Button.Back
 	Button.Text=DefaultText
 	Button.Hover.Text=DefaultText
-	Button.Active.Text=DefaultText
+	Button.Active.Text=Accent.Text
 	Button.Disabled.Text="109 109 109 255"
 	
 	Check.Outline="204 204 204 255"
@@ -99,7 +99,7 @@ steam.styles
 	
 	Menu.Back=ComboBox.Hover
 	Menu.Button.Hover="96 96 96 170"
-	Menu.Button.Active=Accent2
+	Menu.Button.Active=Accent.Hover
 	Menu.Hover="64 64 64 255"
 	Menu.Active=Accent
 	Menu.Outline="118 118 118 255"
@@ -129,7 +129,7 @@ steam.styles
 	
 	TitleBar.Hover="70 70 70 100" //for buttons on titlebar
 	TitleBar.Active="70 70 70 200"
-	TitleBar.CloseButton="232 17 35 255"
+	TitleBar.CloseButton="232 17 35 255" //Special colors for close X
 	TitleBar.CloseButton.Active="241 112 122 255"
 	Frame.Text="96 96 96 255"
 	Frame.Focus.Text=DefaultText
@@ -862,90 +862,90 @@ steam.styles
   
     "GameItem_Uninstalled"
     {
-		textcolor=Uninstalled.Text
-		selectedtextcolor=Uninstalled.Text
+			textcolor=Uninstalled.Text
+			selectedtextcolor=Accent.Text
     }
     "GameItem_Uninstalled:hover"
     {
-		textcolor=Uninstalled.Hover.Text
-		selectedtextcolor=Uninstalled.Text
-	}
+			textcolor=Uninstalled.Hover.Text
+			selectedtextcolor=Accent.Text
+		}
  
     "GameItem_Installed"
     {
-		textcolor=Installed.Text
-		selectedtextcolor=Installed.Text
+			textcolor=Installed.Text
+			selectedtextcolor=Accent.Text
     }
     "GameItem_Installed:hover"
     {
-		textcolor=Installed.Hover.Text
-		selectedtextcolor=Installed.Hover.Text
+			textcolor=Installed.Hover.Text
+			selectedtextcolor=Accent.Text
     }
 
     "GameItem_Running"
     {
       textcolor=Running.Text
-      selectedtextcolor=Running.Text
+      selectedtextcolor=Accent.Text
     }
     "GameItem_Running:hover"
     {
       textcolor=Running.Hover.Text
-      selectedtextcolor=Running.Hover.Text
+      selectedtextcolor=Accent.Text
     }
     
     "GameItem_Shortcut"
     {
 		textcolor=Shortcut.Text
-		selectedtextcolor=Shortcut.Text
+		selectedtextcolor=Accent.Text
     }
     "GameItem_Shortcut:hover"
     {
         textcolor=Shortcut.Hover.Text
-        selectedtextcolor=Shortcut.Text
+        selectedtextcolor=Accent.Text
     }
 	
     "GameItem_Mod"
     {
 		textcolor=Mod.Text
-		selectedtextcolor=Mod.Text
+		selectedtextcolor=Accent.Text
     }
     "GameItem_Mod:hover"
     {
         textcolor=Mod.Hover.Text
-        selectedtextcolor=Mod.Text
+        selectedtextcolor=Accent.Text
     }
 
     "GameItem_Updating"
     {
     	textcolor=Updating.Text
-    	selectedtextcolor=Updating.Text
+    	selectedtextcolor=Accent.Text
     }
     "GameItem_Updating:hover"
     {
     	textcolor=Updating.Hover.Text
-    	selectedtextcolor=Updating.Hover.Text
+    	selectedtextcolor=Accent.Text
     }
     
     "GameItem_Decrypting"
     {
     	textcolor=Decrypting.Text
-    	selectedtextcolor=Decrypting.Text
+    	selectedtextcolor=Accent.Text
     }
     "GameItem_Decrypting:hover"
     {
     	textcolor=Decrypting.Hover.Text
-    	selectedtextcolor=Decrypting.Hover.Text
+    	selectedtextcolor=Accent.Text
     }
     
     "GameItem_Syncing"
     {
     	textcolor=Syncing.Text
-    	selectedtextcolor=Syncing.Text
+    	selectedtextcolor=Accent.Text
     }
     "GameItem_Syncing:hover"
     {
     	textcolor=Syncing.Hover.Text
-    	selectedtextcolor=Syncing.Hover.Text
+    	selectedtextcolor=Accent.Text
     }
     
     "GameColumn_BigText"
@@ -2322,7 +2322,7 @@ steam.styles
    
     "Page ToggleButton:selected"
     {
-		textcolor=Button.Hover.Text
+		textcolor=Button.Active.Text
 		bgcolor=Button.Active
 		render_bg
 		{
