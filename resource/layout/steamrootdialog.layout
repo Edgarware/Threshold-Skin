@@ -304,26 +304,35 @@
 
 		AddGameButton
 		{
-			font-size=14
 			font-family=basefont
-			textcolor="labelfocus"
-			padding-right=30
-			padding-left=17
-			font-style=uppercase
-			render_bg
-			{
-			}
+			inset="-6 0 0 0"
+			font-size=13 [$LINUX]
+			font-size=15
+			font-weight=800
+			font-style=none
+			textcolor=none
+			image="graphics/Threshold/add"
+			render{}
+			render_bg{}	
 		}
-		
+
 		AddGameButton:hover
 		{
-			textcolor="white"
-			render_bg
-			{
-			}
+			bgcolor=Menu.Hover
+			render{}
 		}
-		
 
+		AddGameButton:selected
+		{
+			bgcolor=Menu.Hover
+			render{}
+		}
+
+		AddGameButton:disabled
+		{
+			textcolor=none
+			render{}
+		}	
 
 		CSteamRootDialog
 		{
