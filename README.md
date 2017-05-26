@@ -1,9 +1,7 @@
 # Threshold Skin for Steam
 A Windows 10 Style Steam Skin
 
-<p align="center">
-  <img alt="Preview" src="http://i.imgur.com/pb2XPKe.jpg">
-</p>
+![Default Configuration](/Previews/default.PNG?raw=true)
 
 [Download](http://github.com/Edgarware/Threshold-Skin/releases)  
 [Steam Community Group](http://steamcommunity.com/groups/thresholdskin)  
