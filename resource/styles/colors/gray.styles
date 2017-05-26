@@ -5,9 +5,9 @@
 		Accent="102 97 96 255"
 		Accent.Hover="122 117 116 255"
 		Accent.Selected="135 130 129 255"
-		Accent.Text=white //Color of text on Accent color, usually white or black
+		Accent.Text="255 255 255 255" //Color of text on Accent color, usually white or black
 
-		AccentInv=white //Complimentary color for disk usage
+		AccentInv="255 255 255 255" //Complimentary color for disk usage
 		
 		//These are for the Colored Titlebar Option
 		TitleBar=Accent //TitleBar background
