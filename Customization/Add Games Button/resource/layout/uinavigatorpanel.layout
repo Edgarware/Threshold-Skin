@@ -293,7 +293,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale)"
 			}
 			render_bg{}
 		}
@@ -301,7 +301,7 @@
 		ViewDetailButton:hover
 		{
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
 			}
 		}
 
@@ -319,7 +319,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
 			}
 		}
 
@@ -336,7 +336,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale)"
 			}
 			render_bg{}
 		}
@@ -344,7 +344,7 @@
 		ViewGridButton:hover
 		{
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
 			}
 		}
 
@@ -362,7 +362,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
 			}
 		}
 		
@@ -378,7 +378,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale)"
 			}
 		}
 		
@@ -386,7 +386,7 @@
 		{
 			bgcolor=DefaultText
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
 			}
 		}
 
@@ -404,7 +404,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
 			}
 		}
 		
@@ -449,7 +449,7 @@
 		
 		CUINavButton
 		{
-			textcolor=none
+			textcolor=Root.LeftCol.Text
 			bgcolor="none"
 			font-family=basefont
 			font-size=15 [$LINUX]
@@ -460,7 +460,7 @@
 
 		CUINavButton:disabled
 		{
-			textcolor=none
+			textcolor=Root.LeftCol.Disabled
 			bgcolor="none"
 			font-family=basefont
 			font-weight=400 
@@ -468,7 +468,7 @@
 		
 		CUINavButton:hover
 		{
-			textcolor=none
+			textcolor=Root.LeftCol.Text
 			bgcolor=Menu.Hover
 			render_bg 
 			{
@@ -477,14 +477,14 @@
 
 		CUINavButton:disabled:hover
 		{
-			textcolor=none
+			textcolor=Root.LeftCol.Disabled
 			//font-style="uppercase"
 		}
 
 		CUINavButton:selected
 		{
-			textcolor=none
-			bgcolor=Accent2
+			textcolor=Root.LeftCol.Text
+			bgcolor=Accent.Hover
 			render_bg 
 			{
 			}
@@ -620,19 +620,19 @@
 	layout
 	{
 		region {name=hidden width=0 height=0}
-		region {name=left width=48 y=32}
-		region {name=right x=48 y=32}
+		region {name=left width=240 y=32}
+		region {name=right x=240 y=32}
 		
 		place { control="label_store,label_library,label_community,label_me,label_news,label_console" dir=down x=0 y=48 spacing=0 width=max height=48 region=left} 
 		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" region=hidden}
 		place { control="label_community_new" start="label_community" y="-40" x="15" width=0 height=0 region=hidden}
 
 		place { control="back" x=0 y=0 height=32 width=48}
-		place { control="forward" region=hidden x=48 height=48 width=48}
+		place { control="forward" region=left x=48 height=48 width=48}
 
-		place { control="URLBar" dir=right region=right width=max height=48 end-right=URLStatusImage}
+		place { control="URLBar" region=right width=max height=48 }
 		place { control="EVCert" region=hidden}
-		place { control="URLStatusImage,refresh,stop,PageLoadThrobber" height=48 width=48 align=right region=right}
+		place { control="PageLoadThrobber,refresh,stop,URLStatusImage" y=0 height=48 width=48 align=right region=left}
  	
 		place { control="subnavgroup_library" y=0 height=48 width=max margin-right=0 region=hidden region=right}
 

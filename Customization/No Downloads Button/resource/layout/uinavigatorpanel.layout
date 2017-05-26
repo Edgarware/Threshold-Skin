@@ -293,7 +293,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale)"
 			}
 			render_bg{}
 		}
@@ -301,7 +301,7 @@
 		ViewDetailButton:hover
 		{
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
 			}
 		}
 
@@ -319,7 +319,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
 			}
 		}
 
@@ -336,7 +336,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale)"
 			}
 			render_bg{}
 		}
@@ -344,7 +344,7 @@
 		ViewGridButton:hover
 		{
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
 			}
 		}
 
@@ -362,7 +362,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
 			}
 		}
 		
@@ -378,7 +378,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale)"
 			}
 		}
 		
@@ -386,7 +386,7 @@
 		{
 			bgcolor=DefaultText
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
 			}
 		}
 
@@ -404,7 +404,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
 			}
 		}
 		
@@ -484,7 +484,7 @@
 		CUINavButton:selected
 		{
 			textcolor=Root.LeftCol.Text
-			bgcolor=Accent2
+			bgcolor=Accent.Hover
 			render_bg 
 			{
 			}

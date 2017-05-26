@@ -155,7 +155,7 @@
 		    font-size=10  [$LINUX]
 			font-size=13
 		    font-style=regular
-			inset="0 5 0 0"
+			inset="0 1 0 0"
 		}
     
 		AccountBalanceStyle:Hover
@@ -170,7 +170,7 @@
 			font-size=14
 			font-weight=400
 		    font-style=regular
-			inset="0 3 0 0"
+			inset="0 -1 0 0"
 		}
 		
 		new_label	
@@ -304,26 +304,35 @@
 
 		AddGameButton
 		{
-			font-size=14
 			font-family=basefont
-			textcolor="labelfocus"
-			padding-right=30
-			padding-left=17
-			font-style=uppercase
-			render_bg
-			{
-			}
+			inset="-6 0 0 0"
+			font-size=13 [$LINUX]
+			font-size=15
+			font-weight=800
+			font-style=none
+			textcolor=none
+			image="graphics/Threshold/add"
+			render{}
+			render_bg{}	
 		}
-		
+
 		AddGameButton:hover
 		{
-			textcolor="white"
-			render_bg
-			{
-			}
+			bgcolor=Menu.Hover
+			render{}
 		}
-		
 
+		AddGameButton:selected
+		{
+			bgcolor=Menu.Hover
+			render{}
+		}
+
+		AddGameButton:disabled
+		{
+			textcolor=none
+			render{}
+		}	
 
 		CSteamRootDialog
 		{
@@ -399,18 +408,18 @@
 
 		view_friends
 		{
-			textcolor=none
+			textcolor=Root.Label.Text
 			bgcolor="none"
 			font-family=basefont
-			font-size=11 [$LINUX]
-			font-size=13
+			font-size=13 [$LINUX]
+			font-size=15
 			font-weight=400
 			font-style=regular
 		}
 		
 		view_friends:hover
 		{
-			textcolor=none
+			textcolor=Root.Label.Hover.Text
 		}
 
 		online_friends
@@ -422,10 +431,6 @@
 			font-size=13
 			font-weight=400
 			font-style=regular
-			render
-			{
-				0="image(x1+3, y0+5, x1+20, y1, graphics/Threshold/scroll/down )"
-			}
 		}
 
 		online_friends:disabled
@@ -534,12 +539,12 @@
 		
 		inbox_button_active:hover
 		{
-			bgcolor=Accent2
+			bgcolor=Accent.Hover
 			render {}
 		}
 		inbox_button_active:selected
 		{
-			bgcolor=Accent2
+			bgcolor=Accent.Hover
 			render {}
 		}
 
@@ -595,7 +600,6 @@
 			font-size=13 [$LINUX]
 			font-size=15
 			textcolor=Root.Label.Text
-			padding-right=-14 //This element has a drop-down arrow; this hides it
 		}
 		
 		AccountURLStyle:hover
@@ -634,7 +638,7 @@
 		region { name=bottom width=max height=48 align=bottom}
 		region { name=account align=bottom-right margin-right=48 width=max height=52 margin-left=505}
 		
-		place { control="New" region=hidden}
+		place { control="New, account_URL" region=hidden}
 		place { control="add_game" x=14 y=16 region=hidden height=0 width=0}
 		
 		place { control="MenuBar" height=48 width=48 y=32 x=0 }
@@ -647,8 +651,7 @@
 		place { control="fullscreen,frame_minimize,frame_maximize,frame_close" align=right width=46 height=32 spacing=0 }
 
 		place { control="FriendPanel" height=48 y=0 width=48 margin-left=4 region=account align=right}
-		place { control="account_balance, account_balance_seperator, account_URL, universe_label" dir=right margin-right=54 margin-top=9 spacing=5 region=account align=right}
-		place { control="online_friends" height=12 y=30 spacing=5 margin-right=66 region=account align=right}
-		place { control="view_friends" height=12 y=30 margin-right=56 region=account align=right}
+		place { control="account_balance, account_balance_seperator, view_friends, universe_label" dir=right margin-right=54 margin-top=12 spacing=5 region=account align=right}
+		place { control="online_friends" height=12 y=30 spacing=5 margin-right=54 region=account align=right}
 	}
 }
