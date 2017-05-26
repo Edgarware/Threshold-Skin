@@ -300,6 +300,7 @@
 		
 		ViewDetailButton:hover
 		{
+			bgcolor=DefaultText
 			render{
 				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
 			}
@@ -315,7 +316,7 @@
 			bgcolor=Accent
 		}
 		
-		ViewDetailButton:selcted:hover
+		ViewDetailButton:selected:hover
 		{
 			bgcolor=Accent
 			render{
@@ -343,6 +344,7 @@
 		
 		ViewGridButton:hover
 		{
+			bgcolor=DefaultText
 			render{
 				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
 			}
