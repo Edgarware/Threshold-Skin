@@ -3,7 +3,7 @@ A Windows 10 Style Steam Skin
 
 ![Default Configuration](http://i.imgur.com/GcH75ZT.png)
  
-[Download](http://github.com/Edgarware/Threshold-Skin/releases) 
+[Download](http://github.com/Edgarware/Threshold-Skin/releases)  
 [Preview](http://imgur.com/a/55GSP)  
 [Steam Community Group](http://steamcommunity.com/groups/thresholdskin)  
 [Wiki](http://github.com/Edgarware/Threshold-Skin/wiki)
