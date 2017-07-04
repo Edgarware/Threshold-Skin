@@ -5,7 +5,8 @@
 		Accent="255 185 0 255"
 		Accent.Hover="186 137 0 255"
 		Accent.Selected="192 148 25 255" 
-		Accent.Text="255 255 255 255" //Color of text on Accent color, usually white or black
+		Accent.Text="0 0 0 255" //Color of text on Accent color, usually white or black
+		Frame.Focus.Text=Accent.Text
 
 		AccentInv="0 43 178 255" //Complimentary color for disk usage
 		
