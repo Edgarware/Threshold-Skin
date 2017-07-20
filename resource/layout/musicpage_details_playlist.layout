@@ -90,7 +90,7 @@
 		
 		AdditionalActionButtonStyle:hover
 		{
-			textcolor=DefaultText.Hover
+			textcolor=DefaultText
 		}
 		
 		
@@ -99,26 +99,8 @@
 			inset="18 0 0 0"
 			font-family=basefont
 			textcolor=DefaultText
-			render_bg	{}
 
-			render
-			{
-				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play )"
-			}
-		}
-		ActionButtonStyle:hover
-		{
-			textcolor=DefaultText.Hover
-			render
-			{
-				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play_hover )"
-			}
-		}
-		
-		ActionButtonStyle:active
-		{
-			textcolor=DefaultText
-			render
+			render_bg
 			{
 				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play )"
 			}

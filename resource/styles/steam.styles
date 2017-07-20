@@ -1718,7 +1718,7 @@ steam.styles
 		minimum-height=0
 		inset="-1 2 0 0"
 		image="graphics/Threshold/scroll/up"
-		render_bg
+		render
 		{
 		}
 		
@@ -1727,7 +1727,7 @@ steam.styles
     ScrollBarButton.up:hover
     {
 		bgcolor=Scroll.Button.Hover
-		render_bg
+		render
 		{
 		}
     }
@@ -1735,7 +1735,7 @@ steam.styles
     ScrollBarButton.up:active
     {
 		bgcolor=Scroll.Button.Active
-		render_bg
+		render
 		{
 		}
     }
@@ -1743,7 +1743,7 @@ steam.styles
     ScrollBarButton.up:disabled
     {
 		bgcolor=Scroll.Button.Disabled
-		render_bg
+		render
 		{
 		}
     }
@@ -1754,7 +1754,7 @@ steam.styles
 		minimum-height=0
 		inset="-2 0 0 0"
 		image="graphics/Threshold/scroll/down"
-		render_bg
+		render
 		{
 		}
     }
@@ -1762,7 +1762,7 @@ steam.styles
     ScrollBarButton.down:hover
 	{
 		bgcolor=Scroll.Button.Hover
-		render_bg
+		render
 		{
 		}
     }
@@ -1770,7 +1770,7 @@ steam.styles
     ScrollBarButton.down:active
 	{
 		bgcolor=Scroll.Button.Active
-		render_bg
+		render
 		{
 		}
     }
@@ -1779,7 +1779,7 @@ steam.styles
     ScrollBarButton.down:disabled
 	{
 		bgcolor=Scroll.Button.Disabled
-		render_bg
+		render
 		{
 		}
     }
@@ -1790,7 +1790,7 @@ steam.styles
 		minimum-height=0
 		inset="1 3 0 0"
 		image="graphics/Threshold/scroll/left"
-		render_bg 
+		render
 		{
 		}
     }
@@ -1798,7 +1798,7 @@ steam.styles
     ScrollBarButton.left:hover
     {
 		bgcolor=Scroll.Button.Hover
-		render_bg 
+		render
 		{
 	    }
     }
@@ -1809,7 +1809,7 @@ steam.styles
 		minimum-height=0
 		image="graphics/Threshold/scroll/right"
 		inset="0 2 0 0"
-		render_bg 
+		render
 		{
 	    }
     }
@@ -1817,7 +1817,7 @@ steam.styles
     ScrollBarButton.right:hover
     {
 		bgcolor=Scroll.Button.Hover
-		render_bg 
+		render
 		{
 		}
     }
@@ -1826,7 +1826,7 @@ steam.styles
     {
 		bgcolor=Scroll.Bar.Back
 		minimum-height=0
-		render_bg 
+		render_bg
 		{
 		}
     }
@@ -2845,7 +2845,7 @@ steam.styles
 		textcolor="Accent"
 		font-size=14
 		font-family="Menlo" [$OSX]
-      	font-size=16 [$OSX]
+    font-size=16 [$OSX]
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 	}
@@ -2855,8 +2855,8 @@ steam.styles
  		font-family="Lucida Console"
 		font-size=9
 		font-family="Menlo" [$OSX]
-      	font-size=14 [$OSX]
-	    textcolor=DefaultText
+    font-size=14 [$OSX]
+	  textcolor=DefaultText
 		selectedtextcolor=DefaultText.Selected
 		selectedbgcolor=DefaultText.Back
 	}
