@@ -1514,7 +1514,7 @@ steam.styles
 
 	TabCloseButton
     {
-		render_bg {}
+		render {}
 		bgcolor=none
 		minimum-height=0
 		padding=0
@@ -2334,7 +2334,7 @@ steam.styles
     {
 		font-size=13 [$LINUX]
 		font-size=15
-        bgcolor="Menu.Back"
+    bgcolor="Menu.Back"
 		render_bg{
 			1="fill( x0, y0, x1, y0 + 1, Menu.Outline )"  // top
 			2="fill( x0, y1 - 1, x1, y1, Menu.Outline )"  // bottom
@@ -3082,6 +3082,8 @@ steam.styles
    	TabPageCloseButton
    	{
    		padding-right=16
+			bgcolor=none
+			render {}
    	}
 
 	SuperNavMenu
