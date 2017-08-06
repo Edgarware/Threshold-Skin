@@ -48,7 +48,7 @@
 		"ControlName"		"Label"
 		"fieldName"		"BuildIDLabel"
 		"xpos"		"24"
-		"ypos"		"186"
+		"ypos"		"464"
 		"wide"		"272"
 		"tall"		"24"
 		"AutoResize"		"0"

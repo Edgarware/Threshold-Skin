@@ -70,8 +70,8 @@
 		"fieldName"		"SteamLoginDialog"
 		"xpos"		"590"
 		"ypos"		"435"
-		"wide"		"470"
-		"tall"		"310"
+		"wide"		"480"
+		"tall"		"330"
 		"AutoResize"		"0"
 		"PinCorner"		"0"
 		"visible"		"1"
@@ -147,6 +147,7 @@
 		"scaleImage"		"1"
 		"zpos"		"-1"
 	}
+
 
 
 	"PasswordEdit"
