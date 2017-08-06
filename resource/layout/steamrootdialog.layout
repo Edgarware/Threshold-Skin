@@ -556,6 +556,7 @@
 		
 		parental_lock_button
 		{
+			inset="-10 0 0 0"
 			bgcolor=none
 			image="graphics/Threshold/notfamilyview"
 			render{}
