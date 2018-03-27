@@ -89,10 +89,10 @@ steam.styles
 	ComboBox.Text=DefaultText
 	ComboBox.Disabled.Text="110 110 110 255"
 	
-	Scroll.Back="23 23 23 255"
-	Scroll.Bar.Back="69 69 69 255"
-	Scroll.Bar.Hover="116 116 116 255"
-	Scroll.Bar.Active="162 162 162 255"
+	Scroll.Back="27 27 27 255"
+	Scroll.Bar.Back="73 73 73 255"
+	Scroll.Bar.Hover="118 118 118 255"
+	Scroll.Bar.Active="164 164 164 255"
 	Scroll.Button.Back=Scroll.Back
 	Scroll.Button.Hover=Scroll.Bar.Hover
 	Scroll.Button.Active=Scroll.Bar.Active
@@ -1715,8 +1715,9 @@ steam.styles
     ScrollBarButton.up
     {
 		bgcolor=Scroll.Button.Back
-		minimum-height=0
-		inset="-1 2 0 0"
+		minimum-height=16
+		minimum-width=16
+		inset="-2 -2 0 0"
 		image="graphics/Threshold/scroll/up"
 		render
 		{
@@ -1735,6 +1736,7 @@ steam.styles
     ScrollBarButton.up:active
     {
 		bgcolor=Scroll.Button.Active
+		image="graphics/Threshold/scroll/up_active"
 		render
 		{
 		}
@@ -1751,8 +1753,9 @@ steam.styles
     ScrollBarButton.down
 	{
 		bgcolor=Scroll.Button.Back
-		minimum-height=0
-		inset="-2 0 0 0"
+		minimum-height=16
+		minimum-width=16
+		inset="-2 2 0 0"
 		image="graphics/Threshold/scroll/down"
 		render
 		{
@@ -1770,6 +1773,7 @@ steam.styles
     ScrollBarButton.down:active
 	{
 		bgcolor=Scroll.Button.Active
+		image="graphics/Threshold/scroll/down_active"
 		render
 		{
 		}
@@ -1787,8 +1791,9 @@ steam.styles
     ScrollBarButton.left
     {
 		bgcolor=Scroll.Button.Back
-		minimum-height=0
-		inset="1 3 0 0"
+		minimum-height=16
+		minimum-width=16
+		inset="-2 0 0 0"
 		image="graphics/Threshold/scroll/left"
 		render
 		{
@@ -1802,13 +1807,23 @@ steam.styles
 		{
 	    }
     }
+		
+		ScrollBarButton.left:active
+		{
+			bgcolor=Scroll.Button.Active
+			image="graphics/Threshold/scroll/left_active"
+			render
+			{
+			}
+		}
         
     ScrollBarButton.right
     {
 		bgcolor=Scroll.Button.Back
-		minimum-height=0
+		minimum-height=16
+		minimum-width=16
 		image="graphics/Threshold/scroll/right"
-		inset="0 2 0 0"
+		inset="0 0 0 0"
 		render
 		{
 	    }
@@ -1821,6 +1836,15 @@ steam.styles
 		{
 		}
     }
+
+		ScrollBarButton.right:active
+		{
+			bgcolor=Scroll.Button.Active
+			image="graphics/Threshold/scroll/right_active"
+			render
+			{
+			}
+		}
     
     ScrollBarHandle  //vertical scrollbar thumb
     {
