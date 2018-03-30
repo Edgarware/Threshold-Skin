@@ -23,7 +23,7 @@
 		
 		ClientListButton
 		{
-			inset="-4 4 0 0"
+			inset="-4 2 0 0"
 			// minimum-width=20
 			// minimum-height set by code to match actual height of Launch button
 			// Do not set either minimum-width or -height here or it will override the code and the layout will break

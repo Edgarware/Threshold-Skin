@@ -2498,7 +2498,7 @@ steam.styles
     
     GameColumnHeaderFavorites
     {
-		image="steam/cached/fav_remove"
+		image="graphics/Threshold/icons/fav_remove"
     }
     
     CGamesListFavoritesToggle
