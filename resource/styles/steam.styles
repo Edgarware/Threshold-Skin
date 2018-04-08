@@ -1515,6 +1515,7 @@ steam.styles
 	TabCloseButton
     {
 		render {}
+		render_bg {}
 		bgcolor=none
 		minimum-height=0
 		padding=0
@@ -1523,6 +1524,8 @@ steam.styles
 
 	TabCloseButton:hover
     {
+		render{}
+		render_bg{}
 		image="graphics/Threshold/icons/tiny_x_hover"
     }
     
@@ -2625,21 +2628,18 @@ steam.styles
     {
 		bgcolor=none
 		inset="0 0 0 0"
-		render_bg={}
 		image="graphics/Threshold/back"
     }
 	
     BackButton:hover
     {
 		bgcolor=none
-		render_bg={}
 		image="graphics/Threshold/back"
     }
 	
     BackButton:active
     {
-		bgcolor=none
-		render_bg={}
+		bgcolor=Button.Active
 		image="graphics/Threshold/back"
     }
 	
@@ -2647,35 +2647,30 @@ steam.styles
     {
 		bgcolor=none
 		image="graphics/Threshold/back_dis"
-		render_bg{}
     }
     
     ForwardButton
     {
 		bgcolor=none
 		inset="0 0 0 0"
-		render_bg={}
 		image="graphics/Threshold/forward"
     }
     
     ForwardButton:hover
     {
 		bgcolor=none
-		render_bg={}
 		image="graphics/Threshold/forward"
     }
 	
     ForwardButton:active
     {
-		bgcolor=none
-		render_bg={}
+		bgcolor=Button.Active
 		image="graphics/Threshold/forward"
     }
 	
     ForwardButton:disabled
     {
 		bgcolor=none
-		render_bg={}
 		image="graphics/Threshold/forward_dis"
     }
     
@@ -2683,32 +2678,24 @@ steam.styles
     {
 		bgcolor=none
 		inset="1 0 0 0"
-		render_bg={}
 		image="graphics/Threshold/home"
     }
     
     HomeButton:hover
     {
-		bgcolor=Menu.Button.Hover
-		render_bg={}
+		bgcolor=none
 		image="graphics/Threshold/home"
-		render_bg={
-		}
     }
 	
     HomeButton:active
     {
-		bgcolor=Accent
-		render_bg={}
+		bgcolor=Button.Active
 		image="graphics/Threshold/home"
-		render_bg={
-		}
     }
 	
     HomeButton:disabled
     {
 		bgcolor=none
-		render_bg={}
 		image="graphics/Threshold/home"
     }
 	
@@ -2716,30 +2703,24 @@ steam.styles
     {
 		bgcolor=none
 		inset="1 0 0 0"
-		render_bg={}
 		image="graphics/Threshold/reload"
     }
     
     ReloadButton:hover
     {
-		bgcolor=Menu.Button.Hover
+		bgcolor=none
 		image="graphics/Threshold/reload"
-		render_bg={
-		}
     }
 
     ReloadButton:active
     {
-		bgcolor=Accent
+		bgcolor=Button.Active
 		image="graphics/Threshold/reload"
-		render_bg={
-		}
     }
 
     ReloadButton:disabled
     {
 		bgcolor=none
-		render_bg={}
 		image="graphics/Threshold/reload"
     }
     
@@ -2747,30 +2728,24 @@ steam.styles
     {
 		bgcolor=none
 		inset="1 0 0 0"
-		render_bg={}
 		image="graphics/Threshold/stop"
     }
     
     StopButton:hover
     {
-		bgcolor=Menu.Button.Hover
+		bgcolor=none
 		image="graphics/Threshold/stop"
-		render_bg={
-		}
     }
 
     StopButton:active
     {
-		bgcolor=Accent
+		bgcolor=Button.Active
 		image="graphics/Threshold/stop"
-		render_bg={
-		}
     }
 
     StopButton:disabled
     {
 		bgcolor=none
-		render_bg={}
 		image="graphics/Threshold/stop"
     }
 	
