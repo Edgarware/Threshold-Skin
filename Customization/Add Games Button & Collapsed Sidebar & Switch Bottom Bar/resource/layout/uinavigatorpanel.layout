@@ -293,7 +293,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail)"
 			}
 			render_bg{}
 		}
@@ -301,7 +301,7 @@
 		ViewDetailButton:hover
 		{
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
 			}
 		}
 
@@ -319,7 +319,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
 			}
 		}
 
@@ -336,7 +336,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid)"
 			}
 			render_bg{}
 		}
@@ -344,7 +344,7 @@
 		ViewGridButton:hover
 		{
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
 			}
 		}
 
@@ -362,7 +362,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
 			}
 		}
 		
@@ -378,7 +378,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list)"
 			}
 		}
 		
@@ -386,7 +386,7 @@
 		{
 			bgcolor=DefaultText
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
 			}
 		}
 
@@ -404,7 +404,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
 			}
 		}
 		
