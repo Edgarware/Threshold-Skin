@@ -550,8 +550,7 @@
 		region { name=bottom width=max height=48 align=bottom}
 		region { name=account align=bottom-right margin-right=96 width=max height=48 margin-left=505}
 		
-		place { control="view_friends" region=hidden}
-		place { control="add_game" x=14 y=16 region=hidden height=0 width=0}
+		place { control="view_friends,add_game" region=hidden}
 		
 		place { control="MenuBar" height=48 width=48 y=32 x=0 }
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=48 margin-top=0 }
