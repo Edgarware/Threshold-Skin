@@ -14,7 +14,7 @@
 		place { controls=Divider3 start=FavoriteWindowCombo dir=down margin-top=15 width=max margin-right=20}
 		place { controls=Label3,SkinCombo start=Divider3 dir=down margin-top=15 spacing=4}
 		
-		place { controls=DPIScalingCheck,AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck start=SkinCombo dir=down margin-top=8 spacing=0}
+		place { controls=DPIScalingCheck,AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,GPUWebViewCheck,DWriteCheck,H264HWAccelCheck start=SkinCombo dir=down margin-top=8 spacing=0}
 		place [$WINDOWS] { controls=Divider2 start=H264HWAccelCheck dir=down margin-top=15 width=max margin-right=20}
 		place [!$WINDOWS] { controls=Divider2 start=UrlBarCheck dir=down margin-top=15 width=max margin-right=20}
 		
@@ -289,12 +289,32 @@
 		"Default"		"0"
 		"selected"		"0"
 	}
+	"GPUWebViewCheck"
+	{
+		"ControlName"		"CheckButton"
+		"fieldName"		"GPUWebViewCheck"
+		"xpos"		"17"
+		"ypos"		"337"
+		"wide"		"430"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"8"
+		"paintbackground"		"1"
+		"labelText"		"#Steam_EnableGPUWebViews_Option"
+		"textAlignment"		"west"
+		"wrap"		"0"
+		"Default"		"0"
+		"selected"		"0"
+	}
 	"DWriteCheck" [$WINDOWS]
 	{
 		"ControlName"		"CheckButton"
 		"fieldName"		"DWriteCheck"
 		"xpos"		"17"
-		"ypos"		"337"
+		"ypos"		"361"
 		"wide"		"430"
 		"tall"		"24"
 		"AutoResize"		"0"
@@ -314,7 +334,7 @@
 		"ControlName"		"CheckButton"
 		"fieldName"		"H264HWAccelCheck"
 		"xpos"		"17"
-		"ypos"		"361"
+		"ypos"		"392"
 		"wide"		"430"
 		"tall"		"24"
 		"AutoResize"		"0"
@@ -334,7 +354,7 @@
 		"ControlName"		"Divider"
 		"fieldName"		"Divider2"
 		"xpos"		"20"
-		"ypos"		"392"
+		"ypos"		"423"
 		"wide"		"440"
 		"tall"		"2"
 		"AutoResize"		"0"
@@ -349,7 +369,7 @@
 		"ControlName"		"CheckButton"
 		"fieldName"		"NotifyAvailableGamesCheck"
 		"xpos"		"17"
-		"ypos"		"406"
+		"ypos"		"430"
 		"wide"		"430"
 		"tall"		"40"
 		"AutoResize"		"0"
@@ -388,7 +408,7 @@
 		"ControlName"		"Button"
 		"fieldName"		"SetJumpListOptionsButton"
 		"xpos"		"20"
-		"ypos"		"454"
+		"ypos"		"485"
 		"wide"		"235"
 		"tall"		"24"
 		"AutoResize"		"0"

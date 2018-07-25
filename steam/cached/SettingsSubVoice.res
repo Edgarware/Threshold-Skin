@@ -23,7 +23,7 @@
 		place { control=Divider2 start=SpeakerVolume dir=down margin-top=15 width=max margin-right=20}
 		
 		place { control=WhenActiveLabel start=Divider2 dir=down margin-top=15}
-		place { control=TransmitMethodRadioButton1,TransmitMethodRadioButton2 start=WhenActiveLabel dir=down margin-top=4 spacing=5 height=24}
+		place { control=TransmitMethodRadioButton1,TransmitMethodRadioButton2,TransmitMethodRadioButton3 start=WhenActiveLabel dir=down margin-top=4 spacing=5 height=24}
 		place { control=PushToTalkKeyEntry start=TransmitMethodRadioButton2 dir=down margin-top=4 x=28}
 	}
 	
@@ -228,7 +228,7 @@
 		"ControlName"		"HotKeyEntry"
 		"fieldName"		"PushToTalkKeyEntry"
 		"xpos"		"48"
-		"ypos"		"387"
+		"ypos"		"410"
 		"wide"		"207"
 		"tall"		"24"
 		"AutoResize"		"0"
@@ -282,6 +282,28 @@
 		"SubTabPosition"		"2"
 		"group" "pushtotalk"
 	}
+	"TransmitMethodRadioButton3"
+	{
+		"ControlName"		"RadioButton"
+		"fieldName"		"TransmitMethodRadioButton3"
+		"xpos"		"20"
+		"ypos"		"384"
+		"wide"		"380"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"5"
+		"paintbackground"		"1"
+		"labelText"		"#Friends_Voice_PushToMute"
+		"textAlignment"		"west"
+		"wrap"		"0"
+		"Default"		"0"
+		"SubTabPosition"		"2"
+		"group" "pushtotalk"
+	}
+
 	"DeviceName"
 	{
 		"ControlName"		"TextEntry"
