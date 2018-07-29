@@ -24,7 +24,7 @@
 		
 		place { control=WhenActiveLabel start=Divider2 dir=down margin-top=15}
 		place { control=TransmitMethodRadioButton1,TransmitMethodRadioButton2,TransmitMethodRadioButton3 start=WhenActiveLabel dir=down margin-top=4 spacing=5 height=24}
-		place { control=PushToTalkKeyEntry start=TransmitMethodRadioButton2 dir=down margin-top=4 x=28}
+		place { control=PushToTalkKeyEntry start=TransmitMethodRadioButton3 dir=down margin-top=4 x=28}
 	}
 	
 	"SettingsSubVoice"

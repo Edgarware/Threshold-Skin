@@ -273,10 +273,10 @@
 
 		// right-mid column
 		place { control="downloadtotallabel,downloadtotalfield" region="column3" x=0 align=top margin-top=48 spacing=6 }
-		place { control="starttimelabel,starttimefield" 		region="column3" x=0 align=top margin-top=68 spacing=6 }
-		place { control="timecompletedlabel,timecompletedfield" region="column3" x=0 align=top margin-top=68 spacing=6 }
-		place { control="pausereasonlabel,pausereasonfield" 	region="column3" x=0 align=top margin-top=68 spacing=6 }
-		place { control="timeremaininglabel,timeremainingfield" region="column3" x=0 align=top margin-top=88 spacing=6 }
+		place { control="starttimelabel,starttimefield" 		region="column3" x=0 align=top margin-top=63 spacing=6 }
+		place { control="timecompletedlabel,timecompletedfield" region="column3" x=0 align=top margin-top=63 spacing=6 }
+		place { control="pausereasonlabel,pausereasonfield" 	region="column3" x=0 align=top margin-top=63 spacing=6 }
+		place { control="timeremaininglabel,timeremainingfield" region="column3" x=0 align=top margin-top=78 spacing=6 }
 				
 		// right column
 		place { control="updatetypelabel" region="column4" spacing=10 margin-top=40 align=right margin-right=15 }
