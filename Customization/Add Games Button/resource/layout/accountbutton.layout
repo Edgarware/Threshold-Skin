@@ -104,7 +104,7 @@
 
 		AccountBalanceStyle
 		{
-			textcolor="labeldisabled"
+			textcolor=DefaultText.Disabled
 			bgcolor="none"
 			font-family=basefont
 			font-size=14
@@ -117,7 +117,7 @@
 
 		AccountBalanceStyle [$OSX]
 		{
-		      textcolor="labeldisabled"
+		      textcolor=DefaultText.Disabled
 		      bgcolor="none"
 		      font-family=basefont
 		      font-size=13
