@@ -2483,10 +2483,12 @@ steam.styles
     // Steam-specific styles
     CConsoleHistory
     {
-		font-family="Lucida Console"
-		font-size=9
-		font-family="Menlo" [$OSX]
-		font-size=14 [$OSX]
+      font-family="Lucida Console"
+      font-size=9
+      font-family="DejaVu Sans Mono" [$LINUX]
+      font-size=12 [$LINUX]
+      font-family="Menlo" [$OSX]
+      font-size=14 [$OSX]
 		textcolor=DefaultText
 		selectedtextcolor=DefaultText
 		bgcolor=Root.Back
