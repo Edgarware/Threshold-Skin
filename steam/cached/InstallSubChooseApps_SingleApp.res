@@ -11,8 +11,11 @@
 		
 		place { control=InstallSize,DriveSpace,DownloadTimeLabel region=body start=CreateStartMenuShortcutCheck dir=down margin-top=15 spacing=7}
 		place { control=InstallSizeLabel,DriveSpaceLabel,DownloadTimeInfo region=body start=CreateStartMenuShortcutCheck dir=down margin-top=15 spacing=7 margin-left=200}
-		
-		place { control=InstallFolderLabel start=DownloadTimeLabel region=body dir=down margin-top=15 width=max}
+
+		place { control=InstallLanguageLabel start=DownloadTimeLabel region=body dir=down margin-top=15 width=max}
+		place { control=LanguageCombo start=InstallLanguageLabel region=body dir=down margin-top=7 width=max}
+
+		place { control=InstallFolderLabel start=InstallLanguageLabel region=body dir=down margin-top=15 width=max}
 		place { control=InstallFolderCombo start=InstallFolderLabel region=body dir=down margin-top=7 width=max}
 		
 	}
@@ -176,7 +179,7 @@
 		"fieldName"		"DownloadTimeLabel"
 		"xpos"		"10"
 		"ypos"		"176"
-		"wide"		"189"
+		"wide"		"186"
 		"tall"		"24"
 		"AutoResize"		"0"
 		"PinCorner"		"0"
@@ -213,12 +216,12 @@
 		"ControlName"		"Label"
 		"fieldName"		"InstallFolderLabel"
 		"xpos"		"10"
-		"ypos"		"200"
-		"wide"		"200"
+		"ypos"		"232"
+		"wide"		"186"
 		"tall"		"24"
 		"AutoResize"		"0"
 		"PinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"paintbackground"		"1"
@@ -232,12 +235,49 @@
 		"ControlName"		"ComboBox"
 		"fieldName"		"InstallFolderCombo"
 		"xpos"		"10"
-		"ypos"		"232"
+		"ypos"		"264"
 		"wide"		"432"
 		"tall"		"24"
 		"AutoResize"		"0"
 		"PinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"paintbackground"		"1"
+		"textAlignment"		"west"
+		"wrap"		"0"
+	}
+	
+	"InstallLanguageLabel"
+	{
+		"ControlName"		"Label"
+		"fieldName"		"InstallLanguageLabel"
+		"xpos"		"10"
+		"ypos"		"200"
+		"wide"		"186"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"paintbackground"		"1"
+		"labelText"		"#Steam_Install_ChooseLanguage"
+		"textAlignment"		"west"
+		"wrap"		"0"
+	}
+	
+	"LanguageCombo"
+	{
+		"ControlName"		"ComboBox"
+		"fieldName"		"LanguageCombo"
+		"xpos"		"200"
+		"ypos"		"200"
+		"wide"		"240"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"paintbackground"		"1"

@@ -9,6 +9,8 @@
 			wrap=1
 			labelText="#Steam_Settings_Streaming_AdvancedHostOptions_Description"
 		}
+
+		"HostPlayAudioAlways" { ControlName="CheckButton" fieldName="HostPlayAudioAlways" labelText="#Steam_Settings_Streaming_HostPlayAudioAlways" }
 		
 		"ChangeDesktopResolution" { ControlName="CheckButton" fieldName="ChangeDesktopResolution" labelText="#Steam_Settings_Streaming_ChangeDesktopResolution" }
 		
@@ -62,7 +64,7 @@
 		place { control=DescriptionLabel margin-top=40 margin-left=20 margin-right=20 width=max}
 		place
 		{
-			control="ChangeDesktopResolution,DynamicallyAdjustResolution,EnableCaptureNVFBC,EnableHardwareEncoding"
+			control="HostPlayAudioAlways,ChangeDesktopResolution,DynamicallyAdjustResolution,EnableCaptureNVFBC,EnableHardwareEncoding"
 			dir=down
 			start=DescriptionLabel
 			width=max
