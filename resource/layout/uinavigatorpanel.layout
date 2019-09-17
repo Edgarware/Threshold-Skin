@@ -653,6 +653,9 @@
 
 		place { control="library_filters_details,library_filters_list,library_filters_grid" align=right y=0 height=48 spacing=0 margin-right=1 width=48 region=right}
 
+		place { control=URLAnchor align=left y=54 height=28 width=max }
+		place { control=LibraryAnchor height=28 width=max start=URLAnchor dir=down }
+
  	  	place { control=emailreminderbar start=URLBar dir=down margin-top=0 margin-right=0 width=max height=50 region=right}
 		place { control=phonereminderbar start=URLBar dir=down margin-top=0 margin-left=0  width=max height=80 region=right}
 

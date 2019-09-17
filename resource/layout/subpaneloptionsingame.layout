@@ -4,7 +4,7 @@
 	{
 		TitleLabel { controlname=label labeltext="#Steam_SettingsInGameTitle" style=highlight }
 		EnableOverlayCheck {	ControlName=CheckButton labelText="#Overlay_SettingsEnable" }
-		EnableSCTenfootOverlayCheck [!$OSX&&!$LINUX] {	ControlName=CheckButton labelText="#Overlay_SettingsSCTenfootEnable" }	
+		EnableSCTenfootOverlayCheck [!$OSX] {	ControlName=CheckButton labelText="#Overlay_SettingsSCTenfootEnable" }
 		EnableVRDesktopGameTheaterCheck [!$OSX&&!$LINUX] {	ControlName=CheckButton labelText="#Overlay_SettingsEnableVRDesktopGameTheaterCheck" }	
 		HotKeySelector {	ControlName=HotKeyEntry	}
 		ScreenshotHotKeySelector { ControlName=HotKeyEntry }
@@ -59,16 +59,18 @@
 		place { controls=TitleLabel region=box }
 		place { controls=DescriptionLabel width=max region=box start=TitleLabel width=max dir=down margin-top=8 }
 		place { controls=EnableOverlayCheck region=box start=DescriptionLabel margin-top=5 width=max dir=down }
-		place [!$OSX&&!$LINUX] { controls=EnableSCTenfootOverlayCheck region=box start=EnableOverlayCheck dir=down }
+		place [!$OSX] { controls=EnableSCTenfootOverlayCheck region=box start=EnableOverlayCheck dir=down }
 		place [!$OSX&&!$LINUX] { controls=EnableVRDesktopGameTheaterCheck region=box start=EnableSCTenfootOverlayCheck dir=down }
 		
-		place [$WINDOWS] { controls=HotKeySelectorLabel,HotKeySelector start=EnableVRDesktopGameTheaterCheck margin-top=10 dir=down spacing=5 width=220 region=box }
-		place [!$WINDOWS] { controls=HotKeySelectorLabel,HotKeySelector start=EnableOverlayCheck margin-top=10 dir=down spacing=5 width=220 region=box }
-		
+		place [!$OSX&&!$LINUX] { controls=HotKeySelectorLabel,HotKeySelector start=EnableVRDesktopGameTheaterCheck margin-top=10 dir=down spacing=5 width=220 region=box }
+		place [$OSX] { controls=HotKeySelectorLabel,HotKeySelector start=EnableOverlayCheck margin-top=10 dir=down spacing=5 width=220 region=box }
+		place [$LINUX] { controls=HotKeySelectorLabel,HotKeySelector start=EnableSCTenfootOverlayCheck margin-top=10 dir=down spacing=5 width=220 region=box }		
+
 		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck dir=down spacing=5 start=HotKeySelector margin-top=55 width=220 region=box }
 			
-		place [$WINDOWS] { controls=ScreenshotLabel start=EnableVRDesktopGameTheaterCheck margin-top=10 x=270 dir=down region=box }
-		place [!$WINDOWS] { controls=ScreenshotLabel start=EnableOverlayCheck margin-top=10 x=270 dir=down region=box }
+		place [!$OSX&&!$LINUX] { controls=ScreenshotLabel start=EnableVRDesktopGameTheaterCheck margin-top=10 x=270 dir=down region=box }
+		place [$OSX] { controls=ScreenshotLabel start=EnableOverlayCheck margin-top=10 x=270 dir=down region=box }
+		place [$LINUX] { controls=ScreenshotLabel start=EnableSCTenfootOverlayCheck margin-top=10 x=270 dir=down region=box }
 		place { controls=ScreenshotHotKeySelector,SetScreenshotFolderButton 
 			dir=down 
 			start=ScreenshotLabel
