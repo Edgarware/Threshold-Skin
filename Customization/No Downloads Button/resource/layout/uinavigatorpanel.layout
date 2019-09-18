@@ -625,7 +625,7 @@
 		region {name=left width=240 y=32}
 		region {name=right x=240 y=32}
 		
-		place { control="label_store,label_library,label_community,label_me,label_news,label_console" dir=down x=0 y=48 spacing=0 width=max height=48 region=left} 
+		place { control="label_store,label_library,label_community,label_me,label_news,label_oldlibrary,label_console" dir=down x=1 y=48 spacing=0 width=max height=48 region=left} 
 		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" region=hidden}
 		place { control="label_community_new" start="label_community" y="-40" x="15" width=0 height=0 region=hidden}
 
@@ -653,25 +653,30 @@
 
 		place { control="library_filters_details,library_filters_list,library_filters_grid" align=right y=0 height=48 spacing=0 margin-right=1 width=48 region=right}
 
+		place { control=URLAnchor align=left height=28 width=max region=right}
+		place { control=LibraryAnchor height=28 width=max start=URLAnchor dir=down region=right}
+
  	  	place { control=emailreminderbar start=URLBar dir=down margin-top=0 margin-right=0 width=max height=50 region=right}
 		place { control=phonereminderbar start=URLBar dir=down margin-top=0 margin-left=0  width=max height=80 region=right}
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-		place { control=DownloadsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
-		place { control=ScreenshotsPage 	width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
-		place { control=GamesPage_List		width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
-		place { control=GamesPage_Details 	width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
-		place { control=GamesPage_Grid 		width=max height=max margin-top=46 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
-		place { control=WebPanel 			width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
-		place { control=BroadcastPage		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=DownloadsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
+		place { control=ScreenshotsPage 	width=max height=max margin-top=48 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
+		place { control=GamesPage_List		width=max height=max margin-top=48 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
+		place { control=GamesPage_Details 	width=max height=max margin-top=48 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
+		place { control=GamesPage_Grid 		width=max height=max margin-top=46 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
+		place { control=WebPanel 			width=max height=max margin-top=0 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
+		place { control=BroadcastPage		width=max height=max margin-top=0 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
 		place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
-		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }	
-		place { control=ConsolePage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down}
+		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
+		place { control=ConsolePage 		width=max height=max margin-top=0 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down}
+		place { control=NewLibraryPage		width=max height=max margin-top=0 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
 
-		place { control=MediaPage 		width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
-		place { control=ToolsPage 		width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+
+		place { control=MediaPage 		width=max height=max margin-top=48 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
+		place { control=ToolsPage 		width=max height=max margin-top=48 margin-left=0 margin-right=1 margin-bottom=0 start=phonereminderbar dir=down }
 		
-		place { control=MusicPage_Details width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=MusicPage_Details width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=phonereminderbar dir=down }
 	}
 
 }

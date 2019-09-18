@@ -53,13 +53,13 @@
 			command="OpenSupportAlertWindow"
 		}
 
-		XPVistaAlert
+		EOLAlert
 		{
 			ControlName=Button
-			labelText="#Steam_XPVistaAlert"
+			labelText="#Steam_EOLAlert"
 			style="support_alert"
 			textAlignment=center
-			command="OpenXPVistaAlertWindow"
+			command="OpenEOLAlertWindow"
 		}
 
 		ParentalLockButton
@@ -559,7 +559,7 @@
 		place { control="MenuBar" height=48 width=48 y=32 x=0 }
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=48 margin-top=0 }
 	
-		place { control="ParentalLockButton, startVR, exitVR, SupportAlert" region=bottom-left align=right margin-right=96 height=48 width=48 spacing=0 dir=right}
+		place { control="ParentalLockButton, startVR, exitVR, EOLAlert, SupportAlert" region=bottom-left align=right margin-right=96 height=48 width=48 spacing=0 dir=right}
 		place { control="UIStatusPanel" height=48 width=275 region=bottom align=right margin-right=48}
 		place { control="AnnouncementButton,InboxButton" height=48 width=48 margin-left=144 region=bottom }
 
