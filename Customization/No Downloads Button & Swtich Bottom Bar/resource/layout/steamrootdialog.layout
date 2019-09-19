@@ -419,7 +419,7 @@
 		{
 			bgcolor=none
 			inset="3 0 0 0"
-			image="graphics/Threshold/community"
+			image="graphics/Threshold/announce"
 			render{}
 			render_bg{}	
 		}
@@ -438,7 +438,7 @@
 
 		announcement_button:disabled
 		{
-			image="graphics/Threshold/community"
+			image="graphics/Threshold/announce"
 			render{}
 		}	
 
@@ -446,7 +446,7 @@
 		{
 			inset="3 0 0 0"
 			bgcolor=Accent
-			image="graphics/Threshold/community"
+			image="graphics/Threshold/announce"
 			render {}
 			render_bg{}
 		}
@@ -464,7 +464,7 @@
 
 		announcement_button_active:disabled
 		{
-			image="graphics/Threshold/community"
+			image="graphics/Threshold/announce"
 			render {}
 		}
 
