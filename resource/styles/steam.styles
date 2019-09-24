@@ -132,7 +132,7 @@ steam.styles
 	TitleBar.CloseButton="232 17 35 255" //Special colors for close X
 	TitleBar.CloseButton.Active="241 112 122 255"
 	Frame.Text="96 96 96 255"
-	Frame.Focus.Text=DefaultText
+	//Frame.Focus.Text=DefaultText // Now also defined in accent specific ini
 	
 	Root.Header = DefaultBackground
 	Root.TabBar = Light
