@@ -19,8 +19,10 @@
 		"AudioChannelsLabel" { ControlName="Label" associate="AudioChannelSelect" labelText="#Steam_Settings_Streaming_AudioChannelSelect" }
 		"AudioChannelSelect" { ControlName="ComboBox" fieldName="AudioChannelSelect" editable="0" }
 
+		"PerformanceOverlayLabel" { ControlName="Label" associate="PerformanceOverlay" labelText="#Steam_Settings_Streaming_PerformanceOverlay" }
+		"PerformanceOverlay" { ControlName="ComboBox" fieldName="PerformanceOverlay" editable="0" }
+
 		"EnableHardwareDecoding" { ControlName="CheckButton" fieldName="EnableHardwareDecoding" labelText="#Steam_Settings_Streaming_EnableHardwareDecoding" }
-		"EnableDebugOverlay" { ControlName="CheckButton" fieldName="EnableDebugOverlay" labelText="#Steam_Settings_Streaming_EnableDebugOverlay" }
 		
 		"SupportInformationLabel"
 		{
@@ -46,46 +48,13 @@
 
 		place
 		{
-			control="BandwidthLabel,BandwidthLimit"
+			control="BandwidthLabel,BandwidthLimit,ResolutionLabel,ResolutionLimit,AudioChannelsLabel,AudioChannelSelect,PerformanceOverlayLabel,PerformanceOverlay,EnableHardwareDecoding"
 			dir=down
 			start=DescriptionLabel
 			width=max
 			margin-right=20
 			margin-top=15
-			spacing=5
-		}
-
-		place
-		{
-			control="ResolutionLabel,ResolutionLimit"
-			dir=down
-			start=BandwidthLimit
-			width=max
-			margin-right=20
-			margin-top=10
-			spacing=5
-		}
-
-		place
-		{
-			control="AudioChannelsLabel,AudioChannelSelect"
-			dir=down
-			start=ResolutionLimit
-			width=max
-			margin-right=20
-			margin-top=10
-			spacing=5
-		}
-
-		place
-		{
-			control="EnableHardwareDecoding,EnableDebugOverlay"
-			start=AudioChannelSelect
-			dir=down
-			width=max
-			margin-right=20
-			margin-top=15
-			spacing=2
+			spacing=8
 		}
 
 		place { control="SupportInformationLabel" region="buttons" margin-left=20 margin-top=0 height=32 }

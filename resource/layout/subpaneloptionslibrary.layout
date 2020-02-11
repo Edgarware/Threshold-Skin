@@ -3,7 +3,7 @@
 	controls
 	{
 		TitleLabel { controlname=label labeltext="#Steam_Settings_Library" style=highlight }
-						
+
 		LibraryDisplaySizeLabel { ControlName=Label labelText="#Steam_Settings_Library_Size_Title" }
 		LibraryDisplaySizeAutomatic { ControlName="RadioButton" fieldName="LibraryDisplaySizeAutomatic" labelText="#Steam_Settings_Library_Size_Automatic" }
 		LibraryDisplaySizeAutomaticLabel { ControlName=Label labelText="#Steam_Settings_Library_Size_Automatic_Label" }
@@ -12,10 +12,17 @@
 		LibraryDisplaySizeLarge { ControlName="RadioButton" fieldName="LibraryDisplaySizeLarge" labelText="#Steam_Settings_Library_Size_Large" }
 
 		LibraryLowBandwidthCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_LowBandwidth_Title" }
-		LibraryLowBandwidthLabel { ControlName=Label labelText="#Steam_Settings_Library_LowBandwidth_Desc" wrap=1 }
-		
+		LibraryLowBandwidthLabel { ControlName=Label labelText="#Steam_Settings_Library_LowBandwidth_Desc" wrap=1 zpos="0" }
+
 		LibraryLowPerfCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_LowPerf_Title" }
 		LibraryLowPerfLabel { ControlName=Label labelText="#Steam_Settings_Library_LowPerf_Desc" wrap=1 }
+
+		// zpos=1 to keep the low-perf label from preventing the checkbox label from being clickable
+		LibraryDisplayIconInGameListCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_IconInGameList_Title" zpos="1" }
+
+		// zpos=1 to keep the low-bandwidth label from preventing the checkbox label from being clickable
+		LibraryDisableCommunityContentCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_DisableCommunityContent_Title" zpos="1" }
+		LibraryDisableCommunityContentLabel { ControlName=Label labelText="#Steam_Settings_Library_DisableCommunityContent_Desc" wrap=1 style=disable_community_content }
 	}
 	
 	colors
@@ -43,9 +50,15 @@
 		place { control="LibraryDisplaySizeAutomaticLabel" start=LibraryDisplaySizeAutomatic dir=right margin-left=10 width=max region=hidden }
 		
 		place { control=LibraryLowBandwidthCheckbox start="LibraryDisplaySizeLarge" dir=down margin-top=20 width=250 region=box }
-		place { control=LibraryLowBandwidthLabel start=LibraryLowBandwidthCheckbox dir=down width=250 height=200 margin-top=5 margin-left=30 region=box}
+		place { control=LibraryLowBandwidthLabel start=LibraryLowBandwidthCheckbox dir=down width=200 height=80 margin-top=5 margin-left=30 region=box}
+
+		place { control=LibraryDisableCommunityContentCheckbox start="LibraryLowBandwidthCheckbox" margin-top=100 dir=down width=250 region=box }
+		place { control=LibraryDisableCommunityContentLabel start=LibraryDisableCommunityContentCheckbox dir=down width=200 height=80 margin-top=5 margin-left=30 region=box}
 
 		place { control=LibraryLowPerfCheckbox start="LibraryLowBandwidthCheckbox" dir=right margin-left=20 width=max region=box }
-		place { control=LibraryLowPerfLabel start=LibraryLowPerfCheckbox dir=down width=250 height=200 align=top margin-top=5 margin-left=30 region=box}
+		place { control=LibraryLowPerfLabel start=LibraryLowPerfCheckbox dir=down width=200 height=80 align=top margin-top=5 margin-left=30 region=box}
+	
+		place { control=LibraryDisplayIconInGameListCheckbox start=LibraryLowPerfCheckbox dir=down margin-top=100 width=250 region=box }
+
 	}
 }
