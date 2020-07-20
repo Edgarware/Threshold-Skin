@@ -14,7 +14,21 @@
 			controlname=label
 			labeltext="#Steam_Settings_ShaderCache_Info"
 			wrap=1
-		}			
+		}
+		
+		ShaderCacheBGProcessingEnabledCheckbox 
+		{ 
+			controlname=button
+			labeltext="#Steam_Settings_ShaderCache_BGProcessing_Enable"			
+			wrap=1
+		}
+		
+		ShaderCacheBGProcessingProgress
+		{
+			controlname=label
+			labeltext="#Steam_Settings_ShaderCache_CurrentlyProcessing"
+			wrap=1
+		}		
 	}
 	
 	colors
@@ -38,7 +52,25 @@
 			region=box 
 			dir=down 
 			width=450
+			spacing = 4
+			}	
+		place { 
+			controls="ShaderCacheBGProcessingEnabledCheckbox" 
+			start = ShaderCacheEnabledCheckbox
+			margin-top = 0
+			region=box 
+			dir=down 
+			width=450
+			spacing = 4
+			}
+		place { 
+			controls="ShaderCacheBGProcessingProgress" 
+			start = ShaderCacheBGProcessingEnabledCheckbox
+			margin-top = 20
+			region=box 
+			dir=down 
+			width=450
 			spacing = 1
-			}		
+			}					
 	}
 }

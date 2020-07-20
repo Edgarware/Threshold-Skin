@@ -88,7 +88,7 @@
 			control="SoftwareEncodingThreadsLabel,SoftwareEncodingThreads"
 			dir=down
 			start=EnableHardwareEncoding
-			margin-top=105
+			margin-top=100
 			width=max
 			margin-right=20
 			spacing=5
@@ -98,11 +98,11 @@
 			control="EnableTrafficPriorityLabel,EnableTrafficPriority"
 			dir=down
 			start=SoftwareEncodingThreads
-			margin-top=15
+			margin-top=8
 			width=max
-			margin-top=365
+			margin-top=360
 			margin-right=20
-			spacing=5
+			spacing=2
 		}
 		
 		place { control="SupportInformationLabel" region="buttons" margin-left=20 height=32 }
