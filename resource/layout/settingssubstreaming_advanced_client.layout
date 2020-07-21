@@ -2,12 +2,19 @@
 {
 	controls
 	{
-		"DescriptionLabel"
+		"DescriptionLabelLocal"
 		{
 			ControlName="Label"
-			fieldName="DescriptionLabel"
+			fieldName="DescriptionLabelLocal"
 			wrap=1
-			labelText="#Steam_Settings_Streaming_AdvancedClientOptions_Description"
+			labelText="#Steam_Settings_Streaming_AdvancedClientOptions_DescriptionLocal"
+		}
+		"DescriptionLabelRemote"
+		{
+			ControlName="Label"
+			fieldName="DescriptionLabelRemote"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_AdvancedClientOptions_DescriptionRemote"
 		}
 		
 		"BandwidthLabel" { ControlName="Label" associate="BandwidthLimit" labelText="#Steam_Settings_Streaming_Bandwidth" }
@@ -27,6 +34,8 @@
 
 		"EnableHardwareDecoding" { ControlName="CheckButton" fieldName="EnableHardwareDecoding" labelText="#Steam_Settings_Streaming_EnableHardwareDecoding" }
 		
+		"EnableTouchController" { ControlName="CheckButton" fieldName="EnableTouchController" labelText="#Steam_Settings_Streaming_EnableTouchController" }
+		
 		"SupportInformationLabel"
 		{
 			ControlName="URLLabel"
@@ -42,25 +51,36 @@
 	{
 	}
 	
+	
 	layout
 	{
-		region { name=hidden width=0 height=0}
 		region { name="buttons" width=max height=42 align="bottom" }
 
-		place { control="DescriptionLabel" margin-left=20 margin-right=20 margin-top=40 width=max }
+		place { control="DescriptionLabelLocal" margin-left=20 margin-right=20 margin-top=40 width=max }
+		place { control="DescriptionLabelRemote" margin-left=20 margin-right=20 margin-top=40 width=max }
 
 		place
 		{
-			control="BandwidthLabel,BandwidthLimit,ResolutionLabel,ResolutionLimit,AudioChannelsLabel,AudioChannelSelect,ControllerOverlayHotkeyLabel,ControllerOverlayHotkey,PerformanceOverlayLabel,PerformanceOverlay,EnableHardwareDecoding"
+			control="PerformanceOverlayLabel,PerformanceOverlay,BandwidthLabel,BandwidthLimit,ResolutionLabel,ResolutionLimit,AudioChannelsLabel,AudioChannelSelect,ControllerOverlayHotkeyLabel,ControllerOverlayHotkey"
 			dir=down
-			start=DescriptionLabel
 			width=max
+			margin-left=20
 			margin-right=20
-			margin-top=15
-			spacing=8
+			margin-top=85
+			spacing=5
 		}
-
-		place { control="SupportInformationLabel" region="buttons" margin-left=20 margin-top=0 height=32 }
+		place
+		{
+			control="EnableHardwareDecoding,EnableTouchController"
+			start=ControllerOverlayHotkey
+			dir=down
+			width=max
+			margin-top=8
+			margin-right=20
+			spacing=2
+		}
+		place { control="SupportInformationLabel" region="buttons" margin-left=20 height=32 }
 		place { control="OKButton" region="buttons" width=92 align=right margin-right=10 }
 	}
+	
 }
