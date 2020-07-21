@@ -135,7 +135,7 @@
 		
 		place { region=bottom control=ClientDivider width=max start=AdvancedHostOptions dir=down margin-top=15}
 		place { region=bottom control=ClientLabelLocal width=max start=ClientDivider dir=down margin-top=10 }
-		place { region=bottom control=ClientLabelRemote width=max start="ClientDivider" dir=down margin-top=25 }
+		place { region=bottom control=ClientLabelRemote width=max start="ClientDivider" dir=down margin-top=10 }
 		place { region=bottom control=QualityFast start=ClientLabelRemote dir=down margin-top=10}
 		place
 		{
