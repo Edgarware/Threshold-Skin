@@ -122,7 +122,7 @@
 			start=P2PScopeLabel
 			control=P2PScope
 			dir=down
-			width=max
+			width=360
 			height=24
 			margin-right=20
 			margin-top=10
