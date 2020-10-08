@@ -28,8 +28,13 @@
 		PingRateCombo
 		{
 			controlname=combobox
-      			editable="0"
-		}		
+      		editable="0"
+		}
+
+		TextFilterLabel { controlname=label labeltext="#Steam_TextFilterSettingLabel"	wrap=1	style=highlight }
+		TextFilterStatus { controlname=label	wrap=1		}
+		TextFilterUpdateSettingURL { controlname=URLLabel	labeltext=#Steam_TextFilterSettingURL	URLText="steam://url/TextFilterSettings" }
+	
 	}
 	
 	colors
@@ -84,8 +89,12 @@
 			margin-top=6 margin-left=10 region=box }
 		
 		place { control=Divider1 start=ShowIngameFPSContrastCheck dir=down margin-top=40 region=box width=max }
-		place { controls="PingRateLabel" region=box start=Divider1 margin-top=10 width=max dir=down }
+		place { controls="PingRateLabel" region=box start=Divider1 margin-top=10 width=250 dir=down }
 		place { controls="PingRateCombo" region=box start=PingRateLabel margin-top=10 width=235 dir=down height=25 }
-		place { controls="PingRateInfo" region=box start=PingRateCombo margin-top=10 width=max dir=down }				
+		place { controls="PingRateInfo" region=box start=PingRateCombo margin-top=10 width=250 dir=down }		
+
+		place { control=TextFilterLabel start=Divider1 margin-top=10 x=270 width=300 dir=down }
+		place { control=TextFilterStatus start=TextFilterLabel margin-top=10 width=300 dir=down }
+		place { control=TextFilterUpdateSettingURL start=TextFilterStatus margin-top=10 width=300 dir=down height=25 }
 	}
 }
