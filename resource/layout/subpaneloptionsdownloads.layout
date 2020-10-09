@@ -102,11 +102,11 @@
 		place { controls="AutoUpdateTimeRestrictEnd" region=box start=AutoUpdateTimeRestrictEndLabel dir=right margin-left=10 width=78 }
 
 		place { controls="ThrottleCheckbox" region=box start=RestrictionsLabel dir=down margin-top=4 x=270 margin-left=20 }
-		place { controls="ThrottleRateCurrent" region=box start=ThrottleCheckbox dir=down width=235 height=25 margin-top=4 }
-		place { controls="ThrottleRateEditLabel" region=box start=ThrottleRateCurrent dir=down width=175 height=25 }
+		place { controls="ThrottleRateCurrent" region=box start=ThrottleCheckbox dir=right width=235 height=25 margin-top=1 }
+		place { controls="ThrottleRateEditLabel" region=box start=ThrottleCheckbox dir=down width=175 height=25 }
 		place { controls="ThrottleRateEdit" region=box start=ThrottleRateEditLabel dir=down width=125 height=25 }
 		place { controls="ThrottleRateEditSuffix" region=box start=ThrottleRateEdit dir=right margin-left=4 margin-top=5 }
-		place { controls="ThrottleRateApply" region=box start=ThrottleRateEdit dir=down width=70 height=25 margin-top=4 }
+		place { controls="ThrottleRateApply" region=box start=ThrottleRateEdit dir=down width=70 height=25 margin-top=10 }
 
 		place { controls="AllowDownloadsDuringGameplayCheckbox" region=box start=AutoUpdateTimeRestrictStartLabel dir=down margin-top=15 }
 		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=box start=AllowDownloadsDuringGameplayCheckbox dir=down }
