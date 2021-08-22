@@ -34,15 +34,19 @@
 		ActivateRetail					{ 	text="#Steam_RegisterProductCode"		command="ActivateRetail" }
 		BackupGames						{	text="#steam_menu_backupgames"			command="backupgames" }
 		RedeemWalletVoucher				{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
-		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }	
-		Support							{	text="#steam_menu_support"				command="Support" }
-
 		Divider							{}
 	
 		CheckForUpdates					{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
 		Settings						{	text="#steam_menu_settings"				command="Settings" }
 		Restart 						{	text="#Steam_MustRestart_Button"		command="RestartSteam" }
 		Exit							{	text="#Steam_ExitSteam"					command="Exit" }
+		
+		Divider							{}
+		Support							{	text="#steam_menu_support"				command="Support" }
+		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
+		Privacy							{	text="#steam_menu_PrivacyPolicy"		shellcmd="steam://url/PrivacyPolicy" }
+		Legal							{	text="#steam_menu_LegalInformation"		shellcmd="steam://url/LegalInformation" }
+		SSA								{	text="#steam_menu_SteamSubscriberAgreement"	shellcmd="steam://url/SSA" }
 		About							{	text="#steam_about"						command="About" }
 	}
 }
