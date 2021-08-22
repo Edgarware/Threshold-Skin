@@ -5,7 +5,7 @@
 	}
 	
 	layout{
-		place { controls=Label4,LanguageCombo,TranslationLabel dir=down margin-top=20 margin-left=20 spacing=8}
+		place { controls=LabelLanguageCombo,LanguageCombo,TranslationLabel dir=down margin-top=20 margin-left=20 spacing=8}
 		place { controls=Divider1 start=TranslationLabel dir=down margin-top=15 width=max margin-right=20}
 		
 		place { controls=Label1 start=Divider1 dir=down margin-top=15 width=max margin-right=20}
@@ -60,6 +60,7 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 		"URLText"		"http://translation.steampowered.com"
+		"group"			"SteamRealmGlobalOnly"
 	}
 	"Divider1"
 	{
@@ -289,32 +290,12 @@
 		"Default"		"0"
 		"selected"		"0"
 	}
-	"GPUWebViewCheck"
-	{
-		"ControlName"		"CheckButton"
-		"fieldName"		"GPUWebViewCheck"
-		"xpos"		"17"
-		"ypos"		"337"
-		"wide"		"430"
-		"tall"		"24"
-		"AutoResize"		"0"
-		"PinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"8"
-		"paintbackground"		"1"
-		"labelText"		"#Steam_EnableGPUWebViews_Option"
-		"textAlignment"		"west"
-		"wrap"		"0"
-		"Default"		"0"
-		"selected"		"0"
-	}
 	"SmoothScrollWebViewCheck"
 	{
 		"ControlName"		"CheckButton"
 		"fieldName"		"SmoothScrollWebViewCheck"
 		"xpos"		"17"
-		"ypos"		"361"
+		"ypos"		"337"
 		"wide"		"430"
 		"tall"		"24"
 		"AutoResize"		"0"
@@ -329,32 +310,32 @@
 		"Default"		"0"
 		"selected"		"0"
 	}
-	"DWriteCheck" [$WINDOWS]
+	"GPUWebViewCheck"
 	{
 		"ControlName"		"CheckButton"
-		"fieldName"		"DWriteCheck"
+		"fieldName"		"GPUWebViewCheck"
 		"xpos"		"17"
-		"ypos"		"385"
+		"ypos"		"361"
 		"wide"		"430"
 		"tall"		"24"
 		"AutoResize"		"0"
 		"PinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"		"10"
+		"tabPosition"		"8"
 		"paintbackground"		"1"
-		"labelText"		"#Steam_UseDirectWrite_Option"
+		"labelText"		"#Steam_EnableGPUWebViews_Option"
 		"textAlignment"		"west"
 		"wrap"		"0"
 		"Default"		"0"
 		"selected"		"0"
 	}
-	"H264HWAccelCheck" [$WINDOWS]
+	"H264HWAccelCheck"
 	{
 		"ControlName"		"CheckButton"
 		"fieldName"		"H264HWAccelCheck"
 		"xpos"		"17"
-		"ypos"		"409"
+		"ypos"		"385"
 		"wide"		"430"
 		"tall"		"24"
 		"AutoResize"		"0"
@@ -364,6 +345,26 @@
 		"tabPosition"		"11"
 		"paintbackground"		"1"
 		"labelText"		"#Steam_UseH264HWAccel_Option"
+		"textAlignment"		"west"
+		"wrap"		"0"
+		"Default"		"0"
+		"selected"		"0"
+	}
+	"DWriteCheck" [$WINDOWS]
+	{
+		"ControlName"		"CheckButton"
+		"fieldName"		"DWriteCheck"
+		"xpos"		"17"
+		"ypos"		"409"
+		"wide"		"430"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"10"
+		"paintbackground"		"1"
+		"labelText"		"#Steam_UseDirectWrite_Option"
 		"textAlignment"		"west"
 		"wrap"		"0"
 		"Default"		"0"
@@ -403,10 +404,10 @@
 		"wrap"		"1"
 		"Default"		"0"
 	}
-	"Label4"
+	"LabelLanguageCombo"
 	{
 		"ControlName"		"Label"
-		"fieldName"		"Label4"
+		"fieldName"		"LabelLanguageCombo"
 		"xpos"		"20"
 		"ypos"		"15"
 		"wide"		"475"
@@ -421,7 +422,28 @@
 		"textAlignment"		"west"
 		"associate"		"LanguageCombo"
 		"wrap"		"0"
+		"group"			"SteamRealmGlobalOnly"
 	}
+	"LabelSteamChinaLanguageCombo"
+	{
+		"ControlName"		"Label"
+		"fieldName"		"LabelSteamChinaLanguageCombo"
+		"xpos"		"20"
+		"ypos"		"15"
+		"wide"		"475"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"paintbackground"		"1"
+		"labelText"		"#Steam_SteamChinaLanguageSelect"
+		"textAlignment"		"west"
+		"associate"		"LanguageCombo"
+		"wrap"		"0"
+		"group"			"SteamRealmChinaOnly"
+	}	
 	
 	"SetJumplistOptionsButton"
 	{

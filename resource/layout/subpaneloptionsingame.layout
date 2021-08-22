@@ -29,7 +29,18 @@
 		{
 			controlname=combobox
       			editable="0"
-		}		
+		}
+		
+		TextFilterLabel { controlname=label labeltext="#Steam_TextFilterSettingLabel" wrap=1 style=highlight }
+		TextFilterStatus { controlname=label wrap=1 }
+		TextFilterUpdateSettingURL { controlname=urllabel labeltext="#Steam_TextFilterSettingURL" URLText="steam://url/TextFilterSettings" wrap=1 style=highlight }
+
+		Divider2 { ControlName=Divider	}
+
+		ShareIPNetworkingLabel { ControlName=label labelText=#Steam_Settings_ShareIPNetworking_Label wrap=1 style=highlight }
+		ShareIPNetworkingInfo { ControlName=label labelText=#Steam_Settings_ShareIPNetworking_Info wrap=1 }
+		ShareIPNetworkingURL { ControlName=urllabel labelText=#Steam_Settings_ShareIPNetworking_URL URLText="#Steam_Settings_ShareIPNetworking_URLText" wrap=1 }
+		ShareIPNetworkingCombo { ControlName=combobox fieldName=ShareIPNetworkingCombo editable="0" }
 	}
 	
 	colors
@@ -41,8 +52,7 @@
 		highlight
 		{
 			textcolor=DefaultText
-			font-size=18 [$LINUX]
-			font-size=24
+			font-size=20
 		}	
 		
 		checkbox
@@ -84,8 +94,18 @@
 			margin-top=6 margin-left=10 region=box }
 		
 		place { control=Divider1 start=ShowIngameFPSContrastCheck dir=down margin-top=40 region=box width=max }
-		place { controls="PingRateLabel" region=box start=Divider1 margin-top=10 width=max dir=down }
+		place { controls="TextFilterLabel" region=box start=Divider1 margin-top=10 width=max dir=down }
+		place { controls="TextFilterStatus" region=box start=TextFilterLabel margin-top=10 width=235 dir=down }
+		place { controls="TextFilterUpdateSettingURL" region=box start=TextFilterStatus margin-top=10 width=235 dir=down }	
+
+		place { controls="PingRateLabel" region=box start=Divider1 margin-top=10 width=max dir=down x=270 }
 		place { controls="PingRateCombo" region=box start=PingRateLabel margin-top=10 width=235 dir=down height=25 }
-		place { controls="PingRateInfo" region=box start=PingRateCombo margin-top=10 width=max dir=down }				
+		place { controls="PingRateInfo" region=box start=PingRateCombo margin-top=10 width=max dir=down }
+		place { control=Divider2 region=box start=TextFilterUpdateSettingURL dir=down margin-top=30 width=max }
+
+		place { controls="ShareIPNetworkingLabel" region=box start=Divider2 margin-top=15 width=235 dir=down }
+		place { controls="ShareIPNetworkingInfo" region=box start=ShareIPNetworkingLabel margin-top=5 width=235 dir=down }		
+		place { controls="ShareIPNetworkingURL" region=box start=ShareIPNetworkingInfo margin-top=5 width=235 dir=down }
+		place { controls="ShareIPNetworkingCombo" region=box start=Divider2 margin-top=32 width=235 dir=down height=25 x=270}
 	}
 }
